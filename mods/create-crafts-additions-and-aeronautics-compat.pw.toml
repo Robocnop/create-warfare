@@ -1,0 +1,13 @@
+name = "Create: Crafts & Additions and Aeronautics Compat"
+filename = "aeroadditionbridge-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2c07cac8ab9205b03bd3189916cb6dd48b685caa"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8032414
+project-id = 1532665

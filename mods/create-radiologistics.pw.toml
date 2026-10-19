@@ -1,0 +1,13 @@
+name = "Create : radiologistics"
+filename = "CreateRadiologistics-1.1.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "59e0013993bfb82635c06e2a7028019fe5d5bc28"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8998071
+project-id = 1556290

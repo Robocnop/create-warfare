@@ -1,0 +1,108 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "09_missiles"
+	group: ""
+	icon: { id: "create_radar:radar_bearing" }
+	id: "47DA1C59EB2CE985"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: []
+			id: "F7E3E4D638A041C4"
+			rewards: [{ id: "6CB420FC394BBC92", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "84D4B6B29B9EDDC6", item: { count: 1, id: "create_radar:binoculars" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: []
+			id: "F64793E12A209AEB"
+			rewards: [{ id: "D984197B44613F56", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "8F0269B910A7101C", item: { count: 1, id: "create_radar:radar_bearing" }, type: "item" }]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["F64793E12A209AEB"]
+			id: "AB6DCB051C43594F"
+			rewards: [{ id: "9BA8C7FAC4454991", type: "xp", xp: 150 }]
+			tasks: [{ count: 4L, id: "9097FEEE00F82320", item: { count: 1, id: "create_radar:radar_dish_block" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AB6DCB051C43594F"]
+			id: "39F9BD3B7CF5FEEF"
+			rewards: [{ id: "0AEF7599DAA62AF7", type: "xp", xp: 150 }]
+			tasks: [{ count: 4L, id: "501CB32C021FECB6", item: { count: 1, id: "create_radar:monitor" }, type: "item" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39F9BD3B7CF5FEEF"]
+			id: "E9A8DDF795F0DA59"
+			rewards: [{ id: "058FD4FE963CF129", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "FD956BF10E537700", item: { count: 1, id: "create_radar:fire_controller" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["AB6DCB051C43594F"]
+			id: "3E0317F5F0964CCF"
+			rewards: [{ id: "08E38B01D70D0355", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "67D56833C2AAAB1A", item: { count: 1, id: "create_radar:identification_transponder" }, type: "item" }]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E0317F5F0964CCF"]
+			id: "5EDC4ACD5A6310BC"
+			rewards: [{ id: "CDFA1F43297C986F", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "5DB51A6092421D24", item: { count: 1, id: "create_radar:jammer" }, type: "item" }]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["E9A8DDF795F0DA59"]
+			id: "58B19C6FE111E7F3"
+			rewards: [{ id: "4BA1E4318D950A59", type: "xp", xp: 250 }]
+			tasks: [{ count: 2L, id: "35BA0AD726822D0C", item: { count: 1, id: "createarms:aim_9_sidewinder" }, type: "item" }]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58B19C6FE111E7F3"]
+			id: "B3AAAE60BA29B4DD"
+			rewards: [{ id: "793915F83D494E58", type: "xp", xp: 300 }]
+			tasks: [{ count: 1L, id: "2E208732C842A0B4", item: { count: 1, id: "createarms:patriot" }, type: "item" }]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["B3AAAE60BA29B4DD"]
+			id: "68B6E8B7239C1A49"
+			rewards: [{ id: "5ED9872865C413F3", type: "xp", xp: 350 }]
+			tasks: [{ count: 1L, id: "B17169578837B53B", item: { count: 1, id: "createarms:tomahawk" }, type: "item" }]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: []
+			id: "B1F9D5BE8608A54A"
+			rewards: [{ id: "3C3F4E28D49B90F6", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "6C9E99AEF77301E5", item: { count: 1, id: "createmissiles:launch_pad" }, type: "item" }]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["B1F9D5BE8608A54A"]
+			id: "983A1FBA2348EB6B"
+			rewards: [{ id: "3DE5B6D61F6BAD3A", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "6CDC1BC62B02E2DD", item: { count: 1, id: "createmissiles:warhead_assembly" }, type: "item" }]
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+}

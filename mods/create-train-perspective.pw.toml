@@ -1,0 +1,13 @@
+name = "Create: Train Perspective"
+filename = "create_train_perspective-1.1.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "dccdad2ea27ee6a0918e43ede1b911541be77289"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8209557
+project-id = 1234548

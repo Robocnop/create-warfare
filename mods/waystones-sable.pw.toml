@@ -1,0 +1,13 @@
+name = "Waystones: Sable (Create Aeronautics Addon)"
+filename = "waystonessable-1.0.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cebbc2cf9a7a8b2255caff04f2109d9611b28091"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8632751
+project-id = 1524471

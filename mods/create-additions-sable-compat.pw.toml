@@ -1,0 +1,13 @@
+name = "Create Additions - Sable Compat"
+filename = "sable_createaddition_compat-0.1.13.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "560ad8f9818f03abdbd42f18a2a27102a3de7e79"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8079798
+project-id = 1525684

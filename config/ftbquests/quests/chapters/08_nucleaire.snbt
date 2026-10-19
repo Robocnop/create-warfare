@@ -1,0 +1,108 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "08_nucleaire"
+	group: ""
+	icon: { id: "createnuclear:reactor_core" }
+	id: "04EF504505BA1E93"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: []
+			id: "39EBE17E2F842A13"
+			rewards: [{ id: "14CFCAAC33017BF3", type: "xp", xp: 150 }]
+			tasks: [{ count: 16L, id: "90D594D743C85FAC", item: { count: 1, id: "createnuclear:raw_uranium" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: []
+			id: "6415F51C0ECAA426"
+			rewards: [{ id: "FE50C62EBEE880B4", type: "xp", xp: 100 }]
+			tasks: [{ count: 32L, id: "33EEB867635CA40C", item: { count: 1, id: "tfmg:lead_ingot" }, type: "item" }]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6415F51C0ECAA426"]
+			id: "7E3061CC3BBDF79B"
+			rewards: [{ id: "4D5D9A2EAFA9774B", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "5FA7E8F6FA64DC17", item: { count: 1, id: "createnuclear:default_anti_radiation_helmet" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E3061CC3BBDF79B"]
+			id: "B01C30713E05F5F2"
+			rewards: [{ id: "6490E533D5AFF489", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "EC8EE29767FF61BB", item: { count: 1, id: "createnuclear:default_anti_radiation_chestplate" }, type: "item" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39EBE17E2F842A13"]
+			id: "531F7DD09656D0AD"
+			rewards: [{ id: "0B5FE574F9539E7D", type: "xp", xp: 200 }]
+			tasks: [{ count: 8L, id: "41CB230DF39FECA3", item: { count: 1, id: "createnuclear:enriched_yellowcake" }, type: "item" }]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["531F7DD09656D0AD"]
+			id: "6072A0EE60401705"
+			rewards: [{ id: "CE4DD63259BB9785", type: "xp", xp: 150 }]
+			tasks: [{ count: 8L, id: "FB28DD8008A8E118", item: { count: 1, id: "createnuclear:graphite_rod" }, type: "item" }]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6415F51C0ECAA426"]
+			id: "26663CF49A7D8865"
+			rewards: [{ id: "64B0014A68561F76", type: "xp", xp: 150 }]
+			tasks: [{ count: 32L, id: "E0EC9F2B06317DE1", item: { count: 1, id: "createnuclear:reactor_casing" }, type: "item" }]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["26663CF49A7D8865"]
+			id: "20C2A9274845556B"
+			rewards: [{ id: "E0215B33BA838FD7", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "90FED79DF3595AE6", item: { count: 1, id: "createnuclear:reactor_controller" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["20C2A9274845556B", "6072A0EE60401705"]
+			id: "4F22817667213C8D"
+			rewards: [{ id: "22BCD90BB9F4D5CA", type: "xp", xp: 400 }]
+			tasks: [{ count: 1L, id: "1C1F4FF6C022970E", item: { count: 1, id: "createnuclear:reactor_core" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F22817667213C8D"]
+			id: "46FC1420DE526E77"
+			rewards: [{ id: "AA86218A7AC458A7", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "53368E5D488B0D2C", item: { count: 1, id: "createnuclear:reactor_alarm" }, type: "item" }]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: []
+			id: "03501335E22DFE6C"
+			rewards: [{ id: "DACCF19319CC3410", type: "xp", xp: 150 }]
+			tasks: [{ count: 16L, id: "EEE2CEE66E3BF4A4", item: { count: 1, id: "create_new_age:thorium" }, type: "item" }]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["03501335E22DFE6C"]
+			id: "32582178B42BF6F2"
+			rewards: [{ id: "32A13F5E94ECE638", type: "xp", xp: 250 }]
+			tasks: [{ count: 4L, id: "0C35B8099273E65F", item: { count: 1, id: "create_new_age:reactor_rod" }, type: "item" }]
+			x: 2.0d
+			y: 4.5d
+		}
+	]
+}

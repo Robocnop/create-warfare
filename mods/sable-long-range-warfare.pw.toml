@@ -1,0 +1,13 @@
+name = "Sable Long Range Warfare"
+filename = "createarms-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d705425ad5f74787a216af7be58c2e9ec6c578c6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8667115
+project-id = 1580529

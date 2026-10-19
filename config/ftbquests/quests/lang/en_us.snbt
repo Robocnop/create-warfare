@@ -1,0 +1,266 @@
+{
+	chapter.17655EBC7D082AA1.title: "L'âge de l'engrenage"
+	chapter.17655EBC7D082AA1.chapter_subtitle: ["Les bases de Create : rotation, alliage et premières machines."]
+	quest.24C6C7A7D7EB2B12.title: "Alliage d'andésite"
+	quest.24C6C7A7D7EB2B12.quest_desc: ["Mélange andésite et fer (ou zinc) : c'est la base de presque toutes les machines."]
+	quest.9B3F1A522889614F.title: "La clé"
+	quest.9B3F1A522889614F.quest_desc: ["Tourne, démonte et règle tes machines."]
+	quest.C3CCB93B3A4BF972.title: "Lunettes d'ingénieur"
+	quest.C3CCB93B3A4BF972.quest_desc: ["Affiche le stress et la vitesse des réseaux."]
+	quest.FFCC34D9B8E66DD4.title: "Arbres de transmission"
+	quest.FFCC34D9B8E66DD4.quest_desc: ["Transmettent la rotation en ligne droite."]
+	quest.31AD62677F34CFCA.title: "Roues dentées"
+	quest.31AD62677F34CFCA.quest_desc: ["Pour changer d'axe et de vitesse."]
+	quest.F8C25C9C6042F0E1.title: "Grandes roues dentées"
+	quest.F8C25C9C6042F0E1.quest_desc: ["Petite + grande roue = vitesse doublée ou divisée."]
+	quest.260CE1B3D68F168B.title: "Roue à eau"
+	quest.260CE1B3D68F168B.quest_desc: ["Ta première source d'énergie mécanique."]
+	quest.0C7871E410D968EC.title: "Boîtier d'andésite"
+	quest.0C7871E410D968EC.quest_desc: ["Indispensable pour ventilateurs, dépôts, etc."]
+	quest.7767F1BCC8FE17A8.title: "Meule"
+	quest.7767F1BCC8FE17A8.quest_desc: ["Broie les minerais : premier doublage de minerai."]
+	quest.1BB7C679337D1D12.title: "Presse mécanique"
+	quest.1BB7C679337D1D12.quest_desc: ["Fabrique les plaques de fer et de cuivre."]
+	quest.A22CCDD3509CEE73.title: "Plaques de fer"
+	quest.A22CCDD3509CEE73.quest_desc: ["Il t'en faudra beaucoup."]
+	quest.5BC4D2DC4569063F.title: "Ventilateur"
+	quest.5BC4D2DC4569063F.quest_desc: ["Lavage, fumage, cuisson en masse."]
+	quest.E31FD6DC3F7248F6.title: "Foreuse mécanique"
+	quest.E31FD6DC3F7248F6.quest_desc: ["Base de toute contraption minière."]
+	quest.2C95A0956D994B4A.title: "Roues de broyage"
+	quest.2C95A0956D994B4A.quest_desc: ["Le vrai doublage de minerai."]
+	chapter.08D470CD3E865BB7.title: "Laiton & logistique"
+	chapter.08D470CD3E865BB7.chapter_subtitle: ["Le laiton débloque l'automatisation avancée et la logistique."]
+	quest.A2162ABC6CB16C34.title: "Mélangeur mécanique"
+	quest.A2162ABC6CB16C34.quest_desc: ["Avec un bassin, il fait les alliages."]
+	quest.B796759F39F4AC03.title: "Bassin"
+	quest.B796759F39F4AC03.quest_desc: ["Récipient de mélange et de pressage."]
+	quest.7071E71810E20BB1.title: "Brûleur à blaze"
+	quest.7071E71810E20BB1.quest_desc: ["Chaleur pour le mélange du laiton."]
+	quest.BB89205B4CFFF9C1.title: "Zinc"
+	quest.BB89205B4CFFF9C1.quest_desc: ["Le minerai de zinc se trouve en profondeur."]
+	quest.DF369E5180DA069A.title: "Laiton"
+	quest.DF369E5180DA069A.quest_desc: ["Cuivre + zinc chauffés dans le mélangeur."]
+	quest.FEF5A0AB13F34D99.title: "Boîtier en laiton"
+	quest.FEF5A0AB13F34D99.quest_desc: ["Pour les machines intelligentes."]
+	quest.B24CFB3B9B0E5B00.title: "Tubes électroniques"
+	quest.B24CFB3B9B0E5B00.quest_desc: ["Composant de la logique Create."]
+	quest.8AED6BE8700C86DB.title: "Mécanisme de précision"
+	quest.8AED6BE8700C86DB.quest_desc: ["Première vraie recette en séquence."]
+	quest.6849FA0103866AD3.title: "Déployeur"
+	quest.6849FA0103866AD3.quest_desc: ["Une main robotique."]
+	quest.F60D0E2DD7809FB4.title: "Bras mécanique"
+	quest.F60D0E2DD7809FB4.quest_desc: ["Déplace les objets entre machines."]
+	quest.AAAAA92E88E4DD13.title: "Fabricants mécaniques"
+	quest.AAAAA92E88E4DD13.quest_desc: ["Les grandes recettes de l'armement."]
+	quest.1CE6C85A3282225B.title: "Emballeur"
+	quest.1CE6C85A3282225B.quest_desc: ["Le réseau logistique de Create 6."]
+	quest.A1EBE7187581E148.title: "Liaison de stock"
+	quest.A1EBE7187581E148.quest_desc: ["Commandes à distance de ton stock."]
+	quest.473CCCE99F11FECC.title: "Schématicanon"
+	quest.473CCCE99F11FECC.quest_desc: ["Construit automatiquement tes schémas."]
+	chapter.681D600432C87CB6.title: "Électricité"
+	chapter.681D600432C87CB6.chapter_subtitle: ["Produire et transporter de l'énergie : Crafts & Additions, New Age, TFMG."]
+	quest.04772DFD2EA8E417.title: "Fil de cuivre"
+	quest.04772DFD2EA8E417.quest_desc: ["La base des circuits électriques."]
+	quest.E97CD161FF05B721.title: "Alternateur"
+	quest.E97CD161FF05B721.quest_desc: ["Transforme la rotation en énergie (FE)."]
+	quest.6F4FA44804A52F63.title: "Moteur électrique"
+	quest.6F4FA44804A52F63.quest_desc: ["Et l'inverse : l'énergie en rotation."]
+	quest.B84245FADAA21E36.title: "Connecteurs"
+	quest.B84245FADAA21E36.quest_desc: ["Relie tes machines avec des câbles."]
+	quest.BEBE6915AF745BF1.title: "Accumulateur modulaire"
+	quest.BEBE6915AF745BF1.quest_desc: ["Stocke l'énergie."]
+	quest.8EF0F7DACDFDA4F7.title: "Bobine Tesla"
+	quest.8EF0F7DACDFDA4F7.quest_desc: ["Charge les objets... ou les ennemis."]
+	quest.B4BB47D89EA04A76.title: "Bobine de générateur (New Age)"
+	quest.B4BB47D89EA04A76.quest_desc: ["Générateurs multiblocs à aimants."]
+	quest.6BB3B83B504294F2.title: "Aimants"
+	quest.6BB3B83B504294F2.quest_desc: ["Le cœur des générateurs New Age."]
+	quest.1779809A713F2A43.title: "Énergiseur"
+	quest.1779809A713F2A43.quest_desc: ["Surcharge les matériaux avec l'électricité."]
+	quest.637344CE2EF36490.title: "Générateur TFMG"
+	quest.637344CE2EF36490.quest_desc: ["Réseau électrique industriel de TFMG."]
+	chapter.FF2E71C38EE73946.title: "Industrie lourde & trains"
+	chapter.FF2E71C38EE73946.chapter_subtitle: ["Acier, pétrole, moteurs et chemins de fer."]
+	quest.4AE6F35EE70BD1F5.title: "Coke"
+	quest.4AE6F35EE70BD1F5.quest_desc: ["Four à coke : carburant du haut fourneau."]
+	quest.28E559ACA1545773.title: "Four à coke"
+	quest.28E559ACA1545773.quest_desc: ["Multibloc qui cuit le charbon."]
+	quest.756CBDC330F693ED.title: "Acier"
+	quest.756CBDC330F693ED.quest_desc: ["Haut fourneau TFMG : l'acier de l'armement."]
+	quest.2FE85312B9FF4126.title: "Machine à vapeur"
+	quest.2FE85312B9FF4126.quest_desc: ["Énorme puissance mécanique."]
+	quest.E188D8A625007862.title: "Scanner de pétrole"
+	quest.E188D8A625007862.quest_desc: ["Trouve les gisements de pétrole."]
+	quest.A65D3017671D854B.title: "Chevalet de pompage"
+	quest.A65D3017671D854B.quest_desc: ["Extrait le pétrole brut."]
+	quest.4E484CE080B4A71D.title: "Distillerie"
+	quest.4E484CE080B4A71D.quest_desc: ["Raffine le pétrole en diesel et essence."]
+	quest.2B585894947FA7CC.title: "Moteur diesel"
+	quest.2B585894947FA7CC.quest_desc: ["Puissance compacte, idéale pour les véhicules."]
+	quest.2CD93DB9A5EB192F.title: "Gros moteur diesel"
+	quest.2CD93DB9A5EB192F.quest_desc: ["Pour les usines et les navires."]
+	quest.0459D0495DBF7ED8.title: "Rails"
+	quest.0459D0495DBF7ED8.quest_desc: ["Les trains transportent tes ressources."]
+	quest.FB7A191B47636E7F.title: "Commandes de train"
+	quest.FB7A191B47636E7F.quest_desc: ["Le poste de pilotage."]
+	quest.60878F140ACC7F54.title: "Gares"
+	quest.60878F140ACC7F54.quest_desc: ["Automatise les trajets."]
+	quest.7ACFFB1E5D5A3DF1.title: "Plastique"
+	quest.7ACFFB1E5D5A3DF1.quest_desc: ["Issu du raffinage : électronique avancée."]
+	chapter.73A1A222F64DE127.title: "Artillerie (Create Big Cannons)"
+	chapter.73A1A222F64DE127.chapter_subtitle: ["Fondre, forer et assembler de vrais canons."]
+	quest.37CC7D0277D0D517.title: "Fonte"
+	quest.37CC7D0277D0D517.quest_desc: ["Le métal des premiers canons."]
+	quest.BD968CAFC7291040.title: "Sable de moulage"
+	quest.BD968CAFC7291040.quest_desc: ["Pour couler les pièces de canon."]
+	quest.87D37E88138949F7.title: "Moule de canon"
+	quest.87D37E88138949F7.quest_desc: ["Le métal en fusion prend la forme du moule."]
+	quest.78695F6A89881061.title: "Tube de canon"
+	quest.78695F6A89881061.quest_desc: ["Plus le tube est long, plus l'obus va loin."]
+	quest.EECB79429D7042B8.title: "Chambre"
+	quest.EECB79429D7042B8.quest_desc: ["Accueille les charges de poudre."]
+	quest.8DD1AF3C4B4F3694.title: "Culasse coulissante"
+	quest.8DD1AF3C4B4F3694.quest_desc: ["Pour recharger par l'arrière."]
+	quest.7AE07A7DA301D186.title: "Affût"
+	quest.7AE07A7DA301D186.quest_desc: ["Oriente le canon en hauteur et en direction."]
+	quest.CFBBF5C4723F0E09.title: "Charges de poudre"
+	quest.CFBBF5C4723F0E09.quest_desc: ["Propulsent l'obus."]
+	quest.3F12664295876503.title: "Obus explosifs"
+	quest.3F12664295876503.quest_desc: ["Ne pas utiliser à côté de ta base."]
+	quest.6392648C2449FD82.title: "Obus perforants"
+	quest.6392648C2449FD82.quest_desc: ["Contre les blindages."]
+	quest.8FEBAEFB7397AEEA.title: "Fusées d'impact"
+	quest.8FEBAEFB7397AEEA.quest_desc: ["Détonation au contact."]
+	quest.373FA88363AF5418.title: "Autocanon"
+	quest.373FA88363AF5418.quest_desc: ["Tir rapide antiaérien."]
+	quest.7D6CDDC817019BF8.title: "Munitions flak"
+	quest.7D6CDDC817019BF8.quest_desc: ["Pour descendre les avions."]
+	quest.BB05C8FE5B87B74D.title: "Canon moyen (Modern Warfare)"
+	quest.BB05C8FE5B87B74D.quest_desc: ["Le canon des chars modernes."]
+	chapter.7EFA501BC18270BC.title: "Aviation (Create Aeronautics)"
+	chapter.7EFA501BC18270BC.chapter_subtitle: ["Hélices, ballons et vrais avions physiques avec Sable."]
+	quest.3B35E94000929A6C.title: "Assembleur physique"
+	quest.3B35E94000929A6C.quest_desc: ["Transforme ta construction en objet physique."]
+	quest.1EE57FF7AC1CE23E.title: "Roulement d'hélice"
+	quest.1EE57FF7AC1CE23E.quest_desc: ["Monte une hélice."]
+	quest.665B4A7215CA63D6.title: "Hélice en bois"
+	quest.665B4A7215CA63D6.quest_desc: ["Ton premier vol."]
+	quest.A490C4F0A6B4CE96.title: "Hélice en andésite"
+	quest.A490C4F0A6B4CE96.quest_desc: ["Plus de poussée."]
+	quest.B04B9E8E532FDF09.title: "Hélice intelligente"
+	quest.B04B9E8E532FDF09.quest_desc: ["Contrôlable par redstone."]
+	quest.55D25A1D647500D0.title: "Enveloppe de ballon"
+	quest.55D25A1D647500D0.quest_desc: ["Pour les dirigeables."]
+	quest.FFA11F24DA36E2F8.title: "Brûleur réglable"
+	quest.FFA11F24DA36E2F8.quest_desc: ["Chauffe l'air du ballon."]
+	quest.3518B5471B7B5FB7.title: "Lévitite"
+	quest.3518B5471B7B5FB7.quest_desc: ["Bloc qui flotte : cœur des engins volants."]
+	quest.85FDA2B82A2AD1A8.title: "Roulement gyroscopique"
+	quest.85FDA2B82A2AD1A8.quest_desc: ["Stabilise ton appareil."]
+	quest.272A653ABDC4AEA8.title: "Lunettes d'aviateur"
+	quest.272A653ABDC4AEA8.quest_desc: ["Le style avant tout."]
+	quest.7C20E95A942D4C67.title: "Propulseur"
+	quest.7C20E95A942D4C67.quest_desc: ["Propulsion à carburant liquide."]
+	quest.2CAF69BC04CF5457.title: "Ailes"
+	quest.2CAF69BC04CF5457.quest_desc: ["Portance pour les vrais avions."]
+	quest.E4BB7E9FFD6811F8.title: "Jetpack"
+	quest.E4BB7E9FFD6811F8.quest_desc: ["Fonctionne à l'air comprimé."]
+	chapter.9AF3C82F48B4688F.title: "Blindés & véhicules"
+	chapter.9AF3C82F48B4688F.chapter_subtitle: ["Roues, chenilles, blindage et tourelles."]
+	quest.93E7484E1F2FE580.title: "Support de roue"
+	quest.93E7484E1F2FE580.quest_desc: ["La base de tout véhicule terrestre."]
+	quest.5B83D33E942C54BE.title: "Pneus"
+	quest.5B83D33E942C54BE.quest_desc: ["Montés sur les supports de roue."]
+	quest.A9DD744F849AC3AB.title: "Gros pneus"
+	quest.A9DD744F849AC3AB.quest_desc: ["Pour les engins lourds."]
+	quest.17BFE8A7DDC09824.title: "Blocs d'acier au carbone"
+	quest.17BFE8A7DDC09824.quest_desc: ["Protègent tes véhicules et bunkers."]
+	quest.946D0F04611E9EB9.title: "Blindage réactif (ERA)"
+	quest.946D0F04611E9EB9.quest_desc: ["Explose vers l'extérieur pour arrêter les obus."]
+	quest.1BD8EFC028544134.title: "Canon blindé (Armored Constructs)"
+	quest.1BD8EFC028544134.quest_desc: ["Tourelles pour tes chars."]
+	quest.BA8BB4E49C8BB3E6.title: "Tourelle chimique"
+	quest.BA8BB4E49C8BB3E6.quest_desc: ["Lance-flammes automatique."]
+	quest.D175D0DB6E2EB7F9.title: "Périscope"
+	quest.D175D0DB6E2EB7F9.quest_desc: ["Vision depuis l'intérieur du char."]
+	chapter.04EF504505BA1E93.title: "Nucléaire civil"
+	chapter.04EF504505BA1E93.chapter_subtitle: ["Uranium, thorium et réacteurs : énergie massive, gros risques."]
+	quest.39EBE17E2F842A13.title: "Uranium brut"
+	quest.39EBE17E2F842A13.quest_desc: ["Minerai radioactif : protège-toi."]
+	quest.6415F51C0ECAA426.title: "Plomb"
+	quest.6415F51C0ECAA426.quest_desc: ["Écran contre les radiations."]
+	quest.7E3061CC3BBDF79B.title: "Casque antiradiation"
+	quest.7E3061CC3BBDF79B.quest_desc: ["Équipement de protection, pièce 1."]
+	quest.B01C30713E05F5F2.title: "Plastron antiradiation"
+	quest.B01C30713E05F5F2.quest_desc: ["Pièce 2."]
+	quest.531F7DD09656D0AD.title: "Yellowcake enrichi"
+	quest.531F7DD09656D0AD.quest_desc: ["Combustible enrichi."]
+	quest.6072A0EE60401705.title: "Barres de graphite"
+	quest.6072A0EE60401705.quest_desc: ["Modèrent la réaction."]
+	quest.26663CF49A7D8865.title: "Boîtier de réacteur"
+	quest.26663CF49A7D8865.quest_desc: ["La coque du réacteur."]
+	quest.20C2A9274845556B.title: "Contrôleur de réacteur"
+	quest.20C2A9274845556B.quest_desc: ["Pilote le réacteur."]
+	quest.4F22817667213C8D.title: "Cœur de réacteur"
+	quest.4F22817667213C8D.quest_desc: ["Là où tout se passe."]
+	quest.46FC1420DE526E77.title: "Alarme de réacteur"
+	quest.46FC1420DE526E77.quest_desc: ["Prévient avant la fusion."]
+	quest.03501335E22DFE6C.title: "Thorium (New Age)"
+	quest.03501335E22DFE6C.quest_desc: ["Combustible des réacteurs New Age."]
+	quest.32582178B42BF6F2.title: "Barres de réacteur New Age"
+	quest.32582178B42BF6F2.quest_desc: ["Second type de réacteur."]
+	chapter.47DA1C59EB2CE985.title: "Missiles & radar"
+	chapter.47DA1C59EB2CE985.chapter_subtitle: ["Détecter, suivre et frapper à longue distance."]
+	quest.F7E3E4D638A041C4.title: "Jumelles"
+	quest.F7E3E4D638A041C4.quest_desc: ["Repérage et désignation de cibles."]
+	quest.F64793E12A209AEB.title: "Roulement de radar"
+	quest.F64793E12A209AEB.quest_desc: ["Base du radar rotatif."]
+	quest.AB6DCB051C43594F.title: "Antenne radar"
+	quest.AB6DCB051C43594F.quest_desc: ["Détecte avions et navires."]
+	quest.39F9BD3B7CF5FEEF.title: "Écran radar"
+	quest.39F9BD3B7CF5FEEF.quest_desc: ["Affiche les contacts."]
+	quest.E9A8DDF795F0DA59.title: "Conduite de tir"
+	quest.E9A8DDF795F0DA59.quest_desc: ["Relie radar et canons."]
+	quest.3E0317F5F0964CCF.title: "Transpondeur IFF"
+	quest.3E0317F5F0964CCF.quest_desc: ["Ami ou ennemi ?"]
+	quest.5EDC4ACD5A6310BC.title: "Brouilleur"
+	quest.5EDC4ACD5A6310BC.quest_desc: ["Aveugle les radars ennemis."]
+	quest.58B19C6FE111E7F3.title: "AIM-9 Sidewinder"
+	quest.58B19C6FE111E7F3.quest_desc: ["Missile air-air guidé."]
+	quest.B3AAAE60BA29B4DD.title: "Patriot"
+	quest.B3AAAE60BA29B4DD.quest_desc: ["Défense antimissile."]
+	quest.68B6E8B7239C1A49.title: "Tomahawk"
+	quest.68B6E8B7239C1A49.quest_desc: ["Missile de croisière."]
+	quest.B1F9D5BE8608A54A.title: "Pas de tir (Create Missiles)"
+	quest.B1F9D5BE8608A54A.quest_desc: ["Missiles physiques modulaires."]
+	quest.983A1FBA2348EB6B.title: "Ogive (Create Missiles)"
+	quest.983A1FBA2348EB6B.quest_desc: ["La charge utile."]
+	chapter.C1960E5E13891BC1.title: "Armes de destruction massive"
+	chapter.C1960E5E13891BC1.chapter_subtitle: ["La fin de partie : bombes lourdes et ICBM nucléaires. Avec modération..."]
+	quest.F4D2A1F364AADF7C.title: "Établi de munitions"
+	quest.F4D2A1F364AADF7C.quest_desc: ["Assemble bombes, ogives et missiles."]
+	quest.CB2F05AFDAF2B237.title: "Bombe Mk 82"
+	quest.CB2F05AFDAF2B237.quest_desc: ["Bombe d'aviation légère."]
+	quest.A82FEA33AE7FE437.title: "Bombe Mk 84"
+	quest.A82FEA33AE7FE437.quest_desc: ["Bombe d'aviation lourde."]
+	quest.8E1A85CD7654EC56.title: "Appel de frappe aérienne"
+	quest.8E1A85CD7654EC56.quest_desc: ["Cinq Mk 82 sur la cible."]
+	quest.E6775A330665F94C.title: "Lunettes anti-flash"
+	quest.E6775A330665F94C.quest_desc: ["Pour regarder le champignon sans devenir aveugle."]
+	quest.2AD09B2F01C16648.title: "Compteur Geiger"
+	quest.2AD09B2F01C16648.quest_desc: ["Mesure les retombées."]
+	quest.4F02DCB64718598B.title: "Lingots d'uranium"
+	quest.4F02DCB64718598B.quest_desc: ["Matière fissile."]
+	quest.EA4B67DC521A8EBE.title: "Papier de cible"
+	quest.EA4B67DC521A8EBE.quest_desc: ["Coordonnées de la cible du missile."]
+	quest.5CF5DE993A303811.title: "ICBM léger"
+	quest.5CF5DE993A303811.quest_desc: ["Premier missile balistique."]
+	quest.94F3D1B8E9E9E22F.title: "ICBM lourd"
+	quest.94F3D1B8E9E9E22F.quest_desc: ["Plus gros, plus loin."]
+	quest.5FC9A9FB2250304D.title: "Fat Man"
+	quest.5FC9A9FB2250304D.quest_desc: ["La bombe nucléaire larguée."]
+	quest.5CD90A2B6E78FBBB.title: "ICBM nucléaire"
+	quest.5CD90A2B6E78FBBB.quest_desc: ["L'arme ultime. Le serveur s'en souviendra."]
+}

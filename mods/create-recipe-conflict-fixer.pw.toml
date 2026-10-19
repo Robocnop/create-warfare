@@ -1,0 +1,13 @@
+name = "Create: Recipe Conflict Fixer"
+filename = "createrecipeconflictfixer-2.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "defb7d4427625519a642ca6752d3d2b3c3e9a66c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7389059
+project-id = 1403862

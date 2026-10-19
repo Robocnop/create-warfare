@@ -1,0 +1,13 @@
+name = "Ore Zombies: The Extinto"
+filename = "ore_zombies_the_extinto-2.0.1-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f9088b065b7265cbd707026206f196e5dbbb00d4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8442019
+project-id = 1605078

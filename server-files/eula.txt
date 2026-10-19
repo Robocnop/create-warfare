@@ -1,0 +1,2 @@
+# Mets eula=true pour accepter https://aka.ms/MinecraftEULA
+eula=false

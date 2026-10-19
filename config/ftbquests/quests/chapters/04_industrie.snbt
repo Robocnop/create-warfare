@@ -1,0 +1,116 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "04_industrie"
+	group: ""
+	icon: { id: "tfmg:steel_ingot" }
+	id: "FF2E71C38EE73946"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: []
+			id: "4AE6F35EE70BD1F5"
+			rewards: [{ id: "2A2F5B2FF8A5CF53", type: "xp", xp: 100 }]
+			tasks: [{ count: 32L, id: "070CF0AE4EF8BDDC", item: { count: 1, id: "tfmg:coal_coke" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: []
+			id: "28E559ACA1545773"
+			rewards: [{ id: "029F69986DD04E9F", type: "xp", xp: 100 }]
+			tasks: [{ count: 4L, id: "5072E03E0A97C8A9", item: { count: 1, id: "tfmg:coke_oven" }, type: "item" }]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4AE6F35EE70BD1F5", "28E559ACA1545773"]
+			id: "756CBDC330F693ED"
+			rewards: [{ id: "F2E1A5AE990B7E09", type: "xp", xp: 250 }]
+			tasks: [{ count: 32L, id: "57372DA2A11866F2", item: { count: 1, id: "tfmg:steel_ingot" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: []
+			id: "2FE85312B9FF4126"
+			rewards: [{ id: "1DEDA10968A42B98", type: "xp", xp: 200 }]
+			tasks: [{ count: 4L, id: "7497A17E1CD388A1", item: { count: 1, id: "create:steam_engine" }, type: "item" }]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: []
+			id: "E188D8A625007862"
+			rewards: [{ id: "AC07289E4CF5B4A4", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "59B2D5E8A6BF8477", item: { count: 1, id: "createdieselgenerators:oil_scanner" }, type: "item" }]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["E188D8A625007862"]
+			id: "A65D3017671D854B"
+			rewards: [{ id: "B051A7A92C7D49AA", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "8459B791CA05A822", item: { count: 1, id: "createdieselgenerators:pumpjack_bearing" }, type: "item" }]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["A65D3017671D854B"]
+			id: "4E484CE080B4A71D"
+			rewards: [{ id: "C734C6CB75F1FA43", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "413251E9DF1A343D", item: { count: 1, id: "createdieselgenerators:distillation_controller" }, type: "item" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E484CE080B4A71D"]
+			id: "2B585894947FA7CC"
+			rewards: [{ id: "FB60B1B676401EE1", type: "xp", xp: 200 }]
+			tasks: [{ count: 2L, id: "ED08BD1DE4799BFC", item: { count: 1, id: "createdieselgenerators:diesel_engine" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B585894947FA7CC"]
+			id: "2CD93DB9A5EB192F"
+			rewards: [{ id: "02DBF4A87D642B4E", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "57F2C5E93278F8F5", item: { count: 1, id: "createdieselgenerators:large_diesel_engine" }, type: "item" }]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: []
+			id: "0459D0495DBF7ED8"
+			rewards: [{ id: "CF19F44868E3EE7A", type: "xp", xp: 75 }]
+			tasks: [{ count: 64L, id: "882C2DBD1E0E43AE", item: { count: 1, id: "create:track" }, type: "item" }]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0459D0495DBF7ED8"]
+			id: "FB7A191B47636E7F"
+			rewards: [{ id: "63189E0115720E95", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "2DB5997263CE9F6E", item: { count: 1, id: "create:controls" }, type: "item" }]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["FB7A191B47636E7F"]
+			id: "60878F140ACC7F54"
+			rewards: [{ id: "B0D36E2C4A6DA7C8", type: "xp", xp: 150 }]
+			tasks: [{ count: 2L, id: "F9C7C6ABFD0DBFEF", item: { count: 1, id: "create:track_station" }, type: "item" }]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E484CE080B4A71D"]
+			id: "7ACFFB1E5D5A3DF1"
+			rewards: [{ id: "4C05B1787C250C49", type: "xp", xp: 200 }]
+			tasks: [{ count: 16L, id: "E36A41937B8DA775", item: { count: 1, id: "tfmg:plastic_sheet" }, type: "item" }]
+			x: 6.0d
+			y: 1.5d
+		}
+	]
+}

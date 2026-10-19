@@ -1,0 +1,13 @@
+name = "Create: More Drill Heads"
+filename = "createmoredrillheads-2.1.0-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "22fd6014e39dcded0c4bfe76f633a3fbed1b74e8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7781392
+project-id = 841298

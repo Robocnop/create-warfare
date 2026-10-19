@@ -1,0 +1,8 @@
+server-test/
+dist/
+server-files/
+tools/
+README.md
+MODLIST.md
+.gitignore
+CLAUDE.md

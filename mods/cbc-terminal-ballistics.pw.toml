@@ -1,0 +1,13 @@
+name = "CBC Terminal Ballistics"
+filename = "cbc_terminal_ballistics-2.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "919dcb96b63f8044113b9d70882c14380ddb8870"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8589894
+project-id = 1619706

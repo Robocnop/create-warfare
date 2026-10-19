@@ -1,0 +1,13 @@
+name = "Create Warfare"
+author = "Robocnop"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "a49c77128ca65ab7cc135dfd5b03545298a221888d1853ada08cae360e20090c"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.264"

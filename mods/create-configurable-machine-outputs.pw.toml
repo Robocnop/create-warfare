@@ -1,0 +1,13 @@
+name = "Create: Configurable Machine Outputs - Now for Millstones , Presses and Crushing Wheels !"
+filename = "createcmo-1.3.0-create-6.0.x-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ba855fa2dc3c01dcbf7dcac5adde81f00fd44dd0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8188631
+project-id = 1400987
