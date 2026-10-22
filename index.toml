@@ -138,7 +138,7 @@ hash = "89de629187d73ea736561f265bb4a71160cd93aa254a106e0d77f26d4c738078"
 
 [[files]]
 file = "kubejs/server_scripts/balance/military.js"
-hash = "595e5fb0863f5e29f01a79c0b6bc680ed6baa0697d84d503679087073d46b5eb"
+hash = "b271fd63f4c2fed3be2c23db0316ec976b3c60a3758f6de63a977c46167a0baf"
 
 [[files]]
 file = "kubejs/startup_scripts/launch_codes.js"
