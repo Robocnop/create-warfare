@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
   const longRange = {
     'createarms:tomahawk': { pattern: ['BLB', 'TTT', 'SFS'], key: { B: 'tfmg:circuit_board' } },
     'createarms:kinzhal': { pattern: ['PLP', 'TTT', 'SFS'], key: { P: 'create:precision_mechanism' } },
-    'createarms:lrasm': { pattern: ['BLB', 'TTT', 'DFD'], key: { B: 'tfmg:circuit_board', D: 'minecraft:diamond' } },
+    'createarms:lrasm': { pattern: ['DLD', 'TTT', 'SFS'], key: { D: 'minecraft:diamond' } },
     'createarms:ship_missile': { pattern: ['RLR', 'TTT', 'SFS'], key: { R: 'createarms:apg_radar' } }
   }
   Object.keys(longRange).forEach(missile => {
