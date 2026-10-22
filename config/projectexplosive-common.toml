@@ -1,0 +1,93 @@
+#ProjectExplosive Configuration
+[general]
+	#Quality mode for the mod. POTATO greatly reduces visual effects for better performance.
+	#Allowed Values: POTATO, NORMAL
+	qualityMode = "NORMAL"
+	#Unfinished fire content (napalm flask, flamethrower, extinguisher): creative tab, recipes, advancement. Recipes follow after /reload or a restart.
+	experimentalFire = false
+
+#Visual Effects Settings
+[visual_effects]
+	#Enable screen shake effects during explosions
+	enableScreenShake = true
+	#Enable blinding screen flash for nuclear explosions only
+	enableFlashEffect = true
+	#Darken the screen instead of showing a white nuclear flash.
+	photosensitiveFlash = false
+	#Realistic orange blast lighting from the nuclear fireball (Flash Goggles view): hot core glow, lit terrain, shadows. Disable to keep only the screen flash.
+	enableNuclearLighting = true
+	#Screen-space explosion post-processing (master toggle: distortion + flash bloom + chromatic). Disabled in Potato mode.
+	enableExplosionShaders = true
+	#Distortion + chromatic aberration on the shockwave ring. Disable to keep the flash bloom + vignette but skip the screen warp.
+	enableDistortion = false
+	#Strength of explosion screen shaders (0.0 to 2.0)
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	explosionShaderIntensity = 1.0
+	#Green glow on irradiated entities. Disabled in Potato mode.
+	enableRadiationShaders = true
+	#Strength of radiation glow (0.0 to 2.0)
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	radiationShaderIntensity = 1.0
+	#Multiplier for flash effect intensity (0.0 to 2.0)
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	flashIntensityMultiplier = 1.0
+	#Multiplier for screen shake intensity (0.0 to 3.0)
+	# Default: 1.0
+	# Range: 0.0 ~ 3.0
+	screenShakeIntensityMultiplier = 1.0
+
+#Particle Settings
+[particles]
+	#Maximum distance (in blocks) at which particles are rendered. Raise this to match a Distant Horizons / Voxy render distance so explosion effects stay visible over far LOD terrain. Default covers the mod's own max bomb-targeting range (10000).
+	# Default: 16384
+	# Range: 64 ~ 32768
+	maxParticleDistance = 16384
+	#Multiplier for particle density (0.1 to 2.0). Lower = fewer particles = better performance
+	# Default: 1.0
+	# Range: 0.1 ~ 2.0
+	particleDensityMultiplier = 1.0
+	#Enable particles visible from long distances (may impact performance)
+	enableLongDistanceParticles = true
+	#Use the solid particle sprite instead of the default one.
+	#The default sprite is 8x8 with binary alpha and only ~45% of
+	#its pixels opaque, so every smoke quad is a stencil you can
+	#see the world through. The solid variant keeps the same hard
+	#pixel edge and blocky outline but fills its interior.
+	solidParticleSprite = false
+	#Enable spark particles
+	enableSparks = true
+	#Enable ember particles
+	enableEmbers = true
+
+#Explosion Mechanics Settings
+[explosion]
+	#Multiplier for shockwave expansion speed (0.5 to 3.0)
+	# Default: 1.0
+	# Range: 0.5 ~ 3.0
+	shockwaveSpeedMultiplier = 1.0
+	#Multiplier for explosion damage to entities (0.0 to 5.0)
+	# Default: 1.0
+	# Range: 0.0 ~ 5.0
+	explosionDamageMultiplier = 1.0
+	#Multiplier for crater depth (0 to 5)
+	# Default: 1
+	# Range: 0 ~ 5
+	craterDepthMultiplier = 1
+	#Enable terrain deformation effects (dead grass, trees, etc)
+	enableTerrainDeformation = true
+	#Enable block destruction from explosions
+	enableBlockDestruction = true
+	#Enable the custom fire propagation system
+	enableFirePropagation = false
+	#Enable damage from custom fire to entities
+	enableFireDamage = true
+
+#Audio Settings
+[audio]
+	#Multiplier for explosion sound volume (0.0 to 2.0)
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	explosionVolumeMultiplier = 1.0
