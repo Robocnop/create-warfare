@@ -1,0 +1,9 @@
+{
+ "item.create_netherless.coal_rod": "Bâton de charbon",
+ "item.create_netherless.ectoplasm": "Ectoplasme",
+ "item.create_netherless.incomplete_blaze_rod": "Bâton de blaze incomplet",
+ "item.create_netherless.incomplete_netherite_upgrade_smithing_template": "Modèle de forge incomplet",
+ "item.create_netherless.netherite_fragment": "Fragment de Netherite",
+ "itemGroup.tabcreate_netherless_tab": "Create: Netherless",
+ "item_group.create_netherless.create_netherless_tab": "Create: Netherless"
+}

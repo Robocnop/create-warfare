@@ -1,0 +1,6 @@
+{
+ "cristellib.autoCategoryInfo": "Cet écran est généré par %s. Vous pouvez désactiver les écrans automatiques dans la config.\nLes créateurs de mods peuvent cliquer ici pour ouvrir le wiki et en savoir plus.",
+ "cristellib.nameAndSource": "%s (via §d§nCristel Lib§r)",
+ "cristellib.placementCategoryTitle": "Placement des structures",
+ "cristellib.toggleCategoryTitle": "Activer/désactiver les structures"
+}

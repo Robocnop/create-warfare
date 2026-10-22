@@ -1,0 +1,12 @@
+{
+ "appleskin.configuration.maxHudOverlayFlashAlpha.tooltip": "Valeur alpha des icônes clignotantes à leur visibilité maximale (1.0 = totalement opaque, 0.0 = totalement transparent)",
+ "appleskin.configuration.showFoodExhaustionHudUnderlay.tooltip": "Si activé, affiche votre épuisement alimentaire sous forme de barre de progression derrière la barre de faim",
+ "appleskin.configuration.showFoodHealthHudOverlay.tooltip": "Si activé, affiche sur la barre de vie la santé estimée restaurée par la nourriture",
+ "appleskin.configuration.showFoodStatsInDebugOverlay.tooltip": "Si activé, affiche votre faim, votre saturation et votre épuisement dans l'écran de débogage",
+ "appleskin.configuration.showFoodValuesHudOverlay.tooltip": "Si activé, affiche la faim (et la saturation si showSaturationHudOverlay est activé) qui serait restaurée par la nourriture que vous tenez",
+ "appleskin.configuration.showFoodValuesHudOverlayWhenOffhand.tooltip": "Si activé, active les surcouches de faim, saturation et santé pour la nourriture tenue dans la main secondaire",
+ "appleskin.configuration.showFoodValuesInTooltip.tooltip": "Si activé, affiche les valeurs de faim et de saturation de la nourriture dans son infobulle en maintenant MAJ",
+ "appleskin.configuration.showFoodValuesInTooltipAlways.tooltip": "Si activé, affiche automatiquement les valeurs de faim et de saturation de la nourriture dans son infobulle (sans maintenir MAJ)",
+ "appleskin.configuration.showSaturationHudOverlay.tooltip": "Si activé, affiche votre niveau de saturation actuel en surimpression sur la barre de faim",
+ "appleskin.configuration.showVanillaAnimationsOverlay.tooltip": "Si activé, la surcouche de santé et de faim tremblera pour suivre les animations des icônes de Minecraft"
+}

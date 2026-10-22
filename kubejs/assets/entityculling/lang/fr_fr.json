@@ -1,0 +1,4 @@
+{
+ "text.entityculling.solidLeaves": "Feuilles solides",
+ "text.entityculling.solidLeaves.tooltip": "Si activé, les feuilles seront traitées comme solides pour l'élimination. Peut améliorer les performances en forêt, mais aussi causer des problèmes visuels. Utile si 'Feuilles transparentes' est désactivé, ou avec un pack de ressources de feuilles touffues."
+}

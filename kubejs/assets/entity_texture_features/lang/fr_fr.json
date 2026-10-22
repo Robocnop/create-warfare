@@ -1,0 +1,4 @@
+{
+ "config.entity_texture_features.property_explanation.resourcepack": "Packs de ressources\nTeste chacun des noms de packs de ressources chargés\n§aresourcepack.<n>=<resourcepack_list|regex|pattern>",
+ "config.entity_texture_features.property_explanation.usingShaders": "Utilisation de shaders\nSi des shaders Iris sont utilisés ou non\n§ausingShaders.<n>=<true/false>"
+}

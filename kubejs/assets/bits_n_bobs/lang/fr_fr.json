@@ -1,0 +1,14 @@
+{
+ "bits_n_bobs.ponder.foreign_label": "Bits n Bobs",
+ "block.bits_n_bobs.industrial_truss": "Treillis métallique",
+ "block.bits_n_bobs.industrial_truss.tooltip.summary": "Peut servir à _recouvrir des tuyaux et des rotors_.",
+ "block.bits_n_bobs.industrial_truss_pipe": "Tuyau de treillis métallique",
+ "block.bits_n_bobs.industrial_truss_shaft": "Rotor de treillis industriel",
+ "create.gui.assembly.exception.bits_n_bobs.no_chain_to_attach_to": "Aucune chaîne de roues dentées à portée pour s'y fixer !",
+ "message.bits_n_bobs.cogwheel_chain.chain_addition_aborted.invalid_cogwheel_type.cogwheel_chain_type.bits_n_bobs.belt": "Les transmissions à courroie doivent être placées sur une roue dentée à rebord !",
+ "message.bits_n_bobs.cogwheel_chain.chain_addition_aborted.invalid_cogwheel_type.cogwheel_chain_type.bits_n_bobs.chain": "Les transmissions à chaîne ne peuvent pas être placées sur cette roue dentée !",
+ "message.bits_n_bobs.cogwheel_chain.chain_addition_aborted.invalid_cogwheel_type.cogwheel_chain_type.bits_n_bobs.rope": "Les transmissions à corde doivent être placées sur une roue dentée à rebord !",
+ "message.bits_n_bobs.cogwheel_chain.chain_addition_aborted.not_enough_material": "Pas assez de matériaux pour terminer la chaîne !",
+ "message.bits_n_bobs.cogwheel_chain.chain_addition_aborted.out_of_node_count": "La chaîne de roues dentées dépasse le nombre maximal de nœuds !",
+ "tooltip.bits_n_bobs.suppressed_cogwheel": "Cette roue dentée en bois est masquée à cause de la configuration de Bits 'n' Bobs"
+}

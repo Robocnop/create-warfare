@@ -1,0 +1,7 @@
+{
+ "locometal_armor.configuration.locometal_blast_resistance": "Nouvelle valeur de résistance aux explosions. Au-delà de 33,0, le bloc n'est pas affecté par l'explosion d'un obus HE. La pierre est à 6,0",
+ "locometal_armor.configuration.section.locometal_armor.common.toml": "Create : configuration de Locometal Armor",
+ "locometal_armor.configuration.section.locometal_armor.common.toml.title": "Create : configuration de Locometal Armor",
+ "locometal_armor.configuration.target_blocks": "Liste d'ID de blocs dont modifier la résistance aux explosions.",
+ "locometal_armor.configuration.title": "Create : configuration de Locometal Armor"
+}

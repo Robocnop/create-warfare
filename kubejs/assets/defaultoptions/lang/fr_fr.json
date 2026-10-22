@@ -1,0 +1,8 @@
+{
+ "defaultoptions.configuration.defaultDifficulty": "Difficulté par défaut",
+ "defaultoptions.configuration.defaultDifficulty.tooltip": "La difficulté sélectionnée par défaut pour les mondes nouvellement créés.",
+ "defaultoptions.configuration.defaultResourcePacks": "Packs de ressources par défaut",
+ "defaultoptions.configuration.defaultResourcePacks.tooltip": "Identifiants des packs de ressources à activer par défaut au premier lancement.",
+ "defaultoptions.configuration.lockDifficulty": "Verrouiller la difficulté",
+ "defaultoptions.configuration.lockDifficulty.tooltip": "Mettre à true pour verrouiller la difficulté des nouveaux mondes sur la valeur par défaut. Les joueurs ne peuvent pas la déverrouiller sans outils externes ! Probablement une mauvaise idée. Je ne le recommande pas. Pourquoi ai-je ajouté cette option ?"
+}

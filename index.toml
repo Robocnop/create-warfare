@@ -82,7 +82,415 @@ hash = "48ca105d2539d8668a188c0a693b5edaf3cd513e0db26bec9b49242c676c4455"
 
 [[files]]
 file = "config/projectexplosive-common.toml"
-hash = "39f321573c33c8cbe66a4fc3c67aeb11d59051f0526d7817d85bbe898e7fc30f"
+hash = "91f975fd238167ed6c2997292e63e0a0aa04dd5558c70131a3eb03c49a37d60b"
+
+[[files]]
+file = "kubejs/assets/aeroadditionbridge/lang/fr_fr.json"
+hash = "603167a78abb1af819e713aeb1b3e606c71a363f979f773d836c1df9694f4ebb"
+
+[[files]]
+file = "kubejs/assets/aeronautics/lang/fr_fr.json"
+hash = "5ef2b1077a0f853cc13290affa35b9401f0466634fef1937b02661e39e9bec49"
+
+[[files]]
+file = "kubejs/assets/aerowarptics/lang/fr_fr.json"
+hash = "b3a55c254b441b4a739fffad92ef7c67e39e5c3134adc1147409de42357c514f"
+
+[[files]]
+file = "kubejs/assets/almostunified/lang/fr_fr.json"
+hash = "0924c7d5422b931d10c054b767b2c54bc312f34474fef34078a86cd276b5de13"
+
+[[files]]
+file = "kubejs/assets/apollib/lang/fr_fr.json"
+hash = "3df1cdfea0b2e0ffc4b1cd7e44aa26b11b91fb8a65d119f466713a0a11f5b6c5"
+
+[[files]]
+file = "kubejs/assets/appleskin/lang/fr_fr.json"
+hash = "8e2ce8f8538afd48525c0b798499c175b7053743a6832b98aa998e0c0df50c80"
+
+[[files]]
+file = "kubejs/assets/atmosphere/lang/fr_fr.json"
+hash = "0e18c9fc07d011495a0b9d992537ca1e10d89ab358d3e61d3a529d3023dece99"
+
+[[files]]
+file = "kubejs/assets/azimuth/lang/fr_fr.json"
+hash = "971dabc30e1728b934daf52f68a6bb90e71ddad3a06eeafe38fa71c25c140e3b"
+
+[[files]]
+file = "kubejs/assets/balm/lang/fr_fr.json"
+hash = "05be7cfe8b4820a7e3f7e4e830ae621ef1ae2fe143cfbc736dc9cb055568ad1e"
+
+[[files]]
+file = "kubejs/assets/betteradvancedtooltips/lang/fr_fr.json"
+hash = "6757a65dd5060d633ff6a116a051a0d91e762371bbc493c6372f7f5f854fdd34"
+
+[[files]]
+file = "kubejs/assets/betterdeserttemples/lang/fr_fr.json"
+hash = "a0bf52819e2506ffd9d6a4e7efa5476fdb389d3c34d6985183416272e7dafa66"
+
+[[files]]
+file = "kubejs/assets/betterdungeons/lang/fr_fr.json"
+hash = "dfdba5f9bcecd5a4bd0e458c299f25ce191457497e0a9dbc08a80b18d6c03c30"
+
+[[files]]
+file = "kubejs/assets/betterfortresses/lang/fr_fr.json"
+hash = "df2e4a899ae54f18df59c83b76412f3690e557231ab0119fdeedaa6b8c0050fb"
+
+[[files]]
+file = "kubejs/assets/betterjungletemples/lang/fr_fr.json"
+hash = "8834e8461d9804d109ccbceea24a3f2951fd02e1e387c0b23d635a8ea5b3bdc2"
+
+[[files]]
+file = "kubejs/assets/bettermineshafts/lang/fr_fr.json"
+hash = "574217b8f3ec1ce436cc7f15df988f3f42c5acb870bb916606c34ac0f8e18d5e"
+
+[[files]]
+file = "kubejs/assets/betteroceanmonuments/lang/fr_fr.json"
+hash = "0c6686783f3fce30c0d72bdf5ac6ef3a65146e07993b37a5040c53a04c0bad30"
+
+[[files]]
+file = "kubejs/assets/betterstrongholds/lang/fr_fr.json"
+hash = "7a961d7ca386229b681efbff983b8ced7958f4ebf4a1316550b649671b551515"
+
+[[files]]
+file = "kubejs/assets/betterwitchhuts/lang/fr_fr.json"
+hash = "1747a5b03032cd90e934714c7ed97cc2fc794f7b63baa39ea8282a69eec4bb62"
+
+[[files]]
+file = "kubejs/assets/bits_n_bobs/lang/fr_fr.json"
+hash = "7e07010142ec7ef64f828c03d52c5d74699c36ec2eb197ec13243e6425843265"
+
+[[files]]
+file = "kubejs/assets/bookshelf/lang/fr_fr.json"
+hash = "37749ee4ea32bd702c5e5e96fdb240ee308ac1b327c731a066fa299f2a762634"
+
+[[files]]
+file = "kubejs/assets/burnt/lang/fr_fr.json"
+hash = "fcea16c82027cfa2f7e790cf326a297bd676027728c1d8e0e11b06d2c306691d"
+
+[[files]]
+file = "kubejs/assets/burnt_additions/lang/fr_fr.json"
+hash = "ac6eea15f907f506639a43cc4cd0d5776061470e7b67b96390aa87b56246d011"
+
+[[files]]
+file = "kubejs/assets/cbc_at/lang/fr_fr.json"
+hash = "5fcd30d017108b0a2180acd709669b55bab237577644918b64ca695d7ef0fe99"
+
+[[files]]
+file = "kubejs/assets/cbc_terminal_ballistics/lang/fr_fr.json"
+hash = "c43e74d7c3dff3b99b9b2f68733ee8fe43259c32d3982681e96f87839f4a1d13"
+
+[[files]]
+file = "kubejs/assets/cbcmodernwarfare/lang/fr_fr.json"
+hash = "40245f1d6a67e96012c9bde3dadd7362ec48c843d9322214c62875c1e319a0d4"
+
+[[files]]
+file = "kubejs/assets/cgs/lang/fr_fr.json"
+hash = "d5cca75d87427bed609bc2a62152d5eab3683dfc9e38c8a1861d351632782895"
+
+[[files]]
+file = "kubejs/assets/cloth-config2/lang/fr_fr.json"
+hash = "8de8d7dda4d47f66e395b5ddf25c25177ff283274211abf02bb318aa60cd0783"
+
+[[files]]
+file = "kubejs/assets/comforts/lang/fr_fr.json"
+hash = "be76ad690390ab2be40de55589a86e4be4fbf7c2828f0a9febff3a87e47725f8"
+
+[[files]]
+file = "kubejs/assets/configured/lang/fr_fr.json"
+hash = "13842b4081f2683b45453227f0b8500b4301d9e37b2bd670891133d08180d862"
+
+[[files]]
+file = "kubejs/assets/controlling/lang/fr_fr.json"
+hash = "5c1e9e9f50397a4f53e9899a04bdedaa42fae2791cca7f1b8497a0881a8cc3ae"
+
+[[files]]
+file = "kubejs/assets/copycats/lang/fr_fr.json"
+hash = "711b0285dde970f26db60807b36b43255e52c34b6e8798e291fa3f96f4b0c3ba"
+
+[[files]]
+file = "kubejs/assets/corpse/lang/fr_fr.json"
+hash = "5bb6ceb3954b44c0a6ce20d607020a025c1ccc4e8e97102a50ac22b6d2919b41"
+
+[[files]]
+file = "kubejs/assets/cr_aero_structures/lang/fr_fr.json"
+hash = "02af603d1205ddbb00bf31745527c9f32ea78d7902f41d959135bcf3bdef959d"
+
+[[files]]
+file = "kubejs/assets/create/lang/fr_fr.json"
+hash = "003aa7b1765aa4e78a9fa8aa6a8fb68c070a0f389f802d4d6cd08dfca7697536"
+
+[[files]]
+file = "kubejs/assets/create_aero_radar/lang/fr_fr.json"
+hash = "332ede2099b3fd0ba6c870bc3cd8e75239704a2cfee548220f6bbe87c8cb9db4"
+
+[[files]]
+file = "kubejs/assets/create_bb/lang/fr_fr.json"
+hash = "82e82806866b166786dae19cd527d32815d0523518dd31abfdf98fe16907a82d"
+
+[[files]]
+file = "kubejs/assets/create_better_motors/lang/fr_fr.json"
+hash = "6705a398e4b13dc3000b526c41eb77373c991e899517324319091e46c37194b9"
+
+[[files]]
+file = "kubejs/assets/create_central_kitchen/lang/fr_fr.json"
+hash = "ba77ac61db4415e4e3683b9269b44f042a8537e31f1023185b3e903d20c88be0"
+
+[[files]]
+file = "kubejs/assets/create_confectionery/lang/fr_fr.json"
+hash = "f0400e5cd29e8dcd404ef6bcab2fb68935f83abc9f389b7e47ba66b7e353be86"
+
+[[files]]
+file = "kubejs/assets/create_connected/lang/fr_fr.json"
+hash = "865a794f32b4670581f0684fd3d94b7043f135a852642897825287be6ddf8ab7"
+
+[[files]]
+file = "kubejs/assets/create_dragons_plus/lang/fr_fr.json"
+hash = "99dcea25a5c766cbaad5deb4859f61e5d57e4658a301623b0c961069d70a59c3"
+
+[[files]]
+file = "kubejs/assets/create_easy_structures/lang/fr_fr.json"
+hash = "35e717d786419928eb28c9c32550a2ab64a621fa316249a1c94ead46fc3e742d"
+
+[[files]]
+file = "kubejs/assets/create_factory_logistics/lang/fr_fr.json"
+hash = "c295b5ae90c5a760074979293f499ead596579c6aa36a5425d3b46dd4814f595"
+
+[[files]]
+file = "kubejs/assets/create_hypertube/lang/fr_fr.json"
+hash = "8393e9d0cd875ddfb5531dce6ee117fa4de827a8e48be654e34fe9d8d9d58074"
+
+[[files]]
+file = "kubejs/assets/create_jetpack/lang/fr_fr.json"
+hash = "a81b92e01a669850362b3f9950b3236a8cd863401992061375d110ce43c50ccd"
+
+[[files]]
+file = "kubejs/assets/create_lnl/lang/fr_fr.json"
+hash = "20cd51543a306cbf5fd83624623343f1775b345177583d24685fe55dffb9d637"
+
+[[files]]
+file = "kubejs/assets/create_mechanical_extruder/lang/fr_fr.json"
+hash = "714bcb2cbe990dc85051325e584775a9b47682e8075aee4169f80db00718f098"
+
+[[files]]
+file = "kubejs/assets/create_netherless/lang/fr_fr.json"
+hash = "6ab97198d7d7a5e3f3da27e0e24e0e42fc7414b18bc87859dcca4382ba654a4a"
+
+[[files]]
+file = "kubejs/assets/create_new_age/lang/fr_fr.json"
+hash = "916070de2cb5bb2ddabfd5a03afbd7be6a209d891d96c355363099591f71fba5"
+
+[[files]]
+file = "kubejs/assets/create_radar/lang/fr_fr.json"
+hash = "88bd6b3837b1be0d2f7c28c847dc11320ccab3672f69cb6d854ff82f652ca307"
+
+[[files]]
+file = "kubejs/assets/create_simulated_thrusters/lang/fr_fr.json"
+hash = "f3731dbf3f2f0f1b49fb87205cf964ae6f4e9808bca7a60261f7934f31f47b99"
+
+[[files]]
+file = "kubejs/assets/create_structures_arise/lang/fr_fr.json"
+hash = "72b7b494183be5a19c4524b60590bd2be2fb16c984bd23a56c84cc1b21dde264"
+
+[[files]]
+file = "kubejs/assets/create_the_air_wars/lang/fr_fr.json"
+hash = "e177e60ae00efb0379e408cfb3c9b13f4594261b8cf035e558bf22d6f561b2f6"
+
+[[files]]
+file = "kubejs/assets/create_train_perspective/lang/fr_fr.json"
+hash = "d9024384cc6b9e8ab22b78497292031a195a0b122053374964facc67b2a67363"
+
+[[files]]
+file = "kubejs/assets/createaddition/lang/fr_fr.json"
+hash = "59640aec9f0d78a2638d0feecd4e63ad11f067d87a5cbdd9afa4a914a0a9fd60"
+
+[[files]]
+file = "kubejs/assets/createadditionallogistics/lang/fr_fr.json"
+hash = "1d7b234d4f988dced746950bf17d8cfa83334215d3ee5004a9f482587a056406"
+
+[[files]]
+file = "kubejs/assets/createarms/lang/fr_fr.json"
+hash = "a179462fbbe5427d99203435ffdb02989d5db674545335766d2e337679bbefab"
+
+[[files]]
+file = "kubejs/assets/createbigcannons/lang/fr_fr.json"
+hash = "a59b5050980094a5c86f0a989a77703163420e3882a7dd1c0b73372f39fea75d"
+
+[[files]]
+file = "kubejs/assets/createcasing/lang/fr_fr.json"
+hash = "2c4c0f74370dc06c610e15bc51021e9f88df49ba9f3509f85aa29d31cf9c88ff"
+
+[[files]]
+file = "kubejs/assets/createcobblestone/lang/fr_fr.json"
+hash = "bb88134a0f55e19817543c088ed477a0abe96831ad920592b6ba51ba67c4f419"
+
+[[files]]
+file = "kubejs/assets/createdeco/lang/fr_fr.json"
+hash = "521fda24d207cbafd7715bb9a93af80d85566fcfa9fb5fac5a2d051ce0f03c14"
+
+[[files]]
+file = "kubejs/assets/createdieselgenerators/lang/fr_fr.json"
+hash = "c82fc04836b91f43970c4488151e1796e05185decf6a9858eaa384174dadb5ba"
+
+[[files]]
+file = "kubejs/assets/createenchantablemachinery/lang/fr_fr.json"
+hash = "9e3b036a4a3794cb1dc170d990127f0415e4eb5332dfe0f427406bd672900993"
+
+[[files]]
+file = "kubejs/assets/createframed/lang/fr_fr.json"
+hash = "e7d2633c5333d200c68d93a7a7b386f6883f4515cd4da355517be90a2f6adc93"
+
+[[files]]
+file = "kubejs/assets/creategoggles/lang/fr_fr.json"
+hash = "05457be83cc079d26dbfdf8e7a81ecc512bfb1cedb65571936bb4fa2ad05290e"
+
+[[files]]
+file = "kubejs/assets/createmissiles/lang/fr_fr.json"
+hash = "6df021642bb624cca5fbf8e0a18dc9d86a86c4d92d03870f6fd40590894cdcba"
+
+[[files]]
+file = "kubejs/assets/createmoredrillheads/lang/fr_fr.json"
+hash = "4d6ba859f121f430933e676b654da94efd3695f11fb973a4a0fb4c03e5fd2f33"
+
+[[files]]
+file = "kubejs/assets/createnuclear/lang/fr_fr.json"
+hash = "080cf0e40df816d44129259e5d744179b79de7f0e6b0df837b581312e006cfc9"
+
+[[files]]
+file = "kubejs/assets/createoreexcavation/lang/fr_fr.json"
+hash = "1d50368d35f2acb107783dc8effa830cc5427f923063d3492298073f954ecc1f"
+
+[[files]]
+file = "kubejs/assets/createpropulsion/lang/fr_fr.json"
+hash = "ebf336b74bc8befe05f47c1e91cd405b342945354eb75319dd16b88be504bd0f"
+
+[[files]]
+file = "kubejs/assets/createrailwaysnavigator/lang/fr_fr.json"
+hash = "c683333f1e1048f72822e1e612498663c54231a2f79dbf69ee674a99fb123cd7"
+
+[[files]]
+file = "kubejs/assets/createrecipeconflictfixer/lang/fr_fr.json"
+hash = "3bbccc972144f010eabafcea2cfac1df5b10df61dfa63315916b35c2daf5acc5"
+
+[[files]]
+file = "kubejs/assets/cristellib/lang/fr_fr.json"
+hash = "ae5b7c59ca65b014a3c95565a9b25a94c7d757641444ab7bb100d27d3ef6c3a8"
+
+[[files]]
+file = "kubejs/assets/deeperdarker/lang/fr_fr.json"
+hash = "da5b06bbfe66f6333281f062389f7bd755358386bfe5ecf9e68ea52e5e430e4d"
+
+[[files]]
+file = "kubejs/assets/defaultoptions/lang/fr_fr.json"
+hash = "6b8c53ae69e82e24ccd5ba104db89476f73f9ff5093f29d3f60894b76a222b5d"
+
+[[files]]
+file = "kubejs/assets/distanthorizons/lang/fr_fr.json"
+hash = "dfaa5f7c0918515060c16cfcc012127d43aceae3c95a0bd474f2a04eb42647ff"
+
+[[files]]
+file = "kubejs/assets/dndecor/lang/fr_fr.json"
+hash = "c4f65accf078d367537ac1749172741ffe619792095a4a3a8d05c9cf75a43301"
+
+[[files]]
+file = "kubejs/assets/dndesires/lang/fr_fr.json"
+hash = "11fb7e434761d2e9332cd0f1fe6c550752c4f89d9dcedaa4d650779172a55fe1"
+
+[[files]]
+file = "kubejs/assets/dragonlib/lang/fr_fr.json"
+hash = "741e48bd9f2f03e1c3531dcbaf3bbd1960493d72d9573771db6d527adc7de78b"
+
+[[files]]
+file = "kubejs/assets/emi/lang/fr_fr.json"
+hash = "9059ef285617eb990bac9a8c92ee4af2cb3ae7ed541a4d96a4b52b6bda4a6188"
+
+[[files]]
+file = "kubejs/assets/enchdesc/lang/fr_fr.json"
+hash = "73303b20cc15d8cf79377680a3e0728d2299f81e1ba6ef99e26568c77981c987"
+
+[[files]]
+file = "kubejs/assets/entity_model_features/lang/fr_fr.json"
+hash = "d207da942e2b94631109cedd751c778fdc44ec4e1587497a68cf49641ae66e79"
+
+[[files]]
+file = "kubejs/assets/entity_texture_features/lang/fr_fr.json"
+hash = "2c2b35189df1292c7a22c9efe45990d2b896e298d33cf9ead9053d4ffba710db"
+
+[[files]]
+file = "kubejs/assets/entityculling/lang/fr_fr.json"
+hash = "17107b45cda42f154b75bdb0e4a48a229d320683e356099218942e4058150653"
+
+[[files]]
+file = "kubejs/assets/escalated/lang/fr_fr.json"
+hash = "587b45d1830d086813002cdcb042ae6579d41665730acde32aee0df37a29f1aa"
+
+[[files]]
+file = "kubejs/assets/examplemod/lang/fr_fr.json"
+hash = "f23cbf714793506239b0191c23d5b31d9a778f6d357bb8c4c335dda30f75d05b"
+
+[[files]]
+file = "kubejs/assets/flightlib/lang/fr_fr.json"
+hash = "e1e1350d766f45e914197370ad8314dbe7ce9aabe3dc6f302529a660d1f27edf"
+
+[[files]]
+file = "kubejs/assets/flywheel/lang/fr_fr.json"
+hash = "6b9630a92b1148b198f281304d5bdd0e98db30283224bac78580bb02e96ab168"
+
+[[files]]
+file = "kubejs/assets/friendsandfoes/lang/fr_fr.json"
+hash = "76a244adf0b41c2eafde6f935feca27ff77f9162798601ca23f5b968f5126c3a"
+
+[[files]]
+file = "kubejs/assets/ftbchunks/lang/fr_fr.json"
+hash = "ee09f747566e86fe954c1e3354718cab0c761790c3e41a5cbc1a0a6a1ef3c640"
+
+[[files]]
+file = "kubejs/assets/ftbessentials/lang/fr_fr.json"
+hash = "6613850bb357eb1b8285de9e74807e04c6a13d56442c1ee0637172ffc197f97a"
+
+[[files]]
+file = "kubejs/assets/ftblibrary/lang/fr_fr.json"
+hash = "a83de2c38929071bbd50c0d3b2d1f9c9ef991861d127c2e28c7eb7f480316131"
+
+[[files]]
+file = "kubejs/assets/ftbquests/lang/fr_fr.json"
+hash = "607a9738d57c037723667f8a06de5ec6d0fd37eb80f1fb809066c6549e5edad6"
+
+[[files]]
+file = "kubejs/assets/ftbteams/lang/fr_fr.json"
+hash = "1bd8c77ac625abe54c987b3c1534dd106571014cf8e19d3f136f819c2ff65b74"
+
+[[files]]
+file = "kubejs/assets/garnished/lang/fr_fr.json"
+hash = "b4e90bf6cf8825ec2457defafe002b33d0c427cd3e7832ae5ce20610ff864c5d"
+
+[[files]]
+file = "kubejs/assets/interiors/lang/fr_fr.json"
+hash = "45dc753e237a583681e3b78ef7ee5fd402e6d5501f32122879c3e59f07698ab7"
+
+[[files]]
+file = "kubejs/assets/inventoryessentials/lang/fr_fr.json"
+hash = "90691aa075fae2578c4d0f791c6f9c8bde1d20318f21c2fae63ccba420ea605b"
+
+[[files]]
+file = "kubejs/assets/iris/lang/fr_fr.json"
+hash = "bc7ae5923b5d7b8c845eb3f2b174b963c682a847680a95a5af05932b2b58a0c2"
+
+[[files]]
+file = "kubejs/assets/jade/lang/fr_fr.json"
+hash = "40e0b737adeec1e711cffa6fe184752d87c4ebf8d69222623e01b616028cd108"
+
+[[files]]
+file = "kubejs/assets/jeed/lang/fr_fr.json"
+hash = "ad6f35624b4effca60caff97dd76998ec1661db1877d5451602eb6bb43e60446"
+
+[[files]]
+file = "kubejs/assets/jei/lang/fr_fr.json"
+hash = "8aa261b64b47cf9076499bb291ea2c6b4e4721532488f649a9ca116f2c7ffe1f"
+
+[[files]]
+file = "kubejs/assets/jeresources/lang/fr_fr.json"
+hash = "4fbaa7eb71c7782a5c2d4a6238421d1d0638d99cf332b7cc8a514388924e8a03"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
@@ -91,6 +499,142 @@ hash = "8f353cf222047ec7f5904d3e280dda96119b4a136ca03b76f63b58542aef8cc5"
 [[files]]
 file = "kubejs/assets/kubejs/lang/fr_fr.json"
 hash = "8a9607fada12c7f475208a85adfaea5fd86c9aaa4f2cb7aa4e874b811bc5ccd8"
+
+[[files]]
+file = "kubejs/assets/locometal_armor/lang/fr_fr.json"
+hash = "a7343500fc69b7d9533d5f1b31c4d523dc29b782054edd7e64ab5e5067c5c948"
+
+[[files]]
+file = "kubejs/assets/mechanicals/lang/fr_fr.json"
+hash = "49d74b518328734c15277ec7bd9efe461d9b622cb2d3c03c70e936f3265082a3"
+
+[[files]]
+file = "kubejs/assets/mezz_config/lang/fr_fr.json"
+hash = "f1d032d78972430e17986af135f8afe3d868050a133611ecb978df33c495d7dd"
+
+[[files]]
+file = "kubejs/assets/modernfix/lang/fr_fr.json"
+hash = "0ae2692a581fb05ceb1d916d4bceb59126c9b4dddcbd809b3f0ca4f9616c5ef2"
+
+[[files]]
+file = "kubejs/assets/mowziesmobs/lang/fr_fr.json"
+hash = "3c90b05bda2190d36f9a73bfa745d254d76223444512126136f50751da7efa66"
+
+[[files]]
+file = "kubejs/assets/ntgl/lang/fr_fr.json"
+hash = "f2278514fae31b646031e949ecf07a8a9975994d77ad6878ef66fac2d47eda55"
+
+[[files]]
+file = "kubejs/assets/offroad/lang/fr_fr.json"
+hash = "818b68e48c28d9de8ad679bb2960b802dc2f93e7e7287ecff443bf5543615a26"
+
+[[files]]
+file = "kubejs/assets/ore_zombies_the_extinto/lang/fr_fr.json"
+hash = "3e8784e3f8004ecf73c4c40725bb893a3fbbedf6af459f3f318115a1f43521b1"
+
+[[files]]
+file = "kubejs/assets/overgeared/lang/fr_fr.json"
+hash = "38849d97c70b0fcddae1fffb5bb4fa620225c371254775112db4879fdb0c1667"
+
+[[files]]
+file = "kubejs/assets/polymorph/lang/fr_fr.json"
+hash = "aa9853ac13d0657d388bd17dd865af220c470854c99826acd26f832425739856"
+
+[[files]]
+file = "kubejs/assets/ponder/lang/fr_fr.json"
+hash = "6d97db00ffc31da93cd6af0f6a62d653916e5c0566743e79c3f6345ea094c23d"
+
+[[files]]
+file = "kubejs/assets/projectexplosive/lang/fr_fr.json"
+hash = "e181fc412fa3bd6c7892f1833f80b276f5cd2e5f242498bea6936530499d132e"
+
+[[files]]
+file = "kubejs/assets/radiologistics/lang/fr_fr.json"
+hash = "03d056a66d840fb8103c85c330135cc8693d8e0d596c8e5f40ac31f2d7c295cd"
+
+[[files]]
+file = "kubejs/assets/railways/lang/fr_fr.json"
+hash = "16b744c32f25d05c877370f948d51252e80f981a155d0bd112330446efa95994"
+
+[[files]]
+file = "kubejs/assets/sable/lang/fr_fr.json"
+hash = "63ca1e66d9355d2a37798af0463c2c6f7b6c6e59af03ac65edb938ebc7d6263b"
+
+[[files]]
+file = "kubejs/assets/sdrp/lang/fr_fr.json"
+hash = "ceb830327b6bc4191565d4c667d08162e1308968963cff34f7cc4da16d7eb8f1"
+
+[[files]]
+file = "kubejs/assets/simulated/lang/fr_fr.json"
+hash = "414e0faaf3bcc8d08c2134f816b869dc77855de96ef10c4319a38418b54984a7"
+
+[[files]]
+file = "kubejs/assets/sliceanddice/lang/fr_fr.json"
+hash = "b014ce6c8f46787b54c2521180aa48d17f15c48ff6eed3fd345ba6d0c04753be"
+
+[[files]]
+file = "kubejs/assets/sodium/lang/fr_fr.json"
+hash = "544e7465316c09c796a261772149bea459de042367f7773e4119edd9fa8f4171"
+
+[[files]]
+file = "kubejs/assets/sophisticatedbackpacks/lang/fr_fr.json"
+hash = "382d1b6cd5a729ffd5611ad8ee85c8626d5ce37212cfe1db53307bfaa545d2bd"
+
+[[files]]
+file = "kubejs/assets/sophisticatedcore/lang/fr_fr.json"
+hash = "fabcde61dcab1663624a3829b34ed83d52847763993862e2b45cc33834dd7751"
+
+[[files]]
+file = "kubejs/assets/spectrelib/lang/fr_fr.json"
+hash = "f827267b4a6322e6a6976edcbbd3c39a6802da03c505b06f90ea47a975b7c67b"
+
+[[files]]
+file = "kubejs/assets/struts/lang/fr_fr.json"
+hash = "6a50addc26e5c3fa823d0e38f0c7c716a1241fea0986875d56eca7f133a12446"
+
+[[files]]
+file = "kubejs/assets/tfmg/lang/fr_fr.json"
+hash = "715f545d14fb4094f5bff0aa87e04f9c5153f5333878fbc2e36cc3989b0cf626"
+
+[[files]]
+file = "kubejs/assets/toms_storage/lang/fr_fr.json"
+hash = "af83ddadce30745753b20eda6409dad99d2e86574af774b01add8fd3f2d5d086"
+
+[[files]]
+file = "kubejs/assets/veil/lang/fr_fr.json"
+hash = "b3f09bc63242a7515b2cb4cc9382ea9f5b69858347a3f07b9e96a9f59d1cb565"
+
+[[files]]
+file = "kubejs/assets/voicechat/lang/fr_fr.json"
+hash = "2ef36ce6556efec32daf73de5280e141925649bb42dc627cdc1216c14cbd579f"
+
+[[files]]
+file = "kubejs/assets/waystones/lang/fr_fr.json"
+hash = "e00e9ece91c9a6e485dc440ca568962d5844043f1bf3cd491abaea97028c015d"
+
+[[files]]
+file = "kubejs/assets/waystonessable/lang/fr_fr.json"
+hash = "934433db3be61def0e6b97a2df791f29741cdaa7a1af61c449852cb18918b936"
+
+[[files]]
+file = "kubejs/assets/xaerobetterpvp/lang/fr_fr.json"
+hash = "7fe4b385bc2132e54a6a2d7b0cc728b393e60e369e50eb705ba12f8dd4cd3f97"
+
+[[files]]
+file = "kubejs/assets/xaerolib/lang/fr_fr.json"
+hash = "ce6b48e3fa71ff156380c07dfeff5ebd88c21c961cba0cb9a2b9608ed61946f6"
+
+[[files]]
+file = "kubejs/assets/xaerominimap/lang/fr_fr.json"
+hash = "6ca3422e617c10d8569d787febfd3d16fc3e41ff90018682cb22aeb3fc30a1ea"
+
+[[files]]
+file = "kubejs/assets/xaeroworldmap/lang/fr_fr.json"
+hash = "21030b9db9034a2c258d856d278b3f78816f7539de4237cb4db0400d108770cd"
+
+[[files]]
+file = "kubejs/assets/yungsapi/lang/fr_fr.json"
+hash = "5971f2b9769b96553a054098a4835cc77bcac58386268118d98c72b3bedc1595"
 
 [[files]]
 file = "kubejs/data/cbc_at/recipe/cutting/rocket_pod_breech_cast_mould.json"

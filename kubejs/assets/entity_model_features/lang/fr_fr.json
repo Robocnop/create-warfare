@@ -1,0 +1,17 @@
+{
+ "entity_model_features.config.allowed_cem": "Modèles autorisés",
+ "entity_model_features.config.allowed_cem.all": "Tous",
+ "entity_model_features.config.allowed_cem.known_only": "Connus uniquement (surtout vanilla / OptiFine)",
+ "entity_model_features.config.allowed_cem.tooltip": "Détermine avec quels modèles EMF tentera d'interagir. Remarque : ce n'est pas parfait, certains mods utilisent simplement les identifiants de l'espace de noms vanilla et EMF y peut peu de chose",
+ "entity_model_features.config.allowed_cem.unknown_only": "Inconnus uniquement (surtout moddés)",
+ "entity_model_features.config.asmmaths": "Calculs d'animation compilés",
+ "entity_model_features.config.asmmaths.logASM": "Provoque du spam dans les journaux ; vous n'en avez probablement pas besoin sauf si le développeur vous a demandé de fournir un journal avec ceci.",
+ "entity_model_features.config.asmmaths.tooltip": "Vous voulez presque toujours l'activer.\nQuand il est désactivé, le système d'animation se rabat sur un arbre d'expressions plus coûteux en calcul, plus utile pour le débogage.",
+ "entity_model_features.config.export_rotations": "Exporter les rotations",
+ "entity_model_features.config.export_rotations.tooltip": "les modèles jem exportés ne devraient pas inclure les valeurs de rotation, car ils les héritent des parties vanilla\n cependant, certains éditeurs de modèles peuvent souhaiter avoir ces valeurs\n cette option les inclura dans les fichiers jem exportés",
+ "entity_model_features.config.logASM": "Journaliser l'état mathématique compilé",
+ "entity_model_features.config.parrot_shoulder_animate": "Les épaules-perroquets suivent les animations du joueur",
+ "entity_model_features.config.parrot_shoulder_animate.tooltip": "Fait suivre automatiquement par la position de l'épaule du perroquet celle du joueur animé, par défaut ; ce n'est pas équivalent aux points d'attache `parrot_left` et `parrot_right`, car ceux-ci ne pivotent pas.",
+ "entity_model_features.config.sulfur_cube_block": "Animation par défaut du bloc de cube de soufre",
+ "entity_model_features.config.sulfur_cube_block.tooltip": "Fait animer automatiquement par défaut les blocs internes du cube de soufre ; équivaut à avoir une attache 'sulfur_cube_block' dans la partie 'cube' du modèle avec un décalage de 0,0,0."
+}

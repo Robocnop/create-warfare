@@ -1,0 +1,13 @@
+{
+ "Use /locate structure betterstrongholds:stronghold instead!": "Utilisez plutôt /locate structure betterstrongholds:stronghold !",
+ "betterstrongholds.commands.locate.stronghold": "Utilisez plutôt /locate structure betterstrongholds:stronghold !",
+ "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds": "YUNG's Better Strongholds",
+ "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general": "Paramètres généraux",
+ "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.@Tooltip": "Paramètres généraux.",
+ "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.enableStructureRuin": "Activer la ruine des structures",
+ "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.enableStructureRuin.@Tooltip[0]": "Permet aux forteresses d'être légèrement détruites par de petites grottes en spaghetti.",
+ "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.enableStructureRuin.@Tooltip[1]": "Notez qu'elles resteront intactes face aux grandes cavernes.",
+ "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.filledPortalFrameChance": "Chance de cadre de portail rempli",
+ "text.autoconfig.betterstrongholds-fabric-1_21.option.betterStrongholds.general.filledPortalFrameChance.@Tooltip": "La chance que chaque bloc de cadre de portail de l'End apparaisse déjà rempli d'un œil d'Ender.",
+ "text.autoconfig.betterstrongholds-fabric-1_21.title": "YUNG's Better Strongholds"
+}

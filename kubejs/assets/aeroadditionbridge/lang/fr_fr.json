@@ -1,0 +1,12 @@
+{
+ "aeroadditionbridge.configuration.items": "Liste d'objets",
+ "aeroadditionbridge.configuration.logDirtBlock": "Journaliser le bloc de terre",
+ "aeroadditionbridge.configuration.magicNumber": "Nombre magique",
+ "aeroadditionbridge.configuration.magicNumberIntroduction": "Texte du nombre magique",
+ "aeroadditionbridge.configuration.section.aeroadditionbridge.common.toml": "Configuration d'Aero-Addition-Bridge",
+ "aeroadditionbridge.configuration.section.aeroadditionbridge.common.toml.title": "Configuration d'Aero-Addition-Bridge",
+ "aeroadditionbridge.configuration.title": "Configuration d'Aero-Addition-Bridge",
+ "block.aeroadditionbridge.example_block": "Bloc d'exemple",
+ "item.aeroadditionbridge.example_item": "Objet d'exemple",
+ "itemGroup.aeroadditionbridge": "Onglet du mod d'exemple"
+}

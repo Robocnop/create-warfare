@@ -1,0 +1,6 @@
+{
+ "commands.waystones.activateall.success.multiple": "%s Waystones activées pour %s joueurs",
+ "commands.waystones.activateall.success.single": "%s Waystones activées pour %s",
+ "gui.waystonessable.waystone_group.sable": "Sous-niveaux Sable",
+ "waystones.groups.sable": "Sous-niveaux Sable"
+}

@@ -1,0 +1,15 @@
+{
+ "create.gui.stock_keeper.click_to_cycle": "Cliquer pour changer",
+ "create.gui.stock_keeper.jei_sync.none": "Aucune synchronisation",
+ "create.gui.stock_keeper.jei_sync.none.description": "Les recherches du gestionnaire de stock et de la visionneuse de recettes restent indépendantes",
+ "create.gui.stock_keeper.jei_sync.sync_both": "Synchroniser vers et depuis la visionneuse de recettes ",
+ "create.gui.stock_keeper.jei_sync.sync_both.description": "Les recherches du gestionnaire de stock et de la visionneuse de recettes seront synchronisées",
+ "create.gui.stock_keeper.jei_sync.sync_from_jei": "Synchroniser depuis la visionneuse de recettes",
+ "create.gui.stock_keeper.jei_sync.sync_from_jei.description": "Les recherches dans la visionneuse de recettes seront reproduites dans le gestionnaire de stock",
+ "create.gui.stock_keeper.jei_sync.sync_from_stock_keeper": "Synchroniser depuis le gestionnaire de stock",
+ "create.gui.stock_keeper.jei_sync.sync_from_stock_keeper.description": "Les recherches dans le gestionnaire de stock seront reproduites dans la visionneuse de recettes",
+ "create.keyinfo.alt_modifier": "Modificateur Alt",
+ "create.keyinfo.ctrl_modifier": "Modificateur Ctrl",
+ "create.keyinfo.shift_modifier": "Modificateur Maj",
+ "tag.item.c.foods.dough.wheat": "Pâtes de blé"
+}

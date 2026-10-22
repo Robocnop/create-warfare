@@ -1,0 +1,6 @@
+{
+ "text.cloth-config.disabled_tooltip": "Désactivé (conditions non remplies)",
+ "text.cloth-config.testing.1": "Vous êtes développeur de mods et vous voulez utiliser %1$s ? Rendez-vous sur %2$s pour commencer. Vous pouvez aussi %3$s.",
+ "text.cloth-config.testing.2": "le wiki de Cloth Config",
+ "text.cloth-config.testing.3": "cliquer ici pour ouvrir le fichier d'options de Minecraft sans raison particulière"
+}

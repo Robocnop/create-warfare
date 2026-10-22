@@ -1,0 +1,13 @@
+{
+ "Use /locate structure betterjungletemples:jungle_temple instead!": "Utilisez plutôt /locate structure betterjungletemples:jungle_temple !",
+ "text.autoconfig.betterjungletemples-fabric-1_21.option.betterJungleTemples": "YUNG's Better Jungle Temples",
+ "text.autoconfig.betterjungletemples-fabric-1_21.option.betterJungleTemples.compat": "Compatibilité des mods",
+ "text.autoconfig.betterjungletemples-fabric-1_21.option.betterJungleTemples.compat.@Tooltip": "Paramètres de compatibilité des mods",
+ "text.autoconfig.betterjungletemples-fabric-1_21.option.betterJungleTemples.compat.pickYourPoisonEnabled": "Activer la compatibilité avec Pick Your Poison",
+ "text.autoconfig.betterjungletemples-fabric-1_21.option.betterJungleTemples.compat.pickYourPoisonEnabled.@Tooltip": "Indique si les fléchettes empoisonnées de PYP doivent apparaître dans les Better Jungle Temples.",
+ "text.autoconfig.betterjungletemples-fabric-1_21.option.betterJungleTemples.general": "Général",
+ "text.autoconfig.betterjungletemples-fabric-1_21.option.betterJungleTemples.general.@Tooltip": "Paramètres généraux",
+ "text.autoconfig.betterjungletemples-fabric-1_21.option.betterJungleTemples.general.disableVanillaJungleTemples": "Désactiver les temples de la jungle vanilla",
+ "text.autoconfig.betterjungletemples-fabric-1_21.option.betterJungleTemples.general.disableVanillaJungleTemples.@Tooltip": "Indique si les temples de la jungle vanilla doivent être désactivés.",
+ "text.autoconfig.betterjungletemples-fabric-1_21.title": "YUNG's Better Jungle Temples"
+}

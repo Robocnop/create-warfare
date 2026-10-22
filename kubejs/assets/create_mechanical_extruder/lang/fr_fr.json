@@ -1,0 +1,16 @@
+{
+ "block.create_mechanical_extruder.mechanical_brass_extruder": "Extrudeuse mécanique en laiton",
+ "block.create_mechanical_extruder.mechanical_extruder": "Extrudeuse mécanique",
+ "create_mechanical_extruder.goggles.bonks": "%1$s coups",
+ "create_mechanical_extruder.itemGroup:main": "Create Mechanical Extruder",
+ "create_mechanical_extruder.ponder.extruder.header": "Génération de blocs",
+ "create_mechanical_extruder.ponder.extruder.text_1": "L'extrudeuse utilise la force de rotation pour générer des blocs",
+ "create_mechanical_extruder.ponder.extruder.text_2": "La génération dépend des blocs situés sur les côtés et en dessous.",
+ "create_mechanical_extruder.ponder.extruder.text_3": "Quand le processus est terminé, le résultat peut être récupéré par un clic droit",
+ "create_mechanical_extruder.ponder.extruder.text_4": "Les sorties peuvent aussi être extraites par automatisation",
+ "create_mechanical_extruder.ponder.extruder.text_5": "Quand une combinaison d'ingrédients a plusieurs résultats possibles, l'emplacement de filtre permet de le préciser",
+ "create_mechanical_extruder.recipe.extruding": "Recette d'extrusion",
+ "create_mechanical_extruder.ui.recipe.extruding.consumes_block": "Consomme un bloc",
+ "mechanicals.ui.recipe_requirement.advanced_extruder.tooltip.title": "Extrudeuse en laiton",
+ "mechanicals.ui.recipe_requirement.bonks.tooltip.title": "Coups :"
+}

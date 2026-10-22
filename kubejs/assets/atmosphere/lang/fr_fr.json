@@ -1,0 +1,10 @@
+{
+ "atmosphere.command.local_providers.created": "fournisseur météo local créé avec l'ID %s",
+ "atmosphere.command.local_providers.duplicate": "impossible de créer le fournisseur météo local, l'ID %s existe déjà",
+ "atmosphere.command.local_providers.list.header": "il y a %s fournisseurs météo locaux",
+ "atmosphere.command.local_providers.removed": "fournisseur météo local supprimé avec l'ID %s",
+ "atmosphere.command.local_providers.unknown": "il n'y a aucun fournisseur météo local avec l'ID %s",
+ "atmosphere.command.weather_condition.unknown": "condition météo inconnue « %s »",
+ "atmosphere.debug.render.disabled": "rendu de débogage d'atmosphere désactivé",
+ "atmosphere.debug.render.enabled": "rendu de débogage d'atmosphere activé"
+}

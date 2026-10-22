@@ -1,0 +1,20 @@
+{
+ "mezz_config.config.defaultValue": "Valeur par défaut : %s",
+ "mezz_config.config.description": "Description : %s",
+ "mezz_config.config.fileWatcher": "Surveillance des fichiers",
+ "mezz_config.config.fileWatcher.changeSettlingDelayMilliseconds": "Délai de stabilisation des modifications",
+ "mezz_config.config.fileWatcher.changeSettlingDelayMilliseconds.description": "Millisecondes d'attente après le dernier événement du système de fichiers avant de recharger les fichiers de configuration modifiés.",
+ "mezz_config.config.fileWatcher.description": "Contrôle la surveillance automatique des fichiers de configuration et le délai de rechargement.",
+ "mezz_config.config.fileWatcher.enabled": "Surveillance automatique des fichiers",
+ "mezz_config.config.fileWatcher.enabled.description": "Surveille automatiquement les fichiers de configuration et les recharge quand ils sont modifiés en dehors du jeu.",
+ "mezz_config.config.fileWatcher.missingDirectoryRetryIntervalMilliseconds": "Intervalle de nouvelle tentative pour dossier manquant",
+ "mezz_config.config.fileWatcher.missingDirectoryRetryIntervalMilliseconds.description": "Millisecondes entre les tentatives de surveillance des dossiers de configuration qui n'existent pas encore.",
+ "mezz_config.config.logging": "Journalisation",
+ "mezz_config.config.logging.description": "Contrôle la journalisation de diagnostic facultative de MezzConfig.",
+ "mezz_config.config.logging.logUntranslatedKeys": "Journaliser les clés non traduites",
+ "mezz_config.config.logging.logUntranslatedKeys.description": "Journalise les clés de catégories et de valeurs absentes de la langue active. Activé par défaut dans les environnements de développement.",
+ "mezz_config.config.name": "Nom : %s",
+ "mezz_config.config.requiresGameRestart": "Nécessite un redémarrage du jeu pour prendre effet.",
+ "mezz_config.config.requiresWorldRestart": "Nécessite un redémarrage du monde pour prendre effet.",
+ "mezz_config.config.valueValues": "Valeurs valides : %s"
+}

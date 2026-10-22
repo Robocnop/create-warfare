@@ -1,0 +1,13 @@
+{
+ "flightlib.subtitle.whoosh": "Le jetpack siffle",
+ "key.categories.movement.jetpack": "Jetpack",
+ "key.jetpack.activate_elytra.description": "Élytres actifs",
+ "key.jetpack.toggle_active.description": "Basculer le moteur du jetpack",
+ "key.jetpack.toggle_hover.description": "Basculer le mode vol stationnaire",
+ "message.flightlib.control.off": "désactivé",
+ "message.flightlib.control.on": "activé",
+ "message.flightlib.control.toggle_active": "Moteur du jetpack %s",
+ "message.flightlib.control.toggle_hover": "Mode vol stationnaire du jetpack %s",
+ "overlay.flightlib.control.toggle_active": "Actif",
+ "overlay.flightlib.control.toggle_hover": "Vol stationnaire"
+}
