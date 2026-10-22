@@ -9,6 +9,18 @@ file = "config/almostunified/unification/materials.json"
 hash = "5af8dcb3757bd6e5b48bf032b3a3d64f4d96c88ac50849dfa29fcecc5662734f"
 
 [[files]]
+file = "config/arcon-server.toml"
+hash = "fa6893f7bcfd1c48dc22eb8763f6149a21543f6b82f657dbe593011d3c6a10cd"
+
+[[files]]
+file = "config/create_radar-server.toml"
+hash = "af5087a4c13325031be91906a056e83e8782350587b1f764bd58cc348148e8b7"
+
+[[files]]
+file = "config/createbigcannons-server.toml"
+hash = "9c090b6112995c9ae44c957be22e2608df1b7751d2ea1889ca18270d7522d7c7"
+
+[[files]]
 file = "config/defaultoptions/options.txt"
 hash = "291773bd4e35ce89bafd946f5af2e2204291d60a9a29a939f7cee15ccc005104"
 
@@ -22,51 +34,115 @@ hash = "f035a262f6dbe9afd2cb8efd34e7df258bda45e1ea033f9fc8ff4141020a4a1b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/01_engrenages.snbt"
-hash = "a4da5c867bbc89842503a20ccfb376e795799137580071d924c052803b599f29"
+hash = "58d8b82b98f99835c99d551a8d1b9a8f14d866ce20fe5102057d78f38780e205"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/02_laiton.snbt"
-hash = "1b34644b3558e9822b17f1d583f10b255364dd091d0193b443d9849a9324e158"
+hash = "358ed8e5aa53b2c913f2a09a5fa3c2b7168642026146c9f1afbf43672ca492d3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/03_electricite.snbt"
-hash = "ec802bb750fecfc5e2847cf229d4e64b7e93852eaf3d2f3e02b27f5971bca02b"
+hash = "34caec24d63a91f1a19375bd866e025d211e2721871d55facca5a201636551da"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/04_industrie.snbt"
-hash = "5439de1ae2b87f6e2d8d11ed939aa24f949d1b5b470d58b1166e93787edbd2e4"
+hash = "0d2b4e9439cb1d29f69a4c4ff3cb96409dc293ba91c01034213d5d5ed3239026"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/05_artillerie.snbt"
-hash = "8a766c6c29562d57d874161b306bda5b8bedf63ed60ca4a76940429146f12740"
+hash = "476ec50b314a4bc15de3f98e6ce9cba311694787988b6f959b84a349523d6911"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/06_aviation.snbt"
-hash = "7a2f3fc036782a0585036357ddda77606175c6009baa028f3155ad49a6b2193a"
+hash = "bffc8bac99d5eb71cc81f2f544a6d907942ca738ef5006945817e1eeced9acb1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/07_blindes.snbt"
-hash = "2512a19498f23e18dcfc394b1bbe6140e7711685b877f082d95d8841cc2d00b3"
+hash = "53fa55fa86b1044deb9577652177b62fbb62432c481377247756a5c3d23cc1b9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/08_nucleaire.snbt"
-hash = "0c8429b259b3417f443d7cbaf4c5d23cdc8ccb748b30691f8c6eac39d577e2d2"
+hash = "521fbcbc864f862d51920f6247f3ce0d73aaf4940eae967ce46460919039d8e5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/09_missiles.snbt"
-hash = "1ff478d93306c32a79cb16a3d919b38a3e8c855c1c4fc0b48547d9b7b75b53e2"
+hash = "c0490dc57f9f972fcb7f63f5f2a030ee1f58bf40abbaa6d3a56f888aaa0c5a10"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/10_adm.snbt"
-hash = "d776fe300928c869839e78f404cc90d26196535f9cc3fdacb8d008c56b758b2a"
+hash = "6a691e16f2186943eb7584965e090a88592368ff767fd7764f7f7acbaf1fd752"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "fd34f872de65175bfa2ada339cd3a2c692a6b7352b23cc5aa81d1e453a55ab0d"
+hash = "6bddf76dfa73b8a968df9af40ea944a10e0fe424e8482cb19d92d389046c9b64"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "1d2a257d22bd14ea5967a6f150cfa4911b932052a56c5bdf39de69115e20cb75"
+hash = "b39771e1a730cf9f2b7774e9bfda9b8d718bd868a3f9de450cb042a66ee478e5"
+
+[[files]]
+file = "config/projectexplosive-common.toml"
+hash = "39f321573c33c8cbe66a4fc3c67aeb11d59051f0526d7817d85bbe898e7fc30f"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/en_us.json"
+hash = "8f353cf222047ec7f5904d3e280dda96119b4a136ca03b76f63b58542aef8cc5"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/fr_fr.json"
+hash = "8a9607fada12c7f475208a85adfaea5fd86c9aaa4f2cb7aa4e874b811bc5ccd8"
+
+[[files]]
+file = "kubejs/data/cbc_at/recipe/cutting/rocket_pod_breech_cast_mould.json"
+hash = "ab2aaf7ea629c4dbe458d67cc1669bf2e7532a80030d33a6fdaf1f9637937862"
+
+[[files]]
+file = "kubejs/data/cbc_at/recipe/cutting/rocket_pod_rail_cast_mould.json"
+hash = "2b3d045943835571a7b191dcd9ccff33276aa67b7cb9ea9d3726dddd0bd72883"
+
+[[files]]
+file = "kubejs/data/cbc_at/recipe/cutting/twin_autocannon_barrel_cast_mould.json"
+hash = "ef793da50fb18ecb437f53a59357f4adf20963dbace7677622bff3db00b867ee"
+
+[[files]]
+file = "kubejs/data/cbc_terminal_ballistics/recipe/armor_upgrader.json"
+hash = "74db4ee27de6fcd117bb55814c897e7dda7aa9a6061efed750df0f6fd395b57b"
+
+[[files]]
+file = "kubejs/data/cbc_terminal_ballistics/recipe/copycat_armor_layer.json"
+hash = "572cefadca1d99c7bcba31b0596313f532abf2a3c957e54514ed4b0699060a12"
+
+[[files]]
+file = "kubejs/data/createadditionallogistics/recipe/crafting/trains/network_monitor.json"
+hash = "0d6d45aa3d02f1de94a7a889c356c40c9e7e3c336c70ccdbe10af75575d0ba12"
+
+[[files]]
+file = "kubejs/data/createdeco/recipe/placard.json"
+hash = "8f1addaffee7ce406d157f30c728fe1fb592c31c08211da042911cb49410da7a"
+
+[[files]]
+file = "kubejs/data/createmissiles/loot_table/chests/depot_nether_chest.json"
+hash = "76321e9d1cb11dd2de6c19caca47f1a3cbbd20ccc85d6f51bfb6cc5f6e8401e0"
+
+[[files]]
+file = "kubejs/data/createmissiles/loot_table/chests/depot_snowy_chest.json"
+hash = "76321e9d1cb11dd2de6c19caca47f1a3cbbd20ccc85d6f51bfb6cc5f6e8401e0"
+
+[[files]]
+file = "kubejs/data/createmissiles/loot_table/chests/missile_chest_guardian.json"
+hash = "c64ec576385a52ba295df1eccd29e110a3b432369f5b1238b63468db7b3f5392"
+
+[[files]]
+file = "kubejs/server_scripts/balance/crosslinks.js"
+hash = "89de629187d73ea736561f265bb4a71160cd93aa254a106e0d77f26d4c738078"
+
+[[files]]
+file = "kubejs/server_scripts/balance/military.js"
+hash = "595e5fb0863f5e29f01a79c0b6bc680ed6baa0697d84d503679087073d46b5eb"
+
+[[files]]
+file = "kubejs/startup_scripts/launch_codes.js"
+hash = "d91578c3eda8d0d2dcaf2d38f6202254b12133b8a491befc6a4cef74ba3740e9"
 
 [[files]]
 file = "mods/almostunified.pw.toml"
