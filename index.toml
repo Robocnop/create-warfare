@@ -373,8 +373,16 @@ file = "kubejs/assets/createrecipeconflictfixer/lang/fr_fr.json"
 hash = "3bbccc972144f010eabafcea2cfac1df5b10df61dfa63315916b35c2daf5acc5"
 
 [[files]]
+file = "kubejs/assets/creativecore/lang/fr_fr.json"
+hash = "42441585321a5b7892e6bc0ac8586bab430a6571acd71f6b2a1e82b638f43a66"
+
+[[files]]
 file = "kubejs/assets/cristellib/lang/fr_fr.json"
 hash = "ae5b7c59ca65b014a3c95565a9b25a94c7d757641444ab7bb100d27d3ef6c3a8"
+
+[[files]]
+file = "kubejs/assets/curios/lang/fr_fr.json"
+hash = "94c2a23e0369b0e7f6f704bf06a0d870dc3172b767753dc542129efab275c709"
 
 [[files]]
 file = "kubejs/assets/deeperdarker/lang/fr_fr.json"
@@ -429,6 +437,10 @@ file = "kubejs/assets/examplemod/lang/fr_fr.json"
 hash = "f23cbf714793506239b0191c23d5b31d9a778f6d357bb8c4c335dda30f75d05b"
 
 [[files]]
+file = "kubejs/assets/fallingleaves/lang/fr_fr.json"
+hash = "fe46d0d85d2dd11b8c9f0314420bebb8207c659e4cc161eaea182609e445217d"
+
+[[files]]
 file = "kubejs/assets/flightlib/lang/fr_fr.json"
 hash = "e1e1350d766f45e914197370ad8314dbe7ce9aabe3dc6f302529a660d1f27edf"
 
@@ -459,6 +471,10 @@ hash = "607a9738d57c037723667f8a06de5ec6d0fd37eb80f1fb809066c6549e5edad6"
 [[files]]
 file = "kubejs/assets/ftbteams/lang/fr_fr.json"
 hash = "1bd8c77ac625abe54c987b3c1534dd106571014cf8e19d3f136f819c2ff65b74"
+
+[[files]]
+file = "kubejs/assets/fzzy_config/lang/fr_fr.json"
+hash = "065f9627d086496ac0a339f65015b8b3717a8f883b3190cd50b2c395a9fcc4d8"
 
 [[files]]
 file = "kubejs/assets/garnished/lang/fr_fr.json"
@@ -521,6 +537,10 @@ file = "kubejs/assets/mowziesmobs/lang/fr_fr.json"
 hash = "3c90b05bda2190d36f9a73bfa745d254d76223444512126136f50751da7efa66"
 
 [[files]]
+file = "kubejs/assets/northstar/lang/fr_fr.json"
+hash = "3fab6650bca5c40f49c42a20b71146349f886dab155bdbc6907244b796977aa5"
+
+[[files]]
 file = "kubejs/assets/ntgl/lang/fr_fr.json"
 hash = "f2278514fae31b646031e949ecf07a8a9975994d77ad6878ef66fac2d47eda55"
 
@@ -535,6 +555,10 @@ hash = "3e8784e3f8004ecf73c4c40725bb893a3fbbedf6af459f3f318115a1f43521b1"
 [[files]]
 file = "kubejs/assets/overgeared/lang/fr_fr.json"
 hash = "38849d97c70b0fcddae1fffb5bb4fa620225c371254775112db4879fdb0c1667"
+
+[[files]]
+file = "kubejs/assets/particlerain/lang/fr_fr.json"
+hash = "db14eebe16a75a330a3316378fa15b610685633df160fc30f943e73a2d22393b"
 
 [[files]]
 file = "kubejs/assets/polymorph/lang/fr_fr.json"
@@ -585,12 +609,24 @@ file = "kubejs/assets/sophisticatedcore/lang/fr_fr.json"
 hash = "fabcde61dcab1663624a3829b34ed83d52847763993862e2b45cc33834dd7751"
 
 [[files]]
+file = "kubejs/assets/sound_physics_remastered/lang/fr_fr.json"
+hash = "a80e494753f66444734fcb01a0f48aa564dc20367abdd73f60e19b10dbb3eb18"
+
+[[files]]
 file = "kubejs/assets/spectrelib/lang/fr_fr.json"
 hash = "f827267b4a6322e6a6976edcbbd3c39a6802da03c505b06f90ea47a975b7c67b"
 
 [[files]]
 file = "kubejs/assets/struts/lang/fr_fr.json"
 hash = "6a50addc26e5c3fa823d0e38f0c7c716a1241fea0986875d56eca7f133a12446"
+
+[[files]]
+file = "kubejs/assets/subtle_effects/lang/fr_fr.json"
+hash = "abfe9c80195310e769a2a944a25d19ca8b75f0c4f80f1b80e61e17151a3dec09"
+
+[[files]]
+file = "kubejs/assets/superbwarfare/lang/fr_fr.json"
+hash = "09bd9a11a93d0ab20d2a0005c98369561ae564bc3d585ce1a50d7094405fb9ea"
 
 [[files]]
 file = "kubejs/assets/tfmg/lang/fr_fr.json"
@@ -682,7 +718,7 @@ hash = "89de629187d73ea736561f265bb4a71160cd93aa254a106e0d77f26d4c738078"
 
 [[files]]
 file = "kubejs/server_scripts/balance/military.js"
-hash = "b271fd63f4c2fed3be2c23db0316ec976b3c60a3758f6de63a977c46167a0baf"
+hash = "229583e4ff03bb10fb040abe75ddfbfb16e98be9ebbd08b47712b2b481186552"
 
 [[files]]
 file = "kubejs/startup_scripts/launch_codes.js"
@@ -691,6 +727,11 @@ hash = "d91578c3eda8d0d2dcaf2d38f6202254b12133b8a491befc6a4cef74ba3740e9"
 [[files]]
 file = "mods/almostunified.pw.toml"
 hash = "3e902846339c2bb422d614993ba499fef007f185c9c29cb55804e3270ebb5ef7"
+metafile = true
+
+[[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "99f0f59dde17be1b469b4953651ad59f32f241a276bcdc5738bba2fe676c96f4"
 metafile = true
 
 [[files]]
@@ -741,6 +782,11 @@ metafile = true
 [[files]]
 file = "mods/burnt.pw.toml"
 hash = "7b6170707e8f9058bbd8bc681cf98d01ab8aa1ffee3602f84822d29735958c07"
+metafile = true
+
+[[files]]
+file = "mods/c2me.pw.toml"
+hash = "784e8ba62bacf16725ae458dfa8ee2a72173f0b85b58cab9528dcf9f1e1b846f"
 metafile = true
 
 [[files]]
@@ -1129,6 +1175,11 @@ hash = "21ac1923bd543d6e50a982fa1e5ee6b427ca2e0ebc3fe8de2a0dba97641e78a9"
 metafile = true
 
 [[files]]
+file = "mods/creativecore.pw.toml"
+hash = "6625585a9a683e8bbf66b75e1ba1701681349435e8a5ff11a930b0b564d97101"
+metafile = true
+
+[[files]]
 file = "mods/cristel-lib.pw.toml"
 hash = "c76891545fb28fbcd2c280cf451ad98a463f8a17a50e0eee8a33b3b410743711"
 metafile = true
@@ -1194,6 +1245,11 @@ hash = "9c0093c600ffa2e51804e15079de11e328e976a07048596e1f9d564898619fe2"
 metafile = true
 
 [[files]]
+file = "mods/falling-leaves-forge.pw.toml"
+hash = "f5b029566157fcc63dafcaef401b67821269547cb6fc014e4c0e7394796ea94f"
+metafile = true
+
+[[files]]
 file = "mods/fastfurnace.pw.toml"
 hash = "4f7c443c70a28284bfb40e613c835167c9c71f2db257714275041f16e280b6d9"
 metafile = true
@@ -1236,6 +1292,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "c21c2308684a75cda7dd9d557d129c9f89f49be527da3d5aa675fff444c11f5e"
+metafile = true
+
+[[files]]
+file = "mods/fzzy-config.pw.toml"
+hash = "4830202563bcbd49a8eba05931b4a21572282e8edaa476c223f7f853f527286b"
 metafile = true
 
 [[files]]
@@ -1344,6 +1405,11 @@ hash = "d424a9260ef51bc102e56f0423d91dfabb739ccca8a86eb1c450ea631b739280"
 metafile = true
 
 [[files]]
+file = "mods/northstar-redux.pw.toml"
+hash = "eedfa782fdcca8fafce9c387edc33f2323c887da852dc398e9eea6f74e864086"
+metafile = true
+
+[[files]]
 file = "mods/nukateams-gun-lib.pw.toml"
 hash = "8b4af86dc4c1846469326cc3fe73350a98a119650be241e499c6bd575c2e2482"
 metafile = true
@@ -1361,6 +1427,11 @@ metafile = true
 [[files]]
 file = "mods/packet-fixer.pw.toml"
 hash = "75d42d0a0bcfbcce376fb229f72b75e3a40592fdff5490b997c19ef439a9c832"
+metafile = true
+
+[[files]]
+file = "mods/particle-rain.pw.toml"
+hash = "33072e6d0d27e9d5d35ad83b0e9f68784358adf2af9d51b353e6641aa3188de5"
 metafile = true
 
 [[files]]
@@ -1419,6 +1490,11 @@ hash = "f2c81cf494b7b6c1063563d7377224cf64b29e0b86bcf87bcf4da8eb79b9c800"
 metafile = true
 
 [[files]]
+file = "mods/sbw-aeronautics-compat.pw.toml"
+hash = "2074a2a56e71b8fca9cfe0b1735b4c33e877cefd4d282aa7e9856f50257d07f9"
+metafile = true
+
+[[files]]
 file = "mods/searchables.pw.toml"
 hash = "b210b54498abff891f524a0ce32b7b81bfc88043604065bd4ece9e71c36427f4"
 metafile = true
@@ -1454,6 +1530,11 @@ hash = "4562fb2d63ea4aea7c6ced1f715e796caf7413a5dab9a7d8e708a83c7d62ec8d"
 metafile = true
 
 [[files]]
+file = "mods/sound-physics-remastered.pw.toml"
+hash = "3843deef9e2722fe4111e59d46c07015980f3120e10bb5a56a5818a60b5b78e8"
+metafile = true
+
+[[files]]
 file = "mods/spark.pw.toml"
 hash = "6d9eaf43c14c66465e87bf03cc5cb5ecef57b3f2e8063c52f6332d33689d30be"
 metafile = true
@@ -1466,6 +1547,16 @@ metafile = true
 [[files]]
 file = "mods/strut-your-stuff.pw.toml"
 hash = "be50160d9d37a186eaf955f39f22a4e1a3d76fb4e61c63aaca25fd5ab2124f9e"
+metafile = true
+
+[[files]]
+file = "mods/subtle-effects.pw.toml"
+hash = "e37f7d0e1286d488fb45b3999436601ffadfdf0621bd9fa929338c9865d149a5"
+metafile = true
+
+[[files]]
+file = "mods/superb-warfare.pw.toml"
+hash = "10fb3aa038890df497caac46dcde3729bb44f809d7decf3b3e9c7b4163affe66"
 metafile = true
 
 [[files]]

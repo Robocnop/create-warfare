@@ -1,0 +1,12 @@
+{
+ "gui.config.enabled": "Activé",
+ "gui.content": "Contenu",
+ "gui.false": "faux",
+ "gui.ingredient.latest": "Ingrédients récents :",
+ "gui.perm.add": "Ajouter un groupe",
+ "gui.perm.open": "Ouvrir les permissions",
+ "gui.play": "jouer",
+ "gui.true": "vrai",
+ "minecraft.blocks": "Blocs",
+ "minecraft.blocks.counting": "%s bloc(s)"
+}

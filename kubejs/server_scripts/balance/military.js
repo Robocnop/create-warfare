@@ -110,13 +110,25 @@ ServerEvents.recipes(event => {
 
 // Pose d'un ICBM : il faut des codes de lancement dans la main secondaire, un exemplaire est consommé.
 // Les joueurs en créatif ne sont pas concernés.
+const NO_CODES_MSG = 'Il faut des Codes de lancement dans la main secondaire pour armer un ICBM (quête « Codes de lancement », chapitre 10).'
+
+// Refus au clic droit, avant que l'objet ne soit utilisé : annuler seulement à la pose faisait perdre l'ICBM.
+BlockEvents.rightClicked(event => {
+  const player = event.player
+  if (!player || player.isCreative() || !ICBMS.includes(String(event.item.id))) return
+  if (player.offHandItem.id == LAUNCH_CODES) return
+  player.tell(Text.red(NO_CODES_MSG))
+  event.cancel()
+})
+
 ICBMS.forEach(icbm => {
+  // Filet de sécurité pour les poses qui ne passent pas par le clic d'un joueur (déployeur, etc.).
   BlockEvents.placed(icbm, event => {
     const player = event.player
     if (player && player.isCreative()) return
     const codes = player ? player.offHandItem : null
     if (!codes || codes.id != LAUNCH_CODES) {
-      if (player) player.tell(Text.red('Il faut des Codes de lancement dans la main secondaire pour armer un ICBM (quête « Codes de lancement », chapitre 10).'))
+      if (player) player.tell(Text.red(NO_CODES_MSG))
       return event.cancel()
     }
     codes.shrink(1)

@@ -8,7 +8,7 @@ Progression guidée par **122 quêtes FTB Quests en français** (10 chapitres, d
 Liste complète des mods et notes de compatibilité : [MODLIST.md](MODLIST.md).
 
 ## Jouer (CurseForge)
-1. Application CurseForge → Minecraft → **Créer un profil personnalisé** → **Importer** → choisir `dist/CreateWarfare-1.1.2.zip`.
+1. Application CurseForge → Minecraft → **Créer un profil personnalisé** → **Importer** → choisir `dist/CreateWarfare-1.2.0.zip`.
 2. Paramètres du profil → mémoire allouée : **10 Go** (réglée par défaut à l'import).
 3. Lancer. Le livre de quêtes s'ouvre depuis l'icône FTB Quests dans l'inventaire.
 4. Shader (optionnel, PC costaud) : Options → Vidéo → Shaders → **Complementary Reimagined**.
@@ -16,7 +16,7 @@ Liste complète des mods et notes de compatibilité : [MODLIST.md](MODLIST.md).
 
 ## Serveur dédié
 Prérequis : **Java 21** et **Python 3.11+**. 10 Go de RAM conseillés.
-1. Décompresser `dist/CreateWarfare-Server-1.1.2.zip` dans un dossier vide.
+1. Décompresser `dist/CreateWarfare-Server-1.2.0.zip` dans un dossier vide.
 2. Lancer `install.bat` (Windows) ou `install.sh` (Linux). Le script installe NeoForge et télécharge les 114 mods côté serveur.
 3. Mettre `eula=true` dans `eula.txt` (acceptation de l'EULA Minecraft).
 4. Lancer `start.bat` / `start.sh`. Port par défaut : 25565.

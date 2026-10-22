@@ -1,0 +1,13 @@
+name = "[SBW] Superb Warfare"
+filename = "superbwarfare-0.8.9.2-mc1.21.1-c22d98c2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2cfbb5d964d59f3eff64ec62ea406e852079b2d7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9019824
+project-id = 1218165

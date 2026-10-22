@@ -1,0 +1,13 @@
+name = "SBW Aeronautics compat"
+filename = "aerowarfare_compat-1.15.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c81a693128d41487bd89cba2d88beed2fdd5eacc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8119572
+project-id = 1528735
