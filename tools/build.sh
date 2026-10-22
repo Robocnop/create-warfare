@@ -28,7 +28,7 @@ with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
         z.write(os.path.join("server-files", f), f)
     for f in ("pack.toml", "index.toml", "tools/fetch_mods.py"):
         z.write(f, "pack/" + f)
-    for top in ("mods", "config"):
+    for top in ("mods", "config", "kubejs"):
         for dirpath, _, files in os.walk(top):
             for f in files:
                 p = os.path.join(dirpath, f)

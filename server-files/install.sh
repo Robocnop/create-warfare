@@ -10,4 +10,5 @@ if [ ! -d libraries/net/neoforged/neoforge/21.1.264 ]; then
 fi
 python3 -I pack/tools/fetch_mods.py server mods
 cp -r pack/config/. config/
+mkdir -p kubejs && cp -r pack/kubejs/. kubejs/
 echo "Installation terminee. Accepte l'EULA Minecraft dans eula.txt puis lance ./start.sh"

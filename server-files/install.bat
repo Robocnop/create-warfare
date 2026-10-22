@@ -9,6 +9,7 @@ if not exist libraries\net\neoforged\neoforge\21.1.264 (
 )
 python -I pack\tools\fetch_mods.py server mods || goto :err
 xcopy /E /Y /I pack\config config >nul
+xcopy /E /Y /I pack\kubejs kubejs >nul
 echo.
 echo Installation terminee. Accepte l'EULA Minecraft dans eula.txt puis lance start.bat
 pause

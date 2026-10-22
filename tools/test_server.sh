@@ -3,6 +3,7 @@
 cd "$(dirname "$0")/.." || exit 1
 python -I tools/fetch_mods.py server server-test/mods || exit 1
 cp -r config/. server-test/config/
+mkdir -p server-test/kubejs && cp -r kubejs/. server-test/kubejs/
 cd server-test || exit 1
 export PATH="/c/Program Files/Eclipse Adoptium/jdk-21.0.12.101-hotspot/bin:$PATH"
 rm -f console.log
