@@ -16,7 +16,7 @@ client = f"dist/CreateWarfare-{version}.zip"
 with zipfile.ZipFile(client) as z:
     entries = {n: z.read(n) for n in z.namelist()}
 manifest = json.loads(entries["manifest.json"])
-manifest["minecraft"]["recommendedRam"] = 8192
+manifest["minecraft"]["recommendedRam"] = 10240
 entries["manifest.json"] = json.dumps(manifest, indent=2).encode()
 with zipfile.ZipFile(client, "w", zipfile.ZIP_DEFLATED) as z:
     for n, data in entries.items():

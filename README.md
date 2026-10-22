@@ -9,7 +9,7 @@ Liste complète des mods et notes de compatibilité : [MODLIST.md](MODLIST.md).
 
 ## Jouer (CurseForge)
 1. Application CurseForge → Minecraft → **Créer un profil personnalisé** → **Importer** → choisir `dist/CreateWarfare-1.1.0.zip`.
-2. Paramètres du profil → mémoire allouée : **8 Go minimum** (10 Go conseillé).
+2. Paramètres du profil → mémoire allouée : **10 Go** (réglée par défaut à l'import).
 3. Lancer. Le livre de quêtes s'ouvre depuis l'icône FTB Quests dans l'inventaire.
 4. Shader (optionnel, PC costaud) : Options → Vidéo → Shaders → **Complementary Reimagined**.
    Fresh Animations (mobs animés) est activé d'office ; le statut Discord s'affiche tout seul.
