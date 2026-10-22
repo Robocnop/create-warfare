@@ -34,51 +34,51 @@ hash = "f035a262f6dbe9afd2cb8efd34e7df258bda45e1ea033f9fc8ff4141020a4a1b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/01_engrenages.snbt"
-hash = "58d8b82b98f99835c99d551a8d1b9a8f14d866ce20fe5102057d78f38780e205"
+hash = "c34b1e6454c7dfdf23e64957f881319e0a006787079fc01cd271f3e70e264b07"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/02_laiton.snbt"
-hash = "358ed8e5aa53b2c913f2a09a5fa3c2b7168642026146c9f1afbf43672ca492d3"
+hash = "31832ae8600746f56bb068d8f7b4855858f4cedf4d7a3a47e944f1b1cb1422c6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/03_electricite.snbt"
-hash = "34caec24d63a91f1a19375bd866e025d211e2721871d55facca5a201636551da"
+hash = "83a4f990a7c9adcbdf34792856e498eefd3def6acca148f69877e881212b6913"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/04_industrie.snbt"
-hash = "0d2b4e9439cb1d29f69a4c4ff3cb96409dc293ba91c01034213d5d5ed3239026"
+hash = "ede4760c14261e87dce53558a773c792d23b4b029ebab861a3df888b75222f83"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/05_artillerie.snbt"
-hash = "476ec50b314a4bc15de3f98e6ce9cba311694787988b6f959b84a349523d6911"
+hash = "f284adbddbe50f43dc061d78770e450d3634aade0517ad7c7895570206b53d14"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/06_aviation.snbt"
-hash = "bffc8bac99d5eb71cc81f2f544a6d907942ca738ef5006945817e1eeced9acb1"
+hash = "33a201c980c5331df167b73cfa0ab6af037d21d6cb3bfbc14fb2591e916d10bf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/07_blindes.snbt"
-hash = "53fa55fa86b1044deb9577652177b62fbb62432c481377247756a5c3d23cc1b9"
+hash = "d0b3d9c8edc8c2d4a057c9ff02378ba6c33f9c699b073cb3cef738fb7e5ee5e2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/08_nucleaire.snbt"
-hash = "521fbcbc864f862d51920f6247f3ce0d73aaf4940eae967ce46460919039d8e5"
+hash = "8ec33b440616bc2a9a7a2d7b9f0649b4f0358e9f931c9bbb8d7a5a3727acbb29"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/09_missiles.snbt"
-hash = "c0490dc57f9f972fcb7f63f5f2a030ee1f58bf40abbaa6d3a56f888aaa0c5a10"
+hash = "8fd72ff5bda87890fcee9fd549e93b64fe245ca8d79730034664c718a6a7a51c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/10_adm.snbt"
-hash = "6a691e16f2186943eb7584965e090a88592368ff767fd7764f7f7acbaf1fd752"
+hash = "0540754886fafe95e7d8771622abca0e6c10c3815b110a17618871a51a96af95"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "6bddf76dfa73b8a968df9af40ea944a10e0fe424e8482cb19d92d389046c9b64"
+hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b39771e1a730cf9f2b7774e9bfda9b8d718bd868a3f9de450cb042a66ee478e5"
+hash = "48ca105d2539d8668a188c0a693b5edaf3cd513e0db26bec9b49242c676c4455"
 
 [[files]]
 file = "config/projectexplosive-common.toml"

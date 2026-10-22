@@ -163,7 +163,7 @@ CHAPTERS = [
         ("flash_goggles", "projectexplosive:flash_goggles", 1, "Lunettes anti-flash", "Pour regarder le champignon sans devenir aveugle.", ["munitions_workbench"], 100),
         ("geiger", "projectexplosive:radiation_detector", 1, "Compteur Geiger", "Mesure les retombées.", ["munitions_workbench"], 100),
         ("uranium_ingot", "projectexplosive:uranium_ingot", 8, "Lingots d'uranium", "Matière fissile : 4 yellowcakes enrichis et du plomb, compactés sous brûleur surchauffé.", ["munitions_workbench", "08_nucleaire:yellowcake"], 200),
-        ("icbm_target", "projectexplosive:icbm_target", 1, "Papier de cible", "Coordonnées de la cible du missile.", ["munitions_workbench"], 100),
+        ("icbm_target", "projectexplosive:icbm", 1, "Système de visée", "Longue-vue, boussole et redstone : désigne la cible de l'ICBM.", ["munitions_workbench"], 100),
         ("launch_codes", "kubejs:launch_codes", 1, "Codes de lancement", "Indispensables pour armer un ICBM (tenus en main secondaire à la pose) et pour les missiles longue portée. Quête répétable : les objets sont consommés, une fois par équipe, puis délai de 4 h.", ["munitions_workbench", "08_nucleaire:reactor_core"], 100, LAUNCH_CODES),
         ("icbm_small", "projectexplosive:icbm_small", 1, "ICBM léger", "Premier missile balistique. Sa pose consomme des Codes de lancement.", ["icbm_target", "launch_codes"], 300),
         ("icbm_big", "projectexplosive:icbm_big", 1, "ICBM lourd", "Plus gros, plus loin.", ["icbm_small"], 400),
@@ -174,8 +174,16 @@ CHAPTERS = [
 
 
 def qid(*parts):
-    """Stable 16-hex-digit FTB id from a name."""
-    return hashlib.sha1("/".join(("createwarfare",) + parts).encode()).hexdigest()[:16].upper()
+    """Stable 16-hex-digit FTB id from a name.
+    The top bit is cleared: FTB Quests reads ids as signed longs, and an id starting with 8-F
+    is lost (chapter shown as "Unnamed", quest unlinked)."""
+    h = hashlib.sha1("/".join(("createwarfare",) + parts).encode()).hexdigest()[:16].upper()
+    return format(int(h[0], 16) & 7, "X") + h[1:]
+
+
+def ftb_text(s):
+    """FTB Quests reads '&' as a formatting code: a literal '&' must be written '\\&'."""
+    return s.replace("&", "\\&")
 
 
 def dep_ref(cname, dep):
@@ -229,15 +237,15 @@ def main():
     lang = {}
     for ci, (cname, ctitle, csub, cicon, quests) in enumerate(CHAPTERS):
         cid = qid(cname)
-        lang[f"chapter.{cid}.title"] = ctitle
-        lang[f"chapter.{cid}.chapter_subtitle"] = [csub]
+        lang[f"chapter.{cid}.title"] = ftb_text(ctitle)
+        lang[f"chapter.{cid}.chapter_subtitle"] = [ftb_text(csub)]
         pos = layout(quests)
         body = []
         for key, item, count, title, desc, deps, xp, *extra in quests:
             extra = extra[0] if extra else {}
             q = qid(cname, key)
-            lang[f"quest.{q}.title"] = title
-            lang[f"quest.{q}.quest_desc"] = [desc]
+            lang[f"quest.{q}.title"] = ftb_text(title)
+            lang[f"quest.{q}.quest_desc"] = [ftb_text(desc)]
             dep_ids = ", ".join(snbt_str(qid(*dep_ref(cname, x).split(":"))) for x in deps)
             x, y = pos[key]
             rewards = [f"{{ id: \"{qid(cname, key, 'xp')}\", type: \"xp\", xp: {xp} }}"]

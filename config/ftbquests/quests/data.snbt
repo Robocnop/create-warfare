@@ -10,7 +10,7 @@
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
 	icon: { id: "create:cogwheel" }
-	id: "C1C10B3E820EAB6F"
+	id: "41C10B3E820EAB6F"
 	lock_message: ""
 	pause_game: false
 	progression_mode: "flexible"

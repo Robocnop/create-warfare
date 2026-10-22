@@ -4,29 +4,29 @@
 	filename: "07_blindes"
 	group: ""
 	icon: { id: "offroad:tire" }
-	id: "9AF3C82F48B4688F"
+	id: "1AF3C82F48B4688F"
 	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["756CBDC330F693ED"]
-			id: "93E7484E1F2FE580"
-			rewards: [{ id: "91C03FD34497AE5D", type: "xp", xp: 150 }]
+			id: "13E7484E1F2FE580"
+			rewards: [{ id: "11C03FD34497AE5D", type: "xp", xp: 150 }]
 			tasks: [{ count: 4L, id: "165592EF690205AD", item: { count: 1, id: "offroad:wheel_mount" }, type: "item" }]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["93E7484E1F2FE580"]
+			dependencies: ["13E7484E1F2FE580"]
 			id: "5B83D33E942C54BE"
-			rewards: [{ id: "C65F99F860515F06", type: "xp", xp: 100 }]
+			rewards: [{ id: "465F99F860515F06", type: "xp", xp: 100 }]
 			tasks: [{ count: 4L, id: "3DF7B43D2255BA4B", item: { count: 1, id: "offroad:tire" }, type: "item" }]
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5B83D33E942C54BE"]
-			id: "A9DD744F849AC3AB"
+			id: "29DD744F849AC3AB"
 			rewards: [{ id: "4757FF21328921A7", type: "xp", xp: 150 }]
 			tasks: [{ count: 4L, id: "5522AE1E77E8CACA", item: { count: 1, id: "offroad:large_tire" }, type: "item" }]
 			x: 4.0d
@@ -35,16 +35,16 @@
 		{
 			dependencies: ["756CBDC330F693ED"]
 			id: "17BFE8A7DDC09824"
-			rewards: [{ id: "9F364AE81BF28DFB", type: "xp", xp: 200 }]
-			tasks: [{ count: 32L, id: "A8EF78EEA6B3ED17", item: { count: 1, id: "cbcmodernwarfare:carbon_steel_block" }, type: "item" }]
+			rewards: [{ id: "1F364AE81BF28DFB", type: "xp", xp: 200 }]
+			tasks: [{ count: 32L, id: "28EF78EEA6B3ED17", item: { count: 1, id: "cbcmodernwarfare:carbon_steel_block" }, type: "item" }]
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["17BFE8A7DDC09824"]
-			id: "946D0F04611E9EB9"
+			id: "146D0F04611E9EB9"
 			rewards: [{ id: "5495A3535FCB0ED2", type: "xp", xp: 250 }]
-			tasks: [{ count: 16L, id: "C556716FC7F42FDD", item: { count: 1, id: "cbcmodernwarfare:era_block" }, type: "item" }]
+			tasks: [{ count: 16L, id: "4556716FC7F42FDD", item: { count: 1, id: "cbcmodernwarfare:era_block" }, type: "item" }]
 			x: 2.0d
 			y: 1.5d
 		}
@@ -52,23 +52,23 @@
 			dependencies: ["17BFE8A7DDC09824"]
 			id: "1BD8EFC028544134"
 			rewards: [{ id: "5166F356F3236CF3", type: "xp", xp: 250 }]
-			tasks: [{ count: 2L, id: "A1DB0338981F9026", item: { count: 1, id: "arcon:arcon_cannon_barrel" }, type: "item" }]
+			tasks: [{ count: 2L, id: "21DB0338981F9026", item: { count: 1, id: "arcon:arcon_cannon_barrel" }, type: "item" }]
 			x: 2.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["4E484CE080B4A71D"]
-			id: "BA8BB4E49C8BB3E6"
-			rewards: [{ id: "8968CF58BA187FB4", type: "xp", xp: 200 }]
-			tasks: [{ count: 1L, id: "91F39BE365D96ADB", item: { count: 1, id: "createdieselgenerators:chemical_turret" }, type: "item" }]
+			id: "3A8BB4E49C8BB3E6"
+			rewards: [{ id: "0968CF58BA187FB4", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "11F39BE365D96ADB", item: { count: 1, id: "createdieselgenerators:chemical_turret" }, type: "item" }]
 			x: 0.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["17BFE8A7DDC09824"]
-			id: "D175D0DB6E2EB7F9"
-			rewards: [{ id: "CF54B309F0D7BFA7", type: "xp", xp: 150 }]
-			tasks: [{ count: 1L, id: "F35E8DA269222F9E", item: { count: 1, id: "createarms:periscope_mast" }, type: "item" }]
+			id: "5175D0DB6E2EB7F9"
+			rewards: [{ id: "4F54B309F0D7BFA7", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "735E8DA269222F9E", item: { count: 1, id: "createarms:periscope_mast" }, type: "item" }]
 			x: 2.0d
 			y: 4.5d
 		}

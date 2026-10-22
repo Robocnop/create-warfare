@@ -11,64 +11,64 @@
 		{
 			dependencies: []
 			id: "04772DFD2EA8E417"
-			rewards: [{ id: "F1478EFE9F0F0EF9", type: "xp", xp: 50 }]
-			tasks: [{ count: 16L, id: "AD450F7C2C70C2AB", item: { count: 1, id: "create_new_age:copper_wire" }, type: "item" }]
+			rewards: [{ id: "71478EFE9F0F0EF9", type: "xp", xp: 50 }]
+			tasks: [{ count: 16L, id: "2D450F7C2C70C2AB", item: { count: 1, id: "create_new_age:copper_wire" }, type: "item" }]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["04772DFD2EA8E417"]
-			id: "E97CD161FF05B721"
+			id: "697CD161FF05B721"
 			rewards: [{ id: "4A39E2548990FA8A", type: "xp", xp: 150 }]
-			tasks: [{ count: 1L, id: "8813D109D0433DA4", item: { count: 1, id: "createaddition:alternator" }, type: "item" }]
+			tasks: [{ count: 1L, id: "0813D109D0433DA4", item: { count: 1, id: "createaddition:alternator" }, type: "item" }]
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["E97CD161FF05B721"]
+			dependencies: ["697CD161FF05B721"]
 			id: "6F4FA44804A52F63"
-			rewards: [{ id: "F91D7E9E6260B12B", type: "xp", xp: 150 }]
+			rewards: [{ id: "791D7E9E6260B12B", type: "xp", xp: 150 }]
 			tasks: [{ count: 1L, id: "28C2023CFDF3CCE8", item: { count: 1, id: "createaddition:electric_motor" }, type: "item" }]
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["04772DFD2EA8E417"]
-			id: "B84245FADAA21E36"
-			rewards: [{ id: "BA8A689F3DB55158", type: "xp", xp: 50 }]
-			tasks: [{ count: 8L, id: "A0C5D4DF915DF159", item: { count: 1, id: "createaddition:connector" }, type: "item" }]
+			id: "384245FADAA21E36"
+			rewards: [{ id: "3A8A689F3DB55158", type: "xp", xp: 50 }]
+			tasks: [{ count: 8L, id: "20C5D4DF915DF159", item: { count: 1, id: "createaddition:connector" }, type: "item" }]
 			x: 2.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["E97CD161FF05B721"]
-			id: "BEBE6915AF745BF1"
+			dependencies: ["697CD161FF05B721"]
+			id: "3EBE6915AF745BF1"
 			rewards: [{ id: "1B1896C23CC3E6D4", type: "xp", xp: 150 }]
 			tasks: [{ count: 4L, id: "795D9EC56DB9BDEC", item: { count: 1, id: "createaddition:modular_accumulator" }, type: "item" }]
 			x: 4.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["BEBE6915AF745BF1"]
-			id: "8EF0F7DACDFDA4F7"
+			dependencies: ["3EBE6915AF745BF1"]
+			id: "0EF0F7DACDFDA4F7"
 			rewards: [{ id: "0B2AE438A562D50D", type: "xp", xp: 150 }]
-			tasks: [{ count: 1L, id: "CD09AC688B2E13D8", item: { count: 1, id: "createaddition:tesla_coil" }, type: "item" }]
+			tasks: [{ count: 1L, id: "4D09AC688B2E13D8", item: { count: 1, id: "createaddition:tesla_coil" }, type: "item" }]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: []
-			id: "B4BB47D89EA04A76"
+			id: "34BB47D89EA04A76"
 			rewards: [{ id: "7C04683AF8309A0A", type: "xp", xp: 150 }]
-			tasks: [{ count: 4L, id: "BDBA79AF690F39AF", item: { count: 1, id: "create_new_age:generator_coil" }, type: "item" }]
+			tasks: [{ count: 4L, id: "3DBA79AF690F39AF", item: { count: 1, id: "create_new_age:generator_coil" }, type: "item" }]
 			x: 0.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["B4BB47D89EA04A76"]
+			dependencies: ["34BB47D89EA04A76"]
 			id: "6BB3B83B504294F2"
-			rewards: [{ id: "A66580ADA2CEE02D", type: "xp", xp: 100 }]
-			tasks: [{ count: 4L, id: "F51B6D11488C8075", item: { count: 1, id: "create_new_age:layered_magnet" }, type: "item" }]
+			rewards: [{ id: "266580ADA2CEE02D", type: "xp", xp: 100 }]
+			tasks: [{ count: 4L, id: "751B6D11488C8075", item: { count: 1, id: "create_new_age:layered_magnet" }, type: "item" }]
 			x: 2.0d
 			y: 3.0d
 		}
@@ -76,14 +76,14 @@
 			dependencies: ["6BB3B83B504294F2"]
 			id: "1779809A713F2A43"
 			rewards: [{ id: "229CF5C18297690F", type: "xp", xp: 150 }]
-			tasks: [{ count: 1L, id: "BE04AF4C892D99EC", item: { count: 1, id: "create_new_age:basic_energiser" }, type: "item" }]
+			tasks: [{ count: 1L, id: "3E04AF4C892D99EC", item: { count: 1, id: "create_new_age:basic_energiser" }, type: "item" }]
 			x: 4.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["E97CD161FF05B721"]
+			dependencies: ["697CD161FF05B721"]
 			id: "637344CE2EF36490"
-			rewards: [{ id: "C3A1E4D713CFC652", type: "xp", xp: 200 }]
+			rewards: [{ id: "43A1E4D713CFC652", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "62527A01A86E2845", item: { count: 1, id: "tfmg:generator" }, type: "item" }]
 			x: 4.0d
 			y: 4.5d

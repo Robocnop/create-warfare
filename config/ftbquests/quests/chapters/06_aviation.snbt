@@ -9,9 +9,9 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["8AED6BE8700C86DB"]
+			dependencies: ["0AED6BE8700C86DB"]
 			id: "3B35E94000929A6C"
-			rewards: [{ id: "8542A2883604D416", type: "xp", xp: 150 }]
+			rewards: [{ id: "0542A2883604D416", type: "xp", xp: 150 }]
 			tasks: [{ count: 1L, id: "0A3DA7185B6D1C00", item: { count: 1, id: "simulated:physics_assembler" }, type: "item" }]
 			x: 0.0d
 			y: 0.0d
@@ -34,15 +34,15 @@
 		}
 		{
 			dependencies: ["665B4A7215CA63D6"]
-			id: "A490C4F0A6B4CE96"
+			id: "2490C4F0A6B4CE96"
 			rewards: [{ id: "7C666BEF82BFC0C1", type: "xp", xp: 150 }]
-			tasks: [{ count: 1L, id: "A1BB08B42824E064", item: { count: 1, id: "aeronautics:andesite_propeller" }, type: "item" }]
+			tasks: [{ count: 1L, id: "21BB08B42824E064", item: { count: 1, id: "aeronautics:andesite_propeller" }, type: "item" }]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["A490C4F0A6B4CE96"]
-			id: "B04B9E8E532FDF09"
+			dependencies: ["2490C4F0A6B4CE96"]
+			id: "304B9E8E532FDF09"
 			rewards: [{ id: "4B34D6CB3433B729", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "363ACA0C2DE75394", item: { count: 1, id: "aeronautics:smart_propeller" }, type: "item" }]
 			x: 8.0d
@@ -52,14 +52,14 @@
 			dependencies: ["3B35E94000929A6C"]
 			id: "55D25A1D647500D0"
 			rewards: [{ id: "70E9CE645949E7D5", type: "xp", xp: 100 }]
-			tasks: [{ count: 16L, id: "CEE23FA4D0DA0690", item: { count: 1, id: "aeronautics:white_envelope" }, type: "item" }]
+			tasks: [{ count: 16L, id: "4EE23FA4D0DA0690", item: { count: 1, id: "aeronautics:white_envelope" }, type: "item" }]
 			x: 2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["55D25A1D647500D0"]
-			id: "FFA11F24DA36E2F8"
-			rewards: [{ id: "820D4D434CB45E0D", type: "xp", xp: 150 }]
+			id: "7FA11F24DA36E2F8"
+			rewards: [{ id: "020D4D434CB45E0D", type: "xp", xp: 150 }]
 			tasks: [{ count: 1L, id: "2BAE395989594D56", item: { count: 1, id: "aeronautics:adjustable_burner" }, type: "item" }]
 			x: 4.0d
 			y: 1.5d
@@ -67,15 +67,15 @@
 		{
 			dependencies: ["3B35E94000929A6C"]
 			id: "3518B5471B7B5FB7"
-			rewards: [{ id: "AFEEDCDE9D0B2B12", type: "xp", xp: 250 }]
+			rewards: [{ id: "2FEEDCDE9D0B2B12", type: "xp", xp: 250 }]
 			tasks: [{ count: 8L, id: "70EE08187C0D4CAD", item: { count: 1, id: "aeronautics:levitite" }, type: "item" }]
 			x: 2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["B04B9E8E532FDF09"]
-			id: "85FDA2B82A2AD1A8"
-			rewards: [{ id: "9EB67EECFE51E475", type: "xp", xp: 200 }]
+			dependencies: ["304B9E8E532FDF09"]
+			id: "05FDA2B82A2AD1A8"
+			rewards: [{ id: "1EB67EECFE51E475", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "6807A465F2B1E71A", item: { count: 1, id: "aeronautics:gyroscopic_propeller_bearing" }, type: "item" }]
 			x: 10.0d
 			y: 0.0d
@@ -89,9 +89,9 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["B04B9E8E532FDF09", "756CBDC330F693ED"]
+			dependencies: ["304B9E8E532FDF09", "756CBDC330F693ED"]
 			id: "7C20E95A942D4C67"
-			rewards: [{ id: "C62D9BB0611F78F5", type: "xp", xp: 250 }]
+			rewards: [{ id: "462D9BB0611F78F5", type: "xp", xp: 250 }]
 			tasks: [{ count: 1L, id: "3E687E15628DAF80", item: { count: 1, id: "createpropulsion:thruster" }, type: "item" }]
 			x: 10.0d
 			y: 1.5d
@@ -100,13 +100,13 @@
 			dependencies: ["7C20E95A942D4C67"]
 			id: "2CAF69BC04CF5457"
 			rewards: [{ id: "5EB29D3CCD52E0B9", type: "xp", xp: 200 }]
-			tasks: [{ count: 8L, id: "DD1A6F934779346B", item: { count: 1, id: "createpropulsion:wing" }, type: "item" }]
+			tasks: [{ count: 8L, id: "5D1A6F934779346B", item: { count: 1, id: "createpropulsion:wing" }, type: "item" }]
 			x: 12.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["8AED6BE8700C86DB"]
-			id: "E4BB7E9FFD6811F8"
+			dependencies: ["0AED6BE8700C86DB"]
+			id: "64BB7E9FFD6811F8"
 			rewards: [{ id: "24B0C976F29C1371", type: "xp", xp: 150 }]
 			tasks: [{ count: 1L, id: "0A8BF01EF908BE99", item: { count: 1, id: "create_jetpack:jetpack" }, type: "item" }]
 			x: 0.0d

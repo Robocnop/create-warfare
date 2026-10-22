@@ -4,71 +4,71 @@
 	filename: "10_adm"
 	group: ""
 	icon: { id: "projectexplosive:icbm_nuclear" }
-	id: "C1960E5E13891BC1"
+	id: "41960E5E13891BC1"
 	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4F22817667213C8D", "E9A8DDF795F0DA59"]
-			id: "F4D2A1F364AADF7C"
-			rewards: [{ id: "A421B7C6F8CF6383", type: "xp", xp: 200 }]
+			dependencies: ["4F22817667213C8D", "69A8DDF795F0DA59"]
+			id: "74D2A1F364AADF7C"
+			rewards: [{ id: "2421B7C6F8CF6383", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "67CA3AC7E98AA1E2", item: { count: 1, id: "projectexplosive:munitions_workbench" }, type: "item" }]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["F4D2A1F364AADF7C"]
-			id: "CB2F05AFDAF2B237"
+			dependencies: ["74D2A1F364AADF7C"]
+			id: "4B2F05AFDAF2B237"
 			rewards: [{ id: "28286DA478814BDD", type: "xp", xp: 150 }]
-			tasks: [{ count: 4L, id: "9819B85AED39832D", item: { count: 1, id: "projectexplosive:small_bomb" }, type: "item" }]
+			tasks: [{ count: 4L, id: "1819B85AED39832D", item: { count: 1, id: "projectexplosive:small_bomb" }, type: "item" }]
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["CB2F05AFDAF2B237"]
-			id: "A82FEA33AE7FE437"
-			rewards: [{ id: "9C71885F32832CE9", type: "xp", xp: 250 }]
+			dependencies: ["4B2F05AFDAF2B237"]
+			id: "282FEA33AE7FE437"
+			rewards: [{ id: "1C71885F32832CE9", type: "xp", xp: 250 }]
 			tasks: [{ count: 2L, id: "2338E3AE8920D49F", item: { count: 1, id: "projectexplosive:big_bomb" }, type: "item" }]
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["A82FEA33AE7FE437"]
-			id: "8E1A85CD7654EC56"
+			dependencies: ["282FEA33AE7FE437"]
+			id: "0E1A85CD7654EC56"
 			rewards: [{ id: "22EAE79B633385FC", type: "xp", xp: 300 }]
 			tasks: [{ count: 1L, id: "185CCF4E5B406F37", item: { count: 1, id: "projectexplosive:airstrike_caller" }, type: "item" }]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["F4D2A1F364AADF7C"]
-			id: "E6775A330665F94C"
+			dependencies: ["74D2A1F364AADF7C"]
+			id: "66775A330665F94C"
 			rewards: [{ id: "26F416F6E66C58A5", type: "xp", xp: 100 }]
-			tasks: [{ count: 1L, id: "CA4D3411E58BDBFA", item: { count: 1, id: "projectexplosive:flash_goggles" }, type: "item" }]
+			tasks: [{ count: 1L, id: "4A4D3411E58BDBFA", item: { count: 1, id: "projectexplosive:flash_goggles" }, type: "item" }]
 			x: 2.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["F4D2A1F364AADF7C"]
+			dependencies: ["74D2A1F364AADF7C"]
 			id: "2AD09B2F01C16648"
 			rewards: [{ id: "54E45ED2CB57110D", type: "xp", xp: 100 }]
-			tasks: [{ count: 1L, id: "D81D17A214A405E2", item: { count: 1, id: "projectexplosive:radiation_detector" }, type: "item" }]
+			tasks: [{ count: 1L, id: "581D17A214A405E2", item: { count: 1, id: "projectexplosive:radiation_detector" }, type: "item" }]
 			x: 2.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["F4D2A1F364AADF7C", "531F7DD09656D0AD"]
+			dependencies: ["74D2A1F364AADF7C", "531F7DD09656D0AD"]
 			id: "4F02DCB64718598B"
 			rewards: [{ id: "43B143971A513462", type: "xp", xp: 200 }]
-			tasks: [{ count: 8L, id: "FA71F1F4E720FCC6", item: { count: 1, id: "projectexplosive:uranium_ingot" }, type: "item" }]
+			tasks: [{ count: 8L, id: "7A71F1F4E720FCC6", item: { count: 1, id: "projectexplosive:uranium_ingot" }, type: "item" }]
 			x: 2.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["F4D2A1F364AADF7C"]
-			id: "EA4B67DC521A8EBE"
+			dependencies: ["74D2A1F364AADF7C"]
+			id: "6A4B67DC521A8EBE"
 			rewards: [{ id: "3DBD9D60E125B8A0", type: "xp", xp: 100 }]
-			tasks: [{ count: 1L, id: "5C8783B79D55D3AC", item: { count: 1, id: "projectexplosive:icbm_target" }, type: "item" }]
+			tasks: [{ count: 1L, id: "5C8783B79D55D3AC", item: { count: 1, id: "projectexplosive:icbm" }, type: "item" }]
 			x: 2.0d
 			y: 6.0d
 		}
@@ -77,42 +77,42 @@
 			repeat_cooldown: 14400
 			progression_mode: "linear"
 			icon: { id: "kubejs:launch_codes" }
-			dependencies: ["F4D2A1F364AADF7C", "4F22817667213C8D"]
-			id: "E24917B0AC01463C"
-			rewards: [{ id: "BC62EA94174D2888", type: "xp", xp: 100 }, { id: "E8B1A85A060F7CDE", item: { count: 1, id: "kubejs:launch_codes" }, team_reward: true, type: "item" }]
+			dependencies: ["74D2A1F364AADF7C", "4F22817667213C8D"]
+			id: "624917B0AC01463C"
+			rewards: [{ id: "3C62EA94174D2888", type: "xp", xp: 100 }, { id: "68B1A85A060F7CDE", item: { count: 1, id: "kubejs:launch_codes" }, team_reward: true, type: "item" }]
 			tasks: [{ consume_items: true, count: 4L, id: "575E75B1ECA9286B", item: { count: 1, id: "tfmg:circuit_board" }, type: "item" }, { consume_items: true, count: 8L, id: "0E14078361CA1F8D", item: { count: 1, id: "createnuclear:enriched_yellowcake" }, type: "item" }, { consume_items: true, count: 4L, id: "0B75FC377E64D882", item: { count: 1, id: "create:precision_mechanism" }, type: "item" }]
 			x: 2.0d
 			y: 7.5d
 		}
 		{
-			dependencies: ["EA4B67DC521A8EBE", "E24917B0AC01463C"]
+			dependencies: ["6A4B67DC521A8EBE", "624917B0AC01463C"]
 			id: "5CF5DE993A303811"
 			rewards: [{ id: "097C833FE1A14F79", type: "xp", xp: 300 }]
-			tasks: [{ count: 1L, id: "F37AF2CCF33D8054", item: { count: 1, id: "projectexplosive:icbm_small" }, type: "item" }]
+			tasks: [{ count: 1L, id: "737AF2CCF33D8054", item: { count: 1, id: "projectexplosive:icbm_small" }, type: "item" }]
 			x: 4.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5CF5DE993A303811"]
-			id: "94F3D1B8E9E9E22F"
+			id: "14F3D1B8E9E9E22F"
 			rewards: [{ id: "2830C58AC3D06FF3", type: "xp", xp: 400 }]
-			tasks: [{ count: 1L, id: "81F8371DBF795119", item: { count: 1, id: "projectexplosive:icbm_big" }, type: "item" }]
+			tasks: [{ count: 1L, id: "01F8371DBF795119", item: { count: 1, id: "projectexplosive:icbm_big" }, type: "item" }]
 			x: 6.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["4F02DCB64718598B", "A82FEA33AE7FE437"]
+			dependencies: ["4F02DCB64718598B", "282FEA33AE7FE437"]
 			id: "5FC9A9FB2250304D"
-			rewards: [{ id: "E26150D11C4EC835", type: "xp", xp: 500 }]
-			tasks: [{ count: 1L, id: "9244C386AAE17D45", item: { count: 1, id: "projectexplosive:nuclear_bomb" }, type: "item" }]
+			rewards: [{ id: "626150D11C4EC835", type: "xp", xp: 500 }]
+			tasks: [{ count: 1L, id: "1244C386AAE17D45", item: { count: 1, id: "projectexplosive:nuclear_bomb" }, type: "item" }]
 			x: 6.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["94F3D1B8E9E9E22F", "5FC9A9FB2250304D", "E6775A330665F94C"]
+			dependencies: ["14F3D1B8E9E9E22F", "5FC9A9FB2250304D", "66775A330665F94C"]
 			id: "5CD90A2B6E78FBBB"
 			rewards: [{ id: "21EDDCBB5A7A84BD", type: "xp", xp: 1000 }]
-			tasks: [{ count: 1L, id: "BCF2C0BB061EA4A1", item: { count: 1, id: "projectexplosive:icbm_nuclear" }, type: "item" }]
+			tasks: [{ count: 1L, id: "3CF2C0BB061EA4A1", item: { count: 1, id: "projectexplosive:icbm_nuclear" }, type: "item" }]
 			x: 8.0d
 			y: 0.0d
 		}

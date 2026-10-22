@@ -10,70 +10,70 @@
 	quests: [
 		{
 			dependencies: []
-			id: "A2162ABC6CB16C34"
-			rewards: [{ id: "C49EDFF1428BF6A2", type: "xp", xp: 75 }]
-			tasks: [{ count: 1L, id: "8D0ACEF052AEE065", item: { count: 1, id: "create:mechanical_mixer" }, type: "item" }]
+			id: "22162ABC6CB16C34"
+			rewards: [{ id: "449EDFF1428BF6A2", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "0D0ACEF052AEE065", item: { count: 1, id: "create:mechanical_mixer" }, type: "item" }]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: []
-			id: "B796759F39F4AC03"
-			rewards: [{ id: "8857457352E55F55", type: "xp", xp: 25 }]
+			id: "3796759F39F4AC03"
+			rewards: [{ id: "0857457352E55F55", type: "xp", xp: 25 }]
 			tasks: [{ count: 2L, id: "05A4868101A17665", item: { count: 1, id: "create:basin" }, type: "item" }]
 			x: 0.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["B796759F39F4AC03"]
+			dependencies: ["3796759F39F4AC03"]
 			id: "7071E71810E20BB1"
 			rewards: [{ id: "5E5D4DD396314C3C", type: "xp", xp: 100 }]
-			tasks: [{ count: 1L, id: "E4342460F081B1D0", item: { count: 1, id: "create:blaze_burner" }, type: "item" }]
+			tasks: [{ count: 1L, id: "64342460F081B1D0", item: { count: 1, id: "create:blaze_burner" }, type: "item" }]
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: []
-			id: "BB89205B4CFFF9C1"
+			id: "3B89205B4CFFF9C1"
 			rewards: [{ id: "2D542E207A86D49F", type: "xp", xp: 50 }]
 			tasks: [{ count: 32L, id: "62F93585124B104D", item: { count: 1, id: "create:zinc_ingot" }, type: "item" }]
 			x: 0.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["A2162ABC6CB16C34", "7071E71810E20BB1", "BB89205B4CFFF9C1"]
-			id: "DF369E5180DA069A"
+			dependencies: ["22162ABC6CB16C34", "7071E71810E20BB1", "3B89205B4CFFF9C1"]
+			id: "5F369E5180DA069A"
 			rewards: [{ id: "2FCECAD8D50B71E2", type: "xp", xp: 150 }]
-			tasks: [{ count: 32L, id: "8786BD06D1713320", item: { count: 1, id: "create:brass_ingot" }, type: "item" }]
+			tasks: [{ count: 32L, id: "0786BD06D1713320", item: { count: 1, id: "create:brass_ingot" }, type: "item" }]
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["DF369E5180DA069A"]
-			id: "FEF5A0AB13F34D99"
-			rewards: [{ id: "BF4957EBAF350DE2", type: "xp", xp: 75 }]
-			tasks: [{ count: 16L, id: "AF65B2275B58589F", item: { count: 1, id: "create:brass_casing" }, type: "item" }]
+			dependencies: ["5F369E5180DA069A"]
+			id: "7EF5A0AB13F34D99"
+			rewards: [{ id: "3F4957EBAF350DE2", type: "xp", xp: 75 }]
+			tasks: [{ count: 16L, id: "2F65B2275B58589F", item: { count: 1, id: "create:brass_casing" }, type: "item" }]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["DF369E5180DA069A"]
-			id: "B24CFB3B9B0E5B00"
-			rewards: [{ id: "E03C658AC73C4F10", type: "xp", xp: 50 }]
-			tasks: [{ count: 8L, id: "A92DEDBA00F4B7E7", item: { count: 1, id: "create:electron_tube" }, type: "item" }]
+			dependencies: ["5F369E5180DA069A"]
+			id: "324CFB3B9B0E5B00"
+			rewards: [{ id: "603C658AC73C4F10", type: "xp", xp: 50 }]
+			tasks: [{ count: 8L, id: "292DEDBA00F4B7E7", item: { count: 1, id: "create:electron_tube" }, type: "item" }]
 			x: 6.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["DF369E5180DA069A"]
-			id: "8AED6BE8700C86DB"
-			rewards: [{ id: "A752BE5260585298", type: "xp", xp: 200 }]
-			tasks: [{ count: 4L, id: "8203E8FD11843F7D", item: { count: 1, id: "create:precision_mechanism" }, type: "item" }]
+			dependencies: ["5F369E5180DA069A"]
+			id: "0AED6BE8700C86DB"
+			rewards: [{ id: "2752BE5260585298", type: "xp", xp: 200 }]
+			tasks: [{ count: 4L, id: "0203E8FD11843F7D", item: { count: 1, id: "create:precision_mechanism" }, type: "item" }]
 			x: 6.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["FEF5A0AB13F34D99"]
+			dependencies: ["7EF5A0AB13F34D99"]
 			id: "6849FA0103866AD3"
 			rewards: [{ id: "1F45C96F09D6B5EE", type: "xp", xp: 100 }]
 			tasks: [{ count: 2L, id: "1BBC81A8AD8D2C9F", item: { count: 1, id: "create:deployer" }, type: "item" }]
@@ -81,42 +81,42 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8AED6BE8700C86DB"]
-			id: "F60D0E2DD7809FB4"
-			rewards: [{ id: "94A8D93144CA8A79", type: "xp", xp: 150 }]
-			tasks: [{ count: 1L, id: "882C4C41E7BE9D26", item: { count: 1, id: "create:mechanical_arm" }, type: "item" }]
+			dependencies: ["0AED6BE8700C86DB"]
+			id: "760D0E2DD7809FB4"
+			rewards: [{ id: "14A8D93144CA8A79", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "082C4C41E7BE9D26", item: { count: 1, id: "create:mechanical_arm" }, type: "item" }]
 			x: 8.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["FEF5A0AB13F34D99", "B24CFB3B9B0E5B00"]
-			id: "AAAAA92E88E4DD13"
-			rewards: [{ id: "A8BF470EC8B95856", type: "xp", xp: 200 }]
+			dependencies: ["7EF5A0AB13F34D99", "324CFB3B9B0E5B00"]
+			id: "2AAAA92E88E4DD13"
+			rewards: [{ id: "28BF470EC8B95856", type: "xp", xp: 200 }]
 			tasks: [{ count: 9L, id: "5FA7FC395357C898", item: { count: 1, id: "create:mechanical_crafter" }, type: "item" }]
 			x: 8.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["FEF5A0AB13F34D99"]
+			dependencies: ["7EF5A0AB13F34D99"]
 			id: "1CE6C85A3282225B"
-			rewards: [{ id: "E774535AE1B0C64C", type: "xp", xp: 100 }]
+			rewards: [{ id: "6774535AE1B0C64C", type: "xp", xp: 100 }]
 			tasks: [{ count: 2L, id: "601506AF33FB500E", item: { count: 1, id: "create:packager" }, type: "item" }]
 			x: 8.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["1CE6C85A3282225B"]
-			id: "A1EBE7187581E148"
-			rewards: [{ id: "90186AD9B2EDA58F", type: "xp", xp: 100 }]
+			id: "21EBE7187581E148"
+			rewards: [{ id: "10186AD9B2EDA58F", type: "xp", xp: 100 }]
 			tasks: [{ count: 1L, id: "3C547D9C3EEFEF56", item: { count: 1, id: "create:stock_link" }, type: "item" }]
 			x: 10.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["FEF5A0AB13F34D99"]
+			dependencies: ["7EF5A0AB13F34D99"]
 			id: "473CCCE99F11FECC"
-			rewards: [{ id: "845C59017DA27357", type: "xp", xp: 150 }]
-			tasks: [{ count: 1L, id: "BE2B478F65F93894", item: { count: 1, id: "create:schematicannon" }, type: "item" }]
+			rewards: [{ id: "045C59017DA27357", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "3E2B478F65F93894", item: { count: 1, id: "create:schematicannon" }, type: "item" }]
 			x: 8.0d
 			y: 6.0d
 		}
