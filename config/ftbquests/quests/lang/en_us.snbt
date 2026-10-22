@@ -162,7 +162,7 @@
 	quest.272A653ABDC4AEA8.title: "Lunettes d'aviateur"
 	quest.272A653ABDC4AEA8.quest_desc: ["Le style avant tout."]
 	quest.7C20E95A942D4C67.title: "Propulseur"
-	quest.7C20E95A942D4C67.quest_desc: ["Propulsion à carburant liquide."]
+	quest.7C20E95A942D4C67.quest_desc: ["Propulsion à carburant liquide. Boîtier et pompes en acier."]
 	quest.2CAF69BC04CF5457.title: "Ailes"
 	quest.2CAF69BC04CF5457.quest_desc: ["Portance pour les vrais avions."]
 	quest.E4BB7E9FFD6811F8.title: "Jetpack"
@@ -195,6 +195,10 @@
 	quest.7E3061CC3BBDF79B.quest_desc: ["Équipement de protection, pièce 1."]
 	quest.B01C30713E05F5F2.title: "Plastron antiradiation"
 	quest.B01C30713E05F5F2.quest_desc: ["Pièce 2."]
+	quest.DBEDFC712C018B4D.title: "Jambières antiradiation"
+	quest.DBEDFC712C018B4D.quest_desc: ["Pièce 3."]
+	quest.1BF43313539FD41B.title: "Bottes antiradiation"
+	quest.1BF43313539FD41B.quest_desc: ["Pièce 4 : la tenue est complète."]
 	quest.531F7DD09656D0AD.title: "Yellowcake enrichi"
 	quest.531F7DD09656D0AD.quest_desc: ["Combustible enrichi."]
 	quest.6072A0EE60401705.title: "Barres de graphite"
@@ -203,6 +207,8 @@
 	quest.26663CF49A7D8865.quest_desc: ["La coque du réacteur."]
 	quest.20C2A9274845556B.title: "Contrôleur de réacteur"
 	quest.20C2A9274845556B.quest_desc: ["Pilote le réacteur."]
+	quest.3864BD2C040A8119.title: "Barres d'uranium"
+	quest.3864BD2C040A8119.quest_desc: ["Le combustible du réacteur."]
 	quest.4F22817667213C8D.title: "Cœur de réacteur"
 	quest.4F22817667213C8D.quest_desc: ["Là où tout se passe."]
 	quest.46FC1420DE526E77.title: "Alarme de réacteur"
@@ -232,15 +238,15 @@
 	quest.B3AAAE60BA29B4DD.title: "Patriot"
 	quest.B3AAAE60BA29B4DD.quest_desc: ["Défense antimissile."]
 	quest.68B6E8B7239C1A49.title: "Tomahawk"
-	quest.68B6E8B7239C1A49.quest_desc: ["Missile de croisière."]
+	quest.68B6E8B7239C1A49.quest_desc: ["Missile de croisière longue portée : demande des Codes de lancement."]
 	quest.B1F9D5BE8608A54A.title: "Pas de tir (Create Missiles)"
-	quest.B1F9D5BE8608A54A.quest_desc: ["Missiles physiques modulaires."]
+	quest.B1F9D5BE8608A54A.quest_desc: ["Missiles physiques modulaires. Les pièces demandent de l'acier."]
 	quest.983A1FBA2348EB6B.title: "Ogive (Create Missiles)"
-	quest.983A1FBA2348EB6B.quest_desc: ["La charge utile."]
+	quest.983A1FBA2348EB6B.quest_desc: ["La charge utile. Les ogives destructrices demandent des obus HE."]
 	chapter.C1960E5E13891BC1.title: "Armes de destruction massive"
 	chapter.C1960E5E13891BC1.chapter_subtitle: ["La fin de partie : bombes lourdes et ICBM nucléaires. Avec modération..."]
 	quest.F4D2A1F364AADF7C.title: "Établi de munitions"
-	quest.F4D2A1F364AADF7C.quest_desc: ["Assemble bombes, ogives et missiles."]
+	quest.F4D2A1F364AADF7C.quest_desc: ["Assemble bombes, ogives et missiles. Se fabrique avec de l'acier et des mécanismes."]
 	quest.CB2F05AFDAF2B237.title: "Bombe Mk 82"
 	quest.CB2F05AFDAF2B237.quest_desc: ["Bombe d'aviation légère."]
 	quest.A82FEA33AE7FE437.title: "Bombe Mk 84"
@@ -252,11 +258,13 @@
 	quest.2AD09B2F01C16648.title: "Compteur Geiger"
 	quest.2AD09B2F01C16648.quest_desc: ["Mesure les retombées."]
 	quest.4F02DCB64718598B.title: "Lingots d'uranium"
-	quest.4F02DCB64718598B.quest_desc: ["Matière fissile."]
+	quest.4F02DCB64718598B.quest_desc: ["Matière fissile : 4 yellowcakes enrichis et du plomb, compactés sous brûleur surchauffé."]
 	quest.EA4B67DC521A8EBE.title: "Papier de cible"
 	quest.EA4B67DC521A8EBE.quest_desc: ["Coordonnées de la cible du missile."]
+	quest.E24917B0AC01463C.title: "Codes de lancement"
+	quest.E24917B0AC01463C.quest_desc: ["Indispensables pour armer un ICBM (tenus en main secondaire à la pose) et pour les missiles longue portée. Quête répétable : les objets sont consommés, une fois par équipe, puis délai de 4 h."]
 	quest.5CF5DE993A303811.title: "ICBM léger"
-	quest.5CF5DE993A303811.quest_desc: ["Premier missile balistique."]
+	quest.5CF5DE993A303811.quest_desc: ["Premier missile balistique. Sa pose consomme des Codes de lancement."]
 	quest.94F3D1B8E9E9E22F.title: "ICBM lourd"
 	quest.94F3D1B8E9E9E22F.quest_desc: ["Plus gros, plus loin."]
 	quest.5FC9A9FB2250304D.title: "Fat Man"

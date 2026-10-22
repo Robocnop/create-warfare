@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: []
+			dependencies: ["E97CD161FF05B721"]
 			id: "F7E3E4D638A041C4"
 			rewards: [{ id: "6CB420FC394BBC92", type: "xp", xp: 50 }]
 			tasks: [{ count: 1L, id: "84D4B6B29B9EDDC6", item: { count: 1, id: "create_radar:binoculars" }, type: "item" }]
@@ -17,7 +17,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["E97CD161FF05B721", "7ACFFB1E5D5A3DF1"]
 			id: "F64793E12A209AEB"
 			rewards: [{ id: "D984197B44613F56", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "8F0269B910A7101C", item: { count: 1, id: "create_radar:radar_bearing" }, type: "item" }]
@@ -81,15 +81,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["B3AAAE60BA29B4DD"]
+			dependencies: ["E9A8DDF795F0DA59", "E24917B0AC01463C"]
 			id: "68B6E8B7239C1A49"
 			rewards: [{ id: "5ED9872865C413F3", type: "xp", xp: 350 }]
 			tasks: [{ count: 1L, id: "B17169578837B53B", item: { count: 1, id: "createarms:tomahawk" }, type: "item" }]
-			x: 12.0d
-			y: 0.0d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
-			dependencies: []
+			dependencies: ["756CBDC330F693ED"]
 			id: "B1F9D5BE8608A54A"
 			rewards: [{ id: "3C3F4E28D49B90F6", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "6C9E99AEF77301E5", item: { count: 1, id: "createmissiles:launch_pad" }, type: "item" }]
@@ -97,7 +97,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["B1F9D5BE8608A54A"]
+			dependencies: ["B1F9D5BE8608A54A", "3F12664295876503"]
 			id: "983A1FBA2348EB6B"
 			rewards: [{ id: "3DE5B6D61F6BAD3A", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "6CDC1BC62B02E2DD", item: { count: 1, id: "createmissiles:warhead_assembly" }, type: "item" }]

@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: []
+			dependencies: ["28E559ACA1545773"]
 			id: "37CC7D0277D0D517"
 			rewards: [{ id: "557AD7A2CE14F337", type: "xp", xp: 100 }]
 			tasks: [{ count: 32L, id: "A35E28F2D2B03419", item: { count: 1, id: "tfmg:cast_iron_ingot" }, type: "item" }]
@@ -17,7 +17,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["28E559ACA1545773"]
 			id: "BD968CAFC7291040"
 			rewards: [{ id: "B2EF14D7150C75DA", type: "xp", xp: 50 }]
 			tasks: [{ count: 16L, id: "0D49A28C0ED1B258", item: { count: 1, id: "createbigcannons:casting_sand" }, type: "item" }]
@@ -65,7 +65,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["28E559ACA1545773"]
 			id: "CFBBF5C4723F0E09"
 			rewards: [{ id: "4B01CBC45303D012", type: "xp", xp: 75 }]
 			tasks: [{ count: 16L, id: "5FFA8E8CF1D45087", item: { count: 1, id: "createbigcannons:powder_charge" }, type: "item" }]
@@ -81,12 +81,12 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3F12664295876503"]
+			dependencies: ["CFBBF5C4723F0E09"]
 			id: "6392648C2449FD82"
 			rewards: [{ id: "072DD9EE81A0B4AE", type: "xp", xp: 150 }]
 			tasks: [{ count: 8L, id: "E2635F3A151B0DA4", item: { count: 1, id: "createbigcannons:ap_shell" }, type: "item" }]
-			x: 4.0d
-			y: 1.5d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3F12664295876503"]
@@ -94,7 +94,7 @@
 			rewards: [{ id: "D162ABF340F06AF2", type: "xp", xp: 75 }]
 			tasks: [{ count: 8L, id: "4454288789E085D8", item: { count: 1, id: "createbigcannons:impact_fuze" }, type: "item" }]
 			x: 4.0d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7AE07A7DA301D186"]

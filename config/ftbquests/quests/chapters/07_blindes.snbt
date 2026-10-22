@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: []
+			dependencies: ["756CBDC330F693ED"]
 			id: "93E7484E1F2FE580"
 			rewards: [{ id: "91C03FD34497AE5D", type: "xp", xp: 150 }]
 			tasks: [{ count: 4L, id: "165592EF690205AD", item: { count: 1, id: "offroad:wheel_mount" }, type: "item" }]
@@ -33,7 +33,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["756CBDC330F693ED"]
 			id: "17BFE8A7DDC09824"
 			rewards: [{ id: "9F364AE81BF28DFB", type: "xp", xp: 200 }]
 			tasks: [{ count: 32L, id: "A8EF78EEA6B3ED17", item: { count: 1, id: "cbcmodernwarfare:carbon_steel_block" }, type: "item" }]
@@ -57,7 +57,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["4E484CE080B4A71D"]
 			id: "BA8BB4E49C8BB3E6"
 			rewards: [{ id: "8968CF58BA187FB4", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "91F39BE365D96ADB", item: { count: 1, id: "createdieselgenerators:chemical_turret" }, type: "item" }]

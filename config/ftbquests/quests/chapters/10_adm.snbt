@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: []
+			dependencies: ["4F22817667213C8D", "E9A8DDF795F0DA59"]
 			id: "F4D2A1F364AADF7C"
 			rewards: [{ id: "A421B7C6F8CF6383", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "67CA3AC7E98AA1E2", item: { count: 1, id: "projectexplosive:munitions_workbench" }, type: "item" }]
@@ -57,7 +57,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["F4D2A1F364AADF7C"]
+			dependencies: ["F4D2A1F364AADF7C", "531F7DD09656D0AD"]
 			id: "4F02DCB64718598B"
 			rewards: [{ id: "43B143971A513462", type: "xp", xp: 200 }]
 			tasks: [{ count: 8L, id: "FA71F1F4E720FCC6", item: { count: 1, id: "projectexplosive:uranium_ingot" }, type: "item" }]
@@ -73,7 +73,19 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["EA4B67DC521A8EBE"]
+			can_repeat: true
+			repeat_cooldown: 14400
+			progression_mode: "linear"
+			icon: { id: "kubejs:launch_codes" }
+			dependencies: ["F4D2A1F364AADF7C", "4F22817667213C8D"]
+			id: "E24917B0AC01463C"
+			rewards: [{ id: "BC62EA94174D2888", type: "xp", xp: 100 }, { id: "E8B1A85A060F7CDE", item: { count: 1, id: "kubejs:launch_codes" }, team_reward: true, type: "item" }]
+			tasks: [{ consume_items: true, count: 4L, id: "575E75B1ECA9286B", item: { count: 1, id: "tfmg:circuit_board" }, type: "item" }, { consume_items: true, count: 8L, id: "0E14078361CA1F8D", item: { count: 1, id: "createnuclear:enriched_yellowcake" }, type: "item" }, { consume_items: true, count: 4L, id: "0B75FC377E64D882", item: { count: 1, id: "create:precision_mechanism" }, type: "item" }]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["EA4B67DC521A8EBE", "E24917B0AC01463C"]
 			id: "5CF5DE993A303811"
 			rewards: [{ id: "097C833FE1A14F79", type: "xp", xp: 300 }]
 			tasks: [{ count: 1L, id: "F37AF2CCF33D8054", item: { count: 1, id: "projectexplosive:icbm_small" }, type: "item" }]

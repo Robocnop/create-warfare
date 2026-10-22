@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: []
+			dependencies: ["8AED6BE8700C86DB"]
 			id: "3B35E94000929A6C"
 			rewards: [{ id: "8542A2883604D416", type: "xp", xp: 150 }]
 			tasks: [{ count: 1L, id: "0A3DA7185B6D1C00", item: { count: 1, id: "simulated:physics_assembler" }, type: "item" }]
@@ -89,7 +89,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["B04B9E8E532FDF09"]
+			dependencies: ["B04B9E8E532FDF09", "756CBDC330F693ED"]
 			id: "7C20E95A942D4C67"
 			rewards: [{ id: "C62D9BB0611F78F5", type: "xp", xp: 250 }]
 			tasks: [{ count: 1L, id: "3E687E15628DAF80", item: { count: 1, id: "createpropulsion:thruster" }, type: "item" }]
@@ -105,7 +105,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["8AED6BE8700C86DB"]
 			id: "E4BB7E9FFD6811F8"
 			rewards: [{ id: "24B0C976F29C1371", type: "xp", xp: 150 }]
 			tasks: [{ count: 1L, id: "0A8BF01EF908BE99", item: { count: 1, id: "create_jetpack:jetpack" }, type: "item" }]

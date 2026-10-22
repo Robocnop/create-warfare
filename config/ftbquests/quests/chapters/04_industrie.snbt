@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: []
+			dependencies: ["DF369E5180DA069A"]
 			id: "4AE6F35EE70BD1F5"
 			rewards: [{ id: "2A2F5B2FF8A5CF53", type: "xp", xp: 100 }]
 			tasks: [{ count: 32L, id: "070CF0AE4EF8BDDC", item: { count: 1, id: "tfmg:coal_coke" }, type: "item" }]
@@ -17,7 +17,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["DF369E5180DA069A"]
 			id: "28E559ACA1545773"
 			rewards: [{ id: "029F69986DD04E9F", type: "xp", xp: 100 }]
 			tasks: [{ count: 4L, id: "5072E03E0A97C8A9", item: { count: 1, id: "tfmg:coke_oven" }, type: "item" }]
@@ -33,7 +33,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["DF369E5180DA069A"]
 			id: "2FE85312B9FF4126"
 			rewards: [{ id: "1DEDA10968A42B98", type: "xp", xp: 200 }]
 			tasks: [{ count: 4L, id: "7497A17E1CD388A1", item: { count: 1, id: "create:steam_engine" }, type: "item" }]
@@ -41,7 +41,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["DF369E5180DA069A"]
 			id: "E188D8A625007862"
 			rewards: [{ id: "AC07289E4CF5B4A4", type: "xp", xp: 100 }]
 			tasks: [{ count: 1L, id: "59B2D5E8A6BF8477", item: { count: 1, id: "createdieselgenerators:oil_scanner" }, type: "item" }]
@@ -81,7 +81,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["DF369E5180DA069A"]
 			id: "0459D0495DBF7ED8"
 			rewards: [{ id: "CF19F44868E3EE7A", type: "xp", xp: 75 }]
 			tasks: [{ count: 64L, id: "882C2DBD1E0E43AE", item: { count: 1, id: "create:track" }, type: "item" }]
