@@ -86,7 +86,7 @@ hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "e66e00b6bd8169d69c396809e4771a1d81e2b511ff448f62a925b4d07c5d3b5c"
+hash = "1491129bd39cae0c7d856a32f40a752a9fcb7c209c7c71cd987b8b612d7d19b0"
 
 [[files]]
 file = "config/projectexplosive-common.toml"

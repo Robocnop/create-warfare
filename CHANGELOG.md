@@ -2,6 +2,12 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.4.1 — 2026-10-27
+
+- Quêtes « Renforceur universel » et « Murs renforcés » : elles présentent les blocs renforcés comme des **bunkers
+  anti-nucléaires** (les bombes et ICBM de Project: Explosive n'y font rien, l'artillerie CBC, Superb Warfare et la TNT si).
+- Aucun mod ni monde modifié : seul le texte des quêtes change.
+
 ## 1.4.0 — 2026-10-27
 
 ### Ajouts

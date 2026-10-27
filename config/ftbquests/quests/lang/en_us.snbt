@@ -324,9 +324,9 @@
 	quest.2C4721D77E50AA98.title: "Blocs laser"
 	quest.2C4721D77E50AA98.quest_desc: ["Premier pas de SecurityCraft : une barrière invisible qui déclenche tes défenses."]
 	quest.44F24B414E0DD228.title: "Renforceur universel"
-	quest.44F24B414E0DD228.quest_desc: ["Transforme tes blocs en blocs renforcés que seuls toi et ton équipe pouvez casser. Les obus CBC, Superb Warfare et la TNT les abîment, mais pas les bombes de Project: Explosive."]
+	quest.44F24B414E0DD228.quest_desc: ["Transforme tes blocs en blocs renforcés que seuls toi et ton équipe pouvez casser. Les obus CBC, Superb Warfare et la TNT les abîment, mais les bombes et ICBM de Project: Explosive n'y font rien : parfait pour un bunker anti-nucléaire."]
 	quest.6EFD5A18CB66C8A0.title: "Murs renforcés"
-	quest.6EFD5A18CB66C8A0.quest_desc: ["Les murs de ta base."]
+	quest.6EFD5A18CB66C8A0.quest_desc: ["Les murs de ta base, ou de ton bunker : ils encaissent Fat Man et les ICBM, pas l'artillerie."]
 	quest.14BDCFD95D3B0B6A.title: "Clavier à code"
 	quest.14BDCFD95D3B0B6A.quest_desc: ["Ferme une porte ou un coffre avec un code."]
 	quest.6DD8CD9DA47BBC02.title: "Caméras de sécurité"
