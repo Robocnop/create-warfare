@@ -211,6 +211,20 @@ CHAPTERS = [
         ("sentry", "securitycraft:sentry", 1, "Tourelle", "Tire sur les intrus. Demande de l'acier et des tubes électroniques.", ["portable_radar", "reinforcer", "04_industrie:steel"], 300),
         ("trophy", "securitycraft:trophy_system", 1, "Système Trophy", "Abat les projectiles qui approchent. Demande des circuits imprimés TFMG.", ["sentry"], 400),
     ]),
+    # v1.5.0 : Kaleidoscope Cookery (cuisine, moulin compatible Create). Non testé en jeu.
+    ("12_cuisine", "Cuisine", "Kaleidoscope Cookery : cuisiner pour tenir entre deux batailles. Son moulin accepte aussi le moulin de Create.", "kaleidoscope_cookery:pot", [
+        ("stove", "kaleidoscope_cookery:stove", 1, "Fourneau", "La base de la cuisine : pose un wok ou une marmite dessus.", [], 50),
+        ("knife", "kaleidoscope_cookery:iron_kitchen_knife", 1, "Couteau de cuisine", "Pour découper sur la planche.", [], 50),
+        ("chopping_board", "kaleidoscope_cookery:chopping_board", 1, "Planche à découper", "Découpe viandes et légumes.", ["knife"], 50),
+        ("wok", "kaleidoscope_cookery:pot", 1, "Wok", "Sauté rapide sur le fourneau, avec la spatule.", ["stove"], 75),
+        ("stockpot", "kaleidoscope_cookery:stockpot", 1, "Marmite", "Soupes et ragoûts mijotés.", ["stove"], 75),
+        ("seeds", "kaleidoscope_cookery:tomato_seed", 4, "Nouvelles graines", "Tomates, piments, laitue et riz. Le chapeau de paille fait tomber des graines des herbes.", [], 50),
+        ("rice", "kaleidoscope_cookery:cooked_rice", 4, "Riz cuit", "La base des bols de riz.", ["seeds", "stockpot"], 75),
+        ("millstone", "kaleidoscope_cookery:millstone", 1, "Moulin", "Farine, huile et riz décortiqué. Le moulin de Create fait aussi ses recettes.", ["01_engrenages:andesite_alloy"], 100),
+        ("fried_egg", "kaleidoscope_cookery:fried_egg", 4, "Œufs au plat", "Premier plat au wok.", ["wok"], 50),
+        ("rice_bowl", "kaleidoscope_cookery:braised_beef_rice_bowl", 2, "Bol de bœuf braisé", "Un vrai repas de soldat.", ["rice", "chopping_board"], 150),
+        ("steamer", "kaleidoscope_cookery:steamer", 1, "Cuiseur vapeur", "Brioches et raviolis à la vapeur.", ["stockpot"], 100),
+    ]),
 ]
 
 

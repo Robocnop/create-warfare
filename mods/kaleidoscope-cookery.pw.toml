@@ -1,0 +1,13 @@
+name = "Kaleidoscope Cookery"
+filename = "kaleidoscopecookery-1.6.0-neoforge+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9093e830c91a8f2e19eca7dda78713f0bbc21327"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9019242
+project-id = 1309203

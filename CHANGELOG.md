@@ -2,6 +2,23 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.5.0 — 2026-10-27 (⚠️ non testée en jeu)
+
+> Seul le démarrage du serveur de test a été vérifié (aucune quête invalide). Rien n'a été essayé en jeu :
+> à tester avant de la déployer sur le serveur.
+
+### Ajouts
+- **Kaleidoscope Cookery** : cuisine immersive (fourneau, wok, marmite, planche à découper, cuiseur vapeur, plus de 400 recettes).
+  Son moulin accepte le moulin de Create (compatibilité intégrée), ses entités suivent les engins Sable.
+  Ses cuisines de village n'apparaissent que dans les nouveaux chunks.
+- **Durability Tooltip** (+ SuperMartijn642's Config Lib) : la durabilité s'affiche dans l'info-bulle des objets. Client seul.
+- **Inventory Profiles Next** (+ libIPN) : boutons de tri et de dépôt rapide sur les coffres et l'inventaire, tri **par nom**
+  par défaut. Client seul.
+- **Chapitre de quêtes « Cuisine »** (11 quêtes, 169 au total).
+
+### Erreur connue, sans gravité
+- `Couldn't load tag kaleidoscope_cookery:cookery_mod_items` : le tag vise des tabourets compatibles Quark, absent du pack.
+
 ## 1.4.1 — 2026-10-27
 
 - Quêtes « Renforceur universel » et « Murs renforcés » : elles présentent les blocs renforcés comme des **bunkers

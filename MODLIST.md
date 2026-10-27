@@ -25,6 +25,9 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
   « Track Generator » de **Railways Additions** en pose ailleurs. Railways Additions ajoute aussi le régulateur de vitesse
   des trains et le relieur de gares.
 - **Discord** : Simple Discord Rich Presence (client seul).
+- **1.5.0, non testée en jeu** : Kaleidoscope Cookery (cuisine ; son moulin accepte le moulin de Create ; cuisines dans les
+  villages des nouveaux chunks), Durability Tooltip (durabilité dans l'info-bulle), Inventory Profiles Next (boutons de tri
+  des coffres, tri par nom réglé dans `config/inventoryprofilesnext/inventoryprofiles.json`). Les deux derniers sont client seul.
 - **SecurityCraft** (1.4.0) : les blocs renforcés sont cassables par les obus CBC (CBC Security Breach, points de vie par
   matériau), Superb Warfare et la TNT (SC-SuperB Bridge). **Pas par les bombes et ICBM de Project: Explosive**, qui sautent
   les blocs de dureté -1. **C'est voulu** : les blocs renforcés servent de **bunkers anti-nucléaires**
@@ -135,6 +138,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | Default Options | `defaultoptions-neoforge-1.21.1-21.1.8.jar` | client + serveur | CurseForge |
 | Distant Horizons: A Level of Detail mod | `DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar` | client seul | CurseForge |
 | DragonLib | `dragonlib-3.0.29+mc1.21.1-neoforge.jar` | client + serveur | CurseForge |
+| Durability Tooltip | `durabilitytooltip-1.2.0-neoforge-mc1.21.jar` | client seul | CurseForge |
 | EMI | `emi-1.1.24+1.21.1+neoforge.jar` | client + serveur | CurseForge |
 | Enchantment Descriptions | `enchdesc-neoforge-1.21.1-21.1.11.jar` | client + serveur | CurseForge |
 | [EMF] Entity Model Features [Fabric & Forge] | `entity_model_features-3.3.12-1.21-neoforge.jar` | client seul | CurseForge |
@@ -157,14 +161,17 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | ImmediatelyFast | `ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar` | client seul | CurseForge |
 | Create: Interiors | `interiors-0.6.1 v3.jar` | client + serveur | CurseForge |
 | Inventory Essentials | `inventoryessentials-neoforge-1.21.1-21.1.20.jar` | client + serveur | CurseForge |
+| Inventory Profiles Next | `InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar` | client seul | CurseForge |
 | Iris Shaders | `iris-neoforge-1.8.14-beta.1+mc1.21.1.jar` | client seul | CurseForge |
 | Item Borders [Neo/Forge] | `ItemBorders-1.21-neoforge-1.2.5.jar` | client seul | CurseForge |
 | Jade 🔍 | `Jade-1.21.1-NeoForge-15.10.6.jar` | client + serveur | CurseForge |
 | Just Enough Items (JEI) | `jei-1.21.1-neoforge-19.64.0.455.jar` | client + serveur | CurseForge |
 | Just Enough Effect Descriptions (JEED) | `jeed-1.21-2.3.5-neoforge.jar` | client + serveur | CurseForge |
 | Just Enough Resources (JER) | `JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar` | client + serveur | CurseForge |
+| Kaleidoscope Cookery | `kaleidoscopecookery-1.6.0-neoforge+mc1.21.1.jar` | client + serveur | CurseForge |
 | Kotlin for Forge | `kotlinforforge-5.12.0-all.jar` | client + serveur | CurseForge |
 | KubeJS | `kubejs-neoforge-2101.7.2-build.377.jar` | client + serveur | CurseForge |
+| libIPN | `libIPN-neoforge-1.21.1-6.6.3.jar` | client seul | CurseForge |
 | Lithostitched | `lithostitched-1.8.1-neoforge-21.1.jar` | client + serveur | CurseForge |
 | Mechanicals Lib | `mechanicals-1.21.1-1.1.6.jar` | client + serveur | CurseForge |
 | MezzConfig | `mezz_config-1.21.1-neoforge-0.6.8-standalone.jar` | client + serveur | CurseForge |
@@ -201,6 +208,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | spark | `spark-1.10.124-neoforge.jar` | client + serveur | CurseForge |
 | Steam 'n' Rails Neoforge | `railways-0.3.0-beta.2+neoforge-mc1.21.1.jar` | client + serveur | CurseForge |
 | Strut Your Stuff (Struts) | `struts-1.3.1.jar` | client + serveur | CurseForge |
+| SuperMartijn642's Config Lib | `supermartijn642configlib-1.1.8-neoforge-mc1.21.jar` | client seul | CurseForge |
 | Terralith | `Terralith_1.21.x_v2.6.2.jar` | client + serveur | CurseForge |
 | Create: TFMG Community Edition | `tfmg-1.21.1-1.3.2a-community.jar` | client + serveur | CurseForge |
 | Tom's Simple Storage Mod | `toms_storage-1.21-2.4.2.jar` | client + serveur | CurseForge |

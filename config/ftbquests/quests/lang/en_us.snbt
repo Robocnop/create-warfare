@@ -339,4 +339,28 @@
 	quest.053E2AB78B4CDD5A.quest_desc: ["Tire sur les intrus. Demande de l'acier et des tubes électroniques."]
 	quest.3500B9C3283A3465.title: "Système Trophy"
 	quest.3500B9C3283A3465.quest_desc: ["Abat les projectiles qui approchent. Demande des circuits imprimés TFMG."]
+	chapter.5C329C6DE6204446.title: "Cuisine"
+	chapter.5C329C6DE6204446.chapter_subtitle: ["Kaleidoscope Cookery : cuisiner pour tenir entre deux batailles. Son moulin accepte aussi le moulin de Create."]
+	quest.286285B15331B404.title: "Fourneau"
+	quest.286285B15331B404.quest_desc: ["La base de la cuisine : pose un wok ou une marmite dessus."]
+	quest.1FA1339164ED206D.title: "Couteau de cuisine"
+	quest.1FA1339164ED206D.quest_desc: ["Pour découper sur la planche."]
+	quest.6718BE632F527AA2.title: "Planche à découper"
+	quest.6718BE632F527AA2.quest_desc: ["Découpe viandes et légumes."]
+	quest.21A65A2702955B75.title: "Wok"
+	quest.21A65A2702955B75.quest_desc: ["Sauté rapide sur le fourneau, avec la spatule."]
+	quest.60135E9F91129E15.title: "Marmite"
+	quest.60135E9F91129E15.quest_desc: ["Soupes et ragoûts mijotés."]
+	quest.6D5225B21A033C13.title: "Nouvelles graines"
+	quest.6D5225B21A033C13.quest_desc: ["Tomates, piments, laitue et riz. Le chapeau de paille fait tomber des graines des herbes."]
+	quest.3A4B453B4ACF67F8.title: "Riz cuit"
+	quest.3A4B453B4ACF67F8.quest_desc: ["La base des bols de riz."]
+	quest.4370E6FB8E8803A0.title: "Moulin"
+	quest.4370E6FB8E8803A0.quest_desc: ["Farine, huile et riz décortiqué. Le moulin de Create fait aussi ses recettes."]
+	quest.473344BEB37CC400.title: "Œufs au plat"
+	quest.473344BEB37CC400.quest_desc: ["Premier plat au wok."]
+	quest.40815A7E1BB832A8.title: "Bol de bœuf braisé"
+	quest.40815A7E1BB832A8.quest_desc: ["Un vrai repas de soldat."]
+	quest.36D2FAFFBDEE0624.title: "Cuiseur vapeur"
+	quest.36D2FAFFBDEE0624.quest_desc: ["Brioches et raviolis à la vapeur."]
 }

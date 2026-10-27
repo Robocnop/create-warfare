@@ -81,12 +81,20 @@ file = "config/ftbquests/quests/chapters/11_defense.snbt"
 hash = "7d43acb4274c2da7940af32a7d5494f9dea20972c5ae26fb1254fc15fbba0fe7"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/12_cuisine.snbt"
+hash = "8dd4fcf77bfd7a959b6c3dad2af3e4d0fcf898f3148d921f513d0864a050fc73"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "1491129bd39cae0c7d856a32f40a752a9fcb7c209c7c71cd987b8b612d7d19b0"
+hash = "fe9f264a9e077f7e9077ba62541b5d9bf3cdbe4586e587eed8bdce03a1ac4f65"
+
+[[files]]
+file = "config/inventoryprofilesnext/inventoryprofiles.json"
+hash = "e8eea508087824dd7f40c4e423fd4188fcf3a413728e0b56b456e3094e39e375"
 
 [[files]]
 file = "config/projectexplosive-common.toml"
@@ -1683,6 +1691,11 @@ hash = "d864568b2c2985e825ffcb783990e4b45486ee9fefc69e45f9cacb47a1feb1a1"
 metafile = true
 
 [[files]]
+file = "mods/durability-tooltip.pw.toml"
+hash = "8159b8505b549dbdc764b86cfe1381e4777459b2469f57346165a7cad8cbcf05"
+metafile = true
+
+[[files]]
 file = "mods/emi.pw.toml"
 hash = "8491436f99726aff4cd90644496679665f910b51822d9aac38401d0c70dfc61a"
 metafile = true
@@ -1803,6 +1816,11 @@ hash = "22c8ee8cf4a728f6f5892e9cc569e4b6fb689ca7af219ed5b56d8b6376730d39"
 metafile = true
 
 [[files]]
+file = "mods/inventory-profiles-next.pw.toml"
+hash = "8f0aff1f654ff4bee8d46f4581133662e04049a5570d54e0d4602f6d17a0d8b4"
+metafile = true
+
+[[files]]
 file = "mods/irisshaders.pw.toml"
 hash = "bc0ed43619af3b5e453ccb36412d72aef8d066594946a927155d2fbd440e4b40"
 metafile = true
@@ -1833,6 +1851,11 @@ hash = "f61a3526d323d232fbac74dedb5d89e07f45981db1c5a705c66dbe5da7507a68"
 metafile = true
 
 [[files]]
+file = "mods/kaleidoscope-cookery.pw.toml"
+hash = "8d41ba66e8a0bb237d7d322b55ef415d60b7b044f565820f9a6fb32ac0249219"
+metafile = true
+
+[[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
 metafile = true
@@ -1840,6 +1863,11 @@ metafile = true
 [[files]]
 file = "mods/kubejs.pw.toml"
 hash = "00bacfc5a98d9b0dff90bbad503def28abf970a2061c9456f721e442bc32ab29"
+metafile = true
+
+[[files]]
+file = "mods/libipn.pw.toml"
+hash = "6fdc7f01fd9da8addbbd8ca0eb4c0465759a8ff85d20cb7f73bda7578fad5ab1"
 metafile = true
 
 [[files]]
@@ -2050,6 +2078,11 @@ metafile = true
 [[files]]
 file = "mods/superb-warfare.pw.toml"
 hash = "10fb3aa038890df497caac46dcde3729bb44f809d7decf3b3e9c7b4163affe66"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-config-lib.pw.toml"
+hash = "d59ffd765657f01b7a6eb90a01ff54f0a78e2769836861472ae4cec2ba79907c"
 metafile = true
 
 [[files]]

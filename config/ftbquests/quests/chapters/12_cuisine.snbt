@@ -1,0 +1,100 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "12_cuisine"
+	group: ""
+	icon: { id: "kaleidoscope_cookery:pot" }
+	id: "5C329C6DE6204446"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: []
+			id: "286285B15331B404"
+			rewards: [{ id: "65BA3F319BB78AE4", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "72CA4F515DE58D38", item: { count: 1, id: "kaleidoscope_cookery:stove" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: []
+			id: "1FA1339164ED206D"
+			rewards: [{ id: "0F4FA7B2DD2F06CD", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "29DB0EAE0E23B8B4", item: { count: 1, id: "kaleidoscope_cookery:iron_kitchen_knife" }, type: "item" }]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1FA1339164ED206D"]
+			id: "6718BE632F527AA2"
+			rewards: [{ id: "5DFFD8D472CB22A5", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "7218AF55EFC1216E", item: { count: 1, id: "kaleidoscope_cookery:chopping_board" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["286285B15331B404"]
+			id: "21A65A2702955B75"
+			rewards: [{ id: "424A360F59DD101D", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "05525C69338455BC", item: { count: 1, id: "kaleidoscope_cookery:pot" }, type: "item" }]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["286285B15331B404"]
+			id: "60135E9F91129E15"
+			rewards: [{ id: "16539D1ECD497011", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "3D1598F7AF98EF15", item: { count: 1, id: "kaleidoscope_cookery:stockpot" }, type: "item" }]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: []
+			id: "6D5225B21A033C13"
+			rewards: [{ id: "09EE3C5988FC4FD4", type: "xp", xp: 50 }]
+			tasks: [{ count: 4L, id: "4D43EF46218D5A4C", item: { count: 1, id: "kaleidoscope_cookery:tomato_seed" }, type: "item" }]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6D5225B21A033C13", "60135E9F91129E15"]
+			id: "3A4B453B4ACF67F8"
+			rewards: [{ id: "562AE491BFB97BBF", type: "xp", xp: 75 }]
+			tasks: [{ count: 4L, id: "2A919BBC2DDE67C4", item: { count: 1, id: "kaleidoscope_cookery:cooked_rice" }, type: "item" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24C6C7A7D7EB2B12"]
+			id: "4370E6FB8E8803A0"
+			rewards: [{ id: "4B993B77018A60F8", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "090E01FBC47A49FE", item: { count: 1, id: "kaleidoscope_cookery:millstone" }, type: "item" }]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["21A65A2702955B75"]
+			id: "473344BEB37CC400"
+			rewards: [{ id: "3AE5937A4984202A", type: "xp", xp: 50 }]
+			tasks: [{ count: 4L, id: "1A331C57C5CBDA97", item: { count: 1, id: "kaleidoscope_cookery:fried_egg" }, type: "item" }]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A4B453B4ACF67F8", "6718BE632F527AA2"]
+			id: "40815A7E1BB832A8"
+			rewards: [{ id: "78C282B12401A03E", type: "xp", xp: 150 }]
+			tasks: [{ count: 2L, id: "465D7847105D4362", item: { count: 1, id: "kaleidoscope_cookery:braised_beef_rice_bowl" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60135E9F91129E15"]
+			id: "36D2FAFFBDEE0624"
+			rewards: [{ id: "2099CF7CCC83BAE9", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "5260A3D332CF9F5F", item: { count: 1, id: "kaleidoscope_cookery:steamer" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
+		}
+	]
+}
