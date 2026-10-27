@@ -2,6 +2,14 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.3.2 — 2026-10-27 (serveur seulement)
+
+- Profil spark pris en volant vite sur le serveur : **58 % du thread principal** passait à écrire dans `debug.log`.
+  Railways Untold vérifie les structures le long de ses routes, et Create Structures Arise écrit une ligne DEBUG à chaque
+  lecture de sa config. `-Dforge.logging.debugFile.level=info` ajouté aux arguments du serveur (`user_jvm_args.txt`,
+  et startup du panel sur le serveur réel) : plus de lignes DEBUG une fois le serveur lancé, `latest.log` inchangé.
+- Rien ne change pour les joueurs : inutile de réinstaller le pack côté client.
+
 ## 1.3.1 — 2026-10-27
 
 ### Performances : cause du lag en combat trouvée

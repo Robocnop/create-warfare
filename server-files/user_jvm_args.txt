@@ -18,3 +18,4 @@
 -XX:SurvivorRatio=32
 -XX:+PerfDisableSharedMem
 -XX:MaxTenuringThreshold=1
+-Dforge.logging.debugFile.level=info
