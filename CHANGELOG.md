@@ -12,6 +12,8 @@ Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` 
   - Testé sur un monde jetable : TNT sur pierre renforcée → 8 à 13 blocs cassés (87 sur pierre normale).
     **Les bombes et ICBM de Project: Explosive ne cassent pas les blocs renforcés** : ils sautent les blocs incassables
     (dureté -1), et rendre ces blocs cassables permettrait à n'importe qui de les miner à la main.
+    **Gardé volontairement (choix de Robo)** : ça permet de construire des **bunkers anti-nucléaires**. Une base renforcée
+    reste vulnérable à l'artillerie CBC, à Superb Warfare et à la TNT, mais protège de Fat Man et des ICBM.
   - Recettes liées à Create (`kubejs/server_scripts/balance/securitycraft.js`) : renforceurs avec un mécanisme de précision,
     tourelle avec acier TFMG et tubes électroniques, système Trophy avec circuits imprimés TFMG.
   - Config : blocs partagés avec l'équipe FTB, les caméras ne chargent plus de chunks (performances).

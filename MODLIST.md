@@ -27,7 +27,8 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 - **Discord** : Simple Discord Rich Presence (client seul).
 - **SecurityCraft** (1.4.0) : les blocs renforcés sont cassables par les obus CBC (CBC Security Breach, points de vie par
   matériau), Superb Warfare et la TNT (SC-SuperB Bridge). **Pas par les bombes et ICBM de Project: Explosive**, qui sautent
-  les blocs de dureté -1 (impossible à changer sans permettre à tout le monde de miner les blocs des autres).
+  les blocs de dureté -1. **C'est voulu** : les blocs renforcés servent de **bunkers anti-nucléaires**
+  (mais pas contre l'artillerie, Superb Warfare ni la TNT).
   Propriété partagée avec l'équipe FTB (`enable_team_ownership`), caméras sans chargement de chunks.
 - **CC: Tweaked** (1.4.0) : CC:CBC (pilotage des canons), Create: Avionics (blocs Aeronautics/Simulated/Offroad),
   Create: CC Better Recipes (recettes via Create). Create 6 gère CC: Tweaked de base (trains, gares, compteurs).
