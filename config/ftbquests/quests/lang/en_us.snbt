@@ -1,4 +1,40 @@
 {
+	chapter.7D74B4BED70DB886.title: "La forge"
+	chapter.7D74B4BED70DB886.chapter_subtitle: ["Overgeared ralentit le fer : outils et armures se forgent à l'enclume. Ce chapitre explique comment."]
+	quest.70B6725B90DE1B2A.title: "Tailler la roche"
+	quest.70B6725B90DE1B2A.quest_desc: ["Clic droit répété sur un bloc de pierre avec un silex : tu obtiens de la roche (le silex peut casser). Les outils en pierre ne se fabriquent plus directement."]
+	quest.4842721A82AB4811.title: "Tête de pioche en pierre"
+	quest.4842721A82AB4811.quest_desc: ["Une roche dans chaque main, clic droit : la grille de taille s'ouvre. Dessine la forme de la tête (JEI ou EMI montre les formes). Tête + bâton = pioche en pierre."]
+	quest.53148CC45640DACA.title: "Marteau de forge en cuivre"
+	quest.53148CC45640DACA.quest_desc: ["2 lingots de cuivre et 2 bâtons : l'outil de base du forgeron."]
+	quest.05647FE700945D51.title: "Enclume en pierre"
+	quest.05647FE700945D51.quest_desc: ["Accroupi, clic droit sur un bloc de pierre avec le marteau : il devient une enclume de forge en pierre. Elle casse après 64 forgeages. Coche la quête quand c'est fait."]
+	quest.3945ACBCDAB75D4D.title: "Pinces"
+	quest.3945ACBCDAB75D4D.quest_desc: ["5 bâtons. Un métal chauffé te brûle : tiens les pinces dans l'autre main pour le manipuler."]
+	quest.256754D3BFEDE581.title: "Lingot de fer chauffé"
+	quest.256754D3BFEDE581.quest_desc: ["Au haut fourneau, le fer devient un lingot chauffé (le four classique donne toujours des lingots froids). Il refroidit en 60 s dans l'inventaire, ou tout de suite jeté dans l'eau."]
+	quest.1C521A1ABF1E0C6E.title: "Forger une tête de pioche"
+	quest.1C521A1ABF1E0C6E.quest_desc: ["Ouvre l'enclume, place 3 lingots chauffés en ligne, puis accroupi + clic droit sur l'enclume avec le marteau : le mini-jeu commence. Frappe quand la flèche est dans la zone. Le score donne la qualité, de « mal forgé » à « parfait »."]
+	quest.4833E95E88A65F61.title: "Pioche en fer"
+	quest.4833E95E88A65F61.quest_desc: ["Tête + bâton à l'établi. La qualité de la tête passe à l'outil."]
+	quest.1CB652973116AB75.title: "Plan de forge"
+	quest.1CB652973116AB75.quest_desc: ["Plan vierge (3 papiers + colorant bleu) et établi = table à dessin, où tu choisis un type d'outil. Sans plan, une tête ne dépasse pas les qualités basses ; le plan s'améliore à chaque forge."]
+	quest.08B890D7EBEFA421.title: "Plaques de fer"
+	quest.08B890D7EBEFA421.quest_desc: ["Un lingot de fer froid forgé donne une plaque. Les armures en fer se forgent avec ces plaques."]
+	quest.3F7AA50C4984709D.title: "Plastron en fer"
+	quest.3F7AA50C4984709D.quest_desc: ["8 plaques de fer forgées sur l'enclume."]
+	quest.75EE9AE61CF68A55.title: "Fourneau à alliages"
+	quest.75EE9AE61CF68A55.quest_desc: ["8 blocs de briques autour d'un haut fourneau."]
+	quest.38AD2A227D2E3817.title: "Acier brut"
+	quest.38AD2A227D2E3817.quest_desc: ["3 lingots de fer + 1 charbon = 4 aciers bruts. Chauffe-les au haut fourneau, puis forge-les en lingots d'acier. Raccourci : l'acier TFMG (chapitre 4) passé au haut fourneau donne directement un lingot d'acier chauffé."]
+	quest.5407D3BBE329A44B.title: "Marteau de forge en acier"
+	quest.5407D3BBE329A44B.quest_desc: ["Tête forgée avec 2 lingots d'acier chauffés, plus un bâton."]
+	quest.2B875A4F7F9DA880.title: "Enclume de forge"
+	quest.2B875A4F7F9DA880.quest_desc: ["Accroupi, clic droit sur une enclume classique avec un marteau de forge : elle devient une enclume de forge, qui ne casse pas comme celle en pierre. Coche la quête quand c'est fait."]
+	quest.0537049DEB868400.title: "Pioche en acier"
+	quest.0537049DEB868400.quest_desc: ["Plus solide que le fer, et la base de l'équipement en diamant."]
+	quest.6871C5EBD612EC4E.title: "Pioche en diamant"
+	quest.6871C5EBD612EC4E.quest_desc: ["Les recettes en diamant classiques sont désactivées. Table de forgeron : outil en acier + gabarit + diamant. Le gabarit se trouve dans les coffres (forteresses, temples, mines...) et se copie avec 7 diamants et 1 lingot d'acier."]
 	chapter.17655EBC7D082AA1.title: "L'âge de l'engrenage"
 	chapter.17655EBC7D082AA1.chapter_subtitle: ["Les bases de Create : rotation, alliage et premières machines."]
 	quest.24C6C7A7D7EB2B12.title: "Alliage d'andésite"
@@ -116,7 +152,7 @@
 	quest.3D968CAFC7291040.title: "Sable de moulage"
 	quest.3D968CAFC7291040.quest_desc: ["Pour couler les pièces de canon."]
 	quest.07D37E88138949F7.title: "Moule de canon"
-	quest.07D37E88138949F7.quest_desc: ["Le métal en fusion prend la forme du moule."]
+	quest.07D37E88138949F7.quest_desc: ["Des bûches à la scie mécanique. Entouré de sable de moulage, le métal en fusion y prend la forme du canon."]
 	quest.78695F6A89881061.title: "Tube de canon"
 	quest.78695F6A89881061.quest_desc: ["Plus le tube est long, plus l'obus va loin."]
 	quest.6ECB79429D7042B8.title: "Chambre"
@@ -176,9 +212,9 @@
 	quest.29DD744F849AC3AB.title: "Gros pneus"
 	quest.29DD744F849AC3AB.quest_desc: ["Pour les engins lourds."]
 	quest.17BFE8A7DDC09824.title: "Blocs d'acier au carbone"
-	quest.17BFE8A7DDC09824.quest_desc: ["Protègent tes véhicules et bunkers."]
+	quest.17BFE8A7DDC09824.quest_desc: ["Acier et coke au mélangeur chauffé donnent l'acier au carbone ; 4 lingots font un bloc. Protège tes véhicules et bunkers."]
 	quest.146D0F04611E9EB9.title: "Blindage réactif (ERA)"
-	quest.146D0F04611E9EB9.quest_desc: ["Explose vers l'extérieur pour arrêter les obus."]
+	quest.146D0F04611E9EB9.quest_desc: ["Une charge de poudre déployée sur un bloc d'acier au carbone. Explose vers l'extérieur pour arrêter les obus."]
 	quest.1BD8EFC028544134.title: "Canon blindé (Armored Constructs)"
 	quest.1BD8EFC028544134.quest_desc: ["Tourelles pour tes chars."]
 	quest.3A8BB4E49C8BB3E6.title: "Tourelle chimique"
@@ -231,8 +267,8 @@
 	quest.69A8DDF795F0DA59.quest_desc: ["Relie radar et canons."]
 	quest.3E0317F5F0964CCF.title: "Transpondeur IFF"
 	quest.3E0317F5F0964CCF.quest_desc: ["Ami ou ennemi ?"]
-	quest.5EDC4ACD5A6310BC.title: "Brouilleur"
-	quest.5EDC4ACD5A6310BC.quest_desc: ["Aveugle les radars ennemis."]
+	quest.27B565817BA421AC.title: "Radar d'avion"
+	quest.27B565817BA421AC.quest_desc: ["Radar compact à embarquer sur tes appareils."]
 	quest.58B19C6FE111E7F3.title: "AIM-9 Sidewinder"
 	quest.58B19C6FE111E7F3.quest_desc: ["Missile air-air guidé."]
 	quest.33AAAE60BA29B4DD.title: "Patriot"

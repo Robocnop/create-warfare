@@ -1,0 +1,150 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "00_forge"
+	group: ""
+	icon: { id: "overgeared:smithing_hammer" }
+	id: "7D74B4BED70DB886"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: []
+			id: "70B6725B90DE1B2A"
+			rewards: [{ id: "61B3491B4843CFA4", type: "xp", xp: 10 }]
+			tasks: [{ count: 4L, id: "152DAF8E75C33BAE", item: { count: 1, id: "overgeared:knappable_rock" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70B6725B90DE1B2A"]
+			id: "4842721A82AB4811"
+			rewards: [{ id: "3E1D109B5FA63FDC", type: "xp", xp: 15 }]
+			tasks: [{ count: 1L, id: "7B84DB397531812B", item: { count: 1, id: "overgeared:stone_pickaxe_head" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4842721A82AB4811"]
+			id: "53148CC45640DACA"
+			rewards: [{ id: "38269FE5D5826F4F", type: "xp", xp: 15 }]
+			tasks: [{ count: 1L, id: "5A389FDE299924E5", item: { count: 1, id: "overgeared:copper_smithing_hammer" }, type: "item" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "minecraft:stone" }
+			dependencies: ["53148CC45640DACA"]
+			id: "05647FE700945D51"
+			rewards: [{ id: "4A943C97C82609BB", type: "xp", xp: 15 }]
+			tasks: [{ id: "08BE01E66CEB9E98", type: "checkmark" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53148CC45640DACA"]
+			id: "3945ACBCDAB75D4D"
+			rewards: [{ id: "0A15B70EDBAB636F", type: "xp", xp: 10 }]
+			tasks: [{ count: 1L, id: "061404C9F112631E", item: { count: 1, id: "overgeared:wooden_tongs" }, type: "item" }]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3945ACBCDAB75D4D"]
+			id: "256754D3BFEDE581"
+			rewards: [{ id: "408353FFE51CB6A8", type: "xp", xp: 20 }]
+			tasks: [{ count: 1L, id: "5F3B61608D26CCC1", item: { count: 1, id: "overgeared:heated_iron_ingot" }, type: "item" }]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["256754D3BFEDE581", "05647FE700945D51"]
+			id: "1C521A1ABF1E0C6E"
+			rewards: [{ id: "0F5AC34A64179D70", type: "xp", xp: 40 }]
+			tasks: [{ count: 1L, id: "6295E8BA5904A761", item: { count: 1, id: "overgeared:iron_pickaxe_head" }, type: "item" }]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C521A1ABF1E0C6E"]
+			id: "4833E95E88A65F61"
+			rewards: [{ id: "41C06CC4489CB114", type: "xp", xp: 20 }]
+			tasks: [{ count: 1L, id: "3E79C9B91145B951", item: { count: 1, id: "minecraft:iron_pickaxe" }, type: "item" }]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C521A1ABF1E0C6E"]
+			id: "1CB652973116AB75"
+			rewards: [{ id: "73483E023094F8D8", type: "xp", xp: 20 }]
+			tasks: [{ count: 1L, id: "38B588EBA083CB07", item: { count: 1, id: "overgeared:blueprint" }, type: "item" }]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["05647FE700945D51"]
+			id: "08B890D7EBEFA421"
+			rewards: [{ id: "52684E3905B8BEFA", type: "xp", xp: 20 }]
+			tasks: [{ count: 8L, id: "7A86B4279EF99FD1", item: { count: 1, id: "overgeared:iron_plate" }, type: "item" }]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08B890D7EBEFA421"]
+			id: "3F7AA50C4984709D"
+			rewards: [{ id: "780BC7BF362BA38D", type: "xp", xp: 30 }]
+			tasks: [{ count: 1L, id: "6C811B1399CC207A", item: { count: 1, id: "minecraft:iron_chestplate" }, type: "item" }]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["256754D3BFEDE581"]
+			id: "75EE9AE61CF68A55"
+			rewards: [{ id: "374DFAB3C1C52676", type: "xp", xp: 25 }]
+			tasks: [{ count: 1L, id: "44A06099FB74A6D0", item: { count: 1, id: "overgeared:alloy_furnace" }, type: "item" }]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["75EE9AE61CF68A55"]
+			id: "38AD2A227D2E3817"
+			rewards: [{ id: "05B8CEC7459120A3", type: "xp", xp: 30 }]
+			tasks: [{ count: 4L, id: "449B1DCDE6E913BE", item: { count: 1, id: "overgeared:crude_steel" }, type: "item" }]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38AD2A227D2E3817"]
+			id: "5407D3BBE329A44B"
+			rewards: [{ id: "2F70EA1A9165B6A4", type: "xp", xp: 40 }]
+			tasks: [{ count: 1L, id: "2C29778B2F1F07CE", item: { count: 1, id: "overgeared:smithing_hammer" }, type: "item" }]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "minecraft:anvil" }
+			dependencies: ["5407D3BBE329A44B"]
+			id: "2B875A4F7F9DA880"
+			rewards: [{ id: "16034B13DE282C57", type: "xp", xp: 30 }]
+			tasks: [{ id: "36D73E5F53CCDC2E", type: "checkmark" }]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5407D3BBE329A44B"]
+			id: "0537049DEB868400"
+			rewards: [{ id: "6C675ADECD089E4F", type: "xp", xp: 40 }]
+			tasks: [{ count: 1L, id: "6F9A37849BB38877", item: { count: 1, id: "overgeared:steel_pickaxe" }, type: "item" }]
+			x: 16.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0537049DEB868400"]
+			id: "6871C5EBD612EC4E"
+			rewards: [{ id: "4446C1FD56021E32", type: "xp", xp: 60 }]
+			tasks: [{ count: 1L, id: "5B5B9DF537020B78", item: { count: 1, id: "minecraft:diamond_pickaxe" }, type: "item" }]
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+}

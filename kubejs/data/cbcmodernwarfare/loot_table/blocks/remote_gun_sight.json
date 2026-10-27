@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cbcmodernwarfare:remote_gun_sight"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cbcmodernwarfare:blocks/remote_gun_sight"
+}

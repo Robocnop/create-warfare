@@ -1,0 +1,13 @@
+name = "Railways Untold"
+filename = "railwaysuntold-1.21.1-neoforge-1.2.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "54f2a838702e38b17cc85ceb29aea4de52819300"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8755353
+project-id = 1470432

@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "createbigcannons:cannon_mount" }
 	id: "73A1A222F64DE127"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -28,7 +28,7 @@
 			dependencies: ["3D968CAFC7291040"]
 			id: "07D37E88138949F7"
 			rewards: [{ id: "3443AB039F7B0A8A", type: "xp", xp: 100 }]
-			tasks: [{ count: 4L, id: "42EB1DE374DCD586", item: { count: 1, id: "createbigcannons:cannon_cast" }, type: "item" }]
+			tasks: [{ count: 1L, id: "42EB1DE374DCD586", item: { count: 1, id: "createbigcannons:very_small_cast_mould" }, type: "item" }]
 			x: 2.0d
 			y: 0.0d
 		}

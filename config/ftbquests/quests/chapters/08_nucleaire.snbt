@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "createnuclear:reactor_core" }
 	id: "04EF504505BA1E93"
-	order_index: 7
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{

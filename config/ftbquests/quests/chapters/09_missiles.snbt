@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "create_radar:radar_bearing" }
 	id: "47DA1C59EB2CE985"
-	order_index: 8
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -57,12 +57,12 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3E0317F5F0964CCF"]
-			id: "5EDC4ACD5A6310BC"
-			rewards: [{ id: "4DFA1F43297C986F", type: "xp", xp: 200 }]
-			tasks: [{ count: 1L, id: "5DB51A6092421D24", item: { count: 1, id: "create_radar:jammer" }, type: "item" }]
-			x: 6.0d
-			y: 1.5d
+			dependencies: ["2B6DCB051C43594F"]
+			id: "27B565817BA421AC"
+			rewards: [{ id: "52DC390F33A9D444", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "4C7023DFE048B8FD", item: { count: 1, id: "create_radar:plane_radar" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["69A8DDF795F0DA59"]

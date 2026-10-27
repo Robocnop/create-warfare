@@ -33,44 +33,48 @@ file = "config/explosionoverhaul/explosionoverhaul-common.toml"
 hash = "f035a262f6dbe9afd2cb8efd34e7df258bda45e1ea033f9fc8ff4141020a4a1b"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/00_forge.snbt"
+hash = "d28d63214ea01da607d19a99899515fa401cd0941a56cb36cca2a2dd29daefbd"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/01_engrenages.snbt"
-hash = "c34b1e6454c7dfdf23e64957f881319e0a006787079fc01cd271f3e70e264b07"
+hash = "4d6665eaab7168e1730d97c20555e9e6a31504634d7221807698545a91c66bde"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/02_laiton.snbt"
-hash = "31832ae8600746f56bb068d8f7b4855858f4cedf4d7a3a47e944f1b1cb1422c6"
+hash = "ff81f280346d26a3334a46ff5d646350b131fbf1c071f82910cecdc995679817"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/03_electricite.snbt"
-hash = "83a4f990a7c9adcbdf34792856e498eefd3def6acca148f69877e881212b6913"
+hash = "f69f2f3588abf9806dedec7a77a661885d128876e778d221148ef42a54819a46"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/04_industrie.snbt"
-hash = "ede4760c14261e87dce53558a773c792d23b4b029ebab861a3df888b75222f83"
+hash = "fd50a61b8a5fc7662c6fa79a899504cf76e1b429cf52ee113123aeac3bb24e0a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/05_artillerie.snbt"
-hash = "f284adbddbe50f43dc061d78770e450d3634aade0517ad7c7895570206b53d14"
+hash = "f59f547ae004a2801732a99f4bd0ee0b5e5ba4605f75b3333ba7baf120118d16"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/06_aviation.snbt"
-hash = "33a201c980c5331df167b73cfa0ab6af037d21d6cb3bfbc14fb2591e916d10bf"
+hash = "981b4b934eafcf891839085dc085e9db3875f73f4b2e16a6337c9479bcc16348"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/07_blindes.snbt"
-hash = "d0b3d9c8edc8c2d4a057c9ff02378ba6c33f9c699b073cb3cef738fb7e5ee5e2"
+hash = "10a640ef3dc4079d917e29e8d562890fe7f9c5150697d2b5843d8aa9efd4e1dd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/08_nucleaire.snbt"
-hash = "8ec33b440616bc2a9a7a2d7b9f0649b4f0358e9f931c9bbb8d7a5a3727acbb29"
+hash = "6c2dc7f7271d9685cf2abee842a98e94d3fff563d7f8dcd967287eeeb492890b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/09_missiles.snbt"
-hash = "8fd72ff5bda87890fcee9fd549e93b64fe245ca8d79730034664c718a6a7a51c"
+hash = "377b12f3a8d33da54c98e2a4e6882bd627a6dd7a2ac2dc01276bbfb763f91db5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/10_adm.snbt"
-hash = "0540754886fafe95e7d8771622abca0e6c10c3815b110a17618871a51a96af95"
+hash = "b688fa8877e823d90573e766079ad499683deab0a6c9db31f3deae1da5c7a771"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -78,11 +82,15 @@ hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "48ca105d2539d8668a188c0a693b5edaf3cd513e0db26bec9b49242c676c4455"
+hash = "b71ed592f5b2f88b4522ef9017aae7e788da8acd4c14be816b192e3a122e1693"
 
 [[files]]
 file = "config/projectexplosive-common.toml"
 hash = "91f975fd238167ed6c2997292e63e0a0aa04dd5558c70131a3eb03c49a37d60b"
+
+[[files]]
+file = "config/superbwarfare-server.toml"
+hash = "847bb43dc2dde8301b196ead7e82cd8bac531b44c0a9f2a02f000ebdc5099c69"
 
 [[files]]
 file = "kubejs/assets/aeroadditionbridge/lang/fr_fr.json"
@@ -693,6 +701,430 @@ file = "kubejs/data/cbc_terminal_ballistics/recipe/copycat_armor_layer.json"
 hash = "572cefadca1d99c7bcba31b0596313f532abf2a3c957e54514ed4b0699060a12"
 
 [[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/apds_shot.json"
+hash = "d8ab834afe9a9e59fb78124600125435b166fcda36d74c2d84ddcde49ec489c8"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/apds_steel.json"
+hash = "433418688d3ce9fafa2fa623ff1b09341ae6e822d898d718a476503486941351"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/bronze_mediumcannon_barrel.json"
+hash = "c0896b8660838c75fa326f055335e43d880b1728b586bfd0a8ca92d43ab24536"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/bronze_mediumcannon_breech.json"
+hash = "a3b322a2059c783d350b4af8a68a8ec48ca266a490b4fc9faa02c12fab138e2b"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/bronze_mediumcannon_recoil_barrel.json"
+hash = "2784a8ccc1b7741e0c588821e2c247990b942b0d1d8ea61d36d8c4499ef818e5"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/bronze_rotarycannon_barrel.json"
+hash = "de1c4683b02c6318fdb67fc803499841586a2421b486500e7cfbb2a69566488a"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/bronze_rotarycannon_bearing.json"
+hash = "79799eb9c5f9102076ff74e5402e5dd3a49c66bffa745c70bdc270f0a19ccbff"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/bronze_rotarycannon_breech.json"
+hash = "632a82f0fc5155fda7ffd1616cf14fc6d91597b23d85cabf6f3b408c13715724"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/built_up_gun_launcher_barrel.json"
+hash = "20bdd65967bafac794bd3aafd03ffcc56ace402e254040c2f84b120ffbe7e1e6"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/carbon_steel_block.json"
+hash = "dc95d4730d9ac8bd36a330ac966ec0554b73969399e12ab9a21db0f86140334b"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/carbon_steel_slab.json"
+hash = "c727c4bb3e23c65bf41d788bd9e90a1319504d1fdf78a041d1149c57806b9961"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/carbon_steel_stairs.json"
+hash = "3109a2479411cbac041f73d82785d1955749ba7fc19baa2cc41bc7c99309d3d7"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/cast_iron_mediumcannon_barrel.json"
+hash = "d4d76c2d73572783d853cadba4e1facd6c196b95405ea78ce2d4c03e1662ac5d"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/cast_iron_mediumcannon_breech.json"
+hash = "5a9a692b3ce0754ba747f10ca5d5a7f81db65f752325eb1b92198ff5f89e6a96"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/cast_iron_mediumcannon_recoil_barrel.json"
+hash = "44317d1353a90b2e988e01f8f93980e537f0f44760661ead8adce0d1ba46e3ca"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/compact_mount.json"
+hash = "471994ce89977cf20bd28c138e3fc20e7220e95f398fe4b4a0dcdcacc8b0083f"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/composite_block.json"
+hash = "545228020b12a9621ea3e4a7e9ff8153e6e6f439f9a218bfcd654f203889f022"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/era_block.json"
+hash = "15b989c160a74fea97059f7e20bfb294e6ad4898c7c99a0fe3f53aa7d7d49b37"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/era_slab.json"
+hash = "cc0601bc2f2cfd61ae97933f291267a5fd6f5afea7734fc71cd3492afe3ad43a"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/era_stairs.json"
+hash = "98b83b6dc7d5d2255dfaf78cffbab3105d9a58fe0ecf494e7c87a2b3090d6f54"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/green_era_block.json"
+hash = "77120e2945ab5317e02735a5b1347eb01aa1acc56f0f3194c19fa7067c1b033a"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/green_era_slab.json"
+hash = "2afe1d5b6458933e511df0a3cf2e6078523d0ec0207ff948f1ec6bdcede382f7"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/green_era_stairs.json"
+hash = "98babfbeccb365d8875a2b23e878a4b6513c98c23524aeddf730e6fa6d65cbe5"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/gun_launcher_barrel.json"
+hash = "280b549d4d8a6d60b1c51bad9af9292bb8b7afdab7a2d507dd097d39b3b606c6"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/gun_launcher_chamber.json"
+hash = "a6267cbc8c486f13b3144ba0cd8730960f2ee831a19bf5819ccff4e52665dd3e"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/gun_launcher_quickfiring_breech.json"
+hash = "a6a045d475f5f885a265d4312a343dd1cabeca227417026aae27641d3f35bdcc"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/gun_launcher_sliding_breech.json"
+hash = "f24ef9ba1ee4392b220288d94f7b7f3c5c8cd1722b1c7b734b36014afc51e7b6"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/heap_shell.json"
+hash = "68501d7b82ca526a1e2af48feefe290c7811f84f7e622a4940691c936ab86be9"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/hefrag_shell.json"
+hash = "521545600a7b6fffaffcc352bf0279458cb93695eb1e55fa680962f8845c6631"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/hehc_shell.json"
+hash = "0890a2bd2d8dc8d1eb2df9f407b99db9115b786e950de0fdf283df7f90894ee9"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_bronze_mediumcannon_breech.json"
+hash = "880194214ee525fe139b463528de35f04cf29e32acd3f6abe2243bbd444d1d60"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_bronze_mediumcannon_recoil_barrel.json"
+hash = "64594201760b2c96ed93656b83111440784fe679f092d28106123e30268dda45"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_bronze_rotarycannon_bearing.json"
+hash = "82e90374c18ef490e6abb3cd96781ffdfe7e64227c84d6c199aeb73f3b98bfca"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_bronze_rotarycannon_breech.json"
+hash = "ccfb8edd1942dc45cb05d7ef200576a9be00cdb390e65023367d2be9054b3441"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_cast_iron_mediumcannon_breech.json"
+hash = "7f1341b7ac281e85a594a86f3c17de386eef71f1e332f1f6f4705d5586ad5194"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_cast_iron_mediumcannon_recoil_barrel.json"
+hash = "9fb1003bbef2e2380c49ac9e7261a8ea71411feead5fec4da2f39af9e1de57ef"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_gun_launcher_sliding_breech.json"
+hash = "e36f157a12e87d1d73b50d60ad238fbad8a03a878687849d48f297e1098510f3"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_nethersteel_mediumcannon_breech.json"
+hash = "2cb71f7a4e0a9f3f5203f886ef2ea92fc0c4c6c4575509a6d213a83a9237d214"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_nethersteel_mediumcannon_recoil_barrel.json"
+hash = "fbe2f97a454f3faced13140f01636dc5d54867aa9f7e4d423197f94268532d9a"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_nethersteel_rotarycannon_bearing.json"
+hash = "f90687c4a607c3540ca694517b30b49be3fa834fd4e66ecb63bcb71464df01d2"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_nethersteel_rotarycannon_breech.json"
+hash = "ab7f25b54675dbd5a1224efe252c53b29a4eecd24579a306d2a6ddb7e39b3549"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_steel_mediumcannon_breech.json"
+hash = "70671dcff171d28fb683d960dd462eeef94c295197ac67c5ce2cc2407f26aac3"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_steel_mediumcannon_recoil_barrel.json"
+hash = "5ea727ed0d6f6e65014894ae2cac667a1e1baeaae0d6585a4d7b4e3fbb7f6b60"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_steel_rotarycannon_bearing.json"
+hash = "d33c33ea6027936c23c487acb31c6d61a0a4a1df508a9ff8c1f4a92345bf3f91"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_steel_rotarycannon_breech.json"
+hash = "59f4d475e7991fbfa0a9eabc67fb9b72c9ad61558a7744e7f732d5ccc50584cc"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/infrared_seeker_guidance.json"
+hash = "c66b2899ea811aa2a45e20ab1fb387287fe3bd67f36f91e280657ea204e852ac"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/manual_command_guidance.json"
+hash = "989fe2eb1febdf23b75f1e6237648e1158e54f160fe838742997de9e2558ee1a"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/mediumcannon_barrel_cast_mould.json"
+hash = "b04265ce8674a1a747f343cf8849e0546f484c1b6f9a9711249b32faa5c9a420"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/mediumcannon_breech_cast_mould.json"
+hash = "c7022ff10c4079a0efcab21dd4bc0a076b902759522c9444bf43b71d8ef8e9a2"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/mediumcannon_recoil_barrel_cast_mould.json"
+hash = "48e39f40e8120664eaa1f539adfb9dd0333b452b05141001483d82699daf4064"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/nethersteel_mediumcannon_barrel.json"
+hash = "2509bab6d14251c9c9874adc68ccdc6549869286b0c00801626b2796f4d1dc14"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/nethersteel_mediumcannon_breech.json"
+hash = "659362fc75404fdf32550b16bcfb05cb1af301ab7263ee4ea425988a6197b247"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/nethersteel_mediumcannon_recoil_barrel.json"
+hash = "74f31bbceb711875d7df741273cd51b0e9e8f361b5184924a8f94bef0825c8de"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/nethersteel_rotarycannon_barrel.json"
+hash = "7e7abb5166d2001f57da39a01d2b5544969782b085dca97113137fac19453e0d"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/nethersteel_rotarycannon_bearing.json"
+hash = "89a854a3119d910a36fb464772721b30e43bf5bdfe4d70df8ec02748c36166c0"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/nethersteel_rotarycannon_breech.json"
+hash = "c3dcb3c05d973ccd7c63345b2c075e3e69e2391f5bfab27d56d1149c61d721c9"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/optical_command_guidance.json"
+hash = "f3f2baf19e4ac0bbba06425471171d36890ea6a938e00cba8de167183edc4d4f"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/periscope_arc_sight.json"
+hash = "7769c1c941f2f61ab608ee7189032d861c0875df395e6a42b58272456edde994"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/periscope_ring_sight.json"
+hash = "084cef8e14a7fccdbd64c2f206f6a8a13a78294446f6d01c698e61f3b113ff77"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/remote_gun_sight.json"
+hash = "509dd14104633c6dc233ff52984882e964cbd977341e54d9757b18313bfe9132"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/rocket_rails.json"
+hash = "da08af67f48d5731e447decfc9b3f78d2419b768087643a5d3e95bae21526f36"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/rocket_rails_end.json"
+hash = "893209ef6784e62533f199851a776795675f5876bf97267a1c69bafd2f6b6483"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/rotarycannon_ammo_drum.json"
+hash = "4bf3fa2ab8e2c1c072bf6c573efe84b4165cffeca3f89af5082492f528bdbbfe"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/rotarycannon_barrel_cast_mould.json"
+hash = "2c65fe2227f3d0fc424df1155a24f5ca1c1d45988e0c012ddd0f0541f84f6198"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/rotarycannon_bearing_cast_mould.json"
+hash = "4ef4da4a50452321f0a5585215c642d2214c5f6db89d80367c382e197c90dfd2"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/rotarycannon_breech_cast_mould.json"
+hash = "f4c696d349cb98be92923c3ff9f0369fe59968fd1f16a7bd79b3f06ae99de117"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/smoke_discharger.json"
+hash = "f95040f6203f0ddbc1e90b08fa0c96e573710ee6f82fb3849199ca6bb8dd98da"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/solid_fuel_split_thruster.json"
+hash = "b82f3c9a6cca754a0da0e7aeb18cad0420e6e4e8f49b4c85b07887a7da4084ba"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/solid_fuel_tank.json"
+hash = "378252cd410ec036f13f3b5a3c0983b424b1af1d1349e642d3bda2852b5e6b7a"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/solid_fuel_thruster.json"
+hash = "3f186e1aae9f36797b23ca98f5cf22915b12fe0541519015cabab7b015b81a24"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/steel_mediumcannon_barrel.json"
+hash = "ed1eccc7b2aeecbf6b7462acfe00b118098d5569a43d76facb0d548f98029fb7"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/steel_mediumcannon_breech.json"
+hash = "61f6378381d37eb4e46bc819107c4eba00b879b63c1f3393068968913b602c14"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/steel_mediumcannon_recoil_barrel.json"
+hash = "5b8492e98ee043ccee2f0a036dc0daee2887137169bbf9ead9f9526e8849cfc9"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/steel_rotarycannon_barrel.json"
+hash = "985effda5915b9dd200a2ed6f977fe8dab383970e1c1e1707c9a32ebed82952c"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/steel_rotarycannon_bearing.json"
+hash = "1d238e855e0b198e1610920073e344a290eb56d002227d001973af5223b0ab5b"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/steel_rotarycannon_breech.json"
+hash = "8ec6614a2c680cb8b6be2f7b27e863010287959293c229741f173bd654cd185d"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/tan_era_block.json"
+hash = "246216a5cd8ef2b7b924510c2cbe3ccc5f807a69daae07fddda0636c7dda12e0"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/tan_era_slab.json"
+hash = "b091ce81bb188f01715a709729daa3f136f01fab248c21ef1fa00ac82416dd5f"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/tan_era_stairs.json"
+hash = "d687c92cbb1e1e2e86da357b20e2ea07eb40d5256fb1b679fde64f45ce3948c3"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/torpedo_screw_breech.json"
+hash = "952237d879d2a34a5784c152036a9c654142e337e96b8d70bb7174adbbcb0ea2"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/torpedo_tube.json"
+hash = "e7c4445505330b5afce5037898c0a2db87b74c9ac364ce6836dfb602df2a89c4"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_bronze_mediumcannon_barrel.json"
+hash = "8d61f9a1607895e145672a50a40b456eed935de45700e0d8a89d2c6b3e358e54"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_bronze_mediumcannon_breech.json"
+hash = "66a7bdf0c611c856434ec6c0b7c010af09e7abbd2648f5ad33bf26afd9cb56c3"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_bronze_mediumcannon_recoil_barrel.json"
+hash = "a3b161485eb526602be10eb095f23ba4181a9eb9fc3cda85ba60742d7dedcd3b"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_bronze_rotarycannon_barrel.json"
+hash = "b8f334f58fe5038cab9f39cfa94f6dc213f9ee7e2bba1c5e2ee094987b36b91b"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_bronze_rotarycannon_bearing.json"
+hash = "e513ca626638a292cbcce9120c89a364d5e5f41b2e36dc2fc2011aaf96d510cd"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_bronze_rotarycannon_breech.json"
+hash = "bfb81bf0f369f3ff77939d4f781760eeff0dd7c9996f8a31cc048c60bb5481bf"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_built_up_gun_launcher_barrel.json"
+hash = "ce566b8471c9c9705d187960cb25598e04a2715b628ea82f7a1f7bbb715c8879"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_cast_iron_mediumcannon_barrel.json"
+hash = "d147baebc847f819902c817f7cbe448bedd0a8d3f217424f5958598a3cf881ac"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_cast_iron_mediumcannon_breech.json"
+hash = "87b1d6819228f39ee17d19ef69cd966111318ba108fb2e4aceb0bf10e46ba66b"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_cast_iron_mediumcannon_recoil_barrel.json"
+hash = "9a57827db12d5332d5bbc3240b65860d967b610e0eb52ee74926e86cc48b5523"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_gun_launcher_barrel.json"
+hash = "b306f2e67597be03eff6190f935b30bba7256a817f301157891616b583050c2c"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_gun_launcher_chamber.json"
+hash = "5e2c1ea6a6374ac735deee3b89a4ad5fb47baefa7701215781b0220f72c5de26"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_gun_launcher_sliding_breech.json"
+hash = "ffca88b56d7460dcc1490fc4195c7bfcae4d1612948a8b2d6342d760f43fab15"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_nethersteel_mediumcannon_barrel.json"
+hash = "9c6ba58ea8ab09d11c38d79f4f83c93770ca7bc52f968be9890ed52373f877fe"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_nethersteel_mediumcannon_breech.json"
+hash = "34d714a52b0dd44c16116687ebc8dbfaa0c1cf6336390983f355722f99dceaaf"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_nethersteel_mediumcannon_recoil_barrel.json"
+hash = "93bb65921f6c12e56cd88a03922f983bcba7605214f21e7772315396d60f885a"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_nethersteel_rotarycannon_barrel.json"
+hash = "ed69b72c4a42d234798cf568492f27ef3596e380800e6223b60d6ab9fb20b3b4"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_nethersteel_rotarycannon_bearing.json"
+hash = "3206aa9351ebbf1e520e109f46d7c06e028ae0d156f435f7e609591270482268"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_nethersteel_rotarycannon_breech.json"
+hash = "8c399ce2a8a97820ff5cd52047368421ac226b08ab7edc158539231a755d9a7f"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_steel_mediumcannon_barrel.json"
+hash = "91d114d8fb4539bf85122020b759b4c6f79c853def8d228e9489c4ca628a189b"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_steel_mediumcannon_breech.json"
+hash = "12987f3700fbd0b5ad8e80d8497d51808f1c42344db67ad02622a1028b54dded"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_steel_mediumcannon_recoil_barrel.json"
+hash = "0ace6eb3c5951c447432469bb7e6ecbfac1c4a9a366fc6c6626925a7f2e87c88"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_steel_rotarycannon_barrel.json"
+hash = "0b7a4467465ce5780198d9e8bfc21df7a0ce4b96ee5c454e42286184f38ceb9d"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_steel_rotarycannon_bearing.json"
+hash = "535af2c02dce07e5e96c7a529717b3557dccef655da75e5c2ee4bb61e18a3bcf"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_steel_rotarycannon_breech.json"
+hash = "5df5349b2a6ef8d0b4e0bf57756300d7e05a7e594dff2f1b697a40a7350024d3"
+
+[[files]]
 file = "kubejs/data/createadditionallogistics/recipe/crafting/trains/network_monitor.json"
 hash = "0d6d45aa3d02f1de94a7a889c356c40c9e7e3c336c70ccdbe10af75575d0ba12"
 
@@ -711,6 +1143,10 @@ hash = "76321e9d1cb11dd2de6c19caca47f1a3cbbd20ccc85d6f51bfb6cc5f6e8401e0"
 [[files]]
 file = "kubejs/data/createmissiles/loot_table/chests/missile_chest_guardian.json"
 hash = "c64ec576385a52ba295df1eccd29e110a3b432369f5b1238b63468db7b3f5392"
+
+[[files]]
+file = "kubejs/server_scripts/balance/blindage.js"
+hash = "afea5ecf284f1b1869b2807b82839bf1ba95c5971bbdcc136d86db942ac5cbda"
 
 [[files]]
 file = "kubejs/server_scripts/balance/crosslinks.js"
@@ -1462,6 +1898,16 @@ metafile = true
 [[files]]
 file = "mods/project-explosive.pw.toml"
 hash = "88f3361d7cf77e7c8a546296a3c7a9cbf66fafdfeb4e7cf82bfd1de74b9a53c6"
+metafile = true
+
+[[files]]
+file = "mods/railways-additions.pw.toml"
+hash = "adbd05f5e849c5557a6b56c307d1da9f7d07aa7a4b91bbe336b75beb587a1bca"
+metafile = true
+
+[[files]]
+file = "mods/railways-untold.pw.toml"
+hash = "20373da466e479d52f625484a4db0a993a5fc240019f154b9c2735e91cd3d678"
 metafile = true
 
 [[files]]

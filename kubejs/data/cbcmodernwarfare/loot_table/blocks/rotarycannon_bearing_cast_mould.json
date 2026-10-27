@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "cbcmodernwarfare:rotarycannon_bearing_cast_mould"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "cbcmodernwarfare:blocks/rotarycannon_bearing_cast_mould"
+}

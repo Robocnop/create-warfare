@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "projectexplosive:icbm_nuclear" }
 	id: "41960E5E13891BC1"
-	order_index: 9
+	order_index: 10
 	quest_links: [ ]
 	quests: [
 		{

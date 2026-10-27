@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "create:brass_ingot" }
 	id: "08D470CD3E865BB7"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{

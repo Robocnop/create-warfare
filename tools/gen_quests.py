@@ -12,7 +12,8 @@ OUT = os.path.join(ROOT, "config", "ftbquests", "quests")
 
 # Quest tuple: (key, item id, count, title, description, [dependency keys], xp reward[, extra])
 # A dependency is a key of the same chapter, or "<chapter>:<key>" for another chapter.
-# Optional extra dict: several consumed tasks, an item reward, repetition (see LAUNCH_CODES).
+# Optional extra dict: several consumed tasks, an item reward, repetition (see LAUNCH_CODES),
+# or CHECK for an action without an item (checkmark task, the item id is only the icon).
 
 # Repeatable quest giving the Launch Codes (kubejs:launch_codes, see kubejs/startup_scripts).
 # The tasks consume their items, the reward is claimed once per team, then the quest can be
@@ -23,7 +24,29 @@ LAUNCH_CODES = {
     "repeat_cooldown": 14400,
     "linear": True,
 }
+CHECK = {"checkmark": True}
+
 CHAPTERS = [
+    # Guide d'Overgeared (recettes lues dans overgeared-neoforge-1.21.1-1.6.19.jar) : fer et acier se forgent à l'enclume.
+    ("00_forge", "La forge", "Overgeared ralentit le fer : outils et armures se forgent à l'enclume. Ce chapitre explique comment.", "overgeared:smithing_hammer", [
+        ("rock", "overgeared:knappable_rock", 4, "Tailler la roche", "Clic droit répété sur un bloc de pierre avec un silex : tu obtiens de la roche (le silex peut casser). Les outils en pierre ne se fabriquent plus directement.", [], 10),
+        ("stone_head", "overgeared:stone_pickaxe_head", 1, "Tête de pioche en pierre", "Une roche dans chaque main, clic droit : la grille de taille s'ouvre. Dessine la forme de la tête (JEI ou EMI montre les formes). Tête + bâton = pioche en pierre.", ["rock"], 15),
+        ("copper_hammer", "overgeared:copper_smithing_hammer", 1, "Marteau de forge en cuivre", "2 lingots de cuivre et 2 bâtons : l'outil de base du forgeron.", ["stone_head"], 15),
+        ("stone_anvil", "minecraft:stone", 1, "Enclume en pierre", "Accroupi, clic droit sur un bloc de pierre avec le marteau : il devient une enclume de forge en pierre. Elle casse après 64 forgeages. Coche la quête quand c'est fait.", ["copper_hammer"], 15, CHECK),
+        ("tongs", "overgeared:wooden_tongs", 1, "Pinces", "5 bâtons. Un métal chauffé te brûle : tiens les pinces dans l'autre main pour le manipuler.", ["copper_hammer"], 10),
+        ("heated_iron", "overgeared:heated_iron_ingot", 1, "Lingot de fer chauffé", "Au haut fourneau, le fer devient un lingot chauffé (le four classique donne toujours des lingots froids). Il refroidit en 60 s dans l'inventaire, ou tout de suite jeté dans l'eau.", ["tongs"], 20),
+        ("forge_head", "overgeared:iron_pickaxe_head", 1, "Forger une tête de pioche", "Ouvre l'enclume, place 3 lingots chauffés en ligne, puis accroupi + clic droit sur l'enclume avec le marteau : le mini-jeu commence. Frappe quand la flèche est dans la zone. Le score donne la qualité, de « mal forgé » à « parfait ».", ["heated_iron", "stone_anvil"], 40),
+        ("iron_pickaxe", "minecraft:iron_pickaxe", 1, "Pioche en fer", "Tête + bâton à l'établi. La qualité de la tête passe à l'outil.", ["forge_head"], 20),
+        ("blueprint", "overgeared:blueprint", 1, "Plan de forge", "Plan vierge (3 papiers + colorant bleu) et établi = table à dessin, où tu choisis un type d'outil. Sans plan, une tête ne dépasse pas les qualités basses ; le plan s'améliore à chaque forge.", ["forge_head"], 20),
+        ("iron_plate", "overgeared:iron_plate", 8, "Plaques de fer", "Un lingot de fer froid forgé donne une plaque. Les armures en fer se forgent avec ces plaques.", ["stone_anvil"], 20),
+        ("iron_chestplate", "minecraft:iron_chestplate", 1, "Plastron en fer", "8 plaques de fer forgées sur l'enclume.", ["iron_plate"], 30),
+        ("alloy_furnace", "overgeared:alloy_furnace", 1, "Fourneau à alliages", "8 blocs de briques autour d'un haut fourneau.", ["heated_iron"], 25),
+        ("crude_steel", "overgeared:crude_steel", 4, "Acier brut", "3 lingots de fer + 1 charbon = 4 aciers bruts. Chauffe-les au haut fourneau, puis forge-les en lingots d'acier. Raccourci : l'acier TFMG (chapitre 4) passé au haut fourneau donne directement un lingot d'acier chauffé.", ["alloy_furnace"], 30),
+        ("smithing_hammer", "overgeared:smithing_hammer", 1, "Marteau de forge en acier", "Tête forgée avec 2 lingots d'acier chauffés, plus un bâton.", ["crude_steel"], 40),
+        ("smithing_anvil", "minecraft:anvil", 1, "Enclume de forge", "Accroupi, clic droit sur une enclume classique avec un marteau de forge : elle devient une enclume de forge, qui ne casse pas comme celle en pierre. Coche la quête quand c'est fait.", ["smithing_hammer"], 30, CHECK),
+        ("steel_pickaxe", "overgeared:steel_pickaxe", 1, "Pioche en acier", "Plus solide que le fer, et la base de l'équipement en diamant.", ["smithing_hammer"], 40),
+        ("diamond", "minecraft:diamond_pickaxe", 1, "Pioche en diamant", "Les recettes en diamant classiques sont désactivées. Table de forgeron : outil en acier + gabarit + diamant. Le gabarit se trouve dans les coffres (forteresses, temples, mines...) et se copie avec 7 diamants et 1 lingot d'acier.", ["steel_pickaxe"], 60),
+    ]),
     ("01_engrenages", "L'âge de l'engrenage", "Les bases de Create : rotation, alliage et premières machines.", "create:cogwheel", [
         ("andesite_alloy", "create:andesite_alloy", 16, "Alliage d'andésite", "Mélange andésite et fer (ou zinc) : c'est la base de presque toutes les machines.", [], 50),
         ("wrench", "create:wrench", 1, "La clé", "Tourne, démonte et règle tes machines.", ["andesite_alloy"], 25),
@@ -86,7 +109,7 @@ CHAPTERS = [
     ("05_artillerie", "Artillerie (Create Big Cannons)", "Fondre, forer et assembler de vrais canons.", "createbigcannons:cannon_mount", [
         ("cast_iron", "tfmg:cast_iron_ingot", 32, "Fonte", "Le métal des premiers canons.", ["04_industrie:coke_oven"], 100),
         ("casting_sand", "createbigcannons:casting_sand", 16, "Sable de moulage", "Pour couler les pièces de canon.", ["04_industrie:coke_oven"], 50),
-        ("cannon_cast", "createbigcannons:cannon_cast", 4, "Moule de canon", "Le métal en fusion prend la forme du moule.", ["casting_sand"], 100),
+        ("cannon_cast", "createbigcannons:very_small_cast_mould", 1, "Moule de canon", "Des bûches à la scie mécanique. Entouré de sable de moulage, le métal en fusion y prend la forme du canon.", ["casting_sand"], 100),
         ("cannon_barrel", "createbigcannons:cast_iron_cannon_barrel", 3, "Tube de canon", "Plus le tube est long, plus l'obus va loin.", ["cast_iron", "cannon_cast"], 150),
         ("cannon_chamber", "createbigcannons:cast_iron_cannon_chamber", 2, "Chambre", "Accueille les charges de poudre.", ["cannon_barrel"], 150),
         ("breech", "createbigcannons:cast_iron_sliding_breech", 1, "Culasse coulissante", "Pour recharger par l'arrière.", ["cannon_chamber"], 150),
@@ -118,8 +141,8 @@ CHAPTERS = [
         ("wheel_mount", "offroad:wheel_mount", 4, "Support de roue", "La base de tout véhicule terrestre.", ["04_industrie:steel"], 150),
         ("tire", "offroad:tire", 4, "Pneus", "Montés sur les supports de roue.", ["wheel_mount"], 100),
         ("large_tire", "offroad:large_tire", 4, "Gros pneus", "Pour les engins lourds.", ["tire"], 150),
-        ("steel_armor", "cbcmodernwarfare:carbon_steel_block", 32, "Blocs d'acier au carbone", "Protègent tes véhicules et bunkers.", ["04_industrie:steel"], 200),
-        ("era", "cbcmodernwarfare:era_block", 16, "Blindage réactif (ERA)", "Explose vers l'extérieur pour arrêter les obus.", ["steel_armor"], 250),
+        ("steel_armor", "cbcmodernwarfare:carbon_steel_block", 16, "Blocs d'acier au carbone", "Acier et coke au mélangeur chauffé donnent l'acier au carbone ; 4 lingots font un bloc. Protège tes véhicules et bunkers.", ["04_industrie:steel"], 200),
+        ("era", "cbcmodernwarfare:era_block", 8, "Blindage réactif (ERA)", "Une charge de poudre déployée sur un bloc d'acier au carbone. Explose vers l'extérieur pour arrêter les obus.", ["steel_armor", "05_artillerie:powder"], 250),
         ("arcon_barrel", "arcon:arcon_cannon_barrel", 2, "Canon blindé (Armored Constructs)", "Tourelles pour tes chars.", ["steel_armor"], 250),
         ("turret", "createdieselgenerators:chemical_turret", 1, "Tourelle chimique", "Lance-flammes automatique.", ["04_industrie:distillation"], 200),
         ("periscope", "createarms:periscope_mast", 1, "Périscope", "Vision depuis l'intérieur du char.", ["steel_armor"], 150),
@@ -148,7 +171,7 @@ CHAPTERS = [
         ("monitor", "create_radar:monitor", 4, "Écran radar", "Affiche les contacts.", ["radar_dish"], 150),
         ("fire_controller", "create_radar:fire_controller", 1, "Conduite de tir", "Relie radar et canons.", ["monitor"], 250),
         ("transponder", "create_radar:identification_transponder", 1, "Transpondeur IFF", "Ami ou ennemi ?", ["radar_dish"], 150),
-        ("jammer", "create_radar:jammer", 1, "Brouilleur", "Aveugle les radars ennemis.", ["transponder"], 200),
+        ("plane_radar", "create_radar:plane_radar", 1, "Radar d'avion", "Radar compact à embarquer sur tes appareils.", ["radar_dish"], 200),
         ("sidewinder", "createarms:aim_9_sidewinder", 2, "AIM-9 Sidewinder", "Missile air-air guidé.", ["fire_controller"], 250),
         ("patriot", "createarms:patriot", 1, "Patriot", "Défense antimissile.", ["sidewinder"], 300),
         ("tomahawk", "createarms:tomahawk", 1, "Tomahawk", "Missile de croisière longue portée : demande des Codes de lancement.", ["fire_controller", "10_adm:launch_codes"], 350),
@@ -255,6 +278,8 @@ def main():
             if "tasks" in extra:
                 tasks = [f"{{ consume_items: true, count: {c}L, id: \"{qid(cname, key, 'task', str(i))}\", item: {{ count: 1, id: \"{t}\" }}, type: \"item\" }}"
                          for i, (t, c) in enumerate(extra["tasks"])]
+            elif extra.get("checkmark"):
+                tasks = [f"{{ id: \"{qid(cname, key, 'task')}\", type: \"checkmark\" }}"]
             else:
                 tasks = [f"{{ count: {count}L, id: \"{qid(cname, key, 'task')}\", item: {{ count: 1, id: \"{item}\" }}, type: \"item\" }}"]
             flags = ""
@@ -262,7 +287,7 @@ def main():
                 flags += f"\t\t\tcan_repeat: true\n\t\t\trepeat_cooldown: {extra['repeat_cooldown']}\n"
             if extra.get("linear"):
                 flags += "\t\t\tprogression_mode: \"linear\"\n"
-            if "tasks" in extra:
+            if "tasks" in extra or extra.get("checkmark"):
                 flags += f"\t\t\ticon: {{ id: \"{item}\" }}\n"
             body.append(
                 "\t\t{\n"

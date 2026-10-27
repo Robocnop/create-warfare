@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "offroad:tire" }
 	id: "1AF3C82F48B4688F"
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -36,15 +36,15 @@
 			dependencies: ["756CBDC330F693ED"]
 			id: "17BFE8A7DDC09824"
 			rewards: [{ id: "1F364AE81BF28DFB", type: "xp", xp: 200 }]
-			tasks: [{ count: 32L, id: "28EF78EEA6B3ED17", item: { count: 1, id: "cbcmodernwarfare:carbon_steel_block" }, type: "item" }]
+			tasks: [{ count: 16L, id: "28EF78EEA6B3ED17", item: { count: 1, id: "cbcmodernwarfare:carbon_steel_block" }, type: "item" }]
 			x: 0.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["17BFE8A7DDC09824"]
+			dependencies: ["17BFE8A7DDC09824", "4FBBF5C4723F0E09"]
 			id: "146D0F04611E9EB9"
 			rewards: [{ id: "5495A3535FCB0ED2", type: "xp", xp: 250 }]
-			tasks: [{ count: 16L, id: "4556716FC7F42FDD", item: { count: 1, id: "cbcmodernwarfare:era_block" }, type: "item" }]
+			tasks: [{ count: 8L, id: "4556716FC7F42FDD", item: { count: 1, id: "cbcmodernwarfare:era_block" }, type: "item" }]
 			x: 2.0d
 			y: 1.5d
 		}

@@ -1,0 +1,13 @@
+name = "Railways Additions"
+filename = "railwaysuntold_additions-neoforge-1.0.1a.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f26c356968f171a8133b395193f786b1d2cdd3f8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8407753
+project-id = 1580820

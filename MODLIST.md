@@ -1,6 +1,6 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 176 mods et packs.
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 189 mods et packs.
 Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
@@ -20,6 +20,10 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 - **Exploration** : Terralith (biomes), YUNG's (donjons, mines, forteresses…), Towns and Towers, Explorify, Create Structures Arise / Rustic Structures / Aeronautics Structures, Friends&Foes, Mowzie's Mobs, Deeper and Darker, Ore Zombies. Ils ne s'appliquent qu'aux **nouveaux chunks** : à installer avant de créer le monde.
 - **Options par défaut** (Default Options) : français, touches de déplacement physiques (ZQSD sur AZERTY), distance 10. Appliquées seulement au premier lancement, jamais par-dessus les réglages d'un joueur.
 - **Visuels** : Complementary Reimagined (shader, compatible Iris + Distant Horizons, désactivé par défaut : Options vidéo → Shaders) ; Fresh Animations (activé par défaut, nécessite EMF + ETF inclus). Packs Create-style (Sophisticated Backpacks, Tom's Storage, Create Ultra PBR) écartés : licence « All Rights Reserved ».
+- **Railways Untold** (bêta) : génère un réseau de rails Create infini, avec gares dans les villages, à la création des
+  chunks (donc aussi pendant la pré-génération Chunky). Sur un monde existant, seuls les nouveaux chunks en ont ; le
+  « Track Generator » de **Railways Additions** en pose ailleurs. Railways Additions ajoute aussi le régulateur de vitesse
+  des trains et le relieur de gares.
 - **Discord** : Simple Discord Rich Presence (client seul).
 - `allow-flight=true` est obligatoire sur le serveur (avions, jetpacks), sinon les joueurs sont expulsés.
 
@@ -166,6 +170,8 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | Prickle | `prickle-neoforge-1.21.1-21.1.11.jar` | client + serveur | CurseForge |
 | Prism [Neo/Forge] | `Prism-1.21.1-neoforge-1.0.11.jar` | client seul | CurseForge |
 | Project: Explosive | `projectexplosive-0.7.2-beta.jar` | client + serveur | CurseForge |
+| Railways Additions | `railwaysuntold_additions-neoforge-1.0.1a.jar` | client + serveur | CurseForge |
+| Railways Untold | `railwaysuntold-1.21.1-neoforge-1.2.2.jar` | client + serveur | CurseForge |
 | Resourceful Lib | `resourcefullib-neoforge-1.21-3.0.12.jar` | client + serveur | CurseForge |
 | Rhino | `rhino-2101.2.8-build.91.jar` | client + serveur | CurseForge |
 | Ritchie's Projectile Library | `ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
