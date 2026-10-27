@@ -1,0 +1,13 @@
+name = "SC-SuperB Bridge"
+filename = "sc_superb_bridge-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f96478020f067b9c07fee144cd99347bd4033665"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8679281
+project-id = 1470884

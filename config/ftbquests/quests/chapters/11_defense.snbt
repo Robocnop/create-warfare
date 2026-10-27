@@ -1,0 +1,134 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "11_defense"
+	group: ""
+	icon: { id: "securitycraft:sentry" }
+	id: "16A7BFA622EEA61D"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["324CFB3B9B0E5B00"]
+			id: "51DA5E89D7D3F671"
+			rewards: [{ id: "7DF0A515EEF74F5F", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "4B5BF8FFE581DC62", item: { count: 1, id: "computercraft:computer_normal" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51DA5E89D7D3F671"]
+			id: "3635CA2A9238EDD0"
+			rewards: [{ id: "142874B436E48447", type: "xp", xp: 50 }]
+			tasks: [{ count: 2L, id: "6BC7328CDCD75A6F", item: { count: 1, id: "computercraft:wired_modem" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51DA5E89D7D3F671"]
+			id: "2F62A39BF6AD3800"
+			rewards: [{ id: "41C2A3D14AFF6D23", type: "xp", xp: 100 }]
+			tasks: [{ count: 6L, id: "5034E2F1EBA214F6", item: { count: 1, id: "computercraft:monitor_advanced" }, type: "item" }]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			icon: { id: "computercraft:computer_advanced" }
+			dependencies: ["3635CA2A9238EDD0", "7AE07A7DA301D186", "2B6DCB051C43594F"]
+			id: "3341112053D99015"
+			rewards: [{ id: "2E3D4A02B6ED178B", type: "xp", xp: 300 }]
+			tasks: [{ id: "7A245B7B16EE18A2", type: "checkmark" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "computercraft:wireless_modem_advanced" }
+			dependencies: ["3635CA2A9238EDD0", "3B35E94000929A6C"]
+			id: "12AE20BF3CF08536"
+			rewards: [{ id: "1B96005E0807D903", type: "xp", xp: 250 }]
+			tasks: [{ id: "715B13AF6FA2B8CE", type: "checkmark" }]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["51DA5E89D7D3F671", "756CBDC330F693ED"]
+			id: "6F8358FC1FA5F25A"
+			rewards: [{ id: "50474E075767CFF4", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "297B43570F506091", item: { count: 1, id: "computercraft:turtle_normal" }, type: "item" }]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["697CD161FF05B721"]
+			id: "2C4721D77E50AA98"
+			rewards: [{ id: "588634CB26693113", type: "xp", xp: 50 }]
+			tasks: [{ count: 2L, id: "675943ED11A23BE6", item: { count: 1, id: "securitycraft:laser_block" }, type: "item" }]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2C4721D77E50AA98", "0AED6BE8700C86DB"]
+			id: "44F24B414E0DD228"
+			rewards: [{ id: "00CADEBDA3F0522B", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "32A6FCF32E57C883", item: { count: 1, id: "securitycraft:universal_block_reinforcer_lvl1" }, type: "item" }]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44F24B414E0DD228"]
+			id: "6EFD5A18CB66C8A0"
+			rewards: [{ id: "6AA180441B6804CD", type: "xp", xp: 150 }]
+			tasks: [{ count: 64L, id: "2CA806A1421C0204", item: { count: 1, id: "securitycraft:reinforced_stone" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2C4721D77E50AA98"]
+			id: "14BDCFD95D3B0B6A"
+			rewards: [{ id: "7DEF8B6AF3D99AD1", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "0969AA6FF17E303D", item: { count: 1, id: "securitycraft:keypad_item" }, type: "item" }]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["44F24B414E0DD228"]
+			id: "6DD8CD9DA47BBC02"
+			rewards: [{ id: "6527EFA1CA908645", type: "xp", xp: 100 }]
+			tasks: [{ count: 2L, id: "4C3D47CF589CBA7B", item: { count: 1, id: "securitycraft:security_camera" }, type: "item" }]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2C4721D77E50AA98"]
+			id: "12BE8EA035108910"
+			rewards: [{ id: "7A0AB93A7D289907", type: "xp", xp: 75 }]
+			tasks: [{ count: 6L, id: "2DF6F1CBB7451979", item: { count: 1, id: "securitycraft:mine" }, type: "item" }]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2C4721D77E50AA98"]
+			id: "1813381F944EDFE5"
+			rewards: [{ id: "3A9C730204BEFA15", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "2338AB080D2475B0", item: { count: 1, id: "securitycraft:portable_radar" }, type: "item" }]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1813381F944EDFE5", "44F24B414E0DD228", "756CBDC330F693ED"]
+			id: "053E2AB78B4CDD5A"
+			rewards: [{ id: "3DAB0D366F5B78AD", type: "xp", xp: 300 }]
+			tasks: [{ count: 1L, id: "55E539A2E9062FC0", item: { count: 1, id: "securitycraft:sentry" }, type: "item" }]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["053E2AB78B4CDD5A"]
+			id: "3500B9C3283A3465"
+			rewards: [{ id: "4C28D19498399EF2", type: "xp", xp: 400 }]
+			tasks: [{ count: 1L, id: "2591EA6CFB299F0B", item: { count: 1, id: "securitycraft:trophy_system" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+}

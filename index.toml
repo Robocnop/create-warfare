@@ -77,16 +77,24 @@ file = "config/ftbquests/quests/chapters/10_adm.snbt"
 hash = "b688fa8877e823d90573e766079ad499683deab0a6c9db31f3deae1da5c7a771"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/11_defense.snbt"
+hash = "7d43acb4274c2da7940af32a7d5494f9dea20972c5ae26fb1254fc15fbba0fe7"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "b71ed592f5b2f88b4522ef9017aae7e788da8acd4c14be816b192e3a122e1693"
+hash = "e66e00b6bd8169d69c396809e4771a1d81e2b511ff448f62a925b4d07c5d3b5c"
 
 [[files]]
 file = "config/projectexplosive-common.toml"
 hash = "91f975fd238167ed6c2997292e63e0a0aa04dd5558c70131a3eb03c49a37d60b"
+
+[[files]]
+file = "config/securitycraft-server.toml"
+hash = "50d5ef73d367f23c11df485cfe502bd87351d267e928d071886c91d9913f9a51"
 
 [[files]]
 file = "config/superbwarfare-server.toml"
@@ -1157,6 +1165,10 @@ file = "kubejs/server_scripts/balance/military.js"
 hash = "229583e4ff03bb10fb040abe75ddfbfb16e98be9ebbd08b47712b2b481186552"
 
 [[files]]
+file = "kubejs/server_scripts/balance/securitycraft.js"
+hash = "0d40c3aa5910b5971a8d7ce613151d58bb5d15116104d8bcfefb290b80444c0a"
+
+[[files]]
 file = "kubejs/startup_scripts/launch_codes.js"
 hash = "d91578c3eda8d0d2dcaf2d38f6202254b12133b8a491befc6a4cef74ba3740e9"
 
@@ -1243,6 +1255,16 @@ metafile = true
 [[files]]
 file = "mods/cbc-terminal-ballistics.pw.toml"
 hash = "c68f977d3b1af3a2e075e1c5af80533db934bcad1f85c5ff01fd4102eead9ef5"
+metafile = true
+
+[[files]]
+file = "mods/cc-cbc.pw.toml"
+hash = "b292bedd7ee83c59a0674a4bfa84bffc4f5e5e8598b30f86e6626c2db9ceebd2"
+metafile = true
+
+[[files]]
+file = "mods/cc-tweaked.pw.toml"
+hash = "e42363c32c9b6323eea977283c928cec373bfc415534ec92e9c3367ee8c54256"
 metafile = true
 
 [[files]]
@@ -1336,6 +1358,11 @@ hash = "5ec66c03dcabd62b998ceb4b2f180156d60e76ed424c2e62602bfb00d7e77da5"
 metafile = true
 
 [[files]]
+file = "mods/create-avionics.pw.toml"
+hash = "02d8e1b53cf40eda776d245a2c946f0f246a9d789af2f4f00f264a48b42d7236"
+metafile = true
+
+[[files]]
 file = "mods/create-better-motors.pw.toml"
 hash = "7043a3417d67c6e987ceecd5124474eb0b153324bcd12c5b5de56ef7422771af"
 metafile = true
@@ -1343,6 +1370,11 @@ metafile = true
 [[files]]
 file = "mods/create-big-cannons-advanced-technologies.pw.toml"
 hash = "f7066538c0086fca271ddf7d26b223d932a205e80fec08e6c14c9b4c245ed7b5"
+metafile = true
+
+[[files]]
+file = "mods/create-big-cannons-security-breach.pw.toml"
+hash = "98434b5e57d2bea1f0ddd0dd0dca61ed165cdd61b0b8be8ad8eaa9798d0efde4"
 metafile = true
 
 [[files]]
@@ -1358,6 +1390,11 @@ metafile = true
 [[files]]
 file = "mods/create-blocks-bogies.pw.toml"
 hash = "efd476b136d2b4c501fb55f51e26f88d24a41783b93ace063140a7a8e55107a6"
+metafile = true
+
+[[files]]
+file = "mods/create-ccbr.pw.toml"
+hash = "c4c513aea9433b96ff7e1b33db29914020c43786e5d3fd7b79829b2c098bf7e9"
 metafile = true
 
 [[files]]
@@ -1941,8 +1978,18 @@ hash = "2074a2a56e71b8fca9cfe0b1735b4c33e877cefd4d282aa7e9856f50257d07f9"
 metafile = true
 
 [[files]]
+file = "mods/scsuperbbridge.pw.toml"
+hash = "10ae3479a5e24757c3c7c1ec4b2031604285c5e70eff95da41e29e3cd8af12c8"
+metafile = true
+
+[[files]]
 file = "mods/searchables.pw.toml"
 hash = "b210b54498abff891f524a0ce32b7b81bfc88043604065bd4ece9e71c36427f4"
+metafile = true
+
+[[files]]
+file = "mods/security-craft.pw.toml"
+hash = "6da6b2be309785e5ab8e575010b4f30d66a717ace60b10748271333c09aba523"
 metafile = true
 
 [[files]]

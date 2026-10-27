@@ -193,6 +193,24 @@ CHAPTERS = [
         ("nuclear_bomb", "projectexplosive:nuclear_bomb", 1, "Fat Man", "La bombe nucléaire larguée.", ["uranium_ingot", "big_bomb"], 500),
         ("icbm_nuclear", "projectexplosive:icbm_nuclear", 1, "ICBM nucléaire", "L'arme ultime. Le serveur s'en souviendra.", ["icbm_big", "nuclear_bomb", "flash_goggles"], 1000),
     ]),
+    # v1.4.0 : CC: Tweaked (+ CC:CBC, Create: Avionics, CC Better Recipes) et SecurityCraft (+ SC-SuperB Bridge, CBC Security Breach).
+    ("11_defense", "Défense & informatique", "Ordinateurs pour piloter canons et avions, et une base qui se défend toute seule.", "securitycraft:sentry", [
+        ("computer", "computercraft:computer_normal", 1, "Ordinateur", "CC: Tweaked, avec des recettes passées par Create. Il pilote trains, gares et boîtes de vitesses séquencées.", ["02_laiton:electron_tube"], 100),
+        ("wired_modem", "computercraft:wired_modem", 2, "Modems filaires", "Relie l'ordinateur aux machines voisines (périphériques).", ["computer"], 50),
+        ("monitor", "computercraft:monitor_advanced", 6, "Moniteurs avancés", "Un grand écran couleur pour tes tableaux de bord.", ["computer"], 100),
+        ("cc_cannon", "computercraft:computer_advanced", 1, "Canon piloté par ordinateur", "Avec CC:CBC, un ordinateur relié par modem à un affût de canon le vise et le fait tirer. Branche-le sur ton radar : la DCA devient automatique.", ["wired_modem", "05_artillerie:mount", "09_missiles:radar_dish"], 300, CHECK),
+        ("avionics", "computercraft:wireless_modem_advanced", 1, "Avionique", "Avec Create: Avionics, un ordinateur embarqué lit et commande les blocs Aeronautics (cap, altitude, hélices). Pilote automatique compris.", ["wired_modem", "06_aviation:physics_assembler"], 250, CHECK),
+        ("turtle", "computercraft:turtle_normal", 1, "Tortue", "Un petit robot programmable : il mine, construit et transporte.", ["computer", "04_industrie:steel"], 150),
+        ("laser_block", "securitycraft:laser_block", 2, "Blocs laser", "Premier pas de SecurityCraft : une barrière invisible qui déclenche tes défenses.", ["03_electricite:alternator"], 50),
+        ("reinforcer", "securitycraft:universal_block_reinforcer_lvl1", 1, "Renforceur universel", "Transforme tes blocs en blocs renforcés que seuls toi et ton équipe pouvez casser. Les obus CBC, Superb Warfare et la TNT les abîment, mais pas les bombes de Project: Explosive.", ["laser_block", "02_laiton:precision_mechanism"], 200),
+        ("reinforced_stone", "securitycraft:reinforced_stone", 64, "Murs renforcés", "Les murs de ta base.", ["reinforcer"], 150),
+        ("keypad", "securitycraft:keypad_item", 1, "Clavier à code", "Ferme une porte ou un coffre avec un code.", ["laser_block"], 50),
+        ("camera", "securitycraft:security_camera", 2, "Caméras de sécurité", "Surveille ta base à distance avec un écran de caméras.", ["reinforcer"], 100),
+        ("mine", "securitycraft:mine", 6, "Mines", "Pour les invités qui n'ont pas sonné.", ["laser_block"], 75),
+        ("portable_radar", "securitycraft:portable_radar", 1, "Radar portatif", "Signale les joueurs qui approchent.", ["laser_block"], 75),
+        ("sentry", "securitycraft:sentry", 1, "Tourelle", "Tire sur les intrus. Demande de l'acier et des tubes électroniques.", ["portable_radar", "reinforcer", "04_industrie:steel"], 300),
+        ("trophy", "securitycraft:trophy_system", 1, "Système Trophy", "Abat les projectiles qui approchent. Demande des circuits imprimés TFMG.", ["sentry"], 400),
+    ]),
 ]
 
 

@@ -25,6 +25,12 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
   « Track Generator » de **Railways Additions** en pose ailleurs. Railways Additions ajoute aussi le régulateur de vitesse
   des trains et le relieur de gares.
 - **Discord** : Simple Discord Rich Presence (client seul).
+- **SecurityCraft** (1.4.0) : les blocs renforcés sont cassables par les obus CBC (CBC Security Breach, points de vie par
+  matériau), Superb Warfare et la TNT (SC-SuperB Bridge). **Pas par les bombes et ICBM de Project: Explosive**, qui sautent
+  les blocs de dureté -1 (impossible à changer sans permettre à tout le monde de miner les blocs des autres).
+  Propriété partagée avec l'équipe FTB (`enable_team_ownership`), caméras sans chargement de chunks.
+- **CC: Tweaked** (1.4.0) : CC:CBC (pilotage des canons), Create: Avionics (blocs Aeronautics/Simulated/Offroad),
+  Create: CC Better Recipes (recettes via Create). Create 6 gère CC: Tweaked de base (trains, gares, compteurs).
 - `allow-flight=true` est obligatoire sur le serveur (avions, jetpacks), sinon les joueurs sont expulsés.
 
 | Mod | Fichier | Côté | Source |
@@ -44,6 +50,11 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | CBC: Locometal Armor | `locometal_armor-2.0.0.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | CBC Neo Warfare | `cbcmodernwarfare-0.0.6v+mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | CBC Terminal Ballistics | `cbc_terminal_ballistics-2.3.0.jar` | client + serveur | CurseForge |
+| CC: Tweaked | `cc-tweaked-1.21.1-forge-1.120.2.jar` | client + serveur | Modrinth (inclus dans le zip) |
+| CC:CBC | `cc-cbc-v1.1.1-1.21.1-neoforge.jar` | client + serveur | CurseForge |
+| Create Big Cannons: Security Breach | `create_big_cannons_security_breach-1.0.jar` | client + serveur | CurseForge |
+| Create: Avionics | `create_avionics-neoforge-1.21.1-0.6.0.jar` | client + serveur | Modrinth (inclus dans le zip) |
+| Create: CC Better Recipes | `ccbr-1.2.1-neoforge-1.21.1.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | Create: Gunsmithing | `create-gunsmithing-1.21.1-1.4.9.jar` | client + serveur | CurseForge |
 | Chunky (Forge/NeoForge) | `Chunky-NeoForge-1.4.23.jar` | serveur seul | CurseForge |
 | Cloth Config API (Fabric/Forge/NeoForge) | `cloth-config-15.0.140-neoforge.jar` | client + serveur | CurseForge |
@@ -177,7 +188,9 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | Ritchie's Projectile Library | `ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Sable Long Range Warfare | `createarms-1.0.0.jar` | client + serveur | CurseForge |
 | Sable | `sable-neoforge-1.21.1-2.0.6.jar` | client + serveur | CurseForge |
+| SC-SuperB Bridge | `sc_superb_bridge-1.2.0.jar` | client + serveur | CurseForge |
 | Searchables | `Searchables-neoforge-1.21.1-1.0.2.jar` | client seul | CurseForge |
+| Security Craft | `[1.21.1] SecurityCraft v1.10.2.1.jar` | client + serveur | CurseForge |
 | Simple Discord Rich Presence (Forge /  Fabric) | `SimpleDiscordRichPresence-neoforge-88.0.1-build.54+mc1.21.1.jar` | client seul | CurseForge |
 | Simple Voice Chat | `voicechat-neoforge-1.21.1-2.6.24.jar` | client + serveur | CurseForge |
 | Create Slice & Dice | `sliceanddice-4.3.4-neoforge.jar` | client + serveur | CurseForge |

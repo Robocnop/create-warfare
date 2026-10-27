@@ -307,4 +307,36 @@
 	quest.5FC9A9FB2250304D.quest_desc: ["La bombe nucléaire larguée."]
 	quest.5CD90A2B6E78FBBB.title: "ICBM nucléaire"
 	quest.5CD90A2B6E78FBBB.quest_desc: ["L'arme ultime. Le serveur s'en souviendra."]
+	chapter.16A7BFA622EEA61D.title: "Défense \\& informatique"
+	chapter.16A7BFA622EEA61D.chapter_subtitle: ["Ordinateurs pour piloter canons et avions, et une base qui se défend toute seule."]
+	quest.51DA5E89D7D3F671.title: "Ordinateur"
+	quest.51DA5E89D7D3F671.quest_desc: ["CC: Tweaked, avec des recettes passées par Create. Il pilote trains, gares et boîtes de vitesses séquencées."]
+	quest.3635CA2A9238EDD0.title: "Modems filaires"
+	quest.3635CA2A9238EDD0.quest_desc: ["Relie l'ordinateur aux machines voisines (périphériques)."]
+	quest.2F62A39BF6AD3800.title: "Moniteurs avancés"
+	quest.2F62A39BF6AD3800.quest_desc: ["Un grand écran couleur pour tes tableaux de bord."]
+	quest.3341112053D99015.title: "Canon piloté par ordinateur"
+	quest.3341112053D99015.quest_desc: ["Avec CC:CBC, un ordinateur relié par modem à un affût de canon le vise et le fait tirer. Branche-le sur ton radar : la DCA devient automatique."]
+	quest.12AE20BF3CF08536.title: "Avionique"
+	quest.12AE20BF3CF08536.quest_desc: ["Avec Create: Avionics, un ordinateur embarqué lit et commande les blocs Aeronautics (cap, altitude, hélices). Pilote automatique compris."]
+	quest.6F8358FC1FA5F25A.title: "Tortue"
+	quest.6F8358FC1FA5F25A.quest_desc: ["Un petit robot programmable : il mine, construit et transporte."]
+	quest.2C4721D77E50AA98.title: "Blocs laser"
+	quest.2C4721D77E50AA98.quest_desc: ["Premier pas de SecurityCraft : une barrière invisible qui déclenche tes défenses."]
+	quest.44F24B414E0DD228.title: "Renforceur universel"
+	quest.44F24B414E0DD228.quest_desc: ["Transforme tes blocs en blocs renforcés que seuls toi et ton équipe pouvez casser. Les obus CBC, Superb Warfare et la TNT les abîment, mais pas les bombes de Project: Explosive."]
+	quest.6EFD5A18CB66C8A0.title: "Murs renforcés"
+	quest.6EFD5A18CB66C8A0.quest_desc: ["Les murs de ta base."]
+	quest.14BDCFD95D3B0B6A.title: "Clavier à code"
+	quest.14BDCFD95D3B0B6A.quest_desc: ["Ferme une porte ou un coffre avec un code."]
+	quest.6DD8CD9DA47BBC02.title: "Caméras de sécurité"
+	quest.6DD8CD9DA47BBC02.quest_desc: ["Surveille ta base à distance avec un écran de caméras."]
+	quest.12BE8EA035108910.title: "Mines"
+	quest.12BE8EA035108910.quest_desc: ["Pour les invités qui n'ont pas sonné."]
+	quest.1813381F944EDFE5.title: "Radar portatif"
+	quest.1813381F944EDFE5.quest_desc: ["Signale les joueurs qui approchent."]
+	quest.053E2AB78B4CDD5A.title: "Tourelle"
+	quest.053E2AB78B4CDD5A.quest_desc: ["Tire sur les intrus. Demande de l'acier et des tubes électroniques."]
+	quest.3500B9C3283A3465.title: "Système Trophy"
+	quest.3500B9C3283A3465.quest_desc: ["Abat les projectiles qui approchent. Demande des circuits imprimés TFMG."]
 }

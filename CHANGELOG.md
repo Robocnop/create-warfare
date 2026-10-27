@@ -2,6 +2,29 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.4.0 — 2026-10-27
+
+### Ajouts
+- **SecurityCraft** : blocs renforcés, claviers à code, caméras, mines, tourelles, système Trophy...
+  - **CBC Security Breach** : les obus Create Big Cannons abîment puis cassent les blocs renforcés (points de vie par matériau,
+    fissures visibles qui se referment lentement).
+  - **SC-SuperB Bridge** : les explosions de Superb Warfare et la TNT entament aussi les blocs renforcés (à partir de 0,75 TNT).
+  - Testé sur un monde jetable : TNT sur pierre renforcée → 8 à 13 blocs cassés (87 sur pierre normale).
+    **Les bombes et ICBM de Project: Explosive ne cassent pas les blocs renforcés** : ils sautent les blocs incassables
+    (dureté -1), et rendre ces blocs cassables permettrait à n'importe qui de les miner à la main.
+  - Recettes liées à Create (`kubejs/server_scripts/balance/securitycraft.js`) : renforceurs avec un mécanisme de précision,
+    tourelle avec acier TFMG et tubes électroniques, système Trophy avec circuits imprimés TFMG.
+  - Config : blocs partagés avec l'équipe FTB, les caméras ne chargent plus de chunks (performances).
+- **CC: Tweaked** : ordinateurs, tortues, moniteurs, modems.
+  - **CC:CBC** : un ordinateur vise et fait tirer un affût de canon (DCA automatique avec les radars).
+  - **Create: Avionics** : périphériques pour Aeronautics, Simulated et Offroad (pilote automatique).
+  - **Create: CC Better Recipes** : les recettes de CC: Tweaked passent par Create.
+- **Chapitre de quêtes « Défense & informatique »** (15 quêtes, 158 au total).
+
+### Mise à jour
+- Monde conservé : aucun de ces mods ne génère de minerai ou de structure.
+- Mekanism et Electrodynamics étudiés et écartés (industrie et électricité parallèles à Create, MekaSuit déséquilibrée en PvP).
+
 ## 1.3.2 — 2026-10-27 (serveur seulement)
 
 - Profil spark pris en volant vite sur le serveur : **58 % du thread principal** passait à écrire dans `debug.log`.

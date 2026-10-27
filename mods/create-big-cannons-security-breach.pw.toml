@@ -1,0 +1,13 @@
+name = "Create Big Cannons: Security Breach"
+filename = "create_big_cannons_security_breach-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c302f42676adf8fc356a2a077beb655bd3241953"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8707519
+project-id = 1663819
