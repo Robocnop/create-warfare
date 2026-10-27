@@ -90,7 +90,7 @@ hash = "91f975fd238167ed6c2997292e63e0a0aa04dd5558c70131a3eb03c49a37d60b"
 
 [[files]]
 file = "config/superbwarfare-server.toml"
-hash = "847bb43dc2dde8301b196ead7e82cd8bac531b44c0a9f2a02f000ebdc5099c69"
+hash = "3c2a75b10f84a33a82dfa25c42458b1686fd628788d1ec98d3adfc50f9796a46"
 
 [[files]]
 file = "kubejs/assets/aeroadditionbridge/lang/fr_fr.json"

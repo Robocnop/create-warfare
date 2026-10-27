@@ -2,6 +2,17 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.3.1 — 2026-10-27
+
+### Performances : cause du lag en combat trouvée
+- Analyse du log du vrai serveur (combat du 22/10, 16:17–16:55, 2 joueurs) : 8 retards « Can't keep up » (jusqu'à
+  **16 s**) et 43 ticks bloqués. **24 des 43** attendaient un chunk chargé par les projectiles de Superb Warfare
+  (`ProjectileChunkSavedData.loadChunkNoGenerate`), les autres aussi des attentes de chunk.
+- `projectile_chunk_loading = false` dans `config/superbwarfare-server.toml` : un obus de Superb Warfare qui sort de
+  la zone chargée par les joueurs s'arrête au lieu de figer le serveur. Les canons Create Big Cannons ne sont pas concernés.
+- Le monde de ce combat était neuf, **sans bordure ni pré-génération** : des chunks étaient générés jusqu'à 22 000 blocs
+  du centre pendant la partie. Bordure 6000 et pré-génération Chunky (rayon 3600) indispensables avant de jouer.
+
 ## 1.3.0 — 2026-10-27
 
 ### Ajouts

@@ -15,7 +15,7 @@
 	allow_projectile_destroy_blocks = false
 	#Set true to allow projectiles to load chunks
 	#是否允许投射物加载区块
-	projectile_chunk_loading = true
+	projectile_chunk_loading = false
 	#Maximum chunks force-loaded by projectiles at once. Set to 0 for unlimited.
 	#投射物同时强制加载的最大区块数，设为0表示无限制
 	max_projectile_chunks_force_loaded = 64
