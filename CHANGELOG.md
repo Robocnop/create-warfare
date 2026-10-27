@@ -2,6 +2,14 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.5.1 — 2026-10-27
+
+- **Traductions françaises** des mods ajoutés en 1.4.0 et 1.5.0 : 1034 textes (`kubejs/assets/<mod>/lang/fr_fr.json`).
+  Kaleidoscope Cookery (577 : objets, plats, effets, progrès, Ponder), Inventory Profiles Next (389, menus de config
+  et infobulles des boutons), libIPN, Durability Tooltip, CC Better Recipes, CC:CBC, et les quelques textes manquants
+  de SecurityCraft et CC: Tweaked (déjà traduits par leurs auteurs). Security Breach était déjà complet.
+- Rien ne change côté serveur : ce sont des textes affichés par le client.
+
 ## 1.5.0 — 2026-10-27 (⚠️ non testée en jeu)
 
 > Seul le démarrage du serveur de test a été vérifié (aucune quête invalide). Rien n'a été essayé en jeu :

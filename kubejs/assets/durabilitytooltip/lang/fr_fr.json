@@ -1,0 +1,15 @@
+{
+ "durabilitytooltip.info.bar.bar_line": "[%s]",
+ "durabilitytooltip.info.bar.durability_hint": "Durabilité :",
+ "durabilitytooltip.info.bar.empty_symbol": "▒",
+ "durabilitytooltip.info.bar.full_symbol": "█",
+ "durabilitytooltip.info.numbers.damaged": "%1$d / %2$d",
+ "durabilitytooltip.info.numbers.durability_hint": "Durabilité : %s",
+ "durabilitytooltip.info.numbers.full_durability": "%d",
+ "durabilitytooltip.info.text.broken": "Cassé",
+ "durabilitytooltip.info.text.damaged": "Légèrement abîmé",
+ "durabilitytooltip.info.text.durability_hint": "Durabilité : %s",
+ "durabilitytooltip.info.text.full_durability": "Intact",
+ "durabilitytooltip.info.text.nearly_broken": "Presque cassé",
+ "durabilitytooltip.info.text.severely_damaged": "Très abîmé"
+}

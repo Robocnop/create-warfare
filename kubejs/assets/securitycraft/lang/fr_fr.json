@@ -1,0 +1,5 @@
+{
+ "block.securitycraft.reinforced_lightning_rod": "Paratonnerre renforcé",
+ "tooltip.securitycraft.component.success_chance": "Chance de réussite : %s",
+ "tooltip.securitycraft.component.success_chance.disabled": "Désactivé"
+}

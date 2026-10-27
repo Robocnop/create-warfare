@@ -209,6 +209,14 @@ file = "kubejs/assets/cbcmodernwarfare/lang/fr_fr.json"
 hash = "40245f1d6a67e96012c9bde3dadd7362ec48c843d9322214c62875c1e319a0d4"
 
 [[files]]
+file = "kubejs/assets/cc_cbc/lang/fr_fr.json"
+hash = "47725b3d241827297ac7ca852e187f872cf2b97ecfb72f1ce1900ae560e97181"
+
+[[files]]
+file = "kubejs/assets/ccbr/lang/fr_fr.json"
+hash = "366494aa49397421ce69c5dc58becef6254f9c53d2fd5f6168add7ef360b7122"
+
+[[files]]
 file = "kubejs/assets/cgs/lang/fr_fr.json"
 hash = "d5cca75d87427bed609bc2a62152d5eab3683dfc9e38c8a1861d351632782895"
 
@@ -219,6 +227,10 @@ hash = "8de8d7dda4d47f66e395b5ddf25c25177ff283274211abf02bb318aa60cd0783"
 [[files]]
 file = "kubejs/assets/comforts/lang/fr_fr.json"
 hash = "be76ad690390ab2be40de55589a86e4be4fbf7c2828f0a9febff3a87e47725f8"
+
+[[files]]
+file = "kubejs/assets/computercraft/lang/fr_fr.json"
+hash = "ecd0488ae2170a84b097d15b90cf0296c75bdf0bfe99466bab1702e51d727cab"
 
 [[files]]
 file = "kubejs/assets/configured/lang/fr_fr.json"
@@ -433,6 +445,10 @@ file = "kubejs/assets/dragonlib/lang/fr_fr.json"
 hash = "741e48bd9f2f03e1c3531dcbaf3bbd1960493d72d9573771db6d527adc7de78b"
 
 [[files]]
+file = "kubejs/assets/durabilitytooltip/lang/fr_fr.json"
+hash = "f9d949a4d0c72c1c943fba1a315c0a552989d1cf265121da797e2ccd56de003c"
+
+[[files]]
 file = "kubejs/assets/emi/lang/fr_fr.json"
 hash = "9059ef285617eb990bac9a8c92ee4af2cb3ae7ed541a4d96a4b52b6bda4a6188"
 
@@ -513,6 +529,10 @@ file = "kubejs/assets/inventoryessentials/lang/fr_fr.json"
 hash = "90691aa075fae2578c4d0f791c6f9c8bde1d20318f21c2fae63ccba420ea605b"
 
 [[files]]
+file = "kubejs/assets/inventoryprofilesnext/lang/fr_fr.json"
+hash = "109d799d6ad6b6389964a3a3b6b68d1cc207b2f536ce4c7975007fb8b2f9b2c1"
+
+[[files]]
 file = "kubejs/assets/iris/lang/fr_fr.json"
 hash = "bc7ae5923b5d7b8c845eb3f2b174b963c682a847680a95a5af05932b2b58a0c2"
 
@@ -533,12 +553,20 @@ file = "kubejs/assets/jeresources/lang/fr_fr.json"
 hash = "4fbaa7eb71c7782a5c2d4a6238421d1d0638d99cf332b7cc8a514388924e8a03"
 
 [[files]]
+file = "kubejs/assets/kaleidoscope_cookery/lang/fr_fr.json"
+hash = "503d74d5e74dd51b392ecbeea97b0dc7143982968cb999a773716373cf5ec3d9"
+
+[[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
 hash = "8f353cf222047ec7f5904d3e280dda96119b4a136ca03b76f63b58542aef8cc5"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/fr_fr.json"
 hash = "8a9607fada12c7f475208a85adfaea5fd86c9aaa4f2cb7aa4e874b811bc5ccd8"
+
+[[files]]
+file = "kubejs/assets/libipn/lang/fr_fr.json"
+hash = "69bf96535ef9bf1fc86339af5de074a04e064aacfd46cd56ff56de132a47a9aa"
 
 [[files]]
 file = "kubejs/assets/locometal_armor/lang/fr_fr.json"
@@ -611,6 +639,10 @@ hash = "63ca1e66d9355d2a37798af0463c2c6f7b6c6e59af03ac65edb938ebc7d6263b"
 [[files]]
 file = "kubejs/assets/sdrp/lang/fr_fr.json"
 hash = "ceb830327b6bc4191565d4c667d08162e1308968963cff34f7cc4da16d7eb8f1"
+
+[[files]]
+file = "kubejs/assets/securitycraft/lang/fr_fr.json"
+hash = "b590cfc70d3a9b89320c2d3b1db17665edd5b5565fc5b21905bd329afd34b747"
 
 [[files]]
 file = "kubejs/assets/simulated/lang/fr_fr.json"

@@ -1,0 +1,14 @@
+{
+ "item.cc_better_recipes.basic_integrated_circuit": "Circuit intégré basique",
+ "item.cc_better_recipes.integrated_circuit": "Circuit intégré",
+ "item.cc_better_recipes.lapis_sheet": "Plaque de lapis",
+ "item.ccbr.basic_integrated_circuit": "Circuit intégré basique",
+ "item.ccbr.integrated_circuit": "Circuit intégré",
+ "item.ccbr.lapis_sheet": "Plaque de lapis",
+ "item.create_cc.basic_integrated_circuit": "Circuit intégré basique",
+ "item.create_cc.integrated_circuit": "Circuit intégré",
+ "item.create_cc.lapis_sheet": "Plaque de lapis",
+ "item.create_computercraft_integration.basic_integrated_circuit": "Circuit intégré basique",
+ "item.create_computercraft_integration.integrated_circuit": "Circuit intégré",
+ "item.create_computercraft_integration.lapis_sheet": "Plaque de lapis"
+}
