@@ -5,10 +5,10 @@
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
   "launcher": {
-    "version": "1.0.0",
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/launcher-v1.0.0/CreateWarfareLauncher.exe",
-    "sha256": "f1dab8b667ca6118b07684bace7053a9d0d8571b4d60dc4ca4c6fb8fb497fdb4",
-    "size": 71759724
+    "version": "1.0.1",
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/launcher-v1.0.1/CreateWarfareLauncher.exe",
+    "sha256": "0b3279d352f9b85a383aa5e6bb62623e2207771189af5162f2c07eb21ba31e05",
+    "size": 72237983
   },
   "zip": {
     "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.5.3/CreateWarfare-1.5.3.zip",
