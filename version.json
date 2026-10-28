@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,9 +11,9 @@
     "size": 71759724
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.5.2/CreateWarfare-1.5.2.zip",
-    "sha256": "d2fabd96924459f6a39ac765a88928bbf76e0a7172d9001b9f6e0ac66c61b464",
-    "size": 7556634
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.5.3/CreateWarfare-1.5.3.zip",
+    "sha256": "57c261426e9d11a54e077411c4f3b78fa1ad9c3f2215d7262138187478df040f",
+    "size": 7663852
   },
   "mods": [
     {
@@ -98,12 +98,12 @@
       ]
     },
     {
-      "file": "better_lib-neoforge-1.21.1-1.0.111.jar",
-      "sha1": "92ff366f541a9df29c5744cbc647b32cb88f6802",
-      "size": 291935,
+      "file": "better_lib-neoforge-1.21.1-1.0.113.jar",
+      "sha1": "e998bbb4ac83da51e7d0a17fe4fedaca7463eeab",
+      "size": 2552465,
       "urls": [
-        "https://cdn.modrinth.com/data/2x0ULgTj/versions/AmVIVNAC/better_lib-neoforge-1.21.1-1.0.111.jar",
-        "https://mediafilez.forgecdn.net/files/8553/533/better_lib-neoforge-1.21.1-1.0.111.jar"
+        "https://cdn.modrinth.com/data/2x0ULgTj/versions/Tj8g4uLA/better_lib-neoforge-1.21.1-1.0.113.jar",
+        "https://mediafilez.forgecdn.net/files/9319/311/better_lib-neoforge-1.21.1-1.0.113.jar"
       ]
     },
     {
@@ -116,20 +116,21 @@
       ]
     },
     {
-      "file": "burnt-1.10.5.2-neoforge-1.21.1.jar",
-      "sha1": "e4bd482ab424781bc31ff1a5d85458615664b883",
-      "size": 22397977,
+      "file": "burnt-1.10.5.3-neoforge-1.21.1.jar",
+      "sha1": "83163da0772db9137eb10a31b756fc9018f92509",
+      "size": 9658730,
       "urls": [
-        "https://mediafilez.forgecdn.net/files/8994/537/burnt-1.10.5.2-neoforge-1.21.1.jar"
+        "https://cdn.modrinth.com/data/tsc9D2wh/versions/5383JfW8/burnt-1.10.5.3-neoforge-1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/9313/775/burnt-1.10.5.3-neoforge-1.21.1.jar"
       ]
     },
     {
-      "file": "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.123.jar",
-      "sha1": "50fe2e38c6369b51e4dee1106d0295185e6251c4",
-      "size": 3717365,
+      "file": "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar",
+      "sha1": "469497c209e77742a85020845a361851f14d99e2",
+      "size": 3717706,
       "urls": [
-        "https://cdn.modrinth.com/data/COlSi5iR/versions/avwWYPbG/c2me-neoforge-mc1.21.1-0.4.0-alpha.0.123.jar",
-        "https://mediafilez.forgecdn.net/files/9131/675/c2me-neoforge-mc1.21.1-0.4.0-alpha.0.123.jar"
+        "https://cdn.modrinth.com/data/COlSi5iR/versions/VACgDPOc/c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar",
+        "https://mediafilez.forgecdn.net/files/9344/813/c2me-neoforge-mc1.21.1-0.4.0-alpha.0.124.jar"
       ]
     },
     {
@@ -237,12 +238,12 @@
       ]
     },
     {
-      "file": "corpse-neoforge-1.21.1-1.1.21.jar",
-      "sha1": "124791f94c501c2c12a132f4cc69a3a738498b9d",
-      "size": 256713,
+      "file": "corpse-neoforge-1.21.1-1.1.22.jar",
+      "sha1": "0d73e082e4d5c0f185aa8030bcefb68c259d1107",
+      "size": 256780,
       "urls": [
-        "https://cdn.modrinth.com/data/WrpuIfhw/versions/peeqqFlX/corpse-neoforge-1.21.1-1.1.21.jar",
-        "https://mediafilez.forgecdn.net/files/9188/333/corpse-neoforge-1.21.1-1.1.21.jar"
+        "https://cdn.modrinth.com/data/WrpuIfhw/versions/SElnDbg1/corpse-neoforge-1.21.1-1.1.22.jar",
+        "https://mediafilez.forgecdn.net/files/9289/316/corpse-neoforge-1.21.1-1.1.22.jar"
       ]
     },
     {
@@ -380,12 +381,12 @@
       ]
     },
     {
-      "file": "createcobblestone-1.5.0+neoforge-1.21.1-153.jar",
-      "sha1": "1fbb61c9b5d99fff39fa8cb1528847feb0b1a68f",
-      "size": 573391,
+      "file": "createcobblestone-1.5.1+neoforge-1.21.1-160.jar",
+      "sha1": "b8c4bb988a38a733258ff7c882c873f07df4aaa1",
+      "size": 573579,
       "urls": [
-        "https://cdn.modrinth.com/data/ihpnEd80/versions/srFLj2Ch/createcobblestone-1.5.0%2Bneoforge-1.21.1-153.jar",
-        "https://mediafilez.forgecdn.net/files/8763/220/createcobblestone-1.5.0%2Bneoforge-1.21.1-153.jar"
+        "https://cdn.modrinth.com/data/ihpnEd80/versions/yJiZnWZD/createcobblestone-1.5.1%2Bneoforge-1.21.1-160.jar",
+        "https://mediafilez.forgecdn.net/files/9323/646/createcobblestone-1.5.1%2Bneoforge-1.21.1-160.jar"
       ]
     },
     {
@@ -477,12 +478,12 @@
       ]
     },
     {
-      "file": "Create Encased-1.21.1-1.9.0-ht3.jar",
-      "sha1": "bc749c8ec3ad4fef7d5a052c904008971158f274",
-      "size": 3110804,
+      "file": "Create Encased-1.21.1-1.10.0-fix1.jar",
+      "sha1": "c37f6a614621b2c37e5fb1d78f07f31d9456e0c1",
+      "size": 3383308,
       "urls": [
-        "https://cdn.modrinth.com/data/hSSqdyU1/versions/t6MATlU9/Create%20Encased-1.21.1-1.9.0-ht3.jar",
-        "https://mediafilez.forgecdn.net/files/8549/840/Create%20Encased-1.21.1-1.9.0-ht3.jar"
+        "https://cdn.modrinth.com/data/hSSqdyU1/versions/pld6Eng9/Create%20Encased-1.21.1-1.10.0-fix1.jar",
+        "https://mediafilez.forgecdn.net/files/9332/388/Create%20Encased-1.21.1-1.10.0-fix1.jar"
       ]
     },
     {
@@ -645,21 +646,20 @@
       ]
     },
     {
-      "file": "create_radar-0.4.9.4-1.21.1.jar",
-      "sha1": "9726fced4bf86c9e2c0ea09b35bc39ed3ac007b6",
-      "size": 2990812,
+      "file": "create_radar-5.0.2-1.21.1.jar",
+      "sha1": "3cae53e1a02daafe95f08c7afb48135fcc09266e",
+      "size": 5678107,
       "urls": [
-        "https://cdn.modrinth.com/data/BLu2Yqfq/versions/AntNFNAx/create_radar-0.4.9.4-1.21.1.jar",
-        "https://mediafilez.forgecdn.net/files/8227/753/create_radar-0.4.9.4-1.21.1.jar"
+        "https://cdn.modrinth.com/data/BLu2Yqfq/versions/PxQPBxAp/create_radar-5.0.2-1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/9339/115/create_radar-5.0.2-1.21.1.jar"
       ]
     },
     {
-      "file": "CreateRadiologistics-1.1.3.jar",
-      "sha1": "59e0013993bfb82635c06e2a7028019fe5d5bc28",
-      "size": 4299421,
+      "file": "CreateRadiologistics-1.1.4.jar",
+      "sha1": "b6b4137c5594d0d9101bd8f099a9ceaad30ea59c",
+      "size": 4310710,
       "urls": [
-        "https://cdn.modrinth.com/data/mtA0MjEn/versions/itGbK3IZ/CreateRadiologistics-1.1.3.jar",
-        "https://mediafilez.forgecdn.net/files/8998/71/CreateRadiologistics-1.1.3.jar"
+        "https://mediafilez.forgecdn.net/files/9265/504/CreateRadiologistics-1.1.4.jar"
       ]
     },
     {
@@ -964,12 +964,12 @@
       ]
     },
     {
-      "file": "friendsandfoes-neoforge-5.0.3+mc1.21.1.jar",
-      "sha1": "74b448afe8e9915d73a2993d67f56ebb0a1aeaf5",
-      "size": 5271544,
+      "file": "friendsandfoes-neoforge-5.0.4+mc1.21.1.jar",
+      "sha1": "0bb94ce6451d043fc480188f7e44715b83f351e8",
+      "size": 5280741,
       "urls": [
-        "https://cdn.modrinth.com/data/BOCJKD49/versions/LH88lfnK/friendsandfoes-neoforge-5.0.3%2Bmc1.21.1.jar",
-        "https://mediafilez.forgecdn.net/files/9253/513/friendsandfoes-neoforge-5.0.3%2Bmc1.21.1.jar"
+        "https://cdn.modrinth.com/data/BOCJKD49/versions/GFgkK01z/friendsandfoes-neoforge-5.0.4%2Bmc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/9331/874/friendsandfoes-neoforge-5.0.4%2Bmc1.21.1.jar"
       ]
     },
     {
@@ -989,19 +989,19 @@
       ]
     },
     {
-      "file": "ftb-library-neoforge-2101.1.37.jar",
-      "sha1": "b6e503587afcd678ec257e4abdc6362ff18c2fef",
-      "size": 1439881,
+      "file": "ftb-library-neoforge-2101.1.39.jar",
+      "sha1": "ff852d99ade215fb892369687d0634ecf0bca6ae",
+      "size": 1477833,
       "urls": [
-        "https://mediafilez.forgecdn.net/files/9008/89/ftb-library-neoforge-2101.1.37.jar"
+        "https://mediafilez.forgecdn.net/files/9350/706/ftb-library-neoforge-2101.1.39.jar"
       ]
     },
     {
-      "file": "ftb-quests-neoforge-2101.1.36.jar",
-      "sha1": "b2ede29b98a3022c22065fbe9b1761e385a28683",
-      "size": 1609984,
+      "file": "ftb-quests-neoforge-2101.1.37.jar",
+      "sha1": "770938e5907cc91be2f89ac00aea2e87b51e1c87",
+      "size": 1635351,
       "urls": [
-        "https://mediafilez.forgecdn.net/files/8885/17/ftb-quests-neoforge-2101.1.36.jar"
+        "https://mediafilez.forgecdn.net/files/9298/629/ftb-quests-neoforge-2101.1.37.jar"
       ]
     },
     {
@@ -1013,12 +1013,12 @@
       ]
     },
     {
-      "file": "fzzy_config-0.7.7+1.21+neoforge.jar",
-      "sha1": "518eadc53c065a74a49207769209c116e77d1849",
-      "size": 2392693,
+      "file": "fzzy_config-0.7.7+fix1+1.21+neoforge.jar",
+      "sha1": "aa04a2ddbce2f50b21d667d2f3e589f9e043e472",
+      "size": 2392720,
       "urls": [
-        "https://cdn.modrinth.com/data/hYykXjDp/versions/uG7oHgw6/fzzy_config-0.7.7%2B1.21%2Bneoforge.jar",
-        "https://mediafilez.forgecdn.net/files/8883/390/fzzy_config-0.7.7%2B1.21%2Bneoforge.jar"
+        "https://cdn.modrinth.com/data/hYykXjDp/versions/jRuOkBAG/fzzy_config-0.7.7%2Bfix1%2B1.21%2Bneoforge.jar",
+        "https://mediafilez.forgecdn.net/files/9326/327/fzzy_config-0.7.7%2Bfix1%2B1.21%2Bneoforge.jar"
       ]
     },
     {
@@ -1102,12 +1102,12 @@
       ]
     },
     {
-      "file": "jei-1.21.1-neoforge-19.64.0.455.jar",
-      "sha1": "f6d6fc08d54c40752926b570a2220471e8c45c1a",
-      "size": 2375741,
+      "file": "jei-1.21.1-neoforge-19.70.0.462.jar",
+      "sha1": "e8383b9901d49c54ac0b61253d5fb3139e340fc3",
+      "size": 4736819,
       "urls": [
-        "https://cdn.modrinth.com/data/u6dRKJwZ/versions/iv3KiVkE/jei-1.21.1-neoforge-19.64.0.455.jar",
-        "https://mediafilez.forgecdn.net/files/9205/121/jei-1.21.1-neoforge-19.64.0.455.jar"
+        "https://cdn.modrinth.com/data/u6dRKJwZ/versions/FU9u6h9h/jei-1.21.1-neoforge-19.70.0.462.jar",
+        "https://mediafilez.forgecdn.net/files/9351/272/jei-1.21.1-neoforge-19.70.0.462.jar"
       ]
     },
     {
@@ -1120,12 +1120,11 @@
       ]
     },
     {
-      "file": "JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar",
-      "sha1": "e739d69b2de31ca8c0cb4691ab08e823f153bc44",
-      "size": 292088,
+      "file": "JustEnoughResources-NeoForge-1.21.1-1.6.0.57.jar",
+      "sha1": "780235af90127bd07bc168333add2ee7b02d5ea3",
+      "size": 292338,
       "urls": [
-        "https://cdn.modrinth.com/data/uEfK2CXF/versions/TgNFki8j/JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar",
-        "https://mediafilez.forgecdn.net/files/6506/298/JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar"
+        "https://mediafilez.forgecdn.net/files/9311/693/JustEnoughResources-NeoForge-1.21.1-1.6.0.57.jar"
       ]
     },
     {
@@ -1181,21 +1180,21 @@
       ]
     },
     {
-      "file": "mezz_config-1.21.1-neoforge-0.6.8-standalone.jar",
-      "sha1": "d99ed592d8ab7105c00444047be7d8346d694ba3",
-      "size": 327173,
+      "file": "mezz_config-1.21.1-neoforge-0.6.9-standalone.jar",
+      "sha1": "a20ecb9978bd8eebd40f4548d14b0a360a63f8a4",
+      "size": 345479,
       "urls": [
-        "https://cdn.modrinth.com/data/7tEfOcA7/versions/idpM3DKC/mezz_config-1.21.1-neoforge-0.6.8-standalone.jar",
-        "https://mediafilez.forgecdn.net/files/9048/666/mezz_config-1.21.1-neoforge-0.6.8-standalone.jar"
+        "https://cdn.modrinth.com/data/7tEfOcA7/versions/RdGonQpr/mezz_config-1.21.1-neoforge-0.6.9-standalone.jar",
+        "https://mediafilez.forgecdn.net/files/9318/719/mezz_config-1.21.1-neoforge-0.6.9-standalone.jar"
       ]
     },
     {
-      "file": "modernfix-neoforge-5.27.26+mc1.21.1.jar",
-      "sha1": "69d468b70e53f6a014c778a81116a41a38fbab33",
-      "size": 611043,
+      "file": "modernfix-neoforge-5.27.27+mc1.21.1.jar",
+      "sha1": "52c008540c7dc2cc451f7e939a885d7462c9ae72",
+      "size": 614138,
       "urls": [
-        "https://cdn.modrinth.com/data/nmDcB62a/versions/7Jy58lnT/modernfix-neoforge-5.27.26%2Bmc1.21.1.jar",
-        "https://mediafilez.forgecdn.net/files/9101/836/modernfix-neoforge-5.27.26%2Bmc1.21.1.jar"
+        "https://cdn.modrinth.com/data/nmDcB62a/versions/ZDZENbHH/modernfix-neoforge-5.27.27%2Bmc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/9309/399/modernfix-neoforge-5.27.27%2Bmc1.21.1.jar"
       ]
     },
     {
@@ -1243,12 +1242,12 @@
       ]
     },
     {
-      "file": "overgeared-neoforge-1.21.1-1.6.19.jar",
-      "sha1": "ca2e84af3b13717fd907e93d32b7234b666a03c1",
-      "size": 1466321,
+      "file": "overgeared-neoforge-1.21.1-1.6.20.jar",
+      "sha1": "8e81f290a7236a929baf7385d9f947c1c1254e72",
+      "size": 1469220,
       "urls": [
-        "https://cdn.modrinth.com/data/SQL3X2Ky/versions/YNvbzmgq/overgeared-neoforge-1.21.1-1.6.19.jar",
-        "https://mediafilez.forgecdn.net/files/8936/600/overgeared-neoforge-1.21.1-1.6.19.jar"
+        "https://cdn.modrinth.com/data/SQL3X2Ky/versions/U1jaXO19/overgeared-neoforge-1.21.1-1.6.20.jar",
+        "https://mediafilez.forgecdn.net/files/9331/561/overgeared-neoforge-1.21.1-1.6.20.jar"
       ]
     },
     {
@@ -1430,12 +1429,12 @@
       ]
     },
     {
-      "file": "voicechat-neoforge-1.21.1-2.6.24.jar",
-      "sha1": "436ee200d5192ffda65fcf70c42c086fcdc00826",
-      "size": 4934688,
+      "file": "voicechat-neoforge-1.21.1-2.6.27.jar",
+      "sha1": "8aded3a22614a8e1641973623e7817dccea513fa",
+      "size": 4936802,
       "urls": [
-        "https://cdn.modrinth.com/data/9eGKb6K1/versions/qqNx1Yjm/voicechat-neoforge-1.21.1-2.6.24.jar",
-        "https://mediafilez.forgecdn.net/files/8928/478/voicechat-neoforge-1.21.1-2.6.24.jar"
+        "https://cdn.modrinth.com/data/9eGKb6K1/versions/iR08ksVF/voicechat-neoforge-1.21.1-2.6.27.jar",
+        "https://mediafilez.forgecdn.net/files/9350/472/voicechat-neoforge-1.21.1-2.6.27.jar"
       ]
     },
     {
@@ -1457,19 +1456,19 @@
       ]
     },
     {
-      "file": "sophisticatedbackpacks-1.21.1-3.26.12.2208.jar",
-      "sha1": "ef59863d328e4e949bdaf75f65412d1048b3f9e1",
-      "size": 1247031,
+      "file": "sophisticatedbackpacks-1.21.1-3.26.17.2232.jar",
+      "sha1": "dc86c4875b1da88524aca1f678d68906c7921a94",
+      "size": 1256227,
       "urls": [
-        "https://mediafilez.forgecdn.net/files/9154/769/sophisticatedbackpacks-1.21.1-3.26.12.2208.jar"
+        "https://mediafilez.forgecdn.net/files/9341/438/sophisticatedbackpacks-1.21.1-3.26.17.2232.jar"
       ]
     },
     {
-      "file": "sophisticatedcore-1.21.1-1.5.14.2413.jar",
-      "sha1": "87a885f84a8e6d315f4617a2ec06a8886b1f2120",
-      "size": 1818280,
+      "file": "sophisticatedcore-1.21.1-1.5.19.2434.jar",
+      "sha1": "65b02ed978ac9b748c4861b16bb5bac084fe85f5",
+      "size": 1820184,
       "urls": [
-        "https://mediafilez.forgecdn.net/files/9229/216/sophisticatedcore-1.21.1-1.5.14.2413.jar"
+        "https://mediafilez.forgecdn.net/files/9341/397/sophisticatedcore-1.21.1-1.5.19.2434.jar"
       ]
     },
     {
@@ -1700,8 +1699,32 @@
   ],
   "retiredMods": [
     {
+      "file": "Create Encased-1.21.1-1.9.0-ht3.jar",
+      "sha1": "bc749c8ec3ad4fef7d5a052c904008971158f274"
+    },
+    {
+      "file": "CreateRadiologistics-1.1.3.jar",
+      "sha1": "59e0013993bfb82635c06e2a7028019fe5d5bc28"
+    },
+    {
       "file": "DnDesires-1.21.1-2.3a-BETA.jar",
       "sha1": "72635119b4bcc49b050c50d6cbb1abb02bb3982a"
+    },
+    {
+      "file": "JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar",
+      "sha1": "e739d69b2de31ca8c0cb4691ab08e823f153bc44"
+    },
+    {
+      "file": "better_lib-neoforge-1.21.1-1.0.111.jar",
+      "sha1": "92ff366f541a9df29c5744cbc647b32cb88f6802"
+    },
+    {
+      "file": "burnt-1.10.5.2-neoforge-1.21.1.jar",
+      "sha1": "e4bd482ab424781bc31ff1a5d85458615664b883"
+    },
+    {
+      "file": "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.123.jar",
+      "sha1": "50fe2e38c6369b51e4dee1106d0295185e6251c4"
     },
     {
       "file": "cc-tweaked-1.21.1-forge-1.120.2.jar",
@@ -1712,20 +1735,80 @@
       "sha1": "cbc64baf934c03eefc120315b1aefecbe8c3c322"
     },
     {
+      "file": "corpse-neoforge-1.21.1-1.1.21.jar",
+      "sha1": "124791f94c501c2c12a132f4cc69a3a738498b9d"
+    },
+    {
       "file": "create_avionics-neoforge-1.21.1-0.6.0.jar",
       "sha1": "a6b59ae72dae7e54b98fc88825fa6106d68298e4"
+    },
+    {
+      "file": "create_avionics-neoforge-1.21.1-0.7.0.jar",
+      "sha1": "47c260cb1536ab85410241f89c0127ec060898c6"
     },
     {
       "file": "create_hypertube-0.6.0-NEOFORGE.jar",
       "sha1": "8004b4b3959364609906ea4d7bf409add879a222"
     },
     {
+      "file": "create_radar-0.4.9.4-1.21.1.jar",
+      "sha1": "9726fced4bf86c9e2c0ea09b35bc39ed3ac007b6"
+    },
+    {
+      "file": "createcobblestone-1.5.0+neoforge-1.21.1-153.jar",
+      "sha1": "1fbb61c9b5d99fff39fa8cb1528847feb0b1a68f"
+    },
+    {
+      "file": "friendsandfoes-neoforge-5.0.3+mc1.21.1.jar",
+      "sha1": "74b448afe8e9915d73a2993d67f56ebb0a1aeaf5"
+    },
+    {
+      "file": "ftb-library-neoforge-2101.1.37.jar",
+      "sha1": "b6e503587afcd678ec257e4abdc6362ff18c2fef"
+    },
+    {
+      "file": "ftb-quests-neoforge-2101.1.36.jar",
+      "sha1": "b2ede29b98a3022c22065fbe9b1761e385a28683"
+    },
+    {
+      "file": "fzzy_config-0.7.7+1.21+neoforge.jar",
+      "sha1": "518eadc53c065a74a49207769209c116e77d1849"
+    },
+    {
       "file": "garnished-2.1.9.2+1.21.1-neoforged.jar",
       "sha1": "93f86f9a2e3e23c8c20761f8d7acdd625ad49a6f"
     },
     {
+      "file": "jei-1.21.1-neoforge-19.64.0.455.jar",
+      "sha1": "f6d6fc08d54c40752926b570a2220471e8c45c1a"
+    },
+    {
       "file": "locometal_armor-2.0.0.jar",
       "sha1": "b96c39adc91c96f0fe6189a4e8b951c7466c90d5"
+    },
+    {
+      "file": "mezz_config-1.21.1-neoforge-0.6.8-standalone.jar",
+      "sha1": "d99ed592d8ab7105c00444047be7d8346d694ba3"
+    },
+    {
+      "file": "modernfix-neoforge-5.27.26+mc1.21.1.jar",
+      "sha1": "69d468b70e53f6a014c778a81116a41a38fbab33"
+    },
+    {
+      "file": "overgeared-neoforge-1.21.1-1.6.19.jar",
+      "sha1": "ca2e84af3b13717fd907e93d32b7234b666a03c1"
+    },
+    {
+      "file": "sophisticatedbackpacks-1.21.1-3.26.12.2208.jar",
+      "sha1": "ef59863d328e4e949bdaf75f65412d1048b3f9e1"
+    },
+    {
+      "file": "sophisticatedcore-1.21.1-1.5.14.2413.jar",
+      "sha1": "87a885f84a8e6d315f4617a2ec06a8886b1f2120"
+    },
+    {
+      "file": "voicechat-neoforge-1.21.1-2.6.24.jar",
+      "sha1": "436ee200d5192ffda65fcf70c42c086fcdc00826"
     }
   ],
   "protected": [
@@ -1753,5 +1836,5 @@
     }
   ],
   "notice": null,
-  "changelog": "1.5.2 — 2026-10-28\n\n- Le serveur Create Warfare (jeu.robocnop.be:27018) est déjà dans la liste Multijoueur. Une nouvelle installation le reçoit avec le zip (servers.dat). Une instance existante le reçoit par le launcher, qui l'ajoute à la fin de la liste du joueur sans retirer les autres serveurs, et une seule fois : un joueur qui le supprime ne le revoit pas.\n- Aucun mod, aucune config, aucune quête ne change. Rien ne change côté serveur.\n\n1.5.1 — 2026-10-27\n\n- Traductions françaises des mods ajoutés en 1.4.0 et 1.5.0 : 1034 textes (kubejs/assets/<mod>/lang/fr_fr.json). Kaleidoscope Cookery (577 : objets, plats, effets, progrès, Ponder), Inventory Profiles Next (389, menus de config et infobulles des boutons), libIPN, Durability Tooltip, CC Better Recipes, CC:CBC, et les quelques textes manquants de SecurityCraft et CC: Tweaked (déjà traduits par leurs auteurs). Security Breach était déjà complet.\n- Rien ne change côté serveur : ce sont des textes affichés par le client.\n\n1.5.0 — 2026-10-27 (⚠️ non testée en jeu)\n\nSeul le démarrage du serveur de test a été vérifié (aucune quête invalide). Rien n'a été essayé en jeu : à tester avant de la déployer sur le serveur.\n\nAjouts\n- Kaleidoscope Cookery : cuisine immersive (fourneau, wok, marmite, planche à découper, cuiseur vapeur, plus de 400 recettes). Son moulin accepte le moulin de Create (compatibilité intégrée), ses entités suivent les engins Sable. Ses cuisines de village n'apparaissent que dans les nouveaux chunks.\n- Durability Tooltip (+ SuperMartijn642's Config Lib) : la durabilité s'affiche dans l'info-bulle des objets. Client seul.\n- Inventory Profiles Next (+ libIPN) : boutons de tri et de dépôt rapide sur les coffres et l'inventaire, tri par nom par défaut. Client seul.\n- Chapitre de quêtes « Cuisine » (11 quêtes, 169 au total).\n\nErreur connue, sans gravité\n- Couldn't load tag kaleidoscope_cookery:cookery_mod_items : le tag vise des tabourets compatibles Quark, absent du pack."
+  "changelog": "1.5.3 — 2026-10-28\n\n- PureBDcraft 256x pré-activé, au-dessus de Fresh Animations (options par défaut). Le pack n'est pas inclus : il n'est pas sur CurseForge et ses conditions d'utilisation interdisent de le redistribuer. Chaque joueur le télécharge sur https://bdcraft.net et le dépose dans resourcepacks/ sous le nom exact PureBDcraft 256x MC121.zip. Sans le fichier, Minecraft l'ignore. Les options par défaut ne s'appliquent qu'à une nouvelle instance : sur une instance existante, l'activer à la main (Options → Packs de ressources).\n- Mises à jour : Create: Radars 0.4.9.4 → 5.0.2 (grosse version, à vérifier en jeu), Create: Avionics 0.7.0, Create Encased 1.10.0, Create Cobblestone, Create Radiologistics, Fresh Animations 1.11.1, JEI, JER, FTB Quests, FTB Library, Overgeared, Sophisticated Backpacks/Core, Simple Voice Chat, C2ME, ModernFix, Corpse, Friends&Foes, Burnt, Better Library, MezzConfig, Fzzy Config.\n- Serveur de test : démarrage vérifié, aucune quête invalide. Rien n'a été essayé en jeu.\n\n1.5.2 — 2026-10-28\n\n- Le serveur Create Warfare (jeu.robocnop.be:27018) est déjà dans la liste Multijoueur. Une nouvelle installation le reçoit avec le zip (servers.dat). Une instance existante le reçoit par le launcher, qui l'ajoute à la fin de la liste du joueur sans retirer les autres serveurs, et une seule fois : un joueur qui le supprime ne le revoit pas.\n- Aucun mod, aucune config, aucune quête ne change. Rien ne change côté serveur.\n\n1.5.1 — 2026-10-27\n\n- Traductions françaises des mods ajoutés en 1.4.0 et 1.5.0 : 1034 textes (kubejs/assets/<mod>/lang/fr_fr.json). Kaleidoscope Cookery (577 : objets, plats, effets, progrès, Ponder), Inventory Profiles Next (389, menus de config et infobulles des boutons), libIPN, Durability Tooltip, CC Better Recipes, CC:CBC, et les quelques textes manquants de SecurityCraft et CC: Tweaked (déjà traduits par leurs auteurs). Security Breach était déjà complet.\n- Rien ne change côté serveur : ce sont des textes affichés par le client."
 }
