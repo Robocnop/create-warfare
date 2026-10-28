@@ -1,0 +1,323 @@
+﻿<Window x:Class="CreateWarfare.Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:CreateWarfare.Launcher.ViewModels"
+        xmlns:c="clr-namespace:CreateWarfare.Launcher.Controls"
+        Title="Create Warfare" Width="1000" Height="640" MinWidth="900" MinHeight="580"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanResize"
+        Background="{StaticResource Bg}" BorderBrush="{StaticResource Line}" BorderThickness="1"
+        UseLayoutRounding="True" TextOptions.TextFormattingMode="Display">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="56" ResizeBorderThickness="6" GlassFrameThickness="0" CornerRadius="0" UseAeroCaptionButtons="False" />
+    </WindowChrome.WindowChrome>
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- ===== Barre de titre ===== -->
+        <Border Grid.Row="0" BorderBrush="{StaticResource Line}" BorderThickness="0,0,0,1">
+            <DockPanel LastChildFill="False" Margin="24,0,0,0">
+                <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" FontSize="19" FontWeight="Bold" Margin="0,0,22,0">
+                    <Run Text="Create" /> <Run Text="Warfare" Foreground="{StaticResource Accent}" />
+                </TextBlock>
+                <StackPanel DockPanel.Dock="Left" Orientation="Horizontal" WindowChrome.IsHitTestVisibleInChrome="True">
+                    <Button Style="{StaticResource NavButton}" Content="NOUVEAUTÉS" Command="{Binding ShowChangelogCommand}" />
+                    <Button Style="{StaticResource NavButton}" Content="DOSSIER" Command="{Binding OpenInstanceCommand}" />
+                    <Button Style="{StaticResource NavButton}" Content="LOGS" Command="{Binding OpenLogsCommand}" />
+                </StackPanel>
+                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" WindowChrome.IsHitTestVisibleInChrome="True">
+                    <Button Style="{StaticResource CaptionButton}" Content="&#xE713;" FontSize="14" ToolTip="Réglages" Command="{Binding ShowSettingsCommand}" Margin="0,0,8,0" />
+                    <Button Style="{StaticResource CaptionButton}" Content="&#xE921;" Click="OnMinimize" ToolTip="Réduire" />
+                    <Button Style="{StaticResource CaptionButton}" x:Name="MaxButton" Content="&#xE922;" Click="OnMaximize" ToolTip="Agrandir" />
+                    <Button Style="{StaticResource CloseButton}" Content="&#xE8BB;" Click="OnClose" ToolTip="Fermer" />
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <!-- ===== Corps ===== -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="470" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Image de gauche -->
+            <Grid Grid.Column="0" Visibility="{Binding ShowHero, Converter={StaticResource Vis}}">
+                <c:HeroArt x:Name="HeroFallback" />
+                <Image x:Name="HeroImage" Stretch="UniformToFill" Visibility="Collapsed" />
+            </Grid>
+
+            <!-- Accueil -->
+            <DockPanel Grid.Column="1" Margin="32,24,32,28" LastChildFill="False" Visibility="{Binding IsHome, Converter={StaticResource Vis}}">
+                <Border DockPanel.Dock="Top" BorderBrush="{StaticResource Accent}" BorderThickness="2,0,0,0" Padding="16,4,0,4" Margin="0,8,0,0"
+                        Visibility="{Binding HasNotice, Converter={StaticResource Vis}}">
+                    <StackPanel>
+                        <TextBlock Style="{StaticResource Kicker}" Text="ANNONCE" Foreground="{StaticResource Accent}" />
+                        <TextBlock Text="{Binding Notice}" FontSize="14" TextWrapping="Wrap" LineHeight="21" />
+                    </StackPanel>
+                </Border>
+
+                <StackPanel DockPanel.Dock="Bottom">
+                    <TextBlock Style="{StaticResource Kicker}" Text="INSTALLATION" Foreground="{StaticResource Accent}" />
+                    <TextBlock Style="{StaticResource Title}" Text="{Binding StatusTitle}" Margin="0,0,0,24" />
+
+                    <Grid Margin="0,0,0,28">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="24" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Column="0" Style="{StaticResource Card}">
+                            <StackPanel>
+                                <TextBlock Style="{StaticResource Kicker}" Text="PACK" />
+                                <TextBlock Style="{StaticResource BigNumber}" Text="{Binding PackVersion}" />
+                                <TextBlock Text="{Binding PackSub}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Accent}" Margin="0,4,0,0" />
+                            </StackPanel>
+                        </Border>
+                        <Border Grid.Column="2" Style="{StaticResource Card}">
+                            <StackPanel>
+                                <TextBlock Style="{StaticResource Kicker}" Text="LAUNCHER" />
+                                <TextBlock Style="{StaticResource BigNumber}" Text="{Binding LauncherVersion}" />
+                                <Button Style="{StaticResource LinkButton}" Content="{Binding LauncherSub}" Command="{Binding UpdateLauncherCommand}"
+                                        FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Yellow}" Margin="0,4,0,0"
+                                        ToolTip="Mettre à jour le launcher" Visibility="{Binding LauncherUpdateAvailable, Converter={StaticResource Vis}}" />
+                                <TextBlock Text="{Binding LauncherSub}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Accent}" Margin="0,4,0,0"
+                                           Visibility="{Binding LauncherUpToDate, Converter={StaticResource Vis}}" />
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+
+                    <Button Style="{StaticResource PrimaryButton}" Content="{Binding PrimaryText}" Command="{Binding PrimaryCommand}" />
+                    <Button Style="{StaticResource LinkButton}" Content="Vérifier et réparer les fichiers" Command="{Binding RepairCommand}" Margin="0,16,0,0"
+                            Visibility="{Binding HasInstance, Converter={StaticResource Vis}}" />
+                </StackPanel>
+            </DockPanel>
+
+            <!-- Première installation (option A : import dans CurseForge) -->
+            <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" Visibility="{Binding IsInstall, Converter={StaticResource Vis}}">
+                <StackPanel Margin="32,24,32,24">
+                    <TextBlock Style="{StaticResource Kicker}" Text="PREMIÈRE INSTALLATION" Foreground="{StaticResource Accent}" />
+                    <TextBlock Style="{StaticResource Title}" Text="Installer Create Warfare" />
+                    <TextBlock Style="{StaticResource Body}" Margin="0,6,0,18"
+                               Text="CurseForge installe Minecraft, NeoForge et Java. Ensuite, le launcher s'occupe seul des mises à jour." />
+
+                    <Grid Margin="0,0,0,22">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="36" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+                        <TextBlock Style="{StaticResource BigNumber}" FontSize="22" Text="1" Foreground="{StaticResource Accent}" />
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontSize="15" FontWeight="SemiBold" Text="Télécharge le pack" />
+                            <TextBlock Style="{StaticResource Body}" Text="Le zip est enregistré dans ton dossier Téléchargements." Margin="0,2,0,10" />
+                            <StackPanel Orientation="Horizontal">
+                                <Button Style="{StaticResource SecondaryButton}" Content="Télécharger le zip" Command="{Binding DownloadZipCommand}" />
+                                <Button Style="{StaticResource LinkButton}" Content="Afficher" Command="{Binding ShowZipCommand}" Margin="16,0,0,0" VerticalAlignment="Center"
+                                        Visibility="{Binding HasInstallZip, Converter={StaticResource Vis}}" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Margin="0,0,0,22">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="36" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+                        <TextBlock Style="{StaticResource BigNumber}" FontSize="22" Text="2" Foreground="{StaticResource Accent}" />
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontSize="15" FontWeight="SemiBold" Text="Importe-le dans CurseForge" />
+                            <TextBlock Style="{StaticResource Body}" Margin="0,2,0,10"
+                                       Text="Minecraft → « Créer un profil personnalisé » → lien « Importer » en haut de la fenêtre → choisis le zip. Attends la fin de l'installation." />
+                            <Button Style="{StaticResource SecondaryButton}" Content="Ouvrir CurseForge" Command="{Binding OpenCurseForgeCommand}" HorizontalAlignment="Left" />
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Margin="0,0,0,26">
+                        <Grid.ColumnDefinitions><ColumnDefinition Width="36" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
+                        <TextBlock Style="{StaticResource BigNumber}" FontSize="22" Text="3" Foreground="{StaticResource Accent}" />
+                        <StackPanel Grid.Column="1">
+                            <TextBlock FontSize="15" FontWeight="SemiBold" Text="Reviens ici" />
+                            <TextBlock Style="{StaticResource Body}" Text="Le launcher retrouve l'instance tout seul, même si CurseForge l'a nommée « Create Warfare (1) »." Margin="0,2,0,0" />
+                        </StackPanel>
+                    </Grid>
+
+                    <Button Style="{StaticResource PrimaryButton}" Content="J'ai importé le pack" Command="{Binding RescanCommand}" />
+                    <StackPanel Orientation="Horizontal" Margin="0,16,0,0">
+                        <Button Style="{StaticResource LinkButton}" Content="Retour" Command="{Binding BackHomeCommand}" />
+                        <Button Style="{StaticResource LinkButton}" Content="Déjà installé ailleurs ? Choisir le dossier" Command="{Binding BrowseCommand}" Margin="20,0,0,0" />
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- Téléchargement / application -->
+            <StackPanel Grid.Column="1" Margin="32,0,32,40" VerticalAlignment="Bottom" Visibility="{Binding IsWorking, Converter={StaticResource Vis}}">
+                <TextBlock Style="{StaticResource Kicker}" Text="{Binding WorkKicker}" Foreground="{StaticResource Accent}" />
+                <TextBlock Style="{StaticResource Title}" Text="{Binding WorkTitle}" Margin="0,0,0,24" />
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
+                    <TextBlock Style="{StaticResource BigNumber}" FontSize="44" Text="{Binding WorkCount}" />
+                    <TextBlock Text="{Binding WorkTotal}" FontFamily="{StaticResource Mono}" FontSize="16" Foreground="{StaticResource Muted}"
+                               VerticalAlignment="Bottom" Margin="10,0,0,9" />
+                </StackPanel>
+                <ProgressBar Minimum="0" Maximum="1" Value="{Binding WorkProgress, Mode=OneWay}" />
+                <TextBlock Text="{Binding WorkCurrent}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Muted}"
+                           Margin="0,10,0,0" TextTrimming="CharacterEllipsis" />
+                <Button Style="{StaticResource LinkButton}" Content="Annuler" Command="{Binding CancelWorkCommand}" Margin="0,18,0,0"
+                        Visibility="{Binding CanCancel, Converter={StaticResource Vis}}" />
+            </StackPanel>
+
+            <!-- Revue de la mise à jour (pleine largeur) -->
+            <DockPanel Grid.ColumnSpan="2" Margin="48,28,44,28" Visibility="{Binding IsReview, Converter={StaticResource Vis}}">
+                <StackPanel DockPanel.Dock="Top">
+                    <TextBlock Style="{StaticResource Kicker}" Text="{Binding ReviewKicker}" />
+                    <TextBlock Style="{StaticResource Title}" Text="{Binding ReviewTitle}" />
+                    <TextBlock Style="{StaticResource Body}" Text="{Binding ReviewText}" Margin="0,6,0,16" MaxWidth="680" HorizontalAlignment="Left" />
+                    <WrapPanel Margin="0,0,0,12">
+                        <WrapPanel.Resources>
+                            <Style TargetType="TextBlock" x:Key="CountIcon">
+                                <Setter Property="FontFamily" Value="{StaticResource Mono}" />
+                                <Setter Property="Foreground" Value="{StaticResource Muted}" />
+                                <Setter Property="FontSize" Value="15" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                                <Setter Property="Margin" Value="0,0,8,0" />
+                            </Style>
+                            <Style TargetType="TextBlock" x:Key="CountValue">
+                                <Setter Property="FontFamily" Value="{StaticResource Mono}" />
+                                <Setter Property="FontSize" Value="20" />
+                                <Setter Property="FontWeight" Value="Bold" />
+                                <Setter Property="Foreground" Value="{StaticResource Text}" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                                <Setter Property="Margin" Value="0,0,8,0" />
+                            </Style>
+                            <Style TargetType="TextBlock" x:Key="CountLabel">
+                                <Setter Property="Foreground" Value="{StaticResource Muted}" />
+                                <Setter Property="FontSize" Value="13" />
+                                <Setter Property="VerticalAlignment" Value="Center" />
+                                <Setter Property="Margin" Value="0,0,26,0" />
+                            </Style>
+                        </WrapPanel.Resources>
+                        <TextBlock Style="{StaticResource CountIcon}" Text="⇄" /><TextBlock Style="{StaticResource CountValue}" Text="{Binding CountReplace}" /><TextBlock Style="{StaticResource CountLabel}" Text="Remplacés" />
+                        <TextBlock Style="{StaticResource CountIcon}" Text="+" /><TextBlock Style="{StaticResource CountValue}" Text="{Binding CountAdd}" /><TextBlock Style="{StaticResource CountLabel}" Text="Ajoutés" />
+                        <TextBlock Style="{StaticResource CountIcon}" Text="−" /><TextBlock Style="{StaticResource CountValue}" Text="{Binding CountRemove}" /><TextBlock Style="{StaticResource CountLabel}" Text="Supprimés" />
+                        <TextBlock Style="{StaticResource CountIcon}" Text="=" /><TextBlock Style="{StaticResource CountValue}" Text="{Binding CountSame}" /><TextBlock Style="{StaticResource CountLabel}" Text="Identiques" />
+                        <TextBlock Style="{StaticResource CountIcon}" Text="◆" /><TextBlock Style="{StaticResource CountValue}" Text="{Binding CountProtected}" /><TextBlock Style="{StaticResource CountLabel}" Text="Protégés (gardés)" />
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="0,18,0,0">
+                    <Button Style="{StaticResource PrimaryButton}" Content="{Binding ConfirmText}" Command="{Binding ConfirmCommand}" Height="48" FontSize="16" MinWidth="140" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="Annuler" Command="{Binding BackHomeCommand}" Height="48" Margin="14,0,0,0" />
+                </StackPanel>
+
+                <Border BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,1">
+                    <ListBox ItemsSource="{Binding Rows}" Background="Transparent" BorderThickness="0" Focusable="False"
+                             ScrollViewer.HorizontalScrollBarVisibility="Disabled" VirtualizingPanel.IsVirtualizing="True"
+                             VirtualizingPanel.VirtualizationMode="Recycling">
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="Focusable" Value="False" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ListBoxItem">
+                                            <Border Background="{StaticResource Row}" BorderBrush="{StaticResource Line}" BorderThickness="0,0,0,1" Padding="12,8">
+                                                <ContentPresenter />
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate DataType="{x:Type vm:PlanRow}">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="28" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock x:Name="icon" Text="{Binding Icon}" FontFamily="{StaticResource Mono}" FontSize="14" Foreground="{StaticResource Muted}" />
+                                    <TextBlock x:Name="path" Grid.Column="1" Text="{Binding Path}" FontFamily="{StaticResource Mono}" FontSize="13"
+                                               Foreground="{StaticResource Muted}" TextTrimming="CharacterEllipsis" />
+                                    <TextBlock Grid.Column="2" Text="{Binding Size}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Muted}" Margin="16,0,0,0" />
+                                </Grid>
+                                <DataTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding Changes}" Value="True">
+                                        <Setter TargetName="path" Property="Foreground" Value="{StaticResource Text}" />
+                                        <Setter TargetName="path" Property="FontWeight" Value="SemiBold" />
+                                        <Setter TargetName="icon" Property="Foreground" Value="{StaticResource Text}" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Kind}" Value="Remove">
+                                        <Setter TargetName="icon" Property="Foreground" Value="{StaticResource Error}" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Kind}" Value="Add">
+                                        <Setter TargetName="icon" Property="Foreground" Value="{StaticResource Accent}" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Kind}" Value="Protected">
+                                        <Setter TargetName="icon" Property="Foreground" Value="{StaticResource Yellow}" />
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Border>
+            </DockPanel>
+
+            <!-- Nouveautés (pleine largeur) -->
+            <DockPanel Grid.ColumnSpan="2" Margin="48,28,44,28" Visibility="{Binding IsChangelog, Converter={StaticResource Vis}}">
+                <StackPanel DockPanel.Dock="Top" Margin="0,0,0,16">
+                    <TextBlock Style="{StaticResource Kicker}" Text="NOUVEAUTÉS" />
+                    <TextBlock Style="{StaticResource Title}" Text="{Binding RemoteVersion}" />
+                </StackPanel>
+                <Button DockPanel.Dock="Bottom" Style="{StaticResource SecondaryButton}" Content="Retour" Command="{Binding BackHomeCommand}" HorizontalAlignment="Left" Margin="0,18,0,0" />
+                <Border BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,1" Padding="0,14">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <TextBlock Text="{Binding Changelog}" FontFamily="{StaticResource Mono}" FontSize="13" Foreground="{StaticResource Text}"
+                                   TextWrapping="Wrap" LineHeight="20" Margin="0,0,16,0" />
+                    </ScrollViewer>
+                </Border>
+            </DockPanel>
+
+            <!-- Réglages (pleine largeur) -->
+            <StackPanel Grid.ColumnSpan="2" Margin="48,28,44,28" Visibility="{Binding IsSettings, Converter={StaticResource Vis}}">
+                <TextBlock Style="{StaticResource Kicker}" Text="RÉGLAGES" />
+                <TextBlock Style="{StaticResource Title}" Text="Instance CurseForge" Margin="0,0,0,8" />
+                <TextBlock Style="{StaticResource Body}" Text="Le launcher ne modifie que ce dossier. Il ne touche jamais à options.txt, aux mondes, aux captures, aux packs de textures ni aux mods que tu ajoutes." Margin="0,0,0,16" MaxWidth="680" HorizontalAlignment="Left" />
+                <Border Background="{StaticResource Row}" BorderBrush="{StaticResource Line}" BorderThickness="1" Padding="14,12" Margin="0,0,0,14">
+                    <TextBlock Text="{Binding InstancePath}" FontFamily="{StaticResource Mono}" FontSize="13" TextTrimming="CharacterEllipsis" />
+                </Border>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,32">
+                    <Button Style="{StaticResource SecondaryButton}" Content="Parcourir…" Command="{Binding BrowseCommand}" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="Détection automatique" Command="{Binding AutoDetectCommand}" Margin="12,0,0,0" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="Ouvrir le dossier" Command="{Binding OpenInstanceCommand}" Margin="12,0,0,0" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="Vérifier et réparer" Command="{Binding RepairCommand}" Margin="12,0,0,0" />
+                </StackPanel>
+                <TextBlock Style="{StaticResource Kicker}" Text="LAUNCHER" />
+                <TextBlock Style="{StaticResource Body}" Margin="0,0,0,24">
+                    <Run Text="{Binding LauncherVersion, Mode=OneWay}" /><Run Text=" · sauvegardes dans .cw-backup (les 2 dernières) · logs dans %LOCALAPPDATA%\CreateWarfareLauncher" />
+                </TextBlock>
+                <Button Style="{StaticResource SecondaryButton}" Content="Retour" Command="{Binding BackHomeCommand}" HorizontalAlignment="Left" />
+            </StackPanel>
+        </Grid>
+
+        <!-- ===== Toast ===== -->
+        <Border Grid.Row="2" Background="#0F1527" BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,0"
+                Visibility="{Binding HasToast, Converter={StaticResource Vis}}">
+            <DockPanel>
+                <Border DockPanel.Dock="Left" Width="3">
+                    <Border.Style>
+                        <Style TargetType="Border">
+                            <Setter Property="Background" Value="{StaticResource Accent}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding ToastIsError}" Value="True">
+                                    <Setter Property="Background" Value="{StaticResource Error}" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Border.Style>
+                </Border>
+                <Button DockPanel.Dock="Right" Style="{StaticResource CaptionButton}" Content="&#xE8BB;" Height="48" Command="{Binding DismissToastCommand}" />
+                <TextBlock Text="{Binding ToastText}" FontSize="14" VerticalAlignment="Center" Margin="22,14" TextWrapping="Wrap" />
+            </DockPanel>
+        </Border>
+    </Grid>
+</Window>

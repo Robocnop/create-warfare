@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\CreateWarfare.Launcher.Core\CreateWarfare.Launcher.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>CreateWarfareLauncher</AssemblyName>
+    <RootNamespace>CreateWarfare.Launcher</RootNamespace>
+    <!-- Version du launcher : à incrémenter avant chaque publication (lue par l'auto-update). -->
+    <Version>1.0.0</Version>
+    <Product>Create Warfare Launcher</Product>
+    <Company>Robocnop</Company>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon Condition="Exists('Assets\icon.ico')">Assets\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <!-- dotnet publish -c Release : un seul exe autonome, sans runtime .NET à installer chez le joueur. -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType>none</DebugType>
+    <AllowedReferenceRelatedFileExtensions>none</AllowedReferenceRelatedFileExtensions>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Image de gauche : déposer Assets\hero.jpg (ou .png) ; sinon une illustration dessinée est affichée. -->
+    <Resource Include="Assets\hero.*" />
+    <Resource Include="Assets\icon.ico" Condition="Exists('Assets\icon.ico')" />
+  </ItemGroup>
+
+</Project>

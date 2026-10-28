@@ -1,2 +1,4 @@
 server-test/
 dist/
+launcher/**/bin/
+launcher/**/obj/
