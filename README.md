@@ -31,6 +31,15 @@ PvP entre équipes sur serveur dédié, textes et quêtes en français.
 4. Ensuite, le launcher annonce chaque nouvelle version. **Mettre à jour** remplace seulement les fichiers du pack.
    Les touches, réglages, mondes, cartes, packs de textures et mods ajoutés à la main ne sont pas touchés.
    Tout est sauvegardé avant d'être remplacé. **Jouer** ouvre CurseForge.
+5. Le launcher se met aussi à jour tout seul : quand la case LAUNCHER affiche « vX disponible », un clic suffit,
+   pas besoin de retélécharger l'exe. Une nouvelle version peut mettre jusqu'à 5 minutes à apparaître : rouvrir le launcher.
+
+### Pack de textures PureBDcraft (optionnel)
+
+PureBDcraft 256x est pré-activé (au-dessus de Fresh Animations) mais **n'est pas fourni** : ses conditions interdisent
+de le redistribuer. Le télécharger sur [bdcraft.net](https://bdcraft.net), le déposer dans le dossier `resourcepacks/`
+de l'instance sous le nom exact `PureBDcraft 256x MC121.zip`. Sur une instance déjà créée avant la 1.5.3, l'activer
+à la main : Options → Packs de ressources.
 
 ### À la main (CurseForge)
 

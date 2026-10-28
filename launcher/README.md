@@ -85,5 +85,9 @@ une illustration dessinée (engrenages) est affichée. Icône : `Assets/icon.ico
 2. `dotnet publish launcher/src/CreateWarfare.Launcher -c Release -o dist/launcher`
 3. `python tools/publish_launcher.py --upload` : crée la release `launcher-v<version>` avec l'exe et met son
    SHA-256 dans `version.json`. Les launchers installés se mettent à jour au clic.
+   Le launcher ne lit `version.json` qu'à l'ouverture, et `raw.githubusercontent.com` le garde en cache jusqu'à 5 min :
+   un launcher ouvert juste après la publication affiche encore « à jour ». Le rouvrir après quelques minutes.
+   Vérifier ce que GitHub sert : `curl -s https://raw.githubusercontent.com/Robocnop/create-warfare/master/version.json`.
+   Testé le 28/10 : l'exe 1.0.0 de la release passe seul en 1.0.1 (remplacement, relance, `.old` supprimé).
 4. Si un nouveau pack a besoin du nouveau launcher : `--min-launcher <version>`. Les anciens launchers bloquent
    alors la mise à jour du pack et proposent d'abord celle du launcher.

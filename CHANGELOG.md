@@ -2,6 +2,10 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## Launcher 1.0.1 — 2026-10-28
+
+- L'exe et la fenêtre ont une icône (engrenage). Le launcher 1.0.0 se met à jour tout seul : clic sur « v1.0.1 disponible ».
+
 ## 1.5.3 — 2026-10-28
 
 - **PureBDcraft 256x** pré-activé, au-dessus de Fresh Animations (options par défaut). Le pack n'est **pas inclus** :
