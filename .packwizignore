@@ -9,3 +9,5 @@ CLAUDE.md
 .gitattributes
 docs/
 CHANGELOG.md
+launcher/
+LICENSE

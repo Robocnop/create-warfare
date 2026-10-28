@@ -2,6 +2,13 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.5.2 — 2026-10-28
+
+- Le serveur **Create Warfare** (`jeu.robocnop.be:27018`) est déjà dans la liste Multijoueur.
+  Une nouvelle installation le reçoit avec le zip (`servers.dat`). Une instance existante le reçoit par le launcher,
+  qui l'ajoute **à la fin** de la liste du joueur sans retirer les autres serveurs, et une seule fois : un joueur qui le supprime ne le revoit pas.
+- Aucun mod, aucune config, aucune quête ne change. Rien ne change côté serveur.
+
 ## 1.5.1 — 2026-10-27
 
 - **Traductions françaises** des mods ajoutés en 1.4.0 et 1.5.0 : 1034 textes (`kubejs/assets/<mod>/lang/fr_fr.json`).

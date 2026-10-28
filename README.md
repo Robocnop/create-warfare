@@ -1,41 +1,90 @@
 # Create Warfare
 
-Modpack Minecraft **1.21.1 / NeoForge** construit autour de **Create** : base industrielle, électricité,
-pétrole, nucléaire, trains, aviation physique (Create Aeronautics + Sable), artillerie (Create Big Cannons),
-blindés, radars, missiles guidés et ICBM nucléaires (Project: Explosive). PvP entre équipes, avec claims FTB Chunks.
-Progression guidée par **122 quêtes FTB Quests en français** (10 chapitres, de l'engrenage à l'ICBM).
+Modpack **Minecraft 1.21.1 / NeoForge 21.1.264** construit autour de **Create 6** : on bâtit une industrie, puis on fait la guerre avec.
+PvP entre équipes sur serveur dédié, textes et quêtes en français.
 
-Liste complète des mods et notes de compatibilité : [MODLIST.md](MODLIST.md).
+| | |
+|---|---|
+| **Serveur** | `jeu.robocnop.be:27018` (déjà dans la liste Multijoueur depuis la 1.5.2) |
+| **Mods** | 199 (167 client + serveur, 30 client seul, 2 serveur seul) — détail dans [MODLIST.md](MODLIST.md) |
+| **Quêtes** | 169 quêtes FTB en français, 13 chapitres, de la première roue dentée à l'ICBM |
+| **RAM conseillée** | 10 Go (réglée d'office à l'import CurseForge) |
+| **Versions** | [CHANGELOG.md](CHANGELOG.md) |
 
-## Jouer (CurseForge)
-1. Application CurseForge → Minecraft → **Créer un profil personnalisé** → **Importer** → choisir `dist/CreateWarfare-1.2.0.zip`.
-2. Paramètres du profil → mémoire allouée : **10 Go** (réglée par défaut à l'import).
-3. Lancer. Le livre de quêtes s'ouvre depuis l'icône FTB Quests dans l'inventaire.
+## Au programme
+
+- **Industrie** : Create et ses addons, électricité (Create: New Age, Create Crafts & Additions), pétrole et acier (TFMG), trains (Steam 'n' Rails).
+- **Aviation physique** : Create Aeronautics + Sable, avec avionique pilotable par ordinateur (CC: Tweaked, Create: Avionics).
+- **Artillerie et blindés** : Create Big Cannons et ses addons, véhicules et armes modernes (Superb Warfare).
+- **Missiles et nucléaire** : radars, missiles guidés, bombes et ICBM nucléaires (Project: Explosive). Les ICBM ne se posent qu'avec des codes de lancement obtenus par une quête.
+- **Défense** : SecurityCraft. Ses blocs renforcés résistent aux bombes, de vrais bunkers anti-nucléaires.
+- **Le reste** : exploration (Terralith, structures YUNG's), cuisine (Kaleidoscope Cookery), cartes Xaero, JEI et EMI, Jade, shaders.
+
+## Jouer
+
+### Avec le launcher (recommandé)
+
+1. Télécharger **`CreateWarfareLauncher.exe`** depuis les [releases du dépôt public](https://github.com/Robocnop/create-warfare-dist/releases/latest).
+2. Le lancer. Windows peut afficher « Windows a protégé votre ordinateur » parce que l'exe n'est pas signé :
+   cliquer sur **Informations complémentaires**, puis **Exécuter quand même**.
+3. Suivre les 3 étapes de la première installation : télécharger le zip, l'importer dans CurseForge, revenir.
+4. Ensuite, le launcher annonce chaque nouvelle version. **Mettre à jour** remplace seulement les fichiers du pack.
+   Les touches, réglages, mondes, cartes, packs de textures et mods ajoutés à la main ne sont pas touchés.
+   Tout est sauvegardé avant d'être remplacé. **Jouer** ouvre CurseForge.
+
+### À la main (CurseForge)
+
+1. Télécharger `CreateWarfare-<version>.zip` depuis les releases.
+2. CurseForge → Minecraft → **Créer un profil personnalisé** → **Importer** → choisir le zip.
+3. Lancer. Le livre de quêtes s'ouvre depuis l'icône FTB Quests de l'inventaire.
 4. Shader (optionnel, PC costaud) : Options → Vidéo → Shaders → **Complementary Reimagined**.
-   Fresh Animations (mobs animés) est activé d'office ; le statut Discord s'affiche tout seul.
 
-## Serveur dédié
-Prérequis : **Java 21** et **Python 3.11+**. 10 Go de RAM conseillés.
-1. Décompresser `dist/CreateWarfare-Server-1.2.0.zip` dans un dossier vide.
-2. Lancer `install.bat` (Windows) ou `install.sh` (Linux). Le script installe NeoForge et télécharge les 114 mods côté serveur.
+## Héberger un serveur
+
+Prérequis : **Java 21**, **Python 3.11+** et 10 Go de RAM.
+
+1. Décompresser `CreateWarfare-Server-<version>.zip` dans un dossier vide.
+2. Lancer `install.bat` (Windows) ou `install.sh` (Linux). Le script installe NeoForge et télécharge les mods côté serveur.
 3. Mettre `eula=true` dans `eula.txt` (acceptation de l'EULA Minecraft).
 4. Lancer `start.bat` / `start.sh`. Port par défaut : 25565.
-5. Recommandé avant d'ouvrir le serveur : pré-générer la carte avec Chunky (`/chunky radius 3000` puis `/chunky start`).
+5. Avant d'ouvrir : poser une bordure de monde et pré-générer la carte avec Chunky. Les explosions nucléaires gèlent le serveur
+   quand elles touchent des chunks pas encore générés (voir `CLAUDE.md`).
 
-Réglages déjà mis : `pvp=true`, `allow-flight=true` (avions et jetpacks), `max-tick-time=-1` (pas d'arrêt pendant les grosses explosions).
+Déjà réglé : `pvp=true`, `allow-flight=true` (avions et jetpacks), `max-tick-time=-1` (pas d'arrêt pendant les grosses explosions).
 
 ### Règles de guerre (à décider entre vous)
+
 - Par défaut, les chunks réclamés avec **FTB Chunks** sont protégés des explosions des autres équipes.
-- **Guerre totale** : dans `world/serverconfig/ftbchunks-world.snbt`, mettre `disable_protection: true`, et plus aucun claim ne protège.
+- **Guerre totale** : dans `world/serverconfig/ftbchunks-world.snbt`, mettre `disable_protection: true`. Plus aucun claim ne protège alors.
 - Puissance et destruction : `config/projectexplosive-common.toml` (section `[explosion]`) et
   `world/serverconfig/createbigcannons-server.toml` (dégâts des obus).
 
+## Contenu du dépôt
+
+| Dossier / fichier | Rôle |
+|---|---|
+| `pack.toml`, `index.toml`, `mods/` | Le pack, au format [packwiz](https://packwiz.infra.link/) (métadonnées des mods, pas les jars) |
+| `config/`, `kubejs/`, `servers.dat` | Fichiers livrés dans le zip : configs, recettes et scripts KubeJS, traductions FR, quêtes, liste de serveurs |
+| `server-files/` | Scripts d'installation et de démarrage du serveur |
+| `tools/` | Construction (`build.sh`), test serveur (`test_server.sh`), quêtes (`gen_quests.py`), téléchargement des mods (`fetch_mods.py`), publication (`publish_launcher.py`) |
+| `launcher/` | Le launcher Windows (WPF .NET 8), voir [launcher/README.md](launcher/README.md) |
+| `docs/` | Équilibrage, tests en jeu, journal, plan du launcher |
+| `CLAUDE.md` | Notes de maintenance détaillées : règles du pack, pièges connus, serveur réel |
+
 ## Maintenir le pack
-Le pack est géré avec [packwiz](https://packwiz.infra.link/) (installé via `go install github.com/packwiz/packwiz@latest`).
-- Ajouter un mod : `packwiz cf add https://www.curseforge.com/minecraft/mc-mods/<slug>` (toujours l'URL complète :
-  avec un simple nom, packwiz peut prendre un modpack au lieu du mod).
-- Mettre à jour : `packwiz update --all`, **puis tester** (les addons Create cassent parfois les mondes existants, par exemple CBC 5.11.4).
-- Tester le serveur : `bash tools/test_server.sh` (démarre `server-test/` jusqu'à « Done » et affiche les erreurs).
-- Quêtes : modifier le tableau `CHAPTERS` dans `tools/gen_quests.py`, puis `python tools/gen_quests.py`
-  (ajouter le chemin d'un `ids.json` des items pour vérifier les IDs). Les IDs de quête sont stables, donc la progression est conservée.
-- Construire les zips : `bash tools/build.sh` (incrémenter `version` dans `pack.toml` avant).
+
+1. Ajouter un mod : `packwiz cf add https://www.curseforge.com/minecraft/mc-mods/<slug>`. Toujours l'URL complète :
+   avec un simple nom, packwiz peut prendre un modpack au lieu du mod.
+2. Mettre à jour : `packwiz update --all`, puis **tester** (des addons Create cassent parfois les mondes existants).
+3. Tester le serveur : `bash tools/test_server.sh` (démarre `server-test/` jusqu'à « Done » et affiche les erreurs).
+4. Quêtes : modifier le tableau `CHAPTERS` de `tools/gen_quests.py`, puis `python tools/gen_quests.py`.
+   Les IDs de quête sont stables, donc la progression des joueurs est gardée.
+5. Serveurs de la liste Multijoueur : `SERVERS` dans `tools/gen_servers_dat.py`, puis `python tools/gen_servers_dat.py`.
+6. Publier : incrémenter `version` dans `pack.toml`, `bash tools/build.sh`, commit, `gh release create v<version> dist/CreateWarfare*-<version>.zip`,
+   puis `python tools/publish_launcher.py --upload` pour les joueurs qui utilisent le launcher.
+
+## Licence
+
+Le travail original de ce dépôt (outils, launcher, scripts KubeJS, quêtes, configs, documentation) est sous [licence MIT](LICENSE).
+**Les mods ne sont pas concernés** : chacun appartient à ses auteurs et garde sa propre licence. Les mods « All Rights Reserved »
+ne sont jamais redistribués : CurseForge ou le launcher les télécharge chez le joueur.
