@@ -48,7 +48,7 @@ Prérequis : **Java 21**, **Python 3.11+** et 10 Go de RAM.
 3. Mettre `eula=true` dans `eula.txt` (acceptation de l'EULA Minecraft).
 4. Lancer `start.bat` / `start.sh`. Port par défaut : 25565.
 5. Avant d'ouvrir : poser une bordure de monde et pré-générer la carte avec Chunky. Les explosions nucléaires gèlent le serveur
-   quand elles touchent des chunks pas encore générés (voir `CLAUDE.md`).
+   quand elles touchent des chunks pas encore générés : pré-générer au-delà de la bordure (rayon de l'explosion, environ 600 blocs).
 
 Déjà réglé : `pvp=true`, `allow-flight=true` (avions et jetpacks), `max-tick-time=-1` (pas d'arrêt pendant les grosses explosions).
 
@@ -68,8 +68,6 @@ Déjà réglé : `pvp=true`, `allow-flight=true` (avions et jetpacks), `max-tick
 | `server-files/` | Scripts d'installation et de démarrage du serveur |
 | `tools/` | Construction (`build.sh`), test serveur (`test_server.sh`), quêtes (`gen_quests.py`), téléchargement des mods (`fetch_mods.py`), publication (`publish_launcher.py`) |
 | `launcher/` | Le launcher Windows (WPF .NET 8), voir [launcher/README.md](launcher/README.md) |
-| `docs/` | Équilibrage, tests en jeu, journal, plan du launcher |
-| `CLAUDE.md` | Notes de maintenance détaillées : règles du pack, pièges connus, serveur réel |
 
 ## Maintenir le pack
 

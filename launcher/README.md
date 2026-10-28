@@ -1,8 +1,7 @@
 # Create Warfare Launcher
 
 Application Windows (WPF, .NET 8, un seul exe autonome) qui installe et met à jour l'instance CurseForge
-« Create Warfare » sans toucher aux réglages du joueur. Le plan d'origine et les décisions sont dans
-`docs/launcher/PLAN.md`.
+« Create Warfare » sans toucher aux réglages du joueur.
 
 ## Pour les joueurs
 
@@ -73,7 +72,7 @@ une illustration dessinée (engrenages) est affichée. Icône : `Assets/icon.ico
 
 ### Une version du pack
 
-1. Suivre « Mettre à jour le pack » dans `CLAUDE.md` (test serveur, `tools/build.sh`, release `v<version>`).
+1. Suivre « Maintenir le pack » dans le README principal (test serveur, `tools/build.sh`, release `v<version>`).
 2. `python tools/publish_launcher.py --upload`
    - ajoute le zip à la release `v<version>` de `Robocnop/create-warfare` s'il y manque (et crée la release si besoin) ;
    - commite `version.json` à la racine du dépôt et pousse `master`. Les launchers le lisent sur
