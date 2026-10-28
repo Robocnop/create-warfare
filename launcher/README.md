@@ -47,7 +47,7 @@ ses URL (Modrinth, CDN CurseForge), et le launcher les télécharge lui-même, c
 ```bash
 cd launcher
 dotnet build
-dotnet test                       # 22 tests, fausse instance dans %TEMP%
+dotnet test                       # 27 tests, fausse instance dans %TEMP%
 ```
 
 Tester contre un `version.json` local (sans rien publier) :
