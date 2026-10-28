@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.5.6",
+  "version": "1.5.4",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,9 +11,9 @@
     "size": 72237983
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.5.6/CreateWarfare-1.5.6.zip",
-    "sha256": "488e88c7d9143aef82f5efafdcb3915316b3d03211c2a58a51e22f64c191240a",
-    "size": 7668957
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.5.4/CreateWarfare-1.5.4.zip",
+    "sha256": "0e0becf0d3ddc1a05fde459ebf0323858838f15597e24d8e7cd242271ce1a0a3",
+    "size": 7668952
   },
   "mods": [
     {
