@@ -2,6 +2,19 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.5.3 — 2026-10-28
+
+- **PureBDcraft 256x** pré-activé, au-dessus de Fresh Animations (options par défaut). Le pack n'est **pas inclus** :
+  il n'est pas sur CurseForge et ses conditions d'utilisation interdisent de le redistribuer. Chaque joueur le télécharge
+  sur https://bdcraft.net et le dépose dans `resourcepacks/` sous le nom exact `PureBDcraft 256x MC121.zip`.
+  Sans le fichier, Minecraft l'ignore. Les options par défaut ne s'appliquent qu'à une nouvelle instance :
+  sur une instance existante, l'activer à la main (Options → Packs de ressources).
+- Mises à jour : Create: Radars 0.4.9.4 → **5.0.2** (grosse version, à vérifier en jeu), Create: Avionics 0.7.0,
+  Create Encased 1.10.0, Create Cobblestone, Create Radiologistics, Fresh Animations 1.11.1, JEI, JER, FTB Quests,
+  FTB Library, Overgeared, Sophisticated Backpacks/Core, Simple Voice Chat, C2ME, ModernFix, Corpse, Friends&Foes,
+  Burnt, Better Library, MezzConfig, Fzzy Config.
+- Serveur de test : démarrage vérifié, aucune quête invalide. Rien n'a été essayé en jeu.
+
 ## 1.5.2 — 2026-10-28
 
 - Le serveur **Create Warfare** (`jeu.robocnop.be:27018`) est déjà dans la liste Multijoueur.

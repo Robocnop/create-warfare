@@ -1,13 +1,13 @@
 name = "Overgeared"
-filename = "overgeared-neoforge-1.21.1-1.6.19.jar"
+filename = "overgeared-neoforge-1.21.1-1.6.20.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "ca2e84af3b13717fd907e93d32b7234b666a03c1"
+hash = "8e81f290a7236a929baf7385d9f947c1c1254e72"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8936600
+file-id = 9331561
 project-id = 1277786

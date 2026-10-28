@@ -23,4 +23,4 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
-resourcePacks:["vanilla","mod_resources","file/FreshAnimations_v1.10.4.zip"]
+resourcePacks:["vanilla","mod_resources","file/FreshAnimations_v1.11.1_1.20+.zip","file/PureBDcraft 256x MC121.zip"]
