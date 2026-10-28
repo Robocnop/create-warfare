@@ -85,12 +85,16 @@ file = "config/ftbquests/quests/chapters/12_cuisine.snbt"
 hash = "8dd4fcf77bfd7a959b6c3dad2af3e4d0fcf898f3148d921f513d0864a050fc73"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/13_espace.snbt"
+hash = "f4bff666023eb97055ab0d3973b84eb45eaac5b257b99dbb16e7add23a0209c7"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "fe9f264a9e077f7e9077ba62541b5d9bf3cdbe4586e587eed8bdce03a1ac4f65"
+hash = "568fc182611f78228fbe95f489a8ae6e186aeaf09e680fbcb2140b5e25b5f65a"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"

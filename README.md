@@ -7,7 +7,7 @@ PvP entre équipes sur serveur dédié, textes et quêtes en français.
 |---|---|
 | **Serveur** | `jeu.robocnop.be:27018` (déjà dans la liste Multijoueur depuis la 1.5.2) |
 | **Mods** | 199 (167 client + serveur, 30 client seul, 2 serveur seul) — détail dans [MODLIST.md](MODLIST.md) |
-| **Quêtes** | 169 quêtes FTB en français, 13 chapitres, de la première roue dentée à l'ICBM |
+| **Quêtes** | 204 quêtes FTB en français, 14 chapitres, de la première roue dentée à l'ICBM et à l'espace |
 | **RAM conseillée** | 10 Go (réglée d'office à l'import CurseForge) |
 | **Versions** | [CHANGELOG.md](CHANGELOG.md) |
 
