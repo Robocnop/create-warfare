@@ -11,3 +11,4 @@ docs/
 CHANGELOG.md
 launcher/
 LICENSE
+version.json

@@ -11,7 +11,7 @@ dist/launcher/CreateWarfareLauncher.exe if present (dotnet publish, see launcher
 Jars are not redistributed: each mod gets its Modrinth URL (matched by sha1) and its CurseForge CDN URL,
 the launcher downloads them itself and checks the sha1, exactly like tools/fetch_mods.py.
 """
-import argparse, base64, hashlib, json, os, re, subprocess, sys, tomllib, urllib.parse, urllib.request, zipfile
+import argparse, hashlib, json, os, re, shutil, subprocess, sys, tomllib, urllib.parse, urllib.request, zipfile
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -19,7 +19,8 @@ from gen_servers_dat import SERVERS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = {"User-Agent": "robocnop/create-warfare-pack (robocnop@gmail.com)"}
-DIST_REPO = "Robocnop/create-warfare-dist"
+DIST_REPO = "Robocnop/create-warfare"
+DIST_BRANCH = "master"
 OUT = os.path.join(ROOT, "dist", "launcher")
 
 # Never overwritten nor deleted by the launcher, only created when missing.
@@ -200,20 +201,21 @@ def upload(info, zip_path, exe, version_json):
     v = info["version"]
     if gh("release", "view", f"v{v}", "--repo", DIST_REPO, check=False).returncode != 0:
         gh("release", "create", f"v{v}", zip_path, "--repo", DIST_REPO, "--title", f"Create Warfare {v}", "--notes", info["changelog"][:20000])
+    assets = gh("release", "view", f"v{v}", "--repo", DIST_REPO, "--json", "assets", "--jq", ".assets[].name").stdout.split()
+    if os.path.basename(zip_path) not in assets:
+        gh("release", "upload", f"v{v}", zip_path, "--repo", DIST_REPO)
     if info["launcher"]:
         lv = info["launcher"]["version"]
         if gh("release", "view", f"launcher-v{lv}", "--repo", DIST_REPO, check=False).returncode != 0:
             gh("release", "create", f"launcher-v{lv}", exe, "--repo", DIST_REPO, "--title", f"Launcher {lv}",
                "--notes", "Télécharge CreateWarfareLauncher.exe et lance-le.")
-    # version.json lives on the main branch: https://raw.githubusercontent.com/<repo>/main/version.json
-    current = gh("api", f"repos/{DIST_REPO}/contents/version.json", "--jq", ".sha", check=False)
-    payload = {"message": f"version.json {v}", "content": base64.b64encode(open(version_json, "rb").read()).decode()}
-    if current.returncode == 0:
-        payload["sha"] = current.stdout.strip()
-    p = subprocess.run(["gh", "api", "-X", "PUT", f"repos/{DIST_REPO}/contents/version.json", "--input", "-"],
-                       input=json.dumps(payload), capture_output=True, text=True)
-    if p.returncode != 0:
-        sys.exit(p.stderr)
+    # version.json is committed at the repo root (excluded from the pack by .packwizignore):
+    # the launchers read https://raw.githubusercontent.com/<repo>/<branch>/version.json
+    shutil.copyfile(version_json, os.path.join(ROOT, "version.json"))
+    git("add", "version.json")
+    if subprocess.run(["git", "-C", ROOT, "diff", "--cached", "--quiet", "--", "version.json"]).returncode != 0:
+        git("commit", "-m", f"version.json {v}", "--", "version.json")
+    git("push", "origin", DIST_BRANCH)
     print(f"published v{v} on {DIST_REPO}")
 
 

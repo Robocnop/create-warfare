@@ -24,7 +24,7 @@ PvP entre équipes sur serveur dédié, textes et quêtes en français.
 
 ### Avec le launcher (recommandé)
 
-1. Télécharger **`CreateWarfareLauncher.exe`** depuis les [releases du dépôt public](https://github.com/Robocnop/create-warfare-dist/releases/latest).
+1. Télécharger **`CreateWarfareLauncher.exe`** depuis les [releases `launcher-v…`](https://github.com/Robocnop/create-warfare/releases?q=launcher) de ce dépôt.
 2. Le lancer. Windows peut afficher « Windows a protégé votre ordinateur » parce que l'exe n'est pas signé :
    cliquer sur **Informations complémentaires**, puis **Exécuter quand même**.
 3. Suivre les 3 étapes de la première installation : télécharger le zip, l'importer dans CurseForge, revenir.

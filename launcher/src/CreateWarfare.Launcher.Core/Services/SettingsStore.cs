@@ -5,7 +5,7 @@ namespace CreateWarfare.Launcher.Core.Services;
 
 public static class SettingsStore
 {
-    public const string DefaultManifestUrl = "https://raw.githubusercontent.com/Robocnop/create-warfare-dist/main/version.json";
+    public const string DefaultManifestUrl = "https://raw.githubusercontent.com/Robocnop/create-warfare/master/version.json";
 
     static string FilePath => Path.Combine(Log.AppDataDir, "settings.json");
 

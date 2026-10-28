@@ -6,7 +6,7 @@ Application Windows (WPF, .NET 8, un seul exe autonome) qui installe et met à j
 
 ## Pour les joueurs
 
-1. Télécharger `CreateWarfareLauncher.exe` depuis les releases de `Robocnop/create-warfare-dist`.
+1. Télécharger `CreateWarfareLauncher.exe` depuis les releases `launcher-v…` de `Robocnop/create-warfare`.
 2. Le lancer. L'exe n'est pas signé : SmartScreen affiche « Windows a protégé votre ordinateur ».
    Cliquer sur **Informations complémentaires**, puis **Exécuter quand même** (une seule fois).
 3. **Première installation** : le launcher télécharge le zip du pack et guide l'import dans CurseForge
@@ -73,10 +73,11 @@ une illustration dessinée (engrenages) est affichée. Icône : `Assets/icon.ico
 
 ### Une version du pack
 
-1. Suivre « Mettre à jour le pack » dans `CLAUDE.md` (test serveur, `tools/build.sh`, release du dépôt privé).
+1. Suivre « Mettre à jour le pack » dans `CLAUDE.md` (test serveur, `tools/build.sh`, release `v<version>`).
 2. `python tools/publish_launcher.py --upload`
-   - crée la release `v<version>` sur `Robocnop/create-warfare-dist` avec le zip ;
-   - pousse `version.json` sur la branche `main` (lu par les launchers via raw.githubusercontent.com, avec un cache d'environ 5 min).
+   - ajoute le zip à la release `v<version>` de `Robocnop/create-warfare` s'il y manque (et crée la release si besoin) ;
+   - commite `version.json` à la racine du dépôt et pousse `master`. Les launchers le lisent sur
+     `raw.githubusercontent.com/Robocnop/create-warfare/master/version.json` (cache d'environ 5 min). Le fichier est exclu du pack par `.packwizignore`.
    - Option `--notice "texte"` : annonce affichée en haut de l'accueil.
 
 ### Une version du launcher
