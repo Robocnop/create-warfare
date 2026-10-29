@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.5.5",
+  "version": "1.6.0",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,11 +11,19 @@
     "size": 72250615
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.5.5/CreateWarfare-1.5.5.zip",
-    "sha256": "c8131ff081ff26a622554c95fb45f68844e8e3258447ab19e386fc337d3530d6",
-    "size": 15618565
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.6.0/CreateWarfare-1.6.0.zip",
+    "sha256": "cd3daff124ae3fd95e1e751346aaf02c8b5bdec9e2c5fba43ea8ad55a7d0d026",
+    "size": 15623895
   },
   "mods": [
+    {
+      "file": "alltheleaks-1.1.14-1.21.1-neoforge.jar",
+      "sha1": "9466eee51e9af6d3dd65d1dc164cd8ea98df1fcc",
+      "size": 565897,
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9360/134/alltheleaks-1.1.14-1.21.1-neoforge.jar"
+      ]
+    },
     {
       "file": "almostunified-neoforge-1.21.1-1.4.2.jar",
       "sha1": "f9a58fa95780f4b045d30559c1fdaedaa7f0fba3",
@@ -23,6 +31,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/sdaSaQEz/versions/e8iYxxI3/almostunified-neoforge-1.21.1-1.4.2.jar",
         "https://mediafilez.forgecdn.net/files/8127/603/almostunified-neoforge-1.21.1-1.4.2.jar"
+      ]
+    },
+    {
+      "file": "alternate_current-mc1.21-1.9.0.jar",
+      "sha1": "1201c14362f2bad7062d315f8a9b26afbabd2c9c",
+      "size": 50425,
+      "urls": [
+        "https://cdn.modrinth.com/data/r0v8vy1s/versions/PCNyL6v4/alternate_current-mc1.21-1.9.0.jar",
+        "https://mediafilez.forgecdn.net/files/5665/477/alternate_current-mc1.21-1.9.0.jar"
       ]
     },
     {
@@ -68,6 +85,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/RpH8tmT1/versions/dxtZVosY/azimuth-1.4.10.jar",
         "https://mediafilez.forgecdn.net/files/9058/513/azimuth-1.4.10.jar"
+      ]
+    },
+    {
+      "file": "BadOptimizations-2.4.1-1.21.1.jar",
+      "sha1": "1461d8e46391efd32a3085150e86094c9f6f5c9d",
+      "size": 283566,
+      "urls": [
+        "https://cdn.modrinth.com/data/g96Z4WVZ/versions/S2qthD5S/BadOptimizations-2.4.1-1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/7338/300/BadOptimizations-2.4.1-1.21.1.jar"
       ]
     },
     {
@@ -143,11 +169,36 @@
       ]
     },
     {
+      "file": "cbc_ballistics-1.3.0a-neoforge-1.21.1.jar",
+      "sha1": "2d7f76236ca4878bcf4bb87024a8bffe6e25c49e",
+      "size": 297617,
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8011/50/cbc_ballistics-1.3.0a-neoforge-1.21.1.jar"
+      ]
+    },
+    {
+      "file": "cbc_firepower_components-neoforge-1.21.1-0.4.4+mc.1.21.1-neoforge.jar",
+      "sha1": "91a542d4d603d6db1a3cb2fc6f3a9eb63c944698",
+      "size": 618619,
+      "urls": [
+        "https://cdn.modrinth.com/data/fRWr6eJq/versions/ib0YOkuc/cbc_firepower_components-neoforge-1.21.1-0.4.4%2Bmc.1.21.1-neoforge.jar",
+        "https://mediafilez.forgecdn.net/files/9216/519/cbc_firepower_components-neoforge-1.21.1-0.4.4%2Bmc.1.21.1-neoforge.jar"
+      ]
+    },
+    {
       "file": "cbcmodernwarfare-0.0.6v+mc.1.21.1-neoforge.jar",
       "sha1": "c8cd9d1fd4a3913f7f453b397fcc5ef36aec4749",
       "size": 2119734,
       "urls": [
         "https://mediafilez.forgecdn.net/files/8232/556/cbcmodernwarfare-0.0.6v%2Bmc.1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "file": "cbcoptics-0.2.2-all.jar",
+      "sha1": "ace3516839e5888afdff11703712134aebea722e",
+      "size": 158304,
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/8243/703/cbcoptics-0.2.2-all.jar"
       ]
     },
     {
@@ -324,6 +375,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/3kX39rX0/versions/qLUonIb7/arcon-1.0.0.jar",
         "https://mediafilez.forgecdn.net/files/8350/784/arcon-1.0.0.jar"
+      ]
+    },
+    {
+      "file": "createbetterfps-1.21.1-1.1.5.jar",
+      "sha1": "c06111569e30af58d1cec4b4ee4b545f0021172a",
+      "size": 26542,
+      "urls": [
+        "https://cdn.modrinth.com/data/lMYIHZNH/versions/dxmPYimo/createbetterfps-1.21.1-1.1.5.jar",
+        "https://mediafilez.forgecdn.net/files/8908/301/createbetterfps-1.21.1-1.1.5.jar"
       ]
     },
     {
@@ -748,6 +808,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/GMrNnOis/versions/moqz93W3/create_the_air_wars-5.00.jar",
         "https://mediafilez.forgecdn.net/files/9000/450/create_the_air_wars-5.00.jar"
+      ]
+    },
+    {
+      "file": "createthreadedtrains-neoforge-1.21.1-1.0.0.jar",
+      "sha1": "1dec765e324bf968a1685a173aff5a13c11d0856",
+      "size": 77249,
+      "urls": [
+        "https://cdn.modrinth.com/data/RYJzdkDr/versions/ry1hvo4l/createthreadedtrains-neoforge-1.21.1-1.0.0.jar",
+        "https://mediafilez.forgecdn.net/files/7208/558/createthreadedtrains-neoforge-1.21.1-1.0.0.jar"
       ]
     },
     {
@@ -1179,12 +1248,30 @@
       ]
     },
     {
+      "file": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "sha1": "97212e45c963730bbfc7c44780df99317814c21b",
+      "size": 774220,
+      "urls": [
+        "https://cdn.modrinth.com/data/gvQqBUqZ/versions/DDUrRVCA/lithium-neoforge-0.15.4%2Bmc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8330/365/lithium-neoforge-0.15.4%2Bmc1.21.1.jar"
+      ]
+    },
+    {
       "file": "lithostitched-1.8.1-neoforge-21.1.jar",
       "sha1": "88cdded5b617e19b4d2676948b5550699de23578",
       "size": 1023751,
       "urls": [
         "https://cdn.modrinth.com/data/XaDC71GB/versions/cZu4cHY3/lithostitched-1.8.1-neoforge-21.1.jar",
         "https://mediafilez.forgecdn.net/files/9170/709/lithostitched-1.8.1-neoforge-21.1.jar"
+      ]
+    },
+    {
+      "file": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+      "sha1": "7a305b581abd90e1a8b7c1bb5eb4511d2653aa58",
+      "size": 1075929,
+      "urls": [
+        "https://cdn.modrinth.com/data/EltpO5cN/versions/SPOrIzX8/lootr-neoforge-1.21.1-1.11.38.127.jar",
+        "https://mediafilez.forgecdn.net/files/8968/561/lootr-neoforge-1.21.1-1.11.38.127.jar"
       ]
     },
     {
@@ -1248,6 +1335,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/5m2kV8xK/versions/zd7xJnqO/ntgl-1.21.1-3.2.0.jar",
         "https://mediafilez.forgecdn.net/files/8585/353/ntgl-1.21.1-3.2.0.jar"
+      ]
+    },
+    {
+      "file": "CreateNumismatics-1.1.0+neoforge-mc1.21.1.jar",
+      "sha1": "5cd4817442ae95f886a2d31534166e9883ed4bb2",
+      "size": 1894517,
+      "urls": [
+        "https://cdn.modrinth.com/data/Jdbbtt0i/versions/kVi3TESX/CreateNumismatics-1.1.0%2Bneoforge-mc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8745/418/CreateNumismatics-1.1.0%2Bneoforge-mc1.21.1.jar"
       ]
     },
     {
@@ -1869,5 +1965,5 @@
     }
   ],
   "notice": null,
-  "changelog": "Launcher 1.1.0 — 2026-10-29\n\n- Choix de la version du pack, comme dans le launcher Minecraft : « Dernière version » ou « Pré-release ».\n- Réglages → Mode développeur : affiche les pré-releases (versions de test) dans ce choix.\n- Réglages → Désinstaller : supprime le profil CurseForge, puis le launcher et ses réglages. Les mondes, captures et schémas sont d'abord copiés dans Documents\\Create Warfare (sauvegarde) (case cochée par défaut).\n\n1.5.5 — 2026-10-29\n\n- Chat Heads (client) : la tête du joueur s'affiche à côté de ses messages dans le chat.\n- Traductions françaises complétées pour Chat Heads, Serene Seasons (noms des saisons), YACL et Advanced Weather.\n- Solo/LAN : plus de plantage « ThreadLocalRandom accessed from a different thread » quand des feuilles se décomposent (Falling Leaves + Create: The Air Wars, détecté par C2ME) : config/c2me.toml en fait un simple avertissement.\n- Advanced Weather : météo simulée (pression, vent, 28 types de temps, grêle, blizzards), instruments, vent sur les moulins Create et les engins d'Aeronautics. Livré patché : la 0.1.2 faisait planter les serveurs dédiés (deux mixins client déclarés communs).\n- Serene Seasons : saisons, avec la météo et la température d'Advanced Weather qui les suivent.\n- Particle Rain retiré : Advanced Weather remplace le rendu de la pluie.\n- Advanced Weather se déclare incompatible avec les shaders Iris (brouillard) : à vérifier si tu les actives.\n\nLauncher 1.0.1 — 2026-10-28\n\n- L'exe et la fenêtre ont une icône (engrenage). Le launcher 1.0.0 se met à jour tout seul : clic sur « v1.0.1 disponible »."
+  "changelog": "1.6.0 — 2026-10-29\n\n- Artillerie : CBC Ballistics (calculateur balistique, télémètre, commande de canon, coordinateur d'artillerie, radio), CBC Optics (viseurs de canon et d'autocanon), CBC: Firepower Components (affûts compacts, chargeurs de munitions automatisables). Deux nouvelles quêtes au chapitre Artillerie : viseur et calculateur.\n- CBC Ballistics range encore ses recettes, ses tables de butin et ses tags dans les dossiers de la 1.20, ignorés en 1.21 : sans correctif, ses objets ne se fabriquaient pas et ses blocs ne se récupéraient pas. Copiés dans kubejs/data/.\n- Lootr : chaque joueur a son propre butin dans les coffres des structures. Seulement dans les nouveaux chunks.\n- Create: Numismatics : pièces, comptes en banque, distributeurs et ventes automatisées entre équipes.\n- Performances : Create: Threaded Trains (trains calculés à part), Lithium, AllTheLeaks (fuites de mémoire), Alternate Current (redstone) ; côté client BadOptimizations et Create Better FPS.\n- Testé sur le serveur local : démarrage, 206 quêtes valides, pré-génération de 10 000 chunks à 20 TPS. Pas encore essayés en jeu : trains avec Threaded Trains, viseurs, calculateur, Numismatics.\n\nLauncher 1.1.0 — 2026-10-29\n\n- Choix de la version du pack, comme dans le launcher Minecraft : « Dernière version » ou « Pré-release ».\n- Réglages → Mode développeur : affiche les pré-releases (versions de test) dans ce choix.\n- Réglages → Désinstaller : supprime le profil CurseForge, puis le launcher et ses réglages. Les mondes, captures et schémas sont d'abord copiés dans Documents\\Create Warfare (sauvegarde) (case cochée par défaut).\n\n1.5.5 — 2026-10-29\n\n- Chat Heads (client) : la tête du joueur s'affiche à côté de ses messages dans le chat.\n- Traductions françaises complétées pour Chat Heads, Serene Seasons (noms des saisons), YACL et Advanced Weather.\n- Solo/LAN : plus de plantage « ThreadLocalRandom accessed from a different thread » quand des feuilles se décomposent (Falling Leaves + Create: The Air Wars, détecté par C2ME) : config/c2me.toml en fait un simple avertissement.\n- Advanced Weather : météo simulée (pression, vent, 28 types de temps, grêle, blizzards), instruments, vent sur les moulins Create et les engins d'Aeronautics. Livré patché : la 0.1.2 faisait planter les serveurs dédiés (deux mixins client déclarés communs).\n- Serene Seasons : saisons, avec la météo et la température d'Advanced Weather qui les suivent.\n- Particle Rain retiré : Advanced Weather remplace le rendu de la pluie.\n- Advanced Weather se déclare incompatible avec les shaders Iris (brouillard) : à vérifier si tu les actives."
 }
