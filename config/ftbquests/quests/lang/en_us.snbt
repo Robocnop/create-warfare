@@ -161,6 +161,10 @@
 	quest.0DD1AF3C4B4F3694.quest_desc: ["Pour recharger par l'arrière."]
 	quest.7AE07A7DA301D186.title: "Affût"
 	quest.7AE07A7DA301D186.quest_desc: ["Oriente le canon en hauteur et en direction."]
+	quest.2FFA65C3E7BB3247.title: "Viseur de canon"
+	quest.2FFA65C3E7BB3247.quest_desc: ["CBC Optics : un viseur posé sur le canon, pour viser à travers lui."]
+	quest.091EF9309D9F4800.title: "Calculateur balistique"
+	quest.091EF9309D9F4800.quest_desc: ["CBC Ballistics : donne-lui la position du canon et celle de la cible, il calcule l'angle de tir."]
 	quest.4FBBF5C4723F0E09.title: "Charges de poudre"
 	quest.4FBBF5C4723F0E09.quest_desc: ["Propulsent l'obus."]
 	quest.3F12664295876503.title: "Obus explosifs"

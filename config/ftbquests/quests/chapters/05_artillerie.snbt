@@ -65,6 +65,22 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7AE07A7DA301D186"]
+			id: "2FFA65C3E7BB3247"
+			rewards: [{ id: "689309AE736C68BA", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "706B3673117E839F", item: { count: 1, id: "cbcoptics:cannon_sight" }, type: "item" }]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7AE07A7DA301D186", "0AED6BE8700C86DB"]
+			id: "091EF9309D9F4800"
+			rewards: [{ id: "23B359328820228D", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "20E37CD6F7249275", item: { count: 1, id: "cbc_ballistics:ballistic_calculator" }, type: "item" }]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
 			dependencies: ["28E559ACA1545773"]
 			id: "4FBBF5C4723F0E09"
 			rewards: [{ id: "4B01CBC45303D012", type: "xp", xp: 75 }]
@@ -102,7 +118,7 @@
 			rewards: [{ id: "3A21039F5B2E300C", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "548433D893A71F87", item: { count: 1, id: "createbigcannons:cast_iron_autocannon_breech" }, type: "item" }]
 			x: 12.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["373FA88363AF5418"]
@@ -118,7 +134,7 @@
 			rewards: [{ id: "31F8BADFB1E33B5E", type: "xp", xp: 250 }]
 			tasks: [{ count: 1L, id: "7D879815F7A4727F", item: { count: 1, id: "cbcmodernwarfare:cast_iron_mediumcannon_breech" }, type: "item" }]
 			x: 12.0d
-			y: 1.5d
+			y: 4.5d
 		}
 	]
 }

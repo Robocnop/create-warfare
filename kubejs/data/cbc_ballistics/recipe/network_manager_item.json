@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "create:transmitter"
+    },
+    "C": {
+      "item": "create:clipboard"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "pattern": [
+    " T ",
+    " C ",
+    " A "
+  ],
+  "result": {
+    "id": "cbc_ballistics:network_manager_item"
+  },
+  "show_notification": true
+}

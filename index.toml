@@ -58,7 +58,7 @@ hash = "fd50a61b8a5fc7662c6fa79a899504cf76e1b429cf52ee113123aeac3bb24e0a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/05_artillerie.snbt"
-hash = "f59f547ae004a2801732a99f4bd0ee0b5e5ba4605f75b3333ba7baf120118d16"
+hash = "5972a3fa0b1d181ed5dd67acf719c51e817f6513ce2647e0baa8e5fbfda08677"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/06_aviation.snbt"
@@ -98,7 +98,7 @@ hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "568fc182611f78228fbe95f489a8ae6e186aeaf09e680fbcb2140b5e25b5f65a"
+hash = "48eb582b8c970c251e58f45c2521c943294d7238058f6731e250bc498fbe0863"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
@@ -765,6 +765,42 @@ file = "kubejs/data/cbc_at/recipe/cutting/twin_autocannon_barrel_cast_mould.json
 hash = "ef793da50fb18ecb437f53a59357f4adf20963dbace7677622bff3db00b867ee"
 
 [[files]]
+file = "kubejs/data/cbc_ballistics/loot_table/blocks/artillery_coordinator.json"
+hash = "c9f395f293c2cf802f74adee050d674fc472b0a4bdd119845a19206de85923ab"
+
+[[files]]
+file = "kubejs/data/cbc_ballistics/loot_table/blocks/ballistic_calculator.json"
+hash = "cdfde9db3068d1c689c1895e060e6b8b745ac028a73f36dfbe8c0698d5cd0f40"
+
+[[files]]
+file = "kubejs/data/cbc_ballistics/loot_table/blocks/cannon_control.json"
+hash = "e07e6844db58c4ef3c3e7e532d192a511c7049df3e1942522effc530eddbfcef"
+
+[[files]]
+file = "kubejs/data/cbc_ballistics/recipe/artillery_coordinator.json"
+hash = "8afa9a9998e05644b6974dbb1c76e96d12179f9aa87620a011231e4aab20b5ba"
+
+[[files]]
+file = "kubejs/data/cbc_ballistics/recipe/ballistics_calculator.json"
+hash = "32954c472bd15ed349e043b74e12c8d0555058e35b186fec9662daa43a8d1721"
+
+[[files]]
+file = "kubejs/data/cbc_ballistics/recipe/cannon_control.json"
+hash = "e51fbf1c3f7a2813c53fc8cc607d7b3df3d15c11329ed61b75ddf0063d2d6851"
+
+[[files]]
+file = "kubejs/data/cbc_ballistics/recipe/network_manager_item.json"
+hash = "34914eea8356b4e1eff2d7ba3de8393d11c94603e2fa20943682845151250d49"
+
+[[files]]
+file = "kubejs/data/cbc_ballistics/recipe/radio_item.json"
+hash = "cc13913a28d50094d5ff07face205f7db804ad039f94505c1d311a0e2db2d5e1"
+
+[[files]]
+file = "kubejs/data/cbc_ballistics/recipe/rangefinder.json"
+hash = "a578977341c3d97c6ad5a8d0230de507d19285606f4ac23d6326312b96c32154"
+
+[[files]]
 file = "kubejs/data/cbc_terminal_ballistics/recipe/armor_upgrader.json"
 hash = "74db4ee27de6fcd117bb55814c897e7dda7aa9a6061efed750df0f6fd395b57b"
 
@@ -1197,6 +1233,10 @@ file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/unbored_steel_rotarycanno
 hash = "5df5349b2a6ef8d0b4e0bf57756300d7e05a7e594dff2f1b697a40a7350024d3"
 
 [[files]]
+file = "kubejs/data/create/tags/block/wrench_pickup.json"
+hash = "2d93bbc22eb837762e0ad9a4f88ac6fd647160e2359ba2bb74227f9b4e3a307c"
+
+[[files]]
 file = "kubejs/data/createadditionallogistics/recipe/crafting/trains/network_monitor.json"
 hash = "0d6d45aa3d02f1de94a7a889c356c40c9e7e3c336c70ccdbe10af75575d0ba12"
 
@@ -1215,6 +1255,14 @@ hash = "76321e9d1cb11dd2de6c19caca47f1a3cbbd20ccc85d6f51bfb6cc5f6e8401e0"
 [[files]]
 file = "kubejs/data/createmissiles/loot_table/chests/missile_chest_guardian.json"
 hash = "c64ec576385a52ba295df1eccd29e110a3b432369f5b1238b63468db7b3f5392"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/block/mineable/axe.json"
+hash = "050c7f9969f22cf52bf443afb4d30c03574c2565f1324ca35cf44b0a4f0c76d7"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/block/mineable/pickaxe.json"
+hash = "050c7f9969f22cf52bf443afb4d30c03574c2565f1324ca35cf44b0a4f0c76d7"
 
 [[files]]
 file = "kubejs/server_scripts/balance/blindage.js"
@@ -1242,8 +1290,18 @@ hash = "77444159febfc9dc360c31ce26b2f7cfb84622c76e4d1fa859e825e01fadd4ab"
 metafile = true
 
 [[files]]
+file = "mods/alltheleaks.pw.toml"
+hash = "e511d068e43fd6d1f3e1db102a5e54906342e052b97baf9bc46b86fe0232bd3d"
+metafile = true
+
+[[files]]
 file = "mods/almostunified.pw.toml"
 hash = "3e902846339c2bb422d614993ba499fef007f185c9c29cb55804e3270ebb5ef7"
+metafile = true
+
+[[files]]
+file = "mods/alternate-current.pw.toml"
+hash = "571293a6ddb6b5ea7b9c1f5454d0cfc584a5aa50397942bea4906d3b54e02e02"
 metafile = true
 
 [[files]]
@@ -1269,6 +1327,11 @@ metafile = true
 [[files]]
 file = "mods/azimuth-api.pw.toml"
 hash = "b57781f292afbad67aa4dddaa6a13f170301a488bd9d3e93d82158381fe98349"
+metafile = true
+
+[[files]]
+file = "mods/badoptimizations.pw.toml"
+hash = "8b4cb33940d2a5771439131c9b80d68b099efaf5c957ced3ab5ba6c59a0e85ae"
 metafile = true
 
 [[files]]
@@ -1312,6 +1375,16 @@ hash = "98250d952145b18c452883997e7e675d445bfce33e9afb35bf372040c429a179"
 metafile = true
 
 [[files]]
+file = "mods/cbc-ballistics-neoforge-port-1-21-1.pw.toml"
+hash = "2749bc768489be6b50c85122c1c1937637ac1ec2189236ad66a141b0cd5f485e"
+metafile = true
+
+[[files]]
+file = "mods/cbc-firepower-components.pw.toml"
+hash = "e78463a85ddf056310d1a35eb1a94f951a79fdcbe7dafbae63dd467a78d23f26"
+metafile = true
+
+[[files]]
 file = "mods/cbc-locometal-armor.pw.toml"
 hash = "ccf38ce5f3938241c4589a5f4afbcffe53a733311d3019209cb22b2ef70997ba"
 metafile = true
@@ -1319,6 +1392,11 @@ metafile = true
 [[files]]
 file = "mods/cbc-neo-warfare.pw.toml"
 hash = "372291300bbf4e4a0589d5c6bc9b075d28b70d5bf247d1b64ab6f520b68e3e7b"
+metafile = true
+
+[[files]]
+file = "mods/cbc-optics.pw.toml"
+hash = "1dc4845d573327778b6b91fe00893b4a649a8ac5fc938009d5ad25553545493d"
 metafile = true
 
 [[files]]
@@ -1434,6 +1512,11 @@ metafile = true
 [[files]]
 file = "mods/create-avionics.pw.toml"
 hash = "fd81f1cbb5764f7192ec97ddd6c24104cfd986627be8b862641ce2df92bac232"
+metafile = true
+
+[[files]]
+file = "mods/create-better-fps.pw.toml"
+hash = "40a0eda70974561a7ed696dfd197b871ee5b28f811f5b03c780face2cdc75343"
 metafile = true
 
 [[files]]
@@ -1692,6 +1775,11 @@ hash = "9d6b7f045433f1e4000c41fa1da4280a8c0c7604735411c99a644741d5d0a6d0"
 metafile = true
 
 [[files]]
+file = "mods/create-threaded-trains.pw.toml"
+hash = "5b38747d6ac0f9b216885a6a1d45508354a0ab6077d72510c73b65e147210ca5"
+metafile = true
+
+[[files]]
 file = "mods/create-track-map-unofficial-fork.pw.toml"
 hash = "1020929f2bba90163e885d39fd698a5213b6207e86c5a6d9989a692ea7d6c7f4"
 metafile = true
@@ -1942,8 +2030,18 @@ hash = "6fdc7f01fd9da8addbbd8ca0eb4c0465759a8ff85d20cb7f73bda7578fad5ab1"
 metafile = true
 
 [[files]]
+file = "mods/lithium.pw.toml"
+hash = "fb6171c8f7ff0d83513b3f75ee5d7a98659559c427d79fb69eb0219639af8a37"
+metafile = true
+
+[[files]]
 file = "mods/lithostitched.pw.toml"
 hash = "93f98a3019a5ce1bda97af2c3e937aaa2adbe4e4dce46e74b130d32cbfdc80a2"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "ff152357ebb175e8e8c58ecda4f9814d398c5668f3311b0ad6a4afcb1dc26d13"
 metafile = true
 
 [[files]]
@@ -1984,6 +2082,11 @@ metafile = true
 [[files]]
 file = "mods/nukateams-gun-lib.pw.toml"
 hash = "8b4af86dc4c1846469326cc3fe73350a98a119650be241e499c6bd575c2e2482"
+metafile = true
+
+[[files]]
+file = "mods/numismatics.pw.toml"
+hash = "8938803461885a35dfad98d00ba94ea4d56926b263e623a53b170a1997e9bb6d"
 metafile = true
 
 [[files]]

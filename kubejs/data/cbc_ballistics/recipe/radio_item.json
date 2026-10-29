@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "R": {
+      "item": "minecraft:lightning_rod"
+    },
+    "C": {
+      "item": "cbc_ballistics:artillery_coordinator"
+    }
+  },
+  "pattern": [
+    " R ",
+    " C ",
+    " L "
+  ],
+  "result": {
+    "id": "cbc_ballistics:radio_item"
+  },
+  "show_notification": true
+}

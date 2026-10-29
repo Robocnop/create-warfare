@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "create:transmitter"
+    },
+    "R": {
+      "item": "create:redstone_contact"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "B": {
+      "item": "create:brass_casing"
+    },
+    "G": {
+      "item": "create:gearbox"
+    }
+  },
+  "pattern": [
+    "RTS",
+    "SPG",
+    "ABA"
+  ],
+  "result": {
+    "id": "cbc_ballistics:cannon_control"
+  },
+  "show_notification": true
+}

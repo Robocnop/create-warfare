@@ -1,12 +1,16 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 194 mods et packs.
-Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 206 mods et packs.
+Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
 - **Écartés** : Mi Bombo, Create: Steel Armor Blocks, SSRD, StickyWheels (licence « All Rights Reserved » et absents
-  de CurseForge, donc impossibles à mettre dans le zip) · CBC Ballistics NeoForge Port (absent de CurseForge) et son
-  correctif Sable · Embeddium (doublon de Sodium).
+  de CurseForge, donc impossibles à mettre dans le zip) · le correctif Sable de CBC Ballistics (Modrinth seul)
+  · Embeddium (doublon de Sodium). CBC Ballistics NeoForge Port est arrivé sur CurseForge depuis : ajouté en 1.6.0.
+- **1.6.0** : artillerie (CBC Ballistics, CBC Optics, CBC: Firepower Components), Lootr (butin propre à chaque joueur,
+  nouveaux chunks seulement), Create: Numismatics (monnaie), performances (Create: Threaded Trains, Lithium, AllTheLeaks,
+  Alternate Current ; côté client BadOptimizations et Create Better FPS). Testé sur serveur local (démarrage et
+  pré-génération de 10 000 chunks à 20 TPS) ; trains, viseurs et calculateurs pas encore essayés en jeu.
 - **Absents en 1.21.1 NeoForge** : CBC Nukes, Create: Propulsion (remplacé par Create Propulsion: Simulated),
   Create Interactive (remplacé par Aeronautics/Sable), Create Misc & Things, Create Unlimited.
 - **Erreurs connues, sans gravité** (le serveur démarre) : 4 recettes de CBC Advanced Technologies (roquettes),
@@ -40,11 +44,14 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | Mod | Fichier | Côté | Source |
 |---|---|---|---|
 | Advanced Weather | `advancedweather-0.1.2-cw.jar` | client + serveur | CurseForge, patché (mixins client), inclus dans le zip |
+| AllTheLeaks (Memory Leak Fix) | `alltheleaks-1.1.14-1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Almost Unified | `almostunified-neoforge-1.21.1-1.4.2.jar` | client + serveur | CurseForge |
+| Alternate Current | `alternate_current-mc1.21-1.9.0.jar` | client + serveur | CurseForge |
 | AppleSkin | `appleskin-neoforge-mc1.21-3.0.9.jar` | client + serveur | CurseForge |
 | Architectury API | `architectury-13.0.11-neoforge.jar` | client + serveur | CurseForge |
 | AttributeFix | `attributefix-neoforge-1.21.1-21.1.3.jar` | client + serveur | CurseForge |
 | Azimuth API | `azimuth-1.4.10.jar` | client + serveur | CurseForge |
+| BadOptimizations | `BadOptimizations-2.4.1-1.21.1.jar` | client seul | CurseForge |
 | Balm | `balm-neoforge-1.21.1-21.0.66.jar` | client + serveur | CurseForge |
 | Better Advanced Tooltips | `better-advanced-tooltips-2101.1.0-build.5.jar` | client + serveur | CurseForge |
 | Better Advancements | `BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar` | client seul | CurseForge |
@@ -52,12 +59,16 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | Bookshelf | `bookshelf-neoforge-1.21.1-21.1.81.jar` | client + serveur | CurseForge |
 | Burnt + Additions | `burnt-1.10.5.3-neoforge-1.21.1.jar` | client + serveur | CurseForge |
 | Carry On | `carryon-neoforge-1.21.1-2.2.6.13.jar` | client + serveur | CurseForge |
+| CBC Ballistics: NeoForge Port | `cbc_ballistics-1.3.0a-neoforge-1.21.1.jar` | client + serveur | CurseForge |
+| CBC Optics | `cbcoptics-0.2.2-all.jar` | client + serveur | CurseForge |
+| CBC: Firepower Components | `cbc_firepower_components-neoforge-1.21.1-0.4.4+mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | CBC: Locometal Armor | `locometal_armor-2.0.0.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | CBC Neo Warfare | `cbcmodernwarfare-0.0.6v+mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | CBC Terminal Ballistics | `cbc_terminal_ballistics-2.3.0.jar` | client + serveur | CurseForge |
 | CC: Tweaked | `cc-tweaked-1.21.1-forge-1.120.2.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | CC:CBC | `cc-cbc-v1.1.1-1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Chat Heads | `chat_heads-0.15.7-neoforge-1.21.jar` | client seul | CurseForge |
+| Create Better FPS | `createbetterfps-1.21.1-1.1.5.jar` | client seul | CurseForge |
 | Create Big Cannons: Security Breach | `create_big_cannons_security_breach-1.0.jar` | client + serveur | CurseForge |
 | Create: Avionics | `create_avionics-neoforge-1.21.1-0.7.0.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | Create: CC Better Recipes | `ccbr-1.2.1-neoforge-1.21.1.jar` | client + serveur | Modrinth (inclus dans le zip) |
@@ -115,6 +126,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | Create: Netherless ((Neo)Forge) | `create_netherless-2.0.0-1.21.1.jar` | client + serveur | CurseForge |
 | Create: New Age | `create-new-age-1.2.0+neoforge-mc1.21.1.jar` | client + serveur | CurseForge |
 | Create Ore Excavation | `createoreexcavation-1.21-1.6.8.jar` | client + serveur | CurseForge |
+| Create: Numismatics | `CreateNumismatics-1.1.0+neoforge-mc1.21.1.jar` | client + serveur | CurseForge |
 | Create: Power Loader | `create_power_loader-2.0.5-mc1.21.1.jar` | client + serveur | CurseForge |
 | Create Propulsion: Simulated | `createpropulsion-1.1.5.jar` | client + serveur | CurseForge |
 | Create: Radars | `create_radar-5.0.2-1.21.1.jar` | client + serveur | CurseForge |
@@ -128,6 +140,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | Create: structures | `create_structure-1.0.9.5-neoforge-1.21.1.jar` | client + serveur | CurseForge |
 | Create Stuff 'N Additions | `create-stuff-additions1.21.1_v2.1.4b.jar` | client + serveur | CurseForge |
 | Create: The Air War | `create_the_air_wars-5.00.jar` | client + serveur | CurseForge |
+| Create: Threaded Trains | `createthreadedtrains-neoforge-1.21.1-1.0.0.jar` | client + serveur | CurseForge |
 | Create: Track Map (UNOFFICIAL FORK) | `create-track-map-2.1+mc1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Create: Train Perspective | `create_train_perspective-1.1.1.jar` | client seul | CurseForge |
 | Create: Tweaked Controllers | `create_tweaked_controllers-1.21.1-1.2.7.jar` | client + serveur | CurseForge |
@@ -175,7 +188,9 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | Kotlin for Forge | `kotlinforforge-5.12.0-all.jar` | client + serveur | CurseForge |
 | KubeJS | `kubejs-neoforge-2101.7.2-build.377.jar` | client + serveur | CurseForge |
 | libIPN | `libIPN-neoforge-1.21.1-6.6.3.jar` | client seul | CurseForge |
+| Lithium (Fabric/NeoForge) | `lithium-neoforge-0.15.4+mc1.21.1.jar` | client + serveur | CurseForge |
 | Lithostitched | `lithostitched-1.8.1-neoforge-21.1.jar` | client + serveur | CurseForge |
+| Lootr (Forge & NeoForge) | `lootr-neoforge-1.21.1-1.11.38.127.jar` | client + serveur | CurseForge |
 | Mechanicals Lib | `mechanicals-1.21.1-1.1.6.jar` | client + serveur | CurseForge |
 | MezzConfig | `mezz_config-1.21.1-neoforge-0.6.9-standalone.jar` | client + serveur | CurseForge |
 | ModernFix | `modernfix-neoforge-5.27.27+mc1.21.1.jar` | client + serveur | CurseForge |

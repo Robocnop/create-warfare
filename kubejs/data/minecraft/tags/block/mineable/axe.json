@@ -1,0 +1,7 @@
+{
+  "values": [
+    "cbc_ballistics:artillery_coordinator",
+    "cbc_ballistics:ballistic_calculator",
+    "cbc_ballistics:cannon_control"
+  ]
+}

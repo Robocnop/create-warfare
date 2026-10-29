@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "E": {
+      "item": "create:electron_tube"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "B": {
+      "item": "create:brass_casing"
+    },
+    "D": {
+      "item": "create:display_board"
+    }
+  },
+  "pattern": [
+    "EPA",
+    "DPP",
+    "DBA"
+  ],
+  "result": {
+    "id": "cbc_ballistics:ballistic_calculator"
+  },
+  "show_notification": true
+}

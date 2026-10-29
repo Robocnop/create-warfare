@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "create:transmitter"
+    },
+    "D": {
+      "item": "create:display_board"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "E": {
+      "item": "create:electron_tube"
+    },
+    "M": {
+      "item": "cbc_ballistics:network_manager_item"
+    },
+    "B": {
+      "item": "create:brass_casing"
+    }
+  },
+  "pattern": [
+    "PEP",
+    "MDT",
+    "ABA"
+  ],
+  "result": {
+    "id": "cbc_ballistics:artillery_coordinator"
+  },
+  "show_notification": true
+}

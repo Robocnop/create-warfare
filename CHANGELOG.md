@@ -2,6 +2,20 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.6.0 — 2026-10-29
+
+- **Artillerie** : CBC Ballistics (calculateur balistique, télémètre, commande de canon, coordinateur d'artillerie,
+  radio), CBC Optics (viseurs de canon et d'autocanon), CBC: Firepower Components (affûts compacts, chargeurs de
+  munitions automatisables). Deux nouvelles quêtes au chapitre Artillerie : viseur et calculateur.
+- CBC Ballistics range encore ses recettes, ses tables de butin et ses tags dans les dossiers de la 1.20, ignorés en
+  1.21 : sans correctif, ses objets ne se fabriquaient pas et ses blocs ne se récupéraient pas. Copiés dans `kubejs/data/`.
+- **Lootr** : chaque joueur a son propre butin dans les coffres des structures. Seulement dans les nouveaux chunks.
+- **Create: Numismatics** : pièces, comptes en banque, distributeurs et ventes automatisées entre équipes.
+- **Performances** : Create: Threaded Trains (trains calculés à part), Lithium, AllTheLeaks (fuites de mémoire),
+  Alternate Current (redstone) ; côté client BadOptimizations et Create Better FPS.
+- Testé sur le serveur local : démarrage, 206 quêtes valides, pré-génération de 10 000 chunks à 20 TPS.
+  Pas encore essayés en jeu : trains avec Threaded Trains, viseurs, calculateur, Numismatics.
+
 ## Launcher 1.1.0 — 2026-10-29
 
 - **Choix de la version** du pack, comme dans le launcher Minecraft : « Dernière version » ou « Pré-release ».

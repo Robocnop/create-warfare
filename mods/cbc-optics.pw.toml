@@ -1,0 +1,13 @@
+name = "CBC Optics"
+filename = "cbcoptics-0.2.2-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ace3516839e5888afdff11703712134aebea722e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8243703
+project-id = 1569794

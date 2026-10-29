@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "E": {
+      "item": "create:electron_tube"
+    },
+    "S": {
+      "item": "minecraft:spyglass"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "T": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "create:framed_glass_pane"
+    }
+  },
+  "pattern": [
+    " AS",
+    "ETI",
+    "PI "
+  ],
+  "result": {
+    "id": "cbc_ballistics:rangefinder"
+  },
+  "show_notification": true
+}

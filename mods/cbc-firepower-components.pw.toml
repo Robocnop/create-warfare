@@ -1,0 +1,13 @@
+name = "CBC: Firepower Components"
+filename = "cbc_firepower_components-neoforge-1.21.1-0.4.4+mc.1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "91a542d4d603d6db1a3cb2fc6f3a9eb63c944698"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9216519
+project-id = 1548138

@@ -114,6 +114,8 @@ CHAPTERS = [
         ("cannon_chamber", "createbigcannons:cast_iron_cannon_chamber", 2, "Chambre", "Accueille les charges de poudre.", ["cannon_barrel"], 150),
         ("breech", "createbigcannons:cast_iron_sliding_breech", 1, "Culasse coulissante", "Pour recharger par l'arrière.", ["cannon_chamber"], 150),
         ("mount", "createbigcannons:cannon_mount", 1, "Affût", "Oriente le canon en hauteur et en direction.", ["breech"], 200),
+        ("cannon_sight", "cbcoptics:cannon_sight", 1, "Viseur de canon", "CBC Optics : un viseur posé sur le canon, pour viser à travers lui.", ["mount"], 150),
+        ("ballistic_calculator", "cbc_ballistics:ballistic_calculator", 1, "Calculateur balistique", "CBC Ballistics : donne-lui la position du canon et celle de la cible, il calcule l'angle de tir.", ["mount", "02_laiton:precision_mechanism"], 200),
         ("powder", "createbigcannons:powder_charge", 16, "Charges de poudre", "Propulsent l'obus.", ["04_industrie:coke_oven"], 75),
         ("he_shell", "createbigcannons:he_shell", 8, "Obus explosifs", "Ne pas utiliser à côté de ta base.", ["powder"], 150),
         ("ap_shell", "createbigcannons:ap_shell", 8, "Obus perforants", "Contre les blindages.", ["powder"], 150),
