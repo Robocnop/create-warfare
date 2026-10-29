@@ -24,7 +24,7 @@
         <!-- ===== Barre de titre ===== -->
         <Border Grid.Row="0" BorderBrush="{StaticResource Line}" BorderThickness="0,0,0,1">
             <DockPanel LastChildFill="False" Margin="24,0,0,0">
-                <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" FontSize="19" FontWeight="Bold" Margin="0,0,22,0">
+                <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" FontSize="19" FontWeight="Bold" Margin="0,0,22,0" FontFamily="{DynamicResource Display}">
                     <Run Text="Create" /> <Run Text="Warfare" Foreground="{StaticResource Accent}" />
                 </TextBlock>
                 <StackPanel DockPanel.Dock="Left" Orientation="Horizontal" WindowChrome.IsHitTestVisibleInChrome="True">
@@ -48,10 +48,16 @@
                 <ColumnDefinition Width="470" />
             </Grid.ColumnDefinitions>
 
+            <!-- Toile d'araignée et araignée (thème Halloween), derrière le contenu -->
+            <c:Cobweb Grid.ColumnSpan="2" Width="170" Height="230" HorizontalAlignment="Right" VerticalAlignment="Top"
+                      Visibility="{DynamicResource HalloweenVis}" />
+
             <!-- Image de gauche -->
             <Grid Grid.Column="0" Visibility="{Binding ShowHero, Converter={StaticResource Vis}}">
                 <c:HeroArt x:Name="HeroFallback" />
                 <Image x:Name="HeroImage" Stretch="UniformToFill" Visibility="Collapsed" />
+                <c:Cobweb LeftCorner="True" Width="120" Height="120" HorizontalAlignment="Left" VerticalAlignment="Top"
+                          Visibility="{DynamicResource HalloweenVis}" />
             </Grid>
 
             <!-- Accueil -->
@@ -383,7 +389,7 @@
         </Grid>
 
         <!-- ===== Toast ===== -->
-        <Border Grid.Row="2" Background="#0F1527" BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,0"
+        <Border Grid.Row="2" Background="{StaticResource Row}" BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,0"
                 Visibility="{Binding HasToast, Converter={StaticResource Vis}}">
             <DockPanel>
                 <Border DockPanel.Dock="Left" Width="3">

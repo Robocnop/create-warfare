@@ -2,6 +2,12 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## Launcher 1.1.1 — 2026-10-29
+
+- **Thème Halloween**, actif tout seul du 15 octobre au 5 novembre : engrenages-citrouilles animés sous la lune,
+  chauves-souris, cimetière, toiles d'araignée, couleurs orange et violet, titres en Creepster (police libre OFL).
+  Le reste de l'année, le launcher garde son apparence habituelle.
+
 ## 1.6.0 — 2026-10-29
 
 - **Artillerie** : CBC Ballistics (calculateur balistique, télémètre, commande de canon, coordinateur d'artillerie,

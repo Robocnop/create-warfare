@@ -13,7 +13,7 @@
     <AssemblyName>CreateWarfareLauncher</AssemblyName>
     <RootNamespace>CreateWarfare.Launcher</RootNamespace>
     <!-- Version du launcher : à incrémenter avant chaque publication (lue par l'auto-update). -->
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <Product>Create Warfare Launcher</Product>
     <Company>Robocnop</Company>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -35,6 +35,8 @@
     <!-- Image de gauche : déposer Assets\hero.jpg (ou .png) ; sinon une illustration dessinée est affichée. -->
     <Resource Include="Assets\hero.*" />
     <Resource Include="Assets\icon.ico" Condition="Exists('Assets\icon.ico')" />
+    <!-- Titres du thème Halloween : Creepster (Font Diner), licence SIL OFL 1.1 (Assets\Fonts\Creepster-OFL.txt). -->
+    <Resource Include="Assets\Fonts\*.ttf" />
   </ItemGroup>
 
 </Project>
