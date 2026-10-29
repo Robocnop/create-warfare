@@ -1,0 +1,23 @@
+{
+ "desc.sereneseasons.day_counter": "Jour %s/%s",
+ "desc.sereneseasons.early_autumn": "Début de l'automne",
+ "desc.sereneseasons.early_dry": "Début de la saison sèche",
+ "desc.sereneseasons.early_spring": "Début du printemps",
+ "desc.sereneseasons.early_summer": "Début de l'été",
+ "desc.sereneseasons.early_wet": "Début de la saison des pluies",
+ "desc.sereneseasons.early_winter": "Début de l'hiver",
+ "desc.sereneseasons.late_autumn": "Fin de l'automne",
+ "desc.sereneseasons.late_dry": "Fin de la saison sèche",
+ "desc.sereneseasons.late_spring": "Fin du printemps",
+ "desc.sereneseasons.late_summer": "Fin de l'été",
+ "desc.sereneseasons.late_wet": "Fin de la saison des pluies",
+ "desc.sereneseasons.late_winter": "Fin de l'hiver",
+ "desc.sereneseasons.mid_autumn": "Milieu de l'automne",
+ "desc.sereneseasons.mid_dry": "Milieu de la saison sèche",
+ "desc.sereneseasons.mid_spring": "Milieu du printemps",
+ "desc.sereneseasons.mid_summer": "Milieu de l'été",
+ "desc.sereneseasons.mid_wet": "Milieu de la saison des pluies",
+ "desc.sereneseasons.mid_winter": "Milieu de l'hiver",
+ "desc.sereneseasons.tropical_day_counter": " (%s/%s)",
+ "gamerule.doSeasonCycle": "Faire avancer le cycle des saisons"
+}

@@ -9,8 +9,12 @@ Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` 
 - **Réglages → Désinstaller** : supprime le profil CurseForge, puis le launcher et ses réglages. Les mondes, captures
   et schémas sont d'abord copiés dans `Documents\Create Warfare (sauvegarde)` (case cochée par défaut).
 
-## 1.5.5 (pré-release) — 2026-10-29
+## 1.5.5 — 2026-10-29
 
+- **Chat Heads** (client) : la tête du joueur s'affiche à côté de ses messages dans le chat.
+- Traductions françaises complétées pour Chat Heads, Serene Seasons (noms des saisons), YACL et Advanced Weather.
+- Solo/LAN : plus de plantage « ThreadLocalRandom accessed from a different thread » quand des feuilles se décomposent
+  (Falling Leaves + Create: The Air Wars, détecté par C2ME) : `config/c2me.toml` en fait un simple avertissement.
 - **Advanced Weather** : météo simulée (pression, vent, 28 types de temps, grêle, blizzards), instruments, vent sur
   les moulins Create et les engins d'Aeronautics. Livré **patché** : la 0.1.2 faisait planter les serveurs dédiés
   (deux mixins client déclarés communs).

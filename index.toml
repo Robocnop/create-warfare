@@ -13,6 +13,10 @@ file = "config/arcon-server.toml"
 hash = "fa6893f7bcfd1c48dc22eb8763f6149a21543f6b82f657dbe593011d3c6a10cd"
 
 [[files]]
+file = "config/c2me.toml"
+hash = "cbe08455a8a025d3178ee11ec34d5b073e7165b3b2484c1c33e9f882395a8d91"
+
+[[files]]
 file = "config/create_radar-server.toml"
 hash = "af5087a4c13325031be91906a056e83e8782350587b1f764bd58cc348148e8b7"
 
@@ -111,6 +115,10 @@ hash = "50d5ef73d367f23c11df485cfe502bd87351d267e928d071886c91d9913f9a51"
 [[files]]
 file = "config/superbwarfare-server.toml"
 hash = "3c2a75b10f84a33a82dfa25c42458b1686fd628788d1ec98d3adfc50f9796a46"
+
+[[files]]
+file = "kubejs/assets/advancedweather/lang/fr_fr.json"
+hash = "56ce590746f761f023e296c08ad71193b9249b7d5ee268abc43d8dae90e33058"
 
 [[files]]
 file = "kubejs/assets/aeroadditionbridge/lang/fr_fr.json"
@@ -223,6 +231,10 @@ hash = "366494aa49397421ce69c5dc58becef6254f9c53d2fd5f6168add7ef360b7122"
 [[files]]
 file = "kubejs/assets/cgs/lang/fr_fr.json"
 hash = "d5cca75d87427bed609bc2a62152d5eab3683dfc9e38c8a1861d351632782895"
+
+[[files]]
+file = "kubejs/assets/chat_heads/lang/fr_fr.json"
+hash = "dabd753d0f2d5364fc6c29853bf4a8cb423c5bff217e34d4ffcc03a0d7df1767"
 
 [[files]]
 file = "kubejs/assets/cloth-config2/lang/fr_fr.json"
@@ -649,6 +661,10 @@ file = "kubejs/assets/securitycraft/lang/fr_fr.json"
 hash = "b590cfc70d3a9b89320c2d3b1db17665edd5b5565fc5b21905bd329afd34b747"
 
 [[files]]
+file = "kubejs/assets/sereneseasons/lang/fr_fr.json"
+hash = "db0f2d8c309b24d6cf982daf39644ec4638cd5d34eb0866cd7fe666c686e9c08"
+
+[[files]]
 file = "kubejs/assets/simulated/lang/fr_fr.json"
 hash = "414e0faaf3bcc8d08c2134f816b869dc77855de96ef10c4319a38418b54984a7"
 
@@ -727,6 +743,10 @@ hash = "6ca3422e617c10d8569d787febfd3d16fc3e41ff90018682cb22aeb3fc30a1ea"
 [[files]]
 file = "kubejs/assets/xaeroworldmap/lang/fr_fr.json"
 hash = "21030b9db9034a2c258d856d278b3f78816f7539de4237cb4db0400d108770cd"
+
+[[files]]
+file = "kubejs/assets/yet_another_config_lib_v3/lang/fr_fr.json"
+hash = "b416e89397203c589b2fb8abc990a540d584730a1c7d181272295a3b97274d60"
 
 [[files]]
 file = "kubejs/assets/yungsapi/lang/fr_fr.json"
@@ -1319,6 +1339,11 @@ metafile = true
 [[files]]
 file = "mods/cgs.pw.toml"
 hash = "1e35822d7c167184d78651887d9823feca7a128688daedfdb93f0a33a3e2c1cf"
+metafile = true
+
+[[files]]
+file = "mods/chat-heads.pw.toml"
+hash = "1c5763732b184c66afd98291dcf046f97d40c3f6036ab01898fc11f927f41266"
 metafile = true
 
 [[files]]

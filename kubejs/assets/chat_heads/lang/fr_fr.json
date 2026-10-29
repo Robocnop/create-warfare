@@ -1,0 +1,14 @@
+{
+ "modmenu.descriptionTranslation.chat_heads": "Vois avec qui tu discutes !\nCe mod affiche la tête des joueurs à côté de leurs messages dans le chat.",
+ "text.autoconfig.chat_heads.option.detectNameAliases": "Détecter les pseudos automatiquement",
+ "text.autoconfig.chat_heads.option.detectNameAliases.@Tooltip": "Repère les réponses à la commande /realname sur les serveurs\nEssentialsX et ajoute automatiquement le pseudo correspondant.",
+ "text.autoconfig.chat_heads.option.drawShadow": "Afficher l'ombre",
+ "text.autoconfig.chat_heads.option.handleSystemMessages": "Gérer les messages système",
+ "text.autoconfig.chat_heads.option.handleSystemMessages.@Tooltip": "Permet d'ajouter des têtes aux messages « purs » du serveur.\nBeaucoup de serveurs (par exemple avec le plugin FreedomChat)\ntransforment les messages des joueurs en messages du serveur !\nNe désactive cette option que si tu sais ce que tu fais !",
+ "text.autoconfig.chat_heads.option.renderPosition": "Position d'affichage",
+ "text.autoconfig.chat_heads.option.renderPosition.@Tooltip": "Où afficher les têtes dans le chat\n\nRemarque : « Avant le nom » peut être incompatible avec certains mods.\nAvec Caxton et Modern UI, « Avant la ligne » est utilisé automatiquement.",
+ "text.autoconfig.chat_heads.option.renderPosition.BEFORE_LINE": "Avant la ligne",
+ "text.autoconfig.chat_heads.option.renderPosition.BEFORE_NAME": "Avant le nom",
+ "text.autoconfig.chat_heads.option.threeDeeNess": "Effet 3D",
+ "text.autoconfig.chat_heads.option.threeDeeNess.@Tooltip": "Affiche le calque du chapeau légèrement plus grand\npour que les têtes paraissent moins plates.\nPeut causer quelques défauts d'affichage."
+}

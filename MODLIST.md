@@ -1,6 +1,6 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 193 mods et packs.
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 194 mods et packs.
 Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
@@ -57,6 +57,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | CBC Terminal Ballistics | `cbc_terminal_ballistics-2.3.0.jar` | client + serveur | CurseForge |
 | CC: Tweaked | `cc-tweaked-1.21.1-forge-1.120.2.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | CC:CBC | `cc-cbc-v1.1.1-1.21.1-neoforge.jar` | client + serveur | CurseForge |
+| Chat Heads | `chat_heads-0.15.7-neoforge-1.21.jar` | client seul | CurseForge |
 | Create Big Cannons: Security Breach | `create_big_cannons_security_breach-1.0.jar` | client + serveur | CurseForge |
 | Create: Avionics | `create_avionics-neoforge-1.21.1-0.7.0.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | Create: CC Better Recipes | `ccbr-1.2.1-neoforge-1.21.1.jar` | client + serveur | Modrinth (inclus dans le zip) |
