@@ -23,6 +23,16 @@ public sealed class LauncherSettings
 {
     public string? InstancePath { get; set; }
     public string? ManifestUrl { get; set; }
+    /// <summary>Affiche les pré-releases dans le sélecteur de version.</summary>
+    public bool DevMode { get; set; }
+    /// <summary>Version choisie dans le sélecteur : « release » ou « prerelease ».</summary>
+    public string Channel { get; set; } = Channels.Release;
+}
+
+public static class Channels
+{
+    public const string Release = "release";
+    public const string Prerelease = "prerelease";
 }
 
 /// <summary>.cw-backup\&lt;horodatage&gt;\backup.json : de quoi revenir en arrière.</summary>

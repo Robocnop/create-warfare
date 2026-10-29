@@ -16,7 +16,11 @@ public sealed class MainViewModel : Observable
     readonly Downloader _dl = new();
     readonly LauncherSettings _settings = SettingsStore.Load();
     InstanceInfo? _instance;
+    /// <summary>version.json tel que publié (version stable à la racine).</summary>
+    VersionInfo? _manifest;
+    /// <summary>Version choisie dans le sélecteur : celle qu'on installe.</summary>
     VersionInfo? _remote;
+    VersionChoice? _choice;
     FilePlan? _plan;
     CancellationTokenSource? _cts;
     PrimaryAction _action;
@@ -40,6 +44,8 @@ public sealed class MainViewModel : Observable
         BrowseCommand = new Command(Browse);
         AutoDetectCommand = new Command(async () => { _settings.InstancePath = null; SettingsStore.Save(_settings); await RefreshAsync(); });
         DismissToastCommand = new Command(() => ToastText = null);
+        ToggleVersionMenuCommand = new Command(() => IsVersionMenuOpen = !IsVersionMenuOpen, () => VersionItems.Count > 0);
+        UninstallCommand = new Command(UninstallAsync);
     }
 
     // ---- Commandes
@@ -60,6 +66,8 @@ public sealed class MainViewModel : Observable
     public Command BrowseCommand { get; }
     public Command AutoDetectCommand { get; }
     public Command DismissToastCommand { get; }
+    public Command ToggleVersionMenuCommand { get; }
+    public Command UninstallCommand { get; }
 
     // ---- Écran courant
     Screen _screen = Screen.Home;
@@ -93,7 +101,7 @@ public sealed class MainViewModel : Observable
     public string LauncherVersion => "v" + SelfUpdater.Display(SelfUpdater.CurrentVersion);
     string _launcherSub = "";
     public string LauncherSub { get => _launcherSub; set => Set(ref _launcherSub, value); }
-    public bool LauncherUpdateAvailable => _remote != null && SelfUpdater.UpdateAvailable(_remote);
+    public bool LauncherUpdateAvailable => _manifest != null && SelfUpdater.UpdateAvailable(_manifest);
     public bool LauncherUpToDate => !LauncherUpdateAvailable;
     string _primaryText = "…";
     public string PrimaryText { get => _primaryText; set => Set(ref _primaryText, value); }
@@ -103,6 +111,32 @@ public sealed class MainViewModel : Observable
     public string RemoteVersion => _remote == null ? "" : "v" + _remote.Version;
     public string InstancePath => _instance?.Path ?? "Aucune instance trouvée";
     public bool HasInstance => _instance != null;
+
+    // ---- Sélecteur de version
+    public ObservableCollection<VersionItem> VersionItems { get; } = new();
+    public string ChoiceLabel => _choice?.Label ?? "Version";
+    public string ChoiceVersion => _choice?.Info.Version ?? "—";
+    public bool ChoiceIsPrerelease => _choice?.IsPrerelease == true;
+    public bool ChoiceIsRelease => !ChoiceIsPrerelease;
+    bool _versionMenuOpen;
+    public bool IsVersionMenuOpen { get => _versionMenuOpen; set => Set(ref _versionMenuOpen, value); }
+
+    // ---- Réglages
+    public bool DevMode
+    {
+        get => _settings.DevMode;
+        set
+        {
+            if (_settings.DevMode == value) return;
+            _settings.DevMode = value;
+            SettingsStore.Save(_settings);
+            Raise();
+            ApplyChoice();
+        }
+    }
+    bool _keepPlayerData = true;
+    public bool KeepPlayerData { get => _keepPlayerData; set => Set(ref _keepPlayerData, value); }
+    public string BackupRoot => Uninstaller.DefaultBackupRoot;
 
     // ---- Installation
     string? _installZipPath;
@@ -171,15 +205,47 @@ public sealed class MainViewModel : Observable
 
         try
         {
-            _remote = await _dl.FetchManifestAsync(SettingsStore.ManifestUrl(_settings), CancellationToken.None);
+            _manifest = await _dl.FetchManifestAsync(SettingsStore.ManifestUrl(_settings), CancellationToken.None);
         }
         catch (Exception e)
         {
-            _remote = null;
+            _manifest = null;
             Log.Error("version.json injoignable", e);
             Toast("Serveur de mises à jour injoignable. Vérifie ta connexion.", error: true);
         }
+        ApplyChoice();
+    }
+
+    /// <summary>Reconstruit le sélecteur et la version visée à partir du canal mémorisé.</summary>
+    void ApplyChoice()
+    {
+        VersionItems.Clear();
+        if (_manifest == null)
+        {
+            _choice = null;
+            _remote = null;
+        }
+        else
+        {
+            _choice = VersionPicker.Pick(_manifest, _settings.DevMode, _settings.Channel);
+            _remote = _choice.Info;
+            foreach (var c in VersionPicker.Choices(_manifest, _settings.DevMode))
+                VersionItems.Add(new VersionItem(c, Select));
+        }
+        foreach (var n in new[] { nameof(ChoiceLabel), nameof(ChoiceVersion), nameof(ChoiceIsPrerelease), nameof(ChoiceIsRelease) })
+            Raise(n);
         UpdateHome();
+    }
+
+    void Select(VersionChoice c)
+    {
+        IsVersionMenuOpen = false;
+        if (_settings.Channel != c.Channel)
+        {
+            _settings.Channel = c.Channel;
+            SettingsStore.Save(_settings);
+        }
+        ApplyChoice();
     }
 
     async Task RescanAsync()
@@ -203,7 +269,7 @@ public sealed class MainViewModel : Observable
         PackSub = _instance == null ? "non installé"
             : _remote == null ? "installé"
             : upToDate ? "à jour" : $"{RemoteVersion} disponible";
-        LauncherSub = LauncherUpdateAvailable ? $"v{_remote!.Launcher!.Version} disponible" : "à jour";
+        LauncherSub = LauncherUpdateAvailable ? $"v{_manifest!.Launcher!.Version} disponible" : "à jour";
 
         (StatusTitle, PrimaryText, _action) = (_instance, _remote) switch
         {
@@ -211,6 +277,7 @@ public sealed class MainViewModel : Observable
             (null, _) => ("Pack non installé", "Installer", PrimaryAction.Install),
             (_, null) => ("Hors ligne", "Jouer", PrimaryAction.Play),
             _ when SelfUpdater.PackRequiresUpdate(_remote!) => ("Launcher trop ancien", "Mettre à jour le launcher", PrimaryAction.UpdateLauncher),
+            _ when !upToDate && IsDowngrade(installed, _remote!.Version) => ($"Retour à v{_remote!.Version}", "Installer cette version", PrimaryAction.Update),
             _ when !upToDate => ("Mise à jour disponible", "Mettre à jour", PrimaryAction.Update),
             _ => ("Prêt à jouer", "Jouer", PrimaryAction.Play),
         };
@@ -277,6 +344,9 @@ public sealed class MainViewModel : Observable
             : "\nAjouté à ta liste de serveurs : " + string.Join(", ", plan.ServersToAdd.Select(s => $"{s.Name} ({s.Ip})")) + ".";
         ReviewText = "Rien n'est écrit avant ta confirmation. Chaque fichier remplacé ou supprimé est d'abord sauvegardé, " +
                      $"et tout est remis en place en cas d'erreur.{dl}\nTes touches, réglages, mondes et mods ajoutés ne sont pas touchés.{servers}";
+        if (IsDowngrade(plan.FromVersion, plan.ToVersion))
+            ReviewText += $"\n\n⚠ Retour d'une version plus récente (v{plan.FromVersion}) : un monde solo ouvert avec v{plan.FromVersion} " +
+                          "peut perdre des blocs ou des objets. Fais une copie de tes mondes avant.";
         ConfirmText = plan.IsEmpty ? "Valider" : repair ? "Réparer" : "Mettre à jour";
         foreach (var n in new[] { nameof(CountReplace), nameof(CountAdd), nameof(CountRemove), nameof(CountSame), nameof(CountProtected) })
             Raise(n);
@@ -337,8 +407,8 @@ public sealed class MainViewModel : Observable
 
     async Task UpdateLauncherAsync()
     {
-        if (_remote?.Launcher == null) return;
-        var remote = _remote;
+        if (_manifest?.Launcher == null) return;
+        var remote = _manifest;
         StartWork("LAUNCHER", $"Launcher v{remote.Launcher!.Version}", cancellable: true);
         try
         {
@@ -373,6 +443,60 @@ public sealed class MainViewModel : Observable
         catch (Exception e) { Toast($"Téléchargement impossible : {FirstLine(e.Message)}", error: true); }
         Screen = Screen.Install;
     }
+
+    /// <summary>Supprime l'instance CurseForge, puis le launcher et ses données après sa fermeture.</summary>
+    async Task UninstallAsync()
+    {
+        var keep = KeepPlayerData;
+        var question = "Désinstaller Create Warfare ?\n\n" +
+            (_instance == null ? "" : $"• Le profil CurseForge sera supprimé :\n  {_instance.Path}\n") +
+            (keep ? $"• Tes mondes, captures et schémas seront d'abord copiés dans :\n  {BackupRoot}\n" : "• Tes mondes, captures et schémas seront PERDUS.\n") +
+            "• Le launcher et ses réglages seront supprimés à sa fermeture.";
+        if (MessageBox.Show(question, "Désinstaller", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No) != MessageBoxResult.Yes)
+            return;
+        if (ProcessGuard.CurseForgeRunning())
+        {
+            Toast("Ferme CurseForge avant de désinstaller : il garde l'instance ouverte.", error: true);
+            return;
+        }
+        var instance = _instance;
+        if (instance != null && await Task.Run(() => ProcessGuard.GameRunning(instance.Path)))
+        {
+            Toast("Minecraft tourne encore sur cette instance : ferme le jeu d'abord.", error: true);
+            return;
+        }
+
+        StartWork("DÉSINSTALLATION", "Suppression de Create Warfare", cancellable: false);
+        string? saved = null;
+        try
+        {
+            if (instance != null)
+            {
+                if (keep)
+                {
+                    WorkCurrent = "Copie des mondes, captures et schémas…";
+                    saved = await Task.Run(() => Uninstaller.BackupPlayerData(instance.Path, BackupRoot, DateTime.Now));
+                }
+                WorkCurrent = "Suppression du profil CurseForge…";
+                await Task.Run(() => Uninstaller.DeleteInstance(instance.Path));
+            }
+            Uninstaller.ScheduleSelfRemoval();
+        }
+        catch (Exception e)
+        {
+            Screen = Screen.Settings;
+            Log.Error("Désinstallation échouée", e);
+            Toast($"Désinstallation interrompue : {FirstLine(e.Message)}", error: true);
+            return;
+        }
+        MessageBox.Show("Create Warfare est désinstallé." + (saved == null ? "" : $"\n\nTes fichiers sont dans :\n{saved}"),
+            "Désinstaller", MessageBoxButton.OK, MessageBoxImage.Information);
+        Application.Current.Shutdown();
+    }
+
+    /// <summary>Vrai si on installe une version plus ancienne que celle en place (pré-release → stable).</summary>
+    static bool IsDowngrade(string? from, string to) =>
+        !string.IsNullOrEmpty(from) && SelfUpdater.ParseVersion(to) < SelfUpdater.ParseVersion(from);
 
     void OpenCurseForge()
     {

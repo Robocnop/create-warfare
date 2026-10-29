@@ -4,6 +4,9 @@ Usage:
   python tools/publish_launcher.py            # writes dist/launcher/version.json (URLs of the public repo)
   python tools/publish_launcher.py --local    # same, but zip/exe URLs are local paths (test with CW_LAUNCHER_MANIFEST)
   python tools/publish_launcher.py --upload   # also creates the GitHub releases and pushes version.json
+  python tools/publish_launcher.py --prerelease --upload --asset <jar>
+      # pack.toml's version becomes the "prerelease" of the current version.json (stable kept at the root,
+      # only launcher 1.1.0+ in developer mode sees it); --asset uploads extra files to the release (patched jars)
 
 Run tools/build.sh first (dist/CreateWarfare-<v>.zip). The launcher exe is picked up from
 dist/launcher/CreateWarfareLauncher.exe if present (dotnet publish, see launcher/README.md).
@@ -125,6 +128,8 @@ def main():
     ap.add_argument("--upload", action="store_true", help=f"create the releases on {DIST_REPO} and push version.json")
     ap.add_argument("--notice", default=None, help="announcement shown on the launcher home screen")
     ap.add_argument("--min-launcher", default="1.0.0")
+    ap.add_argument("--prerelease", action="store_true", help="publish pack.toml's version as the pre-release")
+    ap.add_argument("--asset", action="append", default=[], help="extra file uploaded to the pack release")
     args = ap.parse_args()
 
     pack = tomllib.load(open(os.path.join(ROOT, "pack.toml"), "rb"))
@@ -184,26 +189,50 @@ def main():
         info["launcher"] = {"version": lv, "url": exe if args.local else f"{base}/launcher-v{lv}/CreateWarfareLauncher.exe",
                             "sha256": sha(exe, "sha256"), "size": os.path.getsize(exe)}
 
+    published = json.load(open(os.path.join(ROOT, "version.json"), encoding="utf-8"))
+    if args.prerelease:
+        # The stable stays at the root (launchers 1.0.x only read it); the pre-release shares the root's launcher.
+        pre = dict(info, launcher=None, minLauncherVersion="1.1.0")
+        info = dict(published, prerelease=pre)
+        if pre_launcher := pre_exe_launcher(exe, args.local, base):
+            info["launcher"] = pre_launcher
+    elif (old := published.get("prerelease")) and ver(old["version"]) > ver(version):
+        info["prerelease"] = old  # a pre-release newer than this stable stays available
+
     os.makedirs(OUT, exist_ok=True)
     out = os.path.join(OUT, "version.json")
     with open(out, "w", encoding="utf-8", newline="\n") as f:
         json.dump(info, f, ensure_ascii=False, indent=2)
-    print(f"written {out} (pack {version}, {len(info['retiredMods'])} retired jars, launcher {info['launcher'] and info['launcher']['version']})")
+    print(f"written {out} (pack {version}{' as pre-release' if args.prerelease else ''}, launcher {info['launcher'] and info['launcher']['version']})")
 
     if args.upload:
-        upload(info, zip_path, exe, out)
+        upload(info, zip_path, exe, out, version, args.prerelease, args.asset)
 
 
-def upload(info, zip_path, exe, version_json):
+def ver(s):
+    return tuple(int(x) for x in re.findall(r"\d+", s))
+
+
+def pre_exe_launcher(exe, local, base):
+    if not os.path.exists(exe):
+        return None
+    lv = launcher_version()
+    return {"version": lv, "url": exe if local else f"{base}/launcher-v{lv}/CreateWarfareLauncher.exe",
+            "sha256": sha(exe, "sha256"), "size": os.path.getsize(exe)}
+
+
+def upload(info, zip_path, exe, version_json, v, prerelease, extra):
     def gh(*a, check=True):
         return subprocess.run(["gh", *a], check=check, capture_output=True, text=True)
 
-    v = info["version"]
+    notes = (info["prerelease"] if prerelease else info)["changelog"][:20000]
     if gh("release", "view", f"v{v}", "--repo", DIST_REPO, check=False).returncode != 0:
-        gh("release", "create", f"v{v}", zip_path, "--repo", DIST_REPO, "--title", f"Create Warfare {v}", "--notes", info["changelog"][:20000])
+        gh("release", "create", f"v{v}", zip_path, "--repo", DIST_REPO, "--title", f"Create Warfare {v}", "--notes", notes,
+           *(["--prerelease"] if prerelease else []))
     assets = gh("release", "view", f"v{v}", "--repo", DIST_REPO, "--json", "assets", "--jq", ".assets[].name").stdout.split()
-    if os.path.basename(zip_path) not in assets:
-        gh("release", "upload", f"v{v}", zip_path, "--repo", DIST_REPO)
+    for path in [zip_path, *extra]:
+        if os.path.basename(path) not in assets:
+            gh("release", "upload", f"v{v}", path, "--repo", DIST_REPO)
     if info["launcher"]:
         lv = info["launcher"]["version"]
         if gh("release", "view", f"launcher-v{lv}", "--repo", DIST_REPO, check=False).returncode != 0:

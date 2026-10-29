@@ -1,6 +1,6 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 189 mods et packs.
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 193 mods et packs.
 Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
@@ -39,6 +39,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 
 | Mod | Fichier | Côté | Source |
 |---|---|---|---|
+| Advanced Weather | `advancedweather-0.1.2-cw.jar` | client + serveur | CurseForge, patché (mixins client), inclus dans le zip |
 | Almost Unified | `almostunified-neoforge-1.21.1-1.4.2.jar` | client + serveur | CurseForge |
 | AppleSkin | `appleskin-neoforge-mc1.21-3.0.9.jar` | client + serveur | CurseForge |
 | Architectury API | `architectury-13.0.11-neoforge.jar` | client + serveur | CurseForge |
@@ -157,6 +158,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | FTB Teams (NeoForge) | `ftb-teams-neoforge-2101.1.11.jar` | client + serveur | CurseForge |
 | GeckoLib | `geckolib-neoforge-1.21.1-4.9.3.jar` | client + serveur | CurseForge |
 | Create: Hypertubes | `create_hypertube-0.6.0-NEOFORGE.jar` | client + serveur | Modrinth (inclus dans le zip) |
+| GlitchCore | `GlitchCore-neoforge-1.21.1-2.1.0.2.jar` | client + serveur | CurseForge |
 | Iceberg [Neo/Forge] | `Iceberg-1.21.1-neoforge-1.3.2.jar` | client seul | CurseForge |
 | ImmediatelyFast | `ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar` | client seul | CurseForge |
 | Create: Interiors | `interiors-0.6.1 v3.jar` | client + serveur | CurseForge |
@@ -199,6 +201,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | SC-SuperB Bridge | `sc_superb_bridge-1.2.0.jar` | client + serveur | CurseForge |
 | Searchables | `Searchables-neoforge-1.21.1-1.0.2.jar` | client seul | CurseForge |
 | Security Craft | `[1.21.1] SecurityCraft v1.10.2.1.jar` | client + serveur | CurseForge |
+| Serene Seasons | `SereneSeasons-neoforge-1.21.1-10.1.0.3.jar` | client + serveur | CurseForge |
 | Simple Discord Rich Presence (Forge /  Fabric) | `SimpleDiscordRichPresence-neoforge-88.0.1-build.54+mc1.21.1.jar` | client seul | CurseForge |
 | Simple Voice Chat | `voicechat-neoforge-1.21.1-2.6.27.jar` | client + serveur | CurseForge |
 | Create Slice & Dice | `sliceanddice-4.3.4-neoforge.jar` | client + serveur | CurseForge |
@@ -218,6 +221,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19).
 | Xaero Train Map | `xaerotrainmap-1.0.0.jar` | client + serveur | CurseForge |
 | Xaero's Minimap | `xaerominimap-neoforge-1.21.1-26.6.0.jar` | client seul | CurseForge |
 | Xaero's World Map | `xaeroworldmap-neoforge-1.21.1-1.47.0.jar` | client seul | CurseForge |
+| YetAnotherConfigLib (v3) | `yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY] | `YungsApi-1.21.1-NeoForge-5.1.9.jar` | client + serveur | CurseForge |
 | YUNG's Better Desert Temples (NeoForge) [1.20.4 - 1.21.1 ONLY] | `YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar` | client + serveur | CurseForge |
 | YUNG's Better Dungeons (NeoForge) [1.20.4 - 1.21.1 ONLY] | `YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar` | client + serveur | CurseForge |

@@ -22,6 +22,8 @@ public sealed class VersionInfo
     public List<ServerEntry> Servers { get; set; } = new();
     public string? Notice { get; set; }
     public string Changelog { get; set; } = "";
+    /// <summary>Pré-release du pack (même format), visible seulement en mode développeur. Ignorée par les launchers 1.0.x.</summary>
+    public VersionInfo? Prerelease { get; set; }
 }
 
 public sealed class RemoteFile

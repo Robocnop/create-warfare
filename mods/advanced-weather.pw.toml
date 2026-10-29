@@ -1,0 +1,8 @@
+name = "Advanced Weather (patch Create Warfare)"
+filename = "advancedweather-0.1.2-cw.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Robocnop/create-warfare/releases/download/v1.5.5/advancedweather-0.1.2-cw.jar"
+hash-format = "sha1"
+hash = "866183ab49df1e972800aeea11e393d1244e6b66"
