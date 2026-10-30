@@ -2,6 +2,12 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.7.1 — 2026-10-30
+
+- **Correctif du plantage au lancement** (client) : CBC Optics modifie Entity Culling et cherche un champ que la
+  version 1.11 d'Entity Culling a supprimé. Entity Culling revient en 1.10.5 (bloquée à cette version) en attendant
+  une mise à jour de CBC Optics. Le serveur n'était pas touché (Entity Culling est un mod client).
+
 ## 1.7.0 — 2026-10-30
 
 - **Create: Power Grid** : électricité simulée pour de vrai (loi d'Ohm, circuits en boucle, pertes dans les longs fils,

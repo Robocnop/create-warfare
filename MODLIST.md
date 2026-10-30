@@ -186,7 +186,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Effectual | `effectual-neoforge-1.4.2-1.21.1.jar` | client seul | CurseForge |
 | EMI | `emi-1.1.24+1.21.1+neoforge.jar` | client + serveur | CurseForge |
 | Enchantment Descriptions | `enchdesc-neoforge-1.21.1-21.1.11.jar` | client + serveur | CurseForge |
-| Entity Culling Fabric/Forge | `entityculling-neoforge-1.11.3-mc1.21.1.jar` | client seul | CurseForge |
+| Entity Culling Fabric/Forge | `entityculling-neoforge-1.10.5-mc1.21.1.jar` | client seul | CurseForge |
 | Explorify – Dungeons & Structures | `Explorify v1.6.5.mod.jar` | client + serveur | CurseForge |
 | Explosion Overhaul: A new level of destruction | `explosionoverhaul-0.2.3.0-neoforge.jar` | client + serveur | CurseForge |
 | Explosive Enhancement: Reforged | `explosiveenhancement-neoforge-1.21.1-1.2.0.jar` | client seul | CurseForge |
