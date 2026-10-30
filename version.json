@@ -1,19 +1,14 @@
 {
   "pack": "Create Warfare",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
-  "launcher": {
-    "version": "1.1.1",
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/launcher-v1.1.1/CreateWarfareLauncher.exe",
-    "sha256": "3b85ee14fbd98f995b368bef88e5530555ac7e095403f4088bbf283c1a6d4185",
-    "size": 72325603
-  },
+  "launcher": null,
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.6.0/CreateWarfare-1.6.0.zip",
-    "sha256": "cd3daff124ae3fd95e1e751346aaf02c8b5bdec9e2c5fba43ea8ad55a7d0d026",
-    "size": 15623895
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.7.0/CreateWarfare-1.7.0.zip",
+    "sha256": "60a6e0d07cf2b12baab666013a2fc4869e2764c7d2b6f33cd7a86cccd1f04cb8",
+    "size": 15673660
   },
   "mods": [
     {
@@ -103,6 +98,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/MBAkmtvl/versions/CquiaiDj/balm-neoforge-1.21.1-21.0.66.jar",
         "https://mediafilez.forgecdn.net/files/8969/738/balm-neoforge-1.21.1-21.0.66.jar"
+      ]
+    },
+    {
+      "file": "bellsandwhistles-0.4.7-1.21.1.jar",
+      "sha1": "85944080f8bd47dad64a8193a70662cd9ddbb200",
+      "size": 193619,
+      "urls": [
+        "https://cdn.modrinth.com/data/gJ5afkVv/versions/w0mifib8/bellsandwhistles-0.4.7-1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/6299/879/bellsandwhistles-0.4.7-1.21.1.jar"
       ]
     },
     {
@@ -289,6 +293,15 @@
       ]
     },
     {
+      "file": "aerocopycats-1.1.1.jar",
+      "sha1": "3a93862421d0a8cdae1e3a3d7f0d4bd01e049007",
+      "size": 14702,
+      "urls": [
+        "https://cdn.modrinth.com/data/wjpmYU1u/versions/wsXjRa7l/aerocopycats-1.1.1.jar",
+        "https://mediafilez.forgecdn.net/files/7977/632/aerocopycats-1.1.1.jar"
+      ]
+    },
+    {
       "file": "copycats-3.0.9+mc.1.21.1-neoforge.jar",
       "sha1": "74de17876c43f5f780bac478b9f9eb11e687b8d7",
       "size": 1799381,
@@ -304,6 +317,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/WrpuIfhw/versions/SElnDbg1/corpse-neoforge-1.21.1-1.1.22.jar",
         "https://mediafilez.forgecdn.net/files/9289/316/corpse-neoforge-1.21.1-1.1.22.jar"
+      ]
+    },
+    {
+      "file": "cosycritters-0.3.3+1.21.1-neoforge.jar",
+      "sha1": "845665cf417af0c8a10714c1691c5ba5c86f99d6",
+      "size": 99302,
+      "urls": [
+        "https://cdn.modrinth.com/data/61PI8Hzj/versions/QnJ9WVDV/cosycritters-0.3.3%2B1.21.1-neoforge.jar",
+        "https://mediafilez.forgecdn.net/files/8390/81/cosycritters-0.3.3%2B1.21.1-neoforge.jar"
       ]
     },
     {
@@ -340,6 +362,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/Gxj4Ihed/versions/uDnC1TSw/create_aero_radar-0.1.1-1.21.1.jar",
         "https://mediafilez.forgecdn.net/files/8307/52/create_aero_radar-0.1.1-1.21.1.jar"
+      ]
+    },
+    {
+      "file": "aeronauticscompat-1.1.3.jar",
+      "sha1": "4d1aea2d6e27705e284d4603aa3422d84464e406",
+      "size": 43764,
+      "urls": [
+        "https://cdn.modrinth.com/data/aLVC5usA/versions/j10zlI9h/aeronauticscompat-1.1.3.jar",
+        "https://mediafilez.forgecdn.net/files/8406/62/aeronauticscompat-1.1.3.jar"
       ]
     },
     {
@@ -697,6 +728,15 @@
       ]
     },
     {
+      "file": "create_pattern_schematics-2.0.10.jar",
+      "sha1": "e3dea574c3b3d590444796a42e8f7456280b1063",
+      "size": 221764,
+      "urls": [
+        "https://cdn.modrinth.com/data/cpqKG67r/versions/VSJhIkG2/create_pattern_schematics-2.0.10.jar",
+        "https://mediafilez.forgecdn.net/files/7155/413/create_pattern_schematics-2.0.10.jar"
+      ]
+    },
+    {
       "file": "create_power_loader-2.0.5-mc1.21.1.jar",
       "sha1": "5bd3ecef6fc66985e6fdf416706c98fb774ba03d",
       "size": 442369,
@@ -829,6 +869,15 @@
       ]
     },
     {
+      "file": "trading_floor-3.0.16.jar",
+      "sha1": "7be6d8b24f3120fa6a2520c32a2e6c8c4254322c",
+      "size": 214343,
+      "urls": [
+        "https://cdn.modrinth.com/data/WROfLLvn/versions/K3nIvcWT/trading_floor-3.0.16.jar",
+        "https://mediafilez.forgecdn.net/files/7625/579/trading_floor-3.0.16.jar"
+      ]
+    },
+    {
       "file": "create_train_perspective-1.1.1.jar",
       "sha1": "dccdad2ea27ee6a0918e43ede1b911541be77289",
       "size": 200650,
@@ -844,6 +893,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/H6bJ8Ju4/versions/csCe2v7f/create_tweaked_controllers-1.21.1-1.2.7.jar",
         "https://mediafilez.forgecdn.net/files/7958/165/create_tweaked_controllers-1.21.1-1.2.7.jar"
+      ]
+    },
+    {
+      "file": "create_vibrant_vaults-0.3.2.jar",
+      "sha1": "d0dbdde6318c4dd4ede1d2c091f1a64896ba872a",
+      "size": 2687938,
+      "urls": [
+        "https://cdn.modrinth.com/data/hddN8ksR/versions/t17qYXjn/create_vibrant_vaults-0.3.2.jar",
+        "https://mediafilez.forgecdn.net/files/6463/890/create_vibrant_vaults-0.3.2.jar"
       ]
     },
     {
@@ -900,6 +958,15 @@
       ]
     },
     {
+      "file": "CutThrough-v21.1.0-1.21.1-NeoForge.jar",
+      "sha1": "550f272c140566f0961c1bb3fdfb1a6272be30dd",
+      "size": 51371,
+      "urls": [
+        "https://cdn.modrinth.com/data/Dk6su9JN/versions/5P5tLHSh/CutThrough-v21.1.0-1.21.1-NeoForge.jar",
+        "https://mediafilez.forgecdn.net/files/5731/913/CutThrough-v21.1.0-1.21.1-NeoForge.jar"
+      ]
+    },
+    {
       "file": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
       "sha1": "b6094adde68bd4b909bc75c64901e1f3fb99ad8f",
       "size": 3906057,
@@ -942,6 +1009,24 @@
       "urls": [
         "https://cdn.modrinth.com/data/smUP7V3r/versions/lVrBx0o4/durabilitytooltip-1.2.0-neoforge-mc1.21.jar",
         "https://mediafilez.forgecdn.net/files/8830/219/durabilitytooltip-1.2.0-neoforge-mc1.21.jar"
+      ]
+    },
+    {
+      "file": "EasyShulkerBoxes-v21.1.3-1.21.1-NeoForge.jar",
+      "sha1": "9491302950e20bec758f67f13ff21663ecf40986",
+      "size": 215920,
+      "urls": [
+        "https://cdn.modrinth.com/data/gA5euN8S/versions/OBp8ltOS/EasyShulkerBoxes-v21.1.3-1.21.1-NeoForge.jar",
+        "https://mediafilez.forgecdn.net/files/6697/879/EasyShulkerBoxes-v21.1.3-1.21.1-NeoForge.jar"
+      ]
+    },
+    {
+      "file": "effectual-neoforge-1.4.2-1.21.1.jar",
+      "sha1": "50d6b3346e703334fa796c00ddf28378703044da",
+      "size": 331597,
+      "urls": [
+        "https://cdn.modrinth.com/data/OoF97Pto/versions/BM24IMvt/effectual-neoforge-1.4.2-1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8966/347/effectual-neoforge-1.4.2-1.21.1.jar"
       ]
     },
     {
@@ -1005,6 +1090,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/sOxnTLKl/versions/mxfQE01f/explosionoverhaul-0.2.3.0-neoforge.jar",
         "https://mediafilez.forgecdn.net/files/8478/789/explosionoverhaul-0.2.3.0-neoforge.jar"
+      ]
+    },
+    {
+      "file": "explosiveenhancement-neoforge-1.21.1-1.2.0.jar",
+      "sha1": "84aa1cd862ac5053a7e5c722370556ac12ccead8",
+      "size": 96211,
+      "urls": [
+        "https://cdn.modrinth.com/data/r0camchr/versions/GYn7YRXz/explosiveenhancement-neoforge-1.21.1-1.2.0.jar",
+        "https://mediafilez.forgecdn.net/files/8965/905/explosiveenhancement-neoforge-1.21.1-1.2.0.jar"
       ]
     },
     {
@@ -1179,6 +1273,15 @@
       ]
     },
     {
+      "file": "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+      "sha1": "479b327078f8f0091e2413675d1236c931f68cf4",
+      "size": 82315,
+      "urls": [
+        "https://cdn.modrinth.com/data/xuDOzCLy/versions/O3F6Dkle/JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+        "https://mediafilez.forgecdn.net/files/9056/575/JadeAddons-1.21.1-NeoForge-6.1.2.jar"
+      ]
+    },
+    {
       "file": "Jade-1.21.1-NeoForge-15.10.6.jar",
       "sha1": "88ee316e68900080b017f60c12162e2731924cf8",
       "size": 726853,
@@ -1347,6 +1450,15 @@
       ]
     },
     {
+      "file": "ok_zoomer-neo-10.0.0-beta.13.jar",
+      "sha1": "bf38fe686628eca79cc1b33c6e60a1eb765c6b39",
+      "size": 208085,
+      "urls": [
+        "https://cdn.modrinth.com/data/aXf2OSFU/versions/AkPuuAgJ/ok_zoomer-neo-10.0.0-beta.13.jar",
+        "https://mediafilez.forgecdn.net/files/7676/612/ok_zoomer-neo-10.0.0-beta.13.jar"
+      ]
+    },
+    {
       "file": "ore_zombies_the_extinto-2.0.1-neoforge-1.21.1.jar",
       "sha1": "f9088b065b7265cbd707026206f196e5dbbb00d4",
       "size": 239238,
@@ -1373,6 +1485,24 @@
       ]
     },
     {
+      "file": "ParticleEffects-1.6.0+1.21.1+neoforge.jar",
+      "sha1": "ebd55d4a790628bc00c241c69756537217246479",
+      "size": 310697,
+      "urls": [
+        "https://cdn.modrinth.com/data/PLAGcSFJ/versions/HVllSdtX/ParticleEffects-1.6.0%2B1.21.1%2Bneoforge.jar",
+        "https://mediafilez.forgecdn.net/files/8948/428/ParticleEffects-1.6.0%2B1.21.1%2Bneoforge.jar"
+      ]
+    },
+    {
+      "file": "Pehkui-3.8.3+1.21-neoforge.jar",
+      "sha1": "4ae35b04b0fca7b170417a12d6da6a693281574b",
+      "size": 507568,
+      "urls": [
+        "https://cdn.modrinth.com/data/t5W7Jfwy/versions/nKHizsl6/Pehkui-3.8.3%2B1.21-neoforge.jar",
+        "https://mediafilez.forgecdn.net/files/5446/174/Pehkui-3.8.3%2B1.21-neoforge.jar"
+      ]
+    },
+    {
       "file": "Placebo-1.21.1-9.9.4.jar",
       "sha1": "007d52a42020a331d5272495f6d676e0ad1a2c13",
       "size": 326063,
@@ -1391,12 +1521,30 @@
       ]
     },
     {
+      "file": "pocket-0.22.0.jar",
+      "sha1": "f55cdb5351477ae74c7ca0e9373c50cd9522a483",
+      "size": 2030879,
+      "urls": [
+        "https://cdn.modrinth.com/data/KbwNRCY7/versions/Wi98MbF9/pocket-0.22.0.jar",
+        "https://mediafilez.forgecdn.net/files/9235/607/pocket-0.22.0.jar"
+      ]
+    },
+    {
       "file": "polymorph-neoforge-1.2.0+1.21.1.jar",
       "sha1": "fa6c5fa8a21229c85d564b47c73df7160b3bd4df",
       "size": 172671,
       "urls": [
         "https://cdn.modrinth.com/data/tagwiZkJ/versions/9yWvrF5o/polymorph-neoforge-1.2.0%2B1.21.1.jar",
         "https://mediafilez.forgecdn.net/files/8849/478/polymorph-neoforge-1.2.0%2B1.21.1.jar"
+      ]
+    },
+    {
+      "file": "powergrid-mc1.21.1-0.6.2.jar",
+      "sha1": "e09452dac8202e31f282149d45c49dcdb218bd54",
+      "size": 5738480,
+      "urls": [
+        "https://cdn.modrinth.com/data/eWiBLJ9R/versions/jCkPHjmP/powergrid-mc1.21.1-0.6.2.jar",
+        "https://mediafilez.forgecdn.net/files/8880/715/powergrid-mc1.21.1-0.6.2.jar"
       ]
     },
     {
@@ -1424,6 +1572,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/3rXU9gz8/versions/ZLwuD5gm/projectexplosive-0.7.2-beta.jar",
         "https://mediafilez.forgecdn.net/files/9117/332/projectexplosive-0.7.2-beta.jar"
+      ]
+    },
+    {
+      "file": "puzzleslib-v21.1.66-mc1.21.1+neoforge.jar",
+      "sha1": "fd584167f1277aef5411a98a22390c65cabe6e07",
+      "size": 1451120,
+      "urls": [
+        "https://cdn.modrinth.com/data/QAGBst4M/versions/kmN5PWk9/puzzleslib-v21.1.66-mc1.21.1%2Bneoforge.jar",
+        "https://mediafilez.forgecdn.net/files/9331/322/puzzleslib-v21.1.66-mc1.21.1%2Bneoforge.jar"
       ]
     },
     {
@@ -1529,6 +1686,15 @@
       "size": 159205,
       "urls": [
         "https://mediafilez.forgecdn.net/files/6182/596/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar"
+      ]
+    },
+    {
+      "file": "shulkerboxtooltip-neoforge-5.1.9+1.21.1.jar",
+      "sha1": "bddbccd689529f7f7ab04479e62c5e09b0be6be5",
+      "size": 381204,
+      "urls": [
+        "https://cdn.modrinth.com/data/2M01OLQq/versions/IuqNIoAi/shulkerboxtooltip-neoforge-5.1.9%2B1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/7768/285/shulkerboxtooltip-neoforge-5.1.9%2B1.21.1.jar"
       ]
     },
     {
@@ -1665,6 +1831,15 @@
       ]
     },
     {
+      "file": "tlib-neoforge-1.5.0-1.21.1.jar",
+      "sha1": "1de22b1c2fe6b04bb4e10bd4e894c8faed668fda",
+      "size": 228515,
+      "urls": [
+        "https://cdn.modrinth.com/data/sBn7rVvc/versions/hRjgkoz4/tlib-neoforge-1.5.0-1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8226/91/tlib-neoforge-1.5.0-1.21.1.jar"
+      ]
+    },
+    {
       "file": "toms_storage-1.21-2.4.2.jar",
       "sha1": "592af3bc4768c804c4929af16961ca2a1a916942",
       "size": 856803,
@@ -1680,6 +1855,24 @@
       "urls": [
         "https://cdn.modrinth.com/data/DjLobEOy/versions/DZxwgj6V/t_and_t-fabric-neoforge-1.13.11.jar",
         "https://mediafilez.forgecdn.net/files/8657/120/t_and_t-fabric-neoforge-1.13.11.jar"
+      ]
+    },
+    {
+      "file": "VisualWorkbench-v21.1.2-1.21.1-NeoForge.jar",
+      "sha1": "dd5b71bff42ce3f845afc9c3640d4f4f63ccdb1b",
+      "size": 76670,
+      "urls": [
+        "https://cdn.modrinth.com/data/kfqD1JRw/versions/3646RfLS/VisualWorkbench-v21.1.2-1.21.1-NeoForge.jar",
+        "https://mediafilez.forgecdn.net/files/8793/655/VisualWorkbench-v21.1.2-1.21.1-NeoForge.jar"
+      ]
+    },
+    {
+      "file": "visuality-forge-3.0.0.jar",
+      "sha1": "9786f023733a302b582b7349336e1ab47e93823e",
+      "size": 132898,
+      "urls": [
+        "https://cdn.modrinth.com/data/z13R7Et1/versions/kOdevgPm/visuality-forge-3.0.0.jar",
+        "https://mediafilez.forgecdn.net/files/8559/477/visuality-forge-3.0.0.jar"
       ]
     },
     {
@@ -1965,5 +2158,5 @@
     }
   ],
   "notice": null,
-  "changelog": "Launcher 1.1.1 — 2026-10-29\n\n- Thème Halloween, actif tout seul du 15 octobre au 5 novembre : engrenages-citrouilles animés sous la lune, chauves-souris, cimetière, toiles d'araignée, couleurs orange et violet, titres en Creepster (police libre OFL). Le reste de l'année, le launcher garde son apparence habituelle.\n\n1.6.0 — 2026-10-29\n\n- Artillerie : CBC Ballistics (calculateur balistique, télémètre, commande de canon, coordinateur d'artillerie, radio), CBC Optics (viseurs de canon et d'autocanon), CBC: Firepower Components (affûts compacts, chargeurs de munitions automatisables). Deux nouvelles quêtes au chapitre Artillerie : viseur et calculateur.\n- CBC Ballistics range encore ses recettes, ses tables de butin et ses tags dans les dossiers de la 1.20, ignorés en 1.21 : sans correctif, ses objets ne se fabriquaient pas et ses blocs ne se récupéraient pas. Copiés dans kubejs/data/.\n- Lootr : chaque joueur a son propre butin dans les coffres des structures. Seulement dans les nouveaux chunks.\n- Create: Numismatics : pièces, comptes en banque, distributeurs et ventes automatisées entre équipes.\n- Performances : Create: Threaded Trains (trains calculés à part), Lithium, AllTheLeaks (fuites de mémoire), Alternate Current (redstone) ; côté client BadOptimizations et Create Better FPS.\n- Testé sur le serveur local : démarrage, 206 quêtes valides, pré-génération de 10 000 chunks à 20 TPS. Pas encore essayés en jeu : trains avec Threaded Trains, viseurs, calculateur, Numismatics.\n\nLauncher 1.1.0 — 2026-10-29\n\n- Choix de la version du pack, comme dans le launcher Minecraft : « Dernière version » ou « Pré-release ».\n- Réglages → Mode développeur : affiche les pré-releases (versions de test) dans ce choix.\n- Réglages → Désinstaller : supprime le profil CurseForge, puis le launcher et ses réglages. Les mondes, captures et schémas sont d'abord copiés dans Documents\\Create Warfare (sauvegarde) (case cochée par défaut)."
+  "changelog": "1.7.0 — 2026-10-30\n\n- Create: Power Grid : électricité simulée pour de vrai (loi d'Ohm, circuits en boucle, pertes dans les longs fils, transformateurs). Générateurs à construire pièce par pièce, moteurs électriques, servomoteurs, panneaux solaires, circuits imprimés, perceuse et scie sur batterie, Electro-Zapper. Son onduleur FE le relie aux autres mods électriques. Cinq quêtes au chapitre Électricité.\n- Create: Pocket Sized (+ Pehkui) : rétrécir ou agrandir les engins Sable, les ranger dans une boîte, les coller entre échelles différentes. Réglé pour le PvP : engins de 1/4 à 4 fois, joueur de 1/2 à 2 fois, et impossible de redimensionner un autre joueur. Une quête au chapitre Aviation (canon de compression).\n- Repris du modpack Create: Complete : Create Aeronautics Compatibility, Copycats+ aeronautics weight (poids réalistes des blocs Copycats+ sur les engins), Bells & Whistles (décor de trains), Vibrant Vaults (coffres-forts de couleur, boîtiers en zinc), Pattern Schematics (schémas répétés), Trading Floor (commerce automatisé avec les villageois), Jade Addons, Shulker Box Tooltip, Easy Shulker Boxes, Visual Workbench.\n- Côté client : Explosive Enhancement (explosions), Cut Through (frapper à travers l'herbe), Ok Zoomer (zoom), Effectual, Visuality, Cosy Critters et Particle Effects (ambiance).\n- Traductions françaises : 2 059 textes ajoutés (nouveaux mods et ceux de la 1.6.0 : Numismatics, CBC Ballistics, CBC Optics, Firepower Components, plus des restes de Create Radar, Railways Untold, Avionics...).\n- Testé sur le serveur local : démarrage, 212 quêtes valides, dépendances des mods client vérifiées. Pas encore essayé en jeu.\n\nLauncher 1.1.1 — 2026-10-29\n\n- Thème Halloween, actif tout seul du 15 octobre au 5 novembre : engrenages-citrouilles animés sous la lune, chauves-souris, cimetière, toiles d'araignée, couleurs orange et violet, titres en Creepster (police libre OFL). Le reste de l'année, le launcher garde son apparence habituelle.\n\n1.6.0 — 2026-10-29\n\n- Artillerie : CBC Ballistics (calculateur balistique, télémètre, commande de canon, coordinateur d'artillerie, radio), CBC Optics (viseurs de canon et d'autocanon), CBC: Firepower Components (affûts compacts, chargeurs de munitions automatisables). Deux nouvelles quêtes au chapitre Artillerie : viseur et calculateur.\n- CBC Ballistics range encore ses recettes, ses tables de butin et ses tags dans les dossiers de la 1.20, ignorés en 1.21 : sans correctif, ses objets ne se fabriquaient pas et ses blocs ne se récupéraient pas. Copiés dans kubejs/data/.\n- Lootr : chaque joueur a son propre butin dans les coffres des structures. Seulement dans les nouveaux chunks.\n- Create: Numismatics : pièces, comptes en banque, distributeurs et ventes automatisées entre équipes.\n- Performances : Create: Threaded Trains (trains calculés à part), Lithium, AllTheLeaks (fuites de mémoire), Alternate Current (redstone) ; côté client BadOptimizations et Create Better FPS.\n- Testé sur le serveur local : démarrage, 206 quêtes valides, pré-génération de 10 000 chunks à 20 TPS. Pas encore essayés en jeu : trains avec Threaded Trains, viseurs, calculateur, Numismatics."
 }
