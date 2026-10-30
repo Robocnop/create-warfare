@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,9 +11,9 @@
     "size": 72325603
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.7.0/CreateWarfare-1.7.0.zip",
-    "sha256": "60a6e0d07cf2b12baab666013a2fc4869e2764c7d2b6f33cd7a86cccd1f04cb8",
-    "size": 15673660
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.7.1/CreateWarfare-1.7.1.zip",
+    "sha256": "540b376bea4e55a1689701808999ad557ac67292f467cdea070c766989de1da5",
+    "size": 15673637
   },
   "mods": [
     {
@@ -1071,12 +1071,12 @@
       ]
     },
     {
-      "file": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
-      "sha1": "f122f84f329793675b2625d51b77f990d7de3579",
-      "size": 1510075,
+      "file": "entityculling-neoforge-1.10.5-mc1.21.1.jar",
+      "sha1": "420d0006dbc0a20b1c2dd0b3c7c20ddb5cc51fcf",
+      "size": 1585287,
       "urls": [
-        "https://cdn.modrinth.com/data/NNAgCjsB/versions/eieYbWYb/entityculling-neoforge-1.11.3-mc1.21.1.jar",
-        "https://mediafilez.forgecdn.net/files/9100/286/entityculling-neoforge-1.11.3-mc1.21.1.jar"
+        "https://cdn.modrinth.com/data/NNAgCjsB/versions/5zRIon6w/entityculling-neoforge-1.10.5-mc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8287/97/entityculling-neoforge-1.10.5-mc1.21.1.jar"
       ]
     },
     {
@@ -2082,6 +2082,10 @@
       "sha1": "1fbb61c9b5d99fff39fa8cb1528847feb0b1a68f"
     },
     {
+      "file": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "sha1": "f122f84f329793675b2625d51b77f990d7de3579"
+    },
+    {
       "file": "friendsandfoes-neoforge-5.0.3+mc1.21.1.jar",
       "sha1": "74b448afe8e9915d73a2993d67f56ebb0a1aeaf5"
     },
@@ -2163,5 +2167,5 @@
     }
   ],
   "notice": null,
-  "changelog": "1.7.0 — 2026-10-30\n\n- Create: Power Grid : électricité simulée pour de vrai (loi d'Ohm, circuits en boucle, pertes dans les longs fils, transformateurs). Générateurs à construire pièce par pièce, moteurs électriques, servomoteurs, panneaux solaires, circuits imprimés, perceuse et scie sur batterie, Electro-Zapper. Son onduleur FE le relie aux autres mods électriques. Cinq quêtes au chapitre Électricité.\n- Create: Pocket Sized (+ Pehkui) : rétrécir ou agrandir les engins Sable, les ranger dans une boîte, les coller entre échelles différentes. Réglé pour le PvP : engins de 1/4 à 4 fois, joueur de 1/2 à 2 fois, et impossible de redimensionner un autre joueur. Une quête au chapitre Aviation (canon de compression).\n- Repris du modpack Create: Complete : Create Aeronautics Compatibility, Copycats+ aeronautics weight (poids réalistes des blocs Copycats+ sur les engins), Bells & Whistles (décor de trains), Vibrant Vaults (coffres-forts de couleur, boîtiers en zinc), Pattern Schematics (schémas répétés), Trading Floor (commerce automatisé avec les villageois), Jade Addons, Shulker Box Tooltip, Easy Shulker Boxes, Visual Workbench.\n- Côté client : Explosive Enhancement (explosions), Cut Through (frapper à travers l'herbe), Ok Zoomer (zoom), Effectual, Visuality, Cosy Critters et Particle Effects (ambiance).\n- Traductions françaises : 2 059 textes ajoutés (nouveaux mods et ceux de la 1.6.0 : Numismatics, CBC Ballistics, CBC Optics, Firepower Components, plus des restes de Create Radar, Railways Untold, Avionics...).\n- Testé sur le serveur local : démarrage, 212 quêtes valides, dépendances des mods client vérifiées. Pas encore essayé en jeu.\n\nLauncher 1.1.1 — 2026-10-29\n\n- Thème Halloween, actif tout seul du 15 octobre au 5 novembre : engrenages-citrouilles animés sous la lune, chauves-souris, cimetière, toiles d'araignée, couleurs orange et violet, titres en Creepster (police libre OFL). Le reste de l'année, le launcher garde son apparence habituelle.\n\n1.6.0 — 2026-10-29\n\n- Artillerie : CBC Ballistics (calculateur balistique, télémètre, commande de canon, coordinateur d'artillerie, radio), CBC Optics (viseurs de canon et d'autocanon), CBC: Firepower Components (affûts compacts, chargeurs de munitions automatisables). Deux nouvelles quêtes au chapitre Artillerie : viseur et calculateur.\n- CBC Ballistics range encore ses recettes, ses tables de butin et ses tags dans les dossiers de la 1.20, ignorés en 1.21 : sans correctif, ses objets ne se fabriquaient pas et ses blocs ne se récupéraient pas. Copiés dans kubejs/data/.\n- Lootr : chaque joueur a son propre butin dans les coffres des structures. Seulement dans les nouveaux chunks.\n- Create: Numismatics : pièces, comptes en banque, distributeurs et ventes automatisées entre équipes.\n- Performances : Create: Threaded Trains (trains calculés à part), Lithium, AllTheLeaks (fuites de mémoire), Alternate Current (redstone) ; côté client BadOptimizations et Create Better FPS.\n- Testé sur le serveur local : démarrage, 206 quêtes valides, pré-génération de 10 000 chunks à 20 TPS. Pas encore essayés en jeu : trains avec Threaded Trains, viseurs, calculateur, Numismatics."
+  "changelog": "1.7.1 — 2026-10-30\n\n- Correctif du plantage au lancement (client) : CBC Optics modifie Entity Culling et cherche un champ que la version 1.11 d'Entity Culling a supprimé. Entity Culling revient en 1.10.5 (bloquée à cette version) en attendant une mise à jour de CBC Optics. Le serveur n'était pas touché (Entity Culling est un mod client).\n\n1.7.0 — 2026-10-30\n\n- Create: Power Grid : électricité simulée pour de vrai (loi d'Ohm, circuits en boucle, pertes dans les longs fils, transformateurs). Générateurs à construire pièce par pièce, moteurs électriques, servomoteurs, panneaux solaires, circuits imprimés, perceuse et scie sur batterie, Electro-Zapper. Son onduleur FE le relie aux autres mods électriques. Cinq quêtes au chapitre Électricité.\n- Create: Pocket Sized (+ Pehkui) : rétrécir ou agrandir les engins Sable, les ranger dans une boîte, les coller entre échelles différentes. Réglé pour le PvP : engins de 1/4 à 4 fois, joueur de 1/2 à 2 fois, et impossible de redimensionner un autre joueur. Une quête au chapitre Aviation (canon de compression).\n- Repris du modpack Create: Complete : Create Aeronautics Compatibility, Copycats+ aeronautics weight (poids réalistes des blocs Copycats+ sur les engins), Bells & Whistles (décor de trains), Vibrant Vaults (coffres-forts de couleur, boîtiers en zinc), Pattern Schematics (schémas répétés), Trading Floor (commerce automatisé avec les villageois), Jade Addons, Shulker Box Tooltip, Easy Shulker Boxes, Visual Workbench.\n- Côté client : Explosive Enhancement (explosions), Cut Through (frapper à travers l'herbe), Ok Zoomer (zoom), Effectual, Visuality, Cosy Critters et Particle Effects (ambiance).\n- Traductions françaises : 2 059 textes ajoutés (nouveaux mods et ceux de la 1.6.0 : Numismatics, CBC Ballistics, CBC Optics, Firepower Components, plus des restes de Create Radar, Railways Untold, Avionics...).\n- Testé sur le serveur local : démarrage, 212 quêtes valides, dépendances des mods client vérifiées. Pas encore essayé en jeu.\n\nLauncher 1.1.1 — 2026-10-29\n\n- Thème Halloween, actif tout seul du 15 octobre au 5 novembre : engrenages-citrouilles animés sous la lune, chauves-souris, cimetière, toiles d'araignée, couleurs orange et violet, titres en Creepster (police libre OFL). Le reste de l'année, le launcher garde son apparence habituelle."
 }
