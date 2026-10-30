@@ -1,0 +1,12 @@
+{
+ "text.trender.name": "Trender",
+ "text.trender.sendstacktraces": "Envoyer les traces d'erreur",
+ "text.trender.sendstacktraces.tooltip": "Si activé, les traces d'erreur du journal ou des plantages qui mentionnent des mods de tr7zw sont envoyées à l'auteur via Sentry (Sentry.io) pour corriger les bugs plus vite. Aucune donnée personnelle n'est collectée ni envoyée. (Redémarrez le jeu après l'activation)",
+ "text.trender.style": "Style de l'interface",
+ "text.trender.style.MODERN": "Moderne",
+ "text.trender.style.MODERN_DARK": "Moderne sombre",
+ "text.trender.style.VANILLA_MODERN": "Vanilla moderne",
+ "text.trender.style.VANILLA_OLD": "Vanilla ancien",
+ "text.trender.style.tooltip": "Change le style de l'interface de tous les mods de tr7zw.",
+ "text.trender.tab.general_options": "Options"
+}

@@ -88,5 +88,45 @@
 			x: 4.0d
 			y: 4.5d
 		}
+		{
+			dependencies: []
+			id: "7DA093DB118A42DD"
+			rewards: [{ id: "0438A1F9F4DAD932", type: "xp", xp: 50 }]
+			tasks: [{ count: 16L, id: "32D0E157D5B014DB", item: { count: 1, id: "powergrid:wire" }, type: "item" }]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7DA093DB118A42DD"]
+			id: "3BC12EF7F7D14504"
+			rewards: [{ id: "34C6A6CA6593EA02", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "18F62BAF159EA46D", item: { count: 1, id: "powergrid:generator_clutch" }, type: "item" }]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3BC12EF7F7D14504"]
+			id: "6EE17B94C458BBF3"
+			rewards: [{ id: "4130340B194ED75D", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "0D7E750B6AD9CF81", item: { count: 1, id: "powergrid:electric_motor" }, type: "item" }]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7DA093DB118A42DD"]
+			id: "3F0FD706BDA92D56"
+			rewards: [{ id: "679CE526F087BD6D", type: "xp", xp: 150 }]
+			tasks: [{ count: 4L, id: "213954D56682D756", item: { count: 1, id: "powergrid:solar_panel" }, type: "item" }]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3BC12EF7F7D14504", "697CD161FF05B721"]
+			id: "78C49D56D67D20E5"
+			rewards: [{ id: "5E9C870D8C18A311", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "7B249CD8971B765F", item: { count: 1, id: "powergrid:fe_inverter" }, type: "item" }]
+			x: 4.0d
+			y: 7.5d
+		}
 	]
 }

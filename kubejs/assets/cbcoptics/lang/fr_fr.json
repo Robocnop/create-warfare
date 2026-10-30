@@ -1,0 +1,21 @@
+{
+ "block.cbcoptics.autocannon_sight": "Viseur d'autocanon",
+ "block.cbcoptics.cannon_sight": "Viseur de canon",
+ "block.cbcoptics.optics_control_unit": "Unité de contrôle optique",
+ "item.cbcoptics.incomplete_autocannon_sight": "Viseur d'autocanon incomplet",
+ "item.cbcoptics.incomplete_cannon_sight": "Viseur de canon incomplet",
+ "item.cbcoptics.sight_linker": "Lieur de viseur",
+ "item.cbcoptics.sight_viewer": "Visionneuse de viseur",
+ "itemGroup.cbcoptics": "CBC Optics",
+ "key.categories.cbcoptics": "CBC Optics",
+ "key.cbcoptics.enter_sight": "Entrer dans le viseur",
+ "key.cbcoptics.exit_sight": "Sortir du viseur",
+ "key.cbcoptics.next_sight": "Viseur suivant",
+ "key.cbcoptics.previous_sight": "Viseur précédent",
+ "key.cbcoptics.toggle_sight": "Activer/désactiver le viseur",
+ "message.cbcoptics.optics_control_unit_attach": "Unité de contrôle optique liée !",
+ "message.cbcoptics.optics_control_unit_unattach": "Unité de contrôle optique déliée !",
+ "message.cbcoptics.sight_linker_add": "Viseur ajouté !",
+ "message.cbcoptics.sight_linker_clear": "Viseurs effacés !",
+ "message.cbcoptics.sight_linker_got": "Viseur obtenu !"
+}

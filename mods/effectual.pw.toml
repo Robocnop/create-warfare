@@ -1,0 +1,13 @@
+name = "Effectual"
+filename = "effectual-neoforge-1.4.2-1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "50d6b3346e703334fa796c00ddf28378703044da"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8966347
+project-id = 1171658

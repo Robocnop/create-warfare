@@ -50,7 +50,7 @@ hash = "ff81f280346d26a3334a46ff5d646350b131fbf1c071f82910cecdc995679817"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/03_electricite.snbt"
-hash = "f69f2f3588abf9806dedec7a77a661885d128876e778d221148ef42a54819a46"
+hash = "614c1d61202ccea70e51720a455ed0b798b58f64b8ace1a2cf520bc015c5bd8d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/04_industrie.snbt"
@@ -62,7 +62,7 @@ hash = "5972a3fa0b1d181ed5dd67acf719c51e817f6513ce2647e0baa8e5fbfda08677"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/06_aviation.snbt"
-hash = "981b4b934eafcf891839085dc085e9db3875f73f4b2e16a6337c9479bcc16348"
+hash = "f64f6b5a70bc481cbd6b61f60890c508d5bce3a3396b405d83f7891adc4eb121"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/07_blindes.snbt"
@@ -98,11 +98,15 @@ hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "48eb582b8c970c251e58f45c2521c943294d7238058f6731e250bc498fbe0863"
+hash = "e9fd33b6d5c87a520a521f0b491f55ae64af89b96e66321fddf7d6506c185523"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "e8eea508087824dd7f40c4e423fd4188fcf3a413728e0b56b456e3094e39e375"
+
+[[files]]
+file = "config/pocket-server.toml"
+hash = "2c2dbb6ce8105bf50474433740ac826c5775ad05c5810b5ab7cfd7ba33110047"
 
 [[files]]
 file = "config/projectexplosive-common.toml"
@@ -123,6 +127,10 @@ hash = "56ce590746f761f023e296c08ad71193b9249b7d5ee268abc43d8dae90e33058"
 [[files]]
 file = "kubejs/assets/aeroadditionbridge/lang/fr_fr.json"
 hash = "603167a78abb1af819e713aeb1b3e606c71a363f979f773d836c1df9694f4ebb"
+
+[[files]]
+file = "kubejs/assets/aerocopycats/lang/fr_fr.json"
+hash = "3462d4b03a737e2a5134fe92c91cc09130b656b5bb5d92223d6103824597b342"
 
 [[files]]
 file = "kubejs/assets/aeronautics/lang/fr_fr.json"
@@ -155,6 +163,10 @@ hash = "971dabc30e1728b934daf52f68a6bb90e71ddad3a06eeafe38fa71c25c140e3b"
 [[files]]
 file = "kubejs/assets/balm/lang/fr_fr.json"
 hash = "05be7cfe8b4820a7e3f7e4e830ae621ef1ae2fe143cfbc736dc9cb055568ad1e"
+
+[[files]]
+file = "kubejs/assets/bellsandwhistles/lang/fr_fr.json"
+hash = "ab76afadc7f3341d49774558f35e545bea4260d7281f5df08193070fa64244c5"
 
 [[files]]
 file = "kubejs/assets/betteradvancedtooltips/lang/fr_fr.json"
@@ -202,15 +214,23 @@ hash = "37749ee4ea32bd702c5e5e96fdb240ee308ac1b327c731a066fa299f2a762634"
 
 [[files]]
 file = "kubejs/assets/burnt/lang/fr_fr.json"
-hash = "fcea16c82027cfa2f7e790cf326a297bd676027728c1d8e0e11b06d2c306691d"
+hash = "071c8474f661d8a6332d9e85c5b6ceb465c83d31e527dc44bad4acfc2a600a39"
 
 [[files]]
 file = "kubejs/assets/burnt_additions/lang/fr_fr.json"
-hash = "ac6eea15f907f506639a43cc4cd0d5776061470e7b67b96390aa87b56246d011"
+hash = "5494c458219d9192bf13010bb7e698436f93115f8d2f803fef5454b2b769b576"
 
 [[files]]
 file = "kubejs/assets/cbc_at/lang/fr_fr.json"
 hash = "5fcd30d017108b0a2180acd709669b55bab237577644918b64ca695d7ef0fe99"
+
+[[files]]
+file = "kubejs/assets/cbc_ballistics/lang/fr_fr.json"
+hash = "df1fb1ff1e08fee757771bfd44110888e802b13bf6ad740d1cb27e9cb610b651"
+
+[[files]]
+file = "kubejs/assets/cbc_firepower_components/lang/fr_fr.json"
+hash = "c168cc8b6b147b1c0bed91c06994ff078c1b14d6980a62d9165b6965cec71b37"
 
 [[files]]
 file = "kubejs/assets/cbc_terminal_ballistics/lang/fr_fr.json"
@@ -219,6 +239,10 @@ hash = "c43e74d7c3dff3b99b9b2f68733ee8fe43259c32d3982681e96f87839f4a1d13"
 [[files]]
 file = "kubejs/assets/cbcmodernwarfare/lang/fr_fr.json"
 hash = "40245f1d6a67e96012c9bde3dadd7362ec48c843d9322214c62875c1e319a0d4"
+
+[[files]]
+file = "kubejs/assets/cbcoptics/lang/fr_fr.json"
+hash = "125b8e8216112a6a450a4c432e86d6e80d9fdfcaf0e93bdedbca3682e1d25da5"
 
 [[files]]
 file = "kubejs/assets/cc_cbc/lang/fr_fr.json"
@@ -265,6 +289,10 @@ file = "kubejs/assets/corpse/lang/fr_fr.json"
 hash = "5bb6ceb3954b44c0a6ce20d607020a025c1ccc4e8e97102a50ac22b6d2919b41"
 
 [[files]]
+file = "kubejs/assets/cosycritters/lang/fr_fr.json"
+hash = "6219678853902e74664b931da326447f4d9d7b9d3e7dce620760bd91efb08a44"
+
+[[files]]
 file = "kubejs/assets/cr_aero_structures/lang/fr_fr.json"
 hash = "02af603d1205ddbb00bf31745527c9f32ea78d7902f41d959135bcf3bdef959d"
 
@@ -275,6 +303,10 @@ hash = "003aa7b1765aa4e78a9fa8aa6a8fb68c070a0f389f802d4d6cd08dfca7697536"
 [[files]]
 file = "kubejs/assets/create_aero_radar/lang/fr_fr.json"
 hash = "332ede2099b3fd0ba6c870bc3cd8e75239704a2cfee548220f6bbe87c8cb9db4"
+
+[[files]]
+file = "kubejs/assets/create_avionics/lang/fr_fr.json"
+hash = "55a8975790a6d82bea5ea77d4ba0c754bfb2c618c55d216206d2f88ab2c6e025"
 
 [[files]]
 file = "kubejs/assets/create_bb/lang/fr_fr.json"
@@ -333,8 +365,12 @@ file = "kubejs/assets/create_new_age/lang/fr_fr.json"
 hash = "916070de2cb5bb2ddabfd5a03afbd7be6a209d891d96c355363099591f71fba5"
 
 [[files]]
+file = "kubejs/assets/create_pattern_schematics/lang/fr_fr.json"
+hash = "4abe2260e032e8a596d22bda10ac1b57ef7c343ff6f656610c2f595736a642c5"
+
+[[files]]
 file = "kubejs/assets/create_radar/lang/fr_fr.json"
-hash = "88bd6b3837b1be0d2f7c28c847dc11320ccab3672f69cb6d854ff82f652ca307"
+hash = "e38e56d56c7d50d4bdbf387f4b12f910410b21ac8b9149389f201c5bb81517e4"
 
 [[files]]
 file = "kubejs/assets/create_simulated_thrusters/lang/fr_fr.json"
@@ -351,6 +387,10 @@ hash = "e177e60ae00efb0379e408cfb3c9b13f4594261b8cf035e558bf22d6f561b2f6"
 [[files]]
 file = "kubejs/assets/create_train_perspective/lang/fr_fr.json"
 hash = "d9024384cc6b9e8ab22b78497292031a195a0b122053374964facc67b2a67363"
+
+[[files]]
+file = "kubejs/assets/create_vibrant_vaults/lang/fr_fr.json"
+hash = "1ee0c03011619330124a728cb68161dba6b24d939e15040f9d2a18b015669bf1"
 
 [[files]]
 file = "kubejs/assets/createaddition/lang/fr_fr.json"
@@ -370,7 +410,7 @@ hash = "a59b5050980094a5c86f0a989a77703163420e3882a7dd1c0b73372f39fea75d"
 
 [[files]]
 file = "kubejs/assets/createcasing/lang/fr_fr.json"
-hash = "2c4c0f74370dc06c610e15bc51021e9f88df49ba9f3509f85aa29d31cf9c88ff"
+hash = "be38cd130331455597543dbe9e91964abd16435ce14970bb82a3b394edffa015"
 
 [[files]]
 file = "kubejs/assets/createcobblestone/lang/fr_fr.json"
@@ -493,6 +533,10 @@ file = "kubejs/assets/examplemod/lang/fr_fr.json"
 hash = "f23cbf714793506239b0191c23d5b31d9a778f6d357bb8c4c335dda30f75d05b"
 
 [[files]]
+file = "kubejs/assets/explosiveenhancement/lang/fr_fr.json"
+hash = "0037e19a37d3edd467844a4ad01695a91357e3c407125ffe889006f8e4f020ec"
+
+[[files]]
 file = "kubejs/assets/fallingleaves/lang/fr_fr.json"
 hash = "fe46d0d85d2dd11b8c9f0314420bebb8207c659e4cc161eaea182609e445217d"
 
@@ -522,7 +566,7 @@ hash = "a83de2c38929071bbd50c0d3b2d1f9c9ef991861d127c2e28c7eb7f480316131"
 
 [[files]]
 file = "kubejs/assets/ftbquests/lang/fr_fr.json"
-hash = "607a9738d57c037723667f8a06de5ec6d0fd37eb80f1fb809066c6549e5edad6"
+hash = "6793a919e0ddb0183bf068aae8ddf6b6a1c6fc566493137e4262d3d0eb737285"
 
 [[files]]
 file = "kubejs/assets/ftbteams/lang/fr_fr.json"
@@ -553,8 +597,16 @@ file = "kubejs/assets/iris/lang/fr_fr.json"
 hash = "bc7ae5923b5d7b8c845eb3f2b174b963c682a847680a95a5af05932b2b58a0c2"
 
 [[files]]
+file = "kubejs/assets/iteminteractions/lang/fr_fr.json"
+hash = "05908b679bd2a79e0d88c0cc758780396dd1ca8638d48822e357b8c6cbfcabb0"
+
+[[files]]
 file = "kubejs/assets/jade/lang/fr_fr.json"
 hash = "40e0b737adeec1e711cffa6fe184752d87c4ebf8d69222623e01b616028cd108"
+
+[[files]]
+file = "kubejs/assets/jadeaddons/lang/fr_fr.json"
+hash = "e99797b97f2fd173367fac96dd3544033f02ae2c117fea8bcece019b695140fd"
 
 [[files]]
 file = "kubejs/assets/jeed/lang/fr_fr.json"
@@ -562,7 +614,7 @@ hash = "ad6f35624b4effca60caff97dd76998ec1661db1877d5451602eb6bb43e60446"
 
 [[files]]
 file = "kubejs/assets/jei/lang/fr_fr.json"
-hash = "8aa261b64b47cf9076499bb291ea2c6b4e4721532488f649a9ca116f2c7ffe1f"
+hash = "9224dba2684a2b73096fdcb0bb38e8b5a5ec709506cc461ecc760de3a5f49ac7"
 
 [[files]]
 file = "kubejs/assets/jeresources/lang/fr_fr.json"
@@ -613,8 +665,16 @@ file = "kubejs/assets/ntgl/lang/fr_fr.json"
 hash = "f2278514fae31b646031e949ecf07a8a9975994d77ad6878ef66fac2d47eda55"
 
 [[files]]
+file = "kubejs/assets/numismatics/lang/fr_fr.json"
+hash = "77415e28aed808dd469a694023a71f277513389a8ff7732c546d0bfa677ffa2c"
+
+[[files]]
 file = "kubejs/assets/offroad/lang/fr_fr.json"
 hash = "818b68e48c28d9de8ad679bb2960b802dc2f93e7e7287ecff443bf5543615a26"
+
+[[files]]
+file = "kubejs/assets/ok_zoomer/lang/fr_fr.json"
+hash = "b3cfd57220187b0cec1f9d70f53c221643ea071e63b57a3588703eb2d3c5b0c3"
 
 [[files]]
 file = "kubejs/assets/ore_zombies_the_extinto/lang/fr_fr.json"
@@ -629,12 +689,20 @@ file = "kubejs/assets/particlerain/lang/fr_fr.json"
 hash = "db14eebe16a75a330a3316378fa15b610685633df160fc30f943e73a2d22393b"
 
 [[files]]
+file = "kubejs/assets/pocket/lang/fr_fr.json"
+hash = "3c15ebc4684165bf2aee91ea4889bca0abf39b0363bf32a4c0e30ed7059a3b69"
+
+[[files]]
 file = "kubejs/assets/polymorph/lang/fr_fr.json"
 hash = "aa9853ac13d0657d388bd17dd865af220c470854c99826acd26f832425739856"
 
 [[files]]
 file = "kubejs/assets/ponder/lang/fr_fr.json"
 hash = "6d97db00ffc31da93cd6af0f6a62d653916e5c0566743e79c3f6345ea094c23d"
+
+[[files]]
+file = "kubejs/assets/powergrid/lang/fr_fr.json"
+hash = "ecbcd807556db817ad8e587c0dc264719cc122e91c9f17460c8071d76dc59a9d"
 
 [[files]]
 file = "kubejs/assets/projectexplosive/lang/fr_fr.json"
@@ -647,6 +715,14 @@ hash = "03d056a66d840fb8103c85c330135cc8693d8e0d596c8e5f40ac31f2d7c295cd"
 [[files]]
 file = "kubejs/assets/railways/lang/fr_fr.json"
 hash = "16b744c32f25d05c877370f948d51252e80f981a155d0bd112330446efa95994"
+
+[[files]]
+file = "kubejs/assets/railwaysuntold/lang/fr_fr.json"
+hash = "e150f6deeec1db9ce7e3594921c9e1490a0083a4076ae6cc63ad3383698675c2"
+
+[[files]]
+file = "kubejs/assets/railwaysuntold_additions/lang/fr_fr.json"
+hash = "e4806b37d2e3069738c05fa0b26ebd552c647cf8431454a452e0b6cecf8856d3"
 
 [[files]]
 file = "kubejs/assets/sable/lang/fr_fr.json"
@@ -663,6 +739,10 @@ hash = "b590cfc70d3a9b89320c2d3b1db17665edd5b5565fc5b21905bd329afd34b747"
 [[files]]
 file = "kubejs/assets/sereneseasons/lang/fr_fr.json"
 hash = "db0f2d8c309b24d6cf982daf39644ec4638cd5d34eb0866cd7fe666c686e9c08"
+
+[[files]]
+file = "kubejs/assets/shulkerboxtooltip/lang/fr_fr.json"
+hash = "e85e4d5b7407de7d895a4f73ddc356f1b846b7d890ffabbdc6aeb06bd4118024"
 
 [[files]]
 file = "kubejs/assets/simulated/lang/fr_fr.json"
@@ -713,8 +793,20 @@ file = "kubejs/assets/toms_storage/lang/fr_fr.json"
 hash = "af83ddadce30745753b20eda6409dad99d2e86574af774b01add8fd3f2d5d086"
 
 [[files]]
+file = "kubejs/assets/trading_floor/lang/fr_fr.json"
+hash = "6d3ac7c962c13ae04cbd4d1a93d0ba0257fce13f14efb1348112365d0edd15d8"
+
+[[files]]
+file = "kubejs/assets/trender/lang/fr_fr.json"
+hash = "b2f2d6decbdb71a21d1d42a9da770cc034b0f64a7c039a972c84e509c4cd519c"
+
+[[files]]
 file = "kubejs/assets/veil/lang/fr_fr.json"
 hash = "b3f09bc63242a7515b2cb4cc9382ea9f5b69858347a3f07b9e96a9f59d1cb565"
+
+[[files]]
+file = "kubejs/assets/visualworkbench/lang/fr_fr.json"
+hash = "593771305cb7115457fd64c36ad05eafd3eb9faab1f3a1704617634297315e9a"
 
 [[files]]
 file = "kubejs/assets/voicechat/lang/fr_fr.json"
@@ -1340,6 +1432,11 @@ hash = "0f6b24d697903dc261c881c4a736ec57c57ed5384f23d77ca9f6cec1e954d559"
 metafile = true
 
 [[files]]
+file = "mods/bellsandwhistles.pw.toml"
+hash = "84fd12a30b0fecc1df5c03b6ec1bcbd6263211e65e17f24075a54773af6bfaff"
+metafile = true
+
+[[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "9009bd5cdcdbc6bc47a7fbb203844d9a551accdd796877bdba5233ac14bbd513"
 metafile = true
@@ -1460,6 +1557,11 @@ hash = "616036c38fafbcaf00c0720d947ec39f571d885a014f0c81b5eeeb4193784e0e"
 metafile = true
 
 [[files]]
+file = "mods/copycats-aeronautics-weight.pw.toml"
+hash = "5e3e1807657a50181a5001027c888474c3b2852623cdb3f72b71cf10f49a0208"
+metafile = true
+
+[[files]]
 file = "mods/copycats.pw.toml"
 hash = "a21d5d0e2e3c1b5662ca1dc907cf496bb9f2a94b368a3f291967e8ba29043eaa"
 metafile = true
@@ -1467,6 +1569,11 @@ metafile = true
 [[files]]
 file = "mods/corpse.pw.toml"
 hash = "40fc9e871f9d9b2d327ca708a4881b682ca5fa1b9cfea53e2f67478b64783609"
+metafile = true
+
+[[files]]
+file = "mods/cosy-critters.pw.toml"
+hash = "2e88e6e081840379599f64b7c70c4660d654ea7d281af65102f939c2ca482424"
 metafile = true
 
 [[files]]
@@ -1487,6 +1594,11 @@ metafile = true
 [[files]]
 file = "mods/create-aero-radars.pw.toml"
 hash = "97283f14352e610f997bcd3dc59e0c7eb59c86e4cca78a20909fd7809a970d02"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-compatability.pw.toml"
+hash = "889d2c573f46e94318761c1e26d84e3c0520425cf12187f4b97ad3d51fd26363"
 metafile = true
 
 [[files]]
@@ -1710,6 +1822,11 @@ hash = "cba6d7d04b6068e326445672253580520a87873fc1065f7682984a9b9d91deb5"
 metafile = true
 
 [[files]]
+file = "mods/create-pattern-schematics.pw.toml"
+hash = "933542ef6b68b15a91e20f9d87cb1f03546d0081b12c2e489df860fd47b3be28"
+metafile = true
+
+[[files]]
 file = "mods/create-power-loader.pw.toml"
 hash = "3872eeb409b1a2b5acdf5a270825a9e703e240ee8230a08b820a21c19f14c27e"
 metafile = true
@@ -1785,6 +1902,11 @@ hash = "1020929f2bba90163e885d39fd698a5213b6207e86c5a6d9989a692ea7d6c7f4"
 metafile = true
 
 [[files]]
+file = "mods/create-trading-floor.pw.toml"
+hash = "73ffac269e3ce480c7dd3a17e7f2f027e73727fcc375d4e1cef4c490cdd36686"
+metafile = true
+
+[[files]]
 file = "mods/create-train-perspective.pw.toml"
 hash = "eb56d3c84b62fc2f080730464798f0c027f22e99b790a3d3c5a3cdf88d7e4d8c"
 metafile = true
@@ -1792,6 +1914,11 @@ metafile = true
 [[files]]
 file = "mods/create-tweaked-controllers.pw.toml"
 hash = "ace252b6b7f35f95dd486c4c38125be1ab4e5dd0edc30c7c665411f739c971f7"
+metafile = true
+
+[[files]]
+file = "mods/create-vibrant-vaults.pw.toml"
+hash = "edfc5cfd0224c45873c197c9352eadbe17171f737784581fe32ab963f59f27a3"
 metafile = true
 
 [[files]]
@@ -1825,6 +1952,11 @@ hash = "55f8f5c6152e6c0ceb79d38ca741910665754d1ce0755234b09318923e586e43"
 metafile = true
 
 [[files]]
+file = "mods/cut-through.pw.toml"
+hash = "27788d3b80ad864f96044fe2f86608e1d4204ba1c55f32c6953df7d1cc050f81"
+metafile = true
+
+[[files]]
 file = "mods/deeperdarker.pw.toml"
 hash = "ebb3df18070c94169933965dc6ef11ea68adb2b362623417e6b129f0af9a1bbe"
 metafile = true
@@ -1847,6 +1979,16 @@ metafile = true
 [[files]]
 file = "mods/durability-tooltip.pw.toml"
 hash = "8159b8505b549dbdc764b86cfe1381e4777459b2469f57346165a7cad8cbcf05"
+metafile = true
+
+[[files]]
+file = "mods/easy-shulker-boxes.pw.toml"
+hash = "89eab7f9d24b2d49f191847fc35f347e71eb4d9006a2a0e1a8fb3ee3ba7bbf58"
+metafile = true
+
+[[files]]
+file = "mods/effectual.pw.toml"
+hash = "8cf06d8be834b2621062db72b97636ad8312ed5d8b6323b61e1bc245c0c85652"
 metafile = true
 
 [[files]]
@@ -1882,6 +2024,11 @@ metafile = true
 [[files]]
 file = "mods/explosion-overhaul-a-new-level-of-destruction.pw.toml"
 hash = "9c0093c600ffa2e51804e15079de11e328e976a07048596e1f9d564898619fe2"
+metafile = true
+
+[[files]]
+file = "mods/explosive-enhancement-reforged.pw.toml"
+hash = "e9cfe24b3c21dd3b56c1833d0ada0f65f69ff24bdb8afd827f73b9775eb908fc"
 metafile = true
 
 [[files]]
@@ -1990,6 +2137,11 @@ hash = "333715a212cb64c13b8a6e5a2d944c50a5b0e4e970ea41b23567282815fc2b56"
 metafile = true
 
 [[files]]
+file = "mods/jade-addons.pw.toml"
+hash = "6fb17e32ab3d80cac0fce250a55c6b5314c1330c1689b22f2ed3a84e5263220c"
+metafile = true
+
+[[files]]
 file = "mods/jade.pw.toml"
 hash = "4b0a995f7cfa19951ba585aa320a1f4ef1a755a38b608adcff2f9ddd156b195b"
 metafile = true
@@ -2090,6 +2242,11 @@ hash = "8938803461885a35dfad98d00ba94ea4d56926b263e623a53b170a1997e9bb6d"
 metafile = true
 
 [[files]]
+file = "mods/ok-zoomer.pw.toml"
+hash = "55ef06345f5e222d564229ff9a2ee536d048d9ac2833de71d887d44b4dafd818"
+metafile = true
+
+[[files]]
 file = "mods/ore-zombies-the-extinto.pw.toml"
 hash = "3670bf5e1727061fcb524beb7d56d4f959aabf52fe24049a53d19eff6b2aa073"
 metafile = true
@@ -2105,6 +2262,16 @@ hash = "75d42d0a0bcfbcce376fb229f72b75e3a40592fdff5490b997c19ef439a9c832"
 metafile = true
 
 [[files]]
+file = "mods/particle-effects.pw.toml"
+hash = "de238fe06ad1707126c13d686328555fd8183392f7a7c0be5ff856d0a7faa367"
+metafile = true
+
+[[files]]
+file = "mods/pehkui.pw.toml"
+hash = "b850686e2fcbc612e5d5436be35ac9c48f33b37ae92aa7f268cf409076323be0"
+metafile = true
+
+[[files]]
 file = "mods/placebo.pw.toml"
 hash = "1762970777e293ba6d7a6a7b43dde2ac87604820e0fd90dd712beb744d068266"
 metafile = true
@@ -2115,8 +2282,18 @@ hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
 metafile = true
 
 [[files]]
+file = "mods/pocket.pw.toml"
+hash = "78011f9c3fbec9c93320a7f835c25e16381dd467fc8bb7e59c2467594489a975"
+metafile = true
+
+[[files]]
 file = "mods/polymorph.pw.toml"
 hash = "2e2af1cc71b69b26ae87bcb78d75fb0186d690ee1b85d8d4586eec112aa51b66"
+metafile = true
+
+[[files]]
+file = "mods/power-grid.pw.toml"
+hash = "acddd9bca673bbf549ad07ae4ab47617ac1dcb7a5235acab74c5ab4e53e96293"
 metafile = true
 
 [[files]]
@@ -2132,6 +2309,11 @@ metafile = true
 [[files]]
 file = "mods/project-explosive.pw.toml"
 hash = "88f3361d7cf77e7c8a546296a3c7a9cbf66fafdfeb4e7cf82bfd1de74b9a53c6"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "611f589f0874ce5db4a2241421ce4453f9efb5bedf57e3f24c039a16a0e604c5"
 metafile = true
 
 [[files]]
@@ -2192,6 +2374,11 @@ metafile = true
 [[files]]
 file = "mods/serene-seasons.pw.toml"
 hash = "eb438b9d4a49c0cc65560cdc295bf927cabc6f34319375a0cfbf3aece662add8"
+metafile = true
+
+[[files]]
+file = "mods/shulkerboxtooltip.pw.toml"
+hash = "6b3c65eef473d729266b7467ad8354afb40cdd03889205e35467cf323080fe77"
 metafile = true
 
 [[files]]
@@ -2270,6 +2457,11 @@ hash = "bf5f39820df498c7631fa699aeb2b6f7b1ba1ae5055a33f92878f187fde25dc4"
 metafile = true
 
 [[files]]
+file = "mods/tlib.pw.toml"
+hash = "714e2e93973c891ba5a9233389e5f1999b4b58e06a9a67d1a7f62826dc71d535"
+metafile = true
+
+[[files]]
 file = "mods/toms-storage.pw.toml"
 hash = "af78bb5306aa88d89bdc0274e6a9541283e61e39e2df92516a965866b79ff3bd"
 metafile = true
@@ -2277,6 +2469,16 @@ metafile = true
 [[files]]
 file = "mods/towns-and-towers.pw.toml"
 hash = "318b2826182182ff4acd58ffe985c58fe2b403941ec36f41303217bed275feea"
+metafile = true
+
+[[files]]
+file = "mods/visual-workbench.pw.toml"
+hash = "204bfb2f2c871461138e2526e0ee521985ddfbb01eab388f998cc806a124559b"
+metafile = true
+
+[[files]]
+file = "mods/visuality-reforged.pw.toml"
+hash = "6c16cc2db95f2d965494434a2548125de5b7c89b91ba7bcea6ad97192380b5a9"
 metafile = true
 
 [[files]]

@@ -1,0 +1,13 @@
+name = "TLib"
+filename = "tlib-neoforge-1.5.0-1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "1de22b1c2fe6b04bb4e10bd4e894c8faed668fda"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8226091
+project-id = 1245655

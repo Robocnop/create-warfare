@@ -1,0 +1,13 @@
+name = "Create: Pocket Sized"
+filename = "pocket-0.22.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f55cdb5351477ae74c7ca0e9373c50cd9522a483"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9235607
+project-id = 1672138

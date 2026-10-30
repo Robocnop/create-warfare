@@ -79,7 +79,7 @@ CHAPTERS = [
         ("stock_link", "create:stock_link", 1, "Liaison de stock", "Commandes à distance de ton stock.", ["packager"], 100),
         ("schematicannon", "create:schematicannon", 1, "Schématicanon", "Construit automatiquement tes schémas.", ["brass_casing"], 150),
     ]),
-    ("03_electricite", "Électricité", "Produire et transporter de l'énergie : Crafts & Additions, New Age, TFMG.", "createaddition:alternator", [
+    ("03_electricite", "Électricité", "Produire et transporter de l'énergie : Crafts & Additions, New Age, TFMG, Power Grid.", "createaddition:alternator", [
         ("copper_wire", "create_new_age:copper_wire", 16, "Fil de cuivre", "La base des circuits électriques.", [], 50),
         ("alternator", "createaddition:alternator", 1, "Alternateur", "Transforme la rotation en énergie (FE).", ["copper_wire"], 150),
         ("electric_motor", "createaddition:electric_motor", 1, "Moteur électrique", "Et l'inverse : l'énergie en rotation.", ["alternator"], 150),
@@ -90,6 +90,11 @@ CHAPTERS = [
         ("magnet", "create_new_age:layered_magnet", 4, "Aimants", "Le cœur des générateurs New Age.", ["generator_coil"], 100),
         ("energiser", "create_new_age:basic_energiser", 1, "Énergiseur", "Surcharge les matériaux avec l'électricité.", ["magnet"], 150),
         ("tfmg_generator", "tfmg:generator", 1, "Générateur TFMG", "Réseau électrique industriel de TFMG.", ["alternator"], 200),
+        ("pg_wire", "powergrid:wire", 16, "Fil de cuivre (Power Grid)", "Power Grid simule vraiment l'électricité : le courant ne passe que si le circuit forme une boucle, et un long fil perd de la tension.", [], 50),
+        ("pg_generator", "powergrid:generator_clutch", 1, "Générateur Power Grid", "Embrayage, rotors, commutateur et bobinages : le générateur se construit pièce par pièce (voir le ponder).", ["pg_wire"], 200),
+        ("pg_motor", "powergrid:electric_motor", 1, "Moteur électrique (Power Grid)", "Sa vitesse dépend de la tension fournie.", ["pg_generator"], 150),
+        ("pg_solar", "powergrid:solar_panel", 4, "Panneaux solaires", "De l'énergie sans carburant, si le soleil est dégagé.", ["pg_wire"], 150),
+        ("pg_inverter", "powergrid:fe_inverter", 1, "Onduleur FE", "Fait passer l'énergie FE des autres mods dans un réseau Power Grid.", ["pg_generator", "alternator"], 200),
     ]),
     ("04_industrie", "Industrie lourde & trains", "Acier, pétrole, moteurs et chemins de fer.", "tfmg:steel_ingot", [
         ("coke", "tfmg:coal_coke", 32, "Coke", "Four à coke : carburant du haut fourneau.", ["02_laiton:brass"], 100),
@@ -138,6 +143,7 @@ CHAPTERS = [
         ("thruster", "createpropulsion:thruster", 1, "Propulseur", "Propulsion à carburant liquide. Boîtier et pompes en acier.", ["smart_propeller", "04_industrie:steel"], 250),
         ("wing", "createpropulsion:wing", 8, "Ailes", "Portance pour les vrais avions.", ["thruster"], 200),
         ("jetpack", "create_jetpack:jetpack", 1, "Jetpack", "Fonctionne à l'air comprimé.", ["02_laiton:precision_mechanism"], 150),
+        ("compression_gun", "pocket:compression_gun", 1, "Canon de compression", "Rétrécit ou agrandit un engin (de 1/4 à 4 fois sur ce serveur). Fonctionne au mélange de lévitite.", ["levitite"], 250),
     ]),
     ("07_blindes", "Blindés & véhicules", "Roues, chenilles, blindage et tourelles.", "offroad:tire", [
         ("wheel_mount", "offroad:wheel_mount", 4, "Support de roue", "La base de tout véhicule terrestre.", ["04_industrie:steel"], 150),

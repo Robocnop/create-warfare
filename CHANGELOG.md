@@ -2,6 +2,26 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.7.0 — 2026-10-30
+
+- **Create: Power Grid** : électricité simulée pour de vrai (loi d'Ohm, circuits en boucle, pertes dans les longs fils,
+  transformateurs). Générateurs à construire pièce par pièce, moteurs électriques, servomoteurs, panneaux solaires,
+  circuits imprimés, perceuse et scie sur batterie, Electro-Zapper. Son onduleur FE le relie aux autres mods électriques.
+  Cinq quêtes au chapitre Électricité.
+- **Create: Pocket Sized** (+ Pehkui) : rétrécir ou agrandir les engins Sable, les ranger dans une boîte, les coller
+  entre échelles différentes. Réglé pour le PvP : engins de 1/4 à 4 fois, joueur de 1/2 à 2 fois, et **impossible de
+  redimensionner un autre joueur**. Une quête au chapitre Aviation (canon de compression).
+- Repris du modpack Create: Complete : Create Aeronautics Compatibility, Copycats+ aeronautics weight (poids réalistes
+  des blocs Copycats+ sur les engins), Bells & Whistles (décor de trains), Vibrant Vaults (coffres-forts de couleur,
+  boîtiers en zinc), Pattern Schematics (schémas répétés), Trading Floor (commerce automatisé avec les villageois),
+  Jade Addons, Shulker Box Tooltip, Easy Shulker Boxes, Visual Workbench.
+- Côté client : Explosive Enhancement (explosions), Cut Through (frapper à travers l'herbe), Ok Zoomer (zoom),
+  Effectual, Visuality, Cosy Critters et Particle Effects (ambiance).
+- **Traductions françaises** : 2 059 textes ajoutés (nouveaux mods et ceux de la 1.6.0 : Numismatics, CBC Ballistics,
+  CBC Optics, Firepower Components, plus des restes de Create Radar, Railways Untold, Avionics...).
+- Testé sur le serveur local : démarrage, 212 quêtes valides, dépendances des mods client vérifiées.
+  Pas encore essayé en jeu.
+
 ## Launcher 1.1.1 — 2026-10-29
 
 - **Thème Halloween**, actif tout seul du 15 octobre au 5 novembre : engrenages-citrouilles animés sous la lune,

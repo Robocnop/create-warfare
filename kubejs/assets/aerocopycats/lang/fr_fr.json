@@ -1,0 +1,12 @@
+{
+ "aerocopycats.configuration.items": "Liste d'objets",
+ "aerocopycats.configuration.logDirtBlock": "Journaliser le bloc de terre",
+ "aerocopycats.configuration.magicNumber": "Nombre magique",
+ "aerocopycats.configuration.magicNumberIntroduction": "Texte du nombre magique",
+ "aerocopycats.configuration.section.aerocopycats.common.toml": "Configuration d'aero_copycats",
+ "aerocopycats.configuration.section.aerocopycats.common.toml.title": "Configuration d'aero_copycats",
+ "aerocopycats.configuration.title": "Configuration d'aero_copycats",
+ "block.aerocopycats.example_block": "Bloc d'exemple",
+ "item.aerocopycats.example_item": "Objet d'exemple",
+ "itemGroup.aerocopycats": "Onglet du mod d'exemple"
+}

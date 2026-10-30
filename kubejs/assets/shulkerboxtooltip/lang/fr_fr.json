@@ -1,0 +1,5 @@
+{
+ "shulkerboxtooltip.colors.shulkerboxtooltip.default.generic_container": "Conteneur générique",
+ "shulkerboxtooltip.config.option.preview.generic_container_preview": "Aperçu des conteneurs génériques",
+ "shulkerboxtooltip.config.option.preview.generic_container_preview.tooltip": "Si activé, les objets avec le composant de données conteneur\nqui ne sont pas pris en charge explicitement afficheront quand même un aperçu,\ncomme une boîte de Shulker."
+}

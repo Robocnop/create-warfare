@@ -1,0 +1,9 @@
+{
+ "item.container.tooltip.hold": "Maintenez",
+ "item.container.tooltip.press": "Appuyez sur",
+ "item.container.tooltip.revealContents": "%s %s pour afficher le contenu",
+ "key.categories.iteminteractions": "Item Interactions",
+ "key.toggleCarriedItemTooltips": "Infobulles de l'objet porté",
+ "key.toggleSelectedItemTooltips": "Infobulles de l'objet sélectionné",
+ "key.toggleVisualItemContents": "Contenu visuel des objets"
+}

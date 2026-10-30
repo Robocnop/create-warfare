@@ -96,7 +96,7 @@
 	quest.473CCCE99F11FECC.title: "Schématicanon"
 	quest.473CCCE99F11FECC.quest_desc: ["Construit automatiquement tes schémas."]
 	chapter.681D600432C87CB6.title: "Électricité"
-	chapter.681D600432C87CB6.chapter_subtitle: ["Produire et transporter de l'énergie : Crafts \\& Additions, New Age, TFMG."]
+	chapter.681D600432C87CB6.chapter_subtitle: ["Produire et transporter de l'énergie : Crafts \\& Additions, New Age, TFMG, Power Grid."]
 	quest.04772DFD2EA8E417.title: "Fil de cuivre"
 	quest.04772DFD2EA8E417.quest_desc: ["La base des circuits électriques."]
 	quest.697CD161FF05B721.title: "Alternateur"
@@ -117,6 +117,16 @@
 	quest.1779809A713F2A43.quest_desc: ["Surcharge les matériaux avec l'électricité."]
 	quest.637344CE2EF36490.title: "Générateur TFMG"
 	quest.637344CE2EF36490.quest_desc: ["Réseau électrique industriel de TFMG."]
+	quest.7DA093DB118A42DD.title: "Fil de cuivre (Power Grid)"
+	quest.7DA093DB118A42DD.quest_desc: ["Power Grid simule vraiment l'électricité : le courant ne passe que si le circuit forme une boucle, et un long fil perd de la tension."]
+	quest.3BC12EF7F7D14504.title: "Générateur Power Grid"
+	quest.3BC12EF7F7D14504.quest_desc: ["Embrayage, rotors, commutateur et bobinages : le générateur se construit pièce par pièce (voir le ponder)."]
+	quest.6EE17B94C458BBF3.title: "Moteur électrique (Power Grid)"
+	quest.6EE17B94C458BBF3.quest_desc: ["Sa vitesse dépend de la tension fournie."]
+	quest.3F0FD706BDA92D56.title: "Panneaux solaires"
+	quest.3F0FD706BDA92D56.quest_desc: ["De l'énergie sans carburant, si le soleil est dégagé."]
+	quest.78C49D56D67D20E5.title: "Onduleur FE"
+	quest.78C49D56D67D20E5.quest_desc: ["Fait passer l'énergie FE des autres mods dans un réseau Power Grid."]
 	chapter.7F2E71C38EE73946.title: "Industrie lourde \\& trains"
 	chapter.7F2E71C38EE73946.chapter_subtitle: ["Acier, pétrole, moteurs et chemins de fer."]
 	quest.4AE6F35EE70BD1F5.title: "Coke"
@@ -207,6 +217,8 @@
 	quest.2CAF69BC04CF5457.quest_desc: ["Portance pour les vrais avions."]
 	quest.64BB7E9FFD6811F8.title: "Jetpack"
 	quest.64BB7E9FFD6811F8.quest_desc: ["Fonctionne à l'air comprimé."]
+	quest.63E37FB26871FA09.title: "Canon de compression"
+	quest.63E37FB26871FA09.quest_desc: ["Rétrécit ou agrandit un engin (de 1/4 à 4 fois sur ce serveur). Fonctionne au mélange de lévitite."]
 	chapter.1AF3C82F48B4688F.title: "Blindés \\& véhicules"
 	chapter.1AF3C82F48B4688F.chapter_subtitle: ["Roues, chenilles, blindage et tourelles."]
 	quest.13E7484E1F2FE580.title: "Support de roue"

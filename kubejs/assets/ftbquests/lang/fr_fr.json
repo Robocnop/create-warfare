@@ -157,6 +157,7 @@
  "ftbquests.file.defaults.quest_disable_jei": "Quête « Désactiver la recette JEI »",
  "ftbquests.file.defaults.quest_shape": "Forme de quête",
  "ftbquests.file.defaults.reward_team": "Récompense « Récompense d'équipe »",
+ "ftbquests.file.defaults.reward_team_by_type": "Récompense d'équipe par type",
  "ftbquests.file.detection_delay": "Intervalle minimal de détection automatique des objets",
  "ftbquests.file.detection_delay.tooltip": "Intervalle minimal (en ticks) entre les vérifications de l'inventaire d'un joueur quand il change\nDes valeurs plus élevées ménagent le TPS du serveur, surtout si les inventaires des joueurs changent fréquemment, mais retardent les messages d'achèvement automatique des quêtes.",
  "ftbquests.file.disable_gui": "Désactiver l'interface",

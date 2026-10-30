@@ -1,0 +1,53 @@
+#The smallest and largest scale each device can reach.
+#Defaults are Pym's well-tested band, 1/16 (0.0625) to 8, except the Creative Shrinkray and compression guns which reach 1/32 (0.03125)
+#and the Personal Subspace Compressor which reaches 1/64 (0.015625) to 16.
+#Wider values are allowed but less tested.
+[ranges]
+
+	[ranges.creativeShrinkRay]
+		#Creative Shrinkray: smallest scale.
+		# Default: 0.03125
+		# Range: 1.0E-6 ~ 1000000.0
+		min = 0.03125
+		#Creative Shrinkray: largest scale.
+		# Default: 8.0
+		# Range: 1.0E-6 ~ 1000000.0
+		max = 8.0
+
+	[ranges.compressionGun]
+		#Compression guns: smallest scale.
+		# Default: 0.03125
+		# Range: 1.0E-6 ~ 1000000.0
+		min = 0.25
+		#Compression guns: largest scale.
+		# Default: 8.0
+		# Range: 1.0E-6 ~ 1000000.0
+		max = 4.0
+
+	[ranges.personalCompressor]
+		#Personal Subspace Compressor: smallest scale.
+		# Default: 0.015625
+		# Range: 1.0E-6 ~ 1000000.0
+		min = 0.5
+		#Personal Subspace Compressor: largest scale.
+		# Default: 16.0
+		# Range: 1.0E-6 ~ 1000000.0
+		max = 2.0
+
+	[ranges.compressors]
+		#Static and Portable Subspace Compressors: smallest scale.
+		# Default: 0.0625
+		# Range: 1.0E-6 ~ 1000000.0
+		min = 0.25
+		#Static and Portable Subspace Compressors: largest scale.
+		# Default: 8.0
+		# Range: 1.0E-6 ~ 1000000.0
+		max = 4.0
+
+#Controls whether players may resize other players.
+#ON: always allowed; OFF: always blocked; PERSONAL_ON/OFF: PSC owners choose, using that default.
+[pvpScaling]
+	#Allowed Values: ON, OFF, PERSONAL_ON, PERSONAL_OFF
+	mode = "OFF"
+	#Whether personal-mode players may change their PVP Scaling preference from the PSC menu.
+	allowPlayersToToggleInPsc = false

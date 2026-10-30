@@ -1,0 +1,22 @@
+{
+ "block.create_avionics.almanac": "Almanach",
+ "block.create_avionics.avionics_controller": "Contrôleur avionique",
+ "block.create_avionics.barometer": "Baromètre",
+ "block.create_avionics.hygrometer": "Hygromètre",
+ "block.create_avionics.radar_mk1": "Radar Mk.1",
+ "block.create_avionics.rain_gauge": "Pluviomètre",
+ "block.create_avionics.thermometer": "Thermomètre",
+ "create_avionics.announce.community": "Discord",
+ "create_avionics.announce.community_url": "https://discord.gg/yZxktK59ux",
+ "create_avionics.announce.guides": "Guides",
+ "create_avionics.announce.summary": "instruments météo, un contrôleur qui relie tout un navire à vos ordinateurs, et un radar",
+ "create_avionics.announce.turn_off": "Affiché une fois par version. Pour le couper, mettez announceUpdates = false dans create_avionics-client.toml.",
+ "create_avionics.announce.updated": "Create: Avionics %s : %s.",
+ "create_avionics.announce.whats_new": "Nouveautés",
+ "create_avionics.controller.bow_changed": "Proue du navire placée dans la direction de ce contrôleur ; les noms des périphériques suivent",
+ "create_avionics.controller.bow_followed": "Suit la proue du navire : voir la flèche sur le dessus",
+ "create_avionics.controller.bow_set": "Proue du navire définie : direction de ce contrôleur",
+ "create_avionics.controller.transponder_off": "Transpondeur éteint : silence radio",
+ "create_avionics.controller.transponder_on": "Transpondeur allumé : les radars peuvent identifier ce navire",
+ "itemGroup.create_avionics": "Create: Avionics"
+}

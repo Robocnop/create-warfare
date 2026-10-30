@@ -112,5 +112,13 @@
 			x: 0.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["3518B5471B7B5FB7"]
+			id: "63E37FB26871FA09"
+			rewards: [{ id: "49024ED711205805", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "517474B41A2ACC5A", item: { count: 1, id: "pocket:compression_gun" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
+		}
 	]
 }

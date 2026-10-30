@@ -1,7 +1,7 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 206 mods et packs.
-Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29).
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 228 mods et packs.
+Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
 - **Écartés** : Mi Bombo, Create: Steel Armor Blocks, SSRD, StickyWheels (licence « All Rights Reserved » et absents
@@ -11,6 +11,16 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
   nouveaux chunks seulement), Create: Numismatics (monnaie), performances (Create: Threaded Trains, Lithium, AllTheLeaks,
   Alternate Current ; côté client BadOptimizations et Create Better FPS). Testé sur serveur local (démarrage et
   pré-génération de 10 000 chunks à 20 TPS) ; trains, viseurs et calculateurs pas encore essayés en jeu.
+- **1.7.0** : Create: Power Grid (électricité simulée : circuits en boucle, pertes en ligne, générateurs, moteurs,
+  panneaux solaires, onduleur FE vers les autres mods, Electro-Zapper), Create: Pocket Sized + Pehkui (rétrécir ou
+  agrandir les engins Sable, les ranger dans une boîte). Pocket Sized est réglé pour le PvP dans `config/pocket-server.toml` :
+  engins de 1/4 à 4 fois, joueur de 1/2 à 2 fois, impossible de redimensionner un autre joueur. Repris du modpack
+  Create: Complete : Aeronautics Compatibility, Copycats+ aeronautics weight, Bells & Whistles, Vibrant Vaults,
+  Pattern Schematics, Trading Floor, Jade Addons, Shulker Box Tooltip, Easy Shulker Boxes, Visual Workbench ; côté client
+  Explosive Enhancement, Cut Through, Ok Zoomer, Effectual, Visuality, Cosy Critters, Particle Effects.
+  **Écartés** : Create: Extra Gauges (son Deployer API se déclare incompatible avec Create Factory Logistics),
+  l'éclairage dynamique (Sodium Dynamic Lights exige Sodium Options API, que Reese's Sodium Options 2.2.4 déclare
+  incompatible ; LambDynamicLights exige Fabric API), Freecam et Fullbright (triche en PvP).
 - **Absents en 1.21.1 NeoForge** : CBC Nukes, Create: Propulsion (remplacé par Create Propulsion: Simulated),
   Create Interactive (remplacé par Aeronautics/Sable), Create Misc & Things, Create Unlimited.
 - **Erreurs connues, sans gravité** (le serveur démarre) : 4 recettes de CBC Advanced Technologies (roquettes),
@@ -43,6 +53,9 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 
 | Mod | Fichier | Côté | Source |
 |---|---|---|---|
+| [EMF] Entity Model Features [Fabric & Forge] | `entity_model_features-3.3.12-1.21-neoforge.jar` | client seul | CurseForge |
+| [ETF] Entity Texture Features - [Fabric & Forge] | `entity_texture_features-7.2.6-1.21-neoforge.jar` | client seul | CurseForge |
+| [NTGL] NukaTeam's Gun Lib | `ntgl-1.21.1-3.2.0.jar` | client + serveur | CurseForge |
 | Advanced Weather | `advancedweather-0.1.2-cw.jar` | client + serveur | CurseForge, patché (mixins client), inclus dans le zip |
 | AllTheLeaks (Memory Leak Fix) | `alltheleaks-1.1.14-1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Almost Unified | `almostunified-neoforge-1.21.1-1.4.2.jar` | client + serveur | CurseForge |
@@ -60,110 +73,127 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Burnt + Additions | `burnt-1.10.5.3-neoforge-1.21.1.jar` | client + serveur | CurseForge |
 | Carry On | `carryon-neoforge-1.21.1-2.2.6.13.jar` | client + serveur | CurseForge |
 | CBC Ballistics: NeoForge Port | `cbc_ballistics-1.3.0a-neoforge-1.21.1.jar` | client + serveur | CurseForge |
+| CBC Neo Warfare | `cbcmodernwarfare-0.0.6v+mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | CBC Optics | `cbcoptics-0.2.2-all.jar` | client + serveur | CurseForge |
+| CBC Terminal Ballistics | `cbc_terminal_ballistics-2.3.0.jar` | client + serveur | CurseForge |
 | CBC: Firepower Components | `cbc_firepower_components-neoforge-1.21.1-0.4.4+mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | CBC: Locometal Armor | `locometal_armor-2.0.0.jar` | client + serveur | Modrinth (inclus dans le zip) |
-| CBC Neo Warfare | `cbcmodernwarfare-0.0.6v+mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
-| CBC Terminal Ballistics | `cbc_terminal_ballistics-2.3.0.jar` | client + serveur | CurseForge |
 | CC: Tweaked | `cc-tweaked-1.21.1-forge-1.120.2.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | CC:CBC | `cc-cbc-v1.1.1-1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Chat Heads | `chat_heads-0.15.7-neoforge-1.21.jar` | client seul | CurseForge |
-| Create Better FPS | `createbetterfps-1.21.1-1.1.5.jar` | client seul | CurseForge |
-| Create Big Cannons: Security Breach | `create_big_cannons_security_breach-1.0.jar` | client + serveur | CurseForge |
-| Create: Avionics | `create_avionics-neoforge-1.21.1-0.7.0.jar` | client + serveur | Modrinth (inclus dans le zip) |
-| Create: CC Better Recipes | `ccbr-1.2.1-neoforge-1.21.1.jar` | client + serveur | Modrinth (inclus dans le zip) |
-| Create: Gunsmithing | `create-gunsmithing-1.21.1-1.4.9.jar` | client + serveur | CurseForge |
 | Chunky (Forge/NeoForge) | `Chunky-NeoForge-1.4.23.jar` | serveur seul | CurseForge |
 | Cloth Config API (Fabric/Forge/NeoForge) | `cloth-config-15.0.140-neoforge.jar` | client + serveur | CurseForge |
 | Clumps | `Clumps-neoforge-1.21.1-19.0.0.1.jar` | client + serveur | CurseForge |
 | Comforts | `comforts-neoforge-9.0.5+1.21.1.jar` | client + serveur | CurseForge |
+| Complementary Shaders - Reimagined (shader) | `ComplementaryReimagined_r5.9.3.zip` | client seul | CurseForge |
 | Configured | `configured-neoforge-1.21.1-2.6.3.jar` | client + serveur | CurseForge |
 | Connectivity | `connectivity-1.21.1-7.7.jar` | client + serveur | CurseForge |
 | Controlling | `Controlling-neoforge-1.21.1-19.0.5.jar` | client seul | CurseForge |
-| Create: Copycats+ | `copycats-3.0.9+mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
+| Copycats+ aeronautics weight | `aerocopycats-1.1.1.jar` | client + serveur | CurseForge |
 | Corpse | `corpse-neoforge-1.21.1-1.1.22.jar` | client + serveur | CurseForge |
+| Cosy Critters & Creepy Crawlies | `cosycritters-0.3.3+1.21.1-neoforge.jar` | client seul | CurseForge |
 | Crash Assistant | `CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar` | client seul | CurseForge |
-| Create: Additional Logistics | `createadditionallogistics-1.21.1-1.4.5.jar` | client + serveur | CurseForge |
+| Create | `create-1.21.1-6.0.10.jar` | client + serveur | CurseForge |
+| Create : radiologistics | `CreateRadiologistics-1.1.4.jar` | client + serveur | CurseForge |
 | Create Additions - Sable Compat | `sable_createaddition_compat-0.1.13.jar` | client + serveur | CurseForge |
 | Create Aero Radars | `create_aero_radar-0.1.1-1.21.1.jar` | client + serveur | CurseForge |
-| Create Aeronautics Structures | `cr_aero_structures.jar` | client + serveur | CurseForge |
 | Create Aeronautics | `create-aeronautics-bundled-1.21.1-1.3.2.jar` | client + serveur | CurseForge |
-| Create: AeroWarptics | `aerowarptics-1.3.0.jar` | client + serveur | CurseForge |
-| Create: Armored Constructs | `arcon-1.0.0.jar` | client + serveur | CurseForge |
+| Create Aeronautics Structures | `cr_aero_structures.jar` | client + serveur | CurseForge |
+| Create Aeronautics: Compatibility | `aeronauticscompat-1.1.3.jar` | client + serveur | CurseForge |
+| Create Better FPS | `createbetterfps-1.21.1-1.1.5.jar` | client seul | CurseForge |
 | Create Better Motors (Crafts & Additions Addon) | `create_better_motors-4.0.0.jar` | client + serveur | CurseForge |
-| Create Big Cannons: Advanced Technologies | `cbc_at_Neoforge_1.21.1_0.1.4c.jar` | client + serveur | CurseForge |
 | Create Big Cannons | `createbigcannons-5.11.7+mc.1.21.1.jar` | client + serveur | CurseForge |
-| Create: Bits 'n' Bobs | `bits_n_bobs-2.3.5.jar` | client + serveur | CurseForge |
-| Create: Blocks & Bogies | `create_bb-1.0.8-1.21.1.jar` | client + serveur | CurseForge |
-| Create: Central Kitchen | `create-central-kitchen-2.6.2b.jar` | client + serveur | CurseForge |
+| Create Big Cannons: Advanced Technologies | `cbc_at_Neoforge_1.21.1_0.1.4c.jar` | client + serveur | CurseForge |
+| Create Big Cannons: Security Breach | `create_big_cannons_security_breach-1.0.jar` | client + serveur | CurseForge |
 | Create Cobblestone | `createcobblestone-1.5.1+neoforge-1.21.1-160.jar` | client + serveur | CurseForge |
 | Create Confectionery | `create-confectionery1.21.1_v1.1.3b.jar` | client + serveur | CurseForge |
+| Create Crafts & Additions | `createaddition-1.7.2.jar` | client + serveur | CurseForge |
+| Create Deco | `createdeco-2.1.3.jar` | client + serveur | CurseForge |
+| Create Encased | `Create Encased-1.21.1-1.10.0-fix1.jar` | client + serveur | CurseForge |
+| Create Factory Logistics | `create_factory_logistics-1.21.1-1.6.1-all.jar` | client + serveur | CurseForge |
+| Create Goggles (Create Plus) | `creategoggles-1.21.1-6.1.1-[NEOFORGE].jar` | client + serveur | CurseForge |
+| Create Jetpack | `create_jetpack-forge-5.2.1.jar` | client + serveur | CurseForge |
+| Create Mechanical Extruder | `create_mechanical_extruder-1.21.1-2.2.2-6.0.10.jar` | client + serveur | CurseForge |
+| Create Missiles | `createmissiles-1.0.3+neoforge-1.21.1.jar` | client + serveur | CurseForge |
+| Create Nuclear | `createnuclear-2.0.0-neoforge.jar` | client + serveur | CurseForge |
+| Create Ore Excavation | `createoreexcavation-1.21-1.6.8.jar` | client + serveur | CurseForge |
+| Create Propulsion: Simulated | `createpropulsion-1.1.5.jar` | client + serveur | CurseForge |
+| Create Railways Navigator | `createrailwaysnavigator-neoforge-1.21.1-beta-0.10.0-C6.jar` | client + serveur | CurseForge |
+| Create Slice & Dice | `sliceanddice-4.3.4-neoforge.jar` | client + serveur | CurseForge |
+| Create Stuff 'N Additions | `create-stuff-additions1.21.1_v2.1.4b.jar` | client + serveur | CurseForge |
+| Create: Additional Logistics | `createadditionallogistics-1.21.1-1.4.5.jar` | client + serveur | CurseForge |
+| Create: AeroWarptics | `aerowarptics-1.3.0.jar` | client + serveur | CurseForge |
+| Create: Armored Constructs | `arcon-1.0.0.jar` | client + serveur | CurseForge |
+| Create: Avionics | `create_avionics-neoforge-1.21.1-0.7.0.jar` | client + serveur | Modrinth (inclus dans le zip) |
+| Create: Bells & Whistles | `bellsandwhistles-0.4.7-1.21.1.jar` | client + serveur | CurseForge |
+| Create: Bits 'n' Bobs | `bits_n_bobs-2.3.5.jar` | client + serveur | CurseForge |
+| Create: Blocks & Bogies | `create_bb-1.0.8-1.21.1.jar` | client + serveur | CurseForge |
+| Create: CC Better Recipes | `ccbr-1.2.1-neoforge-1.21.1.jar` | client + serveur | Modrinth (inclus dans le zip) |
+| Create: Central Kitchen | `create-central-kitchen-2.6.2b.jar` | client + serveur | CurseForge |
 | Create: Configurable Machine Outputs - Now for Millstones , Presses and Crushing Wheels ! | `createcmo-1.3.0-create-6.0.x-neoforge-1.21.1.jar` | client + serveur | CurseForge |
 | Create: Connected | `create_connected-1.3.3-mc1.21.1.jar` | client + serveur | CurseForge |
 | Create: Copper & Zinc | `create_copper_and_zinc-2.0.0-neoforge-1.21.1.jar` | client + serveur | CurseForge |
+| Create: Copycats+ | `copycats-3.0.9+mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Create: Crafts & Additions and Aeronautics Compat | `aeroadditionbridge-1.0.0.jar` | client + serveur | CurseForge |
-| Create Deco | `createdeco-2.1.3.jar` | client + serveur | CurseForge |
 | Create: Design n' Decor | `Design-n-Decor-1.21.1-2.2b.jar` | client + serveur | CurseForge |
 | Create: Diesel Generators | `createdieselgenerators-1.21.1-1.3.15.jar` | client + serveur | CurseForge |
 | Create: Dragons Plus | `CreateDragonsPlus-1.11.9.jar` | client + serveur | CurseForge |
 | Create: Dreams & Desires | `DnDesires-1.21.1-2.3a-BETA.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | Create: Easy Structures | `create_easy_structures-0.2a-neoforge-1.21.1.jar` | client + serveur | CurseForge |
-| Create Encased | `Create Encased-1.21.1-1.10.0-fix1.jar` | client + serveur | CurseForge |
 | Create: Enchantable Machinery | `createenchantablemachinery-3.6.0+mc1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Create: Enchantment Industry | `create-enchantment-industry-2.5.4b.jar` | client + serveur | CurseForge |
 | Create: Escalated | `escalated-1.3.2-mc.1.21.1.jar` | client + serveur | CurseForge |
-| Create Factory Logistics | `create_factory_logistics-1.21.1-1.6.1-all.jar` | client + serveur | CurseForge |
 | Create: Framed | `createframed-1.21.1-1.8.2.jar` | client + serveur | CurseForge |
 | Create: Garnished | `garnished-2.1.9.2+1.21.1-neoforged.jar` | client + serveur | Modrinth (inclus dans le zip) |
-| Create Goggles (Create Plus) | `creategoggles-1.21.1-6.1.1-[NEOFORGE].jar` | client + serveur | CurseForge |
-| Create Jetpack | `create_jetpack-forge-5.2.1.jar` | client + serveur | CurseForge |
+| Create: Gunsmithing | `create-gunsmithing-1.21.1-1.4.9.jar` | client + serveur | CurseForge |
+| Create: Hypertubes | `create_hypertube-0.6.0-NEOFORGE.jar` | client + serveur | Modrinth (inclus dans le zip) |
+| Create: Interiors | `interiors-0.6.1 v3.jar` | client + serveur | CurseForge |
 | Create: Lift n' Load |  Simulated/Aeronautics Addon | `Lift-n-Load-1.21.1-1.1.prev.b.jar` | client + serveur | CurseForge |
 | Create: Liquid Fuel | `createliquidfuel-3.0.0-1.21.1.jar` | client + serveur | CurseForge |
-| Create Mechanical Extruder | `create_mechanical_extruder-1.21.1-2.2.2-6.0.10.jar` | client + serveur | CurseForge |
-| Create Missiles | `createmissiles-1.0.3+neoforge-1.21.1.jar` | client + serveur | CurseForge |
 | Create: Mobile Packages | `create_mobile_packages-1.21.1-0.7.8.jar` | client + serveur | CurseForge |
 | Create: More Drill Heads | `createmoredrillheads-2.1.0-1.21.1.jar` | client + serveur | CurseForge |
 | Create: Netherless ((Neo)Forge) | `create_netherless-2.0.0-1.21.1.jar` | client + serveur | CurseForge |
 | Create: New Age | `create-new-age-1.2.0+neoforge-mc1.21.1.jar` | client + serveur | CurseForge |
-| Create Ore Excavation | `createoreexcavation-1.21-1.6.8.jar` | client + serveur | CurseForge |
 | Create: Numismatics | `CreateNumismatics-1.1.0+neoforge-mc1.21.1.jar` | client + serveur | CurseForge |
+| Create: Pattern Schematics | `create_pattern_schematics-2.0.10.jar` | client + serveur | CurseForge |
+| Create: Pocket Sized | `pocket-0.22.0.jar` | client + serveur | CurseForge |
+| Create: Power Grid | `powergrid-mc1.21.1-0.6.2.jar` | client + serveur | CurseForge |
 | Create: Power Loader | `create_power_loader-2.0.5-mc1.21.1.jar` | client + serveur | CurseForge |
-| Create Propulsion: Simulated | `createpropulsion-1.1.5.jar` | client + serveur | CurseForge |
 | Create: Radars | `create_radar-5.0.2-1.21.1.jar` | client + serveur | CurseForge |
-| Create : radiologistics | `CreateRadiologistics-1.1.4.jar` | client + serveur | CurseForge |
-| Create Railways Navigator | `createrailwaysnavigator-neoforge-1.21.1-beta-0.10.0-C6.jar` | client + serveur | CurseForge |
 | Create: Recipe Conflict Fixer | `createrecipeconflictfixer-2.0.0.jar` | client + serveur | CurseForge |
 | Create: Rustic Structures | `create_rustic_structures-1.0.1-neoforge-1.21.1.jar` | client + serveur | CurseForge |
 | Create: Simulated Thrusters | `create_simulated_thrusters-1.21.1-NeoForge-1.1.1.jar` | client + serveur | CurseForge |
 | Create: Sophisticated Backpacks Compat | `create_sophback_compat-1.0.jar` | client + serveur | CurseForge |
-| Create: Structures Arise | `Create-Structures-Arise-1.21.1-NeoForge-176.49.50.jar` | client + serveur | CurseForge |
 | Create: structures | `create_structure-1.0.9.5-neoforge-1.21.1.jar` | client + serveur | CurseForge |
-| Create Stuff 'N Additions | `create-stuff-additions1.21.1_v2.1.4b.jar` | client + serveur | CurseForge |
+| Create: Structures Arise | `Create-Structures-Arise-1.21.1-NeoForge-176.49.50.jar` | client + serveur | CurseForge |
+| Create: TFMG Community Edition | `tfmg-1.21.1-1.3.2a-community.jar` | client + serveur | CurseForge |
 | Create: The Air War | `create_the_air_wars-5.00.jar` | client + serveur | CurseForge |
 | Create: Threaded Trains | `createthreadedtrains-neoforge-1.21.1-1.0.0.jar` | client + serveur | CurseForge |
 | Create: Track Map (UNOFFICIAL FORK) | `create-track-map-2.1+mc1.21.1-neoforge.jar` | client + serveur | CurseForge |
+| Create: Trading Floor | `trading_floor-3.0.16.jar` | client + serveur | CurseForge |
 | Create: Train Perspective | `create_train_perspective-1.1.1.jar` | client seul | CurseForge |
 | Create: Tweaked Controllers | `create_tweaked_controllers-1.21.1-1.2.7.jar` | client + serveur | CurseForge |
-| Create | `create-1.21.1-6.0.10.jar` | client + serveur | CurseForge |
-| Create Crafts & Additions | `createaddition-1.7.2.jar` | client + serveur | CurseForge |
-| Create Nuclear | `createnuclear-2.0.0-neoforge.jar` | client + serveur | CurseForge |
+| Create: Vibrant Vaults | `create_vibrant_vaults-0.3.2.jar` | client + serveur | CurseForge |
 | Cristel Lib | `cristellib-neoforge-1.21.1-3.1.7.jar` | client + serveur | CurseForge |
 | Cupboard | `cupboard-1.21.1-4.2.jar` | client + serveur | CurseForge |
+| Cut Through | `CutThrough-v21.1.0-1.21.1-NeoForge.jar` | client seul | CurseForge |
 | Deeper and Darker | `deeperdarker-neoforge-1.21.1-1.4.1.jar` | client + serveur | CurseForge |
 | Default Options | `defaultoptions-neoforge-1.21.1-21.1.8.jar` | client + serveur | CurseForge |
 | Distant Horizons: A Level of Detail mod | `DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar` | client seul | CurseForge |
 | DragonLib | `dragonlib-3.0.29+mc1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Durability Tooltip | `durabilitytooltip-1.2.0-neoforge-mc1.21.jar` | client seul | CurseForge |
+| Easy Shulker Boxes | `EasyShulkerBoxes-v21.1.3-1.21.1-NeoForge.jar` | client + serveur | CurseForge |
+| Effectual | `effectual-neoforge-1.4.2-1.21.1.jar` | client seul | CurseForge |
 | EMI | `emi-1.1.24+1.21.1+neoforge.jar` | client + serveur | CurseForge |
 | Enchantment Descriptions | `enchdesc-neoforge-1.21.1-21.1.11.jar` | client + serveur | CurseForge |
-| [EMF] Entity Model Features [Fabric & Forge] | `entity_model_features-3.3.12-1.21-neoforge.jar` | client seul | CurseForge |
-| [ETF] Entity Texture Features - [Fabric & Forge] | `entity_texture_features-7.2.6-1.21-neoforge.jar` | client seul | CurseForge |
 | Entity Culling Fabric/Forge | `entityculling-neoforge-1.11.3-mc1.21.1.jar` | client seul | CurseForge |
 | Explorify – Dungeons & Structures | `Explorify v1.6.5.mod.jar` | client + serveur | CurseForge |
 | Explosion Overhaul: A new level of destruction | `explosionoverhaul-0.2.3.0-neoforge.jar` | client + serveur | CurseForge |
+| Explosive Enhancement: Reforged | `explosiveenhancement-neoforge-1.21.1-1.2.0.jar` | client seul | CurseForge |
 | FastFurnace | `FastFurnace-1.21.1-9.0.1.jar` | client + serveur | CurseForge |
 | FastSuite | `FastSuite-1.21.1-6.0.7.jar` | client + serveur | CurseForge |
 | FerriteCore ((Neo)Forge) | `ferritecore-7.0.3-neoforge.jar` | client + serveur | CurseForge |
+| Fresh Animations (pack de ressources) | `FreshAnimations_v1.11.1_1.20+.zip` | client seul | CurseForge |
 | Friends&Foes (Forge/NeoForge) | `friendsandfoes-neoforge-5.0.4+mc1.21.1.jar` | client + serveur | CurseForge |
 | FTB Chunks (NeoForge) | `ftb-chunks-neoforge-2101.1.22.jar` | client + serveur | CurseForge |
 | FTB Essentials (Forge & Fabric) | `ftb-essentials-neoforge-2101.1.10.jar` | client + serveur | CurseForge |
@@ -171,18 +201,17 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | FTB Quests (NeoForge) | `ftb-quests-neoforge-2101.1.37.jar` | client + serveur | CurseForge |
 | FTB Teams (NeoForge) | `ftb-teams-neoforge-2101.1.11.jar` | client + serveur | CurseForge |
 | GeckoLib | `geckolib-neoforge-1.21.1-4.9.3.jar` | client + serveur | CurseForge |
-| Create: Hypertubes | `create_hypertube-0.6.0-NEOFORGE.jar` | client + serveur | Modrinth (inclus dans le zip) |
 | GlitchCore | `GlitchCore-neoforge-1.21.1-2.1.0.2.jar` | client + serveur | CurseForge |
 | Iceberg [Neo/Forge] | `Iceberg-1.21.1-neoforge-1.3.2.jar` | client seul | CurseForge |
 | ImmediatelyFast | `ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar` | client seul | CurseForge |
-| Create: Interiors | `interiors-0.6.1 v3.jar` | client + serveur | CurseForge |
 | Inventory Essentials | `inventoryessentials-neoforge-1.21.1-21.1.20.jar` | client + serveur | CurseForge |
 | Inventory Profiles Next | `InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar` | client seul | CurseForge |
 | Iris Shaders | `iris-neoforge-1.8.14-beta.1+mc1.21.1.jar` | client seul | CurseForge |
 | Item Borders [Neo/Forge] | `ItemBorders-1.21-neoforge-1.2.5.jar` | client seul | CurseForge |
+| Jade Addons (Neo/Forge) | `JadeAddons-1.21.1-NeoForge-6.1.2.jar` | client + serveur | CurseForge |
 | Jade 🔍 | `Jade-1.21.1-NeoForge-15.10.6.jar` | client + serveur | CurseForge |
-| Just Enough Items (JEI) | `jei-1.21.1-neoforge-19.70.0.462.jar` | client + serveur | CurseForge |
 | Just Enough Effect Descriptions (JEED) | `jeed-1.21-2.3.5-neoforge.jar` | client + serveur | CurseForge |
+| Just Enough Items (JEI) | `jei-1.21.1-neoforge-19.70.0.462.jar` | client + serveur | CurseForge |
 | Just Enough Resources (JER) | `JustEnoughResources-NeoForge-1.21.1-1.6.0.57.jar` | client + serveur | CurseForge |
 | Kaleidoscope Cookery | `kaleidoscopecookery-1.6.0-neoforge+mc1.21.1.jar` | client + serveur | CurseForge |
 | Kotlin for Forge | `kotlinforforge-5.12.0-all.jar` | client + serveur | CurseForge |
@@ -197,30 +226,33 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Mouse Tweaks | `MouseTweaks-neoforge-mc1.21-2.26.1.jar` | client seul | CurseForge |
 | Mowzie's Mobs | `mowziesmobs-1.21.1-1.8.2.jar` | client + serveur | CurseForge |
 | Noisium | `noisium-neoforge-2.3.0+mc1.21-1.21.1.jar` | serveur seul | Modrinth (inclus dans le zip) |
-| [NTGL] NukaTeam's Gun Lib | `ntgl-1.21.1-3.2.0.jar` | client + serveur | CurseForge |
+| Ok Zoomer - It's Zoom! | `ok_zoomer-neo-10.0.0-beta.13.jar` | client seul | CurseForge |
 | Ore Zombies: The Extinto | `ore_zombies_the_extinto-2.0.1-neoforge-1.21.1.jar` | client + serveur | CurseForge |
 | Overgeared | `overgeared-neoforge-1.21.1-1.6.20.jar` | client + serveur | CurseForge |
 | Packet Fixer | `packetfixer-3.3.1-1.20.5-1.21.X-merged.jar` | client + serveur | CurseForge |
+| Particle Effects | `ParticleEffects-1.6.0+1.21.1+neoforge.jar` | client seul | CurseForge |
+| Pehkui | `Pehkui-3.8.3+1.21-neoforge.jar` | client + serveur | CurseForge |
 | Placebo | `Placebo-1.21.1-9.9.4.jar` | client + serveur | CurseForge |
 | playerAnimator | `player-animation-lib-forge-2.0.4+1.21.1.jar` | client + serveur | CurseForge |
 | Polymorph | `polymorph-neoforge-1.2.0+1.21.1.jar` | client + serveur | CurseForge |
 | Prickle | `prickle-neoforge-1.21.1-21.1.11.jar` | client + serveur | CurseForge |
 | Prism [Neo/Forge] | `Prism-1.21.1-neoforge-1.0.11.jar` | client seul | CurseForge |
 | Project: Explosive | `projectexplosive-0.7.2-beta.jar` | client + serveur | CurseForge |
+| Puzzles Lib | `puzzleslib-v21.1.66-mc1.21.1+neoforge.jar` | client + serveur | CurseForge |
 | Railways Additions | `railwaysuntold_additions-neoforge-1.0.1a.jar` | client + serveur | CurseForge |
 | Railways Untold | `railwaysuntold-1.21.1-neoforge-1.2.2.jar` | client + serveur | CurseForge |
 | Resourceful Lib | `resourcefullib-neoforge-1.21-3.0.12.jar` | client + serveur | CurseForge |
 | Rhino | `rhino-2101.2.8-build.91.jar` | client + serveur | CurseForge |
 | Ritchie's Projectile Library | `ritchiesprojectilelib-2.1.2-mc.1.21.1-neoforge.jar` | client + serveur | CurseForge |
-| Sable Long Range Warfare | `createarms-1.0.0.jar` | client + serveur | CurseForge |
 | Sable | `sable-neoforge-1.21.1-2.0.6.jar` | client + serveur | CurseForge |
+| Sable Long Range Warfare | `createarms-1.0.0.jar` | client + serveur | CurseForge |
 | SC-SuperB Bridge | `sc_superb_bridge-1.2.0.jar` | client + serveur | CurseForge |
 | Searchables | `Searchables-neoforge-1.21.1-1.0.2.jar` | client seul | CurseForge |
 | Security Craft | `[1.21.1] SecurityCraft v1.10.2.1.jar` | client + serveur | CurseForge |
 | Serene Seasons | `SereneSeasons-neoforge-1.21.1-10.1.0.3.jar` | client + serveur | CurseForge |
+| Shulker Box Tooltip [Fabric/Forge/NeoForge] | `shulkerboxtooltip-neoforge-5.1.9+1.21.1.jar` | client + serveur | CurseForge |
 | Simple Discord Rich Presence (Forge /  Fabric) | `SimpleDiscordRichPresence-neoforge-88.0.1-build.54+mc1.21.1.jar` | client seul | CurseForge |
 | Simple Voice Chat | `voicechat-neoforge-1.21.1-2.6.27.jar` | client + serveur | CurseForge |
-| Create Slice & Dice | `sliceanddice-4.3.4-neoforge.jar` | client + serveur | CurseForge |
 | Sodium | `sodium-neoforge-0.8.13+mc1.21.1.jar` | client seul | CurseForge |
 | Sophisticated Backpacks | `sophisticatedbackpacks-1.21.1-3.26.17.2232.jar` | client + serveur | CurseForge |
 | Sophisticated Core | `sophisticatedcore-1.21.1-1.5.19.2434.jar` | client + serveur | CurseForge |
@@ -229,11 +261,13 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Strut Your Stuff (Struts) | `struts-1.3.1.jar` | client + serveur | CurseForge |
 | SuperMartijn642's Config Lib | `supermartijn642configlib-1.1.8-neoforge-mc1.21.jar` | client seul | CurseForge |
 | Terralith | `Terralith_1.21.x_v2.6.2.jar` | client + serveur | CurseForge |
-| Create: TFMG Community Edition | `tfmg-1.21.1-1.3.2a-community.jar` | client + serveur | CurseForge |
+| TLib | `tlib-neoforge-1.5.0-1.21.1.jar` | client seul | CurseForge |
 | Tom's Simple Storage Mod | `toms_storage-1.21-2.4.2.jar` | client + serveur | CurseForge |
 | Towns and Towers | `t_and_t-fabric-neoforge-1.13.11.jar` | client + serveur | CurseForge |
-| Waystones: Sable (Create Aeronautics Addon) | `waystonessable-1.0.7.jar` | client + serveur | CurseForge |
+| Visual Workbench | `VisualWorkbench-v21.1.2-1.21.1-NeoForge.jar` | client + serveur | CurseForge |
+| Visuality: Reforged | `visuality-forge-3.0.0.jar` | client seul | CurseForge |
 | Waystones | `waystones-neoforge-1.21.1-21.1.46.jar` | client + serveur | CurseForge |
+| Waystones: Sable (Create Aeronautics Addon) | `waystonessable-1.0.7.jar` | client + serveur | CurseForge |
 | Xaero Train Map | `xaerotrainmap-1.0.0.jar` | client + serveur | CurseForge |
 | Xaero's Minimap | `xaerominimap-neoforge-1.21.1-26.6.0.jar` | client seul | CurseForge |
 | Xaero's World Map | `xaeroworldmap-neoforge-1.21.1-1.47.0.jar` | client seul | CurseForge |
@@ -247,5 +281,3 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | YUNG's Better Ocean Monuments (NeoForge) [1.20.4 - 1.21.1 ONLY] | `YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar` | client + serveur | CurseForge |
 | YUNG's Better Strongholds (NeoForge) [1.20.4 - 1.21.1 ONLY] | `YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar` | client + serveur | CurseForge |
 | YUNG's Better Witch Huts (NeoForge) [1.20.4 - 1.21.1 ONLY] | `YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar` | client + serveur | CurseForge |
-| Fresh Animations (pack de ressources) | `FreshAnimations_v1.11.1_1.20+.zip` | client seul | CurseForge |
-| Complementary Shaders - Reimagined (shader) | `ComplementaryReimagined_r5.9.3.zip` | client seul | CurseForge |

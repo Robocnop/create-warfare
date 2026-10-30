@@ -21,8 +21,10 @@ def main(done_dir):
         folder = os.path.join(OUT, ns, "lang")
         os.makedirs(folder, exist_ok=True)
         path = os.path.join(folder, "fr_fr.json")
-        if ns == "kubejs" and os.path.exists(path):
-            texts = {**texts, **json.load(open(path, encoding="utf-8"))}  # keep the pack's own texts
+        if os.path.exists(path):
+            existing = json.load(open(path, encoding="utf-8"))
+            # Add to earlier batches instead of replacing them; the pack's own kubejs texts always win.
+            texts = {**texts, **existing} if ns == "kubejs" else {**existing, **texts}
         with open(path, "w", encoding="utf-8", newline="\n") as f:
             json.dump(dict(sorted(texts.items())), f, ensure_ascii=False, indent=1)
             f.write("\n")
