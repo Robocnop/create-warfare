@@ -1,5 +1,11 @@
 {
+ "block.securitycraft.fake_lava_block": "Fausse lave",
+ "block.securitycraft.fake_water_block": "Fausse eau",
+ "block.securitycraft.horizontal_reinforced_iron_bars": "Barreaux de fer renforcés",
  "block.securitycraft.reinforced_lightning_rod": "Paratonnerre renforcé",
+ "block.securitycraft.sentry_disguise": "Déguisement de tourelle",
+ "entity.securitycraft.bouncingbetty": "Mine bondissante",
+ "entity.securitycraft.securitycamera": "Caméra de sécurité",
  "tooltip.securitycraft.component.success_chance": "Chance de réussite : %s",
  "tooltip.securitycraft.component.success_chance.disabled": "Désactivé"
 }

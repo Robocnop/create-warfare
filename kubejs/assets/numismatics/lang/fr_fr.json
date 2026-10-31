@@ -6,6 +6,7 @@
  "block.numismatics.salepoint.tooltip.set": "Interface sélectionnée",
  "block.numismatics.salepoint.tooltip.success": "Lié à l'interface visée",
  "block.numismatics.salepoint.tooltip.too_far": "L'interface visée est trop loin",
+ "block.numismatics.trusted_block.attempt_break": "Maintenez %1$s pour casser ce bloc",
  "block.numismatics.vendor.tooltip.trade_item.no_filter": "Les filtres spéciaux ne sont pas acceptés en mode achat",
  "create.table_cloth.hand_to_shop_keeper.numismatics.card": "Vous pouvez payer avec une carte bancaire en main secondaire",
  "error.numismatics.authorized_card.account_not_found": "Sous-compte introuvable",

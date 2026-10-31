@@ -131,6 +131,7 @@
  "createpropulsion.tooltip.airflow": "Flux d'air :",
  "createpropulsion.tooltip.conversion_rate": "Taux de conversion",
  "createpropulsion.tooltip.holdForCoralConversionSummary": "Maintenir [%1$s] pour le résumé de conversion du corail",
+ "createpropulsion.tooltip.holdForRocketFuelSummary": "Maintenez [%1$s] pour le résumé du carburant de fusée",
  "createpropulsion.tooltip.thrust1": "Poussée : ",
  "createpropulsion.turpentine_bucket.tooltip.summary": "Combustible pour propulseurs. Maintenir Maj pour voir le résumé de la poussée et du taux de combustion.",
  "createpropulsion.vector_thruster.tooltip.summary": "Propulseur directionnel pouvant aussi pivoter en lacet et en tangage pour une poussée vectorielle.",

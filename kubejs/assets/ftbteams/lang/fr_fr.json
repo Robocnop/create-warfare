@@ -20,6 +20,7 @@
  "ftbteams.message.set_property": "Propriété %s définie sur %s",
  "ftbteams.message.team_stages_header": "%s étape(s) d'équipe pour cette équipe :",
  "ftbteams.out_of_lives": "Votre groupe n'a plus de vies ! Impossible d'inviter de nouveaux membres !",
+ "ftbteams.party_api_only": "Dans ce modpack, vous ne pouvez pas créer d’équipes de groupe directement !\n%s",
  "ftbteams.party_full": "Impossible d'ajouter de nouveaux joueurs, votre groupe est plein ! Taille max. : %s membre(s)",
  "ftbteams.team_already_exists": "L'équipe %s existe déjà !"
 }

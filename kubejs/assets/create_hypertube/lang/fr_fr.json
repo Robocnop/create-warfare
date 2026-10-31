@@ -1,5 +1,6 @@
 {
  "block.create_hypertube.hypertube_junction": "Séparateur d'hypertube",
+ "block.create_hypertube.tube_path": "Tracé d'hypertube",
  "create_hypertube.ponder.accelerator.header": "Accélérateurs d'hypertube",
  "create_hypertube.ponder.accelerator.text_1": "Les accélérateurs d'hypertube augmentent la vitesse des entités qui voyagent dans l'hypertube.",
  "create_hypertube.ponder.accelerator.text_2": "Vous pouvez passer en mode FREIN par un clic droit sur l'accélérateur.",

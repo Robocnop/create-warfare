@@ -2,6 +2,14 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.7.3 — 2026-10-31
+
+- **Pistolets de compression** (Pocket Sized) : on peut de nouveau rétrécir ou agrandir les autres joueurs
+  (avant, le message « X has PVP Scaling disabled » s'affichait). Les pistolets restent limités de 1/4 à 4 fois.
+- **Traductions** : 285 textes ajoutés pour les noms qui s'affichaient en clé brute (Create: Arms, armes NTGL,
+  blocs de Burnt dans Jade, bogies de Bits 'n' Bogeys, obus de CBC AT, J-16, drone FPV, caméra de SecurityCraft…),
+  et 10 textes français faux corrigés (fusée à retardement de CBC, Waystones, Create Railways Navigator…).
+
 ## 1.7.1 — 2026-10-30
 
 - **Correctif du plantage au lancement** (client) : CBC Optics modifie Entity Culling et cherche un champ que la

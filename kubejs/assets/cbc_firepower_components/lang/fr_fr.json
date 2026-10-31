@@ -177,6 +177,8 @@
  "cbc_firepower_components.ponder.vertical_compact_mount.text_2": "Construisez le canon au-dessus de l'affût, aligné avec le tourillon",
  "cbc_firepower_components.ponder.vertical_compact_mount.text_3": "Utilisez une clé pour changer le côté de montage",
  "cbc_firepower_components.ponder.vertical_compact_mount.text_4": "Le canon peut aussi être assemblé sous l'affût",
+ "entity.cbc_firepower_components.large_autocannon_ap_projectile": "Obus perforant de gros autocanon",
+ "entity.cbc_firepower_components.large_autocannon_he_projectile": "Obus explosif de gros autocanon",
  "gui.cbc_firepower_components.off": "non alimenté",
  "gui.cbc_firepower_components.on": "alimenté",
  "item.cbc_firepower_components.cannon_limiter": "Limiteur de canon",

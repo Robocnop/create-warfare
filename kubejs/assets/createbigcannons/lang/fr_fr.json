@@ -194,6 +194,7 @@
  "item.createbigcannons.cannon_welder": "Soudeuse à canon",
  "item.createbigcannons.delayed_impact_fuze.tooltip.durability": "Durabilité",
  "item.createbigcannons.delayed_impact_fuze.tooltip.durability.value": "Cette fusée peut traverser _%s_ blocs avant de se briser.",
+ "item.createbigcannons.delayed_impact_fuze.tooltip.shell_info": "Délai avant détonation : _%ss %s ticks_",
  "item.createbigcannons.delayed_impact_fuze.tooltip.shell_info.chance": "Chance à l'impact : _%s%%_",
  "item.createbigcannons.delayed_impact_fuze.tooltip.shell_info.item": "Délai avant détonation : %ss %s ticks",
  "item.createbigcannons.delayed_inertia_fuze": "Fusée à inertie retardée",

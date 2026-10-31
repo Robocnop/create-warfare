@@ -43,6 +43,7 @@
  "block.cbc_ballistics.ballistic_calculator.yaw": "Lacet :",
  "block.cbc_ballistics.cannon_control": "Contrôleur de canon",
  "creativetab.ballistics": "Balistique",
+ "entity.cbc_ballistics.detecting_projectile": "Projectile de calcul",
  "item.cbc_ballistics.ballistics_wand": "Baguette de débogage balistique",
  "item.cbc_ballistics.network_manager": "Gestionnaire de réseau d'artillerie",
  "item.cbc_ballistics.network_manager.no_network": "Réglez-vous sur un réseau pour l'utiliser",

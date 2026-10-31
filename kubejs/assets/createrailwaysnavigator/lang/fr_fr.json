@@ -36,6 +36,7 @@
  "gui.createrailwaysnavigator.search_options.advanced_options": "Options avancées",
  "gui.createrailwaysnavigator.search_options.saved_routes.all": "Tous",
  "gui.createrailwaysnavigator.search_options.saved_routes.excluded": "%s exclus",
+ "gui.createrailwaysnavigator.search_options.train_categories.excluded": "%s exclue(s)",
  "gui.createrailwaysnavigator.search_options.waypoints.count": "%s défini(s)",
  "gui.createrailwaysnavigator.search_settings.train_categories.overview": "%s catégories sélectionnées",
  "gui.createrailwaysnavigator.search_settings.train_categories.overview.all": "Toutes",

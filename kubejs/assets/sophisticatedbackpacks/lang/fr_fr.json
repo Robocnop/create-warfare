@@ -27,6 +27,7 @@
  "commands.sophisticatedbackpacks.template.list.give.tooltip": "Cliquer pour donner un sac à dos avec le modèle : %s",
  "commands.sophisticatedbackpacks.template.list.header": "Nom du modèle, actions",
  "commands.sophisticatedbackpacks.template.unsupported_host": "Les modèles nécessitent un groupe de stockage lié dont le sac à dos est principal",
+ "entity.sophisticatedbackpacks.everlasting_backpack_item": "Sac à dos éternel",
  "gui.sophisticatedbackpacks.error.add.everlasting_exists": "Il y a déjà une amélioration éternelle dans un autre emplacement d'amélioration",
  "gui.sophisticatedbackpacks.mob_catcher.click_to_release": "Cliquer pour libérer",
  "gui.sophisticatedbackpacks.mob_catcher.entity_preview_failed": "Échec de l'affichage de l'aperçu de l'entité",

@@ -1,5 +1,8 @@
 {
  "block.pocket.blueprint_casing": "Boîtier à plan",
+ "block.pocket.blueprint_encased_cogwheel": "Roue dentée en boîtier (plan)",
+ "block.pocket.blueprint_encased_large_cogwheel": "Grande roue dentée en boîtier (plan)",
+ "block.pocket.blueprint_encased_shaft": "Rotor en boîtier (plan)",
  "block.pocket.copycat_facade": "Façade copycat (en cours !)",
  "block.pocket.flexible_coupling": "Accouplement flexible",
  "block.pocket.golf_ball": "Balle de golf",
@@ -10,6 +13,7 @@
  "block.pocket.subspace_recycler": "Recycleur subspatial (en cours !)",
  "block.pocket.switch_bearing": "Palier commutateur",
  "block.pocket.switch_piston": "Piston commutateur",
+ "entity.pocket.the_moon_package": "Colis lunaire",
  "item.pocket.andesite_display_case": "Vitrine en andésite",
  "item.pocket.andesite_display_plate": "Présentoir en andésite",
  "item.pocket.brass_display_case": "Vitrine en laiton",

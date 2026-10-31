@@ -48,6 +48,6 @@
 #ON: always allowed; OFF: always blocked; PERSONAL_ON/OFF: PSC owners choose, using that default.
 [pvpScaling]
 	#Allowed Values: ON, OFF, PERSONAL_ON, PERSONAL_OFF
-	mode = "OFF"
+	mode = "ON"
 	#Whether personal-mode players may change their PVP Scaling preference from the PSC menu.
 	allowPlayersToToggleInPsc = false

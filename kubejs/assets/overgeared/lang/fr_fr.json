@@ -19,6 +19,8 @@
  "creativetab.overgeared.blueprint_tab": "Plans de forge",
  "creativetab.overgeared.lingering_arrows_tab": "Arcs et flèches",
  "creativetab.overgeared_tab": "Overgeared",
+ "entity.overgeared.lingering_arrow": "Flèche persistante",
+ "entity.overgeared.upgrade_arrow": "Flèche améliorée",
  "gui.overgeared.drafting_table": "Dessin",
  "gui.overgeared.forging_stats": "Coups restants : %s | Parfaits : %s Bons : %s Ratés : %s",
  "gui.overgeared.jei.category.alloy_smelting": "Alliage",

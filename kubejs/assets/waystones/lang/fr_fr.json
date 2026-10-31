@@ -102,6 +102,7 @@
  "container.waystones.waystone": "Waystone",
  "container.waystones.waystone_admin_selection": "Sélectionnez la Waystone de <%s> que vous souhaitez visiter :",
  "container.waystones.waystone_modifiers": "Modificateurs de téléportation",
+ "container.waystones.waystone_settings": "Modifier %s",
  "container.waystones.white_portstone": "Portstone",
  "container.waystones.yellow_portstone": "Portstone jaune",
  "gui.waystones.group_settings.color": "Couleur de l'étiquette : %s",

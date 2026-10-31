@@ -1,4 +1,6 @@
 {
+ "block.burnt_additions.black_ice": "Glace des âmes",
+ "block.burnt_additions.black_ice_active": "Glace des âmes",
  "block.burnt_additions.blaze_barrel": "Tonneau de blaze",
  "block.burnt_additions.blaze_barrel_active": "Tonneau de blaze (actif)",
  "block.burnt_additions.blaze_barrel_blast_block": "Explosion de tonneau de blaze",
@@ -82,6 +84,7 @@
  "enchantment.burnt_additions.blaze": "Blaze",
  "enchantment.burnt_additions.soul_flame": "Flamme d'âme",
  "entity.burnt_additions.fire_devil": "Diable de feu",
+ "entity.burnt_additions.flare_projectile": "Fusée éclairante",
  "entity.burnt_additions.lit_match": "Allumette allumée",
  "entity.burnt_additions.lit_molotov_projectile": "Cocktail Molotov",
  "entity.burnt_additions.molotov_projectile": "Cocktail Molotov",
