@@ -1,7 +1,7 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 228 mods et packs.
-Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30).
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 229 mods et packs.
+Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30, de la 1.7.2 : 2026-10-31).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
 - **Écartés** : Mi Bombo, Create: Steel Armor Blocks, SSRD, StickyWheels (licence « All Rights Reserved » et absents
@@ -21,6 +21,8 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
   **Écartés** : Create: Extra Gauges (son Deployer API se déclare incompatible avec Create Factory Logistics),
   l'éclairage dynamique (Sodium Dynamic Lights exige Sodium Options API, que Reese's Sodium Options 2.2.4 déclare
   incompatible ; LambDynamicLights exige Fabric API), Freecam et Fullbright (triche en PvP).
+- **1.7.2** : Create: Schematic Helper (client seul, MIT) : envoyer et télécharger des schémas Create sur createmod.com
+  depuis la table à schémas.
 - **Absents en 1.21.1 NeoForge** : CBC Nukes, Create: Propulsion (remplacé par Create Propulsion: Simulated),
   Create Interactive (remplacé par Aeronautics/Sable), Create Misc & Things, Create Unlimited.
 - **Erreurs connues, sans gravité** (le serveur démarre) : 4 recettes de CBC Advanced Technologies (roquettes),
@@ -162,6 +164,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Create: Radars | `create_radar-5.0.2-1.21.1.jar` | client + serveur | CurseForge |
 | Create: Recipe Conflict Fixer | `createrecipeconflictfixer-2.0.0.jar` | client + serveur | CurseForge |
 | Create: Rustic Structures | `create_rustic_structures-1.0.1-neoforge-1.21.1.jar` | client + serveur | CurseForge |
+| Create: Schematic Helper | `createschematichelper-neoforge-mc1.21.1-2.2.0.jar` | client seul | CurseForge |
 | Create: Simulated Thrusters | `create_simulated_thrusters-1.21.1-NeoForge-1.1.1.jar` | client + serveur | CurseForge |
 | Create: Sophisticated Backpacks Compat | `create_sophback_compat-1.0.jar` | client + serveur | CurseForge |
 | Create: structures | `create_structure-1.0.9.5-neoforge-1.21.1.jar` | client + serveur | CurseForge |

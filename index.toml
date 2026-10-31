@@ -1862,6 +1862,11 @@ hash = "11e08a5d0534c56ef509c49f07a6162868636fb1ae9dd98c1268c5fa4a841f05"
 metafile = true
 
 [[files]]
+file = "mods/create-schematic-upload.pw.toml"
+hash = "dde70629767a9658922686d3a2622f7d546a4389db46a8114da462819f9b5fec"
+metafile = true
+
+[[files]]
 file = "mods/create-simulated-thrusters.pw.toml"
 hash = "32a8f9037a32d9060b526c29fca69c3c6d9ecdfedc88939dc585ffb92cdac6c0"
 metafile = true
