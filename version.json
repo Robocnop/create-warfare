@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,9 +11,9 @@
     "size": 72325603
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.7.1/CreateWarfare-1.7.1.zip",
-    "sha256": "540b376bea4e55a1689701808999ad557ac67292f467cdea070c766989de1da5",
-    "size": 15673637
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.7.2/CreateWarfare-1.7.2.zip",
+    "sha256": "e162f94f8fdaa1d2c0871792f50d91e4a09f9c7c08d7997074e8721620b2cc80",
+    "size": 15673687
   },
   "mods": [
     {
@@ -801,6 +801,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/lmbZMkEZ/versions/d0sTQvqS/create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
         "https://mediafilez.forgecdn.net/files/8122/33/create_rustic_structures-1.0.1-neoforge-1.21.1.jar"
+      ]
+    },
+    {
+      "file": "createschematichelper-neoforge-mc1.21.1-2.2.0.jar",
+      "sha1": "3338c199e16b443e2e5838fa62a15b8691783cf8",
+      "size": 64771,
+      "urls": [
+        "https://cdn.modrinth.com/data/vDsPXWBh/versions/pa7HZala/createschematichelper-neoforge-mc1.21.1-2.2.0.jar",
+        "https://mediafilez.forgecdn.net/files/8733/141/createschematichelper-neoforge-mc1.21.1-2.2.0.jar"
       ]
     },
     {
