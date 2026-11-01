@@ -31,6 +31,18 @@ public sealed class LauncherSettings
     public string Channel { get; set; } = Channels.Release;
     /// <summary>Thème : « auto » (selon la date), « default », « halloween », « christmas » ou « summer ».</summary>
     public string Theme { get; set; } = "auto";
+    /// <summary>Langue de l'interface : « fr » (par défaut) ou « en ».</summary>
+    public string Language { get; set; } = "fr";
+    /// <summary>Quand le jeu se lance : « minimize » (réduire le launcher), « close » ou « stay ».</summary>
+    public string OnGameLaunch { get; set; } = "minimize";
+    /// <summary>Lancer le launcher avec Windows (clé Run de l'utilisateur).</summary>
+    public bool StartWithWindows { get; set; }
+    /// <summary>Installer seul les nouvelles versions du launcher à l'ouverture.</summary>
+    public bool AutoUpdateLauncher { get; set; }
+    /// <summary>Journal détaillé (requêtes, durées) pour le support.</summary>
+    public bool DebugLog { get; set; }
+    /// <summary>Accueil du premier lancement déjà vu.</summary>
+    public bool OnboardingDone { get; set; }
 }
 
 public static class Channels
