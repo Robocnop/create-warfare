@@ -2,6 +2,23 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.7.5 — 2026-11-01
+
+- **Correctifs** : le télémètre de CBC Ballistics sur un engin Sable ne gèle plus le jeu ; les explosions abîment
+  maintenant les engins au-dessus de Y=320 (avant, un avion qui volait haut était invincible).
+- **Animations et visuels** (client) : animations de joueur en 3e personne (Not Enough Animations), son propre corps
+  visible en vue 1re personne (First-person Model), skins en relief (3D Skin Layers), animations de blocs, caméra qui
+  s'incline en marchant et en vol (Camera Overhaul), bruits de pas selon la surface, cascades et lucioles (Particular),
+  objets qui tombent à plat (ItemPhysic Lite), plus d'options graphiques (Sodium Extra), le jeu ralentit quand la
+  fenêtre est en arrière-plan (Dynamic FPS). Les machines à vapeur de Create font de vrais bruits (Sound of Steam).
+- **Touches** : Studious Keybinds (Options → Commandes → Clavier) montre un clavier, avec les conflits en rouge.
+- **Aviation** : cordes à grimper, tuyaux encastrés, transmissions et liaisons, toolgun pour engins Sable ;
+  Carry On marche sur les engins ; Jade affiche les blocs des engins.
+- **Superb Warfare** : guerre électronique (brouilleurs, radios, drones FPV, EMP, missile guidé), Drone Warfare,
+  défense antiaérienne rapprochée (Advanced CIWS), drones Shahed (Skyfront).
+- **Advanced Peripherals** (CC: Tweaked) : détecteur de joueurs limité à 64 blocs, sans position exacte des joueurs.
+- **Create: Vintage** : nouvelles machines de métallurgie (table vibrante, presse à cintrer, tour, enrouleuse…).
+
 ## 1.7.4 — 2026-11-01
 
 - **Particle Core** (client) : particules optimisées (celles hors de vue ne sont plus dessinées). Utile pendant les

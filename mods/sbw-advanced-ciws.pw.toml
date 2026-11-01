@@ -1,0 +1,14 @@
+name = "[SBW] Advanced CIWS"
+filename = "SBW-Advanced-CIWS-NeoForge-1.21.1-SBW-0.8.9-final-v1.0.8-VISUALFIX2.jar"
+side = "both"
+pin = true
+
+[download]
+hash-format = "sha1"
+hash = "8603898e75c17d1983aefb8edf6b28790f0565a8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8127172
+project-id = 1547297

@@ -1,0 +1,13 @@
+name = "Create: Vintage"
+filename = "vintage-1.21.1-1.6.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "05270af6826034d8c86c2cc3b1173734d9f2a7a0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9189556
+project-id = 1240780

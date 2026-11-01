@@ -1,0 +1,13 @@
+name = "CBC Ballistics Fix Sable"
+filename = "cbc-sable-fix-1.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "64afa17917d2bfebf9c240135358d292e007b040"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8650737
+project-id = 1652959

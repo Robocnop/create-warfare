@@ -1,0 +1,14 @@
+name = "[SBW] Drone Warfare"
+filename = "SBW-Drone-Warfare-1.21.1-NeoForge-1.0.6.jar"
+side = "both"
+pin = true
+
+[download]
+hash-format = "sha1"
+hash = "a672a637bb6b8067b9e05394740a178094a2a4b9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8754631
+project-id = 1523065

@@ -1,0 +1,13 @@
+name = "[SBW] Skyfront"
+filename = "skyfront-1.21.1-1.5.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ATisIhZ7/versions/kgIOOvmP/skyfront-1.21.1-1.5.0.jar"
+hash-format = "sha512"
+hash = "766d8c389075731054c09865fa5cc6e4809555171beda6e4f56dcbe1447fd973eae0d252f5dc9c6b37442a159a584faf6a0fcc3267de350d72083d87976bec0b"
+
+[update]
+[update.modrinth]
+mod-id = "ATisIhZ7"
+version = "kgIOOvmP"

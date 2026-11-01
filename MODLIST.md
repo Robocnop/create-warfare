@@ -1,11 +1,11 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 229 mods et packs.
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 262 mods et packs.
 Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30, de la 1.7.2 : 2026-10-31).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
 - **Écartés** : Mi Bombo, Create: Steel Armor Blocks, SSRD, StickyWheels (licence « All Rights Reserved » et absents
-  de CurseForge, donc impossibles à mettre dans le zip) · le correctif Sable de CBC Ballistics (Modrinth seul)
+  de CurseForge, donc impossibles à mettre dans le zip)
   · Embeddium (doublon de Sodium). CBC Ballistics NeoForge Port est arrivé sur CurseForge depuis : ajouté en 1.6.0.
 - **1.6.0** : artillerie (CBC Ballistics, CBC Optics, CBC: Firepower Components), Lootr (butin propre à chaque joueur,
   nouveaux chunks seulement), Create: Numismatics (monnaie), performances (Create: Threaded Trains, Lithium, AllTheLeaks,
@@ -23,6 +23,15 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
   incompatible ; LambDynamicLights exige Fabric API), Freecam et Fullbright (triche en PvP).
 - **1.7.2** : Create: Schematic Helper (client seul, MIT) : envoyer et télécharger des schémas Create sur createmod.com
   depuis la table à schémas.
+- **1.7.5** : correctifs Sable (CBC Ballistics Fix Sable : gel du télémètre sur un engin ; Sable Explosions Fix :
+  engins invincibles au-dessus de Y=320), Jade Sable Compat, Carry On + Aeronautics, Studious Keybinds. Visuels (client) :
+  Not Enough Animations (+ EMF Compat), First-person Model, 3D Skin Layers, Better Animations Collection, Camera Overhaul,
+  Presence Footsteps (+ Sable), Particular, ItemPhysic Lite, Dynamic FPS, Sodium Extra ; Create: Sound of Steam.
+  Gameplay : Aeronautics (cordes, tuyaux encastrés, Transmission & Linkage, Toolgun), Superb Warfare (Electronic Warfare,
+  Drone Warfare 1.0.6 et Advanced CIWS « SBW 0.8.9 », **figés** : les versions plus récentes exigent SBW 0.8.9.1 pile
+  ou 0.8.8 ; Skyfront), Advanced Peripherals (détecteur de joueurs bridé à 64 blocs, sans `getPlayer`, config livrée),
+  Create: Vintage (+ KubeJS Create, qui charge aussi les recettes KubeJS de Northstar). 96 recettes de compatibilité de
+  Vintage avec Crafts & Additions ne se chargent pas (ancien format), sans gravité.
 - **Absents en 1.21.1 NeoForge** : CBC Nukes, Create: Propulsion (remplacé par Create Propulsion: Simulated),
   Create Interactive (remplacé par Aeronautics/Sable), Create Misc & Things, Create Unlimited.
 - **Erreurs connues, sans gravité** (le serveur démarre) : 4 recettes de CBC Advanced Technologies (roquettes),
@@ -287,3 +296,33 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | YUNG's Better Ocean Monuments (NeoForge) [1.20.4 - 1.21.1 ONLY] | `YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar` | client + serveur | CurseForge |
 | YUNG's Better Strongholds (NeoForge) [1.20.4 - 1.21.1 ONLY] | `YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar` | client + serveur | CurseForge |
 | YUNG's Better Witch Huts (NeoForge) [1.20.4 - 1.21.1 ONLY] | `YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar` | client + serveur | CurseForge |
+| Studious Keybinds | `studious-keybinds-neoforge-1.21.1-1.0.8-beta.1.jar` | client seul | CurseForge |
+| CBC Ballistics Fix Sable | `cbc-sable-fix-1.0.3.jar` | client + serveur | CurseForge |
+| Sable Explosions Fix | `sableexplosionfix-1.0.0.jar` | client + serveur | Modrinth |
+| Jade Sable Compat | `sablejade-1.3.0.jar` | client seul | CurseForge |
+| Carry On + Create Aeronautics Compat | `CarryOnAeroCompat-1.21.1-1.1.1.jar` | client + serveur | Modrinth |
+| Not Enough Animations | `notenoughanimations-neoforge-1.12.6-mc1.21.1.jar` | client seul | CurseForge |
+| EMF Compat: Core | `emf_compat_core_neoforge_1.21.1_2.3.2.jar` | client seul | CurseForge |
+| EMF Compat: Not Enough Animations | `emf_compat_not_enough_animations_neoforge_1.21.1_1.2.1.jar` | client seul | CurseForge |
+| First-person Model | `firstperson-neoforge-2.7.3-mc1.21.1.jar` | client seul | CurseForge |
+| Skin Layers 3D | `skinlayers3d-neoforge-1.11.4-mc1.21.1.jar` | client seul | CurseForge |
+| Better Animations Collection | `BetterAnimationsCollection-v21.1.1-1.21.1-NeoForge.jar` | client seul | CurseForge |
+| CameraOverhaul | `CameraOverhaul-v2.1.2-neoforge+mc[1.21-1.21.1].jar` | client seul | CurseForge |
+| Create: Sound of Steam | `pipeorgans-0.9.2.1+1.21.1.jar` | client + serveur | CurseForge |
+| Dynamic FPS | `dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar` | client seul | CurseForge |
+| ItemPhysic Lite | `ItemPhysicLite_NEOFORGE_v1.6.13_mc1.21.1.jar` | client seul | CurseForge |
+| Particular ✨ Reforged | `particular-1.21.1-NeoForge-1.5.7.jar` | client seul | CurseForge |
+| Presence Footsteps (NeoForge) | `PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar` | client seul | CurseForge |
+| Presence Footsteps x Sable (Aeronautics Compat) | `pfsable-1.0.jar` | client seul | Modrinth |
+| Sodium Extra | `sodium-extra-neoforge-0.9.5+mc1.21.1.jar` | client seul | CurseForge |
+| Climbable Ropes for Create Aeronautics | `climbable_ropes-2.2.0.jar` | client + serveur | Modrinth |
+| Create Aeronautics: Encased Fluid Pipes | `aeroencasedpipe-1.0.7.jar` | client + serveur | CurseForge |
+| Create Aeronautics: Transmission & Linkage | `create_aeronautics_transmission_linkage-0.2.9.jar` | client + serveur | CurseForge |
+| Create Aeronautics: Toolgun | `create_aeronautics_toolgun-0.3.7.jar` | client + serveur | Modrinth |
+| [SBW] Electronic Warfare | `sbw_ew_addon-1.1.1+1.21.1.jar` | client + serveur | CurseForge |
+| [SBW] Drone Warfare | `SBW-Drone-Warfare-1.21.1-NeoForge-1.0.6.jar` | client + serveur | CurseForge |
+| [SBW] Advanced CIWS | `SBW-Advanced-CIWS-NeoForge-1.21.1-SBW-0.8.9-final-v1.0.8-VISUALFIX2.jar` | client + serveur | CurseForge |
+| [SBW] Skyfront | `skyfront-1.21.1-1.5.0.jar` | client + serveur | Modrinth |
+| Advanced Peripherals | `AdvancedPeripherals-1.21.1-0.8.2a.jar` | client + serveur | CurseForge |
+| Create: Vintage | `vintage-1.21.1-1.6.4.jar` | client + serveur | CurseForge |
+| KubeJS Create | `kubejs-create-neoforge-2101.3.1-build.18.jar` | client + serveur | CurseForge |

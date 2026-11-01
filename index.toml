@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/Advancedperipherals/peripherals.toml"
+hash = "23817c6b65f05e550a7e6f462aa5f2da4d6d90a8b04436feb26a138c80cce0f1"
+
+[[files]]
 file = "config/almostunified/placeholders.json"
 hash = "d714ee98fa4242dc588f52b473077caec0c093ea92e08c0bc6b8fc466d26b429"
 
@@ -1381,6 +1385,11 @@ file = "kubejs/startup_scripts/launch_codes.js"
 hash = "d91578c3eda8d0d2dcaf2d38f6202254b12133b8a491befc6a4cef74ba3740e9"
 
 [[files]]
+file = "mods/advanced-peripherals.pw.toml"
+hash = "8ad9e191313985caddeb6716f795ada61cb0a509ba92a5d23c3ce80256bb05a5"
+metafile = true
+
+[[files]]
 file = "mods/advanced-weather.pw.toml"
 hash = "77444159febfc9dc360c31ce26b2f7cfb84622c76e4d1fa859e825e01fadd4ab"
 metafile = true
@@ -1451,6 +1460,11 @@ hash = "5f30c1c0363dd44c10db196a8d8a7f164ff06e06b0b80234a519d9e49b2a7f84"
 metafile = true
 
 [[files]]
+file = "mods/better-animations-collection.pw.toml"
+hash = "aa3f5434be5dac17e3c47ccb1fb97fa03ae74c33ba3355c2ff65e2952edb201f"
+metafile = true
+
+[[files]]
 file = "mods/better-library.pw.toml"
 hash = "213568b614f351221804470e1d3a9f0be6cd4e4c1bbbbc865d9730e36a22efa3"
 metafile = true
@@ -1471,8 +1485,23 @@ hash = "ad215cd8ecda2d49298edc6a4388948cdaeeb9b77cd9206f72c4f6f37d91558b"
 metafile = true
 
 [[files]]
+file = "mods/cameraoverhaul.pw.toml"
+hash = "63072f658b9698eff188010a9344318e23e1f054f88b66e503c24147c6432db5"
+metafile = true
+
+[[files]]
 file = "mods/carry-on.pw.toml"
 hash = "98250d952145b18c452883997e7e675d445bfce33e9afb35bf372040c429a179"
+metafile = true
+
+[[files]]
+file = "mods/carryon-aeronautics-compat.pw.toml"
+hash = "5dd4552f1e29c6db54ea43a7c56e298de7f8e467bd5a61a211f9c3362b5528b2"
+metafile = true
+
+[[files]]
+file = "mods/cbc-ballistics-fix-sable.pw.toml"
+hash = "0d6c50052110a3e6abaa1343c7a0d2a858ec47bb0b88a4f3aec61cfae2501a50"
 metafile = true
 
 [[files]]
@@ -1601,13 +1630,33 @@ hash = "97283f14352e610f997bcd3dc59e0c7eb59c86e4cca78a20909fd7809a970d02"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-climbable-rope.pw.toml"
+hash = "914f2efb2afa0113d5936b0e721fb5c291abb9c2e66944f33fc33be8e33c8a89"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics-compatability.pw.toml"
 hash = "889d2c573f46e94318761c1e26d84e3c0520425cf12187f4b97ad3d51fd26363"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-encased-fluid-pipes.pw.toml"
+hash = "d8b9a2becd66f9b784c8f4e05c5631cb23308b0f5f50125a23fb70bde7e2c08b"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics-structures.pw.toml"
 hash = "e00e0e202a77447c9b09093df954e9c661d66ff89c4cfef30221fcd1495d7dce"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-toolgun.pw.toml"
+hash = "629eb4cc7414de1ed8328412431d8e14d894c44e4b9977e024f2d207be4141b1"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-transmission-linkage.pw.toml"
+hash = "60a1ce7ac8bb16432b736696cf9aaa507b31542c3dac4c5f81ea136052e06e46"
 metafile = true
 
 [[files]]
@@ -1881,6 +1930,11 @@ hash = "7e6cf9b0d48cce70273efbc86f834d138aaec540cecfe693d23389ef78181c6f"
 metafile = true
 
 [[files]]
+file = "mods/create-sound-of-steam.pw.toml"
+hash = "cb86cf56f793904fae172b74d8315e14a26664aaf7d180e27f049035a48b9c04"
+metafile = true
+
+[[files]]
 file = "mods/create-structures-arise.pw.toml"
 hash = "16f60b66ea89b21c9a8fdb9338c6a4577d420af867ddf4e7e943fc82cec31d8d"
 metafile = true
@@ -1928,6 +1982,11 @@ metafile = true
 [[files]]
 file = "mods/create-vibrant-vaults.pw.toml"
 hash = "edfc5cfd0224c45873c197c9352eadbe17171f737784581fe32ab963f59f27a3"
+metafile = true
+
+[[files]]
+file = "mods/create-vintage-unofficial-port.pw.toml"
+hash = "b0a0bbae1af216c13a9169e15976cead741e5fbf0d57885dfa8ec003ee889efb"
 metafile = true
 
 [[files]]
@@ -1991,6 +2050,11 @@ hash = "8159b8505b549dbdc764b86cfe1381e4777459b2469f57346165a7cad8cbcf05"
 metafile = true
 
 [[files]]
+file = "mods/dynamic-fps.pw.toml"
+hash = "8bc57beb0d3d0c34a2ac8c50d70490623dd350ce62d0ccde9a16a1b000a514b1"
+metafile = true
+
+[[files]]
 file = "mods/easy-shulker-boxes.pw.toml"
 hash = "89eab7f9d24b2d49f191847fc35f347e71eb4d9006a2a0e1a8fb3ee3ba7bbf58"
 metafile = true
@@ -1998,6 +2062,16 @@ metafile = true
 [[files]]
 file = "mods/effectual.pw.toml"
 hash = "8cf06d8be834b2621062db72b97636ad8312ed5d8b6323b61e1bc245c0c85652"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-core.pw.toml"
+hash = "a8c46616e68f458e8015ad738c0bd75f74dd702b4c9ea3816843dd411363e6f7"
+metafile = true
+
+[[files]]
+file = "mods/emf-compat-not-enough-animations.pw.toml"
+hash = "3d0775137200933048b5b360201a5408f7514703456d5fa9607d3bf5a19f9612"
 metafile = true
 
 [[files]]
@@ -2058,6 +2132,11 @@ metafile = true
 [[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
+metafile = true
+
+[[files]]
+file = "mods/first-person-model.pw.toml"
+hash = "e5df56798d435432dc71a417ca4d5583504cb9c49d8055c011c25758bf676a68"
 metafile = true
 
 [[files]]
@@ -2146,8 +2225,18 @@ hash = "333715a212cb64c13b8a6e5a2d944c50a5b0e4e970ea41b23567282815fc2b56"
 metafile = true
 
 [[files]]
+file = "mods/itemphysic-lite.pw.toml"
+hash = "45dec3db043f386d1fa7e212eb7e0464e32f0c0c7d30c9d7fe79b6611aef9ef4"
+metafile = true
+
+[[files]]
 file = "mods/jade-addons.pw.toml"
 hash = "6fb17e32ab3d80cac0fce250a55c6b5314c1330c1689b22f2ed3a84e5263220c"
+metafile = true
+
+[[files]]
+file = "mods/jade-sable-compat.pw.toml"
+hash = "3f3c00efabe19917603dfc82306f6ef92710d7f9246ff1d6f9c55e9b4b4a0101"
 metafile = true
 
 [[files]]
@@ -2178,6 +2267,11 @@ metafile = true
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-create.pw.toml"
+hash = "21a5deb5da882d9f3eb4eaf7f0cf77f52737e1e6b44d2f691bf10fda9c86d790"
 metafile = true
 
 [[files]]
@@ -2241,6 +2335,11 @@ hash = "eedfa782fdcca8fafce9c387edc33f2323c887da852dc398e9eea6f74e864086"
 metafile = true
 
 [[files]]
+file = "mods/not-enough-animations.pw.toml"
+hash = "a3f6da0a0185d1f5725d57ea0fde61fc33922a3b42408e491ba407a98e0e2f68"
+metafile = true
+
+[[files]]
 file = "mods/nukateams-gun-lib.pw.toml"
 hash = "8b4af86dc4c1846469326cc3fe73350a98a119650be241e499c6bd575c2e2482"
 metafile = true
@@ -2281,6 +2380,11 @@ hash = "de238fe06ad1707126c13d686328555fd8183392f7a7c0be5ff856d0a7faa367"
 metafile = true
 
 [[files]]
+file = "mods/particular-reforged.pw.toml"
+hash = "b4c1580cb726c3d5053aced31cb378e847ac18cb7d58e4c04830f8aaf0b941bb"
+metafile = true
+
+[[files]]
 file = "mods/pehkui.pw.toml"
 hash = "b850686e2fcbc612e5d5436be35ac9c48f33b37ae92aa7f268cf409076323be0"
 metafile = true
@@ -2308,6 +2412,16 @@ metafile = true
 [[files]]
 file = "mods/power-grid.pw.toml"
 hash = "acddd9bca673bbf549ad07ae4ab47617ac1dcb7a5235acab74c5ab4e53e96293"
+metafile = true
+
+[[files]]
+file = "mods/presence-footsteps-neoforge.pw.toml"
+hash = "f90a8a7a49423acc35b69a88a1628a3717f3563e02d2256894b13b7aaf9831c8"
+metafile = true
+
+[[files]]
+file = "mods/presence-footsteps-x-sable.pw.toml"
+hash = "b935ef30071e33025010c390655d53c53fc7bf82fecc8ac2b3cad0b98accee0d"
 metafile = true
 
 [[files]]
@@ -2356,6 +2470,11 @@ hash = "c62b51a8248d15e3cb63880ac123a92dd6a67973a1eafc4c4cb09f3f74481f78"
 metafile = true
 
 [[files]]
+file = "mods/sable-explosions-fix.pw.toml"
+hash = "5d9c1da07cfac71f3fdc523b98a1b7324e19ba45eea40507d3f1d808e4767e4b"
+metafile = true
+
+[[files]]
 file = "mods/sable-long-range-warfare.pw.toml"
 hash = "2808c45ef0d1edd295a33997e5da9b5987d9a8d2e0f64a1fa934800d0bdef7da"
 metafile = true
@@ -2366,8 +2485,23 @@ hash = "f2c81cf494b7b6c1063563d7377224cf64b29e0b86bcf87bcf4da8eb79b9c800"
 metafile = true
 
 [[files]]
+file = "mods/sbw-advanced-ciws.pw.toml"
+hash = "7c19c10d04401773b857a736d7ed0a3eebacbf7a033613fedf0570ef7e114f71"
+metafile = true
+
+[[files]]
 file = "mods/sbw-aeronautics-compat.pw.toml"
 hash = "2074a2a56e71b8fca9cfe0b1735b4c33e877cefd4d282aa7e9856f50257d07f9"
+metafile = true
+
+[[files]]
+file = "mods/sbw-drone-warfare.pw.toml"
+hash = "55693cc240a91d7da6fcf243a925d70b2dde884ea22a6cffd25dfab77ddbd2fd"
+metafile = true
+
+[[files]]
+file = "mods/sbw-electronic-warfare.pw.toml"
+hash = "a633e0e2b6e98047e982fe694ccb94c424f576607584f6d5628949315f369559"
 metafile = true
 
 [[files]]
@@ -2391,6 +2525,11 @@ hash = "eb438b9d4a49c0cc65560cdc295bf927cabc6f34319375a0cfbf3aece662add8"
 metafile = true
 
 [[files]]
+file = "mods/shahed.pw.toml"
+hash = "099502b7aec84df9f94898d7b80247556d280743b5d4b636ca8c34c93ff75eb4"
+metafile = true
+
+[[files]]
 file = "mods/shulkerboxtooltip.pw.toml"
 hash = "6b3c65eef473d729266b7467ad8354afb40cdd03889205e35467cf323080fe77"
 metafile = true
@@ -2406,8 +2545,18 @@ hash = "ff2b1b18b45cd200ed7f17e37f9ad714f56986675d0ca70d6e5e78a6753da18e"
 metafile = true
 
 [[files]]
+file = "mods/skin-layers-3d.pw.toml"
+hash = "76a0c2e43960a24ed7d6022db40f85872f86066e56b8ff99407a6f1aaa516ada"
+metafile = true
+
+[[files]]
 file = "mods/slice-and-dice.pw.toml"
 hash = "aa39c956bc3e2ab77d27d56d8ed163d50aa3d937263454084f0e256d26e06037"
+metafile = true
+
+[[files]]
+file = "mods/sodium-extra.pw.toml"
+hash = "b9d2d9c361ac465b572b7f010fc4ef1f91ef168fbc8d2591317e951aa569ee29"
 metafile = true
 
 [[files]]
@@ -2448,6 +2597,11 @@ metafile = true
 [[files]]
 file = "mods/strut-your-stuff.pw.toml"
 hash = "be50160d9d37a186eaf955f39f22a4e1a3d76fb4e61c63aaca25fd5ab2124f9e"
+metafile = true
+
+[[files]]
+file = "mods/studious-keybinds.pw.toml"
+hash = "f557c416202cf0d1116fe4f45762d6fac32c0a1c16dee92f14b9d66ec1796edb"
 metafile = true
 
 [[files]]
