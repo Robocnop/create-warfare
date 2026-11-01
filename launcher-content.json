@@ -4,6 +4,46 @@
     {
       "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/gare.jpg",
       "caption": "La gare au coucher du soleil"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/train-nuit.jpg",
+      "caption": "Départ de nuit à la gare"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/panneau-departs.jpg",
+      "caption": "Le tableau des départs"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/ferme-souterraine.jpg",
+      "caption": "La ferme souterraine, derrière la vitre"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/fours.jpg",
+      "caption": "Les fours de la base"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/atelier.jpg",
+      "caption": "L'atelier"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/tableau.jpg",
+      "caption": "La galerie d'art"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/machines.jpg",
+      "caption": "La salle des machines"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/champs.jpg",
+      "caption": "Les champs, vus d'en haut"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/cuisine.jpg",
+      "caption": "La cuisine"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/reserve.jpg",
+      "caption": "La réserve"
     }
   ],
   "links": {
