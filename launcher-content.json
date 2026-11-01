@@ -1,6 +1,11 @@
 {
   "news": [],
-  "gallery": [],
+  "gallery": [
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/gare.jpg",
+      "caption": "La gare au coucher du soleil"
+    }
+  ],
   "links": {
     "discord": "",
     "website": "",
