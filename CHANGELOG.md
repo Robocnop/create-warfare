@@ -2,6 +2,20 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## Launcher 1.3.0 — 2026-11-01
+
+- **Trois nouveaux thèmes saisonniers**, qui s'activent seuls :
+  - **Pâques** (des deux semaines avant Pâques au lundi de Pâques, date recalculée chaque année) : engrenages peints
+    comme des œufs, cloches, fleurs, pétales ;
+  - **Noël** (1er décembre → 6 janvier) : bleu nuit, rouge et blanc, engrenages en boules de Noël, guirlande, neige ;
+  - **Été** (21 juin → 22 septembre) : coucher de soleil sur la mer, soleil et bouée dentés, reflets et vagues.
+- **Halloween** s'arrête désormais le 2 novembre (avant : le 5).
+- **Paramètres → Apparence** : mode Automatique / Thème de base uniquement / Choisir un thème, aperçu animé de chaque
+  thème (un clic l'applique), option « Animer le décor ». Changement de thème en fondu, sans redémarrer.
+  Le thème change aussi tout seul à minuit si le launcher reste ouvert.
+- **Correctifs** : les listes déroulantes des paramètres affichaient « Option { Key = … } » au lieu du libellé ;
+  les engrenages de l'accueil s'engrènent maintenant vraiment (même taille de dents, une dent dans chaque creux).
+
 ## 1.8.0 — 2026-11-01
 
 - **First-person Model retiré** : il gênait l'affichage des armes (touche F6).
