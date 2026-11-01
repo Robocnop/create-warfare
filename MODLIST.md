@@ -1,6 +1,6 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 259 mods et packs.
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 258 mods et packs.
 Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30, de la 1.7.2 : 2026-10-31).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
@@ -30,7 +30,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
   Presence Footsteps (+ Sable), Particular, ItemPhysic Lite, Dynamic FPS, Sodium Extra ; Create: Sound of Steam.
   Gameplay : Aeronautics (cordes, tuyaux encastrés, Transmission & Linkage, Toolgun), Superb Warfare (Advanced CIWS « SBW 0.8.9 », **figé** ; Skyfront ;
   Electronic Warfare et Drone Warfare retirés en 1.7.7 : écrits pour une autre version de SBW, plantage du serveur), Advanced Peripherals (détecteur de joueurs bridé à 64 blocs, sans `getPlayer`, config livrée),
-  Create: Vintage (+ KubeJS Create, qui charge aussi les recettes KubeJS de Northstar). 96 recettes de compatibilité de
+  Create: Vintage (KubeJS Create, sa dépendance facultative, retiré en 1.7.8 : il cassait 10 recettes de Garnished et Netherless). 96 recettes de compatibilité de
   Vintage avec Crafts & Additions ne se chargent pas (ancien format), sans gravité.
 - **Absents en 1.21.1 NeoForge** : CBC Nukes, Create: Propulsion (remplacé par Create Propulsion: Simulated),
   Create Interactive (remplacé par Aeronautics/Sable), Create Misc & Things, Create Unlimited.
@@ -322,4 +322,3 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | [SBW] Skyfront | `skyfront-1.21.1-1.5.0.jar` | client + serveur | Modrinth |
 | Advanced Peripherals | `AdvancedPeripherals-1.21.1-0.8.2a.jar` | client + serveur | CurseForge |
 | Create: Vintage | `vintage-1.21.1-1.6.4.jar` | client + serveur | CurseForge |
-| KubeJS Create | `kubejs-create-neoforge-2101.3.1-build.18.jar` | client + serveur | CurseForge |

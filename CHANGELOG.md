@@ -2,6 +2,12 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.7.8 — 2026-11-01
+
+- **10 erreurs KubeJS corrigées** : KubeJS Create (arrivé avec Create: Vintage, pour qui il est facultatif) cassait
+  10 recettes d'assemblage de Garnished et de Create: Netherless (étape de remplissage). Retiré : ces recettes
+  remarchent. Il reste 3 erreurs sans effet en jeu (modèles de recettes KubeJS livrés par Vintage).
+
 ## 1.7.7 — 2026-11-01
 
 - **Correctif du plantage du serveur** (encore en déposant un hélicoptère) : [SBW] Electronic Warfare était écrit pour
