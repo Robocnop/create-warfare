@@ -1,6 +1,6 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 258 mods et packs.
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 265 mods et packs.
 Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30, de la 1.7.2 : 2026-10-31).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
@@ -33,6 +33,13 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
   Create: Vintage (+ KubeJS Create : indispensable, sans lui le serveur ne charge pas ses datapacks). 96 recettes de compatibilité de
   Vintage avec Crafts & Additions ne se chargent pas (ancien format), sans gravité.
 - **1.8.0** : First-person Model retiré (gênait l'affichage des armes, touche F6).
+- **1.8.1** : mods de décoration et de cuisine demandés pour construire la gare « Train Station » de createmod.com
+  (Buildermine) : Macaw's Lights and Lamps, Macaw's Paths and Pavings, Chipped (+ Athena, textures connectées),
+  MrCrayfish's Furniture Mod: Refurbished (+ Framework), Farmer's Delight. Les compatibilités de Create avec Farmer's
+  Delight (lait, tomate pourrie) et de Garnished s'activent. Farine et pâte communes (`kubejs/server_scripts/balance/cuisine.js`) :
+  la farine du moulin de Create fait la pâte de Refurbished, et ses pizzas acceptent la pâte de Create ou de Farmer's Delight.
+  Testé sur serveur local (démarrage, audit des mixins : 20/20). Les boîtes aux lettres de Refurbished envoient des colis à
+  n'importe quel joueur, même loin.
 - **Absents en 1.21.1 NeoForge** : CBC Nukes, Create: Propulsion (remplacé par Create Propulsion: Simulated),
   Create Interactive (remplacé par Aeronautics/Sable), Create Misc & Things, Create Unlimited.
 - **Erreurs connues, sans gravité** (le serveur démarre) : 4 recettes de CBC Advanced Technologies (roquettes),
@@ -323,3 +330,10 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Advanced Peripherals | `AdvancedPeripherals-1.21.1-0.8.2a.jar` | client + serveur | CurseForge |
 | Create: Vintage | `vintage-1.21.1-1.6.4.jar` | client + serveur | CurseForge |
 | KubeJS Create | `kubejs-create-neoforge-2101.3.1-build.18.jar` | client + serveur | CurseForge |
+| Athena | `athena-neoforge-1.21.1-4.0.6.jar` | client + serveur | CurseForge |
+| Chipped | `chipped-neoforge-1.21.1-4.0.2.jar` | client + serveur | CurseForge |
+| Farmer's Delight | `FarmersDelight-1.21.1-1.3.4.jar` | client + serveur | CurseForge |
+| Framework | `framework-neoforge-1.21.1-0.13.11.jar` | client + serveur | CurseForge |
+| Macaw's Lights and Lamps | `mcw-lights-1.1.5-mc1.21.1neoforge.jar` | client + serveur | CurseForge |
+| Macaw's Paths and Pavings | `mcw-mcwpaths-1.1.1-mc1.21.1neoforge.jar` | client + serveur | CurseForge |
+| MrCrayfish's Furniture Mod: Refurbished | `refurbished_furniture-neoforge-1.21.1-1.0.22.jar` | client + serveur | CurseForge |

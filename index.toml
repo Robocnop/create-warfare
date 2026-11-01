@@ -277,6 +277,10 @@ file = "kubejs/assets/chat_heads/lang/fr_fr.json"
 hash = "dabd753d0f2d5364fc6c29853bf4a8cb423c5bff217e34d4ffcc03a0d7df1767"
 
 [[files]]
+file = "kubejs/assets/chipped/lang/fr_fr.json"
+hash = "b66bbcd566cfdf707a5d60525c4acd5a8b4440cfd57e58d45d7bd7ffc5767cfd"
+
+[[files]]
 file = "kubejs/assets/climbable_ropes/lang/fr_fr.json"
 hash = "2f7c43f417b7e2998d462c8b41305aee2dd7e5c0e55f9ccc8e14f048adfbe997"
 
@@ -677,6 +681,10 @@ file = "kubejs/assets/locometal_armor/lang/fr_fr.json"
 hash = "a7343500fc69b7d9533d5f1b31c4d523dc29b782054edd7e64ab5e5067c5c948"
 
 [[files]]
+file = "kubejs/assets/mcwpaths/lang/fr_fr.json"
+hash = "afee344669e911759b43594b3274eb1940cec33852b81dc96c00e8d350761a71"
+
+[[files]]
 file = "kubejs/assets/mechanicals/lang/fr_fr.json"
 hash = "f6c0d7e0682546b0df9a435ad9d93b310779d9e3bc85269e5e7aeb79fd4969bf"
 
@@ -779,6 +787,10 @@ hash = "e150f6deeec1db9ce7e3594921c9e1490a0083a4076ae6cc63ad3383698675c2"
 [[files]]
 file = "kubejs/assets/railwaysuntold_additions/lang/fr_fr.json"
 hash = "e4806b37d2e3069738c05fa0b26ebd552c647cf8431454a452e0b6cecf8856d3"
+
+[[files]]
+file = "kubejs/assets/refurbished_furniture/lang/fr_fr.json"
+hash = "42dd3e03573308dc21dff76410323966293c1742d6832c9abc9c701d64aa8aec"
 
 [[files]]
 file = "kubejs/assets/sable/lang/fr_fr.json"
@@ -1449,12 +1461,24 @@ file = "kubejs/data/minecraft/tags/block/mineable/pickaxe.json"
 hash = "050c7f9969f22cf52bf443afb4d30c03574c2565f1324ca35cf44b0a4f0c76d7"
 
 [[files]]
+file = "kubejs/data/refurbished_furniture/recipe/combining/raw_meatlovers_pizza.json"
+hash = "d00b4e39202e31df71d12a3538b32e3f13376cde89eefbddc20dcb364df94e70"
+
+[[files]]
+file = "kubejs/data/refurbished_furniture/recipe/combining/raw_vegetable_pizza.json"
+hash = "d695975aa5090f0e1586654db057a31aab1b8f859fd1e01eaaeb75dee7d6fd02"
+
+[[files]]
 file = "kubejs/server_scripts/balance/blindage.js"
 hash = "afea5ecf284f1b1869b2807b82839bf1ba95c5971bbdcc136d86db942ac5cbda"
 
 [[files]]
 file = "kubejs/server_scripts/balance/crosslinks.js"
 hash = "89de629187d73ea736561f265bb4a71160cd93aa254a106e0d77f26d4c738078"
+
+[[files]]
+file = "kubejs/server_scripts/balance/cuisine.js"
+hash = "1f503b54c8eb7cd9d5e216ad4dd303ee125b088cf34e635b20f822a11a2d3c23"
 
 [[files]]
 file = "kubejs/server_scripts/balance/military.js"
@@ -1506,6 +1530,11 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
+metafile = true
+
+[[files]]
+file = "mods/athena.pw.toml"
+hash = "38bddea8d550568799dd7f208c0bbe10280de3e456016a0d59aa20de112a2345"
 metafile = true
 
 [[files]]
@@ -1631,6 +1660,11 @@ metafile = true
 [[files]]
 file = "mods/chat-heads.pw.toml"
 hash = "1c5763732b184c66afd98291dcf046f97d40c3f6036ab01898fc11f927f41266"
+metafile = true
+
+[[files]]
+file = "mods/chipped.pw.toml"
+hash = "3024466ae43de66612dc5ec4cfe5b3a273f71cee29fc6940308798a817d561b6"
 metafile = true
 
 [[files]]
@@ -2199,6 +2233,11 @@ hash = "f5b029566157fcc63dafcaef401b67821269547cb6fc014e4c0e7394796ea94f"
 metafile = true
 
 [[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "d9ed9ac8e0db9db29078dafa22bc2d86ac702f10863ae7cb1d5245111c5ea17b"
+metafile = true
+
+[[files]]
 file = "mods/fastfurnace.pw.toml"
 hash = "4f7c443c70a28284bfb40e613c835167c9c71f2db257714275041f16e280b6d9"
 metafile = true
@@ -2211,6 +2250,11 @@ metafile = true
 [[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
+metafile = true
+
+[[files]]
+file = "mods/framework.pw.toml"
+hash = "dd0153bc05a3ffc8592dfaf35b4e8014127e6e1b352d7c18462d49a1ed7a5035"
 metafile = true
 
 [[files]]
@@ -2374,6 +2418,16 @@ hash = "ff152357ebb175e8e8c58ecda4f9814d398c5668f3311b0ad6a4afcb1dc26d13"
 metafile = true
 
 [[files]]
+file = "mods/macaws-lights-and-lamps.pw.toml"
+hash = "33ff6177b5e19c7ef130b6076ff6166a3994b511df06f3afcbc02af9212f29c8"
+metafile = true
+
+[[files]]
+file = "mods/macaws-paths-and-pavings.pw.toml"
+hash = "37e96fec653b3a8463d08eec8264fb8f97a9497b8a50723dd659c193a70f021f"
+metafile = true
+
+[[files]]
 file = "mods/mechanicals-lib.pw.toml"
 hash = "5564e88df5e56d9cf75f3006852ef53fd12909ce00917c5d085cd65a962b4238"
 metafile = true
@@ -2526,6 +2580,11 @@ metafile = true
 [[files]]
 file = "mods/railways-untold.pw.toml"
 hash = "20373da466e479d52f625484a4db0a993a5fc240019f154b9c2735e91cd3d678"
+metafile = true
+
+[[files]]
+file = "mods/refurbished-furniture.pw.toml"
+hash = "208de52370a896983814bd3f69ed0e2b46ca52d99603656562f3890f96d151da"
 metafile = true
 
 [[files]]

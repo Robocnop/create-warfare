@@ -2,6 +2,16 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.8.1 — 2026-11-01
+
+- **Nouveaux mods**, pour construire la gare « Train Station » de createmod.com : Macaw's Lights and Lamps (lampes),
+  Macaw's Paths and Pavings (chemins et pavés), Chipped (variantes de blocs, avec Athena), MrCrayfish's Furniture
+  Mod: Refurbished (meubles, cuisine, boîtes aux lettres, avec Framework) et Farmer's Delight (cuisine).
+- **Compatibilité** : la farine du moulin de Create fait la pâte de Refurbished ; les pizzas acceptent la pâte de Create,
+  de Farmer's Delight ou de Refurbished. Les recettes de Create et de Garnished prévues pour Farmer's Delight s'activent.
+- **Traductions** : 8 004 textes en français (Chipped, Refurbished Furniture, Macaw's Paths).
+- **Même monde** : rien à recréer. Les plantes sauvages de Farmer's Delight n'apparaissent que dans les nouveaux chunks.
+
 ## Launcher 1.3.1 — 2026-11-01
 
 - **Accueil** : 11 images du serveur défilent en fond (toutes les 8 s, en commençant par une image au hasard).
