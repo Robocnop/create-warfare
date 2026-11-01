@@ -101,6 +101,30 @@ def retired_mods(current):
     return [{"file": f, "sha1": h} for f, h in sorted(seen) if (f, h) not in current]
 
 
+def resource_packs():
+    """Client resource packs of the pack, with the file names their .pw.toml had in earlier tags."""
+    packs = []
+    rp_dir = os.path.join(ROOT, "resourcepacks")
+    for name in sorted(os.listdir(rp_dir)):
+        if not name.endswith(".pw.toml"):
+            continue
+        meta = tomllib.load(open(os.path.join(rp_dir, name), "rb"))
+        dl = meta["download"]
+        if meta.get("side", "both") == "server" or dl.get("hash-format") != "sha1":
+            continue
+        previous = set()
+        for tag in git("tag", "--list", "v*").split():
+            r = subprocess.run(["git", "-C", ROOT, "show", f"{tag}:resourcepacks/{name}"], capture_output=True, text=True, encoding="utf-8")
+            if r.returncode == 0:
+                previous.add(tomllib.loads(r.stdout)["filename"])
+        previous.discard(meta["filename"])
+        cf = meta.get("update", {}).get("curseforge")
+        packs.append({"file": meta["filename"], "sha1": dl["hash"], "size": 0,
+                      "urls": [u for u in [dl.get("url"), cdn_url(cf["file-id"], meta["filename"]) if cf else None] if u],
+                      "previous": sorted(previous)})
+    return packs
+
+
 def changelog(versions=3):
     """The latest sections of CHANGELOG.md, as plain text."""
     text = open(os.path.join(ROOT, "CHANGELOG.md"), encoding="utf-8").read()
@@ -165,6 +189,10 @@ def main():
         for m, size in zip(mods, pool.map(lambda m: 0 if m["size"] else head_size(m["urls"][-1]), mods)):
             m["size"] = m["size"] or size
     print(f"{len(mods)} jars, {len(mr)} found on Modrinth, {sum(1 for m in mods if not m['size'])} without size")
+    packs = resource_packs()
+    for p in packs:
+        p["size"] = head_size(p["urls"][-1])
+    print("resource packs: " + ", ".join(f"{p['file']} ({p['size']} o, avant : {p['previous']})" for p in packs))
 
     base = f"https://github.com/{DIST_REPO}/releases/download"
     info = {
@@ -177,6 +205,7 @@ def main():
         "zip": {"url": zip_path if args.local else f"{base}/v{version}/CreateWarfare-{version}.zip",
                 "sha256": sha(zip_path, "sha256"), "size": os.path.getsize(zip_path)},
         "mods": mods,
+        "resourcePacks": packs,
         "retiredMods": retired_mods({(m["file"], m["sha1"]) for m in mods}),
         "protected": PROTECTED,
         "servers": SERVERS,

@@ -263,7 +263,9 @@ public sealed class MainViewModel : Observable
     void UpdateHome()
     {
         var installed = _instance == null ? null : UpdatePlanner.InstalledVersion(_instance.Path, _instance);
-        var upToDate = installed != null && _remote != null && installed == _remote.Version;
+        // une instance à la bonne version mais dont les packs de ressources n'ont jamais été proposés reste à mettre à jour
+        var upToDate = installed != null && _remote != null && installed == _remote.Version
+                       && UpdatePlanner.PendingPacks(_remote, UpdatePlanner.ReadState(_instance!.Path)).Count == 0;
 
         PackVersion = installed == null ? "—" : "v" + installed;
         PackSub = _instance == null ? "non installé"
@@ -342,8 +344,11 @@ public sealed class MainViewModel : Observable
         var dl = plan.DownloadSize > 0 ? $" {Format.Size(plan.DownloadSize)} à télécharger d'abord." : "";
         var servers = plan.ServersToAdd.Count == 0 ? ""
             : "\nAjouté à ta liste de serveurs : " + string.Join(", ", plan.ServersToAdd.Select(s => $"{s.Name} ({s.Ip})")) + ".";
+        var packs = plan.PacksToEnable.Count == 0 ? ""
+            : "\nActivé dans tes packs de ressources (une seule fois, tu peux le désactiver ensuite) : "
+              + string.Join(", ", plan.PacksToEnable.Select(p => Path.GetFileNameWithoutExtension(p.File))) + ".";
         ReviewText = "Rien n'est écrit avant ta confirmation. Chaque fichier remplacé ou supprimé est d'abord sauvegardé, " +
-                     $"et tout est remis en place en cas d'erreur.{dl}\nTes touches, réglages, mondes et mods ajoutés ne sont pas touchés.{servers}";
+                     $"et tout est remis en place en cas d'erreur.{dl}\nTes touches, réglages, mondes et mods ajoutés ne sont pas touchés.{servers}{packs}";
         if (IsDowngrade(plan.FromVersion, plan.ToVersion))
             ReviewText += $"\n\n⚠ Retour d'une version plus récente (v{plan.FromVersion}) : un monde solo ouvert avec v{plan.FromVersion} " +
                           "peut perdre des blocs ou des objets. Fais une copie de tes mondes avant.";

@@ -59,6 +59,17 @@ public static class UpdatePlanner
             actions.Add(new FileAction(rel, kind, m.Size, Mod: m));
         }
 
+        // 2b. Packs de ressources : créés s'ils manquent, jamais remplacés ni supprimés (resourcepacks/ est au joueur)
+        foreach (var rp in v.ResourcePacks.OrderBy(r => r.File, cmp))
+        {
+            var rel = "resourcepacks/" + rp.File;
+            if (!wanted.Add(rel)) continue;
+            var target = PathRules.Resolve(instanceDir, rel);
+            var kind = !File.Exists(target) ? FileActionKind.Add
+                : Hashing.Matches(target, rp.Sha1, sha1: true) ? FileActionKind.Same : FileActionKind.Protected;
+            actions.Add(new FileAction(rel, kind, rp.Size, Mod: rp.AsDownload()));
+        }
+
         // 3. Suppressions : seulement ce que le pack avait posé
         var oldOverrides = state?.Overrides ?? info?.ModpackOverrides.ToList() ?? new List<string>();
         var candidates = new HashSet<string>(cmp);
@@ -104,7 +115,16 @@ public static class UpdatePlanner
             PackOverrides = overrides.Select(o => o.rel).ToList(),
             ServersToAdd = serversToAdd,
             AddedServers = alreadyOffered.Union(v.Servers.Select(s => s.Ip), cmp).ToList(),
+            PacksToEnable = PendingPacks(v, state),
+            EnabledPacks = (state?.EnabledPacks ?? new()).Union(v.ResourcePacks.Select(r => r.File), cmp).ToList(),
         };
+    }
+
+    /// <summary>Packs de ressources du pack jamais encore activés dans cette instance.</summary>
+    public static List<ResourcePackEntry> PendingPacks(VersionInfo v, LauncherState? state)
+    {
+        var done = new HashSet<string>(state?.EnabledPacks ?? new(), StringComparer.OrdinalIgnoreCase);
+        return v.ResourcePacks.Where(r => !done.Contains(r.File)).ToList();
     }
 
     static string StripDisabled(string name) =>

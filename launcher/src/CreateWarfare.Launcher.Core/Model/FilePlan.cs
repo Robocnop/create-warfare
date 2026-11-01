@@ -26,9 +26,13 @@ public sealed class FilePlan
     public List<ServerEntry> ServersToAdd { get; init; } = new();
     /// <summary>Adresses à mémoriser dans l'état après application.</summary>
     public List<string> AddedServers { get; init; } = new();
+    /// <summary>Packs de ressources à activer dans options.txt (jamais proposés avant).</summary>
+    public List<ResourcePackEntry> PacksToEnable { get; init; } = new();
+    /// <summary>Packs à mémoriser dans l'état après application.</summary>
+    public List<string> EnabledPacks { get; init; } = new();
 
     public IEnumerable<FileAction> Changes => Actions.Where(a => a.Changes);
     public int Count(FileActionKind k) => Actions.Count(a => a.Kind == k);
     public long DownloadSize => Actions.Where(a => a.Mod != null && a.Kind is FileActionKind.Add or FileActionKind.Replace).Sum(a => a.Size);
-    public bool IsEmpty => !Changes.Any() && ServersToAdd.Count == 0;
+    public bool IsEmpty => !Changes.Any() && ServersToAdd.Count == 0 && PacksToEnable.Count == 0;
 }

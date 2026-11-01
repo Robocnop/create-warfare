@@ -14,6 +14,8 @@ public sealed class VersionInfo
     public RemoteFile Zip { get; set; } = new();
     /// <summary>Jars à télécharger (côté both/client), hors jars livrés dans overrides/mods.</summary>
     public List<ModEntry> Mods { get; set; } = new();
+    /// <summary>Packs de ressources du pack : posés dans resourcepacks/ s'ils manquent, activés une seule fois dans options.txt.</summary>
+    public List<ResourcePackEntry> ResourcePacks { get; set; } = new();
     /// <summary>Jars des versions précédentes du pack : seuls eux peuvent être supprimés sans état local.</summary>
     public List<RetiredMod> RetiredMods { get; set; } = new();
     /// <summary>Chemins (préfixes si terminés par /) jamais écrasés ni supprimés, seulement créés s'ils manquent.</summary>
@@ -47,6 +49,18 @@ public sealed class ModEntry
     public string Sha1 { get; set; } = "";
     public long Size { get; set; }
     public List<string> Urls { get; set; } = new();
+}
+
+public sealed class ResourcePackEntry
+{
+    public string File { get; set; } = "";
+    public string Sha1 { get; set; } = "";
+    public long Size { get; set; }
+    public List<string> Urls { get; set; } = new();
+    /// <summary>Noms de fichier des versions précédentes : remplacés par celui-ci dans options.txt.</summary>
+    public List<string> Previous { get; set; } = new();
+
+    public ModEntry AsDownload() => new() { File = File, Sha1 = Sha1, Size = Size, Urls = Urls };
 }
 
 public sealed class ServerEntry

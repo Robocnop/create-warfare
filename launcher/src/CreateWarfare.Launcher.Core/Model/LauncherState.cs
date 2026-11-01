@@ -15,6 +15,8 @@ public sealed class LauncherState
     public List<string> Overrides { get; set; } = new();
     /// <summary>Adresses déjà proposées dans servers.dat : si le joueur les supprime, elles ne reviennent pas.</summary>
     public List<string> AddedServers { get; set; } = new();
+    /// <summary>Packs de ressources déjà activés une fois : si le joueur les désactive, ils restent désactivés.</summary>
+    public List<string> EnabledPacks { get; set; } = new();
     public DateTime UpdatedUtc { get; set; }
 }
 

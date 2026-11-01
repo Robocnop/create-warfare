@@ -71,20 +71,16 @@ public sealed class UpdateApplier
             // Serveurs du pack ajoutés à la liste multijoueur, sauvegardée avant comme les autres fichiers
             if (plan.ServersToAdd.Count > 0)
             {
-                var rel = ServerList.FileName;
-                var target = PathRules.Resolve(instanceDir, rel);
-                if (!backup.Saved.Contains(rel) && !backup.Created.Contains(rel))
-                {
-                    if (File.Exists(target))
-                    {
-                        File.Copy(target, PathRules.Resolve(backupDir, rel), overwrite: true);
-                        backup.Saved.Add(rel);
-                    }
-                    else backup.Created.Add(rel);
-                    WriteBackupManifest(backupDir, backup);
-                }
+                var target = BackupBeforeEdit(instanceDir, backupDir, backup, ServerList.FileName);
                 foreach (var s in ServerList.Ensure(target, plan.ServersToAdd))
                     Log.Info($"Serveur ajouté à la liste : {s.Name} ({s.Ip})");
+            }
+            // Packs de ressources du pack activés une fois dans options.txt (seulement s'il existe déjà)
+            if (plan.PacksToEnable.Count > 0 && File.Exists(PathRules.Resolve(instanceDir, OptionsFile.FileName)))
+            {
+                var target = BackupBeforeEdit(instanceDir, backupDir, backup, OptionsFile.FileName);
+                foreach (var rp in OptionsFile.Enable(target, plan.PacksToEnable))
+                    Log.Info($"Pack de ressources activé : {rp.File}");
             }
             progress?.Report(new ApplyProgress("apply", changes.Count, changes.Count, ""));
 
@@ -95,6 +91,7 @@ public sealed class UpdateApplier
                 Mods = plan.PackMods,
                 Overrides = plan.PackOverrides,
                 AddedServers = plan.AddedServers,
+                EnabledPacks = plan.EnabledPacks,
                 UpdatedUtc = DateTime.UtcNow,
             };
             AtomicFile.WriteAllText(Path.Combine(instanceDir, LauncherState.FileName),
@@ -110,6 +107,23 @@ public sealed class UpdateApplier
         if (backup.Saved.Count == 0) Directory.Delete(backupDir, true);
         PruneBackups(instanceDir);
         Log.Info($"Mise à jour {plan.ToVersion} appliquée");
+    }
+
+    /// <summary>Sauvegarde un fichier que le launcher va modifier sur place (une seule fois par mise à jour) ; renvoie son chemin.</summary>
+    static string BackupBeforeEdit(string instanceDir, string backupDir, BackupManifest backup, string rel)
+    {
+        var target = PathRules.Resolve(instanceDir, rel);
+        if (!backup.Saved.Contains(rel) && !backup.Created.Contains(rel))
+        {
+            if (File.Exists(target))
+            {
+                File.Copy(target, PathRules.Resolve(backupDir, rel), overwrite: true);
+                backup.Saved.Add(rel);
+            }
+            else backup.Created.Add(rel);
+            WriteBackupManifest(backupDir, backup);
+        }
+        return target;
     }
 
     static void CopyAtomic(string src, string target)

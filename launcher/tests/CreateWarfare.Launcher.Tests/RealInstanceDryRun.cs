@@ -31,6 +31,19 @@ public class RealInstanceDryRun(ITestOutputHelper output)
         foreach (var s in plan.ServersToAdd)
             output.WriteLine($"  Serveur   {s.Name} ({s.Ip})");
 
+        // packs de ressources activés sur une copie d'options.txt
+        var options = Path.Combine(dir, OptionsFile.FileName);
+        if (plan.PacksToEnable.Count > 0 && File.Exists(options))
+        {
+            var copy = Path.Combine(Path.GetTempPath(), "cw-options-dryrun.txt");
+            File.Copy(options, copy, overwrite: true);
+            OptionsFile.Enable(copy, plan.PacksToEnable);
+            output.WriteLine("options.txt avant : " + string.Join(", ", OptionsFile.Packs(options)));
+            output.WriteLine("options.txt après : " + string.Join(", ", OptionsFile.Packs(copy)));
+            var changed = File.ReadAllLines(options).Zip(File.ReadAllLines(copy)).Count(p => p.First != p.Second);
+            Assert.Equal(1, changed);
+        }
+
         // le servers.dat écrit par Minecraft doit ressortir identique à l'octet près (copie, l'original n'est pas touché)
         var servers = Path.Combine(dir, ServerList.FileName);
         if (File.Exists(servers))
