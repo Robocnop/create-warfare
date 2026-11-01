@@ -189,4 +189,14 @@
     <sys:String x:Key="s.uninstall.yes">Uninstall</sys:String>
     <sys:String x:Key="s.work.left">left</sys:String>
     <sys:String x:Key="s.unit.gb">GB</sys:String>
+    <sys:String x:Key="s.ap.tab">Appearance</sys:String>
+    <sys:String x:Key="s.ap.mode">Theme mode</sys:String>
+    <sys:String x:Key="s.ap.mode.auto">Automatic (seasonal)</sys:String>
+    <sys:String x:Key="s.ap.mode.base">Base theme only</sys:String>
+    <sys:String x:Key="s.ap.mode.pick">Pick a theme</sys:String>
+    <sys:String x:Key="s.ap.pickHint">Stays on all year, whatever the date.</sys:String>
+    <sys:String x:Key="s.ap.preview">Theme preview</sys:String>
+    <sys:String x:Key="s.ap.active">Showing now: </sys:String>
+    <sys:String x:Key="s.ap.decor">Animate the scenery</sys:String>
+    <sys:String x:Key="s.ap.decorHint">Gears, snow, petals and lights. Also off when Windows reduces animations.</sys:String>
 </ResourceDictionary>

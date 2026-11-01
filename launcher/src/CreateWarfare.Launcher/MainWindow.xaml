@@ -599,7 +599,8 @@
                     <Border Background="{DynamicResource Surface}" CornerRadius="{StaticResource RadiusM}" Padding="4" HorizontalAlignment="Left">
                         <StackPanel Orientation="Horizontal">
                             <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource t.066}" ui:Ui.Icon="{StaticResource IcMemory}" IsChecked="{Binding TabGame, Mode=TwoWay}" />
-                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource t.067}" ui:Ui.Icon="{StaticResource IcPalette}" IsChecked="{Binding TabLauncher, Mode=TwoWay}" />
+                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource s.ap.tab}" ui:Ui.Icon="{StaticResource IcPalette}" IsChecked="{Binding TabAppearance, Mode=TwoWay}" />
+                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource t.067}" ui:Ui.Icon="{StaticResource IcSettings}" IsChecked="{Binding TabLauncher, Mode=TwoWay}" />
                             <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource t.068}" ui:Ui.Icon="{StaticResource IcFolder}" IsChecked="{Binding TabInstance, Mode=TwoWay}" />
                             <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource t.069}" ui:Ui.Icon="{StaticResource IcRepair}" IsChecked="{Binding TabAdvanced, Mode=TwoWay}" />
                         </StackPanel>
@@ -628,13 +629,56 @@
                             </StackPanel>
                         </Border>
 
+                        <!-- Apparence -->
+                        <Border Style="{StaticResource Card}" Visibility="{Binding TabAppearance, Converter={StaticResource Vis}}" VerticalAlignment="Top">
+                            <StackPanel>
+                                <DockPanel Style="{StaticResource SettingRow}">
+                                    <ComboBox DockPanel.Dock="Right" ItemsSource="{Binding ThemeModeOptions}" SelectedItem="{Binding SelectedThemeMode, Mode=TwoWay}" DisplayMemberPath="Label" Width="260" />
+                                    <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource s.ap.mode}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.077}" /></StackPanel>
+                                </DockPanel>
+                                <DockPanel Style="{StaticResource SettingRow}" Visibility="{Binding IsThemePick, Converter={StaticResource Vis}}">
+                                    <ComboBox DockPanel.Dock="Right" ItemsSource="{Binding ThemeOptions}" SelectedItem="{Binding SelectedTheme, Mode=TwoWay}" DisplayMemberPath="Label" Width="260" />
+                                    <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.076}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource s.ap.pickHint}" /></StackPanel>
+                                </DockPanel>
+                                <TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource s.ap.preview}" />
+                                <TextBlock Style="{StaticResource Body}" Text="{Binding ActiveThemeText}" Margin="0,2,0,12" />
+                                <ItemsControl ItemsSource="{Binding ThemePreviews}" Margin="0,0,-10,22" Focusable="False">
+                                    <ItemsControl.ItemsPanel><ItemsPanelTemplate><UniformGrid Rows="1" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Button Command="{Binding DataContext.PreviewThemeCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}" CommandParameter="{Binding Key}"
+                                                    ToolTip="{Binding Label}" AutomationProperties.Name="{Binding Label}" Margin="0,0,10,0" Cursor="Hand" FocusVisualStyle="{StaticResource FocusRing}">
+                                                <Button.Template>
+                                                    <ControlTemplate TargetType="Button">
+                                                        <Border x:Name="b" Background="{DynamicResource Surface}" BorderBrush="{DynamicResource Line}" BorderThickness="2" CornerRadius="{StaticResource RadiusM}" Padding="2">
+                                                            <StackPanel>
+                                                                <c:HeroArt Theme="{Binding Key}" ShowTitle="False" Height="82" />
+                                                                <DockPanel Margin="10,7,8,7">
+                                                                    <TextBlock DockPanel.Dock="Right" Text="{StaticResource IcDone}" FontFamily="{StaticResource Icons}" FontSize="12" Foreground="{DynamicResource Accent}" VerticalAlignment="Center"
+                                                                               Visibility="{Binding IsActive, Converter={StaticResource Vis}}" />
+                                                                    <TextBlock Text="{Binding Label}" FontWeight="SemiBold" Foreground="{DynamicResource Text}" TextTrimming="CharacterEllipsis" />
+                                                                </DockPanel>
+                                                            </StackPanel>
+                                                        </Border>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="b" Property="BorderBrush" Value="{DynamicResource Muted}" /></Trigger>
+                                                            <DataTrigger Binding="{Binding IsActive}" Value="True"><Setter TargetName="b" Property="BorderBrush" Value="{DynamicResource Accent}" /></DataTrigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Button.Template>
+                                            </Button>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                                <CheckBox Style="{StaticResource Toggle}" IsChecked="{Binding DecorAnimations}">
+                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource s.ap.decor}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource s.ap.decorHint}" /></StackPanel>
+                                </CheckBox>
+                            </StackPanel>
+                        </Border>
+
                         <!-- Launcher -->
                         <Border Style="{StaticResource Card}" Visibility="{Binding TabLauncher, Converter={StaticResource Vis}}" VerticalAlignment="Top">
                             <StackPanel>
-                                <DockPanel Style="{StaticResource SettingRow}">
-                                    <ComboBox DockPanel.Dock="Right" ItemsSource="{Binding ThemeOptions}" SelectedItem="{Binding SelectedTheme, Mode=TwoWay}" DisplayMemberPath="Label" Width="260" />
-                                    <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.076}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.077}" /></StackPanel>
-                                </DockPanel>
                                 <DockPanel Style="{StaticResource SettingRow}">
                                     <ComboBox DockPanel.Dock="Right" ItemsSource="{Binding LanguageOptions}" SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}" DisplayMemberPath="Label" Width="260" />
                                     <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.078}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.079}" /></StackPanel>
@@ -888,5 +932,9 @@
                 </StackPanel>
             </Border>
         </Grid>
+        <!-- Fondu au changement de thème : capture de l'ancien rendu, effacée en douceur (MainWindow.xaml.cs) -->
+        <Border x:Name="ThemeFade" Grid.RowSpan="2" Grid.ColumnSpan="2" IsHitTestVisible="False" Visibility="Collapsed">
+            <Image x:Name="ThemeFadeImage" Stretch="Fill" />
+        </Border>
     </Grid>
 </Window>

@@ -16,6 +16,7 @@ public partial class App : Application
         Motion.Apply(Resources);
         var settings = SettingsStore.Load();
         Strings.Apply(Environment.GetEnvironmentVariable("CW_LANG") ?? settings.Language); // CW_LANG : essais
+        Motion.DecorAnimations = settings.DecorAnimations;
         ThemeManager.Apply(settings.Theme);
         base.OnStartup(e);
     }

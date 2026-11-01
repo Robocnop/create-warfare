@@ -37,6 +37,15 @@ public sealed record Option(string Key, string Label)
 {
     public override string ToString() => Label;
 }
+/// <summary>Vignette d'aperçu d'un thème (Paramètres → Apparence).</summary>
+public sealed class ThemePreview : Observable
+{
+    public required string Key { get; init; }
+    public required string Label { get; init; }
+    bool _active;
+    /// <summary>Thème affiché en ce moment.</summary>
+    public bool IsActive { get => _active; set => Set(ref _active, value); }
+}
 public sealed class SlideDot : Observable
 {
     public int Index { get; init; }
@@ -90,6 +99,8 @@ public sealed partial class MainViewModel
         FinishOnboardingCommand = new Command(FinishOnboarding);
         DismissToastActionCommand = new Command(() => { var a = _toastAction; ToastText = null; a?.Invoke(); });
         SettingsTabCommand = new ParamCommand(p => SettingsTab = p as string ?? "game");
+        PreviewThemeCommand = new ParamCommand(p => { if (p is string key) SetTheme(key); });
+        ThemeManager.Changed += RaiseThemeProps; // y compris le changement automatique à minuit
 
         _serverTimer.Tick += async (_, _) => await RefreshServerAsync();
         _gameTimer.Tick += async (_, _) => await CheckGameAsync();
@@ -428,34 +439,105 @@ public sealed partial class MainViewModel
     public string SettingsTab
     {
         get => _settingsTab;
-        set { if (Set(ref _settingsTab, value)) foreach (var n in new[] { nameof(TabGame), nameof(TabLauncher), nameof(TabInstance), nameof(TabAdvanced) }) Raise(n); }
+        set { if (Set(ref _settingsTab, value)) foreach (var n in new[] { nameof(TabGame), nameof(TabAppearance), nameof(TabLauncher), nameof(TabInstance), nameof(TabAdvanced) }) Raise(n); }
     }
     public bool TabGame { get => SettingsTab == "game"; set { if (value) SettingsTab = "game"; } }
+    public bool TabAppearance { get => SettingsTab == "appearance"; set { if (value) SettingsTab = "appearance"; } }
     public bool TabLauncher { get => SettingsTab == "launcher"; set { if (value) SettingsTab = "launcher"; } }
     public bool TabInstance { get => SettingsTab == "instance"; set { if (value) SettingsTab = "instance"; } }
     public bool TabAdvanced { get => SettingsTab == "advanced"; set { if (value) SettingsTab = "advanced"; } }
     public System.Windows.Input.ICommand SettingsTabCommand { get; private set; } = null!;
 
-    public IReadOnlyList<Option> ThemeOptions { get; } = new[]
+    // ---------------------------------------------------------------- Apparence
+
+    const string ModeAuto = "auto", ModeBase = "base", ModePick = "pick";
+
+    /// <summary>Mode du thème : automatique (saisonnier), thème de base seul, ou un thème précis.</summary>
+    public IReadOnlyList<Option> ThemeModeOptions { get; } = new[]
     {
-        new Option(SeasonalTheme.Auto, T("s.theme.auto", "Automatique (selon la date)")),
-        new Option(SeasonalTheme.Default, T("s.theme.default", "Create Warfare")),
-        new Option(SeasonalTheme.Halloween, T("s.theme.halloween", "Halloween")),
-        new Option(SeasonalTheme.Easter, T("s.theme.easter", "Pâques")),
-        new Option(SeasonalTheme.Christmas, T("s.theme.christmas", "Noël")),
-        new Option(SeasonalTheme.Summer, T("s.theme.summer", "Été")),
+        new Option(ModeAuto, T("s.ap.mode.auto", "Automatique (saisonnier)")),
+        new Option(ModeBase, T("s.ap.mode.base", "Thème de base uniquement")),
+        new Option(ModePick, T("s.ap.mode.pick", "Choisir un thème")),
     };
-    public Option? SelectedTheme
+
+    string CurrentMode => _settings.Theme switch
     {
-        get => ThemeOptions.FirstOrDefault(o => o.Key == _settings.Theme) ?? ThemeOptions[0];
+        SeasonalTheme.Default => ModeBase,
+        var t when SeasonalTheme.All.Contains(t) => ModePick,
+        _ => ModeAuto,
+    };
+
+    public Option? SelectedThemeMode
+    {
+        get => ThemeModeOptions.First(o => o.Key == CurrentMode);
         set
         {
-            if (value == null || value.Key == _settings.Theme) return;
-            _settings.Theme = value.Key;
+            if (value == null || value.Key == CurrentMode) return;
+            SetTheme(value.Key switch
+            {
+                ModeBase => SeasonalTheme.Default,
+                // thème précis : on part du thème affiché (ou d'Halloween si c'est le thème de base)
+                ModePick => ThemeManager.Current != SeasonalTheme.Default ? ThemeManager.Current : SeasonalTheme.Halloween,
+                _ => SeasonalTheme.Auto,
+            });
+        }
+    }
+
+    /// <summary>Liste des thèmes du mode « Choisir un thème ».</summary>
+    public bool IsThemePick => CurrentMode == ModePick;
+
+    /// <summary>Thèmes au choix (ordre de SeasonalTheme.All : base, Halloween, Pâques, Noël, Été).</summary>
+    public IReadOnlyList<Option> ThemeOptions { get; } =
+        ThemeRegistry.All.Select(t => new Option(t.Key, T(t.NameKey, t.NameFr))).ToArray();
+
+    public Option? SelectedTheme
+    {
+        get => ThemeOptions.FirstOrDefault(o => o.Key == _settings.Theme);
+        set { if (value != null && value.Key != _settings.Theme) SetTheme(value.Key); }
+    }
+
+    /// <summary>Vignettes animées de chaque thème ; un clic l'applique (mode « Choisir un thème »).</summary>
+    public IReadOnlyList<ThemePreview> ThemePreviews { get; } =
+        ThemeRegistry.All.Select(t => new ThemePreview { Key = t.Key, Label = T(t.NameKey, t.NameFr), IsActive = t.Key == ThemeManager.Current }).ToArray();
+    public System.Windows.Input.ICommand PreviewThemeCommand { get; private set; } = null!;
+
+    /// <summary>« Affiché en ce moment : Noël ».</summary>
+    public string ActiveThemeText
+    {
+        get
+        {
+            var t = ThemeRegistry.Get(ThemeManager.Current);
+            return T("s.ap.active", "Affiché en ce moment : ") + T(t.NameKey, t.NameFr);
+        }
+    }
+
+    /// <summary>Animer le décor (engrenages, neige, pétales…). Windows peut aussi le couper (moins d'animations).</summary>
+    public bool DecorAnimations
+    {
+        get => _settings.DecorAnimations;
+        set
+        {
+            if (value == _settings.DecorAnimations) return;
+            _settings.DecorAnimations = value;
             SettingsStore.Save(_settings);
-            ThemeManager.Apply(value.Key);
+            Motion.DecorAnimations = value;
             Raise();
         }
+    }
+
+    /// <summary>Enregistre le réglage de thème (« auto », « default » ou un thème) et l'applique tout de suite.</summary>
+    void SetTheme(string key)
+    {
+        _settings.Theme = key;
+        SettingsStore.Save(_settings);
+        ThemeManager.Apply(key);
+        RaiseThemeProps();
+    }
+
+    void RaiseThemeProps()
+    {
+        foreach (var n in new[] { nameof(SelectedThemeMode), nameof(IsThemePick), nameof(SelectedTheme), nameof(ActiveThemeText) }) Raise(n);
+        foreach (var p in ThemePreviews) p.IsActive = p.Key == ThemeManager.Current;
     }
 
     public IReadOnlyList<Option> LanguageOptions { get; } = new[] { new Option("fr", "Français"), new Option("en", "English") };
@@ -602,8 +684,10 @@ public sealed partial class MainViewModel
         foreach (var p in typeof(LauncherSettings).GetProperties()) p.SetValue(_settings, p.GetValue(fresh));
         SettingsStore.Save(_settings);
         ThemeManager.Apply(_settings.Theme);
+        Motion.DecorAnimations = _settings.DecorAnimations;
         Strings.Apply(_settings.Language);
-        foreach (var n in new[] { nameof(SelectedTheme), nameof(SelectedLanguage), nameof(SelectedGameLaunch), nameof(AutoUpdateLauncher), nameof(DebugLog), nameof(DevMode) }) Raise(n);
+        RaiseThemeProps();
+        foreach (var n in new[] { nameof(DecorAnimations), nameof(SelectedLanguage), nameof(SelectedGameLaunch), nameof(AutoUpdateLauncher), nameof(DebugLog), nameof(DevMode) }) Raise(n);
         ApplyChoice();
         Toast(T("s.toast.reset", "Paramètres réinitialisés."));
     }
