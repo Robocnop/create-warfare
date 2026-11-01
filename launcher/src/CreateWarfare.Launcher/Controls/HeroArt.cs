@@ -31,12 +31,13 @@ public sealed class HeroArt : FrameworkElement
 
     void OnFrame(object? sender, EventArgs e)
     {
-        if (!IsVisible) return;
+        // décor coupé (réglage ou Windows) : image fixe, plus aucun rendu par image
+        if (!IsVisible || !Motion.DecorEnabled) { _last = TimeSpan.Zero; return; }
         var t = ((RenderingEventArgs)e).RenderingTime;
         if (_last != TimeSpan.Zero)
         {
-            var dt = (t - _last).TotalSeconds;
-            if (Motion.Enabled) _angle += dt * 4; // 4 °/s
+            var dt = Math.Min(0.1, (t - _last).TotalSeconds);
+            _angle += dt * 4; // 4 °/s
             _time += dt;
         }
         _last = t;

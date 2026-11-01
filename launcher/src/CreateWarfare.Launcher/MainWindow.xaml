@@ -129,6 +129,9 @@
                     </Rectangle.Fill>
                 </Rectangle>
 
+                <!-- Décor d'ambiance du thème (neige, pétales…) : au-dessus des images, sous le contenu -->
+                <c:AmbientLayer />
+
                 <Grid Margin="44,32,32,28">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
