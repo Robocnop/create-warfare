@@ -441,6 +441,7 @@ public sealed partial class MainViewModel
         new Option(SeasonalTheme.Auto, T("s.theme.auto", "Automatique (selon la date)")),
         new Option(SeasonalTheme.Default, T("s.theme.default", "Create Warfare")),
         new Option(SeasonalTheme.Halloween, T("s.theme.halloween", "Halloween")),
+        new Option(SeasonalTheme.Easter, T("s.theme.easter", "Pâques")),
         new Option(SeasonalTheme.Christmas, T("s.theme.christmas", "Noël")),
         new Option(SeasonalTheme.Summer, T("s.theme.summer", "Été")),
     };

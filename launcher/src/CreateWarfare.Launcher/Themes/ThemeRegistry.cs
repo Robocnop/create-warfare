@@ -22,6 +22,7 @@ public static class ThemeRegistry
     {
         new(SeasonalTheme.Default, "Default", "s.theme.default", "Create Warfare", new DefaultScene()),
         new(SeasonalTheme.Halloween, "Halloween", "s.theme.halloween", "Halloween", new HalloweenScene()),
+        new(SeasonalTheme.Easter, "Default", "s.theme.easter", "Pâques", new DefaultScene()),
         new(SeasonalTheme.Christmas, "Christmas", "s.theme.christmas", "Noël", new DefaultScene()),
         new(SeasonalTheme.Summer, "Summer", "s.theme.summer", "Été", new DefaultScene()),
     };

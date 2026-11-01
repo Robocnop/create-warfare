@@ -79,7 +79,7 @@
     <sys:String x:Key="t.074">Recommended value</sys:String>
     <sys:String x:Key="t.075">Java and resolution are set in CurseForge: My Modpacks → Create Warfare → ⋮ → Profile Options.</sys:String>
     <sys:String x:Key="t.076">Theme</sys:String>
-    <sys:String x:Key="t.077">Automatic: Halloween, Christmas and summer turn on by themselves on their dates.</sys:String>
+    <sys:String x:Key="t.077">Automatic: Halloween, Christmas, Easter and summer turn on by themselves on their dates.</sys:String>
     <sys:String x:Key="t.078">Language</sys:String>
     <sys:String x:Key="t.079">Language of the launcher interface.</sys:String>
     <sys:String x:Key="t.080">When the game starts</sys:String>
@@ -169,6 +169,7 @@
     <sys:String x:Key="s.theme.auto">Automatic (by date)</sys:String>
     <sys:String x:Key="s.theme.christmas">Christmas</sys:String>
     <sys:String x:Key="s.theme.default">Create Warfare</sys:String>
+    <sys:String x:Key="s.theme.easter">Easter</sys:String>
     <sys:String x:Key="s.theme.halloween">Halloween</sys:String>
     <sys:String x:Key="s.theme.summer">Summer</sys:String>
     <sys:String x:Key="s.toast.addressCopied">Address copied: </sys:String>

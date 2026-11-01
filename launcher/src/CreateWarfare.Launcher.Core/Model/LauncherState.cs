@@ -29,7 +29,7 @@ public sealed class LauncherSettings
     public bool DevMode { get; set; }
     /// <summary>Version choisie dans le sélecteur : « release » ou « prerelease ».</summary>
     public string Channel { get; set; } = Channels.Release;
-    /// <summary>Thème : « auto » (selon la date), « default », « halloween », « christmas » ou « summer ».</summary>
+    /// <summary>Thème : « auto » (selon la date, voir ThemeSchedule), « default » ou un thème précis (SeasonalTheme.All).</summary>
     public string Theme { get; set; } = "auto";
     /// <summary>Langue de l'interface : « fr » (par défaut) ou « en ».</summary>
     public string Language { get; set; } = "fr";

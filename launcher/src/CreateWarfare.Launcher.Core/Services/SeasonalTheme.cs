@@ -1,39 +1,29 @@
+using System.Globalization;
+
 namespace CreateWarfare.Launcher.Core.Services;
 
-/// <summary>Thèmes du launcher : l'identité par défaut, et des surcouches saisonnières.</summary>
+/// <summary>
+/// Thèmes du launcher : l'identité par défaut et des surcouches saisonnières. Les dates sont dans ThemeSchedule.
+/// </summary>
 public static class SeasonalTheme
 {
     public const string Default = "default";
     public const string Halloween = "halloween";
+    public const string Easter = "easter";
     public const string Christmas = "christmas";
     public const string Summer = "summer";
     /// <summary>Réglage « automatique » : le thème suit la date.</summary>
     public const string Auto = "auto";
 
-    /// <summary>Thèmes proposés dans les paramètres, dans l'ordre d'affichage.</summary>
-    public static readonly string[] All = { Default, Halloween, Christmas, Summer };
+    /// <summary>Thèmes connus, dans l'ordre d'affichage des paramètres.</summary>
+    public static readonly string[] All = { Default, Halloween, Easter, Christmas, Summer };
 
-    /// <summary>Thème Halloween du 15 octobre au 5 novembre inclus, chaque année.</summary>
-    public static bool IsHalloween(DateTime day) =>
-        (day.Month == 10 && day.Day >= 15) || (day.Month == 11 && day.Day <= 5);
-
-    /// <summary>Variable CW_THEME (« halloween » ou « default », pour les essais), sinon la date.</summary>
-    public static bool IsHalloween(DateTime day, string? forced) => Resolve(Auto, day, forced) == Halloween;
-
-    public static bool IsHalloweenNow() => IsHalloween(DateTime.Now, Environment.GetEnvironmentVariable("CW_THEME"));
-
-    /// <summary>Saison du jour : Halloween (15/10-05/11), Noël (01/12-06/01), été (juillet-août), sinon aucune.</summary>
-    public static string SeasonOf(DateTime day)
-    {
-        if (IsHalloween(day)) return Halloween;
-        if (day.Month == 12 || (day.Month == 1 && day.Day <= 6)) return Christmas;
-        if (day.Month is 7 or 8) return Summer;
-        return Default;
-    }
+    /// <summary>Thème saisonnier du jour (voir ThemeSchedule), ou le thème de base hors période.</summary>
+    public static string SeasonOf(DateTime day) => ThemeSchedule.ThemeOn(day);
 
     /// <summary>
-    /// Thème à appliquer. Ordre : variable CW_THEME (essais), puis réglage du joueur (un thème précis), puis la date
-    /// si le réglage est « auto » ou inconnu.
+    /// Thème à appliquer. Ordre : <paramref name="forced"/> (variable CW_THEME, pour les essais), puis le réglage du
+    /// joueur s'il désigne un thème précis, puis la date si le réglage vaut « auto » ou est inconnu.
     /// </summary>
     public static string Resolve(string? setting, DateTime day, string? forced)
     {
@@ -45,5 +35,14 @@ public static class SeasonalTheme
     }
 
     public static string ResolveNow(string? setting) =>
-        Resolve(setting, DateTime.Now, Environment.GetEnvironmentVariable("CW_THEME"));
+        Resolve(setting, Today(), Environment.GetEnvironmentVariable("CW_THEME"));
+
+    /// <summary>
+    /// Date locale du jour, ou celle de la variable CW_DATE (AAAA-MM-JJ) pour simuler une autre date pendant les essais.
+    /// </summary>
+    public static DateTime Today() => ParseDate(Environment.GetEnvironmentVariable("CW_DATE")) ?? DateTime.Today;
+
+    /// <summary>« 2027-03-28 » → date ; vide ou illisible → null.</summary>
+    public static DateTime? ParseDate(string? text) =>
+        DateTime.TryParseExact(text?.Trim(), "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var d) ? d : null;
 }
