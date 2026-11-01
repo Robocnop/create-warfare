@@ -110,11 +110,46 @@ une illustration dessinée (engrenages) est affichée. Icône : `Assets/icon.ico
   Discord et Site restent cachés tant que leur adresse est vide.
 - Essai local : `CW_LAUNCHER_CONTENT=C:\chemin\launcher-content.json`.
 
-### Thèmes
-- Identité par défaut : `Themes/Palettes/Default.xaml` (acier + orange). Saisons : `Halloween.xaml` (15/10–05/11),
-  `Christmas.xaml` (01/12–06/01), `Summer.xaml` (juillet–août). Mêmes clés de couleur dans chaque palette.
-- Le joueur choisit dans Paramètres → Launcher → Thème (« Automatique » suit la date). Essai : `CW_THEME=halloween|christmas|summer|default`.
-- Ajouter une saison : copier une palette, l'ajouter à `SeasonalTheme.All` et à `ThemeManager.Apply`, puis à `ThemeOptions`.
+### Thèmes (1.3)
+Base (acier et orange), Halloween, Pâques, Noël, Été. Chaque thème est une surcouche : il change les couleurs et le décor,
+jamais le code des composants.
+
+| Pièce | Fichier |
+|---|---|
+| Dates des saisons (le seul fichier à toucher pour les changer) | `src/CreateWarfare.Launcher.Core/Services/ThemeSchedule.cs` |
+| Clés des thèmes, choix du thème (réglage, date, `CW_THEME`) | `src/CreateWarfare.Launcher.Core/Services/SeasonalTheme.cs` |
+| Liste des thèmes (palette, illustration, décor) | `src/CreateWarfare.Launcher/Themes/ThemeRegistry.cs` |
+| Couleurs (mêmes clés dans chaque fichier) | `src/CreateWarfare.Launcher/Themes/Palettes/<Thème>.xaml` |
+| Illustrations (engrenages réinterprétés) | `src/CreateWarfare.Launcher/Controls/Scenes/<Thème>Scene.cs` |
+| Décor d'ambiance de l'accueil (neige, pétales, lumières) | `src/CreateWarfare.Launcher/Controls/Scenes/Ambient.cs` |
+
+**Calendrier par défaut** : Halloween 15/10 → 02/11, Noël 01/12 → 06/01, Pâques de J-14 au lundi de Pâques (date calculée
+chaque année, algorithme de Meeus/Jones/Butcher), Été 21/06 → 22/09, thème de base le reste du temps. Bornes incluses.
+Si deux périodes se chevauchent, la priorité la plus haute gagne (Halloween 40 > Noël 30 > Pâques 20 > Été 10).
+En mode automatique, la date est revérifiée chaque minute : le thème change seul à minuit.
+
+**Changer une date** : modifier la ligne dans `ThemeSchedule.Periods`, par exemple `Fixed(10, 15)` (15 octobre) ou
+`Easter(-14)` (14 jours avant Pâques). Une période dont la fin précède le début se termine l'année suivante.
+Relancer `dotnet test` (les bornes sont testées), puis publier le launcher.
+
+**Ajouter un thème** (ex. Nouvel An) :
+1. une clé dans `SeasonalTheme` (et dans `SeasonalTheme.All`) ;
+2. une période dans `ThemeSchedule.Periods` si le thème est saisonnier ;
+3. une palette `Themes/Palettes/<Nom>.xaml` (copier une palette existante, garder toutes les clés) ;
+4. une scène `Controls/Scenes/<Nom>Scene.cs` (hériter de `HeroScene` ; `SceneKit.Train` donne les engrenages engrenés),
+   et au besoin un `AmbientDecor` ;
+5. une ligne dans `ThemeRegistry.All` ;
+6. son nom (`s.theme.<clé>`) dans `Strings/fr.xaml` et `Strings/en.xaml`.
+Le menu, les aperçus des paramètres et le planificateur le prennent ensuite en compte seuls.
+
+**Joueur** : Paramètres → Apparence. Mode Automatique (saisonnier), Thème de base uniquement ou Choisir un thème ;
+aperçus animés de chaque thème (un clic l'applique) ; « Animer le décor » (aussi coupé quand Windows réduit les
+animations). Changement en fondu, sans redémarrer.
+
+**Essais** :
+- `CW_THEME=default|halloween|easter|christmas|summer` force un thème (prime sur le réglage) ;
+- `CW_DATE=2027-03-28` simule la date du jour (le mode automatique s'en sert) ;
+- `CW_START_PAGE=settings:appearance` ouvre directement l'onglet (autres : `game`, `launcher`, `instance`, `advanced`).
 
 ### Textes et langue
 - Tous les textes de l'interface sont dans `Strings/fr.xaml` (référence) et `Strings/en.xaml` (mêmes clés). Essai : `CW_LANG=en`.
