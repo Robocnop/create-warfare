@@ -29,8 +29,10 @@ public sealed class LauncherSettings
     public bool DevMode { get; set; }
     /// <summary>Version choisie dans le sélecteur : « release » ou « prerelease ».</summary>
     public string Channel { get; set; } = Channels.Release;
-    /// <summary>Thème : « auto » (selon la date), « default », « halloween », « christmas » ou « summer ».</summary>
+    /// <summary>Thème : « auto » (selon la date, voir ThemeSchedule), « default » ou un thème précis (SeasonalTheme.All).</summary>
     public string Theme { get; set; } = "auto";
+    /// <summary>Animer le décor du thème (engrenages, neige, pétales…). Windows peut aussi le couper.</summary>
+    public bool DecorAnimations { get; set; } = true;
     /// <summary>Langue de l'interface : « fr » (par défaut) ou « en ».</summary>
     public string Language { get; set; } = "fr";
     /// <summary>Quand le jeu se lance : « minimize » (réduire le launcher), « close » ou « stay ».</summary>

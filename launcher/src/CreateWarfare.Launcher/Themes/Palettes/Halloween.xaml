@@ -58,6 +58,7 @@
     <Color x:Key="FocusColor">#FFB866</Color>
     <FontFamily x:Key="Display">pack://application:,,,/Assets/Fonts/#Creepster</FontFamily>
     <sys:Double x:Key="PrimaryFontSize">26</sys:Double>
+    <Visibility x:Key="EasterVis">Collapsed</Visibility>
     <Visibility x:Key="HalloweenVis">Visible</Visibility>
     <Visibility x:Key="ChristmasVis">Collapsed</Visibility>
     <Visibility x:Key="SummerVis">Collapsed</Visibility>

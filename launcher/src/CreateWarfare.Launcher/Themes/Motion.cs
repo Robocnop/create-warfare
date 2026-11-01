@@ -10,6 +10,12 @@ public static class Motion
 {
     public static bool Enabled => SystemParameters.ClientAreaAnimation && !SystemParameters.HighContrast;
 
+    /// <summary>Réglage du joueur « Animer le décor » (engrenages, neige, pétales…). Vrai par défaut.</summary>
+    public static bool DecorAnimations { get; set; } = true;
+
+    /// <summary>Le décor bouge-t-il ? Faux si le joueur l'a coupé ou si Windows demande moins d'animations.</summary>
+    public static bool DecorEnabled => Enabled && DecorAnimations;
+
     public static Duration Fast => Of(120);
     public static Duration Base => Of(220);
     public static Duration Slow => Of(600);

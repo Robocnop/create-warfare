@@ -1,0 +1,65 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Pâques : nuit de printemps vert sauge, jaune beurre et rose dragée, touches de vert tendre. Mêmes clés dans chaque palette : ThemeManager remplace ce dictionnaire. -->
+    <SolidColorBrush x:Key="Bg" Color="#111412" />
+    <Color x:Key="BgColor">#111412</Color>
+    <SolidColorBrush x:Key="Panel" Color="#161A17" />
+    <Color x:Key="PanelColor">#161A17</Color>
+    <SolidColorBrush x:Key="Row" Color="#191E1A" />
+    <Color x:Key="RowColor">#191E1A</Color>
+    <SolidColorBrush x:Key="Surface" Color="#1C221E" />
+    <Color x:Key="SurfaceColor">#1C221E</Color>
+    <SolidColorBrush x:Key="SurfaceHi" Color="#252D27" />
+    <Color x:Key="SurfaceHiColor">#252D27</Color>
+    <SolidColorBrush x:Key="Line" Color="#29312B" />
+    <Color x:Key="LineColor">#29312B</Color>
+    <SolidColorBrush x:Key="LineStrong" Color="#3E4A41" />
+    <Color x:Key="LineStrongColor">#3E4A41</Color>
+    <SolidColorBrush x:Key="Text" Color="#F4F1EA" />
+    <Color x:Key="TextColor">#F4F1EA</Color>
+    <SolidColorBrush x:Key="Muted" Color="#B3B8AC" />
+    <Color x:Key="MutedColor">#B3B8AC</Color>
+    <SolidColorBrush x:Key="Dim" Color="#777E73" />
+    <Color x:Key="DimColor">#777E73</Color>
+    <SolidColorBrush x:Key="Accent" Color="#F6CF6A" />
+    <Color x:Key="AccentColor">#F6CF6A</Color>
+    <SolidColorBrush x:Key="AccentHover" Color="#F9DC8E" />
+    <Color x:Key="AccentHoverColor">#F9DC8E</Color>
+    <SolidColorBrush x:Key="AccentSoft" Color="#26F6CF6A" />
+    <Color x:Key="AccentSoftColor">#26F6CF6A</Color>
+    <SolidColorBrush x:Key="Primary" Color="#F3A9C4" />
+    <Color x:Key="PrimaryColor">#F3A9C4</Color>
+    <SolidColorBrush x:Key="PrimaryHover" Color="#F7BFD3" />
+    <Color x:Key="PrimaryHoverColor">#F7BFD3</Color>
+    <SolidColorBrush x:Key="PrimaryText" Color="#2B1220" />
+    <Color x:Key="PrimaryTextColor">#2B1220</Color>
+    <SolidColorBrush x:Key="Yellow" Color="#F6CF6A" />
+    <Color x:Key="YellowColor">#F6CF6A</Color>
+    <SolidColorBrush x:Key="YellowHover" Color="#F9DC8E" />
+    <Color x:Key="YellowHoverColor">#F9DC8E</Color>
+    <SolidColorBrush x:Key="Success" Color="#9ADB8F" />
+    <Color x:Key="SuccessColor">#9ADB8F</Color>
+    <SolidColorBrush x:Key="Warning" Color="#F6CF6A" />
+    <Color x:Key="WarningColor">#F6CF6A</Color>
+    <SolidColorBrush x:Key="Error" Color="#F0787C" />
+    <Color x:Key="ErrorColor">#F0787C</Color>
+    <SolidColorBrush x:Key="Info" Color="#A9C7F5" />
+    <Color x:Key="InfoColor">#A9C7F5</Color>
+    <SolidColorBrush x:Key="Hover" Color="#1F2621" />
+    <Color x:Key="HoverColor">#1F2621</Color>
+    <SolidColorBrush x:Key="CaptionHover" Color="#26302A" />
+    <Color x:Key="CaptionHoverColor">#26302A</Color>
+    <SolidColorBrush x:Key="Overlay" Color="#E6111412" />
+    <Color x:Key="OverlayColor">#E6111412</Color>
+    <SolidColorBrush x:Key="Scrim" Color="#99111412" />
+    <Color x:Key="ScrimColor">#99111412</Color>
+    <SolidColorBrush x:Key="Focus" Color="#F9DC8E" />
+    <Color x:Key="FocusColor">#F9DC8E</Color>
+    <FontFamily x:Key="Display">pack://application:,,,/Assets/Fonts/#Rajdhani</FontFamily>
+    <sys:Double x:Key="PrimaryFontSize">22</sys:Double>
+    <Visibility x:Key="EasterVis">Visible</Visibility>
+    <Visibility x:Key="HalloweenVis">Collapsed</Visibility>
+    <Visibility x:Key="ChristmasVis">Collapsed</Visibility>
+    <Visibility x:Key="SummerVis">Collapsed</Visibility>
+</ResourceDictionary>

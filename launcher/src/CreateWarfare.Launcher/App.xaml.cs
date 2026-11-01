@@ -14,9 +14,9 @@ public partial class App : Application
         SelfUpdater.CleanupOld();
         DispatcherUnhandledException += OnUnhandled;
         Motion.Apply(Resources);
-        ThemeManager.Changed += () => HeroArt.Halloween = ThemeManager.Current == SeasonalTheme.Halloween;
         var settings = SettingsStore.Load();
         Strings.Apply(Environment.GetEnvironmentVariable("CW_LANG") ?? settings.Language); // CW_LANG : essais
+        Motion.DecorAnimations = settings.DecorAnimations;
         ThemeManager.Apply(settings.Theme);
         base.OnStartup(e);
     }

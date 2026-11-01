@@ -79,7 +79,7 @@
     <sys:String x:Key="t.074">Valeur conseillée</sys:String>
     <sys:String x:Key="t.075">Java et la résolution se règlent dans CurseForge : Mes modpacks → Create Warfare → ⋮ → Profile Options.</sys:String>
     <sys:String x:Key="t.076">Thème</sys:String>
-    <sys:String x:Key="t.077">Automatique : Halloween, Noël et été s'activent seuls à leur date.</sys:String>
+    <sys:String x:Key="t.077">Automatique : Halloween, Noël, Pâques et l'été s'activent seuls à leur date.</sys:String>
     <sys:String x:Key="t.078">Langue</sys:String>
     <sys:String x:Key="t.079">Langue de l'interface du launcher.</sys:String>
     <sys:String x:Key="t.080">Quand le jeu se lance</sys:String>
@@ -169,6 +169,7 @@
     <sys:String x:Key="s.theme.auto">Automatique (selon la date)</sys:String>
     <sys:String x:Key="s.theme.christmas">Noël</sys:String>
     <sys:String x:Key="s.theme.default">Create Warfare</sys:String>
+    <sys:String x:Key="s.theme.easter">Pâques</sys:String>
     <sys:String x:Key="s.theme.halloween">Halloween</sys:String>
     <sys:String x:Key="s.theme.summer">Été</sys:String>
     <sys:String x:Key="s.toast.addressCopied">Adresse copiée : </sys:String>
@@ -188,4 +189,14 @@
     <sys:String x:Key="s.uninstall.yes">Désinstaller</sys:String>
     <sys:String x:Key="s.work.left">restantes</sys:String>
     <sys:String x:Key="s.unit.gb">Go</sys:String>
+    <sys:String x:Key="s.ap.tab">Apparence</sys:String>
+    <sys:String x:Key="s.ap.mode">Mode du thème</sys:String>
+    <sys:String x:Key="s.ap.mode.auto">Automatique (saisonnier)</sys:String>
+    <sys:String x:Key="s.ap.mode.base">Thème de base uniquement</sys:String>
+    <sys:String x:Key="s.ap.mode.pick">Choisir un thème</sys:String>
+    <sys:String x:Key="s.ap.pickHint">Reste affiché toute l'année, quelle que soit la date.</sys:String>
+    <sys:String x:Key="s.ap.preview">Aperçu des thèmes</sys:String>
+    <sys:String x:Key="s.ap.active">Affiché en ce moment : </sys:String>
+    <sys:String x:Key="s.ap.decor">Animer le décor</sys:String>
+    <sys:String x:Key="s.ap.decorHint">Engrenages, neige, pétales et lumières. Coupé aussi quand Windows réduit les animations.</sys:String>
 </ResourceDictionary>

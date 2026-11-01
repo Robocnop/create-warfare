@@ -484,7 +484,9 @@
                             </ToggleButton.Template>
                         </ToggleButton>
                         <ContentPresenter IsHitTestVisible="False" Content="{TemplateBinding SelectionBoxItem}"
-                                          ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" Margin="12,0,32,0" VerticalAlignment="Center" />
+                                          ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                          ContentTemplateSelector="{TemplateBinding ItemTemplateSelector}"
+                                          ContentStringFormat="{TemplateBinding SelectionBoxItemStringFormat}" Margin="12,0,32,0" VerticalAlignment="Center" />
                         <Popup x:Name="PART_Popup" IsOpen="{TemplateBinding IsDropDownOpen}" Placement="Bottom" AllowsTransparency="True" Focusable="False"
                                PopupAnimation="Fade" MinWidth="{Binding ActualWidth, RelativeSource={RelativeSource TemplatedParent}}">
                             <Border Background="{DynamicResource Panel}" BorderBrush="{DynamicResource LineStrong}" BorderThickness="1"

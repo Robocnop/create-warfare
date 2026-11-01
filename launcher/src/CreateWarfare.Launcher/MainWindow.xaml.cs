@@ -1,5 +1,9 @@
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
+using CreateWarfare.Launcher.Themes;
 using CreateWarfare.Launcher.ViewModels;
 
 namespace CreateWarfare.Launcher;
@@ -15,14 +19,45 @@ public partial class MainWindow : Window
         Loaded += async (_, _) =>
         {
             await Vm.RefreshAsync();
-            // Essais et captures : CW_START_PAGE=news|gallery|settings|logs|about
+            // Essais et captures : CW_START_PAGE=news|gallery|settings[:game|appearance|launcher|instance|advanced]|logs|about
             if (Environment.GetEnvironmentVariable("CW_START_PAGE") is { Length: > 0 } page)
             {
-                if (page == "repair") Vm.RepairCommand.Execute(null); // analyse seule : rien n'est écrit sans confirmation
-                else Vm.Navigate(page);
+                var parts = page.Split(':', 2);
+                if (parts[0] == "repair") Vm.RepairCommand.Execute(null); // analyse seule : rien n'est écrit sans confirmation
+                else Vm.Navigate(parts[0]);
+                if (parts.Length == 2) Vm.SettingsTab = parts[1];
             }
         };
         PreviewKeyDown += OnKey;
+        ThemeManager.Changing += BeginThemeFade;
+        Closed += (_, _) => ThemeManager.Changing -= BeginThemeFade;
+    }
+
+    /// <summary>
+    /// Fondu entre deux thèmes : capture de la fenêtre avec l'ancien thème, posée par-dessus, puis effacée pendant
+    /// que la nouvelle palette s'applique dessous. Pas de clignotement ni de rechargement. Coupé si Windows réduit les animations.
+    /// </summary>
+    void BeginThemeFade()
+    {
+        if (!IsLoaded || !Motion.Enabled || Content is not FrameworkElement root || root.ActualWidth < 1 || root.ActualHeight < 1) return;
+        var dpi = VisualTreeHelper.GetDpi(this);
+        var shot = new RenderTargetBitmap((int)Math.Ceiling(root.ActualWidth * dpi.DpiScaleX), (int)Math.Ceiling(root.ActualHeight * dpi.DpiScaleY),
+            dpi.PixelsPerInchX, dpi.PixelsPerInchY, PixelFormats.Pbgra32);
+        ThemeFade.Visibility = Visibility.Collapsed;
+        shot.Render(root);
+        shot.Freeze();
+        // fond de l'ancien thème sous la capture (zones transparentes de la grille)
+        ThemeFade.Background = (TryFindResource("Bg") as Brush)?.CloneCurrentValue();
+        ThemeFadeImage.Source = shot;
+        ThemeFade.Visibility = Visibility.Visible;
+        var fade = new DoubleAnimation(1, 0, Motion.Of(380)) { EasingFunction = new QuadraticEase { EasingMode = EasingMode.EaseOut } };
+        fade.Completed += (_, _) =>
+        {
+            ThemeFade.Visibility = Visibility.Collapsed;
+            ThemeFadeImage.Source = null;
+            ThemeFade.BeginAnimation(OpacityProperty, null);
+        };
+        ThemeFade.BeginAnimation(OpacityProperty, fade);
     }
 
     /// <summary>Raccourcis : Entrée = bouton principal (accueil), Échap = retour, Ctrl+, = paramètres, flèches = images.</summary>
