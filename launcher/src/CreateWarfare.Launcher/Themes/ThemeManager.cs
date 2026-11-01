@@ -19,13 +19,7 @@ public static class ThemeManager
     public static void Apply(string? setting)
     {
         var theme = SeasonalTheme.ResolveNow(setting);
-        var file = theme switch
-        {
-            SeasonalTheme.Halloween => "Halloween",
-            SeasonalTheme.Christmas => "Christmas",
-            SeasonalTheme.Summer => "Summer",
-            _ => "Default",
-        };
+        var file = ThemeRegistry.Get(theme).Palette;
         var dicts = Application.Current.Resources.MergedDictionaries;
         var palette = new ResourceDictionary { Source = new Uri($"pack://application:,,,/{PalettePrefix}{file}.xaml") };
         var old = dicts.FirstOrDefault(d => d.Source?.OriginalString.Contains(PalettePrefix) == true);
