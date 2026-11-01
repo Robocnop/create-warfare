@@ -16,6 +16,9 @@ public sealed class HeroArt : FrameworkElement
 
     public static readonly FontFamily Creepster = new(new Uri("pack://application:,,,/"), "./Assets/Fonts/#Creepster");
 
+    /// <summary>Faux dans le carrousel : le titre est dans la page d'accueil, pas dans l'image.</summary>
+    public bool ShowTitle { get; set; } = true;
+
     double _angle, _time;
     TimeSpan _last;
 
@@ -32,7 +35,7 @@ public sealed class HeroArt : FrameworkElement
         if (_last != TimeSpan.Zero)
         {
             var dt = (t - _last).TotalSeconds;
-            _angle += dt * 4; // 4 °/s
+            if (CreateWarfare.Launcher.Themes.Motion.Enabled) _angle += dt * 4; // 4 °/s
             _time += dt;
         }
         _last = t;
@@ -58,13 +61,13 @@ public sealed class HeroArt : FrameworkElement
             return;
         }
 
-        dc.DrawRectangle(new LinearGradientBrush(Color.FromRgb(0x1B, 0x21, 0x38), Color.FromRgb(0x0A, 0x0E, 0x1A), 60), null, area);
+        dc.DrawRectangle(new LinearGradientBrush(Color.FromRgb(0x1C, 0x20, 0x29), Color.FromRgb(0x0E, 0x10, 0x14), 60), null, area);
         Glow(dc, new Point(w * 0.30, h * 0.72), Math.Max(w, h) * 0.75, Color.FromArgb(150, 0xFF, 0x7A, 0x1A));
         Glow(dc, new Point(w * 0.42, h * 0.62), Math.Max(w, h) * 0.30, Color.FromArgb(120, 0xFF, 0xD0, 0x60));
-        Glow(dc, new Point(w * 0.95, h * 0.05), Math.Max(w, h) * 0.55, Color.FromArgb(90, 0x8B, 0x93, 0xFF));
+        Glow(dc, new Point(w * 0.95, h * 0.05), Math.Max(w, h) * 0.55, Color.FromArgb(70, 0x58, 0xA6, 0xFF));
 
         var s = Math.Min(w, h);
-        var big = new Point(w * 0.40, h * 0.50);
+        var big = ShowTitle ? new Point(w * 0.40, h * 0.50) : new Point(w * 0.50, h * 0.46);
         double rBig = s * 0.34, rSmall = s * 0.20;
         var small = new Point(big.X + (rBig + rSmall) * 0.93 * Math.Cos(-0.75), big.Y + (rBig + rSmall) * 0.93 * Math.Sin(-0.75));
         Gear(dc, new Point(w * 0.08, h * 0.95), s * 0.22, 11, -_angle * 1.5, BrassDark, null);
@@ -93,12 +96,13 @@ public sealed class HeroArt : FrameworkElement
         dc.Pop();
 
         // nom du pack
+        if (!ShowTitle) { dc.Pop(); return; }
         var dpi = VisualTreeHelper.GetDpi(this).PixelsPerDip;
         var black = new Typeface(new FontFamily("Segoe UI"), FontStyles.Normal, FontWeights.Black, FontStretches.Normal);
         var mono = new Typeface(new FontFamily("Cascadia Mono, Consolas"), FontStyles.Normal, FontWeights.SemiBold, FontStretches.Normal);
         double size = Math.Clamp(w * 0.11, 30, 64);
         var t1 = new FormattedText("CREATE", CultureInfo.CurrentUICulture, FlowDirection.LeftToRight, black, size, new SolidColorBrush(Color.FromArgb(235, 255, 255, 255)), dpi);
-        var t2 = new FormattedText("WARFARE", CultureInfo.CurrentUICulture, FlowDirection.LeftToRight, black, size, new SolidColorBrush(Color.FromRgb(0x8B, 0x93, 0xFF)), dpi);
+        var t2 = new FormattedText("WARFARE", CultureInfo.CurrentUICulture, FlowDirection.LeftToRight, black, size, new SolidColorBrush(Color.FromRgb(0xF2, 0x8C, 0x28)), dpi);
         var t3 = new FormattedText("MINECRAFT 1.21.1 · NEOFORGE · CREATE 6", CultureInfo.CurrentUICulture, FlowDirection.LeftToRight, mono, 11, new SolidColorBrush(Color.FromArgb(170, 0xE8, 0xEB, 0xF4)), dpi);
         double x0 = 32, y3 = h - 26 - 22 - t3.Height;
         dc.DrawText(t3, new Point(x0 + 2, y3));
@@ -146,6 +150,7 @@ public sealed class HeroArt : FrameworkElement
         Face(dc, small, rSmall * 0.78);
 
         // nom du pack
+        if (!ShowTitle) return;
         var dpi = VisualTreeHelper.GetDpi(this).PixelsPerDip;
         var creepy = new Typeface(Creepster, FontStyles.Normal, FontWeights.Normal, FontStretches.Normal);
         var mono = new Typeface(new FontFamily("Cascadia Mono, Consolas"), FontStyles.Normal, FontWeights.SemiBold, FontStretches.Normal);

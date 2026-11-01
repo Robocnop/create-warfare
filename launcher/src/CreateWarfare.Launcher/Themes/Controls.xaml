@@ -3,7 +3,7 @@
                     xmlns:ui="clr-namespace:CreateWarfare.Launcher.Themes">
     <!-- Composants du launcher. Couleurs en DynamicResource (palette du thème), le reste vient de Tokens.xaml. -->
 
-    <BooleanToVisibilityConverter x:Key="Vis" />
+    <ui:BoolToVis x:Key="Vis" />
 
     <!-- ===== Focus clavier visible ===== -->
     <Style x:Key="FocusRing">
@@ -378,10 +378,10 @@
                             <Setter TargetName="track" Property="BorderBrush" Value="{DynamicResource Accent}" />
                             <Setter TargetName="knob" Property="Fill" Value="{DynamicResource PrimaryText}" />
                             <Trigger.EnterActions>
-                                <BeginStoryboard><Storyboard><DoubleAnimation Storyboard.TargetName="tx" Storyboard.TargetProperty="X" To="18" Duration="{StaticResource DurFast}" /></Storyboard></BeginStoryboard>
+                                <BeginStoryboard><Storyboard><DoubleAnimation Storyboard.TargetName="tx" Storyboard.TargetProperty="X" To="18" Duration="{x:Static ui:Motion.Fast}" /></Storyboard></BeginStoryboard>
                             </Trigger.EnterActions>
                             <Trigger.ExitActions>
-                                <BeginStoryboard><Storyboard><DoubleAnimation Storyboard.TargetName="tx" Storyboard.TargetProperty="X" To="0" Duration="{StaticResource DurFast}" /></Storyboard></BeginStoryboard>
+                                <BeginStoryboard><Storyboard><DoubleAnimation Storyboard.TargetName="tx" Storyboard.TargetProperty="X" To="0" Duration="{x:Static ui:Motion.Fast}" /></Storyboard></BeginStoryboard>
                             </Trigger.ExitActions>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="track" Property="BorderBrush" Value="{DynamicResource Muted}" /></Trigger>

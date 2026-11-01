@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\CreateWarfare.Launcher.Core\CreateWarfare.Launcher.Core.csproj" />
@@ -37,6 +37,9 @@
     <Resource Include="Assets\icon.ico" Condition="Exists('Assets\icon.ico')" />
     <!-- Titres du thème Halloween : Creepster (Font Diner), licence SIL OFL 1.1 (Assets\Fonts\Creepster-OFL.txt). -->
     <Resource Include="Assets\Fonts\*.ttf" />
+    <!-- Carrousel et galerie : déposer des images dans Assets\screenshots (png, jpg), puis recompiler.
+         Ordre : nom de fichier. Légendes et images distantes : launcher-content.json à la racine du dépôt. -->
+    <Resource Include="Assets\screenshots\*.png;Assets\screenshots\*.jpg;Assets\screenshots\*.jpeg" />
   </ItemGroup>
 
 </Project>

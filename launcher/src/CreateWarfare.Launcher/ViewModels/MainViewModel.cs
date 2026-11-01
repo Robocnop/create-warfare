@@ -7,11 +7,11 @@ using CreateWarfare.Launcher.Core.Services;
 
 namespace CreateWarfare.Launcher.ViewModels;
 
-public enum Screen { Home, Install, Review, Working, Changelog, Settings }
+public enum Screen { Home, Install, Review, Working, Changelog, Settings, Gallery, Logs, About }
 
 enum PrimaryAction { None, Install, Update, Play, UpdateLauncher }
 
-public sealed class MainViewModel : Observable
+public sealed partial class MainViewModel : Observable
 {
     readonly Downloader _dl = new();
     readonly LauncherSettings _settings = SettingsStore.Load();
@@ -46,6 +46,7 @@ public sealed class MainViewModel : Observable
         DismissToastCommand = new Command(() => ToastText = null);
         ToggleVersionMenuCommand = new Command(() => IsVersionMenuOpen = !IsVersionMenuOpen, () => VersionItems.Count > 0);
         UninstallCommand = new Command(UninstallAsync);
+        InitShell();
     }
 
     // ---- Commandes
@@ -79,6 +80,7 @@ public sealed class MainViewModel : Observable
             if (!Set(ref _screen, value)) return;
             foreach (var n in new[] { nameof(IsHome), nameof(IsInstall), nameof(IsReview), nameof(IsWorking), nameof(IsChangelog), nameof(IsSettings), nameof(ShowHero) })
                 Raise(n);
+            RaiseShell();
             System.Windows.Input.CommandManager.InvalidateRequerySuggested();
         }
     }
@@ -169,7 +171,10 @@ public sealed class MainViewModel : Observable
     string _workTotal = "";
     public string WorkTotal { get => _workTotal; set => Set(ref _workTotal, value); }
     double _workProgress;
-    public double WorkProgress { get => _workProgress; set => Set(ref _workProgress, value); }
+    public double WorkProgress { get => _workProgress; set { if (Set(ref _workProgress, value)) Raise(nameof(WorkPercent)); } }
+    string _workDetail = "";
+    public string WorkDetail { get => _workDetail; set => Set(ref _workDetail, value); }
+    public int WorkPercent => (int)Math.Round(WorkProgress * 100);
     string _workCurrent = "";
     public string WorkCurrent { get => _workCurrent; set => Set(ref _workCurrent, value); }
     bool _canCancel;
@@ -186,6 +191,7 @@ public sealed class MainViewModel : Observable
     {
         ToastIsError = error;
         ToastText = text;
+        OnToastShown();
         if (error) Log.Error(text); else Log.Info(text);
     }
 
@@ -214,6 +220,11 @@ public sealed class MainViewModel : Observable
             Toast("Serveur de mises à jour injoignable. Vérifie ta connexion.", error: true);
         }
         ApplyChoice();
+        if (_settings.AutoUpdateLauncher && LauncherUpdateAvailable && _manifest?.Launcher != null)
+        {
+            Log.Info("Mise à jour automatique du launcher");
+            _ = UpdateLauncherAsync();
+        }
     }
 
     /// <summary>Reconstruit le sélecteur et la version visée à partir du canal mémorisé.</summary>
@@ -235,6 +246,9 @@ public sealed class MainViewModel : Observable
         foreach (var n in new[] { nameof(ChoiceLabel), nameof(ChoiceVersion), nameof(ChoiceIsPrerelease), nameof(ChoiceIsRelease) })
             Raise(n);
         UpdateHome();
+        BuildNews();
+        Raise(nameof(MinecraftVersion));
+        Raise(nameof(NeoForgeVersion));
     }
 
     void Select(VersionChoice c)
@@ -283,6 +297,14 @@ public sealed class MainViewModel : Observable
             _ when !upToDate => ("Mise à jour disponible", "Mettre à jour", PrimaryAction.Update),
             _ => ("Prêt à jouer", "Jouer", PrimaryAction.Play),
         };
+        SetPrimaryIcon(_action switch
+        {
+            PrimaryAction.Install => "IcDownload",
+            PrimaryAction.Update => "IcSync",
+            PrimaryAction.UpdateLauncher => "IcSync",
+            _ => "IcPlay",
+        });
+        if (GameRunning && _action == PrimaryAction.Play) (StatusTitle, PrimaryText) = (T("s.status.inGame", "En jeu"), T("s.play.inGame", "Jeu lancé"));
         foreach (var n in new[] { nameof(Notice), nameof(HasNotice), nameof(Changelog), nameof(RemoteVersion), nameof(InstancePath), nameof(HasInstance), nameof(LauncherUpdateAvailable), nameof(LauncherUpToDate) })
             Raise(n);
         System.Windows.Input.CommandManager.InvalidateRequerySuggested();
@@ -457,7 +479,8 @@ public sealed class MainViewModel : Observable
             (_instance == null ? "" : $"• Le profil CurseForge sera supprimé :\n  {_instance.Path}\n") +
             (keep ? $"• Tes mondes, captures et schémas seront d'abord copiés dans :\n  {BackupRoot}\n" : "• Tes mondes, captures et schémas seront PERDUS.\n") +
             "• Le launcher et ses réglages seront supprimés à sa fermeture.";
-        if (MessageBox.Show(question, "Désinstaller", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No) != MessageBoxResult.Yes)
+        if (!await AskAsync(T("s.uninstall.title", "Désinstaller Create Warfare ?"), question[(question.IndexOf('\n') + 2)..],
+                T("s.uninstall.yes", "Désinstaller"), danger: true))
             return;
         if (ProcessGuard.CurseForgeRunning())
         {
@@ -494,8 +517,9 @@ public sealed class MainViewModel : Observable
             Toast($"Désinstallation interrompue : {FirstLine(e.Message)}", error: true);
             return;
         }
-        MessageBox.Show("Create Warfare est désinstallé." + (saved == null ? "" : $"\n\nTes fichiers sont dans :\n{saved}"),
-            "Désinstaller", MessageBoxButton.OK, MessageBoxImage.Information);
+        await AskAsync(T("s.uninstall.done", "Create Warfare est désinstallé"),
+            saved == null ? T("s.uninstall.bye", "Le launcher va se fermer.") : T("s.uninstall.saved", "Tes fichiers sont dans :") + "\n" + saved,
+            T("s.close", "Fermer"), no: "");
         Application.Current.Shutdown();
     }
 
@@ -512,6 +536,7 @@ public sealed class MainViewModel : Observable
             return;
         }
         Process.Start(new ProcessStartInfo(exe) { UseShellExecute = true });
+        if (_action == PrimaryAction.Play) OnPlayStarted();
         if (_action == PrimaryAction.Play)
             Toast("CurseForge s'ouvre : lance « Create Warfare » depuis Mes modpacks.");
     }
@@ -541,6 +566,7 @@ public sealed class MainViewModel : Observable
         WorkTotal = "";
         WorkProgress = 0;
         WorkCurrent = "";
+        WorkDetail = "";
         CanCancel = cancellable;
         Screen = Screen.Working;
     }
@@ -549,10 +575,20 @@ public sealed class MainViewModel : Observable
     IProgress<long> BytesProgress(long total, string label)
     {
         long done = 0;
+        var sw = Stopwatch.StartNew();
         WorkCurrent = "↓  " + label;
+        WorkDetail = "";
         return new Progress<long>(n =>
         {
             done += n;
+            var secs = sw.Elapsed.TotalSeconds;
+            if (secs > 0.5)
+            {
+                var speed = done / secs;
+                var left = total > done && speed > 0 ? TimeSpan.FromSeconds((total - done) / speed) : TimeSpan.Zero;
+                WorkDetail = $"{speed / (1024 * 1024):0.0} Mo/s" + (left > TimeSpan.Zero
+                    ? "  ·  " + (left.TotalMinutes >= 1 ? $"{(int)left.TotalMinutes} min {left.Seconds:00} s" : $"{left.Seconds} s") + " " + T("s.work.left", "restantes") : "");
+            }
             WorkCount = (done / (1024.0 * 1024)).ToString("0.0");
             WorkTotal = total > 0 ? $"/ {total / (1024.0 * 1024):0.0} Mo" : "Mo";
             WorkProgress = total > 0 ? Math.Min(1, (double)done / total) : 0;

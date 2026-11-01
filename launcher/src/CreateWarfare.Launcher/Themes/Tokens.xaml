@@ -29,10 +29,7 @@
     <Thickness x:Key="PadPage">40,32,40,28</Thickness>
     <sys:Double x:Key="Gap">16</sys:Double>
 
-    <!-- Durées d'animation (ms), mises à 0 si Windows demande moins d'animations (Motion.cs) -->
-    <Duration x:Key="DurFast">0:0:0.12</Duration>
-    <Duration x:Key="DurBase">0:0:0.22</Duration>
-    <Duration x:Key="DurSlow">0:0:0.6</Duration>
+    <!-- Durées d'animation : {x:Static ui:Motion.Fast|Base|Slow} (Themes/Motion.cs), à 0 si Windows demande moins d'animations -->
 
     <!-- Icônes (glyphes Segoe Fluent / MDL2) -->
     <sys:String x:Key="IcHome">&#xE80F;</sys:String>

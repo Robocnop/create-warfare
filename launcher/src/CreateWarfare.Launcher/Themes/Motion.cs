@@ -10,6 +10,10 @@ public static class Motion
 {
     public static bool Enabled => SystemParameters.ClientAreaAnimation && !SystemParameters.HighContrast;
 
+    public static Duration Fast => Of(120);
+    public static Duration Base => Of(220);
+    public static Duration Slow => Of(600);
+
     /// <summary>Durée réelle d'une animation : la durée voulue, ou 0 si les animations sont coupées.</summary>
     public static Duration Of(double ms) => new(TimeSpan.FromMilliseconds(Enabled ? ms : 0));
 
