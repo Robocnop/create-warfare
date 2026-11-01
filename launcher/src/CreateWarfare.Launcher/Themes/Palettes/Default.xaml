@@ -1,0 +1,64 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Identité Create Warfare : acier sombre, orange industriel (laiton chauffé). Mêmes clés dans chaque palette : ThemeManager remplace ce dictionnaire. -->
+    <SolidColorBrush x:Key="Bg" Color="#0E1014" />
+    <Color x:Key="BgColor">#0E1014</Color>
+    <SolidColorBrush x:Key="Panel" Color="#14171D" />
+    <Color x:Key="PanelColor">#14171D</Color>
+    <SolidColorBrush x:Key="Row" Color="#181C23" />
+    <Color x:Key="RowColor">#181C23</Color>
+    <SolidColorBrush x:Key="Surface" Color="#1A1E26" />
+    <Color x:Key="SurfaceColor">#1A1E26</Color>
+    <SolidColorBrush x:Key="SurfaceHi" Color="#222733" />
+    <Color x:Key="SurfaceHiColor">#222733</Color>
+    <SolidColorBrush x:Key="Line" Color="#262B35" />
+    <Color x:Key="LineColor">#262B35</Color>
+    <SolidColorBrush x:Key="LineStrong" Color="#363D4B" />
+    <Color x:Key="LineStrongColor">#363D4B</Color>
+    <SolidColorBrush x:Key="Text" Color="#ECEEF2" />
+    <Color x:Key="TextColor">#ECEEF2</Color>
+    <SolidColorBrush x:Key="Muted" Color="#9AA2B1" />
+    <Color x:Key="MutedColor">#9AA2B1</Color>
+    <SolidColorBrush x:Key="Dim" Color="#646C7B" />
+    <Color x:Key="DimColor">#646C7B</Color>
+    <SolidColorBrush x:Key="Accent" Color="#F28C28" />
+    <Color x:Key="AccentColor">#F28C28</Color>
+    <SolidColorBrush x:Key="AccentHover" Color="#FF9F45" />
+    <Color x:Key="AccentHoverColor">#FF9F45</Color>
+    <SolidColorBrush x:Key="AccentSoft" Color="#26F28C28" />
+    <Color x:Key="AccentSoftColor">#26F28C28</Color>
+    <SolidColorBrush x:Key="Primary" Color="#F28C28" />
+    <Color x:Key="PrimaryColor">#F28C28</Color>
+    <SolidColorBrush x:Key="PrimaryHover" Color="#FF9F45" />
+    <Color x:Key="PrimaryHoverColor">#FF9F45</Color>
+    <SolidColorBrush x:Key="PrimaryText" Color="#1A0F04" />
+    <Color x:Key="PrimaryTextColor">#1A0F04</Color>
+    <SolidColorBrush x:Key="Yellow" Color="#F4C430" />
+    <Color x:Key="YellowColor">#F4C430</Color>
+    <SolidColorBrush x:Key="YellowHover" Color="#FFD54F" />
+    <Color x:Key="YellowHoverColor">#FFD54F</Color>
+    <SolidColorBrush x:Key="Success" Color="#3FB950" />
+    <Color x:Key="SuccessColor">#3FB950</Color>
+    <SolidColorBrush x:Key="Warning" Color="#F4C430" />
+    <Color x:Key="WarningColor">#F4C430</Color>
+    <SolidColorBrush x:Key="Error" Color="#E5484D" />
+    <Color x:Key="ErrorColor">#E5484D</Color>
+    <SolidColorBrush x:Key="Info" Color="#58A6FF" />
+    <Color x:Key="InfoColor">#58A6FF</Color>
+    <SolidColorBrush x:Key="Hover" Color="#1F242D" />
+    <Color x:Key="HoverColor">#1F242D</Color>
+    <SolidColorBrush x:Key="CaptionHover" Color="#252B36" />
+    <Color x:Key="CaptionHoverColor">#252B36</Color>
+    <SolidColorBrush x:Key="Overlay" Color="#E60E1014" />
+    <Color x:Key="OverlayColor">#E60E1014</Color>
+    <SolidColorBrush x:Key="Scrim" Color="#990E1014" />
+    <Color x:Key="ScrimColor">#990E1014</Color>
+    <SolidColorBrush x:Key="Focus" Color="#FFB866" />
+    <Color x:Key="FocusColor">#FFB866</Color>
+    <FontFamily x:Key="Display">pack://application:,,,/Assets/Fonts/#Rajdhani</FontFamily>
+    <sys:Double x:Key="PrimaryFontSize">22</sys:Double>
+    <Visibility x:Key="HalloweenVis">Collapsed</Visibility>
+    <Visibility x:Key="ChristmasVis">Collapsed</Visibility>
+    <Visibility x:Key="SummerVis">Collapsed</Visibility>
+</ResourceDictionary>

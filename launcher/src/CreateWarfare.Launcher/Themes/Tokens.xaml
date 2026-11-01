@@ -1,0 +1,84 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Design system : tout ce qui ne dépend pas du thème. Les couleurs sont dans Themes/Palettes/*.xaml. -->
+
+    <!-- Polices -->
+    <FontFamily x:Key="Sans">Segoe UI Variable Text, Segoe UI</FontFamily>
+    <FontFamily x:Key="Mono">Cascadia Mono, Consolas</FontFamily>
+    <!-- Un seul jeu d'icônes : Segoe Fluent Icons (Windows 11), Segoe MDL2 Assets en secours (Windows 10). -->
+    <FontFamily x:Key="Icons">Segoe Fluent Icons, Segoe MDL2 Assets</FontFamily>
+
+    <!-- Échelle typographique -->
+    <sys:Double x:Key="FontCaption">12</sys:Double>
+    <sys:Double x:Key="FontBody">14</sys:Double>
+    <sys:Double x:Key="FontBodyLarge">15</sys:Double>
+    <sys:Double x:Key="FontH3">18</sys:Double>
+    <sys:Double x:Key="FontH2">24</sys:Double>
+    <sys:Double x:Key="FontH1">34</sys:Double>
+    <sys:Double x:Key="FontHero">56</sys:Double>
+
+    <!-- Rayons -->
+    <CornerRadius x:Key="RadiusS">4</CornerRadius>
+    <CornerRadius x:Key="RadiusM">8</CornerRadius>
+    <CornerRadius x:Key="RadiusL">12</CornerRadius>
+    <CornerRadius x:Key="RadiusPill">999</CornerRadius>
+
+    <!-- Espacements (multiples de 4) -->
+    <Thickness x:Key="PadCard">20</Thickness>
+    <Thickness x:Key="PadPage">40,32,40,28</Thickness>
+    <sys:Double x:Key="Gap">16</sys:Double>
+
+    <!-- Durées d'animation (ms), mises à 0 si Windows demande moins d'animations (Motion.cs) -->
+    <Duration x:Key="DurFast">0:0:0.12</Duration>
+    <Duration x:Key="DurBase">0:0:0.22</Duration>
+    <Duration x:Key="DurSlow">0:0:0.6</Duration>
+
+    <!-- Icônes (glyphes Segoe Fluent / MDL2) -->
+    <sys:String x:Key="IcHome">&#xE80F;</sys:String>
+    <sys:String x:Key="IcNews">&#xE789;</sys:String>
+    <sys:String x:Key="IcGallery">&#xEB9F;</sys:String>
+    <sys:String x:Key="IcSettings">&#xE713;</sys:String>
+    <sys:String x:Key="IcLogs">&#xE8A5;</sys:String>
+    <sys:String x:Key="IcInfo">&#xE946;</sys:String>
+    <sys:String x:Key="IcPlay">&#xE768;</sys:String>
+    <sys:String x:Key="IcRefresh">&#xE72C;</sys:String>
+    <sys:String x:Key="IcFolder">&#xED25;</sys:String>
+    <sys:String x:Key="IcCopy">&#xE8C8;</sys:String>
+    <sys:String x:Key="IcBug">&#xEBE8;</sys:String>
+    <sys:String x:Key="IcLink">&#xE71B;</sys:String>
+    <sys:String x:Key="IcGlobe">&#xE774;</sys:String>
+    <sys:String x:Key="IcBack">&#xE72B;</sys:String>
+    <sys:String x:Key="IcChevronDown">&#xE70D;</sys:String>
+    <sys:String x:Key="IcChevronUp">&#xE70E;</sys:String>
+    <sys:String x:Key="IcChevronLeft">&#xE76B;</sys:String>
+    <sys:String x:Key="IcChevronRight">&#xE76C;</sys:String>
+    <sys:String x:Key="IcDownload">&#xE896;</sys:String>
+    <sys:String x:Key="IcError">&#xE783;</sys:String>
+    <sys:String x:Key="IcWarning">&#xE7BA;</sys:String>
+    <sys:String x:Key="IcDone">&#xE930;</sys:String>
+    <sys:String x:Key="IcClock">&#xE823;</sys:String>
+    <sys:String x:Key="IcOnline">&#xE701;</sys:String>
+    <sys:String x:Key="IcOffline">&#xF384;</sys:String>
+    <sys:String x:Key="IcPeople">&#xE716;</sys:String>
+    <sys:String x:Key="IcRepair">&#xE90F;</sys:String>
+    <sys:String x:Key="IcShield">&#xEA18;</sys:String>
+    <sys:String x:Key="IcDelete">&#xE74D;</sys:String>
+    <sys:String x:Key="IcCancel">&#xE711;</sys:String>
+    <sys:String x:Key="IcAccept">&#xE8FB;</sys:String>
+    <sys:String x:Key="IcPause">&#xE769;</sys:String>
+    <sys:String x:Key="IcSync">&#xE895;</sys:String>
+    <sys:String x:Key="IcMinimize">&#xE921;</sys:String>
+    <sys:String x:Key="IcMaximize">&#xE922;</sys:String>
+    <sys:String x:Key="IcRestore">&#xE923;</sys:String>
+    <sys:String x:Key="IcClose">&#xE8BB;</sys:String>
+    <sys:String x:Key="IcKeyboard">&#xE765;</sys:String>
+    <sys:String x:Key="IcCode">&#xE943;</sys:String>
+    <sys:String x:Key="IcMemory">&#xE950;</sys:String>
+    <sys:String x:Key="IcServer">&#xE968;</sys:String>
+    <sys:String x:Key="IcPalette">&#xE790;</sys:String>
+    <sys:String x:Key="IcLanguage">&#xF2B7;</sys:String>
+    <sys:String x:Key="IcStar">&#xE734;</sys:String>
+    <sys:String x:Key="IcOpen">&#xE8A7;</sys:String>
+    <sys:String x:Key="IcZip">&#xF012;</sys:String>
+</ResourceDictionary>

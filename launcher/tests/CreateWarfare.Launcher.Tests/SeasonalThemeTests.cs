@@ -22,3 +22,27 @@ public class SeasonalThemeTests
         Assert.True(SeasonalTheme.IsHalloween(new DateTime(2026, 10, 31), "n'importe quoi"));
     }
 }
+
+public class ThemeResolveTests
+{
+    [Theory]
+    [InlineData(2026, 10, 31, "halloween")]
+    [InlineData(2026, 12, 24, "christmas")]
+    [InlineData(2027, 1, 6, "christmas")]
+    [InlineData(2027, 1, 7, "default")]
+    [InlineData(2027, 7, 14, "summer")]
+    [InlineData(2027, 9, 1, "default")]
+    public void Saison_selon_la_date(int y, int m, int d, string expected) =>
+        Assert.Equal(expected, SeasonalTheme.SeasonOf(new DateTime(y, m, d)));
+
+    [Fact]
+    public void Reglage_puis_date_et_CW_THEME_prioritaire()
+    {
+        var halloween = new DateTime(2026, 10, 31);
+        Assert.Equal("halloween", SeasonalTheme.Resolve("auto", halloween, null));
+        Assert.Equal("default", SeasonalTheme.Resolve("default", halloween, null));   // le joueur peut couper la saison
+        Assert.Equal("summer", SeasonalTheme.Resolve("summer", halloween, null));
+        Assert.Equal("halloween", SeasonalTheme.Resolve("inconnu", halloween, null));
+        Assert.Equal("christmas", SeasonalTheme.Resolve("default", halloween, "Christmas"));
+    }
+}

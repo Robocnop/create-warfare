@@ -5,7 +5,7 @@
         xmlns:c="clr-namespace:CreateWarfare.Launcher.Controls"
         Title="Create Warfare" Icon="Assets/icon.ico" Width="1000" Height="640" MinWidth="900" MinHeight="580"
         WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanResize"
-        Background="{StaticResource Bg}" BorderBrush="{StaticResource Line}" BorderThickness="1"
+        Background="{DynamicResource Bg}" BorderBrush="{DynamicResource Line}" BorderThickness="1"
         UseLayoutRounding="True" TextOptions.TextFormattingMode="Display">
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="56" ResizeBorderThickness="6" GlassFrameThickness="0" CornerRadius="0" UseAeroCaptionButtons="False" />
@@ -22,10 +22,10 @@
         </Grid.RowDefinitions>
 
         <!-- ===== Barre de titre ===== -->
-        <Border Grid.Row="0" BorderBrush="{StaticResource Line}" BorderThickness="0,0,0,1">
+        <Border Grid.Row="0" BorderBrush="{DynamicResource Line}" BorderThickness="0,0,0,1">
             <DockPanel LastChildFill="False" Margin="24,0,0,0">
                 <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" FontSize="19" FontWeight="Bold" Margin="0,0,22,0" FontFamily="{DynamicResource Display}">
-                    <Run Text="Create" /> <Run Text="Warfare" Foreground="{StaticResource Accent}" />
+                    <Run Text="Create" /> <Run Text="Warfare" Foreground="{DynamicResource Accent}" />
                 </TextBlock>
                 <StackPanel DockPanel.Dock="Left" Orientation="Horizontal" WindowChrome.IsHitTestVisibleInChrome="True">
                     <Button Style="{StaticResource NavButton}" Content="NOUVEAUTÉS" Command="{Binding ShowChangelogCommand}" />
@@ -62,16 +62,16 @@
 
             <!-- Accueil -->
             <DockPanel Grid.Column="1" Margin="32,24,32,28" LastChildFill="False" Visibility="{Binding IsHome, Converter={StaticResource Vis}}">
-                <Border DockPanel.Dock="Top" BorderBrush="{StaticResource Accent}" BorderThickness="2,0,0,0" Padding="16,4,0,4" Margin="0,8,0,0"
+                <Border DockPanel.Dock="Top" BorderBrush="{DynamicResource Accent}" BorderThickness="2,0,0,0" Padding="16,4,0,4" Margin="0,8,0,0"
                         Visibility="{Binding HasNotice, Converter={StaticResource Vis}}">
                     <StackPanel>
-                        <TextBlock Style="{StaticResource Kicker}" Text="ANNONCE" Foreground="{StaticResource Accent}" />
+                        <TextBlock Style="{StaticResource Kicker}" Text="ANNONCE" Foreground="{DynamicResource Accent}" />
                         <TextBlock Text="{Binding Notice}" FontSize="14" TextWrapping="Wrap" LineHeight="21" />
                     </StackPanel>
                 </Border>
 
                 <StackPanel DockPanel.Dock="Bottom">
-                    <TextBlock Style="{StaticResource Kicker}" Text="INSTALLATION" Foreground="{StaticResource Accent}" />
+                    <TextBlock Style="{StaticResource Kicker}" Text="INSTALLATION" Foreground="{DynamicResource Accent}" />
                     <TextBlock Style="{StaticResource Title}" Text="{Binding StatusTitle}" Margin="0,0,0,24" />
 
                     <Grid Margin="0,0,0,28">
@@ -84,7 +84,7 @@
                             <StackPanel>
                                 <TextBlock Style="{StaticResource Kicker}" Text="PACK" />
                                 <TextBlock Style="{StaticResource BigNumber}" Text="{Binding PackVersion}" />
-                                <TextBlock Text="{Binding PackSub}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Accent}" Margin="0,4,0,0" />
+                                <TextBlock Text="{Binding PackSub}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Accent}" Margin="0,4,0,0" />
                             </StackPanel>
                         </Border>
                         <Border Grid.Column="2" Style="{StaticResource Card}">
@@ -92,9 +92,9 @@
                                 <TextBlock Style="{StaticResource Kicker}" Text="LAUNCHER" />
                                 <TextBlock Style="{StaticResource BigNumber}" Text="{Binding LauncherVersion}" />
                                 <Button Style="{StaticResource LinkButton}" Content="{Binding LauncherSub}" Command="{Binding UpdateLauncherCommand}"
-                                        FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Yellow}" Margin="0,4,0,0"
+                                        FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Yellow}" Margin="0,4,0,0"
                                         ToolTip="Mettre à jour le launcher" Visibility="{Binding LauncherUpdateAvailable, Converter={StaticResource Vis}}" />
-                                <TextBlock Text="{Binding LauncherSub}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Accent}" Margin="0,4,0,0"
+                                <TextBlock Text="{Binding LauncherSub}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Accent}" Margin="0,4,0,0"
                                            Visibility="{Binding LauncherUpToDate, Converter={StaticResource Vis}}" />
                             </StackPanel>
                         </Border>
@@ -106,17 +106,17 @@
                                       ToolTip="Choisir la version du pack">
                             <ToggleButton.Template>
                                 <ControlTemplate TargetType="ToggleButton">
-                                    <Border x:Name="Box" Background="{StaticResource Row}" BorderBrush="{StaticResource LineStrong}" BorderThickness="1" Padding="12,9">
+                                    <Border x:Name="Box" Background="{DynamicResource Row}" BorderBrush="{DynamicResource LineStrong}" BorderThickness="1" Padding="12,9">
                                         <DockPanel>
                                             <TextBlock DockPanel.Dock="Right" x:Name="Chevron" Text="&#xE70D;" FontFamily="Segoe MDL2 Assets" FontSize="12"
-                                                       Foreground="{StaticResource Muted}" VerticalAlignment="Center" />
+                                                       Foreground="{DynamicResource Muted}" VerticalAlignment="Center" />
                                             <ContentPresenter />
                                         </DockPanel>
                                     </Border>
                                     <ControlTemplate.Triggers>
-                                        <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Box" Property="BorderBrush" Value="{StaticResource Accent}" /></Trigger>
+                                        <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Box" Property="BorderBrush" Value="{DynamicResource Accent}" /></Trigger>
                                         <Trigger Property="IsChecked" Value="True">
-                                            <Setter TargetName="Box" Property="BorderBrush" Value="{StaticResource Accent}" />
+                                            <Setter TargetName="Box" Property="BorderBrush" Value="{DynamicResource Accent}" />
                                             <Setter TargetName="Chevron" Property="Text" Value="&#xE70E;" />
                                         </Trigger>
                                     </ControlTemplate.Triggers>
@@ -131,14 +131,14 @@
                                     <Border Grid.Row="1" Width="5" Height="5" Background="#5E412C" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,6,4" />
                                 </Grid>
                                 <StackPanel Margin="12,0,0,0" VerticalAlignment="Center">
-                                    <TextBlock Text="{Binding ChoiceLabel}" FontWeight="SemiBold" FontSize="14" Foreground="{StaticResource Text}" />
-                                    <TextBlock Text="{Binding ChoiceVersion}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Muted}" />
+                                    <TextBlock Text="{Binding ChoiceLabel}" FontWeight="SemiBold" FontSize="14" Foreground="{DynamicResource Text}" />
+                                    <TextBlock Text="{Binding ChoiceVersion}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Muted}" />
                                 </StackPanel>
                             </StackPanel>
                         </ToggleButton>
                         <Popup IsOpen="{Binding IsVersionMenuOpen, Mode=TwoWay}" PlacementTarget="{Binding ElementName=VersionToggle}" Placement="Bottom"
                                StaysOpen="False" AllowsTransparency="True" Width="{Binding ActualWidth, ElementName=VersionToggle}">
-                            <Border Background="{StaticResource Panel}" BorderBrush="{StaticResource LineStrong}" BorderThickness="1" Margin="0,4,0,0">
+                            <Border Background="{DynamicResource Panel}" BorderBrush="{DynamicResource LineStrong}" BorderThickness="1" Margin="0,4,0,0">
                                 <ItemsControl ItemsSource="{Binding VersionItems}">
                                     <ItemsControl.ItemTemplate>
                                         <DataTemplate>
@@ -147,7 +147,7 @@
                                                     <ControlTemplate TargetType="Button">
                                                         <Border x:Name="Item" Background="Transparent" Padding="12,9"><ContentPresenter /></Border>
                                                         <ControlTemplate.Triggers>
-                                                            <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Item" Property="Background" Value="{StaticResource Row}" /></Trigger>
+                                                            <Trigger Property="IsMouseOver" Value="True"><Setter TargetName="Item" Property="Background" Value="{DynamicResource Row}" /></Trigger>
                                                         </ControlTemplate.Triggers>
                                                     </ControlTemplate>
                                                 </Button.Template>
@@ -160,8 +160,8 @@
                                     <Border Grid.Row="1" Width="5" Height="5" Background="#5E412C" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,6,4" />
                                 </Grid>
                                                     <StackPanel Margin="12,0,0,0" VerticalAlignment="Center">
-                                                        <TextBlock Text="{Binding Label}" FontWeight="SemiBold" FontSize="14" Foreground="{StaticResource Text}" />
-                                                        <TextBlock Text="{Binding Version}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Muted}" />
+                                                        <TextBlock Text="{Binding Label}" FontWeight="SemiBold" FontSize="14" Foreground="{DynamicResource Text}" />
+                                                        <TextBlock Text="{Binding Version}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Muted}" />
                                                     </StackPanel>
                                                 </StackPanel>
                                             </Button>
@@ -181,14 +181,14 @@
             <!-- Première installation (option A : import dans CurseForge) -->
             <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto" Visibility="{Binding IsInstall, Converter={StaticResource Vis}}">
                 <StackPanel Margin="32,24,32,24">
-                    <TextBlock Style="{StaticResource Kicker}" Text="PREMIÈRE INSTALLATION" Foreground="{StaticResource Accent}" />
+                    <TextBlock Style="{StaticResource Kicker}" Text="PREMIÈRE INSTALLATION" Foreground="{DynamicResource Accent}" />
                     <TextBlock Style="{StaticResource Title}" Text="Installer Create Warfare" />
                     <TextBlock Style="{StaticResource Body}" Margin="0,6,0,18"
                                Text="CurseForge installe Minecraft, NeoForge et Java. Ensuite, le launcher s'occupe seul des mises à jour." />
 
                     <Grid Margin="0,0,0,22">
                         <Grid.ColumnDefinitions><ColumnDefinition Width="36" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
-                        <TextBlock Style="{StaticResource BigNumber}" FontSize="22" Text="1" Foreground="{StaticResource Accent}" />
+                        <TextBlock Style="{StaticResource BigNumber}" FontSize="22" Text="1" Foreground="{DynamicResource Accent}" />
                         <StackPanel Grid.Column="1">
                             <TextBlock FontSize="15" FontWeight="SemiBold" Text="Télécharge le pack" />
                             <TextBlock Style="{StaticResource Body}" Text="Le zip est enregistré dans ton dossier Téléchargements." Margin="0,2,0,10" />
@@ -202,7 +202,7 @@
 
                     <Grid Margin="0,0,0,22">
                         <Grid.ColumnDefinitions><ColumnDefinition Width="36" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
-                        <TextBlock Style="{StaticResource BigNumber}" FontSize="22" Text="2" Foreground="{StaticResource Accent}" />
+                        <TextBlock Style="{StaticResource BigNumber}" FontSize="22" Text="2" Foreground="{DynamicResource Accent}" />
                         <StackPanel Grid.Column="1">
                             <TextBlock FontSize="15" FontWeight="SemiBold" Text="Importe-le dans CurseForge" />
                             <TextBlock Style="{StaticResource Body}" Margin="0,2,0,10"
@@ -213,7 +213,7 @@
 
                     <Grid Margin="0,0,0,26">
                         <Grid.ColumnDefinitions><ColumnDefinition Width="36" /><ColumnDefinition Width="*" /></Grid.ColumnDefinitions>
-                        <TextBlock Style="{StaticResource BigNumber}" FontSize="22" Text="3" Foreground="{StaticResource Accent}" />
+                        <TextBlock Style="{StaticResource BigNumber}" FontSize="22" Text="3" Foreground="{DynamicResource Accent}" />
                         <StackPanel Grid.Column="1">
                             <TextBlock FontSize="15" FontWeight="SemiBold" Text="Reviens ici" />
                             <TextBlock Style="{StaticResource Body}" Text="Le launcher retrouve l'instance tout seul, même si CurseForge l'a nommée « Create Warfare (1) »." Margin="0,2,0,0" />
@@ -230,15 +230,15 @@
 
             <!-- Téléchargement / application -->
             <StackPanel Grid.Column="1" Margin="32,0,32,40" VerticalAlignment="Bottom" Visibility="{Binding IsWorking, Converter={StaticResource Vis}}">
-                <TextBlock Style="{StaticResource Kicker}" Text="{Binding WorkKicker}" Foreground="{StaticResource Accent}" />
+                <TextBlock Style="{StaticResource Kicker}" Text="{Binding WorkKicker}" Foreground="{DynamicResource Accent}" />
                 <TextBlock Style="{StaticResource Title}" Text="{Binding WorkTitle}" Margin="0,0,0,24" />
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,12">
                     <TextBlock Style="{StaticResource BigNumber}" FontSize="44" Text="{Binding WorkCount}" />
-                    <TextBlock Text="{Binding WorkTotal}" FontFamily="{StaticResource Mono}" FontSize="16" Foreground="{StaticResource Muted}"
+                    <TextBlock Text="{Binding WorkTotal}" FontFamily="{StaticResource Mono}" FontSize="16" Foreground="{DynamicResource Muted}"
                                VerticalAlignment="Bottom" Margin="10,0,0,9" />
                 </StackPanel>
                 <ProgressBar Minimum="0" Maximum="1" Value="{Binding WorkProgress, Mode=OneWay}" />
-                <TextBlock Text="{Binding WorkCurrent}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Muted}"
+                <TextBlock Text="{Binding WorkCurrent}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Muted}"
                            Margin="0,10,0,0" TextTrimming="CharacterEllipsis" />
                 <Button Style="{StaticResource LinkButton}" Content="Annuler" Command="{Binding CancelWorkCommand}" Margin="0,18,0,0"
                         Visibility="{Binding CanCancel, Converter={StaticResource Vis}}" />
@@ -254,7 +254,7 @@
                         <WrapPanel.Resources>
                             <Style TargetType="TextBlock" x:Key="CountIcon">
                                 <Setter Property="FontFamily" Value="{StaticResource Mono}" />
-                                <Setter Property="Foreground" Value="{StaticResource Muted}" />
+                                <Setter Property="Foreground" Value="{DynamicResource Muted}" />
                                 <Setter Property="FontSize" Value="15" />
                                 <Setter Property="VerticalAlignment" Value="Center" />
                                 <Setter Property="Margin" Value="0,0,8,0" />
@@ -263,12 +263,12 @@
                                 <Setter Property="FontFamily" Value="{StaticResource Mono}" />
                                 <Setter Property="FontSize" Value="20" />
                                 <Setter Property="FontWeight" Value="Bold" />
-                                <Setter Property="Foreground" Value="{StaticResource Text}" />
+                                <Setter Property="Foreground" Value="{DynamicResource Text}" />
                                 <Setter Property="VerticalAlignment" Value="Center" />
                                 <Setter Property="Margin" Value="0,0,8,0" />
                             </Style>
                             <Style TargetType="TextBlock" x:Key="CountLabel">
-                                <Setter Property="Foreground" Value="{StaticResource Muted}" />
+                                <Setter Property="Foreground" Value="{DynamicResource Muted}" />
                                 <Setter Property="FontSize" Value="13" />
                                 <Setter Property="VerticalAlignment" Value="Center" />
                                 <Setter Property="Margin" Value="0,0,26,0" />
@@ -287,7 +287,7 @@
                     <Button Style="{StaticResource SecondaryButton}" Content="Annuler" Command="{Binding BackHomeCommand}" Height="48" Margin="14,0,0,0" />
                 </StackPanel>
 
-                <Border BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,1">
+                <Border BorderBrush="{DynamicResource Line}" BorderThickness="0,1,0,1">
                     <ListBox ItemsSource="{Binding Rows}" Background="Transparent" BorderThickness="0" Focusable="False"
                              ScrollViewer.HorizontalScrollBarVisibility="Disabled" VirtualizingPanel.IsVirtualizing="True"
                              VirtualizingPanel.VirtualizationMode="Recycling">
@@ -297,7 +297,7 @@
                                 <Setter Property="Template">
                                     <Setter.Value>
                                         <ControlTemplate TargetType="ListBoxItem">
-                                            <Border Background="{StaticResource Row}" BorderBrush="{StaticResource Line}" BorderThickness="0,0,0,1" Padding="12,8">
+                                            <Border Background="{DynamicResource Row}" BorderBrush="{DynamicResource Line}" BorderThickness="0,0,0,1" Padding="12,8">
                                                 <ContentPresenter />
                                             </Border>
                                         </ControlTemplate>
@@ -313,25 +313,25 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="Auto" />
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock x:Name="icon" Text="{Binding Icon}" FontFamily="{StaticResource Mono}" FontSize="14" Foreground="{StaticResource Muted}" />
+                                    <TextBlock x:Name="icon" Text="{Binding Icon}" FontFamily="{StaticResource Mono}" FontSize="14" Foreground="{DynamicResource Muted}" />
                                     <TextBlock x:Name="path" Grid.Column="1" Text="{Binding Path}" FontFamily="{StaticResource Mono}" FontSize="13"
-                                               Foreground="{StaticResource Muted}" TextTrimming="CharacterEllipsis" />
-                                    <TextBlock Grid.Column="2" Text="{Binding Size}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{StaticResource Muted}" Margin="16,0,0,0" />
+                                               Foreground="{DynamicResource Muted}" TextTrimming="CharacterEllipsis" />
+                                    <TextBlock Grid.Column="2" Text="{Binding Size}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Muted}" Margin="16,0,0,0" />
                                 </Grid>
                                 <DataTemplate.Triggers>
                                     <DataTrigger Binding="{Binding Changes}" Value="True">
-                                        <Setter TargetName="path" Property="Foreground" Value="{StaticResource Text}" />
+                                        <Setter TargetName="path" Property="Foreground" Value="{DynamicResource Text}" />
                                         <Setter TargetName="path" Property="FontWeight" Value="SemiBold" />
-                                        <Setter TargetName="icon" Property="Foreground" Value="{StaticResource Text}" />
+                                        <Setter TargetName="icon" Property="Foreground" Value="{DynamicResource Text}" />
                                     </DataTrigger>
                                     <DataTrigger Binding="{Binding Kind}" Value="Remove">
-                                        <Setter TargetName="icon" Property="Foreground" Value="{StaticResource Error}" />
+                                        <Setter TargetName="icon" Property="Foreground" Value="{DynamicResource Error}" />
                                     </DataTrigger>
                                     <DataTrigger Binding="{Binding Kind}" Value="Add">
-                                        <Setter TargetName="icon" Property="Foreground" Value="{StaticResource Accent}" />
+                                        <Setter TargetName="icon" Property="Foreground" Value="{DynamicResource Accent}" />
                                     </DataTrigger>
                                     <DataTrigger Binding="{Binding Kind}" Value="Protected">
-                                        <Setter TargetName="icon" Property="Foreground" Value="{StaticResource Yellow}" />
+                                        <Setter TargetName="icon" Property="Foreground" Value="{DynamicResource Yellow}" />
                                     </DataTrigger>
                                 </DataTemplate.Triggers>
                             </DataTemplate>
@@ -347,9 +347,9 @@
                     <TextBlock Style="{StaticResource Title}" Text="{Binding RemoteVersion}" />
                 </StackPanel>
                 <Button DockPanel.Dock="Bottom" Style="{StaticResource SecondaryButton}" Content="Retour" Command="{Binding BackHomeCommand}" HorizontalAlignment="Left" Margin="0,18,0,0" />
-                <Border BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,1" Padding="0,14">
+                <Border BorderBrush="{DynamicResource Line}" BorderThickness="0,1,0,1" Padding="0,14">
                     <ScrollViewer VerticalScrollBarVisibility="Auto">
-                        <TextBlock Text="{Binding Changelog}" FontFamily="{StaticResource Mono}" FontSize="13" Foreground="{StaticResource Text}"
+                        <TextBlock Text="{Binding Changelog}" FontFamily="{StaticResource Mono}" FontSize="13" Foreground="{DynamicResource Text}"
                                    TextWrapping="Wrap" LineHeight="20" Margin="0,0,16,0" />
                     </ScrollViewer>
                 </Border>
@@ -360,7 +360,7 @@
                 <TextBlock Style="{StaticResource Kicker}" Text="RÉGLAGES" />
                 <TextBlock Style="{StaticResource Title}" Text="Instance CurseForge" Margin="0,0,0,8" />
                 <TextBlock Style="{StaticResource Body}" Text="Le launcher ne modifie que ce dossier. Il ne touche jamais à options.txt, aux mondes, aux captures, aux packs de textures ni aux mods que tu ajoutes." Margin="0,0,0,16" MaxWidth="680" HorizontalAlignment="Left" />
-                <Border Background="{StaticResource Row}" BorderBrush="{StaticResource Line}" BorderThickness="1" Padding="14,12" Margin="0,0,0,14">
+                <Border Background="{DynamicResource Row}" BorderBrush="{DynamicResource Line}" BorderThickness="1" Padding="14,12" Margin="0,0,0,14">
                     <TextBlock Text="{Binding InstancePath}" FontFamily="{StaticResource Mono}" FontSize="13" TextTrimming="CharacterEllipsis" />
                 </Border>
                 <StackPanel Orientation="Horizontal" Margin="0,0,0,32">
@@ -374,31 +374,31 @@
                     <Run Text="{Binding LauncherVersion, Mode=OneWay}" /><Run Text=" · sauvegardes dans .cw-backup (les 2 dernières) · logs dans %LOCALAPPDATA%\CreateWarfareLauncher" />
                 </TextBlock>
                 <TextBlock Style="{StaticResource Kicker}" Text="DÉVELOPPEUR" />
-                <CheckBox IsChecked="{Binding DevMode}" Foreground="{StaticResource Text}" FontSize="14" Margin="0,0,0,6" VerticalContentAlignment="Center">
+                <CheckBox IsChecked="{Binding DevMode}" Foreground="{DynamicResource Text}" FontSize="14" Margin="0,0,0,6" VerticalContentAlignment="Center">
                     <TextBlock Text="Mode développeur : afficher les pré-releases dans le choix de version" Margin="6,0,0,0" />
                 </CheckBox>
                 <TextBlock Style="{StaticResource Body}" Text="Les pré-releases sont des versions de test : elles peuvent contenir des bugs." Margin="0,0,0,24" />
-                <TextBlock Style="{StaticResource Kicker}" Text="DÉSINSTALLER" Foreground="{StaticResource Error}" />
-                <CheckBox IsChecked="{Binding KeepPlayerData}" Foreground="{StaticResource Text}" FontSize="14" Margin="0,0,0,6" VerticalContentAlignment="Center">
+                <TextBlock Style="{StaticResource Kicker}" Text="DÉSINSTALLER" Foreground="{DynamicResource Error}" />
+                <CheckBox IsChecked="{Binding KeepPlayerData}" Foreground="{DynamicResource Text}" FontSize="14" Margin="0,0,0,6" VerticalContentAlignment="Center">
                     <TextBlock Margin="6,0,0,0"><Run Text="Garder mes mondes, captures et schémas (copiés dans " /><Run Text="{Binding BackupRoot, Mode=OneWay}" FontFamily="{StaticResource Mono}" FontSize="12" /><Run Text=")" /></TextBlock>
                 </CheckBox>
                 <Button Style="{StaticResource SecondaryButton}" Content="Désinstaller Create Warfare et le launcher" Command="{Binding UninstallCommand}"
-                        Foreground="{StaticResource Error}" HorizontalAlignment="Left" Margin="0,6,0,28" />
+                        Foreground="{DynamicResource Error}" HorizontalAlignment="Left" Margin="0,6,0,28" />
                 <Button Style="{StaticResource SecondaryButton}" Content="Retour" Command="{Binding BackHomeCommand}" HorizontalAlignment="Left" />
             </StackPanel>
         </Grid>
 
         <!-- ===== Toast ===== -->
-        <Border Grid.Row="2" Background="{StaticResource Row}" BorderBrush="{StaticResource Line}" BorderThickness="0,1,0,0"
+        <Border Grid.Row="2" Background="{DynamicResource Row}" BorderBrush="{DynamicResource Line}" BorderThickness="0,1,0,0"
                 Visibility="{Binding HasToast, Converter={StaticResource Vis}}">
             <DockPanel>
                 <Border DockPanel.Dock="Left" Width="3">
                     <Border.Style>
                         <Style TargetType="Border">
-                            <Setter Property="Background" Value="{StaticResource Accent}" />
+                            <Setter Property="Background" Value="{DynamicResource Accent}" />
                             <Style.Triggers>
                                 <DataTrigger Binding="{Binding ToastIsError}" Value="True">
-                                    <Setter Property="Background" Value="{StaticResource Error}" />
+                                    <Setter Property="Background" Value="{DynamicResource Error}" />
                                 </DataTrigger>
                             </Style.Triggers>
                         </Style>
