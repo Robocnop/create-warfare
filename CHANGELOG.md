@@ -2,6 +2,13 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## Launcher 1.3.1 — 2026-11-01
+
+- **Accueil** : 11 images du serveur défilent en fond (toutes les 8 s, en commençant par une image au hasard).
+  Le défilement ne se met plus en pause quand la souris passe sur le titre, seulement sur les flèches et les points.
+- **Bouton discret** à droite des points : afficher l'illustration du thème au lieu des images (choix gardé
+  d'une ouverture à l'autre), et le même bouton pour les remettre.
+
 ## Launcher 1.3.0 — 2026-11-01
 
 - **Trois nouveaux thèmes saisonniers**, qui s'activent seuls :

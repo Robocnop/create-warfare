@@ -108,7 +108,7 @@
 
             <!-- ============ ACCUEIL ============ -->
             <Grid Style="{StaticResource Page}" Visibility="{Binding IsHome, Converter={StaticResource Vis}}">
-                <c:Carousel x:Name="HomeCarousel" Images="{Binding Slides}" Index="{Binding SlideIndex, Mode=TwoWay}" IsPaused="{Binding CarouselPaused}" />
+                <c:Carousel x:Name="HomeCarousel" Images="{Binding HomeSlides}" Index="{Binding SlideIndex, Mode=TwoWay}" IsPaused="{Binding CarouselPaused}" />
                 <!-- Voiles : lisibilité du texte sur l'image -->
                 <Rectangle IsHitTestVisible="False">
                     <Rectangle.Fill>
@@ -151,14 +151,17 @@
                             </StackPanel>
                         </Border>
 
-                        <StackPanel DockPanel.Dock="Bottom" MouseEnter="OnCarouselHover" MouseLeave="OnCarouselLeave" Background="Transparent">
+                        <StackPanel DockPanel.Dock="Bottom">
                             <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.019}" Foreground="{DynamicResource Accent}" />
                             <TextBlock FontFamily="{DynamicResource Display}" FontSize="{StaticResource FontHero}" FontWeight="Bold" LineHeight="58" LineStackingStrategy="BlockLineHeight">
                                 <Run Text="CREATE" /><LineBreak /><Run Text="WARFARE" Foreground="{DynamicResource Accent}" />
                             </TextBlock>
                             <TextBlock Text="{Binding SlideCaption}" Style="{StaticResource Body}" Foreground="{DynamicResource Text}" FontSize="{StaticResource FontBodyLarge}"
                                        MaxWidth="520" HorizontalAlignment="Left" Margin="0,10,0,18" />
-                            <StackPanel Orientation="Horizontal" Visibility="{Binding HasSlides, Converter={StaticResource Vis}}">
+                            <!-- Pause au survol de cette ligne seulement : le défilement continue ailleurs -->
+                            <StackPanel Orientation="Horizontal" Visibility="{Binding HasSlides, Converter={StaticResource Vis}}" Background="Transparent"
+                                        MouseEnter="OnCarouselHover" MouseLeave="OnCarouselLeave">
+                            <StackPanel Orientation="Horizontal" Visibility="{Binding ShowSlideNav, Converter={StaticResource Vis}}">
                                 <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronLeft}" Command="{Binding PrevSlideCommand}" ToolTip="{DynamicResource t.020}" />
                                 <ItemsControl ItemsSource="{Binding SlideDots}" VerticalAlignment="Center" Margin="6,0">
                                     <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Orientation="Horizontal" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
@@ -184,6 +187,14 @@
                                     </ItemsControl.ItemTemplate>
                                 </ItemsControl>
                                 <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronRight}" Command="{Binding NextSlideCommand}" ToolTip="{DynamicResource t.022}" />
+                            </StackPanel>
+                                <!-- Bouton discret : images du serveur ou illustration du thème (choix sauvegardé) -->
+                                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcPalette}" Command="{Binding ToggleHomePhotosCommand}" Opacity="0.55" Margin="10,0,0,0"
+                                        ToolTip="{DynamicResource s.home.photosOff}" AutomationProperties.Name="{DynamicResource s.home.photosOff}"
+                                        Visibility="{Binding HomePhotos, Converter={StaticResource Vis}}" />
+                                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcGallery}" Command="{Binding ToggleHomePhotosCommand}" Opacity="0.55"
+                                        ToolTip="{DynamicResource s.home.photosOn}" AutomationProperties.Name="{DynamicResource s.home.photosOn}"
+                                        Visibility="{Binding HomePhotos, Converter={StaticResource Vis}, ConverterParameter=invert}" />
                             </StackPanel>
                         </StackPanel>
                     </DockPanel>

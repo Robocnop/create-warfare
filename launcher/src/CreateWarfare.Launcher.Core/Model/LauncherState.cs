@@ -31,6 +31,8 @@ public sealed class LauncherSettings
     public string Channel { get; set; } = Channels.Release;
     /// <summary>Thème : « auto » (selon la date, voir ThemeSchedule), « default » ou un thème précis (SeasonalTheme.All).</summary>
     public string Theme { get; set; } = "auto";
+    /// <summary>Accueil : faire défiler les images du serveur (sinon, illustration du thème).</summary>
+    public bool HomePhotos { get; set; } = true;
     /// <summary>Animer le décor du thème (engrenages, neige, pétales…). Windows peut aussi le couper.</summary>
     public bool DecorAnimations { get; set; } = true;
     /// <summary>Langue de l'interface : « fr » (par défaut) ou « en ».</summary>

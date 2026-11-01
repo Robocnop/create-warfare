@@ -199,4 +199,6 @@
     <sys:String x:Key="s.ap.active">Affiché en ce moment : </sys:String>
     <sys:String x:Key="s.ap.decor">Animer le décor</sys:String>
     <sys:String x:Key="s.ap.decorHint">Engrenages, neige, pétales et lumières. Coupé aussi quand Windows réduit les animations.</sys:String>
+    <sys:String x:Key="s.home.photosOff">Afficher l'illustration du thème au lieu des images</sys:String>
+    <sys:String x:Key="s.home.photosOn">Faire défiler les images du serveur</sys:String>
 </ResourceDictionary>

@@ -105,6 +105,8 @@ une illustration dessinée (engrenages) est affichée. Icône : `Assets/icon.ico
     "links":   { "discord": "", "website": "", "github": "https://github.com/Robocnop/create-warfare" },
     "server":  { "name": "Serveur Create Warfare", "host": "jeu.robocnop.be", "port": 27018 } }
   ```
+  Sur l'accueil, les images défilent toutes les 8 s (départ au hasard) ; un bouton discret à droite des points
+  les remplace par l'illustration du thème (réglage `homePhotos`, gardé).
   Une image distante est téléchargée une fois puis mise en cache (`%LOCALAPPDATA%\CreateWarfareLauncher\images`).
   Une image illisible est ignorée ; sans aucune image, l'illustration dessinée (engrenages) s'affiche.
   Discord et Site restent cachés tant que leur adresse est vide.

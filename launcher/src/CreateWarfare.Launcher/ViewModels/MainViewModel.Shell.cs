@@ -81,6 +81,7 @@ public sealed partial class MainViewModel
         ReportBugCommand = new Command(ReportBug);
         RefreshServerCommand = new Command(RefreshServerAsync);
         CopyAddressCommand = new Command(() => CopyText(ServerAddress, T("s.toast.addressCopied", "Adresse copiée : ") + ServerAddress));
+        ToggleHomePhotosCommand = new Command(() => HomePhotos = !HomePhotos);
         NextSlideCommand = new Command(() => { if (Slides.Count > 1) SlideIndex = (SlideIndex + 1) % Slides.Count; });
         PrevSlideCommand = new Command(() => { if (Slides.Count > 1) SlideIndex = (SlideIndex - 1 + Slides.Count) % Slides.Count; });
         CloseLightboxCommand = new Command(() => IsLightboxOpen = false);
@@ -237,8 +238,28 @@ public sealed partial class MainViewModel
             Raise(nameof(SlideCaption));
         }
     }
-    public string SlideCaption => _slideIndex < _captions.Count && _captions[_slideIndex].Length > 0
+    public string SlideCaption => HomePhotos && _slideIndex < _captions.Count && _captions[_slideIndex].Length > 0
         ? _captions[_slideIndex] : T("s.home.tagline", "Industrie, artillerie, aviation et dissuasion nucléaire, sur un serveur PvP entre amis.");
+    /// <summary>Images de fond de l'accueil : celles du serveur, ou aucune (illustration du thème) si le joueur l'a choisi.</summary>
+    public System.Collections.IEnumerable HomeSlides => HomePhotos ? Slides : Array.Empty<ImageSource>();
+
+    /// <summary>Flèches et points du carrousel (images affichées et au moins une image).</summary>
+    public bool ShowSlideNav => HomePhotos && HasSlides;
+
+    /// <summary>Choix du joueur, sauvegardé : images qui défilent ou illustration du thème.</summary>
+    public bool HomePhotos
+    {
+        get => _settings.HomePhotos;
+        set
+        {
+            if (value == _settings.HomePhotos) return;
+            _settings.HomePhotos = value;
+            SettingsStore.Save(_settings);
+            foreach (var n in new[] { nameof(HomePhotos), nameof(HomeSlides), nameof(ShowSlideNav), nameof(SlideCaption) }) Raise(n);
+        }
+    }
+    public Command ToggleHomePhotosCommand { get; private set; } = null!;
+
     bool _carouselPaused;
     public bool CarouselPaused { get => _carouselPaused; set => Set(ref _carouselPaused, value); }
     public Command NextSlideCommand { get; private set; } = null!;
@@ -328,7 +349,10 @@ public sealed partial class MainViewModel
             SlideDots.Add(new SlideDot { Index = index, IsCurrent = index == SlideIndex, Go = new Command(() => SlideIndex = index) });
             GalleryCards.Add(new GalleryCard(img, caption, new Command(() => { LightboxIndex = index; IsLightboxOpen = true; })));
         }
+        // une image au hasard à chaque ouverture, pour ne pas toujours voir la même en premier
+        if (Slides.Count > 1) SlideIndex = Random.Shared.Next(Slides.Count);
         Raise(nameof(HasSlides));
+        Raise(nameof(ShowSlideNav));
         Raise(nameof(HasGallery));
         Raise(nameof(SlideCaption));
     }
@@ -687,7 +711,7 @@ public sealed partial class MainViewModel
         Motion.DecorAnimations = _settings.DecorAnimations;
         Strings.Apply(_settings.Language);
         RaiseThemeProps();
-        foreach (var n in new[] { nameof(DecorAnimations), nameof(SelectedLanguage), nameof(SelectedGameLaunch), nameof(AutoUpdateLauncher), nameof(DebugLog), nameof(DevMode) }) Raise(n);
+        foreach (var n in new[] { nameof(DecorAnimations), nameof(HomePhotos), nameof(HomeSlides), nameof(ShowSlideNav), nameof(SlideCaption), nameof(SelectedLanguage), nameof(SelectedGameLaunch), nameof(AutoUpdateLauncher), nameof(DebugLog), nameof(DevMode) }) Raise(n);
         ApplyChoice();
         Toast(T("s.toast.reset", "Paramètres réinitialisés."));
     }
