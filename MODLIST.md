@@ -197,6 +197,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | FastSuite | `FastSuite-1.21.1-6.0.7.jar` | client + serveur | CurseForge |
 | FerriteCore ((Neo)Forge) | `ferritecore-7.0.3-neoforge.jar` | client + serveur | CurseForge |
 | Fresh Animations (pack de ressources) | `FreshAnimations_v1.11.1_1.20+.zip` | client seul | CurseForge |
+| [SBW] Superb Warfare Sound Overhaul (pack de sons, activé par défaut) | `[SBW] Superb Warfare Sound Overhaul 2.0.zip` | client seul | CurseForge |
 | Friends&Foes (Forge/NeoForge) | `friendsandfoes-neoforge-5.0.4+mc1.21.1.jar` | client + serveur | CurseForge |
 | FTB Chunks (NeoForge) | `ftb-chunks-neoforge-2101.1.22.jar` | client + serveur | CurseForge |
 | FTB Essentials (Forge & Fabric) | `ftb-essentials-neoforge-2101.1.10.jar` | client + serveur | CurseForge |
@@ -234,6 +235,8 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Overgeared | `overgeared-neoforge-1.21.1-1.6.20.jar` | client + serveur | CurseForge |
 | Packet Fixer | `packetfixer-3.3.1-1.20.5-1.21.X-merged.jar` | client + serveur | CurseForge |
 | Particle Effects | `ParticleEffects-1.6.0+1.21.1+neoforge.jar` | client seul | CurseForge |
+| Particle Core | `particle_core-0.3.3+1.21+neoforge.jar` | client seul | CurseForge |
+| SoundBarrier (bang du mur du son > ~70 blocs/s) | `SoundBarrier-1.4.jar` | client + serveur | CurseForge |
 | Pehkui | `Pehkui-3.8.3+1.21-neoforge.jar` | client + serveur | CurseForge |
 | Placebo | `Placebo-1.21.1-9.9.4.jar` | client + serveur | CurseForge |
 | playerAnimator | `player-animation-lib-forge-2.0.4+1.21.1.jar` | client + serveur | CurseForge |

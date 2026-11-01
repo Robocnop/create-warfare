@@ -1,0 +1,13 @@
+name = "SoundBarrier"
+filename = "SoundBarrier-1.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3dc85eaea735cfcbc56a2eb9a75c9d15f63c2247"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8212570
+project-id = 1471535

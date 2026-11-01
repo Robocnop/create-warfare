@@ -1,0 +1,13 @@
+name = "[SBW] Superb Warfare Sound Overhaul"
+filename = "[SBW] Superb Warfare Sound Overhaul 2.0.zip"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "a1eeb088e381411aac1aeb513103f45144c54771"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8499108
+project-id = 1491769

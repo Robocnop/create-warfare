@@ -26,7 +26,7 @@ hash = "9c090b6112995c9ae44c957be22e2608df1b7751d2ea1889ca18270d7522d7c7"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "c14410aba5569e32dd882ef72a1a3e50c5991fb2a350ab7790b5c31d814232b0"
+hash = "97cc0871856c76b2d008ea263efc6c0aad464ca928ac61a63e122dabf5b9f1c6"
 
 [[files]]
 file = "config/explosionoverhaul/ExplosionSourceBlacklist.json"
@@ -2271,6 +2271,11 @@ hash = "75d42d0a0bcfbcce376fb229f72b75e3a40592fdff5490b997c19ef439a9c832"
 metafile = true
 
 [[files]]
+file = "mods/particle-core.pw.toml"
+hash = "8c29843ea8daff8f4e2db30292a690de72ca5cfb52732e5bd0ea76a365923da0"
+metafile = true
+
+[[files]]
 file = "mods/particle-effects.pw.toml"
 hash = "de238fe06ad1707126c13d686328555fd8183392f7a7c0be5ff856d0a7faa367"
 metafile = true
@@ -2408,6 +2413,11 @@ metafile = true
 [[files]]
 file = "mods/sodium.pw.toml"
 hash = "3fc6fd4a464740bd6cfe89571517cfda837dbad69f0218ef1159b527b1be45d6"
+metafile = true
+
+[[files]]
+file = "mods/sonicboom.pw.toml"
+hash = "57b19dfe0c88115aa66184bfa717822bc06a03034157699f2b7443eb5a679c88"
 metafile = true
 
 [[files]]
@@ -2568,6 +2578,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "517dae188ff4e8aa3303b9f5f733f373278109c13722d93e232d0cb01d935d5a"
+metafile = true
+
+[[files]]
+file = "resourcepacks/sbw-superb-warfare-sound-overhaul.pw.toml"
+hash = "8f6dfc1cc88b508894f069756f302edac3b86cd9cf2ed8792fcb66f6dc6ae044"
 metafile = true
 
 [[files]]

@@ -2,6 +2,15 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.7.4 — 2026-11-01
+
+- **Particle Core** (client) : particules optimisées (celles hors de vue ne sont plus dessinées). Utile pendant les
+  grosses explosions d'artillerie, de Superb Warfare et des bombes.
+- **SoundBarrier** : bang du mur du son, poussière au sol et sons de vol au-delà d'environ 70 blocs/s (engins rapides,
+  jetpacks). À installer aussi sur le serveur.
+- **[SBW] Superb Warfare Sound Overhaul** (pack de sons, activé par défaut) : sons plus réalistes pour les avions,
+  hélicoptères, chars, missiles, radars et leurres de Superb Warfare.
+
 ## 1.7.3 — 2026-10-31
 
 - **Pistolets de compression** (Pocket Sized) : on peut de nouveau rétrécir ou agrandir les autres joueurs

@@ -1,12 +1,12 @@
 name = "Create Warfare"
 author = "Robocnop"
-version = "1.7.3"
+version = "1.7.4"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "25a9fba88fc9f5786b2330b992787e09e6ea2e7c1a4318c265260a6347c7d244"
+hash = "b08a632cfa9793f1e80874d03905be11c660302c27414a87d274e80f91509545"
 
 [versions]
 minecraft = "1.21.1"
