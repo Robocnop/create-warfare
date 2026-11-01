@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,11 +11,19 @@
     "size": 72329940
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.7.4/CreateWarfare-1.7.4.zip",
-    "sha256": "05f54a94e8ba002e6ffb54f1282524366f61d4b1b3555dd5d8757932f9e97e3a",
-    "size": 15676884
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.7.5/CreateWarfare-1.7.5.zip",
+    "sha256": "05f900aba133d6d86940ea4e5cc838dd34bfa35c306efc186db7b3f687a789e1",
+    "size": 24890931
   },
   "mods": [
+    {
+      "file": "AdvancedPeripherals-1.21.1-0.8.2a.jar",
+      "sha1": "c5ec43be7209c5f74b27bab0df51979f18c4d02f",
+      "size": 1681254,
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9061/581/AdvancedPeripherals-1.21.1-0.8.2a.jar"
+      ]
+    },
     {
       "file": "alltheleaks-1.1.14-1.21.1-neoforge.jar",
       "sha1": "9466eee51e9af6d3dd65d1dc164cd8ea98df1fcc",
@@ -133,6 +141,15 @@
       ]
     },
     {
+      "file": "BetterAnimationsCollection-v21.1.1-1.21.1-NeoForge.jar",
+      "sha1": "1bacea8719a1af6079bb70a135129a2cd1559423",
+      "size": 191292,
+      "urls": [
+        "https://cdn.modrinth.com/data/OoOVj3J3/versions/3sJ71XQz/BetterAnimationsCollection-v21.1.1-1.21.1-NeoForge.jar",
+        "https://mediafilez.forgecdn.net/files/7041/300/BetterAnimationsCollection-v21.1.1-1.21.1-NeoForge.jar"
+      ]
+    },
+    {
       "file": "better_lib-neoforge-1.21.1-1.0.113.jar",
       "sha1": "e998bbb4ac83da51e7d0a17fe4fedaca7463eeab",
       "size": 2552465,
@@ -169,12 +186,30 @@
       ]
     },
     {
+      "file": "CameraOverhaul-v2.1.2-neoforge+mc[1.21-1.21.1].jar",
+      "sha1": "bffa09a609a1c59efe976e00e8c83dd484fc7ba8",
+      "size": 139528,
+      "urls": [
+        "https://cdn.modrinth.com/data/m0oRwcZx/versions/rZdpFGSR/CameraOverhaul-v2.1.2-neoforge%2Bmc%5B1.21-1.21.1%5D.jar",
+        "https://mediafilez.forgecdn.net/files/8979/489/CameraOverhaul-v2.1.2-neoforge%2Bmc%5B1.21-1.21.1%5D.jar"
+      ]
+    },
+    {
       "file": "carryon-neoforge-1.21.1-2.2.6.13.jar",
       "sha1": "2ceb0d9284525b6cb2a214c88cf6511cab91f601",
       "size": 361486,
       "urls": [
         "https://cdn.modrinth.com/data/joEfVgkn/versions/PV8oLZ1q/carryon-neoforge-1.21.1-2.2.6.13.jar",
         "https://mediafilez.forgecdn.net/files/8512/888/carryon-neoforge-1.21.1-2.2.6.13.jar"
+      ]
+    },
+    {
+      "file": "cbc-sable-fix-1.0.3.jar",
+      "sha1": "64afa17917d2bfebf9c240135358d292e007b040",
+      "size": 6900,
+      "urls": [
+        "https://cdn.modrinth.com/data/36XEz0mh/versions/y3lXRq0C/cbc-sable-fix-1.0.3.jar",
+        "https://mediafilez.forgecdn.net/files/8650/737/cbc-sable-fix-1.0.3.jar"
       ]
     },
     {
@@ -379,12 +414,30 @@
       ]
     },
     {
+      "file": "aeroencasedpipe-1.0.7.jar",
+      "sha1": "94012ef7cb564267caa91e29a63d48c32be0b341",
+      "size": 56483,
+      "urls": [
+        "https://cdn.modrinth.com/data/DdAlVT8M/versions/pKFEfjEB/aeroencasedpipe-1.0.7.jar",
+        "https://mediafilez.forgecdn.net/files/8255/160/aeroencasedpipe-1.0.7.jar"
+      ]
+    },
+    {
       "file": "cr_aero_structures.jar",
       "sha1": "f60358df1d049491b0b03a99483d8803060bd99a",
       "size": 269552,
       "urls": [
         "https://cdn.modrinth.com/data/aX7eWKKb/versions/GgCMtS4V/cr_aero_structures.jar",
         "https://mediafilez.forgecdn.net/files/8399/115/cr_aero_structures.jar"
+      ]
+    },
+    {
+      "file": "create_aeronautics_transmission_linkage-0.2.9.jar",
+      "sha1": "408317e1fe8b44512007df662a342888acf67871",
+      "size": 736565,
+      "urls": [
+        "https://cdn.modrinth.com/data/Y1dq5ioE/versions/WoUjC6d4/create_aeronautics_transmission_linkage-0.2.9.jar",
+        "https://mediafilez.forgecdn.net/files/9392/20/create_aeronautics_transmission_linkage-0.2.9.jar"
       ]
     },
     {
@@ -830,6 +883,15 @@
       ]
     },
     {
+      "file": "pipeorgans-0.9.2.1+1.21.1.jar",
+      "sha1": "823be9b57775ec7898a7e6d70c01bcdf77d2c3b3",
+      "size": 7132757,
+      "urls": [
+        "https://cdn.modrinth.com/data/yGttHo06/versions/mv1qcsse/pipeorgans-0.9.2.1%2B1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/9277/58/pipeorgans-0.9.2.1%2B1.21.1.jar"
+      ]
+    },
+    {
       "file": "Create-Structures-Arise-1.21.1-NeoForge-176.49.50.jar",
       "sha1": "fdfe305b58df9a4dd2aa4294800d91c3836b7acc",
       "size": 1864501,
@@ -916,6 +978,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/hddN8ksR/versions/t17qYXjn/create_vibrant_vaults-0.3.2.jar",
         "https://mediafilez.forgecdn.net/files/6463/890/create_vibrant_vaults-0.3.2.jar"
+      ]
+    },
+    {
+      "file": "vintage-1.21.1-1.6.4.jar",
+      "sha1": "05270af6826034d8c86c2cc3b1173734d9f2a7a0",
+      "size": 1222149,
+      "urls": [
+        "https://cdn.modrinth.com/data/qVZh767G/versions/1U05zPuF/vintage-1.21.1-1.6.4.jar",
+        "https://mediafilez.forgecdn.net/files/9189/556/vintage-1.21.1-1.6.4.jar"
       ]
     },
     {
@@ -1026,6 +1097,15 @@
       ]
     },
     {
+      "file": "dynamic-fps-3.11.4+minecraft-1.21.0-neoforge.jar",
+      "sha1": "35b17e95b2b65930116ccc83e0cc358ac1bfcf9e",
+      "size": 220193,
+      "urls": [
+        "https://cdn.modrinth.com/data/LQ3K71Q1/versions/T238FZpQ/dynamic-fps-3.11.4%2Bminecraft-1.21.0-neoforge.jar",
+        "https://mediafilez.forgecdn.net/files/7546/938/dynamic-fps-3.11.4%2Bminecraft-1.21.0-neoforge.jar"
+      ]
+    },
+    {
       "file": "EasyShulkerBoxes-v21.1.3-1.21.1-NeoForge.jar",
       "sha1": "9491302950e20bec758f67f13ff21663ecf40986",
       "size": 215920,
@@ -1041,6 +1121,24 @@
       "urls": [
         "https://cdn.modrinth.com/data/OoF97Pto/versions/BM24IMvt/effectual-neoforge-1.4.2-1.21.1.jar",
         "https://mediafilez.forgecdn.net/files/8966/347/effectual-neoforge-1.4.2-1.21.1.jar"
+      ]
+    },
+    {
+      "file": "emf_compat_core_neoforge_1.21.1_2.3.2.jar",
+      "sha1": "67e4a92e2df2a2b86a655cfc081d971a81f5a9f8",
+      "size": 174702,
+      "urls": [
+        "https://cdn.modrinth.com/data/hbGct5uU/versions/ai1LOVRO/emf_compat_core_neoforge_1.21.1_2.3.2.jar",
+        "https://mediafilez.forgecdn.net/files/9205/847/emf_compat_core_neoforge_1.21.1_2.3.2.jar"
+      ]
+    },
+    {
+      "file": "emf_compat_not_enough_animations_neoforge_1.21.1_1.2.1.jar",
+      "sha1": "43af485fd34e6e7e1c0335389be0f7ff628296b6",
+      "size": 111725,
+      "urls": [
+        "https://cdn.modrinth.com/data/IGCrWfL7/versions/X9UBK5Uu/emf_compat_not_enough_animations_neoforge_1.21.1_1.2.1.jar",
+        "https://mediafilez.forgecdn.net/files/9103/609/emf_compat_not_enough_animations_neoforge_1.21.1_1.2.1.jar"
       ]
     },
     {
@@ -1147,6 +1245,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar",
         "https://mediafilez.forgecdn.net/files/7524/151/ferritecore-7.0.3-neoforge.jar"
+      ]
+    },
+    {
+      "file": "firstperson-neoforge-2.7.3-mc1.21.1.jar",
+      "sha1": "6e0be1de6a5aab6cda8496984376a0114cf5a840",
+      "size": 1537453,
+      "urls": [
+        "https://cdn.modrinth.com/data/H5XMjpHi/versions/eaj8cYpD/firstperson-neoforge-2.7.3-mc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8990/482/firstperson-neoforge-2.7.3-mc1.21.1.jar"
       ]
     },
     {
@@ -1287,12 +1394,30 @@
       ]
     },
     {
+      "file": "ItemPhysicLite_NEOFORGE_v1.6.13_mc1.21.1.jar",
+      "sha1": "38304137e8eb0f01ba91b9201407e56d5e0e37cb",
+      "size": 20187,
+      "urls": [
+        "https://cdn.modrinth.com/data/OuyCgP8t/versions/KyZkwHoQ/ItemPhysicLite_NEOFORGE_v1.6.13_mc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8974/935/ItemPhysicLite_NEOFORGE_v1.6.13_mc1.21.1.jar"
+      ]
+    },
+    {
       "file": "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
       "sha1": "479b327078f8f0091e2413675d1236c931f68cf4",
       "size": 82315,
       "urls": [
         "https://cdn.modrinth.com/data/xuDOzCLy/versions/O3F6Dkle/JadeAddons-1.21.1-NeoForge-6.1.2.jar",
         "https://mediafilez.forgecdn.net/files/9056/575/JadeAddons-1.21.1-NeoForge-6.1.2.jar"
+      ]
+    },
+    {
+      "file": "sablejade-1.3.0.jar",
+      "sha1": "beb78d81a4d5768780c8566fa869ced5dbe08263",
+      "size": 301532,
+      "urls": [
+        "https://cdn.modrinth.com/data/jCrJ4iGH/versions/cxUohR7A/sablejade-1.3.0.jar",
+        "https://mediafilez.forgecdn.net/files/8681/404/sablejade-1.3.0.jar"
       ]
     },
     {
@@ -1345,6 +1470,14 @@
       "size": 7279276,
       "urls": [
         "https://mediafilez.forgecdn.net/files/8335/665/kotlinforforge-5.12.0-all.jar"
+      ]
+    },
+    {
+      "file": "kubejs-create-neoforge-2101.3.1-build.18.jar",
+      "sha1": "d4dce8f82f2d37545f085522a782c1bfda222154",
+      "size": 38630,
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/7213/667/kubejs-create-neoforge-2101.3.1-build.18.jar"
       ]
     },
     {
@@ -1446,6 +1579,15 @@
       ]
     },
     {
+      "file": "notenoughanimations-neoforge-1.12.6-mc1.21.1.jar",
+      "sha1": "2098ae4965ebefb2dc8d5aec42a7d5282414fddc",
+      "size": 1866035,
+      "urls": [
+        "https://cdn.modrinth.com/data/MPCX6s5C/versions/VCuMsK45/notenoughanimations-neoforge-1.12.6-mc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8925/75/notenoughanimations-neoforge-1.12.6-mc1.21.1.jar"
+      ]
+    },
+    {
       "file": "ntgl-1.21.1-3.2.0.jar",
       "sha1": "706a7b91a8f46c4773d01f7a0137b6aaf271e33b",
       "size": 3965533,
@@ -1517,6 +1659,15 @@
       ]
     },
     {
+      "file": "particular-1.21.1-NeoForge-1.5.7.jar",
+      "sha1": "d6d33e8233481ad8fc6f8c351f52783ed431a800",
+      "size": 315841,
+      "urls": [
+        "https://cdn.modrinth.com/data/pYFUU6cq/versions/WyRBAcBf/particular-1.21.1-NeoForge-1.5.7.jar",
+        "https://mediafilez.forgecdn.net/files/8662/697/particular-1.21.1-NeoForge-1.5.7.jar"
+      ]
+    },
+    {
       "file": "Pehkui-3.8.3+1.21-neoforge.jar",
       "sha1": "4ae35b04b0fca7b170417a12d6da6a693281574b",
       "size": 507568,
@@ -1568,6 +1719,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/eWiBLJ9R/versions/jCkPHjmP/powergrid-mc1.21.1-0.6.2.jar",
         "https://mediafilez.forgecdn.net/files/8880/715/powergrid-mc1.21.1-0.6.2.jar"
+      ]
+    },
+    {
+      "file": "PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar",
+      "sha1": "71bd6de2b01441d92be1e109879b76b7750bd787",
+      "size": 7096988,
+      "urls": [
+        "https://cdn.modrinth.com/data/JIEwmDVI/versions/f3SxKzof/PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar",
+        "https://mediafilez.forgecdn.net/files/7252/696/PresenceFootsteps-1.21.1-1.12.0-beta.1-1.21NeoForge.jar"
       ]
     },
     {
@@ -1669,12 +1829,39 @@
       ]
     },
     {
+      "file": "SBW-Advanced-CIWS-NeoForge-1.21.1-SBW-0.8.9-final-v1.0.8-VISUALFIX2.jar",
+      "sha1": "8603898e75c17d1983aefb8edf6b28790f0565a8",
+      "size": 141268,
+      "urls": [
+        "https://cdn.modrinth.com/data/Lm6m94t6/versions/GJR1LFdj/SBW-Advanced-CIWS-NeoForge-1.21.1-SBW-0.8.9-final-v1.0.8-VISUALFIX2.jar",
+        "https://mediafilez.forgecdn.net/files/8127/172/SBW-Advanced-CIWS-NeoForge-1.21.1-SBW-0.8.9-final-v1.0.8-VISUALFIX2.jar"
+      ]
+    },
+    {
       "file": "aerowarfare_compat-1.15.0.jar",
       "sha1": "c81a693128d41487bd89cba2d88beed2fdd5eacc",
       "size": 259748,
       "urls": [
         "https://cdn.modrinth.com/data/mcHsAayo/versions/Cm5jwHlO/aerowarfare_compat-1.15.0.jar",
         "https://mediafilez.forgecdn.net/files/8119/572/aerowarfare_compat-1.15.0.jar"
+      ]
+    },
+    {
+      "file": "SBW-Drone-Warfare-1.21.1-NeoForge-1.0.6.jar",
+      "sha1": "a672a637bb6b8067b9e05394740a178094a2a4b9",
+      "size": 20564399,
+      "urls": [
+        "https://cdn.modrinth.com/data/WG6tgfJf/versions/NeM3aBVy/SBW-Drone-Warfare-1.21.1-NeoForge-1.0.6.jar",
+        "https://mediafilez.forgecdn.net/files/8754/631/SBW-Drone-Warfare-1.21.1-NeoForge-1.0.6.jar"
+      ]
+    },
+    {
+      "file": "sbw_ew_addon-1.1.1+1.21.1.jar",
+      "sha1": "7acab369b2e7efd07301e61bdcb7069fd4bb240b",
+      "size": 1871304,
+      "urls": [
+        "https://cdn.modrinth.com/data/LXGHZvhO/versions/dFNoJ1RT/sbw_ew_addon-1.1.1%2B1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8563/120/sbw_ew_addon-1.1.1%2B1.21.1.jar"
       ]
     },
     {
@@ -1739,12 +1926,30 @@
       ]
     },
     {
+      "file": "skinlayers3d-neoforge-1.11.4-mc1.21.1.jar",
+      "sha1": "d4864fac231ff3d360e08a82f06553c3f76de8a6",
+      "size": 1905514,
+      "urls": [
+        "https://cdn.modrinth.com/data/zV5r3pPn/versions/GJTnQGfe/skinlayers3d-neoforge-1.11.4-mc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/9243/656/skinlayers3d-neoforge-1.11.4-mc1.21.1.jar"
+      ]
+    },
+    {
       "file": "sliceanddice-4.3.4-neoforge.jar",
       "sha1": "bfcb12d13465caf6743f200fbd755b72705011e4",
       "size": 1356389,
       "urls": [
         "https://cdn.modrinth.com/data/GmjmRQ0A/versions/D6mQaFRW/sliceanddice-4.3.4-neoforge.jar",
         "https://mediafilez.forgecdn.net/files/8929/365/sliceanddice-4.3.4-neoforge.jar"
+      ]
+    },
+    {
+      "file": "sodium-extra-neoforge-0.9.5+mc1.21.1.jar",
+      "sha1": "6ca433df0ad08ce8413582e75dcae7619414a068",
+      "size": 483373,
+      "urls": [
+        "https://cdn.modrinth.com/data/PtjYWJkn/versions/T819dLGI/sodium-extra-neoforge-0.9.5%2Bmc1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/9324/102/sodium-extra-neoforge-0.9.5%2Bmc1.21.1.jar"
       ]
     },
     {
@@ -1814,6 +2019,14 @@
       "urls": [
         "https://cdn.modrinth.com/data/sHO3MhQx/versions/BOTN7zzN/struts-1.3.1.jar",
         "https://mediafilez.forgecdn.net/files/8812/965/struts-1.3.1.jar"
+      ]
+    },
+    {
+      "file": "studious-keybinds-neoforge-1.21.1-1.0.8-beta.1.jar",
+      "sha1": "774dae2a81ba825edd5decde37f466b052aeeb5e",
+      "size": 50696,
+      "urls": [
+        "https://mediafilez.forgecdn.net/files/9106/885/studious-keybinds-neoforge-1.21.1-1.0.8-beta.1.jar"
       ]
     },
     {
@@ -2066,6 +2279,10 @@
   ],
   "retiredMods": [
     {
+      "file": "CarryOnAeroCompat-1.21.1-1.1.1.jar",
+      "sha1": "fe5f43783baadf3d954493ccf7a0688ede794f1e"
+    },
+    {
       "file": "Create Encased-1.21.1-1.9.0-ht3.jar",
       "sha1": "bc749c8ec3ad4fef7d5a052c904008971158f274"
     },
@@ -2106,8 +2323,16 @@
       "sha1": "cbc64baf934c03eefc120315b1aefecbe8c3c322"
     },
     {
+      "file": "climbable_ropes-2.2.0.jar",
+      "sha1": "a28fcd4441c4a78db98479e8010559ce7f210660"
+    },
+    {
       "file": "corpse-neoforge-1.21.1-1.1.21.jar",
       "sha1": "124791f94c501c2c12a132f4cc69a3a738498b9d"
+    },
+    {
+      "file": "create_aeronautics_toolgun-0.3.7.jar",
+      "sha1": "8b4a24ae3c86345875ea25d939d1711fcccbb19a"
     },
     {
       "file": "create_avionics-neoforge-1.21.1-0.6.0.jar",
@@ -2178,6 +2403,18 @@
       "sha1": "444c6f221e57cca8e433702b18c4643faa82545a"
     },
     {
+      "file": "pfsable-1.0.jar",
+      "sha1": "a216dfce15550c50436012283e49606c67a87e29"
+    },
+    {
+      "file": "sableexplosionfix-1.0.0.jar",
+      "sha1": "850e0894cd641a96c8869b64aacdb4bb16efb8d3"
+    },
+    {
+      "file": "skyfront-1.21.1-1.5.0.jar",
+      "sha1": "e7562f5b0b5bc1571f144ae54086f8144cc1cbed"
+    },
+    {
       "file": "sophisticatedbackpacks-1.21.1-3.26.12.2208.jar",
       "sha1": "ef59863d328e4e949bdaf75f65412d1048b3f9e1"
     },
@@ -2215,5 +2452,5 @@
     }
   ],
   "notice": null,
-  "changelog": "1.7.4 — 2026-11-01\n\n- Particle Core (client) : particules optimisées (celles hors de vue ne sont plus dessinées). Utile pendant les grosses explosions d'artillerie, de Superb Warfare et des bombes.\n- SoundBarrier : bang du mur du son, poussière au sol et sons de vol au-delà d'environ 70 blocs/s (engins rapides, jetpacks). À installer aussi sur le serveur.\n- [SBW] Superb Warfare Sound Overhaul (pack de sons, activé par défaut) : sons plus réalistes pour les avions, hélicoptères, chars, missiles, radars et leurres de Superb Warfare.\n\n1.7.3 — 2026-10-31\n\n- Pistolets de compression (Pocket Sized) : on peut de nouveau rétrécir ou agrandir les autres joueurs (avant, le message « X has PVP Scaling disabled » s'affichait). Les pistolets restent limités de 1/4 à 4 fois.\n- Traductions : 285 textes ajoutés pour les noms qui s'affichaient en clé brute (Create: Arms, armes NTGL, blocs de Burnt dans Jade, bogies de Bits 'n' Bogeys, obus de CBC AT, J-16, drone FPV, caméra de SecurityCraft…), et 10 textes français faux corrigés (fusée à retardement de CBC, Waystones, Create Railways Navigator…).\n\n1.7.1 — 2026-10-30\n\n- Correctif du plantage au lancement (client) : CBC Optics modifie Entity Culling et cherche un champ que la version 1.11 d'Entity Culling a supprimé. Entity Culling revient en 1.10.5 (bloquée à cette version) en attendant une mise à jour de CBC Optics. Le serveur n'était pas touché (Entity Culling est un mod client)."
+  "changelog": "1.7.5 — 2026-11-01\n\n- Correctifs : le télémètre de CBC Ballistics sur un engin Sable ne gèle plus le jeu ; les explosions abîment maintenant les engins au-dessus de Y=320 (avant, un avion qui volait haut était invincible).\n- Animations et visuels (client) : animations de joueur en 3e personne (Not Enough Animations), son propre corps visible en vue 1re personne (First-person Model), skins en relief (3D Skin Layers), animations de blocs, caméra qui s'incline en marchant et en vol (Camera Overhaul), bruits de pas selon la surface, cascades et lucioles (Particular), objets qui tombent à plat (ItemPhysic Lite), plus d'options graphiques (Sodium Extra), le jeu ralentit quand la fenêtre est en arrière-plan (Dynamic FPS). Les machines à vapeur de Create font de vrais bruits (Sound of Steam).\n- Touches : Studious Keybinds (Options → Commandes → Clavier) montre un clavier, avec les conflits en rouge.\n- Aviation : cordes à grimper, tuyaux encastrés, transmissions et liaisons, toolgun pour engins Sable ; Carry On marche sur les engins ; Jade affiche les blocs des engins.\n- Superb Warfare : guerre électronique (brouilleurs, radios, drones FPV, EMP, missile guidé), Drone Warfare, défense antiaérienne rapprochée (Advanced CIWS), drones Shahed (Skyfront).\n- Advanced Peripherals (CC: Tweaked) : détecteur de joueurs limité à 64 blocs, sans position exacte des joueurs.\n- Create: Vintage : nouvelles machines de métallurgie (table vibrante, presse à cintrer, tour, enrouleuse…).\n\n1.7.4 — 2026-11-01\n\n- Particle Core (client) : particules optimisées (celles hors de vue ne sont plus dessinées). Utile pendant les grosses explosions d'artillerie, de Superb Warfare et des bombes.\n- SoundBarrier : bang du mur du son, poussière au sol et sons de vol au-delà d'environ 70 blocs/s (engins rapides, jetpacks). À installer aussi sur le serveur.\n- [SBW] Superb Warfare Sound Overhaul (pack de sons, activé par défaut) : sons plus réalistes pour les avions, hélicoptères, chars, missiles, radars et leurres de Superb Warfare.\n\n1.7.3 — 2026-10-31\n\n- Pistolets de compression (Pocket Sized) : on peut de nouveau rétrécir ou agrandir les autres joueurs (avant, le message « X has PVP Scaling disabled » s'affichait). Les pistolets restent limités de 1/4 à 4 fois.\n- Traductions : 285 textes ajoutés pour les noms qui s'affichaient en clé brute (Create: Arms, armes NTGL, blocs de Burnt dans Jade, bogies de Bits 'n' Bogeys, obus de CBC AT, J-16, drone FPV, caméra de SecurityCraft…), et 10 textes français faux corrigés (fusée à retardement de CBC, Waystones, Create Railways Navigator…)."
 }
