@@ -1495,11 +1495,6 @@ hash = "98250d952145b18c452883997e7e675d445bfce33e9afb35bf372040c429a179"
 metafile = true
 
 [[files]]
-file = "mods/carryon-aeronautics-compat.pw.toml"
-hash = "5dd4552f1e29c6db54ea43a7c56e298de7f8e467bd5a61a211f9c3362b5528b2"
-metafile = true
-
-[[files]]
 file = "mods/cbc-ballistics-fix-sable.pw.toml"
 hash = "0d6c50052110a3e6abaa1343c7a0d2a858ec47bb0b88a4f3aec61cfae2501a50"
 metafile = true

@@ -1,6 +1,6 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 262 mods et packs.
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 261 mods et packs.
 Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30, de la 1.7.2 : 2026-10-31).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
@@ -24,7 +24,8 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 - **1.7.2** : Create: Schematic Helper (client seul, MIT) : envoyer et télécharger des schémas Create sur createmod.com
   depuis la table à schémas.
 - **1.7.5** : correctifs Sable (CBC Ballistics Fix Sable : gel du télémètre sur un engin ; Sable Explosions Fix :
-  engins invincibles au-dessus de Y=320), Jade Sable Compat, Carry On + Aeronautics, Studious Keybinds. Visuels (client) :
+  engins invincibles au-dessus de Y=320), Jade Sable Compat, Studious Keybinds (Carry On + Aeronautics retiré en 1.7.6 :
+  il faisait planter le serveur au clic droit, mixin écrit pour une autre version de Carry On). Visuels (client) :
   Not Enough Animations (+ EMF Compat), First-person Model, 3D Skin Layers, Better Animations Collection, Camera Overhaul,
   Presence Footsteps (+ Sable), Particular, ItemPhysic Lite, Dynamic FPS, Sodium Extra ; Create: Sound of Steam.
   Gameplay : Aeronautics (cordes, tuyaux encastrés, Transmission & Linkage, Toolgun), Superb Warfare (Electronic Warfare,
@@ -300,7 +301,6 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | CBC Ballistics Fix Sable | `cbc-sable-fix-1.0.3.jar` | client + serveur | CurseForge |
 | Sable Explosions Fix | `sableexplosionfix-1.0.0.jar` | client + serveur | Modrinth |
 | Jade Sable Compat | `sablejade-1.3.0.jar` | client seul | CurseForge |
-| Carry On + Create Aeronautics Compat | `CarryOnAeroCompat-1.21.1-1.1.1.jar` | client + serveur | Modrinth |
 | Not Enough Animations | `notenoughanimations-neoforge-1.12.6-mc1.21.1.jar` | client seul | CurseForge |
 | EMF Compat: Core | `emf_compat_core_neoforge_1.21.1_2.3.2.jar` | client seul | CurseForge |
 | EMF Compat: Not Enough Animations | `emf_compat_not_enough_animations_neoforge_1.21.1_1.2.1.jar` | client seul | CurseForge |
