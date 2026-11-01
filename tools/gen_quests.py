@@ -110,6 +110,13 @@ CHAPTERS = [
         ("train_controls", "create:controls", 1, "Commandes de train", "Le poste de pilotage.", ["track"], 100),
         ("station", "create:track_station", 2, "Gares", "Automatise les trajets.", ["train_controls"], 150),
         ("plastic", "tfmg:plastic_sheet", 16, "Plastique", "Issu du raffinage : électronique avancée.", ["distillation"], 200),
+        # v1.8.0 : Create: Vintage (métallurgie)
+        ("vintage_grinder", "vintage:belt_grinder", 1, "Ponceuse à bande (Vintage)", "Create: Vintage ajoute la métallurgie fine. La ponceuse affûte et polit les pièces posées dessus.", ["02_laiton:brass"], 150),
+        ("vintage_curving", "vintage:curving_press", 1, "Presse à cintrer", "Courbe les plaques avec une tête convexe ou concave.", ["vintage_grinder"], 150),
+        ("vintage_vibrating", "vintage:vibrating_table", 1, "Table vibrante", "Trie et tamise les matériaux en les secouant.", ["vintage_grinder"], 150),
+        ("vintage_centrifuge", "vintage:centrifuge", 1, "Centrifugeuse", "Sépare les mélanges par rotation rapide.", ["vintage_vibrating"], 200),
+        ("vintage_lathe", "vintage:lathe", 1, "Tour", "Se fabrique à l'établi mécanique. Tourne les lingots en tiges.", ["vintage_curving", "steel"], 200),
+        ("vintage_helve", "vintage:helve_hammer", 1, "Marteau-pilon", "Se fabrique à l'établi mécanique. Martèle les métaux à la place de la presse.", ["vintage_lathe"], 250),
     ]),
     ("05_artillerie", "Artillerie (Create Big Cannons)", "Fondre, forer et assembler de vrais canons.", "createbigcannons:cannon_mount", [
         ("cast_iron", "tfmg:cast_iron_ingot", 32, "Fonte", "Le métal des premiers canons.", ["04_industrie:coke_oven"], 100),
@@ -144,6 +151,12 @@ CHAPTERS = [
         ("wing", "createpropulsion:wing", 8, "Ailes", "Portance pour les vrais avions.", ["thruster"], 200),
         ("jetpack", "create_jetpack:jetpack", 1, "Jetpack", "Fonctionne à l'air comprimé.", ["02_laiton:precision_mechanism"], 150),
         ("compression_gun", "pocket:compression_gun", 1, "Canon de compression", "Rétrécit ou agrandit un engin (de 1/4 à 4 fois sur ce serveur). Fonctionne au mélange de lévitite.", ["levitite"], 250),
+        # v1.8.0 : Toolgun et Transmission & Linkage
+        ("toolgun", "create_aeronautics_toolgun:survival_structure_tool", 1, "Toolgun de survie", "Appuie sur Tab : enregistre ton engin en plan, soude deux engins entre eux, tourne-les ou déplace-les au bloc près.", ["physics_assembler"], 200),
+        ("magnetic_gun", "create_aeronautics_toolgun:magnetic_gun", 1, "Pistolet magnétique", "Attrape un engin à 24 blocs, déplace-le à la molette, et lance-le d'un clic gauche.", ["toolgun"], 200),
+        ("structure_container", "create_aeronautics_toolgun:portable_structure_container", 1, "Conteneur de structure", "Range un engin entier dans ton inventaire (clic droit maintenu), et repose-le ailleurs.", ["toolgun"], 250),
+        ("hydraulic_rod", "aeronautics_utility_objects:hydraulic_rod", 2, "Tiges pneumatiques", "Vérins réglables entre deux engins : trains d'atterrissage, suspensions, bras articulés.", ["physics_assembler"], 150),
+        ("universal_joint", "aeronautics_utility_objects:universal_joint_rod", 2, "Tiges de cardan", "Transmettent la rotation d'un engin à un autre, même s'ils bougent.", ["hydraulic_rod"], 150),
     ]),
     ("07_blindes", "Blindés & véhicules", "Roues, chenilles, blindage et tourelles.", "offroad:tire", [
         ("wheel_mount", "offroad:wheel_mount", 4, "Support de roue", "La base de tout véhicule terrestre.", ["04_industrie:steel"], 150),
@@ -185,6 +198,15 @@ CHAPTERS = [
         ("tomahawk", "createarms:tomahawk", 1, "Tomahawk", "Missile de croisière longue portée : demande des Codes de lancement.", ["fire_controller", "10_adm:launch_codes"], 350),
         ("launch_pad", "createmissiles:launch_pad", 1, "Pas de tir (Create Missiles)", "Missiles physiques modulaires. Les pièces demandent de l'acier.", ["04_industrie:steel"], 200),
         ("warhead_assembly", "createmissiles:warhead_assembly", 1, "Ogive (Create Missiles)", "La charge utile. Les ogives destructrices demandent des obus HE.", ["launch_pad", "05_artillerie:he_shell"], 200),
+        # v1.8.0 : Skyfront (drones) et Advanced CIWS
+        ("drone_detector", "skyfront:drone_detector", 1, "Détecteur de drones", "Capte la vidéo des drones FPV et entend les Mavic. Clic droit : signal suivant.", ["radar_dish"], 100),
+        ("jammer", "skyfront:reb", 1, "Brouilleur de guerre électronique", "Coupe la liaison des drones ennemis autour de lui. Il lui faut une batterie de Superb Warfare.", ["drone_detector"], 200),
+        ("fpv_drone", "skyfront:fpv_drone", 1, "Drone FPV", "Un drone kamikaze piloté en vue immersive. Compatible manette et radiocommande.", ["drone_detector"], 200),
+        ("siren", "skyfront:siren", 1, "Sirène d'alerte aérienne", "Préviens ta base qu'un raid arrive.", ["radar_dish"], 50),
+        ("shahed_terminal", "skyfront:shahed_terminal", 1, "Terminal de drones", "Associe tes Shahed (clic avec le drone en main), trace leur itinéraire sur la carte et lance-les.", ["fire_controller"], 250),
+        ("shahed", "skyfront:shahed_136", 1, "Shahed-136", "Drone d'attaque à longue portée, posé sur une rampe de lancement.", ["shahed_terminal"], 300),
+        ("shahed_launcher", "skyfront:launcher", 1, "Rampe de lancement", "Le Shahed ne se pose que dessus.", ["shahed_terminal"], 150),
+        ("ciws_wrench", "sbw_advanced_ciws:drone_control_wrench", 1, "Clé du CIWS", "Accroupi sur un CIWS H/PJ-11 de Superb Warfare : choisis les joueurs qu'il ne doit pas viser.", ["fire_controller"], 150),
     ]),
     ("10_adm", "Armes de destruction massive", "La fin de partie : bombes lourdes et ICBM nucléaires. Avec modération...", "projectexplosive:icbm_nuclear", [
         ("munitions_workbench", "projectexplosive:munitions_workbench", 1, "Établi de munitions", "Assemble bombes, ogives et missiles. Se fabrique avec de l'acier et des mécanismes.", ["08_nucleaire:reactor_core", "09_missiles:fire_controller"], 200),
@@ -218,6 +240,10 @@ CHAPTERS = [
         ("portable_radar", "securitycraft:portable_radar", 1, "Radar portatif", "Signale les joueurs qui approchent.", ["laser_block"], 75),
         ("sentry", "securitycraft:sentry", 1, "Tourelle", "Tire sur les intrus. Demande de l'acier et des tubes électroniques.", ["portable_radar", "reinforcer", "04_industrie:steel"], 300),
         ("trophy", "securitycraft:trophy_system", 1, "Système Trophy", "Abat les projectiles qui approchent. Demande des circuits imprimés TFMG.", ["sentry"], 400),
+        # v1.8.0 : Advanced Peripherals (détecteur de joueurs bridé à 64 blocs sur ce serveur)
+        ("ap_chat_box", "advancedperipherals:chat_box", 1, "Boîte de discussion", "Advanced Peripherals : ton ordinateur peut écrire dans le chat et lire les messages.", ["computer"], 100),
+        ("ap_player_detector", "advancedperipherals:player_detector", 1, "Détecteur de joueurs", "Sait si un joueur est proche (64 blocs max. sur ce serveur, sans position exacte) : portes et alarmes automatiques.", ["computer"], 150),
+        ("ap_geo_scanner", "advancedperipherals:geo_scanner", 1, "Scanner géologique", "Liste les minerais autour de lui, pour programmer une tortue mineuse.", ["turtle"], 150),
     ]),
     # v1.5.0 : Kaleidoscope Cookery (cuisine, moulin compatible Create). Non testé en jeu.
     ("12_cuisine", "Cuisine", "Kaleidoscope Cookery : cuisiner pour tenir entre deux batailles. Son moulin accepte aussi le moulin de Create.", "kaleidoscope_cookery:pot", [

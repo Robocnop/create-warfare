@@ -104,5 +104,69 @@
 			x: 2.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["2B6DCB051C43594F"]
+			id: "7A09796CAB0A8D01"
+			rewards: [{ id: "6F5223AF327D1FDA", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "539FF2A676A6B483", item: { count: 1, id: "skyfront:drone_detector" }, type: "item" }]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A09796CAB0A8D01"]
+			id: "5EDC4ACD5A6310BC"
+			rewards: [{ id: "4DFA1F43297C986F", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "5DB51A6092421D24", item: { count: 1, id: "skyfront:reb" }, type: "item" }]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A09796CAB0A8D01"]
+			id: "51159891E8BD3D4D"
+			rewards: [{ id: "1D87A1970143BEAC", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "5ADB1AF70C4FBB42", item: { count: 1, id: "skyfront:fpv_drone" }, type: "item" }]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2B6DCB051C43594F"]
+			id: "59B56E96E4915DC7"
+			rewards: [{ id: "71F5847A5E89BC9C", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "126292FA6E00129A", item: { count: 1, id: "skyfront:siren" }, type: "item" }]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["69A8DDF795F0DA59"]
+			id: "0AFBA63465BCBB12"
+			rewards: [{ id: "494A9502B3A7410B", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "2874A68B672610B1", item: { count: 1, id: "skyfront:shahed_terminal" }, type: "item" }]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0AFBA63465BCBB12"]
+			id: "56FCFD033584A67D"
+			rewards: [{ id: "1F68AC586AD7AB4C", type: "xp", xp: 300 }]
+			tasks: [{ count: 1L, id: "7F2F1AD89771A807", item: { count: 1, id: "skyfront:shahed_136" }, type: "item" }]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0AFBA63465BCBB12"]
+			id: "794F4CB9C8DE1C89"
+			rewards: [{ id: "600A1BBC496A0C44", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "779B43B896CA6699", item: { count: 1, id: "skyfront:launcher" }, type: "item" }]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["69A8DDF795F0DA59"]
+			id: "4E1AB0FC7277B1BE"
+			rewards: [{ id: "4FF58D11B50B101F", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "2C314E6439A36512", item: { count: 1, id: "sbw_advanced_ciws:drone_control_wrench" }, type: "item" }]
+			x: 8.0d
+			y: 4.5d
+		}
 	]
 }

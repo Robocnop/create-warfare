@@ -12,5 +12,6 @@
  "create_mechanical_extruder.recipe.extruding": "Recette d'extrusion",
  "create_mechanical_extruder.ui.recipe.extruding.consumes_block": "Consomme un bloc",
  "mechanicals.ui.recipe_requirement.advanced_extruder.tooltip.title": "Extrudeuse en laiton",
- "mechanicals.ui.recipe_requirement.bonks.tooltip.title": "Coups :"
+ "mechanicals.ui.recipe_requirement.bonks.tooltip.title": "Coups :",
+ "mechanicals.ui.recipe_requirement.bonks.tooltip.value": "%s"
 }

@@ -120,5 +120,45 @@
 			x: 4.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["3B35E94000929A6C"]
+			id: "49338B93783AEC0F"
+			rewards: [{ id: "6C596AE386F4B9EC", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "622FB33649012947", item: { count: 1, id: "create_aeronautics_toolgun:survival_structure_tool" }, type: "item" }]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49338B93783AEC0F"]
+			id: "3BB58D9C82C97AFD"
+			rewards: [{ id: "7798CE7C2BD64584", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "79E3D2088E98802A", item: { count: 1, id: "create_aeronautics_toolgun:magnetic_gun" }, type: "item" }]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["49338B93783AEC0F"]
+			id: "18CC370C232D7295"
+			rewards: [{ id: "0F49AF5663BFB19D", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "1D024E9FC29BBC5A", item: { count: 1, id: "create_aeronautics_toolgun:portable_structure_container" }, type: "item" }]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3B35E94000929A6C"]
+			id: "09B94D1F8CAE0A56"
+			rewards: [{ id: "042650039E8F96FF", type: "xp", xp: 150 }]
+			tasks: [{ count: 2L, id: "7DB8C5CB8C6F2302", item: { count: 1, id: "aeronautics_utility_objects:hydraulic_rod" }, type: "item" }]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["09B94D1F8CAE0A56"]
+			id: "0715BB9BD99AE98D"
+			rewards: [{ id: "4D7569B88179E3F4", type: "xp", xp: 150 }]
+			tasks: [{ count: 2L, id: "6BE6341E0E849669", item: { count: 1, id: "aeronautics_utility_objects:universal_joint_rod" }, type: "item" }]
+			x: 4.0d
+			y: 7.5d
+		}
 	]
 }

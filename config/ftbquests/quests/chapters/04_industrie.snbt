@@ -112,5 +112,53 @@
 			x: 6.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["5F369E5180DA069A"]
+			id: "68A702422ECF3DC1"
+			rewards: [{ id: "3BF067B85FF42F82", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "38336CACD0C3253F", item: { count: 1, id: "vintage:belt_grinder" }, type: "item" }]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["68A702422ECF3DC1"]
+			id: "4C559BFA9C9349D9"
+			rewards: [{ id: "73BD835EA05465FA", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "6A6C1A5AEE0A54ED", item: { count: 1, id: "vintage:curving_press" }, type: "item" }]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["68A702422ECF3DC1"]
+			id: "50930E7406BB6CCB"
+			rewards: [{ id: "1935BC394E20B6EA", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "44E350159D558BDA", item: { count: 1, id: "vintage:vibrating_table" }, type: "item" }]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["50930E7406BB6CCB"]
+			id: "4E752C56C7E09D00"
+			rewards: [{ id: "50ECED15F001FD50", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "79170CDF520265F5", item: { count: 1, id: "vintage:centrifuge" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C559BFA9C9349D9", "756CBDC330F693ED"]
+			id: "36094825BDF8A1FA"
+			rewards: [{ id: "34D2D4F535F8E7BD", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "32CCAE36ED14B287", item: { count: 1, id: "vintage:lathe" }, type: "item" }]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["36094825BDF8A1FA"]
+			id: "092F754D555F2826"
+			rewards: [{ id: "7B5272ACC696C91C", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "3A5CFE0A0807A786", item: { count: 1, id: "vintage:helve_hammer" }, type: "item" }]
+			x: 6.0d
+			y: 3.0d
+		}
 	]
 }

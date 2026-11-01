@@ -165,6 +165,7 @@
  "powergrid.generic.disabled": "Désactivé",
  "powergrid.generic.enabled": "Activé",
  "powergrid.generic.reset": "Réinitialiser",
+ "powergrid.generic.unit.ohm_meter": "Ω/m",
  "powergrid.gui.button_overlay.mode": "Mode du bouton :",
  "powergrid.gui.button_overlay.nc": "Normalement fermé",
  "powergrid.gui.button_overlay.no": "Normalement ouvert",

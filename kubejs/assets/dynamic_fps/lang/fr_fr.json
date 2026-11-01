@@ -1,0 +1,5 @@
+{
+ "config.dynamic_fps.battery_indicator_debug": "Afficher avec l'écran de débogage (F3)",
+ "config.dynamic_fps.battery_indicator_debug_tooltip": "Affiche ou non l'indicateur de batterie quand l'écran de débogage est ouvert.",
+ "toast.dynamic_fps.http_error": "Échec du téléchargement de la bibliothèque"
+}

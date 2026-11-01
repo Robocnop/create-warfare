@@ -235,6 +235,7 @@
  "screen.cbc_firepower_components.carousel_ammunition_rack.output": "▲ SORTIE",
  "screen.cbc_firepower_components.carousel_ammunition_rack.title": "Râtelier à carrousel · 24 positions",
  "screen.cbc_firepower_components.controller_ammunition.title": "Choisir la munition suivante",
+ "screen.cbc_firepower_components.option": "%s%s",
  "screen.cbc_firepower_components.ready_ammunition_compartment.help": "Choisissez deux emplacements à échanger ; le vert est le premier",
  "screen.cbc_firepower_components.ready_ammunition_compartment.title": "Râtelier intelligent · File de coups",
  "tooltip.cbc_firepower_components.hold_shift": "Maintenez %s pour les détails"

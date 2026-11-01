@@ -585,6 +585,7 @@
  "northstar.gui.oxygen_sealer.oxygen_usage": "Consommation d'oxygène :",
  "northstar.gui.oxygen_sealer.remaining_time": "Temps restant :",
  "northstar.gui.oxygen_sealer.sealed": "Étanche",
+ "northstar.gui.planet_and_dimension": "%2$s de %1$s",
  "northstar.gui.rocket.station.fuel.tip.info": "Le carburant requis dépend de la gravité des planètes de départ et d'arrivée ainsi que de la distance qui les sépare au moment du lancement. Il doit être stocké dans des réservoirs à fluide.\nClique pour voir la liste des carburants acceptés (nécessite JEI)",
  "northstar.gui.rocket_station.assemble": "Assembler la fusée",
  "northstar.gui.rocket_station.cannot_disassemble": "Impossible de démonter la fusée hors de la limite de construction.",

@@ -54,6 +54,7 @@
  "gui.projectexplosive.bench.missing": "Pièces manquantes",
  "gui.projectexplosive.bench.ready": "Prêt",
  "gui.projectexplosive.bench.recipe": "Assembler %s ×%s",
+ "gui.projectexplosive.bench.yield": "×%s  ·  %s s",
  "gui.projectexplosive.settings.audio": "Audio",
  "gui.projectexplosive.settings.audio.hint": "Les volumes principal et Blocs de Minecraft s'appliquent aussi.",
  "gui.projectexplosive.settings.audio.remote": "Le serveur définit le volume des explosions. Utilisez les paramètres sonores de Minecraft pour régler votre volume local.",

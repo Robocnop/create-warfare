@@ -155,6 +155,18 @@
 	quest.60878F140ACC7F54.quest_desc: ["Automatise les trajets."]
 	quest.7ACFFB1E5D5A3DF1.title: "Plastique"
 	quest.7ACFFB1E5D5A3DF1.quest_desc: ["Issu du raffinage : électronique avancée."]
+	quest.68A702422ECF3DC1.title: "Ponceuse à bande (Vintage)"
+	quest.68A702422ECF3DC1.quest_desc: ["Create: Vintage ajoute la métallurgie fine. La ponceuse affûte et polit les pièces posées dessus."]
+	quest.4C559BFA9C9349D9.title: "Presse à cintrer"
+	quest.4C559BFA9C9349D9.quest_desc: ["Courbe les plaques avec une tête convexe ou concave."]
+	quest.50930E7406BB6CCB.title: "Table vibrante"
+	quest.50930E7406BB6CCB.quest_desc: ["Trie et tamise les matériaux en les secouant."]
+	quest.4E752C56C7E09D00.title: "Centrifugeuse"
+	quest.4E752C56C7E09D00.quest_desc: ["Sépare les mélanges par rotation rapide."]
+	quest.36094825BDF8A1FA.title: "Tour"
+	quest.36094825BDF8A1FA.quest_desc: ["Se fabrique à l'établi mécanique. Tourne les lingots en tiges."]
+	quest.092F754D555F2826.title: "Marteau-pilon"
+	quest.092F754D555F2826.quest_desc: ["Se fabrique à l'établi mécanique. Martèle les métaux à la place de la presse."]
 	chapter.73A1A222F64DE127.title: "Artillerie (Create Big Cannons)"
 	chapter.73A1A222F64DE127.chapter_subtitle: ["Fondre, forer et assembler de vrais canons."]
 	quest.37CC7D0277D0D517.title: "Fonte"
@@ -219,6 +231,16 @@
 	quest.64BB7E9FFD6811F8.quest_desc: ["Fonctionne à l'air comprimé."]
 	quest.63E37FB26871FA09.title: "Canon de compression"
 	quest.63E37FB26871FA09.quest_desc: ["Rétrécit ou agrandit un engin (de 1/4 à 4 fois sur ce serveur). Fonctionne au mélange de lévitite."]
+	quest.49338B93783AEC0F.title: "Toolgun de survie"
+	quest.49338B93783AEC0F.quest_desc: ["Appuie sur Tab : enregistre ton engin en plan, soude deux engins entre eux, tourne-les ou déplace-les au bloc près."]
+	quest.3BB58D9C82C97AFD.title: "Pistolet magnétique"
+	quest.3BB58D9C82C97AFD.quest_desc: ["Attrape un engin à 24 blocs, déplace-le à la molette, et lance-le d'un clic gauche."]
+	quest.18CC370C232D7295.title: "Conteneur de structure"
+	quest.18CC370C232D7295.quest_desc: ["Range un engin entier dans ton inventaire (clic droit maintenu), et repose-le ailleurs."]
+	quest.09B94D1F8CAE0A56.title: "Tiges pneumatiques"
+	quest.09B94D1F8CAE0A56.quest_desc: ["Vérins réglables entre deux engins : trains d'atterrissage, suspensions, bras articulés."]
+	quest.0715BB9BD99AE98D.title: "Tiges de cardan"
+	quest.0715BB9BD99AE98D.quest_desc: ["Transmettent la rotation d'un engin à un autre, même s'ils bougent."]
 	chapter.1AF3C82F48B4688F.title: "Blindés \\& véhicules"
 	chapter.1AF3C82F48B4688F.chapter_subtitle: ["Roues, chenilles, blindage et tourelles."]
 	quest.13E7484E1F2FE580.title: "Support de roue"
@@ -295,6 +317,22 @@
 	quest.31F9D5BE8608A54A.quest_desc: ["Missiles physiques modulaires. Les pièces demandent de l'acier."]
 	quest.183A1FBA2348EB6B.title: "Ogive (Create Missiles)"
 	quest.183A1FBA2348EB6B.quest_desc: ["La charge utile. Les ogives destructrices demandent des obus HE."]
+	quest.7A09796CAB0A8D01.title: "Détecteur de drones"
+	quest.7A09796CAB0A8D01.quest_desc: ["Capte la vidéo des drones FPV et entend les Mavic. Clic droit : signal suivant."]
+	quest.5EDC4ACD5A6310BC.title: "Brouilleur de guerre électronique"
+	quest.5EDC4ACD5A6310BC.quest_desc: ["Coupe la liaison des drones ennemis autour de lui. Il lui faut une batterie de Superb Warfare."]
+	quest.51159891E8BD3D4D.title: "Drone FPV"
+	quest.51159891E8BD3D4D.quest_desc: ["Un drone kamikaze piloté en vue immersive. Compatible manette et radiocommande."]
+	quest.59B56E96E4915DC7.title: "Sirène d'alerte aérienne"
+	quest.59B56E96E4915DC7.quest_desc: ["Préviens ta base qu'un raid arrive."]
+	quest.0AFBA63465BCBB12.title: "Terminal de drones"
+	quest.0AFBA63465BCBB12.quest_desc: ["Associe tes Shahed (clic avec le drone en main), trace leur itinéraire sur la carte et lance-les."]
+	quest.56FCFD033584A67D.title: "Shahed-136"
+	quest.56FCFD033584A67D.quest_desc: ["Drone d'attaque à longue portée, posé sur une rampe de lancement."]
+	quest.794F4CB9C8DE1C89.title: "Rampe de lancement"
+	quest.794F4CB9C8DE1C89.quest_desc: ["Le Shahed ne se pose que dessus."]
+	quest.4E1AB0FC7277B1BE.title: "Clé du CIWS"
+	quest.4E1AB0FC7277B1BE.quest_desc: ["Accroupi sur un CIWS H/PJ-11 de Superb Warfare : choisis les joueurs qu'il ne doit pas viser."]
 	chapter.41960E5E13891BC1.title: "Armes de destruction massive"
 	chapter.41960E5E13891BC1.chapter_subtitle: ["La fin de partie : bombes lourdes et ICBM nucléaires. Avec modération..."]
 	quest.74D2A1F364AADF7C.title: "Établi de munitions"
@@ -355,6 +393,12 @@
 	quest.053E2AB78B4CDD5A.quest_desc: ["Tire sur les intrus. Demande de l'acier et des tubes électroniques."]
 	quest.3500B9C3283A3465.title: "Système Trophy"
 	quest.3500B9C3283A3465.quest_desc: ["Abat les projectiles qui approchent. Demande des circuits imprimés TFMG."]
+	quest.0122626D68798D25.title: "Boîte de discussion"
+	quest.0122626D68798D25.quest_desc: ["Advanced Peripherals : ton ordinateur peut écrire dans le chat et lire les messages."]
+	quest.0C93B7A28BDAE8C0.title: "Détecteur de joueurs"
+	quest.0C93B7A28BDAE8C0.quest_desc: ["Sait si un joueur est proche (64 blocs max. sur ce serveur, sans position exacte) : portes et alarmes automatiques."]
+	quest.6892C51E74F31FFE.title: "Scanner géologique"
+	quest.6892C51E74F31FFE.quest_desc: ["Liste les minerais autour de lui, pour programmer une tortue mineuse."]
 	chapter.5C329C6DE6204446.title: "Cuisine"
 	chapter.5C329C6DE6204446.chapter_subtitle: ["Kaleidoscope Cookery : cuisiner pour tenir entre deux batailles. Son moulin accepte aussi le moulin de Create."]
 	quest.286285B15331B404.title: "Fourneau"

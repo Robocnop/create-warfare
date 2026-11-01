@@ -58,7 +58,7 @@ hash = "614c1d61202ccea70e51720a455ed0b798b58f64b8ace1a2cf520bc015c5bd8d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/04_industrie.snbt"
-hash = "fd50a61b8a5fc7662c6fa79a899504cf76e1b429cf52ee113123aeac3bb24e0a"
+hash = "cbb110d3a3252c3908fbd8c59d8275b926e5963dec676ba9f72d22aba158f3f3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/05_artillerie.snbt"
@@ -66,7 +66,7 @@ hash = "5972a3fa0b1d181ed5dd67acf719c51e817f6513ce2647e0baa8e5fbfda08677"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/06_aviation.snbt"
-hash = "f64f6b5a70bc481cbd6b61f60890c508d5bce3a3396b405d83f7891adc4eb121"
+hash = "78eaf788e7c24fb653ac709c8d7b6d288e1eacdc86d9aa8c73d3fb90580e96cb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/07_blindes.snbt"
@@ -78,7 +78,7 @@ hash = "6c2dc7f7271d9685cf2abee842a98e94d3fff563d7f8dcd967287eeeb492890b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/09_missiles.snbt"
-hash = "377b12f3a8d33da54c98e2a4e6882bd627a6dd7a2ac2dc01276bbfb763f91db5"
+hash = "d34bc8c55340a7cdab1020d000b0a9613d510935e135b5b7647272f3c56b2703"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/10_adm.snbt"
@@ -86,7 +86,7 @@ hash = "b688fa8877e823d90573e766079ad499683deab0a6c9db31f3deae1da5c7a771"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/11_defense.snbt"
-hash = "7d43acb4274c2da7940af32a7d5494f9dea20972c5ae26fb1254fc15fbba0fe7"
+hash = "777aa3e0de52efa1660601b46b2ec1002038adf1ee8a9b4787cce6a7845479ab"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/12_cuisine.snbt"
@@ -102,7 +102,7 @@ hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "e9fd33b6d5c87a520a521f0b491f55ae64af89b96e66321fddf7d6506c185523"
+hash = "bfa2f3365b2416216082141f73a13be59f825befc864e12ce2191e2be5aa8319"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
@@ -137,12 +137,20 @@ file = "kubejs/assets/aerocopycats/lang/fr_fr.json"
 hash = "3462d4b03a737e2a5134fe92c91cc09130b656b5bb5d92223d6103824597b342"
 
 [[files]]
+file = "kubejs/assets/aeroencasedpipe/lang/fr_fr.json"
+hash = "9540c2f56ea01341497bdfe48274d63aadec04511e8bfbce5359dcfe31e65b40"
+
+[[files]]
 file = "kubejs/assets/aeronautics/lang/fr_fr.json"
-hash = "5ef2b1077a0f853cc13290affa35b9401f0466634fef1937b02661e39e9bec49"
+hash = "d57a3f104a73830670bfdbadfaa0a9502d51fe9483f1c1836107d05a06c72b45"
+
+[[files]]
+file = "kubejs/assets/aeronautics_utility_objects/lang/fr_fr.json"
+hash = "d1ac635e6e167c17572a4e5f5640e19f1325ccd13cc9d75868d1ab1743b8566a"
 
 [[files]]
 file = "kubejs/assets/aerowarptics/lang/fr_fr.json"
-hash = "b3a55c254b441b4a739fffad92ef7c67e39e5c3134adc1147409de42357c514f"
+hash = "c240b7ec5c8db69510eb6a13739d92c73ff90b6896b16cddfbf5ee125a9dfe63"
 
 [[files]]
 file = "kubejs/assets/almostunified/lang/fr_fr.json"
@@ -158,7 +166,7 @@ hash = "8e2ce8f8538afd48525c0b798499c175b7053743a6832b98aa998e0c0df50c80"
 
 [[files]]
 file = "kubejs/assets/atmosphere/lang/fr_fr.json"
-hash = "0e18c9fc07d011495a0b9d992537ca1e10d89ab358d3e61d3a529d3023dece99"
+hash = "b035d91c4560f85509abfbe6499d43684d930daf1931100caafd4c68a2f02f44"
 
 [[files]]
 file = "kubejs/assets/azimuth/lang/fr_fr.json"
@@ -214,7 +222,7 @@ hash = "7e07010142ec7ef64f828c03d52c5d74699c36ec2eb197ec13243e6425843265"
 
 [[files]]
 file = "kubejs/assets/bookshelf/lang/fr_fr.json"
-hash = "37749ee4ea32bd702c5e5e96fdb240ee308ac1b327c731a066fa299f2a762634"
+hash = "76e6e3a31624114d33d7d6ddb5e5e756c672b180a46c6ad61756585311eada09"
 
 [[files]]
 file = "kubejs/assets/burnt/lang/fr_fr.json"
@@ -225,16 +233,20 @@ file = "kubejs/assets/burnt_additions/lang/fr_fr.json"
 hash = "86fed7e9e2e2332b02965c4b8bb640e7dab6ceb5a1a9496b59fe0667bc1b0e60"
 
 [[files]]
+file = "kubejs/assets/cameraoverhaul/lang/fr_fr.json"
+hash = "142b532667ab2400e6d6c941002c69c30f5ee52cb86490cb71ce27f9831545bf"
+
+[[files]]
 file = "kubejs/assets/cbc_at/lang/fr_fr.json"
 hash = "c69e28232978b58e89eb6f2f91f85d708a779ab78798614531b1252ae6193288"
 
 [[files]]
 file = "kubejs/assets/cbc_ballistics/lang/fr_fr.json"
-hash = "04f689dcc320f4710c3e65355ba6ec143e3c0a69cb1e2f0f04eb21a14802d95f"
+hash = "2b8947ba8cd36bc3a7de6681ea3c1f30ed2e4a3ae7fb2f6c32f985095dc27a94"
 
 [[files]]
 file = "kubejs/assets/cbc_firepower_components/lang/fr_fr.json"
-hash = "02aafcf2bc083fa4a0e9131a742701c9f4299d32cdce695d8a5a8f32df76e9b3"
+hash = "8994dd999f64772b01d630d6d8c66c8d075cb4aa3f2afdcb6203a8403c3aab0e"
 
 [[files]]
 file = "kubejs/assets/cbc_terminal_ballistics/lang/fr_fr.json"
@@ -263,6 +275,10 @@ hash = "066ec560488c8724d1b004705d0ab24e3e166bde6f22275402e4a170d6387ddd"
 [[files]]
 file = "kubejs/assets/chat_heads/lang/fr_fr.json"
 hash = "dabd753d0f2d5364fc6c29853bf4a8cb423c5bff217e34d4ffcc03a0d7df1767"
+
+[[files]]
+file = "kubejs/assets/climbable_ropes/lang/fr_fr.json"
+hash = "2f7c43f417b7e2998d462c8b41305aee2dd7e5c0e55f9ccc8e14f048adfbe997"
 
 [[files]]
 file = "kubejs/assets/cloth-config2/lang/fr_fr.json"
@@ -309,6 +325,10 @@ file = "kubejs/assets/create_aero_radar/lang/fr_fr.json"
 hash = "332ede2099b3fd0ba6c870bc3cd8e75239704a2cfee548220f6bbe87c8cb9db4"
 
 [[files]]
+file = "kubejs/assets/create_aeronautics_toolgun/lang/fr_fr.json"
+hash = "f01b6c83522976da5de79a66258ee6dbdf781f75bb64fd72b95426b388d7e77b"
+
+[[files]]
 file = "kubejs/assets/create_avionics/lang/fr_fr.json"
 hash = "55a8975790a6d82bea5ea77d4ba0c754bfb2c618c55d216206d2f88ab2c6e025"
 
@@ -318,7 +338,7 @@ hash = "13e37c3879ba70d9703342a1752f1a6d9b5aefe3ef2bcdb0a55dafdd944fec19"
 
 [[files]]
 file = "kubejs/assets/create_better_motors/lang/fr_fr.json"
-hash = "6705a398e4b13dc3000b526c41eb77373c991e899517324319091e46c37194b9"
+hash = "e61023f5a59c0f3647c65ba65c80d87858b2e1a217df08ed24fcb83d61542ccc"
 
 [[files]]
 file = "kubejs/assets/create_central_kitchen/lang/fr_fr.json"
@@ -358,7 +378,7 @@ hash = "20cd51543a306cbf5fd83624623343f1775b345177583d24685fe55dffb9d637"
 
 [[files]]
 file = "kubejs/assets/create_mechanical_extruder/lang/fr_fr.json"
-hash = "714bcb2cbe990dc85051325e584775a9b47682e8075aee4169f80db00718f098"
+hash = "20ae87a12f9eccb393719b57686385efb0243b0e51fac9a3a42058b714ffe23b"
 
 [[files]]
 file = "kubejs/assets/create_netherless/lang/fr_fr.json"
@@ -366,7 +386,7 @@ hash = "6ab97198d7d7a5e3f3da27e0e24e0e42fc7414b18bc87859dcca4382ba654a4a"
 
 [[files]]
 file = "kubejs/assets/create_new_age/lang/fr_fr.json"
-hash = "916070de2cb5bb2ddabfd5a03afbd7be6a209d891d96c355363099591f71fba5"
+hash = "ef4ba558d0ad61f8e8495795f1a1dca6d79391dd1260a4960f9d86cf237c3320"
 
 [[files]]
 file = "kubejs/assets/create_pattern_schematics/lang/fr_fr.json"
@@ -374,7 +394,7 @@ hash = "4abe2260e032e8a596d22bda10ac1b57ef7c343ff6f656610c2f595736a642c5"
 
 [[files]]
 file = "kubejs/assets/create_radar/lang/fr_fr.json"
-hash = "9f5a1b9c4d8489c59bd163fa1957d5e3ece76539fbcaa90fdf9398c683753f50"
+hash = "947672aada709c6d0859bba45222117d577e6ee5019e8efebd19dfce0d402c5b"
 
 [[files]]
 file = "kubejs/assets/create_sa/lang/fr_fr.json"
@@ -390,7 +410,7 @@ hash = "72b7b494183be5a19c4524b60590bd2be2fb16c984bd23a56c84cc1b21dde264"
 
 [[files]]
 file = "kubejs/assets/create_the_air_wars/lang/fr_fr.json"
-hash = "0068d925de49e29247e9723e94e716c546afbf8e5a6edec67f99b35e60aaf037"
+hash = "fad12e4bf43e9f2bcbd676dc329380ed0a90ecf089979c4f7a6f937133a28077"
 
 [[files]]
 file = "kubejs/assets/create_train_perspective/lang/fr_fr.json"
@@ -414,7 +434,7 @@ hash = "179a05a9532e171f3f355a7dda8203832d909c542ba1e77afe7216ad05d9059a"
 
 [[files]]
 file = "kubejs/assets/createbigcannons/lang/fr_fr.json"
-hash = "23d370b7b412efc28b019b61a3fcfb5deef2414f3d13f4fcf32398ae3a29dda4"
+hash = "04535eeaec5da546e41d0ae02633c1b2a99e73215b59a09eb76026b0a30f66c0"
 
 [[files]]
 file = "kubejs/assets/createcasing/lang/fr_fr.json"
@@ -454,11 +474,11 @@ hash = "4d6ba859f121f430933e676b654da94efd3695f11fb973a4a0fb4c03e5fd2f33"
 
 [[files]]
 file = "kubejs/assets/createnuclear/lang/fr_fr.json"
-hash = "080cf0e40df816d44129259e5d744179b79de7f0e6b0df837b581312e006cfc9"
+hash = "066279b3dd8961929761ff24fb0e5a4c32631d029a1bfadf11567e505028c80c"
 
 [[files]]
 file = "kubejs/assets/createoreexcavation/lang/fr_fr.json"
-hash = "1d50368d35f2acb107783dc8effa830cc5427f923063d3492298073f954ecc1f"
+hash = "ca6aa0677813771d29494e9937383fb5ac203b07c3e0b6b2d28b5fa69e3c9562"
 
 [[files]]
 file = "kubejs/assets/createpropulsion/lang/fr_fr.json"
@@ -473,8 +493,12 @@ file = "kubejs/assets/createrecipeconflictfixer/lang/fr_fr.json"
 hash = "3bbccc972144f010eabafcea2cfac1df5b10df61dfa63315916b35c2daf5acc5"
 
 [[files]]
+file = "kubejs/assets/createschematichelper/lang/fr_fr.json"
+hash = "e06cceb36dc3de79c4f8c1326991d6d4a08996a40bf6b525f243ab92f8d18655"
+
+[[files]]
 file = "kubejs/assets/creativecore/lang/fr_fr.json"
-hash = "42441585321a5b7892e6bc0ac8586bab430a6571acd71f6b2a1e82b638f43a66"
+hash = "2fde76cd4ba6e710b232c72bada70afd239d5c8f2db12cbde44a175bf2c83433"
 
 [[files]]
 file = "kubejs/assets/cristellib/lang/fr_fr.json"
@@ -511,6 +535,10 @@ hash = "741e48bd9f2f03e1c3531dcbaf3bbd1960493d72d9573771db6d527adc7de78b"
 [[files]]
 file = "kubejs/assets/durabilitytooltip/lang/fr_fr.json"
 hash = "f9d949a4d0c72c1c943fba1a315c0a552989d1cf265121da797e2ccd56de003c"
+
+[[files]]
+file = "kubejs/assets/dynamic_fps/lang/fr_fr.json"
+hash = "3023938238c83863a12191ca2aac70d704f9acacf01ef3b7b601d4583e997653"
 
 [[files]]
 file = "kubejs/assets/emi/lang/fr_fr.json"
@@ -574,7 +602,7 @@ hash = "a83de2c38929071bbd50c0d3b2d1f9c9ef991861d127c2e28c7eb7f480316131"
 
 [[files]]
 file = "kubejs/assets/ftbquests/lang/fr_fr.json"
-hash = "6793a919e0ddb0183bf068aae8ddf6b6a1c6fc566493137e4262d3d0eb737285"
+hash = "515da5fe1ef12757e67447a5f161558a110b2f6bf3e04bdfca57098115174ad1"
 
 [[files]]
 file = "kubejs/assets/ftbteams/lang/fr_fr.json"
@@ -582,11 +610,11 @@ hash = "991e698c849411ea485e7727d01c67927a4c815b294f46fb5091794906b088bf"
 
 [[files]]
 file = "kubejs/assets/fzzy_config/lang/fr_fr.json"
-hash = "065f9627d086496ac0a339f65015b8b3717a8f883b3190cd50b2c395a9fcc4d8"
+hash = "4458ed83863e52d1e5f508fce42d3cc0ed946209d989d2abf7eda4cd127c09a5"
 
 [[files]]
 file = "kubejs/assets/garnished/lang/fr_fr.json"
-hash = "03c25f689ebae48eb5624fe96835a21f14a834bc185c4d178af92f5bee2539f1"
+hash = "2ba43f85e54d4726aa2b3968324fc79de4699132f4961b54415a30cbafc88c82"
 
 [[files]]
 file = "kubejs/assets/interiors/lang/fr_fr.json"
@@ -610,7 +638,7 @@ hash = "05908b679bd2a79e0d88c0cc758780396dd1ca8638d48822e357b8c6cbfcabb0"
 
 [[files]]
 file = "kubejs/assets/jade/lang/fr_fr.json"
-hash = "40e0b737adeec1e711cffa6fe184752d87c4ebf8d69222623e01b616028cd108"
+hash = "1e1bcbfecc4dc633e47b94e9629de08ef8588cd02cca3c5e6b19480fdc73fa9d"
 
 [[files]]
 file = "kubejs/assets/jadeaddons/lang/fr_fr.json"
@@ -622,7 +650,7 @@ hash = "ad6f35624b4effca60caff97dd76998ec1661db1877d5451602eb6bb43e60446"
 
 [[files]]
 file = "kubejs/assets/jei/lang/fr_fr.json"
-hash = "9224dba2684a2b73096fdcb0bb38e8b5a5ec709506cc461ecc760de3a5f49ac7"
+hash = "f7fe6fb524f796bb79a7c26b1358eacc79c76bf21f4da2638d561e02abbffece"
 
 [[files]]
 file = "kubejs/assets/jeresources/lang/fr_fr.json"
@@ -650,7 +678,7 @@ hash = "a7343500fc69b7d9533d5f1b31c4d523dc29b782054edd7e64ab5e5067c5c948"
 
 [[files]]
 file = "kubejs/assets/mechanicals/lang/fr_fr.json"
-hash = "49d74b518328734c15277ec7bd9efe461d9b622cb2d3c03c70e936f3265082a3"
+hash = "f6c0d7e0682546b0df9a435ad9d93b310779d9e3bc85269e5e7aeb79fd4969bf"
 
 [[files]]
 file = "kubejs/assets/mezz_config/lang/fr_fr.json"
@@ -662,19 +690,23 @@ hash = "0ae2692a581fb05ceb1d916d4bceb59126c9b4dddcbd809b3f0ca4f9616c5ef2"
 
 [[files]]
 file = "kubejs/assets/mowziesmobs/lang/fr_fr.json"
-hash = "6f2b12ddeaf3303fb6cf963ff812e26c7f95405dd65b268db39005df3fece562"
+hash = "cd4363958fe8ad6d001b3e88d03d0d0043d89cd5d4ff63dbece967e6148baa3c"
 
 [[files]]
 file = "kubejs/assets/northstar/lang/fr_fr.json"
-hash = "3fab6650bca5c40f49c42a20b71146349f886dab155bdbc6907244b796977aa5"
+hash = "30771d545a15fcbe4ee76824bf4ccd16957e3050d0796626ae3c7f3bc3f64ebd"
+
+[[files]]
+file = "kubejs/assets/notenoughanimations/lang/fr_fr.json"
+hash = "b1338dd061f04348fd04f99729fbb024ba93250fa8ec6df56f558c04ebe9267a"
 
 [[files]]
 file = "kubejs/assets/ntgl/lang/fr_fr.json"
-hash = "0261af8ce9868ace4e76d3d92281f9fcb1b591bb23a85b67c8c40fc35442f8e9"
+hash = "3de4b24b67dbeac78fe8aaa9457707876e40cb9364e8e8e4134464a254ad188a"
 
 [[files]]
 file = "kubejs/assets/numismatics/lang/fr_fr.json"
-hash = "b6ef2457302ecd8edcdb914cea0a92f4337c163ab1513184f397af304e1fc966"
+hash = "286395ddffd657af64f4d4d499111261017aa8f097d92a2ba209af70057609de"
 
 [[files]]
 file = "kubejs/assets/offroad/lang/fr_fr.json"
@@ -693,8 +725,20 @@ file = "kubejs/assets/overgeared/lang/fr_fr.json"
 hash = "25279e1f1ea2078de8f10e9cc9e7920749370c0200ee02e3bf1c60811d94ee93"
 
 [[files]]
+file = "kubejs/assets/particle_core/lang/fr_fr.json"
+hash = "65cef061bdd8e065bd940f7fb9b923d0fa410cd6667e8a334405ed7dae484a39"
+
+[[files]]
 file = "kubejs/assets/particlerain/lang/fr_fr.json"
 hash = "db14eebe16a75a330a3316378fa15b610685633df160fc30f943e73a2d22393b"
+
+[[files]]
+file = "kubejs/assets/particular/lang/fr_fr.json"
+hash = "906786bfdf21a21014fc249893deeed018a129cb7011ac6f74de2d4df2dabfc6"
+
+[[files]]
+file = "kubejs/assets/pfsable/lang/fr_fr.json"
+hash = "566bff04081b723007489dae179ec4d8ea2ab1eaa53f99af319029450312c051"
 
 [[files]]
 file = "kubejs/assets/pocket/lang/fr_fr.json"
@@ -710,11 +754,15 @@ hash = "6d97db00ffc31da93cd6af0f6a62d653916e5c0566743e79c3f6345ea094c23d"
 
 [[files]]
 file = "kubejs/assets/powergrid/lang/fr_fr.json"
-hash = "ecbcd807556db817ad8e587c0dc264719cc122e91c9f17460c8071d76dc59a9d"
+hash = "a0888eb5e2c815861aed1ec1b7719750504dcb2b47606f7b3975b191e1b74190"
+
+[[files]]
+file = "kubejs/assets/presencefootsteps/lang/fr_fr.json"
+hash = "2699824268096f8f7e51a47f5a0b7647335037321da56d2a335c93019b7f5d37"
 
 [[files]]
 file = "kubejs/assets/projectexplosive/lang/fr_fr.json"
-hash = "e181fc412fa3bd6c7892f1833f80b276f5cd2e5f242498bea6936530499d132e"
+hash = "353e1117caa8f2fcb66b4d181eb07d751119808092d4f4d9514fba10dced3444"
 
 [[files]]
 file = "kubejs/assets/radiologistics/lang/fr_fr.json"
@@ -737,6 +785,14 @@ file = "kubejs/assets/sable/lang/fr_fr.json"
 hash = "63ca1e66d9355d2a37798af0463c2c6f7b6c6e59af03ac65edb938ebc7d6263b"
 
 [[files]]
+file = "kubejs/assets/sableexplosionfix/lang/fr_fr.json"
+hash = "b7ec0bef46c87b1c398dce820c8e79ab760e80e2feedf4a1e74f1b484e43e765"
+
+[[files]]
+file = "kubejs/assets/sbw_advanced_ciws/lang/fr_fr.json"
+hash = "1d50a9f3735ea547c64ba383c09fdb036f04d8ac3d8dff19c0b69ed658671a61"
+
+[[files]]
 file = "kubejs/assets/sdrp/lang/fr_fr.json"
 hash = "ceb830327b6bc4191565d4c667d08162e1308968963cff34f7cc4da16d7eb8f1"
 
@@ -757,8 +813,20 @@ file = "kubejs/assets/simulated/lang/fr_fr.json"
 hash = "414e0faaf3bcc8d08c2134f816b869dc77855de96ef10c4319a38418b54984a7"
 
 [[files]]
+file = "kubejs/assets/skinlayers3d/lang/fr_fr.json"
+hash = "61b230bbefc221c225f7128a334ab28efc8cae514f0fa32b736edaf5f7882687"
+
+[[files]]
+file = "kubejs/assets/skyfront/lang/fr_fr.json"
+hash = "dbb0744980ec84d51f084d200611a833344fca786c73e5f0ef4ab519765c7b53"
+
+[[files]]
 file = "kubejs/assets/sliceanddice/lang/fr_fr.json"
 hash = "b014ce6c8f46787b54c2521180aa48d17f15c48ff6eed3fd345ba6d0c04753be"
+
+[[files]]
+file = "kubejs/assets/sodium-extra/lang/fr_fr.json"
+hash = "8d50a4117e06ceaef392218ee06812084e6ad3c46fb462b19ee534bf992b38b0"
 
 [[files]]
 file = "kubejs/assets/sodium/lang/fr_fr.json"
@@ -785,12 +853,20 @@ file = "kubejs/assets/struts/lang/fr_fr.json"
 hash = "ffd87c16a1cf9b639a9bf651c9f53cd57b6df58221878342000b36254ef1369e"
 
 [[files]]
+file = "kubejs/assets/studiouskeybinds/lang/fr_fr.json"
+hash = "dff42cbaa28896b117600f0ac484692b1814e15ac6523ee9b136a292f2862447"
+
+[[files]]
 file = "kubejs/assets/subtle_effects/lang/fr_fr.json"
 hash = "abfe9c80195310e769a2a944a25d19ca8b75f0c4f80f1b80e61e17151a3dec09"
 
 [[files]]
 file = "kubejs/assets/superbwarfare/lang/fr_fr.json"
-hash = "866e9511dce927461f43fafb31e2504463808edb4e2f038d8485fd1e435c310f"
+hash = "e701e5c385b846c37897c6018b27ebfd170e588b9c7b7d5eb17448a337b9985f"
+
+[[files]]
+file = "kubejs/assets/supersonic/lang/fr_fr.json"
+hash = "b8c1c8d6e9297a98710fbea7a07f989151859fedaf50df906a4b01cdfa4bf161"
 
 [[files]]
 file = "kubejs/assets/tfmg/lang/fr_fr.json"
@@ -811,6 +887,10 @@ hash = "b2f2d6decbdb71a21d1d42a9da770cc034b0f64a7c039a972c84e509c4cd519c"
 [[files]]
 file = "kubejs/assets/veil/lang/fr_fr.json"
 hash = "b3f09bc63242a7515b2cb4cc9382ea9f5b69858347a3f07b9e96a9f59d1cb565"
+
+[[files]]
+file = "kubejs/assets/vintage/lang/fr_fr.json"
+hash = "8fa647b43945a78235d39ed7b97fc4f6c210377c77424dd6772622b6407e532a"
 
 [[files]]
 file = "kubejs/assets/visualworkbench/lang/fr_fr.json"
@@ -838,7 +918,7 @@ hash = "ce6b48e3fa71ff156380c07dfeff5ebd88c21c961cba0cb9a2b9608ed61946f6"
 
 [[files]]
 file = "kubejs/assets/xaerominimap/lang/fr_fr.json"
-hash = "6ca3422e617c10d8569d787febfd3d16fc3e41ff90018682cb22aeb3fc30a1ea"
+hash = "43bde68008df76750efce232f7e66694d4b4139df175bbf2fbc6a078f745d06c"
 
 [[files]]
 file = "kubejs/assets/xaeroworldmap/lang/fr_fr.json"
@@ -851,6 +931,10 @@ hash = "b416e89397203c589b2fb8abc990a540d584730a1c7d181272295a3b97274d60"
 [[files]]
 file = "kubejs/assets/yungsapi/lang/fr_fr.json"
 hash = "5971f2b9769b96553a054098a4835cc77bcac58386268118d98c72b3bedc1595"
+
+[[files]]
+file = "kubejs/config/common.json"
+hash = "21b1aa77bebcc5a4557c4f90ee7a6bf80a049fd20fd7508c427a9f3f549ed6e4"
 
 [[files]]
 file = "kubejs/data/cbc_at/recipe/cutting/rocket_pod_breech_cast_mould.json"
@@ -2130,11 +2214,6 @@ hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
 metafile = true
 
 [[files]]
-file = "mods/first-person-model.pw.toml"
-hash = "e5df56798d435432dc71a417ca4d5583504cb9c49d8055c011c25758bf676a68"
-metafile = true
-
-[[files]]
 file = "mods/friends-and-foes-forge.pw.toml"
 hash = "3b2e6c774741aff55af0a961c441f565277c4d99b9254fda378680b143724607"
 metafile = true
@@ -2262,6 +2341,11 @@ metafile = true
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-create.pw.toml"
+hash = "21a5deb5da882d9f3eb4eaf7f0cf77f52737e1e6b44d2f691bf10fda9c86d790"
 metafile = true
 
 [[files]]

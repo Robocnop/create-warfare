@@ -130,5 +130,29 @@
 			x: 6.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["51DA5E89D7D3F671"]
+			id: "0122626D68798D25"
+			rewards: [{ id: "4392FA5A2EBF984F", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "649363A8A16DB283", item: { count: 1, id: "advancedperipherals:chat_box" }, type: "item" }]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["51DA5E89D7D3F671"]
+			id: "0C93B7A28BDAE8C0"
+			rewards: [{ id: "1E44E0720E798D0A", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "3DBC62B015AC92EE", item: { count: 1, id: "advancedperipherals:player_detector" }, type: "item" }]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F8358FC1FA5F25A"]
+			id: "6892C51E74F31FFE"
+			rewards: [{ id: "55BCFED67FF6231A", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "659C6E65111467D3", item: { count: 1, id: "advancedperipherals:geo_scanner" }, type: "item" }]
+			x: 4.0d
+			y: 7.5d
+		}
 	]
 }

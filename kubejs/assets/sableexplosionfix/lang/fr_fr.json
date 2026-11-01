@@ -1,0 +1,12 @@
+{
+ "block.sableexplosionfix.example_block": "Bloc d'exemple",
+ "item.sableexplosionfix.example_item": "Objet d'exemple",
+ "itemGroup.sableexplosionfix": "Onglet d'exemple",
+ "sableexplosionfix.configuration.items": "Liste d'objets",
+ "sableexplosionfix.configuration.logDirtBlock": "Journaliser le bloc de terre",
+ "sableexplosionfix.configuration.magicNumber": "Nombre magique",
+ "sableexplosionfix.configuration.magicNumberIntroduction": "Texte du nombre magique",
+ "sableexplosionfix.configuration.section.sableexplosionfix.common.toml": "Réglages de Sable Explosion Fix",
+ "sableexplosionfix.configuration.section.sableexplosionfix.common.toml.title": "Réglages de Sable Explosion Fix",
+ "sableexplosionfix.configuration.title": "Réglages de Sable Explosion Fix"
+}

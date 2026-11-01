@@ -47,6 +47,7 @@
  "create.tooltip.create_better_motors.no_energy": "Aucune entrée d'énergie",
  "create.tooltip.create_better_motors.output": "Sortie",
  "create.tooltip.create_better_motors.per_rpm": "par %s tr/min",
+ "create.tooltip.create_better_motors.percent": "%s%%",
  "create.tooltip.create_better_motors.pump": "Pompage : ",
  "create.tooltip.create_better_motors.releasing": "Libération : ",
  "create.tooltip.create_better_motors.rpm": "%s tr/min",

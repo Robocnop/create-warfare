@@ -172,6 +172,7 @@
  "gui.xaero_compass_scale": "Échelle de la boussole sur la carte",
  "gui.xaero_compass_scale2": "Échelle de la boussole",
  "gui.xaero_compass_scale_auto": "Auto",
+ "gui.xaero_compass_west": "O",
  "gui.xaero_config_redirect_effect": "Désactivé par un effet de statut !",
  "gui.xaero_config_redirect_fairplay": "Désactivé par le mode fair-play imposé par le serveur !",
  "gui.xaero_config_redirect_safe_mode": "Cette valeur ne peut pas être modifiée quand la minicarte est en mode sans échec.",

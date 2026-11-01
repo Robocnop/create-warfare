@@ -1,0 +1,18 @@
+{
+ "key.category.presencefootsteps": "Presence Footsteps",
+ "key.presencefootsteps.toggle": "Activer/désactiver le mod",
+ "key.presencefootsteps.toggle.disabled": "Sons désactivés",
+ "key.presencefootsteps.toggle.enabled": "Sons activés",
+ "menu.pf.disable_mod": "Couper tous les sons",
+ "menu.pf.footwear.off": "Chaussures : NON",
+ "menu.pf.footwear.on": "Chaussures : OUI",
+ "menu.pf.group.debugging": "Débogage",
+ "menu.pf.group.footsteps": "Bruits de pas",
+ "menu.pf.group.sound_packs": "Packs de sons",
+ "menu.pf.group.volume": "Volume",
+ "menu.pf.report.acoustics": "Exporter l'acoustique",
+ "menu.pf.volume.foliage": "Feuillage : %s%%",
+ "menu.pf.volume.foliage.tooltip": "Volume des sons en marchant dans les plantes et les hautes herbes.",
+ "mod.presencefootsteps.name": "Presence Footsteps",
+ "pf.default_sounds.missing": "Aucun pack de sons détecté. Allez dans les packs de ressources et activez %s pour commencer."
+}

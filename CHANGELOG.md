@@ -2,6 +2,18 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.8.0 — 2026-11-01
+
+- **First-person Model retiré** : il gênait l'affichage des armes (touche F6).
+- **Traductions** : 1 310 textes ajoutés pour les mods de la 1.7.4 et de la 1.7.5 (Toolgun, Skyfront, Transmission &
+  Linkage, Particular, Not Enough Animations, Camera Overhaul, Sodium Extra, Studious Keybinds, Advanced CIWS…).
+  Il ne reste que des symboles et unités identiques en français.
+- **22 nouvelles quêtes** : Create: Vintage (chapitre Industrie), Toolgun et tiges pneumatiques (Aviation), drones,
+  brouilleur, Shahed et CIWS (Missiles & radar), Advanced Peripherals (Défense & informatique).
+- **Correctif** : la 1.7.8 retirait KubeJS Create, dont Create: Vintage a besoin, et le serveur ne démarrait plus.
+  KubeJS Create est remis. Les recettes de Garnished et de Netherless qu'on croyait cassées marchaient en fait
+  (Minecraft les charge quand KubeJS n'y arrive pas) ; le compteur d'erreurs KubeJS n'est plus affiché en jeu.
+
 ## 1.7.8 — 2026-11-01
 
 - **10 erreurs KubeJS corrigées** : KubeJS Create (arrivé avec Create: Vintage, pour qui il est facultatif) cassait

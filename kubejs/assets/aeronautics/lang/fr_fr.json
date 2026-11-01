@@ -156,6 +156,8 @@
  "aeronautics.unit.gpn": "%s GpN",
  "aeronautics.unit.kpg": "%s kpg",
  "aeronautics.unit.kpn": "%s kpN",
+ "aeronautics.unit.meter_cubed": "%s m³",
+ "aeronautics.unit.meters_per_second": "%s m/s",
  "aeronautics.unit.mpg": "%s Mpg",
  "aeronautics.unit.mpn": "%s MpN",
  "aeronautics.unit.pn": "%s pN",

@@ -1,11 +1,16 @@
 {
  "gui.config.enabled": "Activé",
+ "gui.config.reset": "r",
  "gui.content": "Contenu",
+ "gui.day": "j",
  "gui.false": "faux",
+ "gui.hour": "h",
  "gui.ingredient.latest": "Ingrédients récents :",
+ "gui.minute": "m",
  "gui.perm.add": "Ajouter un groupe",
  "gui.perm.open": "Ouvrir les permissions",
  "gui.play": "jouer",
+ "gui.second": "s",
  "gui.true": "vrai",
  "minecraft.blocks": "Blocs",
  "minecraft.blocks.counting": "%s bloc(s)"

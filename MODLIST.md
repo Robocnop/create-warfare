@@ -26,12 +26,13 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 - **1.7.5** : correctifs Sable (CBC Ballistics Fix Sable : gel du télémètre sur un engin ; Sable Explosions Fix :
   engins invincibles au-dessus de Y=320), Jade Sable Compat, Studious Keybinds (Carry On + Aeronautics retiré en 1.7.6 :
   il faisait planter le serveur au clic droit, mixin écrit pour une autre version de Carry On). Visuels (client) :
-  Not Enough Animations (+ EMF Compat), First-person Model, 3D Skin Layers, Better Animations Collection, Camera Overhaul,
+  Not Enough Animations (+ EMF Compat), 3D Skin Layers, Better Animations Collection, Camera Overhaul,
   Presence Footsteps (+ Sable), Particular, ItemPhysic Lite, Dynamic FPS, Sodium Extra ; Create: Sound of Steam.
   Gameplay : Aeronautics (cordes, tuyaux encastrés, Transmission & Linkage, Toolgun), Superb Warfare (Advanced CIWS « SBW 0.8.9 », **figé** ; Skyfront ;
   Electronic Warfare et Drone Warfare retirés en 1.7.7 : écrits pour une autre version de SBW, plantage du serveur), Advanced Peripherals (détecteur de joueurs bridé à 64 blocs, sans `getPlayer`, config livrée),
-  Create: Vintage (KubeJS Create, sa dépendance facultative, retiré en 1.7.8 : il cassait 10 recettes de Garnished et Netherless). 96 recettes de compatibilité de
+  Create: Vintage (+ KubeJS Create : indispensable, sans lui le serveur ne charge pas ses datapacks). 96 recettes de compatibilité de
   Vintage avec Crafts & Additions ne se chargent pas (ancien format), sans gravité.
+- **1.8.0** : First-person Model retiré (gênait l'affichage des armes, touche F6).
 - **Absents en 1.21.1 NeoForge** : CBC Nukes, Create: Propulsion (remplacé par Create Propulsion: Simulated),
   Create Interactive (remplacé par Aeronautics/Sable), Create Misc & Things, Create Unlimited.
 - **Erreurs connues, sans gravité** (le serveur démarre) : 4 recettes de CBC Advanced Technologies (roquettes),
@@ -303,7 +304,6 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Not Enough Animations | `notenoughanimations-neoforge-1.12.6-mc1.21.1.jar` | client seul | CurseForge |
 | EMF Compat: Core | `emf_compat_core_neoforge_1.21.1_2.3.2.jar` | client seul | CurseForge |
 | EMF Compat: Not Enough Animations | `emf_compat_not_enough_animations_neoforge_1.21.1_1.2.1.jar` | client seul | CurseForge |
-| First-person Model | `firstperson-neoforge-2.7.3-mc1.21.1.jar` | client seul | CurseForge |
 | Skin Layers 3D | `skinlayers3d-neoforge-1.11.4-mc1.21.1.jar` | client seul | CurseForge |
 | Better Animations Collection | `BetterAnimationsCollection-v21.1.1-1.21.1-NeoForge.jar` | client seul | CurseForge |
 | CameraOverhaul | `CameraOverhaul-v2.1.2-neoforge+mc[1.21-1.21.1].jar` | client seul | CurseForge |
@@ -322,3 +322,4 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | [SBW] Skyfront | `skyfront-1.21.1-1.5.0.jar` | client + serveur | Modrinth |
 | Advanced Peripherals | `AdvancedPeripherals-1.21.1-0.8.2a.jar` | client + serveur | CurseForge |
 | Create: Vintage | `vintage-1.21.1-1.6.4.jar` | client + serveur | CurseForge |
+| KubeJS Create | `kubejs-create-neoforge-2101.3.1-build.18.jar` | client + serveur | CurseForge |

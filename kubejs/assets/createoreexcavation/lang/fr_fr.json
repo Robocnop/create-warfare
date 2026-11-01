@@ -51,6 +51,7 @@
  "createoreexcavation.ponder.tag.drilling.description": "Extraire diverses ressources du sous-sol",
  "info.coe.atlas.dimension": "Dans : %s",
  "info.coe.atlas.location": "Emplacement :",
+ "info.coe.atlas.location2": "~%s, *, ~%s",
  "info.coe.atlas.vein_size": "Taille du filon : %s",
  "info.coe.atlas.vein_size.infinite": "Renouvelable (∞)",
  "info.coe.atlas.vein_types": "Types de filons",
