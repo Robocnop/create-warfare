@@ -72,9 +72,9 @@
                     </Border>
                 </StackPanel>
                 <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" WindowChrome.IsHitTestVisibleInChrome="True">
-                    <Button Style="{StaticResource CaptionButton}" Content="{StaticResource IcMinimize}" Click="OnMinimize" ToolTip="Réduire" />
-                    <Button Style="{StaticResource CaptionButton}" x:Name="MaxButton" Content="{StaticResource IcMaximize}" Click="OnMaximize" ToolTip="Agrandir" />
-                    <Button Style="{StaticResource CloseButton}" Content="{StaticResource IcClose}" Click="OnClose" ToolTip="Fermer" />
+                    <Button Style="{StaticResource CaptionButton}" Content="{StaticResource IcMinimize}" Click="OnMinimize" ToolTip="{DynamicResource t.001}" />
+                    <Button Style="{StaticResource CaptionButton}" x:Name="MaxButton" Content="{StaticResource IcMaximize}" Click="OnMaximize" ToolTip="{DynamicResource t.002}" />
+                    <Button Style="{StaticResource CloseButton}" Content="{StaticResource IcClose}" Click="OnClose" ToolTip="{DynamicResource t.003}" />
                 </StackPanel>
             </DockPanel>
         </Border>
@@ -84,21 +84,21 @@
             <DockPanel IsEnabled="{Binding NavEnabled}" Margin="0,10,0,10">
                 <StackPanel DockPanel.Dock="Bottom">
                     <Button Style="{StaticResource IconButton}" Content="{StaticResource IcCode}" Command="{Binding OpenLinkCommand}" CommandParameter="{Binding GithubUrl}"
-                            ToolTip="Dépôt GitHub du pack" HorizontalAlignment="Center" Margin="0,2" />
+                            ToolTip="{DynamicResource t.004}" HorizontalAlignment="Center" Margin="0,2" />
                     <Button Style="{StaticResource IconButton}" Content="{StaticResource IcPeople}" Command="{Binding OpenLinkCommand}" CommandParameter="{Binding DiscordUrl}"
                             ToolTip="Discord" HorizontalAlignment="Center" Margin="0,2" Visibility="{Binding HasDiscord, Converter={StaticResource Vis}}" />
                     <Button Style="{StaticResource IconButton}" Content="{StaticResource IcGlobe}" Command="{Binding OpenLinkCommand}" CommandParameter="{Binding WebsiteUrl}"
-                            ToolTip="Site web" HorizontalAlignment="Center" Margin="0,2" Visibility="{Binding HasWebsite, Converter={StaticResource Vis}}" />
+                            ToolTip="{DynamicResource t.005}" HorizontalAlignment="Center" Margin="0,2" Visibility="{Binding HasWebsite, Converter={StaticResource Vis}}" />
                     <Button Style="{StaticResource IconButton}" Content="{StaticResource IcBug}" Command="{Binding ReportBugCommand}"
-                            ToolTip="Signaler un bug (formulaire GitHub prérempli)" HorizontalAlignment="Center" Margin="0,2" />
+                            ToolTip="{DynamicResource t.006}" HorizontalAlignment="Center" Margin="0,2" />
                 </StackPanel>
                 <StackPanel>
-                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="Accueil" ui:Ui.Icon="{StaticResource IcHome}" IsChecked="{Binding NavHome, Mode=TwoWay}" ToolTip="Accueil (Échap)" />
-                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="Actualités" ui:Ui.Icon="{StaticResource IcNews}" IsChecked="{Binding NavNews, Mode=TwoWay}" ToolTip="Actualités et notes de version" />
-                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="Galerie" ui:Ui.Icon="{StaticResource IcGallery}" IsChecked="{Binding NavGallery, Mode=TwoWay}" ToolTip="Galerie d'images" />
-                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="Paramètres" ui:Ui.Icon="{StaticResource IcSettings}" IsChecked="{Binding NavSettings, Mode=TwoWay}" ToolTip="Paramètres (Ctrl+,)" />
-                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="Logs" ui:Ui.Icon="{StaticResource IcLogs}" IsChecked="{Binding NavLogs, Mode=TwoWay}" ToolTip="Journal du launcher" />
-                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="À propos" ui:Ui.Icon="{StaticResource IcInfo}" IsChecked="{Binding NavAbout, Mode=TwoWay}" ToolTip="Versions, crédits et liens" />
+                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="{DynamicResource t.007}" ui:Ui.Icon="{StaticResource IcHome}" IsChecked="{Binding NavHome, Mode=TwoWay}" ToolTip="{DynamicResource t.008}" />
+                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="{DynamicResource t.009}" ui:Ui.Icon="{StaticResource IcNews}" IsChecked="{Binding NavNews, Mode=TwoWay}" ToolTip="{DynamicResource t.010}" />
+                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="{DynamicResource t.011}" ui:Ui.Icon="{StaticResource IcGallery}" IsChecked="{Binding NavGallery, Mode=TwoWay}" ToolTip="{DynamicResource t.012}" />
+                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="{DynamicResource t.013}" ui:Ui.Icon="{StaticResource IcSettings}" IsChecked="{Binding NavSettings, Mode=TwoWay}" ToolTip="{DynamicResource t.014}" />
+                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="Logs" ui:Ui.Icon="{StaticResource IcLogs}" IsChecked="{Binding NavLogs, Mode=TwoWay}" ToolTip="{DynamicResource t.015}" />
+                    <RadioButton Style="{StaticResource NavItem}" GroupName="nav" Content="{DynamicResource t.016}" ui:Ui.Icon="{StaticResource IcInfo}" IsChecked="{Binding NavAbout, Mode=TwoWay}" ToolTip="{DynamicResource t.017}" />
                 </StackPanel>
             </DockPanel>
         </Border>
@@ -142,26 +142,26 @@
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock Text="{StaticResource IcNews}" FontFamily="{StaticResource Icons}" Foreground="{DynamicResource Accent}" FontSize="16" VerticalAlignment="Top" Margin="0,2,12,0" />
                                 <StackPanel>
-                                    <TextBlock Style="{StaticResource Kicker}" Text="ANNONCE" Foreground="{DynamicResource Accent}" />
+                                    <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.018}" Foreground="{DynamicResource Accent}" />
                                     <TextBlock Text="{Binding Notice}" FontSize="14" TextWrapping="Wrap" MaxWidth="460" />
                                 </StackPanel>
                             </StackPanel>
                         </Border>
 
                         <StackPanel DockPanel.Dock="Bottom" MouseEnter="OnCarouselHover" MouseLeave="OnCarouselLeave" Background="Transparent">
-                            <TextBlock Style="{StaticResource Kicker}" Text="MODPACK  ·  MINECRAFT 1.21.1  ·  NEOFORGE  ·  CREATE 6" Foreground="{DynamicResource Accent}" />
+                            <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.019}" Foreground="{DynamicResource Accent}" />
                             <TextBlock FontFamily="{DynamicResource Display}" FontSize="{StaticResource FontHero}" FontWeight="Bold" LineHeight="58" LineStackingStrategy="BlockLineHeight">
                                 <Run Text="CREATE" /><LineBreak /><Run Text="WARFARE" Foreground="{DynamicResource Accent}" />
                             </TextBlock>
                             <TextBlock Text="{Binding SlideCaption}" Style="{StaticResource Body}" Foreground="{DynamicResource Text}" FontSize="{StaticResource FontBodyLarge}"
                                        MaxWidth="520" HorizontalAlignment="Left" Margin="0,10,0,18" />
                             <StackPanel Orientation="Horizontal" Visibility="{Binding HasSlides, Converter={StaticResource Vis}}">
-                                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronLeft}" Command="{Binding PrevSlideCommand}" ToolTip="Image précédente" />
+                                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronLeft}" Command="{Binding PrevSlideCommand}" ToolTip="{DynamicResource t.020}" />
                                 <ItemsControl ItemsSource="{Binding SlideDots}" VerticalAlignment="Center" Margin="6,0">
                                     <ItemsControl.ItemsPanel><ItemsPanelTemplate><StackPanel Orientation="Horizontal" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
                                     <ItemsControl.ItemTemplate>
                                         <DataTemplate DataType="{x:Type vm:SlideDot}">
-                                            <Button Command="{Binding Go}" Cursor="Hand" Focusable="False" ToolTip="Aller à cette image">
+                                            <Button Command="{Binding Go}" Cursor="Hand" Focusable="False" ToolTip="{DynamicResource t.021}">
                                                 <Button.Template>
                                                     <ControlTemplate TargetType="Button">
                                                         <Border Background="Transparent" Padding="4,8">
@@ -180,7 +180,7 @@
                                         </DataTemplate>
                                     </ItemsControl.ItemTemplate>
                                 </ItemsControl>
-                                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronRight}" Command="{Binding NextSlideCommand}" ToolTip="Image suivante" />
+                                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronRight}" Command="{Binding NextSlideCommand}" ToolTip="{DynamicResource t.022}" />
                             </StackPanel>
                         </StackPanel>
                     </DockPanel>
@@ -191,9 +191,9 @@
                         <Border Style="{StaticResource GlassCard}" Padding="18,14" Margin="0,0,0,12">
                             <DockPanel>
                                 <Button DockPanel.Dock="Right" Style="{StaticResource IconButton}" Content="{StaticResource IcRefresh}" Command="{Binding RefreshServerCommand}"
-                                        ToolTip="Actualiser l'état du serveur" VerticalAlignment="Center" />
+                                        ToolTip="{DynamicResource t.023}" VerticalAlignment="Center" />
                                 <Button DockPanel.Dock="Right" Style="{StaticResource IconButton}" Content="{StaticResource IcCopy}" Command="{Binding CopyAddressCommand}"
-                                        ToolTip="Copier l'adresse du serveur" VerticalAlignment="Center" />
+                                        ToolTip="{DynamicResource t.024}" VerticalAlignment="Center" />
                                 <StackPanel>
                                     <StackPanel Orientation="Horizontal">
                                         <Ellipse Style="{StaticResource StatusDot}" VerticalAlignment="Center" Margin="0,0,8,0" />
@@ -209,7 +209,7 @@
                         </Border>
 
                         <!-- Dernière mise à jour -->
-                        <Button Command="{Binding NavCommand}" CommandParameter="news" Cursor="Hand" Margin="0,0,0,12" ToolTip="Voir toutes les nouveautés"
+                        <Button Command="{Binding NavCommand}" CommandParameter="news" Cursor="Hand" Margin="0,0,0,12" ToolTip="{DynamicResource t.025}"
                                 FocusVisualStyle="{StaticResource FocusRing}" Visibility="{Binding HasLatest, Converter={StaticResource Vis}}">
                             <Button.Template>
                                 <ControlTemplate TargetType="Button">
@@ -218,7 +218,7 @@
                                             <DockPanel>
                                                 <TextBlock DockPanel.Dock="Right" Text="{StaticResource IcChevronRight}" FontFamily="{StaticResource Icons}" FontSize="12" Foreground="{DynamicResource Muted}" VerticalAlignment="Center" />
                                                 <TextBlock Style="{StaticResource Kicker}" Margin="0">
-                                                    <Run Text="DERNIÈRE MISE À JOUR  ·  " /><Run Text="{Binding LatestDate, Mode=OneWay}" />
+                                                    <Run Text="{DynamicResource t.026}" /><Run Text="{Binding LatestDate, Mode=OneWay}" />
                                                 </TextBlock>
                                             </DockPanel>
                                             <TextBlock Text="{Binding LatestTitle}" FontFamily="{DynamicResource Display}" FontSize="22" FontWeight="Bold" Margin="0,4,0,4" />
@@ -239,7 +239,7 @@
                                     <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right">
                                         <TextBlock Style="{StaticResource Kicker}" Text="LAUNCHER" HorizontalAlignment="Right" Margin="0,0,0,2" />
                                         <Button Style="{StaticResource LinkButton}" Content="{Binding LauncherSub}" Command="{Binding UpdateLauncherCommand}" Foreground="{DynamicResource Warning}"
-                                                HorizontalAlignment="Right" ui:Ui.Icon="{StaticResource IcDownload}" ToolTip="Installer la nouvelle version du launcher"
+                                                HorizontalAlignment="Right" ui:Ui.Icon="{StaticResource IcDownload}" ToolTip="{DynamicResource t.027}"
                                                 Visibility="{Binding LauncherUpdateAvailable, Converter={StaticResource Vis}}" />
                                         <TextBlock Text="{Binding LauncherSub}" FontSize="12" Foreground="{DynamicResource Success}" HorizontalAlignment="Right"
                                                    Visibility="{Binding LauncherUpToDate, Converter={StaticResource Vis}}" />
@@ -247,14 +247,14 @@
                                     <StackPanel>
                                         <TextBlock Style="{StaticResource Kicker}" Text="{Binding StatusTitle}" Foreground="{DynamicResource Accent}" Margin="0,0,0,2" />
                                         <TextBlock FontSize="13">
-                                            <Run Text="Pack " Foreground="{DynamicResource Muted}" /><Run Text="{Binding PackVersion, Mode=OneWay}" FontWeight="SemiBold" /><Run Text="  ·  " Foreground="{DynamicResource Dim}" /><Run Text="{Binding PackSub, Mode=OneWay}" Foreground="{DynamicResource Muted}" />
+                                            <Run Text="{DynamicResource t.028}" Foreground="{DynamicResource Muted}" /><Run Text="{Binding PackVersion, Mode=OneWay}" FontWeight="SemiBold" /><Run Text="  ·  " Foreground="{DynamicResource Dim}" /><Run Text="{Binding PackSub, Mode=OneWay}" Foreground="{DynamicResource Muted}" />
                                         </TextBlock>
                                     </StackPanel>
                                 </DockPanel>
 
                                 <!-- Sélecteur de version -->
                                 <Grid Margin="0,0,0,12">
-                                    <ToggleButton x:Name="VersionToggle" IsChecked="{Binding IsVersionMenuOpen, Mode=TwoWay}" Cursor="Hand" ToolTip="Choisir la version du pack"
+                                    <ToggleButton x:Name="VersionToggle" IsChecked="{Binding IsVersionMenuOpen, Mode=TwoWay}" Cursor="Hand" ToolTip="{DynamicResource t.029}"
                                                   FocusVisualStyle="{StaticResource FocusRing}">
                                         <ToggleButton.Template>
                                             <ControlTemplate TargetType="ToggleButton">
@@ -321,10 +321,10 @@
                                 <DockPanel Margin="0,12,0,0">
                                     <TextBlock DockPanel.Dock="Right" Text="{Binding PlayHint}" Style="{StaticResource Caption}" VerticalAlignment="Center" />
                                     <StackPanel Orientation="Horizontal">
-                                        <Button Style="{StaticResource LinkButton}" Content="Réparer" ui:Ui.Icon="{StaticResource IcRepair}" Command="{Binding RepairCommand}"
-                                                ToolTip="Vérifier et réparer les fichiers du pack" Visibility="{Binding HasInstance, Converter={StaticResource Vis}}" />
-                                        <Button Style="{StaticResource LinkButton}" Content="Dossier" ui:Ui.Icon="{StaticResource IcFolder}" Command="{Binding OpenInstanceCommand}"
-                                                ToolTip="Ouvrir le dossier du jeu" Margin="16,0,0,0" Visibility="{Binding HasInstance, Converter={StaticResource Vis}}" />
+                                        <Button Style="{StaticResource LinkButton}" Content="{DynamicResource t.030}" ui:Ui.Icon="{StaticResource IcRepair}" Command="{Binding RepairCommand}"
+                                                ToolTip="{DynamicResource t.031}" Visibility="{Binding HasInstance, Converter={StaticResource Vis}}" />
+                                        <Button Style="{StaticResource LinkButton}" Content="{DynamicResource t.032}" ui:Ui.Icon="{StaticResource IcFolder}" Command="{Binding OpenInstanceCommand}"
+                                                ToolTip="{DynamicResource t.033}" Margin="16,0,0,0" Visibility="{Binding HasInstance, Converter={StaticResource Vis}}" />
                                     </StackPanel>
                                 </DockPanel>
                             </StackPanel>
@@ -337,23 +337,23 @@
             <ScrollViewer Style="{StaticResource Page}" VerticalScrollBarVisibility="Auto" Visibility="{Binding IsInstall, Converter={StaticResource Vis}}">
                 <StackPanel Margin="{StaticResource PadPage}" MaxWidth="720" HorizontalAlignment="Left">
                     <DockPanel Style="{StaticResource PageHeader}">
-                        <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="Retour (Échap)" Margin="0,0,14,0" VerticalAlignment="Center" />
+                        <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="{DynamicResource t.034}" Margin="0,0,14,0" VerticalAlignment="Center" />
                         <StackPanel>
-                            <TextBlock Style="{StaticResource Kicker}" Text="PREMIÈRE INSTALLATION" Foreground="{DynamicResource Accent}" />
-                            <TextBlock Style="{StaticResource Title}" Text="Installer Create Warfare" />
+                            <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.035}" Foreground="{DynamicResource Accent}" />
+                            <TextBlock Style="{StaticResource Title}" Text="{DynamicResource t.036}" />
                         </StackPanel>
                     </DockPanel>
-                    <TextBlock Style="{StaticResource Body}" Margin="0,0,0,24" Text="CurseForge installe Minecraft, NeoForge et Java. Ensuite, le launcher s'occupe seul des mises à jour." />
+                    <TextBlock Style="{StaticResource Body}" Margin="0,0,0,24" Text="{DynamicResource t.037}" />
 
                     <Border Style="{StaticResource Card}" Margin="0,0,0,12">
                         <DockPanel>
                             <TextBlock DockPanel.Dock="Left" Style="{StaticResource BigNumber}" FontSize="30" Text="1" Foreground="{DynamicResource Accent}" Width="44" />
                             <StackPanel>
-                                <TextBlock Style="{StaticResource H3}" Text="Télécharge le pack" />
-                                <TextBlock Style="{StaticResource Body}" Text="Le zip est enregistré dans ton dossier Téléchargements." Margin="0,2,0,12" />
+                                <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.038}" />
+                                <TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.039}" Margin="0,2,0,12" />
                                 <StackPanel Orientation="Horizontal">
-                                    <Button Style="{StaticResource SecondaryButton}" Content="Télécharger le zip" ui:Ui.Icon="{StaticResource IcDownload}" Command="{Binding DownloadZipCommand}" />
-                                    <Button Style="{StaticResource LinkButton}" Content="Afficher" Command="{Binding ShowZipCommand}" Margin="16,0,0,0" VerticalAlignment="Center"
+                                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.040}" ui:Ui.Icon="{StaticResource IcDownload}" Command="{Binding DownloadZipCommand}" />
+                                    <Button Style="{StaticResource LinkButton}" Content="{DynamicResource t.041}" Command="{Binding ShowZipCommand}" Margin="16,0,0,0" VerticalAlignment="Center"
                                             Visibility="{Binding HasInstallZip, Converter={StaticResource Vis}}" />
                                 </StackPanel>
                             </StackPanel>
@@ -363,10 +363,10 @@
                         <DockPanel>
                             <TextBlock DockPanel.Dock="Left" Style="{StaticResource BigNumber}" FontSize="30" Text="2" Foreground="{DynamicResource Accent}" Width="44" />
                             <StackPanel>
-                                <TextBlock Style="{StaticResource H3}" Text="Importe-le dans CurseForge" />
+                                <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.042}" />
                                 <TextBlock Style="{StaticResource Body}" Margin="0,2,0,12"
-                                           Text="Minecraft → « Créer un profil personnalisé » → lien « Importer » en haut de la fenêtre → choisis le zip. Attends la fin de l'installation." />
-                                <Button Style="{StaticResource SecondaryButton}" Content="Ouvrir CurseForge" ui:Ui.Icon="{StaticResource IcOpen}" Command="{Binding OpenCurseForgeCommand}" HorizontalAlignment="Left" />
+                                           Text="{DynamicResource t.043}" />
+                                <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.044}" ui:Ui.Icon="{StaticResource IcOpen}" Command="{Binding OpenCurseForgeCommand}" HorizontalAlignment="Left" />
                             </StackPanel>
                         </DockPanel>
                     </Border>
@@ -374,14 +374,14 @@
                         <DockPanel>
                             <TextBlock DockPanel.Dock="Left" Style="{StaticResource BigNumber}" FontSize="30" Text="3" Foreground="{DynamicResource Accent}" Width="44" />
                             <StackPanel>
-                                <TextBlock Style="{StaticResource H3}" Text="Reviens ici" />
-                                <TextBlock Style="{StaticResource Body}" Text="Le launcher retrouve l'instance tout seul, même si CurseForge l'a nommée « Create Warfare (1) »." Margin="0,2,0,0" />
+                                <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.045}" />
+                                <TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.046}" Margin="0,2,0,0" />
                             </StackPanel>
                         </DockPanel>
                     </Border>
                     <StackPanel Orientation="Horizontal">
-                        <Button Style="{StaticResource PrimaryButton}" Content="J'ai importé le pack" ui:Ui.Icon="{StaticResource IcAccept}" Command="{Binding RescanCommand}" />
-                        <Button Style="{StaticResource GhostButton}" Content="Déjà installé ailleurs ? Choisir le dossier" ui:Ui.Icon="{StaticResource IcFolder}" Command="{Binding BrowseCommand}" Margin="12,0,0,0" />
+                        <Button Style="{StaticResource PrimaryButton}" Content="{DynamicResource t.047}" ui:Ui.Icon="{StaticResource IcAccept}" Command="{Binding RescanCommand}" />
+                        <Button Style="{StaticResource GhostButton}" Content="{DynamicResource t.048}" ui:Ui.Icon="{StaticResource IcFolder}" Command="{Binding BrowseCommand}" Margin="12,0,0,0" />
                     </StackPanel>
                 </StackPanel>
             </ScrollViewer>
@@ -405,7 +405,7 @@
                             <TextBlock DockPanel.Dock="Right" Text="{Binding WorkDetail}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Text}" />
                             <TextBlock Text="{Binding WorkCurrent}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Muted}" TextTrimming="CharacterEllipsis" Margin="0,0,12,0" />
                         </DockPanel>
-                        <Button Style="{StaticResource SecondaryButton}" Content="Annuler" ui:Ui.Icon="{StaticResource IcCancel}" Command="{Binding CancelWorkCommand}" HorizontalAlignment="Left" Margin="0,22,0,0"
+                        <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.049}" ui:Ui.Icon="{StaticResource IcCancel}" Command="{Binding CancelWorkCommand}" HorizontalAlignment="Left" Margin="0,22,0,0"
                                 Visibility="{Binding CanCancel, Converter={StaticResource Vis}}" />
                     </StackPanel>
                 </Border>
@@ -414,7 +414,7 @@
             <!-- ============ REVUE DE LA MISE À JOUR ============ -->
             <DockPanel Style="{StaticResource Page}" Margin="{StaticResource PadPage}" Visibility="{Binding IsReview, Converter={StaticResource Vis}}">
                 <DockPanel DockPanel.Dock="Top" Style="{StaticResource PageHeader}">
-                    <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="Annuler et revenir (Échap)" Margin="0,0,14,0" VerticalAlignment="Center" />
+                    <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="{DynamicResource t.050}" Margin="0,0,14,0" VerticalAlignment="Center" />
                     <StackPanel>
                         <TextBlock Style="{StaticResource Kicker}" Text="{Binding ReviewKicker}" Foreground="{DynamicResource Accent}" />
                         <TextBlock Style="{StaticResource Title}" Text="{Binding ReviewTitle}" />
@@ -425,15 +425,15 @@
                     <UniformGrid.Resources>
                         <Style TargetType="Border" BasedOn="{StaticResource Card}"><Setter Property="Margin" Value="0,0,10,0" /><Setter Property="Padding" Value="14,10" /></Style>
                     </UniformGrid.Resources>
-                    <Border><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountReplace}" /><TextBlock Style="{StaticResource Caption}" Text="Remplacés" /></StackPanel></Border>
-                    <Border><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountAdd}" Foreground="{DynamicResource Success}" /><TextBlock Style="{StaticResource Caption}" Text="Ajoutés" /></StackPanel></Border>
-                    <Border><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountRemove}" Foreground="{DynamicResource Error}" /><TextBlock Style="{StaticResource Caption}" Text="Supprimés" /></StackPanel></Border>
-                    <Border><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountSame}" Foreground="{DynamicResource Muted}" /><TextBlock Style="{StaticResource Caption}" Text="Identiques" /></StackPanel></Border>
-                    <Border Margin="0"><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountProtected}" Foreground="{DynamicResource Warning}" /><TextBlock Style="{StaticResource Caption}" Text="Protégés (gardés)" /></StackPanel></Border>
+                    <Border><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountReplace}" /><TextBlock Style="{StaticResource Caption}" Text="{DynamicResource t.051}" /></StackPanel></Border>
+                    <Border><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountAdd}" Foreground="{DynamicResource Success}" /><TextBlock Style="{StaticResource Caption}" Text="{DynamicResource t.052}" /></StackPanel></Border>
+                    <Border><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountRemove}" Foreground="{DynamicResource Error}" /><TextBlock Style="{StaticResource Caption}" Text="{DynamicResource t.053}" /></StackPanel></Border>
+                    <Border><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountSame}" Foreground="{DynamicResource Muted}" /><TextBlock Style="{StaticResource Caption}" Text="{DynamicResource t.054}" /></StackPanel></Border>
+                    <Border Margin="0"><StackPanel><TextBlock Style="{StaticResource BigNumber}" FontSize="24" Text="{Binding CountProtected}" Foreground="{DynamicResource Warning}" /><TextBlock Style="{StaticResource Caption}" Text="{DynamicResource t.055}" /></StackPanel></Border>
                 </UniformGrid>
                 <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="0,16,0,0">
                     <Button Style="{StaticResource PrimaryButton}" Content="{Binding ConfirmText}" ui:Ui.Icon="{StaticResource IcAccept}" Command="{Binding ConfirmCommand}" MinWidth="200" />
-                    <Button Style="{StaticResource SecondaryButton}" Content="Annuler" Command="{Binding BackHomeCommand}" Height="56" Margin="12,0,0,0" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.049}" Command="{Binding BackHomeCommand}" Height="56" Margin="12,0,0,0" />
                 </StackPanel>
                 <Border Style="{StaticResource Card}" Padding="0">
                     <ListBox ItemsSource="{Binding Rows}" Background="Transparent" BorderThickness="0" Focusable="False" Margin="4"
@@ -476,15 +476,15 @@
             <!-- ============ ACTUALITÉS ============ -->
             <DockPanel Style="{StaticResource Page}" Visibility="{Binding IsNews, Converter={StaticResource Vis}}">
                 <DockPanel DockPanel.Dock="Top" Style="{StaticResource PageHeader}" Margin="40,32,40,20">
-                    <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="Retour à l'accueil (Échap)" Margin="0,0,14,0" VerticalAlignment="Center" />
+                    <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="{DynamicResource t.056}" Margin="0,0,14,0" VerticalAlignment="Center" />
                     <StackPanel>
-                        <TextBlock Style="{StaticResource Kicker}" Text="ACTUALITÉS" Foreground="{DynamicResource Accent}" />
-                        <TextBlock Style="{StaticResource Title}" Text="Nouveautés du pack" />
+                        <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.057}" Foreground="{DynamicResource Accent}" />
+                        <TextBlock Style="{StaticResource Title}" Text="{DynamicResource t.058}" />
                     </StackPanel>
                 </DockPanel>
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel Margin="40,0,40,32" MaxWidth="900" HorizontalAlignment="Left">
-                        <TextBlock Style="{StaticResource Body}" Text="Aucune note de version pour l'instant (hors ligne ?)." Visibility="{Binding HasNews, Converter={StaticResource Vis}, ConverterParameter=invert}" />
+                        <TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.059}" Visibility="{Binding HasNews, Converter={StaticResource Vis}, ConverterParameter=invert}" />
                         <ItemsControl ItemsSource="{Binding NewsCards}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate DataType="{x:Type vm:NewsCard}">
@@ -540,25 +540,25 @@
             <!-- ============ GALERIE ============ -->
             <DockPanel Style="{StaticResource Page}" Visibility="{Binding IsGallery, Converter={StaticResource Vis}}">
                 <DockPanel DockPanel.Dock="Top" Style="{StaticResource PageHeader}" Margin="40,32,40,20">
-                    <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="Retour à l'accueil (Échap)" Margin="0,0,14,0" VerticalAlignment="Center" />
+                    <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="{DynamicResource t.056}" Margin="0,0,14,0" VerticalAlignment="Center" />
                     <StackPanel>
-                        <TextBlock Style="{StaticResource Kicker}" Text="GALERIE" Foreground="{DynamicResource Accent}" />
-                        <TextBlock Style="{StaticResource Title}" Text="Images du serveur" />
+                        <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.060}" Foreground="{DynamicResource Accent}" />
+                        <TextBlock Style="{StaticResource Title}" Text="{DynamicResource t.061}" />
                     </StackPanel>
                 </DockPanel>
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel Margin="40,0,40,32">
                         <Border Style="{StaticResource Card}" HorizontalAlignment="Left" MaxWidth="640" Visibility="{Binding HasGallery, Converter={StaticResource Vis}, ConverterParameter=invert}">
                             <StackPanel>
-                                <TextBlock Style="{StaticResource H3}" Text="Pas encore d'images" />
-                                <TextBlock Style="{StaticResource Body}" Margin="0,4,0,0" Text="Les captures du serveur apparaîtront ici dès qu'elles seront ajoutées au launcher." />
+                                <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.062}" />
+                                <TextBlock Style="{StaticResource Body}" Margin="0,4,0,0" Text="{DynamicResource t.063}" />
                             </StackPanel>
                         </Border>
                         <ItemsControl ItemsSource="{Binding GalleryCards}">
                             <ItemsControl.ItemsPanel><ItemsPanelTemplate><UniformGrid Columns="3" /></ItemsPanelTemplate></ItemsControl.ItemsPanel>
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate DataType="{x:Type vm:GalleryCard}">
-                                    <Button Command="{Binding Open}" Cursor="Hand" Margin="0,0,12,12" ToolTip="Agrandir" FocusVisualStyle="{StaticResource FocusRing}">
+                                    <Button Command="{Binding Open}" Cursor="Hand" Margin="0,0,12,12" ToolTip="{DynamicResource t.002}" FocusVisualStyle="{StaticResource FocusRing}">
                                         <Button.Template>
                                             <ControlTemplate TargetType="Button">
                                                 <Border x:Name="frame" CornerRadius="{StaticResource RadiusL}" BorderBrush="{DynamicResource Line}" BorderThickness="1" ClipToBounds="True" Background="{DynamicResource Surface}">
@@ -587,18 +587,18 @@
             <DockPanel Style="{StaticResource Page}" Visibility="{Binding IsSettings, Converter={StaticResource Vis}}">
                 <StackPanel DockPanel.Dock="Top" Margin="40,32,40,0">
                     <DockPanel Style="{StaticResource PageHeader}" Margin="0,0,0,18">
-                        <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="Retour à l'accueil (Échap)" Margin="0,0,14,0" VerticalAlignment="Center" />
+                        <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="{DynamicResource t.056}" Margin="0,0,14,0" VerticalAlignment="Center" />
                         <StackPanel>
-                            <TextBlock Style="{StaticResource Kicker}" Text="PARAMÈTRES" Foreground="{DynamicResource Accent}" />
-                            <TextBlock Style="{StaticResource Title}" Text="Réglages" />
+                            <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.064}" Foreground="{DynamicResource Accent}" />
+                            <TextBlock Style="{StaticResource Title}" Text="{DynamicResource t.065}" />
                         </StackPanel>
                     </DockPanel>
                     <Border Background="{DynamicResource Surface}" CornerRadius="{StaticResource RadiusM}" Padding="4" HorizontalAlignment="Left">
                         <StackPanel Orientation="Horizontal">
-                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="Jeu" ui:Ui.Icon="{StaticResource IcMemory}" IsChecked="{Binding TabGame, Mode=TwoWay}" />
-                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="Launcher" ui:Ui.Icon="{StaticResource IcPalette}" IsChecked="{Binding TabLauncher, Mode=TwoWay}" />
-                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="Instance" ui:Ui.Icon="{StaticResource IcFolder}" IsChecked="{Binding TabInstance, Mode=TwoWay}" />
-                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="Avancé" ui:Ui.Icon="{StaticResource IcRepair}" IsChecked="{Binding TabAdvanced, Mode=TwoWay}" />
+                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource t.066}" ui:Ui.Icon="{StaticResource IcMemory}" IsChecked="{Binding TabGame, Mode=TwoWay}" />
+                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource t.067}" ui:Ui.Icon="{StaticResource IcPalette}" IsChecked="{Binding TabLauncher, Mode=TwoWay}" />
+                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource t.068}" ui:Ui.Icon="{StaticResource IcFolder}" IsChecked="{Binding TabInstance, Mode=TwoWay}" />
+                            <RadioButton Style="{StaticResource Segment}" GroupName="tabs" Content="{DynamicResource t.069}" ui:Ui.Icon="{StaticResource IcRepair}" IsChecked="{Binding TabAdvanced, Mode=TwoWay}" />
                         </StackPanel>
                     </Border>
                 </StackPanel>
@@ -607,21 +607,21 @@
                         <!-- Jeu -->
                         <Border Style="{StaticResource Card}" Visibility="{Binding TabGame, Converter={StaticResource Vis}}" VerticalAlignment="Top">
                             <StackPanel>
-                                <TextBlock Style="{StaticResource H3}" Text="Mémoire allouée (RAM)" />
+                                <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.070}" />
                                 <TextBlock Style="{StaticResource Body}" Text="{Binding RamAdvice}" Margin="0,4,0,4" />
                                 <TextBlock Style="{StaticResource Caption}" Text="{Binding InstanceRam}" Margin="0,0,0,16" />
                                 <DockPanel Margin="0,0,0,18">
                                     <TextBlock DockPanel.Dock="Right" Text="{Binding RamLabel}" FontFamily="{DynamicResource Display}" FontSize="24" FontWeight="Bold" Width="80" TextAlignment="Right" VerticalAlignment="Center" />
                                     <Slider Minimum="{Binding RamMin}" Maximum="{Binding RamMax}" Value="{Binding RamValue, Mode=TwoWay}" SmallChange="1024" LargeChange="1024"
-                                            TickFrequency="1024" IsSnapToTickEnabled="True" VerticalAlignment="Center" ToolTip="Glisser pour choisir la RAM" />
+                                            TickFrequency="1024" IsSnapToTickEnabled="True" VerticalAlignment="Center" ToolTip="{DynamicResource t.071}" />
                                 </DockPanel>
                                 <StackPanel Orientation="Horizontal">
-                                    <Button Style="{StaticResource PrimaryButton}" Content="Appliquer à l'instance" ui:Ui.Icon="{StaticResource IcAccept}" Command="{Binding ApplyRamCommand}" Height="42"
-                                            FontSize="16" Padding="18,0" ToolTip="Écrit la RAM dans l'instance CurseForge (CurseForge doit être fermé)" />
-                                    <Button Style="{StaticResource GhostButton}" Content="Valeur conseillée" Command="{Binding ResetRamCommand}" Margin="8,0,0,0" />
+                                    <Button Style="{StaticResource PrimaryButton}" Content="{DynamicResource t.072}" ui:Ui.Icon="{StaticResource IcAccept}" Command="{Binding ApplyRamCommand}" Height="42"
+                                            FontSize="16" Padding="18,0" ToolTip="{DynamicResource t.073}" />
+                                    <Button Style="{StaticResource GhostButton}" Content="{DynamicResource t.074}" Command="{Binding ResetRamCommand}" Margin="8,0,0,0" />
                                 </StackPanel>
                                 <TextBlock Style="{StaticResource Caption}" Margin="0,16,0,0"
-                                           Text="Java et la résolution se règlent dans CurseForge : Mes modpacks → Create Warfare → ⋮ → Profile Options." />
+                                           Text="{DynamicResource t.075}" />
                             </StackPanel>
                         </Border>
 
@@ -630,24 +630,24 @@
                             <StackPanel>
                                 <DockPanel Style="{StaticResource SettingRow}">
                                     <ComboBox DockPanel.Dock="Right" ItemsSource="{Binding ThemeOptions}" SelectedItem="{Binding SelectedTheme, Mode=TwoWay}" DisplayMemberPath="Label" Width="260" />
-                                    <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Thème" /><TextBlock Style="{StaticResource Body}" Text="Automatique : Halloween, Noël et été s'activent seuls à leur date." /></StackPanel>
+                                    <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.076}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.077}" /></StackPanel>
                                 </DockPanel>
                                 <DockPanel Style="{StaticResource SettingRow}">
                                     <ComboBox DockPanel.Dock="Right" ItemsSource="{Binding LanguageOptions}" SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}" DisplayMemberPath="Label" Width="260" />
-                                    <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Langue" /><TextBlock Style="{StaticResource Body}" Text="Langue de l'interface du launcher." /></StackPanel>
+                                    <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.078}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.079}" /></StackPanel>
                                 </DockPanel>
                                 <DockPanel Style="{StaticResource SettingRow}">
                                     <ComboBox DockPanel.Dock="Right" ItemsSource="{Binding GameLaunchOptions}" SelectedItem="{Binding SelectedGameLaunch, Mode=TwoWay}" DisplayMemberPath="Label" Width="260" />
-                                    <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Quand le jeu se lance" /><TextBlock Style="{StaticResource Body}" Text="Ce que fait le launcher une fois Minecraft démarré." /></StackPanel>
+                                    <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.080}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.081}" /></StackPanel>
                                 </DockPanel>
                                 <CheckBox Style="{StaticResource Toggle}" IsChecked="{Binding StartWithWindows}" Margin="0,0,0,18">
-                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Démarrer avec Windows" /><TextBlock Style="{StaticResource Body}" Text="Ouvre le launcher à l'ouverture de session." /></StackPanel>
+                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.082}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.083}" /></StackPanel>
                                 </CheckBox>
                                 <CheckBox Style="{StaticResource Toggle}" IsChecked="{Binding AutoUpdateLauncher}" Margin="0,0,0,18">
-                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Mettre à jour le launcher automatiquement" /><TextBlock Style="{StaticResource Body}" Text="Installe la nouvelle version à l'ouverture, sans demander." /></StackPanel>
+                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.084}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.085}" /></StackPanel>
                                 </CheckBox>
                                 <CheckBox Style="{StaticResource Toggle}" IsChecked="{Binding DevMode}">
-                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Mode développeur" /><TextBlock Style="{StaticResource Body}" Text="Affiche les pré-releases (versions de test, parfois instables) dans le choix de version." /></StackPanel>
+                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.086}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.087}" /></StackPanel>
                                 </CheckBox>
                             </StackPanel>
                         </Border>
@@ -655,19 +655,19 @@
                         <!-- Instance -->
                         <Border Style="{StaticResource Card}" Visibility="{Binding TabInstance, Converter={StaticResource Vis}}" VerticalAlignment="Top">
                             <StackPanel>
-                                <TextBlock Style="{StaticResource H3}" Text="Instance CurseForge" />
+                                <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.088}" />
                                 <TextBlock Style="{StaticResource Body}" Margin="0,4,0,14"
-                                           Text="Le launcher ne modifie que ce dossier. Il ne touche jamais à options.txt, aux mondes, aux captures, aux packs de textures ni aux mods que tu ajoutes." />
+                                           Text="{DynamicResource t.089}" />
                                 <Border Background="{DynamicResource Bg}" BorderBrush="{DynamicResource Line}" BorderThickness="1" CornerRadius="{StaticResource RadiusM}" Padding="14,10" Margin="0,0,0,14">
                                     <TextBlock Text="{Binding InstancePath}" FontFamily="{StaticResource Mono}" FontSize="12.5" TextTrimming="CharacterEllipsis" />
                                 </Border>
                                 <WrapPanel>
-                                    <Button Style="{StaticResource SecondaryButton}" Content="Parcourir…" ui:Ui.Icon="{StaticResource IcFolder}" Command="{Binding BrowseCommand}" Margin="0,0,10,10" />
-                                    <Button Style="{StaticResource SecondaryButton}" Content="Détection automatique" ui:Ui.Icon="{StaticResource IcSync}" Command="{Binding AutoDetectCommand}" Margin="0,0,10,10" />
-                                    <Button Style="{StaticResource SecondaryButton}" Content="Ouvrir le dossier" ui:Ui.Icon="{StaticResource IcOpen}" Command="{Binding OpenInstanceCommand}" Margin="0,0,10,10" />
-                                    <Button Style="{StaticResource SecondaryButton}" Content="Vérifier et réparer" ui:Ui.Icon="{StaticResource IcRepair}" Command="{Binding RepairCommand}" Margin="0,0,10,10" />
+                                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.090}" ui:Ui.Icon="{StaticResource IcFolder}" Command="{Binding BrowseCommand}" Margin="0,0,10,10" />
+                                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.091}" ui:Ui.Icon="{StaticResource IcSync}" Command="{Binding AutoDetectCommand}" Margin="0,0,10,10" />
+                                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.092}" ui:Ui.Icon="{StaticResource IcOpen}" Command="{Binding OpenInstanceCommand}" Margin="0,0,10,10" />
+                                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.093}" ui:Ui.Icon="{StaticResource IcRepair}" Command="{Binding RepairCommand}" Margin="0,0,10,10" />
                                 </WrapPanel>
-                                <TextBlock Style="{StaticResource Caption}" Margin="0,8,0,0" Text="Les fichiers remplacés sont sauvegardés dans .cw-backup (les 2 dernières mises à jour)." />
+                                <TextBlock Style="{StaticResource Caption}" Margin="0,8,0,0" Text="{DynamicResource t.094}" />
                             </StackPanel>
                         </Border>
 
@@ -676,31 +676,31 @@
                             <Border Style="{StaticResource Card}" Margin="0,0,0,14">
                                 <StackPanel>
                                     <DockPanel Style="{StaticResource SettingRow}">
-                                        <Button DockPanel.Dock="Right" Style="{StaticResource SecondaryButton}" Content="Vider le cache" ui:Ui.Icon="{StaticResource IcDelete}" Command="{Binding ClearCacheCommand}" />
-                                        <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Cache des téléchargements" />
-                                            <TextBlock Style="{StaticResource Body}"><Run Text="Mods, zips et images déjà téléchargés : " /><Run Text="{Binding CacheSize, Mode=OneWay}" Foreground="{DynamicResource Text}" /></TextBlock></StackPanel>
+                                        <Button DockPanel.Dock="Right" Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.095}" ui:Ui.Icon="{StaticResource IcDelete}" Command="{Binding ClearCacheCommand}" />
+                                        <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.096}" />
+                                            <TextBlock Style="{StaticResource Body}"><Run Text="{DynamicResource t.097}" /><Run Text="{Binding CacheSize, Mode=OneWay}" Foreground="{DynamicResource Text}" /></TextBlock></StackPanel>
                                     </DockPanel>
                                     <DockPanel Style="{StaticResource SettingRow}">
-                                        <Button DockPanel.Dock="Right" Style="{StaticResource SecondaryButton}" Content="Exporter les logs" ui:Ui.Icon="{StaticResource IcZip}" Command="{Binding ExportLogsCommand}" />
-                                        <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Logs pour le support" /><TextBlock Style="{StaticResource Body}" Text="Crée un zip sur le Bureau : logs du launcher, du jeu et derniers rapports de plantage." /></StackPanel>
+                                        <Button DockPanel.Dock="Right" Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.098}" ui:Ui.Icon="{StaticResource IcZip}" Command="{Binding ExportLogsCommand}" />
+                                        <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.099}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.100}" /></StackPanel>
                                     </DockPanel>
                                     <CheckBox Style="{StaticResource Toggle}" IsChecked="{Binding DebugLog}" Margin="0,0,0,18">
-                                        <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Journal détaillé" /><TextBlock Style="{StaticResource Body}" Text="Écrit plus de détails dans les logs (utile pour signaler un bug)." /></StackPanel>
+                                        <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.101}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.102}" /></StackPanel>
                                     </CheckBox>
                                     <DockPanel Style="{StaticResource SettingRow}" Margin="0">
-                                        <Button DockPanel.Dock="Right" Style="{StaticResource SecondaryButton}" Content="Réinitialiser" ui:Ui.Icon="{StaticResource IcRefresh}" Command="{Binding ResetSettingsCommand}" />
-                                        <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Réinitialiser les paramètres" /><TextBlock Style="{StaticResource Body}" Text="Remet les réglages du launcher par défaut. L'instance n'est pas touchée." /></StackPanel>
+                                        <Button DockPanel.Dock="Right" Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.103}" ui:Ui.Icon="{StaticResource IcRefresh}" Command="{Binding ResetSettingsCommand}" />
+                                        <StackPanel Margin="0,0,24,0"><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.104}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.105}" /></StackPanel>
                                     </DockPanel>
                                 </StackPanel>
                             </Border>
                             <Border Style="{StaticResource Card}" BorderBrush="{DynamicResource Error}">
                                 <StackPanel>
-                                    <TextBlock Style="{StaticResource H3}" Text="Désinstaller" Foreground="{DynamicResource Error}" />
-                                    <TextBlock Style="{StaticResource Body}" Text="Supprime le profil CurseForge de Create Warfare, puis le launcher et ses réglages." Margin="0,4,0,12" />
+                                    <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.106}" Foreground="{DynamicResource Error}" />
+                                    <TextBlock Style="{StaticResource Body}" Text="{DynamicResource t.107}" Margin="0,4,0,12" />
                                     <CheckBox Style="{StaticResource Toggle}" IsChecked="{Binding KeepPlayerData}" Margin="0,0,0,14">
-                                        <TextBlock Style="{StaticResource Body}" Foreground="{DynamicResource Text}"><Run Text="Garder mes mondes, captures et schémas (copiés dans " /><Run Text="{Binding BackupRoot, Mode=OneWay}" FontFamily="{StaticResource Mono}" FontSize="12" /><Run Text=")" /></TextBlock>
+                                        <TextBlock Style="{StaticResource Body}" Foreground="{DynamicResource Text}"><Run Text="{DynamicResource t.108}" /><Run Text="{Binding BackupRoot, Mode=OneWay}" FontFamily="{StaticResource Mono}" FontSize="12" /><Run Text=")" /></TextBlock>
                                     </CheckBox>
-                                    <Button Style="{StaticResource DangerButton}" Content="Désinstaller Create Warfare et le launcher" ui:Ui.Icon="{StaticResource IcDelete}" Command="{Binding UninstallCommand}" HorizontalAlignment="Left" />
+                                    <Button Style="{StaticResource DangerButton}" Content="{DynamicResource t.109}" ui:Ui.Icon="{StaticResource IcDelete}" Command="{Binding UninstallCommand}" HorizontalAlignment="Left" />
                                 </StackPanel>
                             </Border>
                         </StackPanel>
@@ -711,19 +711,19 @@
             <!-- ============ LOGS ============ -->
             <DockPanel Style="{StaticResource Page}" Margin="{StaticResource PadPage}" Visibility="{Binding IsLogs, Converter={StaticResource Vis}}">
                 <DockPanel DockPanel.Dock="Top" Style="{StaticResource PageHeader}" Margin="0,0,0,16">
-                    <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="Retour à l'accueil (Échap)" Margin="0,0,14,0" VerticalAlignment="Center" />
+                    <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="{DynamicResource t.056}" Margin="0,0,14,0" VerticalAlignment="Center" />
                     <StackPanel>
-                        <TextBlock Style="{StaticResource Kicker}" Text="LOGS" Foreground="{DynamicResource Accent}" />
-                        <TextBlock Style="{StaticResource Title}" Text="Journal du launcher" />
+                        <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.110}" Foreground="{DynamicResource Accent}" />
+                        <TextBlock Style="{StaticResource Title}" Text="{DynamicResource t.015}" />
                     </StackPanel>
                 </DockPanel>
                 <WrapPanel DockPanel.Dock="Top" Margin="0,0,0,14">
-                    <Button Style="{StaticResource SecondaryButton}" Content="Copier" ui:Ui.Icon="{StaticResource IcCopy}" Command="{Binding CopyLogsCommand}" Margin="0,0,10,0" ToolTip="Copier les 400 dernières lignes" />
-                    <Button Style="{StaticResource SecondaryButton}" Content="Ouvrir le dossier" ui:Ui.Icon="{StaticResource IcFolder}" Command="{Binding OpenLogsCommand}" Margin="0,0,10,0" />
-                    <Button Style="{StaticResource SecondaryButton}" Content="Logs du jeu" ui:Ui.Icon="{StaticResource IcOpen}" Command="{Binding OpenGameLogsCommand}" Margin="0,0,10,0" ToolTip="Dossier logs de l'instance Minecraft" />
-                    <Button Style="{StaticResource SecondaryButton}" Content="Exporter" ui:Ui.Icon="{StaticResource IcZip}" Command="{Binding ExportLogsCommand}" Margin="0,0,10,0" ToolTip="Zip sur le Bureau" />
-                    <Button Style="{StaticResource SecondaryButton}" Content="Signaler un bug" ui:Ui.Icon="{StaticResource IcBug}" Command="{Binding ReportBugCommand}" Margin="0,0,10,0" />
-                    <Button Style="{StaticResource IconButton}" Content="{StaticResource IcRefresh}" Command="{Binding RefreshLogsCommand}" ToolTip="Actualiser" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.111}" ui:Ui.Icon="{StaticResource IcCopy}" Command="{Binding CopyLogsCommand}" Margin="0,0,10,0" ToolTip="{DynamicResource t.112}" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.092}" ui:Ui.Icon="{StaticResource IcFolder}" Command="{Binding OpenLogsCommand}" Margin="0,0,10,0" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.113}" ui:Ui.Icon="{StaticResource IcOpen}" Command="{Binding OpenGameLogsCommand}" Margin="0,0,10,0" ToolTip="{DynamicResource t.114}" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.115}" ui:Ui.Icon="{StaticResource IcZip}" Command="{Binding ExportLogsCommand}" Margin="0,0,10,0" ToolTip="{DynamicResource t.116}" />
+                    <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.117}" ui:Ui.Icon="{StaticResource IcBug}" Command="{Binding ReportBugCommand}" Margin="0,0,10,0" />
+                    <Button Style="{StaticResource IconButton}" Content="{StaticResource IcRefresh}" Command="{Binding RefreshLogsCommand}" ToolTip="{DynamicResource t.118}" />
                 </WrapPanel>
                 <Border Style="{StaticResource Card}" Padding="2">
                     <TextBox Text="{Binding LogText, Mode=OneWay}" IsReadOnly="True" FontFamily="{StaticResource Mono}" FontSize="12" Height="Auto" VerticalContentAlignment="Top"
@@ -741,10 +741,10 @@
             <ScrollViewer Style="{StaticResource Page}" VerticalScrollBarVisibility="Auto" Visibility="{Binding IsAbout, Converter={StaticResource Vis}}">
                 <StackPanel Margin="{StaticResource PadPage}" MaxWidth="820" HorizontalAlignment="Left">
                     <DockPanel Style="{StaticResource PageHeader}">
-                        <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="Retour à l'accueil (Échap)" Margin="0,0,14,0" VerticalAlignment="Center" />
+                        <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="{StaticResource IcBack}" Command="{Binding GoBackCommand}" ToolTip="{DynamicResource t.056}" Margin="0,0,14,0" VerticalAlignment="Center" />
                         <StackPanel>
-                            <TextBlock Style="{StaticResource Kicker}" Text="À PROPOS" Foreground="{DynamicResource Accent}" />
-                            <TextBlock Style="{StaticResource Title}" Text="Create Warfare Launcher" />
+                            <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.119}" Foreground="{DynamicResource Accent}" />
+                            <TextBlock Style="{StaticResource Title}" Text="{DynamicResource t.120}" />
                         </StackPanel>
                     </DockPanel>
                     <UniformGrid Columns="4" Margin="0,0,0,14">
@@ -758,28 +758,28 @@
                     </UniformGrid>
                     <Border Style="{StaticResource Card}" Margin="0,0,0,14">
                         <StackPanel>
-                            <TextBlock Style="{StaticResource H3}" Text="Liens" Margin="0,0,0,12" />
+                            <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.121}" Margin="0,0,0,12" />
                             <WrapPanel>
                                 <Button Style="{StaticResource SecondaryButton}" Content="GitHub" ui:Ui.Icon="{StaticResource IcCode}" Command="{Binding OpenLinkCommand}" CommandParameter="{Binding GithubUrl}" Margin="0,0,10,0" />
-                                <Button Style="{StaticResource SecondaryButton}" Content="Signaler un bug" ui:Ui.Icon="{StaticResource IcBug}" Command="{Binding ReportBugCommand}" Margin="0,0,10,0" />
-                                <Button Style="{StaticResource SecondaryButton}" Content="Suggestions" ui:Ui.Icon="{StaticResource IcStar}" Command="{Binding OpenLinkCommand}" CommandParameter="https://github.com/Robocnop/create-warfare/issues/new?title=%5BSuggestion%5D%20" Margin="0,0,10,0" />
+                                <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.117}" ui:Ui.Icon="{StaticResource IcBug}" Command="{Binding ReportBugCommand}" Margin="0,0,10,0" />
+                                <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.122}" ui:Ui.Icon="{StaticResource IcStar}" Command="{Binding OpenLinkCommand}" CommandParameter="https://github.com/Robocnop/create-warfare/issues/new?title=%5BSuggestion%5D%20" Margin="0,0,10,0" />
                                 <Button Style="{StaticResource SecondaryButton}" Content="Discord" ui:Ui.Icon="{StaticResource IcPeople}" Command="{Binding OpenLinkCommand}" CommandParameter="{Binding DiscordUrl}" Margin="0,0,10,0" Visibility="{Binding HasDiscord, Converter={StaticResource Vis}}" />
-                                <Button Style="{StaticResource SecondaryButton}" Content="Site web" ui:Ui.Icon="{StaticResource IcGlobe}" Command="{Binding OpenLinkCommand}" CommandParameter="{Binding WebsiteUrl}" Visibility="{Binding HasWebsite, Converter={StaticResource Vis}}" />
+                                <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource t.005}" ui:Ui.Icon="{StaticResource IcGlobe}" Command="{Binding OpenLinkCommand}" CommandParameter="{Binding WebsiteUrl}" Visibility="{Binding HasWebsite, Converter={StaticResource Vis}}" />
                             </WrapPanel>
                         </StackPanel>
                     </Border>
                     <Border Style="{StaticResource Card}" Margin="0,0,0,14">
                         <StackPanel>
-                            <TextBlock Style="{StaticResource H3}" Text="Raccourcis clavier" Margin="0,0,0,10" />
+                            <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.123}" Margin="0,0,0,10" />
                             <TextBlock Style="{StaticResource Body}" FontFamily="{StaticResource Mono}" FontSize="13" LineHeight="22"
-                                       Text="Entrée       Jouer / mettre à jour (accueil)&#x0a;Échap        Retour, fermer une fenêtre&#x0a;Ctrl + ,     Paramètres&#x0a;← / →        Image précédente / suivante" />
+                                       Text="{DynamicResource t.124}" />
                         </StackPanel>
                     </Border>
                     <Border Style="{StaticResource Card}">
                         <StackPanel>
-                            <TextBlock Style="{StaticResource H3}" Text="Crédits et licences" Margin="0,0,0,10" />
+                            <TextBlock Style="{StaticResource H3}" Text="{DynamicResource t.125}" Margin="0,0,0,10" />
                             <TextBlock Style="{StaticResource Body}" LineHeight="22"
-                                       Text="Modpack et launcher : Robocnop. Les mods appartiennent à leurs auteurs (liste dans MODLIST.md du dépôt).&#x0a;Polices : Rajdhani (Indian Type Foundry) et Creepster (Font Diner), licence SIL Open Font License 1.1.&#x0a;Icônes : Segoe Fluent Icons (Microsoft, fournies avec Windows).&#x0a;Minecraft est une marque de Mojang Studios ; ce launcher n'est pas affilié à Mojang ni à CurseForge." />
+                                       Text="{DynamicResource t.126}" />
                         </StackPanel>
                     </Border>
                 </StackPanel>
@@ -788,9 +788,9 @@
             <!-- ============ VISIONNEUSE (galerie) ============ -->
             <Grid Visibility="{Binding IsLightboxOpen, Converter={StaticResource Vis}}" Background="{DynamicResource Overlay}" Style="{StaticResource Page}">
                 <Image Source="{Binding LightboxImage}" Stretch="Uniform" Margin="72,56,72,84" />
-                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcClose}" Command="{Binding CloseLightboxCommand}" ToolTip="Fermer (Échap)" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="16" />
-                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronLeft}" Command="{Binding LightboxPrevCommand}" ToolTip="Précédente (←)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16" Width="48" Height="48" />
-                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronRight}" Command="{Binding LightboxNextCommand}" ToolTip="Suivante (→)" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="16" Width="48" Height="48" />
+                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcClose}" Command="{Binding CloseLightboxCommand}" ToolTip="{DynamicResource t.127}" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="16" />
+                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronLeft}" Command="{Binding LightboxPrevCommand}" ToolTip="{DynamicResource t.128}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="16" Width="48" Height="48" />
+                <Button Style="{StaticResource IconButton}" Content="{StaticResource IcChevronRight}" Command="{Binding LightboxNextCommand}" ToolTip="{DynamicResource t.129}" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="16" Width="48" Height="48" />
                 <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,24">
                     <TextBlock Text="{Binding LightboxCaption}" FontSize="15" HorizontalAlignment="Center" />
                     <TextBlock Text="{Binding LightboxCounter}" Style="{StaticResource Caption}" HorizontalAlignment="Center" Margin="0,4,0,0" />
@@ -809,7 +809,7 @@
                             </Style>
                         </Border.Style>
                     </Border>
-                    <Button DockPanel.Dock="Right" Style="{StaticResource IconButton}" Content="{StaticResource IcClose}" Command="{Binding DismissToastCommand}" ToolTip="Fermer" Margin="4" VerticalAlignment="Top" />
+                    <Button DockPanel.Dock="Right" Style="{StaticResource IconButton}" Content="{StaticResource IcClose}" Command="{Binding DismissToastCommand}" ToolTip="{DynamicResource t.003}" Margin="4" VerticalAlignment="Top" />
                     <Button DockPanel.Dock="Right" Style="{StaticResource SecondaryButton}" Content="{Binding ToastActionText}" Command="{Binding DismissToastActionCommand}" Height="34" Margin="8,0,0,0"
                             VerticalAlignment="Center" Visibility="{Binding HasToastAction, Converter={StaticResource Vis}}" />
                     <StackPanel Orientation="Horizontal" Margin="16,12,4,12">
@@ -863,25 +863,25 @@
             <Rectangle Fill="{DynamicResource Scrim}" />
             <Border Style="{StaticResource GlassCard}" Width="620" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="36,32">
                 <StackPanel>
-                    <TextBlock Style="{StaticResource Kicker}" Text="BIENVENUE" Foreground="{DynamicResource Accent}" />
+                    <TextBlock Style="{StaticResource Kicker}" Text="{DynamicResource t.130}" Foreground="{DynamicResource Accent}" />
                     <TextBlock FontFamily="{DynamicResource Display}" FontSize="44" FontWeight="Bold"><Run Text="CREATE " /><Run Text="WARFARE" Foreground="{DynamicResource Accent}" /></TextBlock>
                     <TextBlock Style="{StaticResource Body}" Margin="0,8,0,22"
-                               Text="Ce launcher installe le pack dans CurseForge et le garde à jour, sans jamais toucher à tes mondes, tes touches ni tes mods ajoutés." />
+                               Text="{DynamicResource t.131}" />
                     <StackPanel Margin="0,0,0,26">
                         <DockPanel Margin="0,0,0,14">
                             <TextBlock DockPanel.Dock="Left" Text="{StaticResource IcFolder}" FontFamily="{StaticResource Icons}" FontSize="18" Foreground="{DynamicResource Accent}" Width="34" />
-                            <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Instance" /><TextBlock Style="{StaticResource Body}" Text="{Binding InstancePath}" TextTrimming="CharacterEllipsis" TextWrapping="NoWrap" /></StackPanel>
+                            <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.068}" /><TextBlock Style="{StaticResource Body}" Text="{Binding InstancePath}" TextTrimming="CharacterEllipsis" TextWrapping="NoWrap" /></StackPanel>
                         </DockPanel>
                         <DockPanel Margin="0,0,0,14">
                             <TextBlock DockPanel.Dock="Left" Text="{StaticResource IcMemory}" FontFamily="{StaticResource Icons}" FontSize="18" Foreground="{DynamicResource Accent}" Width="34" />
-                            <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Mémoire" /><TextBlock Style="{StaticResource Body}" Text="{Binding RamAdvice}" /></StackPanel>
+                            <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.132}" /><TextBlock Style="{StaticResource Body}" Text="{Binding RamAdvice}" /></StackPanel>
                         </DockPanel>
                         <DockPanel>
                             <TextBlock DockPanel.Dock="Left" Text="{StaticResource IcServer}" FontFamily="{StaticResource Icons}" FontSize="18" Foreground="{DynamicResource Accent}" Width="34" />
-                            <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="Serveur" /><TextBlock Style="{StaticResource Body}" Text="{Binding ServerAddress}" FontFamily="{StaticResource Mono}" /></StackPanel>
+                            <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource t.133}" /><TextBlock Style="{StaticResource Body}" Text="{Binding ServerAddress}" FontFamily="{StaticResource Mono}" /></StackPanel>
                         </DockPanel>
                     </StackPanel>
-                    <Button Style="{StaticResource PrimaryButton}" Content="Commencer" ui:Ui.Icon="{StaticResource IcChevronRight}" Command="{Binding FinishOnboardingCommand}" HorizontalAlignment="Stretch" />
+                    <Button Style="{StaticResource PrimaryButton}" Content="{DynamicResource t.134}" ui:Ui.Icon="{StaticResource IcChevronRight}" Command="{Binding FinishOnboardingCommand}" HorizontalAlignment="Stretch" />
                 </StackPanel>
             </Border>
         </Grid>

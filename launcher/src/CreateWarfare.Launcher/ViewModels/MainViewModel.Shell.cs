@@ -523,7 +523,7 @@ public sealed partial class MainViewModel
         get => _ramValue;
         set { if (Set(ref _ramValue, Math.Round(value / 1024) * 1024)) Raise(nameof(RamLabel)); }
     }
-    public string RamLabel => $"{RamValue / 1024:0} Go";
+    public string RamLabel => $"{RamValue / 1024:0} " + T("s.unit.gb", "Go");
     public string RamAdvice => string.Format(T("s.ram.advice", "Conseillé pour ce PC : {0} Go ({1} Go installés). Le pack demande au moins 6 Go."),
         RecommendedRamMb / 1024, Math.Round(TotalRamMb / 1024.0));
     string _instanceRam = "";

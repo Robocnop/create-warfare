@@ -16,7 +16,7 @@ public partial class App : Application
         Motion.Apply(Resources);
         ThemeManager.Changed += () => HeroArt.Halloween = ThemeManager.Current == SeasonalTheme.Halloween;
         var settings = SettingsStore.Load();
-        Strings.Apply(settings.Language);
+        Strings.Apply(Environment.GetEnvironmentVariable("CW_LANG") ?? settings.Language); // CW_LANG : essais
         ThemeManager.Apply(settings.Theme);
         base.OnStartup(e);
     }

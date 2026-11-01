@@ -1,0 +1,14 @@
+{
+  "news": [],
+  "gallery": [],
+  "links": {
+    "discord": "",
+    "website": "",
+    "github": "https://github.com/Robocnop/create-warfare"
+  },
+  "server": {
+    "name": "Serveur Create Warfare",
+    "host": "jeu.robocnop.be",
+    "port": 27018
+  }
+}

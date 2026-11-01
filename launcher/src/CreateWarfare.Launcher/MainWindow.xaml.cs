@@ -16,7 +16,11 @@ public partial class MainWindow : Window
         {
             await Vm.RefreshAsync();
             // Essais et captures : CW_START_PAGE=news|gallery|settings|logs|about
-            if (Environment.GetEnvironmentVariable("CW_START_PAGE") is { Length: > 0 } page) Vm.Navigate(page);
+            if (Environment.GetEnvironmentVariable("CW_START_PAGE") is { Length: > 0 } page)
+            {
+                if (page == "repair") Vm.RepairCommand.Execute(null); // analyse seule : rien n'est écrit sans confirmation
+                else Vm.Navigate(page);
+            }
         };
         PreviewKeyDown += OnKey;
     }

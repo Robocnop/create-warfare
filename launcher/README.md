@@ -91,3 +91,34 @@ une illustration dessinée (engrenages) est affichée. Icône : `Assets/icon.ico
    Testé le 28/10 : l'exe 1.0.0 de la release passe seul en 1.0.1 (remplacement, relance, `.old` supprimé).
 4. Si un nouveau pack a besoin du nouveau launcher : `--min-launcher <version>`. Les anciens launchers bloquent
    alors la mise à jour du pack et proposent d'abord celle du launcher.
+
+## Interface 1.2 : contenu, images, thèmes
+
+### Images du carrousel et de la galerie
+- **Intégrées à l'exe** : déposer des `.png` / `.jpg` dans `launcher/src/CreateWarfare.Launcher/Assets/screenshots/`, puis recompiler
+  et publier le launcher. Ordre d'affichage = ordre alphabétique des noms (`01-base.png`, `02-artillerie.png`…). Idéal : 1920×1080.
+- **Sans republier** : `launcher-content.json` à la racine du dépôt (lu au démarrage, gardé en copie locale pour le hors-ligne) :
+  ```json
+  { "gallery": [ { "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/base.jpg", "caption": "La base" },
+                 { "image": "01-base.png", "caption": "Légende d'une image intégrée" } ],
+    "news":    [ { "title": "Saison 2", "date": "2026-11-15", "tag": "Événement", "body": "Texte…", "image": "https://…" } ],
+    "links":   { "discord": "", "website": "", "github": "https://github.com/Robocnop/create-warfare" },
+    "server":  { "name": "Serveur Create Warfare", "host": "jeu.robocnop.be", "port": 27018 } }
+  ```
+  Une image distante est téléchargée une fois puis mise en cache (`%LOCALAPPDATA%\CreateWarfareLauncher\images`).
+  Une image illisible est ignorée ; sans aucune image, l'illustration dessinée (engrenages) s'affiche.
+  Discord et Site restent cachés tant que leur adresse est vide.
+- Essai local : `CW_LAUNCHER_CONTENT=C:\chemin\launcher-content.json`.
+
+### Thèmes
+- Identité par défaut : `Themes/Palettes/Default.xaml` (acier + orange). Saisons : `Halloween.xaml` (15/10–05/11),
+  `Christmas.xaml` (01/12–06/01), `Summer.xaml` (juillet–août). Mêmes clés de couleur dans chaque palette.
+- Le joueur choisit dans Paramètres → Launcher → Thème (« Automatique » suit la date). Essai : `CW_THEME=halloween|christmas|summer|default`.
+- Ajouter une saison : copier une palette, l'ajouter à `SeasonalTheme.All` et à `ThemeManager.Apply`, puis à `ThemeOptions`.
+
+### Textes et langue
+- Tous les textes de l'interface sont dans `Strings/fr.xaml` (référence) et `Strings/en.xaml` (mêmes clés). Essai : `CW_LANG=en`.
+- Quelques messages d'état de la logique d'installation (MainViewModel.cs) restent en français.
+
+### Essais de l'interface
+- `CW_START_PAGE=news|gallery|settings|logs|about` ouvre directement une page (captures d'écran).
