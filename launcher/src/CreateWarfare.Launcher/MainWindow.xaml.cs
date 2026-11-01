@@ -15,11 +15,13 @@ public partial class MainWindow : Window
         Loaded += async (_, _) =>
         {
             await Vm.RefreshAsync();
-            // Essais et captures : CW_START_PAGE=news|gallery|settings|logs|about
+            // Essais et captures : CW_START_PAGE=news|gallery|settings[:game|launcher|instance|advanced]|logs|about
             if (Environment.GetEnvironmentVariable("CW_START_PAGE") is { Length: > 0 } page)
             {
-                if (page == "repair") Vm.RepairCommand.Execute(null); // analyse seule : rien n'est écrit sans confirmation
-                else Vm.Navigate(page);
+                var parts = page.Split(':', 2);
+                if (parts[0] == "repair") Vm.RepairCommand.Execute(null); // analyse seule : rien n'est écrit sans confirmation
+                else Vm.Navigate(parts[0]);
+                if (parts.Length == 2) Vm.SettingsTab = parts[1];
             }
         };
         PreviewKeyDown += OnKey;

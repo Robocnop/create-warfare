@@ -68,11 +68,12 @@ public sealed class HeroArt : FrameworkElement
 
         var s = Math.Min(w, h);
         var big = ShowTitle ? new Point(w * 0.40, h * 0.50) : new Point(w * 0.50, h * 0.46);
-        double rBig = s * 0.34, rSmall = s * 0.20;
-        var small = new Point(big.X + (rBig + rSmall) * 0.93 * Math.Cos(-0.75), big.Y + (rBig + rSmall) * 0.93 * Math.Sin(-0.75));
-        Gear(dc, new Point(w * 0.08, h * 0.95), s * 0.22, 11, -_angle * 1.5, BrassDark, null);
-        Gear(dc, big, rBig, 16, _angle, Brass, BrassEdge);
-        Gear(dc, small, rSmall, 10, -_angle * 1.6 + 9, Brass, BrassEdge);
+        double m = s * 0.34 / (BigTeeth / 2.0 + 1); // module commun : rayon extérieur de la grande roue = 0,34 s
+        var (small, aSmall) = Mesh(big, BigTeeth, _angle, SmallTeeth, m, -0.75);
+        var (low, aLow) = Mesh(big, BigTeeth, _angle, LowTeeth, m, 2.35);
+        Gear(dc, low, LowTeeth, m, aLow, BrassDark, null);
+        Gear(dc, big, BigTeeth, m, _angle, Brass, BrassEdge);
+        Gear(dc, small, SmallTeeth, m, aSmall, Brass, BrassEdge);
 
         // bande de signalisation en bas
         var band = new Rect(0, h - 26, w, 26);
@@ -142,12 +143,12 @@ public sealed class HeroArt : FrameworkElement
 
         // engrenages-citrouilles : les dents tournent, le visage reste droit
         var big = new Point(w * 0.40, h * 0.48);
-        double rBig = s * 0.33, rSmall = s * 0.19;
-        var small = new Point(big.X + (rBig + rSmall) * 0.93 * Math.Cos(-0.75), big.Y + (rBig + rSmall) * 0.93 * Math.Sin(-0.75));
-        Gear(dc, big, rBig, 16, _angle, Pumpkin, Moss, hollow: false);
-        Face(dc, big, rBig * 0.78);
-        Gear(dc, small, rSmall, 10, -_angle * 1.6 + 9, Pumpkin, Moss, hollow: false);
-        Face(dc, small, rSmall * 0.78);
+        double mod = s * 0.33 / (BigTeeth / 2.0 + 1);
+        var (small, aSmall) = Mesh(big, BigTeeth, _angle, SmallTeeth, mod, -0.75);
+        Gear(dc, big, BigTeeth, mod, _angle, Pumpkin, Moss, hollow: false);
+        Face(dc, big, PitchRadius(BigTeeth, mod) * 0.80);
+        Gear(dc, small, SmallTeeth, mod, aSmall, Pumpkin, Moss, hollow: false);
+        Face(dc, small, PitchRadius(SmallTeeth, mod) * 0.80);
 
         // nom du pack
         if (!ShowTitle) return;
@@ -248,11 +249,37 @@ public sealed class HeroArt : FrameworkElement
         dc.DrawEllipse(b, null, c, r, r);
     }
 
-    /// <summary>Roue dentée, avec un moyeu évidé (remplissage pair-impair) et des rayons si hollow.</summary>
-    static void Gear(DrawingContext dc, Point c, double r, int teeth, double angleDeg, Brush fill, Pen? edge, bool hollow = true)
+    // Nombre de dents : grande roue, petite roue (en haut à droite), roue sombre (en bas à gauche, thème de base).
+    const int BigTeeth = 16, SmallTeeth = 10, LowTeeth = 12;
+
+    // Profil d'une dent sur un pas (fractions du pas) : montée, sommet, descente, puis creux en arc.
+    // Symétrique autour de ToothCenter, creux centré sur ToothCenter + 0,5.
+    const double RiseEnd = 0.12, TipEnd = 0.44, FallEnd = 0.56, ToothCenter = (0 + FallEnd) / 2;
+
+    /// <summary>Rayon primitif : deux roues de même module engrènent quand l'entraxe vaut la somme de ces rayons.</summary>
+    static double PitchRadius(int teeth, double module) => module * teeth / 2;
+
+    /// <summary>
+    /// Place une roue menée contre une roue menante (direction theta, en radians) et calcule son angle (degrés)
+    /// pour qu'une dent de la menante tombe toujours dans un creux de la menée : rapport −Nmenante/Nmenée,
+    /// phase réglée sur la ligne des centres.
+    /// </summary>
+    static (Point Center, double AngleDeg) Mesh(Point driver, int driverTeeth, double driverAngleDeg, int teeth, double module, double theta)
+    {
+        double d = PitchRadius(driverTeeth, module) + PitchRadius(teeth, module);
+        var center = new Point(driver.X + d * Math.Cos(theta), driver.Y + d * Math.Sin(theta));
+        double s1 = 2 * Math.PI / driverTeeth, s2 = 2 * Math.PI / teeth, a1 = driverAngleDeg * Math.PI / 180;
+        // Phase de la menante sur la ligne des centres (en pas) + phase de la menée = constante : une dent face à un creux.
+        double a2 = theta + Math.PI - s2 * (0.5 + 2 * ToothCenter) + s2 * (theta - a1) / s1;
+        return (center, a2 * 180 / Math.PI);
+    }
+
+    /// <summary>Roue dentée de module donné, avec un moyeu évidé (remplissage pair-impair) et des rayons si hollow.</summary>
+    static void Gear(DrawingContext dc, Point c, int teeth, double module, double angleDeg, Brush fill, Pen? edge, bool hollow = true)
     {
         var g = new StreamGeometry { FillRule = FillRule.EvenOdd };
-        double step = 2 * Math.PI / teeth, a0 = angleDeg * Math.PI / 180, root = r * 0.84;
+        double pitch = PitchRadius(teeth, module), r = pitch + module, root = pitch - 1.15 * module;
+        double step = 2 * Math.PI / teeth, a0 = angleDeg * Math.PI / 180;
         Point P(double rad, double a) => new(c.X + rad * Math.Cos(a), c.Y + rad * Math.Sin(a));
         using (var ctx = g.Open())
         {
@@ -260,9 +287,9 @@ public sealed class HeroArt : FrameworkElement
             for (int i = 0; i < teeth; i++)
             {
                 double a = a0 + i * step;
-                ctx.LineTo(P(r, a + step * 0.12), true, true);
-                ctx.LineTo(P(r, a + step * 0.42), true, true);
-                ctx.LineTo(P(root, a + step * 0.54), true, true);
+                ctx.LineTo(P(r, a + step * RiseEnd), true, true);
+                ctx.LineTo(P(r, a + step * TipEnd), true, true);
+                ctx.LineTo(P(root, a + step * FallEnd), true, true);
                 ctx.ArcTo(P(root, a + step), new Size(root, root), 0, false, SweepDirection.Clockwise, true, true);
             }
             if (hollow)

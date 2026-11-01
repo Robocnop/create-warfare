@@ -31,7 +31,12 @@ public sealed class ParamCommand : System.Windows.Input.ICommand
     public void Execute(object? parameter) => _run(parameter);
 }
 
-public sealed record Option(string Key, string Label);
+/// <summary>Choix d'une liste déroulante. ToString renvoie le libellé : sans ça, la zone fermée d'une ComboBox
+/// pouvait afficher « Option { Key = …, Label = … } ».</summary>
+public sealed record Option(string Key, string Label)
+{
+    public override string ToString() => Label;
+}
 public sealed class SlideDot : Observable
 {
     public int Index { get; init; }
