@@ -2,6 +2,13 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.7.7 — 2026-11-01
+
+- **Correctif du plantage du serveur** (encore en déposant un hélicoptère) : [SBW] Electronic Warfare était écrit pour
+  une version plus ancienne de Superb Warfare et faisait planter le serveur dès qu'un véhicule tournait. Retiré.
+- **[SBW] Drone Warfare retiré** : il modifiait des classes qui n'existent plus dans notre version de Superb Warfare.
+- Tous les autres mods ajoutés en 1.7.4 et 1.7.5 ont été vérifiés : leurs modifications de code se chargent sans erreur.
+
 ## 1.7.6 — 2026-11-01
 
 - **Correctif du plantage du serveur** : poser un engin (hélicoptère…) d'un clic droit faisait planter le serveur.
@@ -19,8 +26,7 @@ Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` 
 - **Touches** : Studious Keybinds (Options → Commandes → Clavier) montre un clavier, avec les conflits en rouge.
 - **Aviation** : cordes à grimper, tuyaux encastrés, transmissions et liaisons, toolgun pour engins Sable ;
   Jade affiche les blocs des engins.
-- **Superb Warfare** : guerre électronique (brouilleurs, radios, drones FPV, EMP, missile guidé), Drone Warfare,
-  défense antiaérienne rapprochée (Advanced CIWS), drones Shahed (Skyfront).
+- **Superb Warfare** : défense antiaérienne rapprochée (Advanced CIWS), drones Shahed (Skyfront).
 - **Advanced Peripherals** (CC: Tweaked) : détecteur de joueurs limité à 64 blocs, sans position exacte des joueurs.
 - **Create: Vintage** : nouvelles machines de métallurgie (table vibrante, presse à cintrer, tour, enrouleuse…).
 

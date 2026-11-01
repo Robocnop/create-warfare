@@ -2490,16 +2490,6 @@ hash = "2074a2a56e71b8fca9cfe0b1735b4c33e877cefd4d282aa7e9856f50257d07f9"
 metafile = true
 
 [[files]]
-file = "mods/sbw-drone-warfare.pw.toml"
-hash = "55693cc240a91d7da6fcf243a925d70b2dde884ea22a6cffd25dfab77ddbd2fd"
-metafile = true
-
-[[files]]
-file = "mods/sbw-electronic-warfare.pw.toml"
-hash = "a633e0e2b6e98047e982fe694ccb94c424f576607584f6d5628949315f369559"
-metafile = true
-
-[[files]]
 file = "mods/scsuperbbridge.pw.toml"
 hash = "10ae3479a5e24757c3c7c1ec4b2031604285c5e70eff95da41e29e3cd8af12c8"
 metafile = true

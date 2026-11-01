@@ -1,6 +1,6 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 261 mods et packs.
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 259 mods et packs.
 Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30, de la 1.7.2 : 2026-10-31).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
@@ -28,9 +28,8 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
   il faisait planter le serveur au clic droit, mixin écrit pour une autre version de Carry On). Visuels (client) :
   Not Enough Animations (+ EMF Compat), First-person Model, 3D Skin Layers, Better Animations Collection, Camera Overhaul,
   Presence Footsteps (+ Sable), Particular, ItemPhysic Lite, Dynamic FPS, Sodium Extra ; Create: Sound of Steam.
-  Gameplay : Aeronautics (cordes, tuyaux encastrés, Transmission & Linkage, Toolgun), Superb Warfare (Electronic Warfare,
-  Drone Warfare 1.0.6 et Advanced CIWS « SBW 0.8.9 », **figés** : les versions plus récentes exigent SBW 0.8.9.1 pile
-  ou 0.8.8 ; Skyfront), Advanced Peripherals (détecteur de joueurs bridé à 64 blocs, sans `getPlayer`, config livrée),
+  Gameplay : Aeronautics (cordes, tuyaux encastrés, Transmission & Linkage, Toolgun), Superb Warfare (Advanced CIWS « SBW 0.8.9 », **figé** ; Skyfront ;
+  Electronic Warfare et Drone Warfare retirés en 1.7.7 : écrits pour une autre version de SBW, plantage du serveur), Advanced Peripherals (détecteur de joueurs bridé à 64 blocs, sans `getPlayer`, config livrée),
   Create: Vintage (+ KubeJS Create, qui charge aussi les recettes KubeJS de Northstar). 96 recettes de compatibilité de
   Vintage avec Crafts & Additions ne se chargent pas (ancien format), sans gravité.
 - **Absents en 1.21.1 NeoForge** : CBC Nukes, Create: Propulsion (remplacé par Create Propulsion: Simulated),
@@ -319,8 +318,6 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Create Aeronautics: Encased Fluid Pipes | `aeroencasedpipe-1.0.7.jar` | client + serveur | CurseForge |
 | Create Aeronautics: Transmission & Linkage | `create_aeronautics_transmission_linkage-0.2.9.jar` | client + serveur | CurseForge |
 | Create Aeronautics: Toolgun | `create_aeronautics_toolgun-0.3.7.jar` | client + serveur | Modrinth |
-| [SBW] Electronic Warfare | `sbw_ew_addon-1.1.1+1.21.1.jar` | client + serveur | CurseForge |
-| [SBW] Drone Warfare | `SBW-Drone-Warfare-1.21.1-NeoForge-1.0.6.jar` | client + serveur | CurseForge |
 | [SBW] Advanced CIWS | `SBW-Advanced-CIWS-NeoForge-1.21.1-SBW-0.8.9-final-v1.0.8-VISUALFIX2.jar` | client + serveur | CurseForge |
 | [SBW] Skyfront | `skyfront-1.21.1-1.5.0.jar` | client + serveur | Modrinth |
 | Advanced Peripherals | `AdvancedPeripherals-1.21.1-0.8.2a.jar` | client + serveur | CurseForge |
