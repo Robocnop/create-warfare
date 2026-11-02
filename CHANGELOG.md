@@ -2,6 +2,12 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.8.4 — 2026-11-02
+
+- **Quête du routeur Wi-Fi** : explique où trouver la puce de fournisseur. Elle ne se fabrique pas : au bloc Serveur,
+  lier son réseau (onglet Networks), le choisir comme fournisseur principal (onglet Wi-Fi), puis Issue.
+- Même monde, progression des quêtes gardée.
+
 ## 1.8.3 — 2026-11-02
 
 - **Deux nouveaux chapitres de quêtes** qui expliquent les nouveaux mods :

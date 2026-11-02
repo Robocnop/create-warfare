@@ -122,7 +122,7 @@ hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "746c71f6a575a154c633961a38fc235df47e7cd840800bee43763e590402f779"
+hash = "442cc347871b7a51e8ae896db91ef03878adc5620f5420c3cb022eba7efea933"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
