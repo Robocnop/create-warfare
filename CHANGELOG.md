@@ -2,6 +2,11 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## Launcher 1.4.1 — 2026-11-02 (pré-release)
+
+- **Plein écran** : la fenêtre agrandie s'arrête au-dessus de la barre des tâches (avant, la barre recouvrait le bas
+  de la fenêtre, signalé par un joueur).
+
 ## Launcher 1.4.0 — 2026-11-02 (pré-release)
 
 - **Mode performance** (Paramètres → Jeu) : désactive les mods visuels lourds (Fresh Animations/EMF/ETF, Visuality,

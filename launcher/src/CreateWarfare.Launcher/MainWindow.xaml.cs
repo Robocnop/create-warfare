@@ -90,10 +90,52 @@ public partial class MainWindow : Window
 
     void OnStateChanged()
     {
-        // Sans cadre Windows, une fenêtre agrandie déborde de l'écran de l'épaisseur de la bordure de redimensionnement.
-        BorderThickness = WindowState == WindowState.Maximized ? new Thickness(7) : new Thickness(1);
+        // Agrandie, la fenêtre occupe exactement la zone de travail (WM_GETMINMAXINFO plus bas) : pas de bordure.
+        BorderThickness = WindowState == WindowState.Maximized ? new Thickness(0) : new Thickness(1);
         MaxButton.Content = FindResource(WindowState == WindowState.Maximized ? "IcRestore" : "IcMaximize");
         MaxButton.ToolTip = WindowState == WindowState.Maximized ? "Restaurer" : "Agrandir";
+    }
+
+    /// <summary>
+    /// Sans cadre Windows (WindowStyle=None), une fenêtre agrandie prend tout l'écran : la barre des tâches passe
+    /// par-dessus le bas de la fenêtre. On donne à Windows la zone de travail de l'écran où se trouve la fenêtre.
+    /// </summary>
+    protected override void OnSourceInitialized(EventArgs e)
+    {
+        base.OnSourceInitialized(e);
+        System.Windows.Interop.HwndSource.FromHwnd(new System.Windows.Interop.WindowInteropHelper(this).Handle)?.AddHook(WndProc);
+    }
+
+    static IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
+    {
+        const int WM_GETMINMAXINFO = 0x0024;
+        if (msg != WM_GETMINMAXINFO) return IntPtr.Zero;
+        var monitor = Native.MonitorFromWindow(hwnd, 2 /* MONITOR_DEFAULTTONEAREST */);
+        var mi = new Native.MONITORINFO { cbSize = System.Runtime.InteropServices.Marshal.SizeOf<Native.MONITORINFO>() };
+        if (monitor == IntPtr.Zero || !Native.GetMonitorInfo(monitor, ref mi)) return IntPtr.Zero;
+        var mmi = System.Runtime.InteropServices.Marshal.PtrToStructure<Native.MINMAXINFO>(lParam);
+        mmi.ptMaxPosition.X = mi.rcWork.Left - mi.rcMonitor.Left;
+        mmi.ptMaxPosition.Y = mi.rcWork.Top - mi.rcMonitor.Top;
+        mmi.ptMaxSize.X = mi.rcWork.Right - mi.rcWork.Left;
+        mmi.ptMaxSize.Y = mi.rcWork.Bottom - mi.rcWork.Top;
+        System.Runtime.InteropServices.Marshal.StructureToPtr(mmi, lParam, true);
+        return IntPtr.Zero; // laisser Windows compléter (taille minimale, etc.)
+    }
+
+    static class Native
+    {
+        [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential)]
+        public struct POINT { public int X, Y; }
+        [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential)]
+        public struct RECT { public int Left, Top, Right, Bottom; }
+        [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential)]
+        public struct MINMAXINFO { public POINT ptReserved, ptMaxSize, ptMaxPosition, ptMinTrackSize, ptMaxTrackSize; }
+        [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential)]
+        public struct MONITORINFO { public int cbSize; public RECT rcMonitor, rcWork; public uint dwFlags; }
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern IntPtr MonitorFromWindow(IntPtr hwnd, uint flags);
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool GetMonitorInfo(IntPtr hMonitor, ref MONITORINFO info);
     }
 
     void OnMinimize(object sender, RoutedEventArgs e) => WindowState = WindowState.Minimized;
