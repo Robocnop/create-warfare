@@ -1,0 +1,7 @@
+{
+ "cullleaves.midnightconfig.cullRoots": "Masquer les faces cachées des racines de palétuvier",
+ "cullleaves.midnightconfig.cullRoots.tooltip": "Masque les faces cachées des racines de palétuvier",
+ "cullleaves.midnightconfig.enabled": "Masquer les faces cachées des feuilles",
+ "cullleaves.midnightconfig.enabled.tooltip": "Masque les faces cachées des feuilles, pour un bon gain de performances",
+ "cullleaves.midnightconfig.title": "Réglages de Cull Leaves"
+}

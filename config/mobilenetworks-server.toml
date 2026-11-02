@@ -1,0 +1,11 @@
+[voice]
+	#Allow normal Simple Voice Chat proximity, including during phone calls.
+	#False restores private calls only. Voice groups remain disabled.
+	proximityEnabled = true
+	#Allow the optional speakerphone button. Requires proximityEnabled.
+	#Speakerphone is OFF at the start of every call.
+	speakerphoneEnabled = true
+	#Speakerphone radius in blocks. Does not change normal proximity range.
+	# Default: 12.0
+	# Range: 2.0 ~ 32.0
+	speakerphoneRange = 12.0

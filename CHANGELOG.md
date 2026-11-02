@@ -2,6 +2,23 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.8.2 — 2026-11-02
+
+- **Mobile Networks** : téléphones portables, numéros, appels vocaux privés (par Simple Voice Chat), SMS, antennes en
+  cuivre, fer ou diamant à construire et à défendre, couverture selon la distance. Le **chat textuel et le chat vocal de
+  proximité restent actifs** (le mod les coupait par défaut). Téléphone, antennes, serveur et routeur se fabriquent
+  avec des pièces de Create (tubes électroniques, plaques, fil de cuivre, mécanisme de précision).
+- **Cuffed Ported** : menottes et entraves (avec clés), crochets de serrure, cadenas, coffres-forts, portes de cellule,
+  blocs renforcés, pilori, guillotine, boîte de confiscation et loupe de fouille (prendre des objets à un joueur
+  entravé). Menotter un joueur demande qu'il ait **moins de 30 % de sa vie**.
+- **Performance** : Structure Layout Optimizer (génération des structures), Let Me Despawn (moins de mobs qui
+  s'accumulent), Get It Together, Drops! (objets au sol regroupés, utile après les grosses explosions), Ksyxis
+  (chargement du monde plus rapide), Cull Leaves (client : faces cachées des feuilles).
+- **Nouveaux joueurs** : réglages plus légers au premier lancement (Distant Horizons à 128 chunks sans SSAO, éclairage
+  des machines de Create allégé). Les réglages des joueurs existants ne changent pas.
+- **Traductions** : 801 textes en français (Mobile Networks, Cuffed et bibliothèques).
+- **Même monde** : rien à recréer.
+
 ## 1.8.1 — 2026-11-01
 
 - **Nouveaux mods**, pour construire la gare « Train Station » de createmod.com : Macaw's Lights and Lamps (lampes),

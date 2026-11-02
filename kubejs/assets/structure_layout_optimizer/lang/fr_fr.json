@@ -1,0 +1,8 @@
+{
+ "config.structure_layout_optimizer.deduplicate_shuffled_template_pool_element_list": "Dédoublonner la liste mélangée des éléments de pool",
+ "config.structure_layout_optimizer.deduplicate_shuffled_template_pool_element_list.desc": "Utilise une autre méthode pour générer les structures un peu plus vite encore que l'optimisation des poids des pools faite par défaut par ce mod. Elle retire les doublons de la liste des pièces que les structures tirent de leur pool.\nLa génération reste correcte, mais la disposition des structures change par rapport à ce réglage désactivé (les graines ne donnent plus les mêmes structures qu'en vanilla). Ce gain peut valoir le coup dans les gros modpacks où beaucoup de mods de structures mettent des poids très élevés dans leurs pools.\n\nPour : un peu plus de performances avec les pools à poids élevés.\nContre : la disposition des structures ne correspond plus aux graines vanilla (elle n'est pas cassée, juste différente).",
+ "config.structure_layout_optimizer.desc": "Tentative d'optimisation de la génération par jigsaw",
+ "config.structure_layout_optimizer.link.bug_report": "Signaler un bug",
+ "config.structure_layout_optimizer.link.license": "Licence",
+ "config.structure_layout_optimizer.title": "Structure Layout Optimizer"
+}

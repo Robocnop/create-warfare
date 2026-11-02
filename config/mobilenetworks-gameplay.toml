@@ -1,0 +1,4 @@
+[chat]
+	#Allow normal Minecraft text chat. False preserves phone-based roleplay.
+	#On dedicated servers this server file overrides every client's local preference.
+	normalChatEnabled = true

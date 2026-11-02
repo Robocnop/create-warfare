@@ -1,0 +1,6 @@
+{
+ "getittogetherdrops.configuration.checkY": "Vérifier en hauteur",
+ "getittogetherdrops.configuration.checkY.tooltip": "Activé : les objets au sol cherchent aussi au-dessus et en dessous d'eux. Désactivé : comportement vanilla.",
+ "getittogetherdrops.configuration.radius": "Rayon",
+ "getittogetherdrops.configuration.radius.tooltip": "Rayon (en blocs) dans lequel les objets au sol cherchent d'autres objets pour fusionner (0,5 = vanilla)."
+}

@@ -1,0 +1,13 @@
+name = "Mobile Networks"
+filename = "MobileNetworks-4.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7d469cc7a8b84259067f286e346e965d34ded5c0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9322847
+project-id = 1689741

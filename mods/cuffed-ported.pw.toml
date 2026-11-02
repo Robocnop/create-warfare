@@ -1,0 +1,13 @@
+name = "Cuffed Ported"
+filename = "Cuffed-1.21.1-1.0.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "162aabd53444969f91d80dbd6652953b776a889e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9335414
+project-id = 1623594

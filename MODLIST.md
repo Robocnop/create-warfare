@@ -1,7 +1,7 @@
 # Create Warfare — liste des mods
 
-Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 265 mods et packs.
-Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30, de la 1.7.2 : 2026-10-31).
+Minecraft **1.21.1** · NeoForge **21.1.264** · Create **6.0.10** · 285 mods et packs.
+Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts de la 1.6.0 : 2026-10-29, de la 1.7.0 : 2026-10-30, de la 1.7.2 : 2026-10-31, de la 1.8.2 : 2026-11-02).
 
 ## Notes de compatibilité (testé le 2026-10-19 sur serveur dédié : démarrage OK, 122 quêtes chargées)
 - **Écartés** : Mi Bombo, Create: Steel Armor Blocks, SSRD, StickyWheels (licence « All Rights Reserved » et absents
@@ -68,6 +68,11 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
   Propriété partagée avec l'équipe FTB (`enable_team_ownership`), caméras sans chargement de chunks.
 - **CC: Tweaked** (1.4.0) : CC:CBC (pilotage des canons), Create: Avionics (blocs Aeronautics/Simulated/Offroad),
   Create: CC Better Recipes (recettes via Create). Create 6 gère CC: Tweaked de base (trains, gares, compteurs).
+- **1.8.2** : Mobile Networks (téléphones, antennes, appels vocaux par Simple Voice Chat ; livré avec le chat textuel et la
+  proximité vocale **gardés**, `config/mobilenetworks-*.toml` ; recettes via Create dans `balance/telecom.js`) et Cuffed Ported
+  (menottes, prison, loupe de fouille ; menotter demande moins de 30 % de vie, `config/cuffed-server.toml`).
+  Performance : Structure Layout Optimizer, Let Me Despawn, Get It Together Drops, Ksyxis (serveur et client), Cull Leaves (client).
+  Écartés : More Culling (sa 1.0.11 déclare Minecraft `[1.21,1.21.1)`), ScalableLux (Sable le déclare incompatible).
 - `allow-flight=true` est obligatoire sur le serveur (avions, jetpacks), sinon les joueurs sont expulsés.
 
 | Mod | Fichier | Côté | Source |
@@ -77,6 +82,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | [NTGL] NukaTeam's Gun Lib | `ntgl-1.21.1-3.2.0.jar` | client + serveur | CurseForge |
 | Advanced Weather | `advancedweather-0.1.2-cw.jar` | client + serveur | CurseForge, patché (mixins client), inclus dans le zip |
 | AllTheLeaks (Memory Leak Fix) | `alltheleaks-1.1.14-1.21.1-neoforge.jar` | client + serveur | CurseForge |
+| Almanac Lib | `almanac-neoforge-1.21.1-1.26.10.3.jar` | client + serveur | CurseForge |
 | Almost Unified | `almostunified-neoforge-1.21.1-1.4.2.jar` | client + serveur | CurseForge |
 | Alternate Current | `alternate_current-mc1.21-1.9.0.jar` | client + serveur | CurseForge |
 | AppleSkin | `appleskin-neoforge-mc1.21-3.0.9.jar` | client + serveur | CurseForge |
@@ -195,6 +201,8 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Create: Tweaked Controllers | `create_tweaked_controllers-1.21.1-1.2.7.jar` | client + serveur | CurseForge |
 | Create: Vibrant Vaults | `create_vibrant_vaults-0.3.2.jar` | client + serveur | CurseForge |
 | Cristel Lib | `cristellib-neoforge-1.21.1-3.1.7.jar` | client + serveur | CurseForge |
+| Cuffed Ported | `Cuffed-1.21.1-1.0.1-neoforge.jar` | client + serveur | CurseForge |
+| Cull Leaves | `cullleaves-neoforge-4.1.1+1.21.1.jar` | client seul | Modrinth (inclus dans le zip) |
 | Cupboard | `cupboard-1.21.1-4.2.jar` | client + serveur | CurseForge |
 | Cut Through | `CutThrough-v21.1.0-1.21.1-NeoForge.jar` | client seul | CurseForge |
 | Deeper and Darker | `deeperdarker-neoforge-1.21.1-1.4.1.jar` | client + serveur | CurseForge |
@@ -222,6 +230,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | FTB Quests (NeoForge) | `ftb-quests-neoforge-2101.1.37.jar` | client + serveur | CurseForge |
 | FTB Teams (NeoForge) | `ftb-teams-neoforge-2101.1.11.jar` | client + serveur | CurseForge |
 | GeckoLib | `geckolib-neoforge-1.21.1-4.9.3.jar` | client + serveur | CurseForge |
+| Get It Together, Drops! | `getittogetherdrops-neoforge-1.21.5-1.4.jar` | client + serveur | CurseForge |
 | GlitchCore | `GlitchCore-neoforge-1.21.1-2.1.0.2.jar` | client + serveur | CurseForge |
 | Iceberg [Neo/Forge] | `Iceberg-1.21.1-neoforge-1.3.2.jar` | client seul | CurseForge |
 | ImmediatelyFast | `ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar` | client seul | CurseForge |
@@ -236,13 +245,17 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Just Enough Resources (JER) | `JustEnoughResources-NeoForge-1.21.1-1.6.0.57.jar` | client + serveur | CurseForge |
 | Kaleidoscope Cookery | `kaleidoscopecookery-1.6.0-neoforge+mc1.21.1.jar` | client + serveur | CurseForge |
 | Kotlin for Forge | `kotlinforforge-5.12.0-all.jar` | client + serveur | CurseForge |
+| Ksyxis | `Ksyxis-1.4.6.jar` | client + serveur | CurseForge |
 | KubeJS | `kubejs-neoforge-2101.7.2-build.377.jar` | client + serveur | CurseForge |
+| Let Me Despawn | `letmedespawn-neoforge-1.21.1-1.26.10.2.jar` | client + serveur | CurseForge |
 | libIPN | `libIPN-neoforge-1.21.1-6.6.3.jar` | client seul | CurseForge |
 | Lithium (Fabric/NeoForge) | `lithium-neoforge-0.15.4+mc1.21.1.jar` | client + serveur | CurseForge |
 | Lithostitched | `lithostitched-1.8.1-neoforge-21.1.jar` | client + serveur | CurseForge |
 | Lootr (Forge & NeoForge) | `lootr-neoforge-1.21.1-1.11.38.127.jar` | client + serveur | CurseForge |
 | Mechanicals Lib | `mechanicals-1.21.1-1.1.6.jar` | client + serveur | CurseForge |
 | MezzConfig | `mezz_config-1.21.1-neoforge-0.6.9-standalone.jar` | client + serveur | CurseForge |
+| MidnightLib | `midnightlib-neoforge-1.10.0+1.21.1.jar` | client seul | Modrinth (inclus dans le zip) |
+| Mobile Networks | `MobileNetworks-4.1.0.jar` | client + serveur | CurseForge |
 | ModernFix | `modernfix-neoforge-5.27.27+mc1.21.1.jar` | client + serveur | CurseForge |
 | Mouse Tweaks | `MouseTweaks-neoforge-mc1.21-2.26.1.jar` | client seul | CurseForge |
 | Mowzie's Mobs | `mowziesmobs-1.21.1-1.8.2.jar` | client + serveur | CurseForge |
@@ -253,6 +266,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Packet Fixer | `packetfixer-3.3.1-1.20.5-1.21.X-merged.jar` | client + serveur | CurseForge |
 | Particle Effects | `ParticleEffects-1.6.0+1.21.1+neoforge.jar` | client seul | CurseForge |
 | Particle Core | `particle_core-0.3.3+1.21+neoforge.jar` | client seul | CurseForge |
+| Resourceful Config | `resourcefulconfig-neoforge-1.21-3.0.11.jar` | client + serveur | CurseForge |
 | SoundBarrier (bang du mur du son > ~70 blocs/s) | `SoundBarrier-1.4.jar` | client + serveur | CurseForge |
 | Pehkui | `Pehkui-3.8.3+1.21-neoforge.jar` | client + serveur | CurseForge |
 | Placebo | `Placebo-1.21.1-9.9.4.jar` | client + serveur | CurseForge |
@@ -281,6 +295,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Sophisticated Core | `sophisticatedcore-1.21.1-1.5.19.2434.jar` | client + serveur | CurseForge |
 | spark | `spark-1.10.124-neoforge.jar` | client + serveur | CurseForge |
 | Steam 'n' Rails Neoforge | `railways-0.3.0-beta.2+neoforge-mc1.21.1.jar` | client + serveur | CurseForge |
+| Structure Layout Optimizer | `structure_layout_optimizer-neoforge-1.0.12.jar` | client + serveur | CurseForge |
 | Strut Your Stuff (Struts) | `struts-1.3.1.jar` | client + serveur | CurseForge |
 | SuperMartijn642's Config Lib | `supermartijn642configlib-1.1.8-neoforge-mc1.21.jar` | client seul | CurseForge |
 | Terralith | `Terralith_1.21.x_v2.6.2.jar` | client + serveur | CurseForge |

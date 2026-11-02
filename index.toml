@@ -29,6 +29,18 @@ file = "config/createbigcannons-server.toml"
 hash = "9c090b6112995c9ae44c957be22e2608df1b7751d2ea1889ca18270d7522d7c7"
 
 [[files]]
+file = "config/cuffed-server.toml"
+hash = "26c01559c35d24030679c06809657517c8190865eccc726fcc3c5ecc827d2ff6"
+
+[[files]]
+file = "config/defaultoptions/extra/config/DistantHorizons.toml"
+hash = "c4ac830a478da1dd5ffbbaa8b4c7926d9adab3e19d272c73990242464461fa32"
+
+[[files]]
+file = "config/defaultoptions/extra/config/flywheel-client.toml"
+hash = "3b5653703846e2e5f57b6beda874b3709733b2efd1556600e8ae6e527aa27a63"
+
+[[files]]
 file = "config/defaultoptions/options.txt"
 hash = "97cc0871856c76b2d008ea263efc6c0aad464ca928ac61a63e122dabf5b9f1c6"
 
@@ -107,6 +119,14 @@ hash = "bfa2f3365b2416216082141f73a13be59f825befc864e12ce2191e2be5aa8319"
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
 hash = "e8eea508087824dd7f40c4e423fd4188fcf3a413728e0b56b456e3094e39e375"
+
+[[files]]
+file = "config/mobilenetworks-gameplay.toml"
+hash = "0e069aa2b6e7f0f10b6effe900267cfe4d206c6e44490abd73e8cd31bc2d633c"
+
+[[files]]
+file = "config/mobilenetworks-server.toml"
+hash = "c2e3beb43b2ab23b68c4e46521d168f2040acadd817f5e4626ddcf9f7078fbac"
 
 [[files]]
 file = "config/pocket-server.toml"
@@ -509,6 +529,14 @@ file = "kubejs/assets/cristellib/lang/fr_fr.json"
 hash = "ae5b7c59ca65b014a3c95565a9b25a94c7d757641444ab7bb100d27d3ef6c3a8"
 
 [[files]]
+file = "kubejs/assets/cuffed/lang/fr_fr.json"
+hash = "d854c6f8f6654bfa7185e529a9c3fc73a459df74bce61842bae066d2c4cd5b4d"
+
+[[files]]
+file = "kubejs/assets/cullleaves/lang/fr_fr.json"
+hash = "3e703b3fd2de0de5f4bf7e570580a58dfcbb5462a95261fc8343ab34e60ca3c5"
+
+[[files]]
 file = "kubejs/assets/curios/lang/fr_fr.json"
 hash = "94c2a23e0369b0e7f6f704bf06a0d870dc3172b767753dc542129efab275c709"
 
@@ -535,6 +563,10 @@ hash = "11fb7e434761d2e9332cd0f1fe6c550752c4f89d9dcedaa4d650779172a55fe1"
 [[files]]
 file = "kubejs/assets/dragonlib/lang/fr_fr.json"
 hash = "741e48bd9f2f03e1c3531dcbaf3bbd1960493d72d9573771db6d527adc7de78b"
+
+[[files]]
+file = "kubejs/assets/dungeonconfig/lang/fr_fr.json"
+hash = "9891b7fbe13c35673d5c154ade591d6943a8adbdf95d5f1fe9e289ff80f3e9f5"
 
 [[files]]
 file = "kubejs/assets/durabilitytooltip/lang/fr_fr.json"
@@ -621,6 +653,10 @@ file = "kubejs/assets/garnished/lang/fr_fr.json"
 hash = "2ba43f85e54d4726aa2b3968324fc79de4699132f4961b54415a30cbafc88c82"
 
 [[files]]
+file = "kubejs/assets/getittogetherdrops/lang/fr_fr.json"
+hash = "0c5c252bef01264fd1a130a1e7629b3a7087ff673c8521ae70ef276240f2acfe"
+
+[[files]]
 file = "kubejs/assets/interiors/lang/fr_fr.json"
 hash = "45dc753e237a583681e3b78ef7ee5fd402e6d5501f32122879c3e59f07698ab7"
 
@@ -665,6 +701,10 @@ file = "kubejs/assets/kaleidoscope_cookery/lang/fr_fr.json"
 hash = "b249e22746df28483c752d1dd874534740e85f10ab912bcf975732535d3cf377"
 
 [[files]]
+file = "kubejs/assets/ksyxis/lang/fr_fr.json"
+hash = "f34e125f654d2cbe18d9f0d27faec0158a3cbe824ab76d5fea8b16fb7eefb2c2"
+
+[[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
 hash = "8f353cf222047ec7f5904d3e280dda96119b4a136ca03b76f63b58542aef8cc5"
 
@@ -691,6 +731,14 @@ hash = "f6c0d7e0682546b0df9a435ad9d93b310779d9e3bc85269e5e7aeb79fd4969bf"
 [[files]]
 file = "kubejs/assets/mezz_config/lang/fr_fr.json"
 hash = "f1d032d78972430e17986af135f8afe3d868050a133611ecb978df33c495d7dd"
+
+[[files]]
+file = "kubejs/assets/midnightlib/lang/fr_fr.json"
+hash = "d78c25d5b0302bc4eb4ad859ee0b42dfe2a28d557c2be4257645b91bd2db195b"
+
+[[files]]
+file = "kubejs/assets/mobilenetworks/lang/fr_fr.json"
+hash = "e3974c6a308cbedcd566bb31a9ec11f181e79710767140f02704c8395c43158e"
 
 [[files]]
 file = "kubejs/assets/modernfix/lang/fr_fr.json"
@@ -793,6 +841,10 @@ file = "kubejs/assets/refurbished_furniture/lang/fr_fr.json"
 hash = "42dd3e03573308dc21dff76410323966293c1742d6832c9abc9c701d64aa8aec"
 
 [[files]]
+file = "kubejs/assets/resourcefulconfig/lang/fr_fr.json"
+hash = "47fe203fd8687c2cb0e98c068659a1a1d67fe118268338e0c9a608f759abfc38"
+
+[[files]]
 file = "kubejs/assets/sable/lang/fr_fr.json"
 hash = "63ca1e66d9355d2a37798af0463c2c6f7b6c6e59af03ac65edb938ebc7d6263b"
 
@@ -859,6 +911,10 @@ hash = "a80e494753f66444734fcb01a0f48aa564dc20367abdd73f60e19b10dbb3eb18"
 [[files]]
 file = "kubejs/assets/spectrelib/lang/fr_fr.json"
 hash = "f827267b4a6322e6a6976edcbbd3c39a6802da03c505b06f90ea47a975b7c67b"
+
+[[files]]
+file = "kubejs/assets/structure_layout_optimizer/lang/fr_fr.json"
+hash = "f5fe1ef75e264d63f43a8bafcfce9d8e230ad1adab7a5dc7c25e6709c953e1ba"
 
 [[files]]
 file = "kubejs/assets/struts/lang/fr_fr.json"
@@ -1489,6 +1545,10 @@ file = "kubejs/server_scripts/balance/securitycraft.js"
 hash = "0d40c3aa5910b5971a8d7ce613151d58bb5d15116104d8bcfefb290b80444c0a"
 
 [[files]]
+file = "kubejs/server_scripts/balance/telecom.js"
+hash = "77d0b0d56072f4d62f1d8da5a79f48d7703ee3a063560a748b3ff8dea56f2850"
+
+[[files]]
 file = "kubejs/startup_scripts/launch_codes.js"
 hash = "d91578c3eda8d0d2dcaf2d38f6202254b12133b8a491befc6a4cef74ba3740e9"
 
@@ -1505,6 +1565,11 @@ metafile = true
 [[files]]
 file = "mods/alltheleaks.pw.toml"
 hash = "e511d068e43fd6d1f3e1db102a5e54906342e052b97baf9bc46b86fe0232bd3d"
+metafile = true
+
+[[files]]
+file = "mods/almanac-lib.pw.toml"
+hash = "85c6a862d585e0b054bc8b25aae1ae66495cd5f161f86a3ed2069d91f7ff4070"
 metafile = true
 
 [[files]]
@@ -2128,6 +2193,16 @@ hash = "c76891545fb28fbcd2c280cf451ad98a463f8a17a50e0eee8a33b3b410743711"
 metafile = true
 
 [[files]]
+file = "mods/cuffed-ported.pw.toml"
+hash = "5415232cac68e7c336138fb5326fa729a6eb2692e680074bff93e9c6bbc2c587"
+metafile = true
+
+[[files]]
+file = "mods/cull-leaves.pw.toml"
+hash = "a9b9623c952949837c1c6827b94b5969241c44825483a901cad12fcda12d40e9"
+metafile = true
+
+[[files]]
 file = "mods/cupboard.pw.toml"
 hash = "55f8f5c6152e6c0ceb79d38ca741910665754d1ce0755234b09318923e586e43"
 metafile = true
@@ -2298,6 +2373,11 @@ hash = "4cf7eb494f48576e28895ee5f362878f95c6bad65372666106140fdae82d0c4c"
 metafile = true
 
 [[files]]
+file = "mods/get-it-together-drops.pw.toml"
+hash = "2b527d9cc1b1b919deae4a829f39c71b447a5012332809ade812971eae06bf7d"
+metafile = true
+
+[[files]]
 file = "mods/glitchcore.pw.toml"
 hash = "fa2d61b9c6b4446bbad9767e20bbd43c8c1e25bf0f7ecc9a237bf995456d02f5"
 metafile = true
@@ -2388,6 +2468,11 @@ hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
 metafile = true
 
 [[files]]
+file = "mods/ksyxis.pw.toml"
+hash = "a55a18b00d908551d3ee22988861b04ff49de270cf23262be7993df912c3652d"
+metafile = true
+
+[[files]]
 file = "mods/kubejs-create.pw.toml"
 hash = "21a5deb5da882d9f3eb4eaf7f0cf77f52737e1e6b44d2f691bf10fda9c86d790"
 metafile = true
@@ -2395,6 +2480,11 @@ metafile = true
 [[files]]
 file = "mods/kubejs.pw.toml"
 hash = "00bacfc5a98d9b0dff90bbad503def28abf970a2061c9456f721e442bc32ab29"
+metafile = true
+
+[[files]]
+file = "mods/let-me-despawn.pw.toml"
+hash = "e9d3cdd8daaecbd6e0e8196c69aabc4cb8be8fad5b44c3b63e561478784b1554"
 metafile = true
 
 [[files]]
@@ -2435,6 +2525,16 @@ metafile = true
 [[files]]
 file = "mods/mezzconfig.pw.toml"
 hash = "81a9a360cfea30ef1243b21c3623f7ee26ba9547f3c987da8612eec0daf40b17"
+metafile = true
+
+[[files]]
+file = "mods/midnightlib.pw.toml"
+hash = "5c4078f8ff8f2ec7aeba3e6b4066a9a67e0d57be42afe16871fd32f0c4429347"
+metafile = true
+
+[[files]]
+file = "mods/mobile-networks.pw.toml"
+hash = "fc4954cb0049a6c4b699fec336079fa309053f77bed989219dbd053df02dd3d3"
 metafile = true
 
 [[files]]
@@ -2588,6 +2688,11 @@ hash = "208de52370a896983814bd3f69ed0e2b46ca52d99603656562f3890f96d151da"
 metafile = true
 
 [[files]]
+file = "mods/resourceful-config.pw.toml"
+hash = "89d21f5da7fea8b1197c6e8e5215d45f7400844560e0f7c179d3c6145bd36a95"
+metafile = true
+
+[[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "aa83553db30adc47f86010f6443340251323a62ee3f9415a0c4332cb6d502419"
 metafile = true
@@ -2715,6 +2820,11 @@ metafile = true
 [[files]]
 file = "mods/steam-n-rails-neoforge.pw.toml"
 hash = "a2681409a01e496281b21d383cb28043efc4425f7110d21dfd8b6362e258a817"
+metafile = true
+
+[[files]]
+file = "mods/structure-layout-optimizer.pw.toml"
+hash = "db845eb158247bde04edc727945fbf67c6a46f0cbe4d2a1e9142263c022c73f8"
 metafile = true
 
 [[files]]

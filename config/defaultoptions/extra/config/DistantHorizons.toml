@@ -1,0 +1,13 @@
+_version = 5
+[client]
+		[client.advanced.graphics]
+			enableSsao = false
+			[client.advanced.graphics.quality]
+				lodChunkRenderDistanceRadius = 128
+				horizontalQuality = "LOW"
+				verticalQuality = "MEDIUM"
+			[client.advanced.graphics.genericRendering]
+				enableMultiLayerClouds = false
+[common]
+	[common.multiThreading]
+		threadRunTimeRatio = "0.75"
