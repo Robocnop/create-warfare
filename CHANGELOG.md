@@ -2,7 +2,14 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
-## 1.8.2 — 2026-11-02
+## Launcher 1.4.0 — 2026-11-02 (pré-release)
+
+- **Mode performance** (Paramètres → Jeu) : désactive les mods visuels lourds (Fresh Animations/EMF/ETF, Visuality,
+  Particle Effects, Explosive Enhancement, Effectual, Particular, Falling Leaves, Better Animations Collection,
+  3D Skin Layers, Presence Footsteps, Sound Physics) en les renommant en `.jar.disabled`. Le désactiver les remet.
+  Un mod que le joueur avait désactivé lui-même reste désactivé ; le mode est réappliqué après chaque mise à jour et avant de jouer.
+
+## 1.8.2 — 2026-11-02 (pré-release)
 
 - **Mobile Networks** : téléphones portables, numéros, appels vocaux privés (par Simple Voice Chat), SMS, antennes en
   cuivre, fer ou diamant à construire et à défendre, couverture selon la distance. Le **chat textuel et le chat vocal de
@@ -10,7 +17,8 @@ Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` 
   avec des pièces de Create (tubes électroniques, plaques, fil de cuivre, mécanisme de précision).
 - **Cuffed Ported** : menottes et entraves (avec clés), crochets de serrure, cadenas, coffres-forts, portes de cellule,
   blocs renforcés, pilori, guillotine, boîte de confiscation et loupe de fouille (prendre des objets à un joueur
-  entravé). Menotter un joueur demande qu'il ait **moins de 30 % de sa vie**.
+  entravé). Menotter un joueur demande qu'il ait **moins de 30 % de sa vie**. Les blocs renforcés résistent aux bombes
+  comme l'obsidienne : leur recette demande de l'**acier TFMG** (4 aciers + 5 pierres → 4 blocs, au lieu de 1 fer → 8).
 - **Performance** : Structure Layout Optimizer (génération des structures), Let Me Despawn (moins de mobs qui
   s'accumulent), Get It Together, Drops! (objets au sol regroupés, utile après les grosses explosions), Ksyxis
   (chargement du monde plus rapide), Cull Leaves (client : faces cachées des feuilles).

@@ -549,6 +549,55 @@ public sealed partial class MainViewModel
         }
     }
 
+    /// <summary>Mode performance : désactive les mods visuels lourds de l'instance (Core.Services.PerformanceMode).</summary>
+    public bool PerformanceMode
+    {
+        get => _settings.PerformanceMode;
+        set
+        {
+            if (value == _settings.PerformanceMode) return;
+            if (_instance == null) { Toast(T("s.perf.noInstance", "Aucune instance trouvée."), error: true); Raise(); return; }
+            if (ProcessGuard.GameRunning(_instance.Path))
+            {
+                Toast(T("s.perf.closeGame", "Ferme Minecraft d'abord : ses mods sont verrouillés tant qu'il tourne."), error: true);
+                Raise();
+                return;
+            }
+            _settings.PerformanceMode = value;
+            if (!ApplyPerformanceMode()) _settings.PerformanceMode = !value;
+            SettingsStore.Save(_settings);
+            Raise();
+            if (_settings.PerformanceMode == value)
+                Toast(value ? T("s.perf.on", "Mode performance activé : mods visuels lourds désactivés.")
+                            : T("s.perf.off", "Mode performance désactivé : mods visuels réactivés."));
+        }
+    }
+
+    /// <summary>Remet l'instance en accord avec le réglage (après une mise à jour, avant de jouer). Faux si un jar n'a pas pu être renommé.</summary>
+    bool ApplyPerformanceMode()
+    {
+        if (_instance == null) return true;
+        if (!_settings.PerformanceMode && _settings.PerformanceDisabled.Count == 0) return true;
+        var ours = new HashSet<string>(_settings.PerformanceDisabled, StringComparer.OrdinalIgnoreCase);
+        try
+        {
+            var n = global::CreateWarfare.Launcher.Core.Services.PerformanceMode.Apply(_instance.Path, _settings.PerformanceMode, ours);
+            if (n > 0) Log.Info($"Mode performance {(_settings.PerformanceMode ? "activé" : "désactivé")} : {n} jar(s) renommé(s)");
+            return true;
+        }
+        catch (Exception e) when (e is IOException or UnauthorizedAccessException)
+        {
+            Log.Error("Mode performance non appliqué", e);
+            Toast(T("s.perf.failed", "Impossible de renommer les mods : ") + e.Message, error: true);
+            return false;
+        }
+        finally
+        {
+            _settings.PerformanceDisabled = ours.OrderBy(x => x, StringComparer.OrdinalIgnoreCase).ToList();
+            SettingsStore.Save(_settings);
+        }
+    }
+
     /// <summary>Enregistre le réglage de thème (« auto », « default » ou un thème) et l'applique tout de suite.</summary>
     void SetTheme(string key)
     {
@@ -704,7 +753,9 @@ public sealed partial class MainViewModel
                 T("s.reset.yes", "Réinitialiser"), danger: true)) return;
         var keep = _settings.InstancePath;
         StartWithWindows = false;
-        var fresh = new LauncherSettings { InstancePath = keep, OnboardingDone = true };
+        // Le mode performance suit l'état des jars de l'instance : on le garde, sinon les mods désactivés ne reviendraient plus.
+        var fresh = new LauncherSettings { InstancePath = keep, OnboardingDone = true,
+            PerformanceMode = _settings.PerformanceMode, PerformanceDisabled = _settings.PerformanceDisabled };
         foreach (var p in typeof(LauncherSettings).GetProperties()) p.SetValue(_settings, p.GetValue(fresh));
         SettingsStore.Save(_settings);
         ThemeManager.Apply(_settings.Theme);

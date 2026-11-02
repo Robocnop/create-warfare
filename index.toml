@@ -1533,6 +1533,10 @@ file = "kubejs/server_scripts/balance/crosslinks.js"
 hash = "89de629187d73ea736561f265bb4a71160cd93aa254a106e0d77f26d4c738078"
 
 [[files]]
+file = "kubejs/server_scripts/balance/cuffed.js"
+hash = "c3f1e628fb7911246cbeccd6371904d6ad9f23bf4f8fd9d80de371978265e16e"
+
+[[files]]
 file = "kubejs/server_scripts/balance/cuisine.js"
 hash = "1f503b54c8eb7cd9d5e216ad4dd303ee125b088cf34e635b20f822a11a2d3c23"
 

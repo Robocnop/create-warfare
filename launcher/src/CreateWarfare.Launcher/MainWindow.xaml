@@ -637,6 +637,9 @@
                                 </StackPanel>
                                 <TextBlock Style="{StaticResource Caption}" Margin="0,16,0,0"
                                            Text="{DynamicResource t.075}" />
+                                <CheckBox Style="{StaticResource Toggle}" IsChecked="{Binding PerformanceMode}" Margin="0,24,0,0">
+                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource s.perf.title}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource s.perf.hint}" /></StackPanel>
+                                </CheckBox>
                             </StackPanel>
                         </Border>
 

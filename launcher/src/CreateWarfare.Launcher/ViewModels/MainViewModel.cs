@@ -414,6 +414,7 @@ public sealed partial class MainViewModel : Observable
         {
             var ct = _cts!.Token;
             await Task.Run(() => new UpdateApplier(_dl).ApplyAsync(dir, plan, progress, ct));
+            ApplyPerformanceMode(); // une mise à jour d'un mod lourd repose un jar actif
             _plan = null;
             UpdateHome();
             Screen = Screen.Home;
@@ -535,6 +536,7 @@ public sealed partial class MainViewModel : Observable
             Toast("CurseForge introuvable. Installe-le depuis curseforge.com/download/app.", error: true);
             return;
         }
+        if (_action == PrimaryAction.Play) ApplyPerformanceMode();
         Process.Start(new ProcessStartInfo(exe) { UseShellExecute = true });
         if (_action == PrimaryAction.Play) OnPlayStarted();
         if (_action == PrimaryAction.Play)

@@ -201,4 +201,11 @@
     <sys:String x:Key="s.ap.decorHint">Gears, snow, petals and lights. Also off when Windows reduces animations.</sys:String>
     <sys:String x:Key="s.home.photosOff">Show the theme illustration instead of the pictures</sys:String>
     <sys:String x:Key="s.home.photosOn">Show the server pictures</sys:String>
+    <sys:String x:Key="s.perf.title">Performance mode</sys:String>
+    <sys:String x:Key="s.perf.hint">Turns off the heavy visual mods for more FPS: Fresh Animations (EMF/ETF), Visuality, Particle Effects, Explosive Enhancement, Effectual, Particular, Falling Leaves, Better Animations Collection, 3D Skin Layers, Presence Footsteps and Sound Physics. The game stays compatible with the server. Close Minecraft before changing this.</sys:String>
+    <sys:String x:Key="s.perf.on">Performance mode on: heavy visual mods turned off.</sys:String>
+    <sys:String x:Key="s.perf.off">Performance mode off: visual mods turned back on.</sys:String>
+    <sys:String x:Key="s.perf.closeGame">Close Minecraft first: its mods are locked while it runs.</sys:String>
+    <sys:String x:Key="s.perf.noInstance">No instance found.</sys:String>
+    <sys:String x:Key="s.perf.failed">Could not rename the mods: </sys:String>
 </ResourceDictionary>

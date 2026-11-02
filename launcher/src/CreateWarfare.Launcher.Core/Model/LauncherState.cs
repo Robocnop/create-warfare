@@ -47,6 +47,10 @@ public sealed class LauncherSettings
     public bool DebugLog { get; set; }
     /// <summary>Accueil du premier lancement déjà vu.</summary>
     public bool OnboardingDone { get; set; }
+    /// <summary>Mode performance : mods visuels lourds désactivés (voir PerformanceMode).</summary>
+    public bool PerformanceMode { get; set; }
+    /// <summary>Préfixes des jars que le launcher a désactivés lui-même (seuls ceux-là sont réactivés).</summary>
+    public List<string> PerformanceDisabled { get; set; } = new();
 }
 
 public static class Channels

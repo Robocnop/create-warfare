@@ -201,4 +201,11 @@
     <sys:String x:Key="s.ap.decorHint">Engrenages, neige, pétales et lumières. Coupé aussi quand Windows réduit les animations.</sys:String>
     <sys:String x:Key="s.home.photosOff">Afficher l'illustration du thème au lieu des images</sys:String>
     <sys:String x:Key="s.home.photosOn">Faire défiler les images du serveur</sys:String>
+    <sys:String x:Key="s.perf.title">Mode performance</sys:String>
+    <sys:String x:Key="s.perf.hint">Désactive les mods visuels lourds pour gagner des FPS : Fresh Animations (EMF/ETF), Visuality, Particle Effects, Explosive Enhancement, Effectual, Particular, Falling Leaves, Better Animations Collection, 3D Skin Layers, Presence Footsteps et Sound Physics. Le jeu reste compatible avec le serveur. Ferme Minecraft avant de changer ce réglage.</sys:String>
+    <sys:String x:Key="s.perf.on">Mode performance activé : mods visuels lourds désactivés.</sys:String>
+    <sys:String x:Key="s.perf.off">Mode performance désactivé : mods visuels réactivés.</sys:String>
+    <sys:String x:Key="s.perf.closeGame">Ferme Minecraft d'abord : ses mods sont verrouillés tant qu'il tourne.</sys:String>
+    <sys:String x:Key="s.perf.noInstance">Aucune instance trouvée.</sys:String>
+    <sys:String x:Key="s.perf.failed">Impossible de renommer les mods : </sys:String>
 </ResourceDictionary>
