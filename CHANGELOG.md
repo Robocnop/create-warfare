@@ -2,19 +2,19 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
-## Launcher 1.4.1 — 2026-11-02 (pré-release)
+## Launcher 1.4.1 — 2026-11-02
 
 - **Plein écran** : la fenêtre agrandie s'arrête au-dessus de la barre des tâches (avant, la barre recouvrait le bas
   de la fenêtre, signalé par un joueur).
 
-## Launcher 1.4.0 — 2026-11-02 (pré-release)
+## Launcher 1.4.0 — 2026-11-02 (pré-release, incluse dans la 1.4.1)
 
 - **Mode performance** (Paramètres → Jeu) : désactive les mods visuels lourds (Fresh Animations/EMF/ETF, Visuality,
   Particle Effects, Explosive Enhancement, Effectual, Particular, Falling Leaves, Better Animations Collection,
   3D Skin Layers, Presence Footsteps, Sound Physics) en les renommant en `.jar.disabled`. Le désactiver les remet.
   Un mod que le joueur avait désactivé lui-même reste désactivé ; le mode est réappliqué après chaque mise à jour et avant de jouer.
 
-## 1.8.2 — 2026-11-02 (pré-release)
+## 1.8.2 — 2026-11-02
 
 - **Mobile Networks** : téléphones portables, numéros, appels vocaux privés (par Simple Voice Chat), SMS, antennes en
   cuivre, fer ou diamant à construire et à défendre, couverture selon la distance. Le **chat textuel et le chat vocal de
