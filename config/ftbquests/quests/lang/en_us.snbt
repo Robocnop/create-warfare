@@ -495,4 +495,60 @@
 	quest.6CECD95D21D3333B.quest_desc: ["Fait atterrir la fusée sans danger, sans pilote."]
 	quest.5FF44D51B7519262.title: "Panneau solaire"
 	quest.5FF44D51B7519262.quest_desc: ["Verre teinté, titane et circuit sur un arbre : de la rotation tirée du soleil."]
+	chapter.7431026B20119ED0.title: "Téléphones \\& antennes"
+	chapter.7431026B20119ED0.chapter_subtitle: ["Mobile Networks : un téléphone, un numéro, et des antennes à construire pour appeler ton équipe à l'autre bout de la carte."]
+	quest.2C60F068C888C626.title: "Ton téléphone"
+	quest.2C60F068C888C626.quest_desc: ["Plaques de fer, tube électronique, fil de cuivre et vitre. Clic droit pour l'ouvrir. Tu as déjà un numéro à 9 chiffres, attribué automatiquement et gardé d'une session à l'autre. Sans antenne à portée, le téléphone affiche « Pas de service »."]
+	quest.1D38A83442725EB6.title: "Tournevis"
+	quest.1D38A83442725EB6.quest_desc: ["Un bâton et une pépite de fer. Clic droit sur une antenne avec le tournevis : sa configuration s'ouvre."]
+	quest.2899F01C5C1DE412.title: "Antenne en cuivre"
+	quest.2899F01C5C1DE412.quest_desc: ["Pose-la, puis ouvre-la au tournevis : crée ton réseau (donne-lui un nom) et allume-le. Dans le téléphone, « Chercher des réseaux » puis choisis le tien. Le signal va de E à 5G+ selon la distance et le terrain : plus tu t'éloignes, plus il baisse."]
+	quest.63BBEFCAB43022C8.title: "Premier appel"
+	quest.63BBEFCAB43022C8.quest_desc: ["Application Téléphone : la liste des joueurs en ligne et leurs numéros. Appelle un coéquipier : vous devez avoir du réseau tous les deux. Une fois décroché, vous vous parlez avec Simple Voice Chat, où que vous soyez (micro, sourdine et haut-parleur dans l'appel). Sur ce serveur, la voix de proximité et le chat textuel restent actifs. Coche la quête après ton premier appel."]
+	quest.5FB3005001FED898.title: "Messages"
+	quest.5FB3005001FED898.quest_desc: ["Application Messages : SMS à un joueur, ou discussion de groupe pour toute l'équipe. Ça marche même quand le destinataire est loin, tant que vous avez du réseau. Coche la quête après ton premier message."]
+	quest.2BFA7C878E020522.title: "Antenne en fer"
+	quest.2BFA7C878E020522.quest_desc: ["Deux fois la portée de l'antenne en cuivre. Des antennes proches l'une de l'autre peuvent se lier : leurs réseaux se partagent et la couverture s'étend de proche en proche."]
+	quest.7E8256A237BB782C.title: "Antenne en diamant"
+	quest.7E8256A237BB782C.quest_desc: ["Quatre fois la portée de l'antenne en cuivre : un seul relais couvre toute une base. Pense à la protéger : une antenne cassée, c'est toute une zone sans réseau. Et casser celles de l'ennemi le prive de téléphone."]
+	quest.65DD0296B92B90EE.title: "Serveur du réseau"
+	quest.65DD0296B92B90EE.quest_desc: ["Mécanisme de précision au centre. Protégé par un mot de passe : déverrouille-le et reste à côté pour gérer tes réseaux depuis un seul endroit. Joueurs autorisés et leurs rôles, forfaits d'appels et de messages (illimités par défaut, renouvelés chaque jour du jeu), numéros personnalisés (1 à 9 chiffres). Une antenne gérée par un serveur ne se règle plus au tournevis."]
+	quest.4CD21757914C44B3.title: "Routeur Wi-Fi"
+	quest.4CD21757914C44B3.quest_desc: ["Un point d'accès Internet local, pour les applications du téléphone qui ont besoin de données (Gram pour les photos, Plans pour la carte et les lieux). Seuls son propriétaire et les joueurs autorisés peuvent l'ouvrir."]
+	chapter.2A2265D026036A84.title: "Prisonniers \\& verrous"
+	chapter.2A2265D026036A84.chapter_subtitle: ["Cuffed : menotter un ennemi, le fouiller, l'enfermer. Et protéger ses coffres avec cadenas et coffres-forts."]
+	quest.4419B332E26A6282.title: "Menottes"
+	quest.4419B332E26A6282.quest_desc: ["Clic droit sur un joueur en visant ses bras. Sur ce serveur, il doit avoir moins de 30 % de sa vie. Menotté, il ne peut plus miner, utiliser d'objets ni ouvrir son inventaire. Il peut tenter de s'en libérer : les menottes s'usent à chaque essai."]
+	quest.3845E110B565AE9C.title: "Clé de menottes"
+	quest.3845E110B565AE9C.quest_desc: ["La seule façon d'enlever des menottes (ou des entraves de chevilles) proprement. L'infobulle de chaque entrave indique sa clé."]
+	quest.6682E7B0AEA6AA86.title: "Fers"
+	quest.6682E7B0AEA6AA86.quest_desc: ["Plus faibles que les menottes : le prisonnier ne mine plus, mais garde ses objets et son inventaire. S'enlèvent avec la clé de fers. Le ruban adhésif, lui, bâillonne ou attache bras et jambes."]
+	quest.0F9306F09DF08CDC.title: "Escorter un prisonnier"
+	quest.0F9306F09DF08CDC.quest_desc: ["Accroupi + clic droit sur un joueur entravé : il te suit. Clic droit sur un siège ou une entité (monture, wagon) pour l'y installer de force. Accroupis-toi pour arrêter. Une chaîne attache un joueur ou un animal à toi, puis à une barrière ou une ancre lestée. Coche la quête quand tu as escorté quelqu'un."]
+	quest.7D500C79F613130A.title: "Loupe de fouille"
+	quest.7D500C79F613130A.quest_desc: ["Maintiens « utiliser » sur un joueur entravé : son inventaire s'affiche. Maintiens le clic gauche 2 secondes sur un emplacement pour lui prendre l'objet (ou lui en poser un)."]
+	quest.45C07B5E219AB266.title: "Boîte de confiscation"
+	quest.45C07B5E219AB266.quest_desc: ["Utilise une boîte vide sur un joueur pour le fouiller, puis choisis les objets à ranger dedans. La boîte pleine se garde comme un sac."]
+	quest.73DAF296B6488B9B.title: "Crochets de serrure"
+	quest.73DAF296B6488B9B.quest_desc: ["Clic droit sur un cadenas, une porte de cellule ou un joueur menotté : un test d'adresse commence, appuie au bon moment. Réussi, le verrou cède ; raté, le crochet peut casser. Utile pour libérer un coéquipier."]
+	quest.2053229138EB583E.title: "Clé"
+	quest.2053229138EB583E.quest_desc: ["Une clé neuve n'est liée à rien : utilise-la sur un cadenas ou une porte de cellule pour la lier. Ensuite, elle seule ouvre et ferme ce verrou."]
+	quest.12FBD3E3917282F4.title: "Cadenas"
+	quest.12FBD3E3917282F4.quest_desc: ["Se pose sur n'importe quel bloc (coffre, porte, machine) et bloque TOUTE utilisation. Lie-lui une clé pour le verrouiller. Un diamant sur le cadenas le renforce : il résiste mieux aux crochets."]
+	quest.57DA5CD50D952D7C.title: "Trousseau et copies"
+	quest.57DA5CD50D952D7C.quest_desc: ["Trousseau : deux clés ou plus dans la grille d'artisanat (recette spéciale, absente de JEI), pour tout ouvrir avec un seul objet. Copie : clé liée + boule d'argile à l'établi = moule à clé, cuit au four, puis moule cuit + lingot de fer = copie de la clé. Le moule s'use en quelques copies."]
+	quest.76BABC9DD46C9421.title: "Coffre-fort"
+	quest.76BABC9DD46C9421.quest_desc: ["Bloc de fer et cadenas. Un rangement à clé, qui se crochète difficilement."]
+	quest.3528F05AAB15E52A.title: "Pierre renforcée"
+	quest.3528F05AAB15E52A.quest_desc: ["4 lingots d'acier et 5 pierres pour 4 blocs. Très longue à miner, et résiste aux bombes Mk 82 et Mk 84 comme l'obsidienne : de quoi bâtir une prison ou un abri. Existe en pierre lisse, dalles, escaliers, barreaux et lampe."]
+	quest.20D9AA511845F544.title: "Porte de cellule"
+	quest.20D9AA511845F544.quest_desc: ["Barreaux renforcés et acier. Se verrouille avec une clé, ne se casse qu'à la pioche."]
+	quest.2BA0363BDAE79C5B.title: "Couchette"
+	quest.2BA0363BDAE79C5B.quest_desc: ["Un lit renforcé : on y fixe son point d'apparition, et il ne se casse qu'à la pioche."]
+	quest.6564830D7A2A2331.title: "Pilori"
+	quest.6564830D7A2A2331.quest_desc: ["Place un joueur devant et utilise le pilori : il est enfermé, sans pouvoir bouger ni utiliser quoi que ce soit, jusqu'à ce qu'on le libère. Un joueur aux bras entravés ne peut pas y être mis."]
+	quest.510D2E1A2D4B2034.title: "Guillotine"
+	quest.510D2E1A2D4B2034.quest_desc: ["Posée au-dessus d'un pilori occupé, un clic l'actionne. Un second clic la réarme. Le prisonnier y laisse sa tête."]
+	quest.1289F49D8D1C1779.title: "Matricule de prisonnier"
+	quest.1289F49D8D1C1779.quest_desc: ["Renomme-le à l'enclume, puis utilise-le sur un joueur : il porte ce surnom. Un matricule sans nom efface le surnom."]
 }

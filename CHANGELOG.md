@@ -2,6 +2,18 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.8.3 — 2026-11-02
+
+- **Deux nouveaux chapitres de quêtes** qui expliquent les nouveaux mods :
+  - **Téléphones & antennes** (Mobile Networks, 9 quêtes) : téléphone et numéro, tournevis, créer son réseau sur une
+    antenne, premier appel, messages, antennes en fer et en diamant (portée ×2 et ×4), serveur du réseau, routeur Wi-Fi ;
+  - **Prisonniers & verrous** (Cuffed, 17 quêtes) : menottes et clés, fers, escorte, loupe de fouille, boîte de
+    confiscation, crochets, clés, cadenas, trousseau et copie de clés (recettes absentes de JEI), coffre-fort, pierre
+    renforcée, porte de cellule, couchette, pilori, guillotine, matricule.
+- **Recettes vérifiées** : 0 recette en échec ; chaque objet des nouveaux mods a une recette, sauf les objets créatifs,
+  les menottes en fourrure (réservées aux soutiens du mod) et la puce Wi-Fi (délivrée par le mod).
+- **Même monde**, progression des quêtes gardée.
+
 ## Launcher 1.4.1 — 2026-11-02
 
 - **Plein écran** : la fenêtre agrandie s'arrête au-dessus de la barre des tâches (avant, la barre recouvrait le bas

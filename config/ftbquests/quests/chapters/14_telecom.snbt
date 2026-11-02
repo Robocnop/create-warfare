@@ -1,0 +1,86 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "14_telecom"
+	group: ""
+	icon: { id: "mobilenetworks:mobile_phone" }
+	id: "7431026B20119ED0"
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["324CFB3B9B0E5B00"]
+			id: "2C60F068C888C626"
+			rewards: [{ id: "3DDB29793E802BF1", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "3FFCF0F60D4EA8B9", item: { count: 1, id: "mobilenetworks:mobile_phone" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: []
+			id: "1D38A83442725EB6"
+			rewards: [{ id: "0BF0134513A146B4", type: "xp", xp: 25 }]
+			tasks: [{ count: 1L, id: "4BFE4261EC63E985", item: { count: 1, id: "mobilenetworks:screwdriver" }, type: "item" }]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2C60F068C888C626", "1D38A83442725EB6"]
+			id: "2899F01C5C1DE412"
+			rewards: [{ id: "406854CFF0B78A2B", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "68E04D480B205185", item: { count: 1, id: "mobilenetworks:copper_antenna" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "mobilenetworks:mobile_phone" }
+			dependencies: ["2899F01C5C1DE412"]
+			id: "63BBEFCAB43022C8"
+			rewards: [{ id: "579C0CBD53023819", type: "xp", xp: 100 }]
+			tasks: [{ id: "48D3684461FC97C3", type: "checkmark" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "mobilenetworks:mobile_phone" }
+			dependencies: ["2899F01C5C1DE412"]
+			id: "5FB3005001FED898"
+			rewards: [{ id: "6C3056E83BC9E91E", type: "xp", xp: 50 }]
+			tasks: [{ id: "54B4A6BBB035F7A6", type: "checkmark" }]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2899F01C5C1DE412"]
+			id: "2BFA7C878E020522"
+			rewards: [{ id: "4B036C5B9EDF290B", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "169E881266114657", item: { count: 1, id: "mobilenetworks:iron_antenna" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BFA7C878E020522"]
+			id: "7E8256A237BB782C"
+			rewards: [{ id: "620E0A28DF1878FE", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "3EF7F4DDE56F9234", item: { count: 1, id: "mobilenetworks:diamond_antenna" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BFA7C878E020522", "0AED6BE8700C86DB"]
+			id: "65DD0296B92B90EE"
+			rewards: [{ id: "7A5051322A2CC7AC", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "0AFAF35297A7939A", item: { count: 1, id: "mobilenetworks:server" }, type: "item" }]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["65DD0296B92B90EE"]
+			id: "4CD21757914C44B3"
+			rewards: [{ id: "56E0AD2B70846FA6", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "5286BD3CF80F1BF8", item: { count: 1, id: "mobilenetworks:wifi_router" }, type: "item" }]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+}

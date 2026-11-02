@@ -1,0 +1,149 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "15_prison"
+	group: ""
+	icon: { id: "cuffed:handcuffs" }
+	id: "2A2265D026036A84"
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: []
+			id: "4419B332E26A6282"
+			rewards: [{ id: "10B723E29F312C8F", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "743A8242AC7721B9", item: { count: 1, id: "cuffed:handcuffs" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4419B332E26A6282"]
+			id: "3845E110B565AE9C"
+			rewards: [{ id: "6E2B1D5151D512F5", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "34CC554733282BA1", item: { count: 1, id: "cuffed:handcuffs_key" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4419B332E26A6282"]
+			id: "6682E7B0AEA6AA86"
+			rewards: [{ id: "2EED33A8A493DED0", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "27A6C9CCCDECEA1E", item: { count: 1, id: "cuffed:shackles" }, type: "item" }]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			icon: { id: "minecraft:chain" }
+			dependencies: ["4419B332E26A6282"]
+			id: "0F9306F09DF08CDC"
+			rewards: [{ id: "12AAC910AFBEC9B4", type: "xp", xp: 75 }]
+			tasks: [{ id: "4BC096B3CAA93EF6", type: "checkmark" }]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4419B332E26A6282"]
+			id: "7D500C79F613130A"
+			rewards: [{ id: "5354B2D08CEAC723", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "33D9AE0357E8EFF0", item: { count: 1, id: "cuffed:search_lens" }, type: "item" }]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7D500C79F613130A"]
+			id: "45C07B5E219AB266"
+			rewards: [{ id: "00D5D6227E10978D", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "544D935BE5E17123", item: { count: 1, id: "cuffed:possessions_box" }, type: "item" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4419B332E26A6282"]
+			id: "73DAF296B6488B9B"
+			rewards: [{ id: "3C055D7F9A236E0F", type: "xp", xp: 75 }]
+			tasks: [{ count: 2L, id: "71912F9411EC3231", item: { count: 1, id: "cuffed:lockpick" }, type: "item" }]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: []
+			id: "2053229138EB583E"
+			rewards: [{ id: "167D7E61A0575133", type: "xp", xp: 25 }]
+			tasks: [{ count: 1L, id: "03C5962FDB2D0956", item: { count: 1, id: "cuffed:key" }, type: "item" }]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2053229138EB583E"]
+			id: "12FBD3E3917282F4"
+			rewards: [{ id: "14803C11E6AB4578", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "27640C08C3AAE73C", item: { count: 1, id: "cuffed:padlock" }, type: "item" }]
+			x: 2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["2053229138EB583E"]
+			id: "57DA5CD50D952D7C"
+			rewards: [{ id: "3AB76295DDBDAFF4", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "15CA272BA9892929", item: { count: 1, id: "cuffed:key_ring" }, type: "item" }]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["12FBD3E3917282F4"]
+			id: "76BABC9DD46C9421"
+			rewards: [{ id: "52ABD41768D759E3", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "0D345E67AF5F315A", item: { count: 1, id: "cuffed:safe" }, type: "item" }]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["756CBDC330F693ED"]
+			id: "3528F05AAB15E52A"
+			rewards: [{ id: "2EFCB65C9F68D54E", type: "xp", xp: 150 }]
+			tasks: [{ count: 16L, id: "0B357D8469954EC2", item: { count: 1, id: "cuffed:reinforced_stone" }, type: "item" }]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3528F05AAB15E52A", "2053229138EB583E"]
+			id: "20D9AA511845F544"
+			rewards: [{ id: "587822DA4D5F2C2F", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "361ED4D6681CE38E", item: { count: 1, id: "cuffed:cell_door" }, type: "item" }]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["3528F05AAB15E52A"]
+			id: "2BA0363BDAE79C5B"
+			rewards: [{ id: "22BCD2DAAAC6B157", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "49C6A2C06E51CC04", item: { count: 1, id: "cuffed:bunk" }, type: "item" }]
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4419B332E26A6282"]
+			id: "6564830D7A2A2331"
+			rewards: [{ id: "4A47CE0594B97BDB", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "0C17C760FCAE2504", item: { count: 1, id: "cuffed:pillory" }, type: "item" }]
+			x: 2.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6564830D7A2A2331"]
+			id: "510D2E1A2D4B2034"
+			rewards: [{ id: "2E20CD72C4CE2895", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "445345BAB261A2DE", item: { count: 1, id: "cuffed:guillotine" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4419B332E26A6282"]
+			id: "1289F49D8D1C1779"
+			rewards: [{ id: "246FBC6C6DCFA44F", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "410ABF792F1BDEBA", item: { count: 1, id: "cuffed:prisoner_tag" }, type: "item" }]
+			x: 2.0d
+			y: 15.0d
+		}
+	]
+}

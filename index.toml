@@ -109,12 +109,20 @@ file = "config/ftbquests/quests/chapters/13_espace.snbt"
 hash = "f4bff666023eb97055ab0d3973b84eb45eaac5b257b99dbb16e7add23a0209c7"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/14_telecom.snbt"
+hash = "fcb182496507f9355602de837496a560b83f939e433913630cab64b314980426"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/15_prison.snbt"
+hash = "da7028ecde8934f758b4b77ede9096c269acfc2548d4f9580be290115d2cd24c"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "bfa2f3365b2416216082141f73a13be59f825befc864e12ce2191e2be5aa8319"
+hash = "746c71f6a575a154c633961a38fc235df47e7cd840800bee43763e590402f779"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
