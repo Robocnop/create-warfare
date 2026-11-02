@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,9 +11,9 @@
     "size": 72642114
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.2/CreateWarfare-1.8.2.zip",
-    "sha256": "974f2c9248acf1ffebc3cf224f6da53cb2b426cfdb9b9094cc4913b742ba431a",
-    "size": 25081348
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.3/CreateWarfare-1.8.3.zip",
+    "sha256": "49b6092b49267308800d658d63730c3be6f768ad4a0e36bfb6973af7994b1b65",
+    "size": 25086750
   },
   "mods": [
     {
@@ -2566,5 +2566,5 @@
     }
   ],
   "notice": null,
-  "changelog": "Launcher 1.4.1 — 2026-11-02\n\n- Plein écran : la fenêtre agrandie s'arrête au-dessus de la barre des tâches (avant, la barre recouvrait le bas de la fenêtre, signalé par un joueur).\n\nLauncher 1.4.0 — 2026-11-02 (pré-release, incluse dans la 1.4.1)\n\n- Mode performance (Paramètres → Jeu) : désactive les mods visuels lourds (Fresh Animations/EMF/ETF, Visuality, Particle Effects, Explosive Enhancement, Effectual, Particular, Falling Leaves, Better Animations Collection, 3D Skin Layers, Presence Footsteps, Sound Physics) en les renommant en .jar.disabled. Le désactiver les remet. Un mod que le joueur avait désactivé lui-même reste désactivé ; le mode est réappliqué après chaque mise à jour et avant de jouer.\n\n1.8.2 — 2026-11-02\n\n- Mobile Networks : téléphones portables, numéros, appels vocaux privés (par Simple Voice Chat), SMS, antennes en cuivre, fer ou diamant à construire et à défendre, couverture selon la distance. Le chat textuel et le chat vocal de proximité restent actifs (le mod les coupait par défaut). Téléphone, antennes, serveur et routeur se fabriquent avec des pièces de Create (tubes électroniques, plaques, fil de cuivre, mécanisme de précision).\n- Cuffed Ported : menottes et entraves (avec clés), crochets de serrure, cadenas, coffres-forts, portes de cellule, blocs renforcés, pilori, guillotine, boîte de confiscation et loupe de fouille (prendre des objets à un joueur entravé). Menotter un joueur demande qu'il ait moins de 30 % de sa vie. Les blocs renforcés résistent aux bombes comme l'obsidienne : leur recette demande de l'acier TFMG (4 aciers + 5 pierres → 4 blocs, au lieu de 1 fer → 8).\n- Performance : Structure Layout Optimizer (génération des structures), Let Me Despawn (moins de mobs qui s'accumulent), Get It Together, Drops! (objets au sol regroupés, utile après les grosses explosions), Ksyxis (chargement du monde plus rapide), Cull Leaves (client : faces cachées des feuilles).\n- Nouveaux joueurs : réglages plus légers au premier lancement (Distant Horizons à 128 chunks sans SSAO, éclairage des machines de Create allégé). Les réglages des joueurs existants ne changent pas.\n- Traductions : 801 textes en français (Mobile Networks, Cuffed et bibliothèques).\n- Même monde : rien à recréer."
+  "changelog": "1.8.3 — 2026-11-02\n\n- Deux nouveaux chapitres de quêtes qui expliquent les nouveaux mods : - Téléphones & antennes (Mobile Networks, 9 quêtes) : téléphone et numéro, tournevis, créer son réseau sur une antenne, premier appel, messages, antennes en fer et en diamant (portée ×2 et ×4), serveur du réseau, routeur Wi-Fi ; - Prisonniers & verrous (Cuffed, 17 quêtes) : menottes et clés, fers, escorte, loupe de fouille, boîte de confiscation, crochets, clés, cadenas, trousseau et copie de clés (recettes absentes de JEI), coffre-fort, pierre renforcée, porte de cellule, couchette, pilori, guillotine, matricule.\n- Recettes vérifiées : 0 recette en échec ; chaque objet des nouveaux mods a une recette, sauf les objets créatifs, les menottes en fourrure (réservées aux soutiens du mod) et la puce Wi-Fi (délivrée par le mod).\n- Même monde, progression des quêtes gardée.\n\nLauncher 1.4.1 — 2026-11-02\n\n- Plein écran : la fenêtre agrandie s'arrête au-dessus de la barre des tâches (avant, la barre recouvrait le bas de la fenêtre, signalé par un joueur).\n\nLauncher 1.4.0 — 2026-11-02 (pré-release, incluse dans la 1.4.1)\n\n- Mode performance (Paramètres → Jeu) : désactive les mods visuels lourds (Fresh Animations/EMF/ETF, Visuality, Particle Effects, Explosive Enhancement, Effectual, Particular, Falling Leaves, Better Animations Collection, 3D Skin Layers, Presence Footsteps, Sound Physics) en les renommant en .jar.disabled. Le désactiver les remet. Un mod que le joueur avait désactivé lui-même reste désactivé ; le mode est réappliqué après chaque mise à jour et avant de jouer."
 }
