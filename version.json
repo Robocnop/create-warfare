@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,9 +11,9 @@
     "size": 72642114
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.3/CreateWarfare-1.8.3.zip",
-    "sha256": "49b6092b49267308800d658d63730c3be6f768ad4a0e36bfb6973af7994b1b65",
-    "size": 25086750
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.4/CreateWarfare-1.8.4.zip",
+    "sha256": "f2fa2d85428fd314c45fee88e1e7acfd0d01a9d418a52af25e840ff453be385a",
+    "size": 25086912
   },
   "mods": [
     {
@@ -2566,5 +2566,5 @@
     }
   ],
   "notice": null,
-  "changelog": "1.8.3 — 2026-11-02\n\n- Deux nouveaux chapitres de quêtes qui expliquent les nouveaux mods : - Téléphones & antennes (Mobile Networks, 9 quêtes) : téléphone et numéro, tournevis, créer son réseau sur une antenne, premier appel, messages, antennes en fer et en diamant (portée ×2 et ×4), serveur du réseau, routeur Wi-Fi ; - Prisonniers & verrous (Cuffed, 17 quêtes) : menottes et clés, fers, escorte, loupe de fouille, boîte de confiscation, crochets, clés, cadenas, trousseau et copie de clés (recettes absentes de JEI), coffre-fort, pierre renforcée, porte de cellule, couchette, pilori, guillotine, matricule.\n- Recettes vérifiées : 0 recette en échec ; chaque objet des nouveaux mods a une recette, sauf les objets créatifs, les menottes en fourrure (réservées aux soutiens du mod) et la puce Wi-Fi (délivrée par le mod).\n- Même monde, progression des quêtes gardée.\n\nLauncher 1.4.1 — 2026-11-02\n\n- Plein écran : la fenêtre agrandie s'arrête au-dessus de la barre des tâches (avant, la barre recouvrait le bas de la fenêtre, signalé par un joueur).\n\nLauncher 1.4.0 — 2026-11-02 (pré-release, incluse dans la 1.4.1)\n\n- Mode performance (Paramètres → Jeu) : désactive les mods visuels lourds (Fresh Animations/EMF/ETF, Visuality, Particle Effects, Explosive Enhancement, Effectual, Particular, Falling Leaves, Better Animations Collection, 3D Skin Layers, Presence Footsteps, Sound Physics) en les renommant en .jar.disabled. Le désactiver les remet. Un mod que le joueur avait désactivé lui-même reste désactivé ; le mode est réappliqué après chaque mise à jour et avant de jouer."
+  "changelog": "1.8.4 — 2026-11-02\n\n- Quête du routeur Wi-Fi : explique où trouver la puce de fournisseur. Elle ne se fabrique pas : au bloc Serveur, lier son réseau (onglet Networks), le choisir comme fournisseur principal (onglet Wi-Fi), puis Issue.\n- Même monde, progression des quêtes gardée.\n\n1.8.3 — 2026-11-02\n\n- Deux nouveaux chapitres de quêtes qui expliquent les nouveaux mods : - Téléphones & antennes (Mobile Networks, 9 quêtes) : téléphone et numéro, tournevis, créer son réseau sur une antenne, premier appel, messages, antennes en fer et en diamant (portée ×2 et ×4), serveur du réseau, routeur Wi-Fi ; - Prisonniers & verrous (Cuffed, 17 quêtes) : menottes et clés, fers, escorte, loupe de fouille, boîte de confiscation, crochets, clés, cadenas, trousseau et copie de clés (recettes absentes de JEI), coffre-fort, pierre renforcée, porte de cellule, couchette, pilori, guillotine, matricule.\n- Recettes vérifiées : 0 recette en échec ; chaque objet des nouveaux mods a une recette, sauf les objets créatifs, les menottes en fourrure (réservées aux soutiens du mod) et la puce Wi-Fi (délivrée par le mod).\n- Même monde, progression des quêtes gardée.\n\nLauncher 1.4.1 — 2026-11-02\n\n- Plein écran : la fenêtre agrandie s'arrête au-dessus de la barre des tâches (avant, la barre recouvrait le bas de la fenêtre, signalé par un joueur)."
 }
