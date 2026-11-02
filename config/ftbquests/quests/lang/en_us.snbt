@@ -514,7 +514,7 @@
 	quest.65DD0296B92B90EE.title: "Serveur du réseau"
 	quest.65DD0296B92B90EE.quest_desc: ["Mécanisme de précision au centre. Protégé par un mot de passe : déverrouille-le et reste à côté pour gérer tes réseaux depuis un seul endroit. Joueurs autorisés et leurs rôles, forfaits d'appels et de messages (illimités par défaut, renouvelés chaque jour du jeu), numéros personnalisés (1 à 9 chiffres). Une antenne gérée par un serveur ne se règle plus au tournevis."]
 	quest.4CD21757914C44B3.title: "Routeur Wi-Fi"
-	quest.4CD21757914C44B3.quest_desc: ["Un point d'accès Internet local, pour les applications du téléphone qui ont besoin de données (Gram pour les photos, Plans pour la carte et les lieux). Seuls son propriétaire et les joueurs autorisés peuvent l'ouvrir."]
+	quest.4CD21757914C44B3.quest_desc: ["Un point d'accès Internet local, pour les applications du téléphone qui ont besoin de données (Gram pour les photos, Plans pour la carte et les lieux). Il lui faut une puce de fournisseur Wi-Fi, qui ne se fabrique pas : au bloc Serveur (déverrouillé), onglet Networks, lie ton réseau au serveur (Link) ; puis onglet Wi-Fi, choisis ce réseau comme fournisseur principal (Primary provider) du joueur et clique sur Issue. La puce arrive dans ton inventaire (garde une case libre). Mets-la dans le routeur, donne un nom et un mot de passe au Wi-Fi, puis Save. Seuls son propriétaire et les joueurs autorisés peuvent l'ouvrir."]
 	chapter.2A2265D026036A84.title: "Prisonniers \\& verrous"
 	chapter.2A2265D026036A84.chapter_subtitle: ["Cuffed : menotter un ennemi, le fouiller, l'enfermer. Et protéger ses coffres avec cadenas et coffres-forts."]
 	quest.4419B332E26A6282.title: "Menottes"
