@@ -8,7 +8,8 @@ namespace CreateWarfare.Launcher.Core.Services;
 /// - un fichier protégé n'est jamais écrasé ni supprimé, seulement créé s'il manque ;
 /// - on ne supprime que ce que le pack a posé (état local, overrides de l'import CurseForge,
 ///   ou jar d'une ancienne version reconnu par son hash) : les jars du joueur ne sont jamais touchés ;
-/// - un jar désactivé par le joueur (.jar.disabled) reste désactivé.
+/// - un jar désactivé par le joueur (.jar.disabled) reste désactivé, y compris quand le mod change de version ;
+/// - un fichier du pack que le joueur a modifié est gardé tant que le pack ne le change pas (sauf en réparation).
 /// </summary>
 public static class UpdatePlanner
 {
@@ -23,7 +24,8 @@ public static class UpdatePlanner
     public static string? InstalledVersion(string instanceDir, InstanceInfo? info) =>
         ReadState(instanceDir)?.Version ?? info?.ImportedVersion;
 
-    public static FilePlan Plan(string instanceDir, VersionInfo v, string overridesDir, LauncherState? state, InstanceInfo? info)
+    /// <param name="repair">Réparation : tout fichier du pack différent est remis, même modifié par le joueur.</param>
+    public static FilePlan Plan(string instanceDir, VersionInfo v, string overridesDir, LauncherState? state, InstanceInfo? info, bool repair = false)
     {
         var cmp = StringComparer.OrdinalIgnoreCase;
         var actions = new List<FileAction>();
@@ -35,27 +37,45 @@ public static class UpdatePlanner
                 .Select(f => (rel: PathRules.Normalize(Path.GetRelativePath(overridesDir, f)), src: f))
                 .OrderBy(x => x.rel, cmp).ToList()
             : new();
+        var overrideHashes = new Dictionary<string, string>(StringComparer.Ordinal);
         foreach (var (rel, src) in overrides)
         {
             wanted.Add(rel);
             var target = PathRules.Resolve(instanceDir, rel);
             var size = new FileInfo(src).Length;
+            var packHash = Hashing.Sha256(src);
+            overrideHashes[rel] = packHash;
             FileActionKind kind;
             if (!File.Exists(target)) kind = FileActionKind.Add;
             else if (PathRules.IsProtected(rel, v.Protected)) kind = FileActionKind.Protected;
-            else kind = Hashing.Sha256(target) == Hashing.Sha256(src) ? FileActionKind.Same : FileActionKind.Replace;
+            else if (Hashing.Sha256(target) == packHash) kind = FileActionKind.Same;
+            // Le pack livre le même fichier qu'à la dernière installation, mais celui de l'instance diffère :
+            // c'est le joueur (ou le mod au lancement) qui l'a changé. On le garde. Les jars livrés dans overrides/mods sont toujours remis.
+            else if (!repair && !rel.StartsWith("mods/", StringComparison.OrdinalIgnoreCase)
+                     && state?.OverrideHashes.TryGetValue(rel, out var installed) == true
+                     && string.Equals(installed, packHash, StringComparison.OrdinalIgnoreCase)) kind = FileActionKind.Kept;
+            else kind = FileActionKind.Replace;
             actions.Add(new FileAction(rel, kind, size, OverrideSource: src));
         }
 
         // 2. Jars téléchargés
+        var modIds = new Dictionary<string, string>(StringComparer.Ordinal);
         foreach (var m in v.Mods.OrderBy(m => m.File, cmp))
         {
             var rel = "mods/" + m.File;
             if (!wanted.Add(rel)) continue; // déjà livré dans overrides/mods
+            if (m.Id.Length > 0) modIds[m.Id] = m.File;
             var target = PathRules.Resolve(instanceDir, rel);
             FileActionKind kind;
             if (File.Exists(target)) kind = Hashing.Matches(target, m.Sha1, sha1: true) ? FileActionKind.Same : FileActionKind.Replace;
-            else kind = File.Exists(target + ".disabled") ? FileActionKind.Same : FileActionKind.Add;
+            else if (File.Exists(target + ".disabled")) kind = FileActionKind.Same;
+            else if (WasDisabled(instanceDir, m, state))
+            {
+                // Le joueur avait désactivé la version précédente de ce mod : la nouvelle arrive désactivée elle aussi.
+                actions.Add(new FileAction(rel + ".disabled", FileActionKind.Add, m.Size, Mod: m));
+                continue;
+            }
+            else kind = FileActionKind.Add;
             actions.Add(new FileAction(rel, kind, m.Size, Mod: m));
         }
 
@@ -109,7 +129,7 @@ public static class UpdatePlanner
         {
             FromVersion = state?.Version ?? info?.ImportedVersion ?? "",
             ToVersion = v.Version,
-            Actions = actions.OrderBy(a => a.Kind is FileActionKind.Same or FileActionKind.Protected)
+            Actions = actions.OrderBy(a => a.Kind is FileActionKind.Same or FileActionKind.Protected or FileActionKind.Kept)
                 .ThenBy(a => a.RelPath, cmp).ToList(),
             PackMods = packMods,
             PackOverrides = overrides.Select(o => o.rel).ToList(),
@@ -117,7 +137,18 @@ public static class UpdatePlanner
             AddedServers = alreadyOffered.Union(v.Servers.Select(s => s.Ip), cmp).ToList(),
             PacksToEnable = PendingPacks(v, state),
             EnabledPacks = (state?.EnabledPacks ?? new()).Union(v.ResourcePacks.Select(r => r.File), cmp).ToList(),
+            OverrideHashes = overrideHashes,
+            ModIds = modIds,
         };
+    }
+
+    /// <summary>Vrai si l'état connaît ce mod sous un autre nom de jar, et que ce jar-là est désactivé (.jar.disabled sans .jar).</summary>
+    static bool WasDisabled(string instanceDir, ModEntry m, LauncherState? state)
+    {
+        if (m.Id.Length == 0 || state == null || !state.ModIds.TryGetValue(m.Id, out var old)) return false;
+        if (string.IsNullOrEmpty(old) || old.Equals(m.File, StringComparison.OrdinalIgnoreCase)) return false;
+        var oldPath = PathRules.Resolve(instanceDir, "mods/" + old);
+        return File.Exists(oldPath + ".disabled") && !File.Exists(oldPath);
     }
 
     /// <summary>Packs de ressources du pack jamais encore activés dans cette instance.</summary>

@@ -45,6 +45,8 @@ public sealed class LauncherRelease
 
 public sealed class ModEntry
 {
+    /// <summary>Identifiant stable du mod (nom de son .pw.toml), identique d'une version à l'autre. Vide dans les anciens version.json.</summary>
+    public string Id { get; set; } = "";
     public string File { get; set; } = "";
     public string Sha1 { get; set; } = "";
     public long Size { get; set; }

@@ -17,6 +17,11 @@ public sealed class LauncherState
     public List<string> AddedServers { get; set; } = new();
     /// <summary>Packs de ressources déjà activés une fois : si le joueur les désactive, ils restent désactivés.</summary>
     public List<string> EnabledPacks { get; set; } = new();
+    /// <summary>sha256 de chaque override tel que livré par le pack à la dernière installation (chemin → hash) :
+    /// permet de reconnaître un fichier que le joueur a modifié alors que le pack ne l'a pas changé.</summary>
+    public Dictionary<string, string> OverrideHashes { get; set; } = new();
+    /// <summary>Identifiant stable d'un mod (version.json, mods[].id) → nom du jar installé : suit un mod d'une version à l'autre.</summary>
+    public Dictionary<string, string> ModIds { get; set; } = new();
     public DateTime UpdatedUtc { get; set; }
 }
 

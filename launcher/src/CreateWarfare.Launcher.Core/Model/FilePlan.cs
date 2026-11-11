@@ -1,6 +1,7 @@
 namespace CreateWarfare.Launcher.Core.Model;
 
-public enum FileActionKind { Add, Replace, Remove, Same, Protected }
+/// <summary>Kept : fichier du pack modifié par le joueur alors que le pack ne l'a pas changé depuis la dernière installation.</summary>
+public enum FileActionKind { Add, Replace, Remove, Same, Protected, Kept }
 
 /// <param name="OverrideSource">Fichier d'override extrait du zip, sinon null.</param>
 /// <param name="Mod">Jar à télécharger, sinon null.</param>
@@ -30,6 +31,10 @@ public sealed class FilePlan
     public List<ResourcePackEntry> PacksToEnable { get; init; } = new();
     /// <summary>Packs à mémoriser dans l'état après application.</summary>
     public List<string> EnabledPacks { get; init; } = new();
+    /// <summary>sha256 de chaque override livré par le pack (va dans l'état).</summary>
+    public Dictionary<string, string> OverrideHashes { get; init; } = new();
+    /// <summary>Identifiant de mod → nom du jar de cette version (va dans l'état).</summary>
+    public Dictionary<string, string> ModIds { get; init; } = new();
 
     public IEnumerable<FileAction> Changes => Actions.Where(a => a.Changes);
     public int Count(FileActionKind k) => Actions.Count(a => a.Kind == k);
