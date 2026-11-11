@@ -39,13 +39,43 @@ public static class SelfUpdater
     public static async Task UpdateAndRestartAsync(VersionInfo v, Downloader dl, IProgress<long>? bytes, CancellationToken ct)
     {
         var exe = ExePath ?? throw new InvalidOperationException("Chemin de l'exe inconnu");
-        var l = v.Launcher!;
+        await ReplaceAndRestartAsync(exe, v.Launcher!, dl, bytes, ct, path => Process.Start(new ProcessStartInfo(path) { UseShellExecute = true }));
+    }
+
+    /// <summary>
+    /// Vérifie d'abord qu'on peut écrire à côté de l'exe (sinon 70 Mo seraient téléchargés pour rien), télécharge et
+    /// vérifie le nouvel exe, échange les fichiers, lance le nouveau. Si le lancement échoue, l'ancien exe est remis.
+    /// </summary>
+    public static async Task ReplaceAndRestartAsync(string exe, LauncherRelease l, Downloader dl, IProgress<long>? bytes,
+        CancellationToken ct, Action<string> start)
+    {
+        var dir = Path.GetDirectoryName(exe)!;
+        var probe = Path.Combine(dir, ".cw-write-test-" + Environment.ProcessId);
+        try
+        {
+            File.WriteAllText(probe, "");
+            File.Delete(probe);
+        }
+        catch (Exception e) when (e is UnauthorizedAccessException or IOException)
+        {
+            throw new IOException($"Impossible d'écrire dans {dir} : déplace le launcher dans un dossier à toi (Bureau, Documents), puis réessaie", e);
+        }
+
         var next = exe + ".new";
         await dl.DownloadVerifiedAsync(new[] { l.Url }, next, l.Sha256, sha1: false, bytes, ct);
         File.Move(exe, exe + ".old", overwrite: true);
-        try { File.Move(next, exe); }
-        catch { File.Move(exe + ".old", exe); throw; }
-        Log.Info($"Launcher mis à jour vers {l.Version}, relance");
-        Process.Start(new ProcessStartInfo(exe) { UseShellExecute = true });
+        try
+        {
+            File.Move(next, exe);
+            Log.Info($"Launcher mis à jour vers {l.Version}, relance");
+            start(exe);
+        }
+        catch (Exception e)
+        {
+            Log.Error("Nouveau launcher non lancé, retour à l'ancien", e);
+            if (File.Exists(exe)) File.Move(exe, next, overwrite: true);
+            File.Move(exe + ".old", exe);
+            throw;
+        }
     }
 }

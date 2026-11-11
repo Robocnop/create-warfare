@@ -43,6 +43,7 @@ public static class Uninstaller
     /// <summary>Script cmd : attend la fin du launcher, efface l'exe, les données du launcher, puis lui-même.</summary>
     public static string SelfRemovalScript(int pid, string exePath, string appDataDir) =>
         "@echo off\r\n" +
+        "chcp 65001 >nul\r\n" + // le script est en UTF-8 : sans ça, un chemin avec accent (C:\Users\Jérôme) est mal lu
         ":wait\r\n" +
         $"tasklist /FI \"PID eq {pid}\" 2>nul | find \"{pid}\" >nul && (timeout /t 1 /nobreak >nul & goto wait)\r\n" +
         $"del /f /q \"{exePath}\" \"{exePath}.old\" 2>nul\r\n" +
