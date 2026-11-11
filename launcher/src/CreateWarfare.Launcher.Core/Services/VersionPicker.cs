@@ -13,7 +13,7 @@ public static class VersionPicker
     /// <summary>Versions proposées : la dernière stable, puis la pré-release si le mode développeur est actif.</summary>
     public static List<VersionChoice> Choices(VersionInfo manifest, bool devMode)
     {
-        var list = new List<VersionChoice> { new(Channels.Release, "Dernière version", manifest) };
+        var list = new List<VersionChoice> { new(Channels.Release, "Version stable", manifest) };
         if (devMode && manifest.Prerelease is { Version.Length: > 0 } pre)
             list.Add(new(Channels.Prerelease, "Pré-release", pre));
         return list;

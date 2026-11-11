@@ -93,7 +93,9 @@ public partial class MainWindow : Window
         // Agrandie, la fenêtre occupe exactement la zone de travail (WM_GETMINMAXINFO plus bas) : pas de bordure.
         BorderThickness = WindowState == WindowState.Maximized ? new Thickness(0) : new Thickness(1);
         MaxButton.Content = FindResource(WindowState == WindowState.Maximized ? "IcRestore" : "IcMaximize");
-        MaxButton.ToolTip = WindowState == WindowState.Maximized ? "Restaurer" : "Agrandir";
+        MaxButton.ToolTip = WindowState == WindowState.Maximized
+            ? TryFindResource("s.window.restore") as string ?? "Restaurer"
+            : TryFindResource("s.window.maximize") as string ?? "Agrandir";
     }
 
     /// <summary>

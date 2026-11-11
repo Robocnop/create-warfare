@@ -31,7 +31,7 @@
     <sys:String x:Key="t.026">LATEST UPDATE  ·  </sys:String>
     <sys:String x:Key="t.027">Install the new launcher version</sys:String>
     <sys:String x:Key="t.028">Pack </sys:String>
-    <sys:String x:Key="t.029">Choose the pack version</sys:String>
+    <sys:String x:Key="t.029">Choose the channel: stable or pre-release</sys:String>
     <sys:String x:Key="t.030">Repair</sys:String>
     <sys:String x:Key="t.031">Check and repair the pack files</sys:String>
     <sys:String x:Key="t.032">Folder</sys:String>
@@ -208,4 +208,11 @@
     <sys:String x:Key="s.perf.closeGame">Close Minecraft first: its mods are locked while it runs.</sys:String>
     <sys:String x:Key="s.perf.noInstance">No instance found.</sys:String>
     <sys:String x:Key="s.perf.failed">Could not rename the mods: </sys:String>
+    <sys:String x:Key="s.review.kept">Edited by you (kept)</sys:String>
+    <sys:String x:Key="s.manifest.invalid">The update list is unreadable. Your connection is fine: retrying automatically in 30 s.</sys:String>
+    <sys:String x:Key="s.manifest.offline">Update server unreachable. Check your connection: retrying automatically in 30 s.</sys:String>
+    <sys:String x:Key="s.manifest.back">Connection restored.</sys:String>
+    <sys:String x:Key="s.manifest.newVersion">New pack version available: v{0}.</sys:String>
+    <sys:String x:Key="s.window.restore">Restore</sys:String>
+    <sys:String x:Key="s.window.maximize">Maximize</sys:String>
 </ResourceDictionary>

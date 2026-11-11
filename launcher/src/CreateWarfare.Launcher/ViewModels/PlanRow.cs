@@ -23,6 +23,7 @@ public sealed class PlanRow
         FileActionKind.Replace => "⇄",
         FileActionKind.Remove => "−",
         FileActionKind.Protected => "◆",
+        FileActionKind.Kept => "✎",
         _ => "=",
     };
 }

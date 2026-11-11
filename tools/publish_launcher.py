@@ -141,6 +141,13 @@ def changelog(versions=3):
     return "\n\n".join(out)
 
 
+def changelog_head():
+    """Version of the first pack section of CHANGELOG.md ("## 1.8.5 — …"; "## Launcher …" sections are skipped)."""
+    text = open(os.path.join(ROOT, "CHANGELOG.md"), encoding="utf-8").read()
+    m = re.search(r"(?m)^## (\d+(?:\.\d+)+)", text)
+    return m.group(1) if m else None
+
+
 def launcher_version():
     csproj = os.path.join(ROOT, "launcher", "src", "CreateWarfare.Launcher", "CreateWarfare.Launcher.csproj")
     return re.search(r"<Version>([^<]+)</Version>", open(csproj, encoding="utf-8").read()).group(1)
@@ -158,6 +165,9 @@ def main():
 
     pack = tomllib.load(open(os.path.join(ROOT, "pack.toml"), "rb"))
     version = pack["version"]
+    # The launcher shows these notes as "what's new": 1.8.5 was published with the 1.8.4 notes because its section was missing.
+    if not args.local and changelog_head() != version:
+        sys.exit(f"CHANGELOG.md: first pack section is {changelog_head()}, expected {version}. Write the notes of {version} first.")
     zip_path = os.path.join(ROOT, "dist", f"CreateWarfare-{version}.zip")
     if not os.path.exists(zip_path):
         sys.exit(f"{zip_path} missing: run tools/build.sh first")
@@ -174,7 +184,9 @@ def main():
             missing.append(f"{meta['filename']} ({dl.get('hash-format')}, not in overrides/mods)")
             continue
         cf = meta.get("update", {}).get("curseforge")
-        mods.append({"file": meta["filename"], "sha1": dl["hash"], "size": 0,
+        # "id" (name of the .pw.toml) stays the same across versions of a mod: the launcher uses it to keep
+        # a mod disabled by the player disabled when its file name changes.
+        mods.append({"id": name.removesuffix(".pw.toml"), "file": meta["filename"], "sha1": dl["hash"], "size": 0,
                      "urls": [u for u in [dl.get("url"), cdn_url(cf["file-id"], meta["filename"]) if cf else None] if u]})
     if missing:
         sys.exit("Cannot verify these jars with sha1:\n  " + "\n  ".join(missing))

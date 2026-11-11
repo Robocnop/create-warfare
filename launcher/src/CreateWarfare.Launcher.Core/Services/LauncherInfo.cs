@@ -235,13 +235,14 @@ public sealed class LauncherContent
     {
         try
         {
-            var json = url.StartsWith("http", StringComparison.OrdinalIgnoreCase) ? await http.GetStringAsync(url, ct) : await File.ReadAllTextAsync(url, ct);
+            UrlRules.EnsureAllowed(url); // https seulement (ou fichier local pour les essais)
+            var json = UrlRules.IsRemote(url) ? await http.GetStringAsync(url, ct) : await File.ReadAllTextAsync(url, ct);
             var content = Parse(json);
             Directory.CreateDirectory(Path.GetDirectoryName(cacheFile)!);
             AtomicFile.WriteAllText(cacheFile, json);
             return content;
         }
-        catch (Exception e) when (e is HttpRequestException or IOException or JsonException or TaskCanceledException or UnauthorizedAccessException or NotSupportedException)
+        catch (Exception e) when (e is HttpRequestException or IOException or JsonException or TaskCanceledException or UnauthorizedAccessException or NotSupportedException or InvalidDataException)
         {
             Log.Info($"launcher-content.json indisponible ({e.Message}), copie locale utilisée");
             try { return File.Exists(cacheFile) ? Parse(await File.ReadAllTextAsync(cacheFile, ct)) : new(); }

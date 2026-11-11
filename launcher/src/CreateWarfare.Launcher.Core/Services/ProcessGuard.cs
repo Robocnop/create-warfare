@@ -19,7 +19,10 @@ public static class ProcessGuard
                 if ((p["CommandLine"] as string)?.Contains(needle, StringComparison.OrdinalIgnoreCase) == true)
                     return true;
         }
-        catch (ManagementException e) { Log.Info($"WMI indisponible : {e.Message}"); }
+        catch (Exception e) when (e is ManagementException or System.Runtime.InteropServices.COMException or UnauthorizedAccessException)
+        {
+            Log.Info($"WMI indisponible : {e.Message}");
+        }
         return false;
     }
 }

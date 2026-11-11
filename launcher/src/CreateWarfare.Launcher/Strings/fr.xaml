@@ -31,7 +31,7 @@
     <sys:String x:Key="t.026">DERNIÈRE MISE À JOUR  ·  </sys:String>
     <sys:String x:Key="t.027">Installer la nouvelle version du launcher</sys:String>
     <sys:String x:Key="t.028">Pack </sys:String>
-    <sys:String x:Key="t.029">Choisir la version du pack</sys:String>
+    <sys:String x:Key="t.029">Choisir le canal : version stable ou pré-release</sys:String>
     <sys:String x:Key="t.030">Réparer</sys:String>
     <sys:String x:Key="t.031">Vérifier et réparer les fichiers du pack</sys:String>
     <sys:String x:Key="t.032">Dossier</sys:String>
@@ -208,4 +208,11 @@
     <sys:String x:Key="s.perf.closeGame">Ferme Minecraft d'abord : ses mods sont verrouillés tant qu'il tourne.</sys:String>
     <sys:String x:Key="s.perf.noInstance">Aucune instance trouvée.</sys:String>
     <sys:String x:Key="s.perf.failed">Impossible de renommer les mods : </sys:String>
+    <sys:String x:Key="s.review.kept">Modifiés par toi (gardés)</sys:String>
+    <sys:String x:Key="s.manifest.invalid">La liste des mises à jour est illisible. Ce n'est pas ta connexion : nouvel essai automatique dans 30 s.</sys:String>
+    <sys:String x:Key="s.manifest.offline">Serveur de mises à jour injoignable. Vérifie ta connexion : nouvel essai automatique dans 30 s.</sys:String>
+    <sys:String x:Key="s.manifest.back">Connexion rétablie.</sys:String>
+    <sys:String x:Key="s.manifest.newVersion">Nouvelle version du pack disponible : v{0}.</sys:String>
+    <sys:String x:Key="s.window.restore">Restaurer</sys:String>
+    <sys:String x:Key="s.window.maximize">Agrandir</sys:String>
 </ResourceDictionary>

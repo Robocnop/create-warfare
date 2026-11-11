@@ -336,7 +336,7 @@ public sealed partial class MainViewModel
                     return (ImageSource)b;
                 }
                 catch (Exception e) when (e is IOException or NotSupportedException or InvalidOperationException or ArgumentException or HttpRequestException or TaskCanceledException
-                                          or System.Runtime.InteropServices.COMException or FileFormatException)
+                                          or System.Runtime.InteropServices.COMException or FileFormatException or InvalidDataException)
                 {
                     Log.Info($"Image ignorée : {e.Message}");
                     return null;
@@ -377,9 +377,12 @@ public sealed partial class MainViewModel
         var file = Path.Combine(dir, Convert.ToHexString(SHA1.HashData(Encoding.UTF8.GetBytes(url))).ToLowerInvariant());
         if (!File.Exists(file))
         {
+            UrlRules.EnsureAllowed(url); // https seulement
             var bytes = Http.GetByteArrayAsync(url).GetAwaiter().GetResult();
             Directory.CreateDirectory(dir);
-            File.WriteAllBytes(file, bytes);
+            // écriture en deux temps : une coupure ne laisse pas une image tronquée en cache pour toujours
+            File.WriteAllBytes(file + ".tmp", bytes);
+            File.Move(file + ".tmp", file, overwrite: true);
         }
         return File.OpenRead(file);
     }

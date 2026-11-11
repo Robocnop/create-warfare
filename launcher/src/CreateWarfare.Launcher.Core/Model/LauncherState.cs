@@ -48,6 +48,8 @@ public sealed class LauncherSettings
     public bool StartWithWindows { get; set; }
     /// <summary>Installer seul les nouvelles versions du launcher à l'ouverture.</summary>
     public bool AutoUpdateLauncher { get; set; }
+    /// <summary>Dernier échec de la mise à jour automatique du launcher : pas de nouvel essai automatique pendant un jour.</summary>
+    public DateTime? AutoUpdateFailedUtc { get; set; }
     /// <summary>Journal détaillé (requêtes, durées) pour le support.</summary>
     public bool DebugLog { get; set; }
     /// <summary>Accueil du premier lancement déjà vu.</summary>

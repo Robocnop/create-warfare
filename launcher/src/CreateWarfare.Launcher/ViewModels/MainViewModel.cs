@@ -24,6 +24,8 @@ public sealed partial class MainViewModel : Observable
     FilePlan? _plan;
     CancellationTokenSource? _cts;
     PrimaryAction _action;
+    /// <summary>Relit version.json toutes les 10 min (30 s tant qu'il est injoignable) : un launcher resté ouvert voit la nouvelle version.</summary>
+    readonly System.Windows.Threading.DispatcherTimer _manifestTimer = new() { Interval = TimeSpan.FromMinutes(10) };
 
     public MainViewModel()
     {
@@ -32,7 +34,7 @@ public sealed partial class MainViewModel : Observable
         ConfirmCommand = new Command(ConfirmAsync, () => _plan != null);
         BackHomeCommand = new Command(() => { _plan = null; Screen = Screen.Home; });
         CancelWorkCommand = new Command(() => _cts?.Cancel(), () => CanCancel);
-        UpdateLauncherCommand = new Command(UpdateLauncherAsync, () => LauncherUpdateAvailable);
+        UpdateLauncherCommand = new Command(() => UpdateLauncherAsync(), () => LauncherUpdateAvailable);
         DownloadZipCommand = new Command(DownloadZipAsync, () => _remote != null);
         ShowZipCommand = new Command(() => Explorer("/select,\"" + InstallZipPath + "\""), () => InstallZipPath != null);
         OpenCurseForgeCommand = new Command(OpenCurseForge);
@@ -46,6 +48,8 @@ public sealed partial class MainViewModel : Observable
         DismissToastCommand = new Command(() => ToastText = null);
         ToggleVersionMenuCommand = new Command(() => IsVersionMenuOpen = !IsVersionMenuOpen, () => VersionItems.Count > 0);
         UninstallCommand = new Command(UninstallAsync);
+        _manifestTimer.Tick += async (_, _) => await RecheckManifestAsync();
+        _manifestTimer.Start();
         InitShell();
     }
 
@@ -120,6 +124,8 @@ public sealed partial class MainViewModel : Observable
     public string ChoiceVersion => _choice?.Info.Version ?? "—";
     public bool ChoiceIsPrerelease => _choice?.IsPrerelease == true;
     public bool ChoiceIsRelease => !ChoiceIsPrerelease;
+    /// <summary>Le sélecteur choisit un canal (stable / pré-release) : inutile, donc masqué, quand il n'y a qu'un choix.</summary>
+    public bool HasVersionChoice => VersionItems.Count > 1;
     bool _versionMenuOpen;
     public bool IsVersionMenuOpen { get => _versionMenuOpen; set => Set(ref _versionMenuOpen, value); }
 
@@ -158,6 +164,7 @@ public sealed partial class MainViewModel : Observable
     public int CountRemove => _plan?.Count(FileActionKind.Remove) ?? 0;
     public int CountSame => _plan?.Count(FileActionKind.Same) ?? 0;
     public int CountProtected => _plan?.Count(FileActionKind.Protected) ?? 0;
+    public int CountKept => _plan?.Count(FileActionKind.Kept) ?? 0;
     string _confirmText = "Mettre à jour";
     public string ConfirmText { get => _confirmText; set => Set(ref _confirmText, value); }
 
@@ -212,19 +219,49 @@ public sealed partial class MainViewModel : Observable
         try
         {
             _manifest = await _dl.FetchManifestAsync(SettingsStore.ManifestUrl(_settings), CancellationToken.None);
+            _manifestTimer.Interval = TimeSpan.FromMinutes(10);
         }
         catch (Exception e)
         {
             _manifest = null;
-            Log.Error("version.json injoignable", e);
-            Toast("Serveur de mises à jour injoignable. Vérifie ta connexion.", error: true);
+            _manifestTimer.Interval = TimeSpan.FromSeconds(30);
+            Log.Error("version.json indisponible", e);
+            Toast(e is InvalidDataException
+                ? T("s.manifest.invalid", "La liste des mises à jour est illisible. Ce n'est pas ta connexion : nouvel essai automatique dans 30 s.")
+                : T("s.manifest.offline", "Serveur de mises à jour injoignable. Vérifie ta connexion : nouvel essai automatique dans 30 s."), error: true);
         }
         ApplyChoice();
-        if (_settings.AutoUpdateLauncher && LauncherUpdateAvailable && _manifest?.Launcher != null)
+        // après un échec de la mise à jour automatique, on ne réessaie qu'une fois par jour (le bouton reste disponible)
+        var recentFailure = _settings.AutoUpdateFailedUtc is { } t && DateTime.UtcNow - t < TimeSpan.FromDays(1);
+        if (_settings.AutoUpdateLauncher && !recentFailure && LauncherUpdateAvailable && _manifest?.Launcher != null)
         {
             Log.Info("Mise à jour automatique du launcher");
-            _ = UpdateLauncherAsync();
+            _ = UpdateLauncherAsync(auto: true);
         }
+    }
+
+    /// <summary>Relecture silencieuse de version.json : ne dérange pas une installation en cours, n'affiche rien en cas d'échec.</summary>
+    async Task RecheckManifestAsync()
+    {
+        if (IsStep) return;
+        VersionInfo m;
+        try { m = await _dl.FetchManifestAsync(SettingsStore.ManifestUrl(_settings), CancellationToken.None); }
+        catch (Exception e)
+        {
+            Log.Info($"Relecture de version.json impossible : {e.Message}");
+            return;
+        }
+        if (IsStep) return;
+        _manifestTimer.Interval = TimeSpan.FromMinutes(10);
+        var wasOffline = _manifest == null;
+        var changed = wasOffline || m.Version != _manifest!.Version || m.Launcher?.Version != _manifest.Launcher?.Version
+                      || m.Prerelease?.Version != _manifest.Prerelease?.Version || m.Notice != _manifest.Notice;
+        if (!changed) return;
+        var newPack = !wasOffline && m.Version != _manifest!.Version;
+        _manifest = m;
+        ApplyChoice();
+        if (wasOffline) Toast(T("s.manifest.back", "Connexion rétablie."));
+        else if (newPack) Toast(string.Format(T("s.manifest.newVersion", "Nouvelle version du pack disponible : v{0}."), m.Version));
     }
 
     /// <summary>Reconstruit le sélecteur et la version visée à partir du canal mémorisé.</summary>
@@ -243,7 +280,7 @@ public sealed partial class MainViewModel : Observable
             foreach (var c in VersionPicker.Choices(_manifest, _settings.DevMode))
                 VersionItems.Add(new VersionItem(c, Select));
         }
-        foreach (var n in new[] { nameof(ChoiceLabel), nameof(ChoiceVersion), nameof(ChoiceIsPrerelease), nameof(ChoiceIsRelease) })
+        foreach (var n in new[] { nameof(ChoiceLabel), nameof(ChoiceVersion), nameof(ChoiceIsPrerelease), nameof(ChoiceIsRelease), nameof(HasVersionChoice) })
             Raise(n);
         UpdateHome();
         BuildNews();
@@ -334,7 +371,7 @@ public sealed partial class MainViewModel : Observable
             var overrides = await _dl.GetOverridesAsync(remote, BytesProgress(remote.Zip.Size, "Pack " + RemoteVersion), _cts!.Token);
             WorkCurrent = "Comparaison des fichiers de l'instance…";
             var state = UpdatePlanner.ReadState(instance.Path);
-            var plan = await Task.Run(() => UpdatePlanner.Plan(instance.Path, remote, overrides, state, instance));
+            var plan = await Task.Run(() => UpdatePlanner.Plan(instance.Path, remote, overrides, state, instance, repair));
 
             if (plan.IsEmpty && state?.Version == remote.Version)
             {
@@ -371,11 +408,13 @@ public sealed partial class MainViewModel : Observable
               + string.Join(", ", plan.PacksToEnable.Select(p => Path.GetFileNameWithoutExtension(p.File))) + ".";
         ReviewText = "Rien n'est écrit avant ta confirmation. Chaque fichier remplacé ou supprimé est d'abord sauvegardé, " +
                      $"et tout est remis en place en cas d'erreur.{dl}\nTes touches, réglages, mondes et mods ajoutés ne sont pas touchés.{servers}{packs}";
+        if (plan.Count(FileActionKind.Kept) > 0)
+            ReviewText += $"\n{plan.Count(FileActionKind.Kept)} fichier(s) de configuration que tu as modifiés sont gardés : le pack ne les a pas changés. « Réparer » les remet comme dans le pack.";
         if (IsDowngrade(plan.FromVersion, plan.ToVersion))
             ReviewText += $"\n\n⚠ Retour d'une version plus récente (v{plan.FromVersion}) : un monde solo ouvert avec v{plan.FromVersion} " +
                           "peut perdre des blocs ou des objets. Fais une copie de tes mondes avant.";
         ConfirmText = plan.IsEmpty ? "Valider" : repair ? "Réparer" : "Mettre à jour";
-        foreach (var n in new[] { nameof(CountReplace), nameof(CountAdd), nameof(CountRemove), nameof(CountSame), nameof(CountProtected) })
+        foreach (var n in new[] { nameof(CountReplace), nameof(CountAdd), nameof(CountRemove), nameof(CountSame), nameof(CountProtected), nameof(CountKept) })
             Raise(n);
         Screen = Screen.Review;
     }
@@ -397,6 +436,8 @@ public sealed partial class MainViewModel : Observable
 
         var plan = _plan;
         StartWork("TÉLÉCHARGEMENT", "Téléchargement des mods", cancellable: true);
+        var clock = Stopwatch.StartNew();
+        long firstBytes = -1;
         var progress = new Progress<ApplyProgress>(p =>
         {
             if (p.Phase == "apply" && CanCancel)
@@ -409,12 +450,27 @@ public sealed partial class MainViewModel : Observable
             WorkTotal = $"/ {p.Total}";
             WorkProgress = p.Total == 0 ? 1 : (double)p.Done / p.Total;
             WorkCurrent = p.Current.Length == 0 ? "" : (p.Phase == "apply" ? "⇄  " : "↓  ") + p.Current.Replace('/', '\\');
+            if (p.Phase == "download" && p.BytesTotal > 0)
+            {
+                // la barre suit les octets : un gros jar ne donne plus l'impression que tout est figé
+                WorkProgress = Math.Min(1, (double)p.Bytes / p.BytesTotal);
+                if (firstBytes < 0) { firstBytes = p.Bytes; clock.Restart(); }
+                var secs = clock.Elapsed.TotalSeconds;
+                var speed = secs > 0.5 ? (p.Bytes - firstBytes) / secs : 0;
+                var left = speed > 0 && p.BytesTotal > p.Bytes ? TimeSpan.FromSeconds((p.BytesTotal - p.Bytes) / speed) : TimeSpan.Zero;
+                WorkDetail = $"{Format.Size(p.Bytes)} / {Format.Size(p.BytesTotal)}"
+                    + (speed > 0 ? $"  ·  {speed / (1024 * 1024):0.0} Mo/s" : "")
+                    + (left > TimeSpan.Zero ? "  ·  " + (left.TotalMinutes >= 1 ? $"{(int)left.TotalMinutes} min {left.Seconds:00} s" : $"{left.Seconds} s") : "");
+            }
+            else if (p.Phase == "apply") WorkDetail = "";
         });
         try
         {
             var ct = _cts!.Token;
             await Task.Run(() => new UpdateApplier(_dl).ApplyAsync(dir, plan, progress, ct));
             ApplyPerformanceMode(); // une mise à jour d'un mod lourd repose un jar actif
+            if (_remote is { } installed && installed.Version == plan.ToVersion)
+                _ = Task.Run(() => _dl.Prune(installed)); // le cache ne garde que la version en place
             _plan = null;
             UpdateHome();
             Screen = Screen.Home;
@@ -425,15 +481,30 @@ public sealed partial class MainViewModel : Observable
             Screen = Screen.Review;
             Toast("Téléchargement annulé, rien n'a été modifié.");
         }
+        catch (InsufficientSpaceException e)
+        {
+            Screen = Screen.Review;
+            Log.Error("Mise à jour refusée : espace disque", e);
+            ShowError("Pas assez de place sur le disque", e.Message + ".\n\nRien n'a été téléchargé ni modifié.");
+        }
+        catch (RollbackIncompleteException e)
+        {
+            Screen = Screen.Home;
+            Log.Error("Mise à jour échouée, retour arrière incomplet", e);
+            ShowError("Mise à jour interrompue : instance à réparer",
+                $"{FirstLine(e.Message)}.\n\n{e.NotRestored.Count} fichier(s) n'ont pas pu être remis en place, par exemple {e.NotRestored[0].Replace('/', '\\')}. " +
+                "Ferme Minecraft et CurseForge, puis clique sur « Réparer ».\n\nCopie de sécurité : " + e.BackupDir);
+        }
         catch (Exception e)
         {
             Screen = Screen.Home;
             Log.Error("Mise à jour échouée", e);
-            Toast($"Échec : {FirstLine(e.Message)}. L'instance a été remise comme avant.", error: true);
+            var why = e is UnauthorizedAccessException ? "accès refusé à un fichier de l'instance (ferme le jeu et CurseForge, vérifie l'antivirus)" : FirstLine(e.Message);
+            Toast($"Échec : {why}. L'instance a été remise comme avant.", error: true);
         }
     }
 
-    async Task UpdateLauncherAsync()
+    async Task UpdateLauncherAsync(bool auto = false)
     {
         if (_manifest?.Launcher == null) return;
         var remote = _manifest;
@@ -448,6 +519,11 @@ public sealed partial class MainViewModel : Observable
         {
             Screen = Screen.Home;
             Log.Error("Auto-update échoué", e);
+            if (auto)
+            {
+                _settings.AutoUpdateFailedUtc = DateTime.UtcNow;
+                SettingsStore.Save(_settings);
+            }
             Toast($"Mise à jour du launcher impossible : {FirstLine(e.Message)}", error: true);
         }
     }

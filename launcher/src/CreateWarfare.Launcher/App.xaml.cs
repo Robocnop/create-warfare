@@ -12,6 +12,7 @@ public partial class App : Application
     {
         Log.Info($"Démarrage du launcher {SelfUpdater.Display(SelfUpdater.CurrentVersion)}");
         SelfUpdater.CleanupOld();
+        Log.Prune(); // journaux de plus de 14 jours
         DispatcherUnhandledException += OnUnhandled;
         Motion.Apply(Resources);
         var settings = SettingsStore.Load();

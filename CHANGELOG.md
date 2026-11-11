@@ -2,6 +2,27 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.8.5 — 2026-11-11
+
+- **Create: Ultimate Factory** : 39 recettes Create de plus (poudre à canon au mixeur, netherite au broyage des briques
+  du Nether…). Aucun nouveau bloc.
+- **Recettes de Create de retour dans JEI et EMI** : l'assemblage séquencé (mécanisme de précision, etc.) et les
+  catégories qui suivaient ne s'affichaient plus depuis la 1.5.5. Correctif dans Advanced Weather.
+- Même monde, progression des quêtes gardée.
+
+## Launcher 1.5.0 — 2026-11-11
+
+- **Téléchargements plus solides** : une connexion qui se fige n'immobilise plus le launcher (abandon après 30 s sans
+  données), chaque fichier est réessayé 3 fois, et 4 mods sont téléchargés à la fois avec le débit et le temps restant.
+- **Espace disque vérifié avant de commencer** : s'il manque de la place, le launcher le dit et ne touche à rien.
+- **Tes réglages restent** : une config du pack que tu as modifiée est gardée tant que le pack ne la change pas
+  (« Réparer » la remet), et un mod que tu as désactivé le reste quand il change de version.
+- **Messages plus clairs** : erreur de connexion ou fichier de mise à jour illisible, retour arrière incomplet signalé,
+  dossier du launcher non inscriptible. Le launcher revérifie les mises à jour toutes les 10 minutes.
+- **Sélecteur de version** : masqué quand il n'y a qu'une version à proposer (il sert à choisir entre stable et pré-release).
+- **Désinstallation** : le launcher s'efface aussi quand le chemin contient un accent.
+- **Linux** : nouvelle version pour Prism Launcher, voir `linux/README.md`.
+
 ## 1.8.4 — 2026-11-02
 
 - **Quête du routeur Wi-Fi** : explique où trouver la puce de fournisseur. Elle ne se fabrique pas : au bloc Serveur,
