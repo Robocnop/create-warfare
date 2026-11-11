@@ -13,3 +13,6 @@ launcher/
 LICENSE
 version.json
 launcher-content.json
+.auto-claude/
+.auto-claude-security.json
+.auto-claude-status

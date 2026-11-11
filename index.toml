@@ -1,66 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".auto-claude/.env"
-hash = "7fd34e86714c351e4052cf0ce4f2b6e1691215ca2d212d9faa2004b3d34087bc"
-
-[[files]]
-file = ".auto-claude/.gitignore_checked"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = ".auto-claude/ideation/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = ".auto-claude/insights/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = ".auto-claude/project_index.json"
-hash = "110decaf517bc468c8ca1defeeedcebd8d5eb51639174daa44ce91be71076064"
-
-[[files]]
-file = ".auto-claude/roadmap/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = ".auto-claude/specs/.gitkeep"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
-file = ".auto-claude/specs/001-failed-to-authenticate-api-error-401-type-error-er/complexity_assessment.json"
-hash = "c779b0c75d266de238d54e6eefee0f5ccd4489ef4d1883fcc70c0aab98a805ce"
-
-[[files]]
-file = ".auto-claude/specs/001-failed-to-authenticate-api-error-401-type-error-er/context.json"
-hash = "349b381f3581ed8d487acb98f75620249799f46c084a1fd1dfcdb6f2ed9063f9"
-
-[[files]]
-file = ".auto-claude/specs/001-failed-to-authenticate-api-error-401-type-error-er/graph_hints.json"
-hash = "5dce912b494fa6de857adf02bd12f3ad33a5ccdf03d51eeb4b0057dfcb870923"
-
-[[files]]
-file = ".auto-claude/specs/001-failed-to-authenticate-api-error-401-type-error-er/implementation_plan.json"
-hash = "3d3183b34bbe32f2d06f9f0a68d0d27dbc45d585f3604d74e31ef1a536ac26d0"
-
-[[files]]
-file = ".auto-claude/specs/001-failed-to-authenticate-api-error-401-type-error-er/project_index.json"
-hash = "110decaf517bc468c8ca1defeeedcebd8d5eb51639174daa44ce91be71076064"
-
-[[files]]
-file = ".auto-claude/specs/001-failed-to-authenticate-api-error-401-type-error-er/requirements.json"
-hash = "f656046884af077c779723debfb84b15e7815d76be8e65c4185d3084952f2e51"
-
-[[files]]
-file = ".auto-claude/specs/001-failed-to-authenticate-api-error-401-type-error-er/task_logs.json"
-hash = "aa13ab61a703f712a59f356b93640f5e34399f751fc961f751791cc3f7e36b62"
-
-[[files]]
-file = ".auto-claude/specs/001-failed-to-authenticate-api-error-401-type-error-er/task_metadata.json"
-hash = "8fcfbf4aa1cc9ebacb1338a57c10b513e8c20617442c8d6843d932a88fe2193a"
-
-[[files]]
 file = "config/Advancedperipherals/peripherals.toml"
 hash = "23817c6b65f05e550a7e6f462aa5f2da4d6d90a8b04436feb26a138c80cce0f1"
 
