@@ -11,7 +11,9 @@
     "cbcmodernwarfare",
     "createdieselgenerators",
     "createpropulsion",
-    "projectexplosive"
+    "projectexplosive",
+    "northstar",
+    "superbwarfare"
   ],
   "priority_overrides": {},
   "stone_variants": [

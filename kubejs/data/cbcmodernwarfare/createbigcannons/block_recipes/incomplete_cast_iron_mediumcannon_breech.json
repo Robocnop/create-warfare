@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "cbcmodernwarfare:unbored_cast_iron_mediumcannon_breech"
+  },
+  "result": "cbcmodernwarfare:incomplete_cast_iron_mediumcannon_breech"
+}

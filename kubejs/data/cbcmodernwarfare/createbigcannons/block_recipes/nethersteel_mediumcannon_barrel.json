@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "cbcmodernwarfare:unbored_nethersteel_mediumcannon_barrel"
+  },
+  "result": "cbcmodernwarfare:nethersteel_mediumcannon_barrel"
+}

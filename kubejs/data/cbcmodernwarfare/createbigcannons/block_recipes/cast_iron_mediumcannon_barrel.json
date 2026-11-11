@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "cbcmodernwarfare:unbored_cast_iron_mediumcannon_barrel"
+  },
+  "result": "cbcmodernwarfare:cast_iron_mediumcannon_barrel"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:cannon_casting",
+  "cast_shape": "createbigcannons:rotarycannon_breech",
+  "fluid": {
+    "tag": "c:molten_nethersteel"
+  },
+  "result": "cbcmodernwarfare:unbored_nethersteel_rotarycannon_breech"
+}

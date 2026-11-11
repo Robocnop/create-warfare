@@ -2,6 +2,21 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.8.6 — 2026-11-11 (⚠️ non testée en jeu)
+
+- **Trois quêtes débloquées** : « Canon moyen », « Canon blindé » et « Périscope » demandaient des objets sans recette.
+- **Neo Warfare** : canons moyens et rotatifs à couler et forer comme ceux de Create Big Cannons (moules à la scie),
+  obus de canon moyen et d'autocanon, douilles, lance-missiles, guidages, viseurs, propulseurs à poudre.
+- **Armored Constructs** : blindages (une recette par matériau, teinte au tailleur de pierre), Kontakt-1, canon Arcon
+  et modules de tourelle. Tout était en créatif seulement.
+- **Missiles de Sable LRW plus chers** : acier et tubes électroniques pour la courte portée ; obus HE et circuits TFMG
+  pour l'AIM-120, le R-77 et le Patriot. Avant : 1 TNT, 1 fusée et un objet banal.
+- **Recettes ajoutées** : roquettes Hydra et panier, torpille, ASROC, Iron Dome (Sable LRW) ; ordinateur, drone FPV et
+  manette, lanceur antiaérien, C-75, FAB-1500/3000, Kh-101 (Air Wars) ; fusée de proximité avancée (radars).
+- **Corrections** : clé des fers de Cuffed fabricable, les obus de Neo Warfare se récupèrent quand on les casse,
+  un seul tungstène (Northstar), fin de la duplication des pierres de Garnished au tailleur de pierre.
+- Même monde, progression des quêtes gardée.
+
 ## 1.8.5 — 2026-11-11
 
 - **Create: Ultimate Factory** : 39 recettes Create de plus (poudre à canon au mixeur, netherite au broyage des briques

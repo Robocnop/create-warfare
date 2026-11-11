@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:drill_boring",
+  "input": {
+    "type": "block",
+    "block": "cbcmodernwarfare:unbored_nethersteel_rotarycannon_bearing"
+  },
+  "result": "cbcmodernwarfare:incomplete_nethersteel_rotarycannon_bearing"
+}

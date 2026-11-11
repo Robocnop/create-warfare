@@ -10,7 +10,7 @@ hash = "d714ee98fa4242dc588f52b473077caec0c093ea92e08c0bc6b8fc466d26b429"
 
 [[files]]
 file = "config/almostunified/unification/materials.json"
-hash = "5af8dcb3757bd6e5b48bf032b3a3d64f4d96c88ac50849dfa29fcecc5662734f"
+hash = "2af84a482a8a3da71143e2668bfcae4754948308db33c6f04b5db96006b203fd"
 
 [[files]]
 file = "config/arcon-server.toml"
@@ -1069,12 +1069,176 @@ file = "kubejs/data/cbc_terminal_ballistics/recipe/copycat_armor_layer.json"
 hash = "572cefadca1d99c7bcba31b0596313f532abf2a3c957e54514ed4b0699060a12"
 
 [[files]]
-file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/apds_shot.json"
-hash = "d8ab834afe9a9e59fb78124600125435b166fcda36d74c2d84ddcde49ec489c8"
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/bronze_mediumcannon_barrel.json"
+hash = "f94960c5752bbb1133e16d005ee91a80253d917174273e319f268ff45e51a70d"
 
 [[files]]
-file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/apds_steel.json"
-hash = "433418688d3ce9fafa2fa623ff1b09341ae6e822d898d718a476503486941351"
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/bronze_rotarycannon_barrel.json"
+hash = "3601f346c088009deb4880a44e01fabf4dae3e3138dc506644d58b309844ee5f"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/cast_iron_mediumcannon_barrel.json"
+hash = "46e0099819bba26873367d320cadeeb13254433e40f0cdf2c4081fd3453921d4"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_bronze_mediumcannon_breech.json"
+hash = "b66a30ab4c35d854e4ad7bd2193b7eba8876d3aa68d85f02569ffdbb7bb24b49"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_bronze_mediumcannon_recoil_barrel.json"
+hash = "2209888165ca08a68e3df992e3d0ff4900da6409f6ed2fc3d313e058054076e6"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_bronze_rotarycannon_bearing.json"
+hash = "74a500685f278c426ca08319af63746b7b61cdf0a798eca4e3262706d0285fc4"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_bronze_rotarycannon_breech.json"
+hash = "8c79a8b840296d01167b6457aaa2e7693e9af8b7e03694b95642ca75dea434bf"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_cast_iron_mediumcannon_breech.json"
+hash = "961fb319975c939a1cceeedaf8d09b77995601e9839bfaf8b8f534120a43f854"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_cast_iron_mediumcannon_recoil_barrel.json"
+hash = "396191dc294044161ccd675d71a0d2d52dce6820c38492b26c555bbb0f837c96"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_nethersteel_mediumcannon_breech.json"
+hash = "8d7d07c2df50684f948599d94dfdf20c39aed937aeffdb0d737073363a5d174e"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_nethersteel_mediumcannon_recoil_barrel.json"
+hash = "187e5074c1485f3c821dcf278de42028365eb3192902c15b06e751c20463082e"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_nethersteel_rotarycannon_bearing.json"
+hash = "922622a3ef6a8eea2be89461c11bd8a37cb720d4f0d99aa2235271765b09837e"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_nethersteel_rotarycannon_breech.json"
+hash = "92f6da3b3d64a26b6b7b20895522de22fdb763d1fc1229a6c1e07da1ff27f36c"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_steel_mediumcannon_breech.json"
+hash = "e6648b318313f9ee9f56b6c00fb3a300d2f512f109ab62a8ed0aa4e34b3038cc"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_steel_mediumcannon_recoil_barrel.json"
+hash = "ff64429c5753e141361b5fb416b843c1cfac837ff84f438ae34dd83c4853468c"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_steel_rotarycannon_bearing.json"
+hash = "0870047bd7b4fd33bc821246331416781603a942b99fd0ce8af741c6720a0073"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/incomplete_steel_rotarycannon_breech.json"
+hash = "1c9e283b032c375568bf3be729db2b93b1bb2fc0f369eb97f634a84efe8524a1"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/nethersteel_mediumcannon_barrel.json"
+hash = "086098eb4dc2b0cbf62dad38af35c6cf7d25078a1ec7742282df0d00022212e2"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/nethersteel_rotarycannon_barrel.json"
+hash = "fe9549cb0121355de51c3fd9a06a1712472e2b4da9a5fd2eaee21c11dcec1ef2"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/steel_mediumcannon_barrel.json"
+hash = "da18e15d9be33f2a86b610ac347bb0b256e235a0e4f6db41407061e14c863100"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/steel_rotarycannon_barrel.json"
+hash = "f9007a90a9a976d7c400f0afbb274d81269123419a20352da9a7bee3c9e3b813"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_bronze_mediumcannon_barrel.json"
+hash = "a3f52cb3262a78d52d028f176a9ccf413d91e658fe67409fe70cbd72b73acf06"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_bronze_mediumcannon_breech.json"
+hash = "2aaef20d2512ec4ca994fa2e556fd8e0db987e0e8fb07ac8e822c1663ccff5f0"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_bronze_mediumcannon_recoil_barrel.json"
+hash = "016e9c07907688db7ed16c7d52283b1614e0138f828617c9cd58ab8ab535eddd"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_bronze_rotarycannon_barrel.json"
+hash = "642c4f607404aa571835460ad1d857f4e9565ebb5fc66ed702f100bd0b14bd82"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_bronze_rotarycannon_bearing.json"
+hash = "a2ad85ddfc46c6121eda7b6ed54828b902fb612ef3278bd7a2d1df892271d8ed"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_bronze_rotarycannon_breech.json"
+hash = "b0c2a861bf36fa510bf50e50e1d53e31824d60354a43502752cd04d5d541239b"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_cast_iron_mediumcannon_barrel.json"
+hash = "3fc8ee5c2e5850ff2a786280df4057f3a5828bc86f84011236be4fba622781d2"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_cast_iron_mediumcannon_breech.json"
+hash = "ea6c227e8851e1ec57c3b68ca81f86ef80e201b0711be5da47e9184bd0082e08"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_cast_iron_mediumcannon_recoil_barrel.json"
+hash = "c0816d99e5c55d39ffc44ec52337c538d5606b9a860c55784dc96a141f3dedc7"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_nethersteel_mediumcannon_barrel.json"
+hash = "4941ed85b7a8ea208825801171bac626f6fca57fb48eea190b76bbccd0c9fdc1"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_nethersteel_mediumcannon_breech.json"
+hash = "fd8b3412d48a8939be9bd6f34eca74d70b20233b3b655ecfcf3f215e55edd657"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_nethersteel_mediumcannon_recoil_barrel.json"
+hash = "a2e5c8226748571047d7d7ed25a0673ae1af56fed92c9fe0e780f0ecb0bfe00c"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_nethersteel_rotarycannon_barrel.json"
+hash = "e7861226120aad6fd7a8a43150e91a33792b0a6a2ac50fbd74b7368350b21184"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_nethersteel_rotarycannon_bearing.json"
+hash = "e91a86705f0445618d42cbdd24998067b94c5fb995bab5536da9914a5e9e74f9"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_nethersteel_rotarycannon_breech.json"
+hash = "0d1356f9ef70499417bda4989e17606daf795f5bf40aa7586451dc9381540400"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_steel_mediumcannon_barrel.json"
+hash = "ea1d139060789725ae48de7b343e1b2c7376857ffa71af9ec17c56319b1a93f4"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_steel_mediumcannon_breech.json"
+hash = "1b778c89d18426480862e8201eaad9483b0870ec604bcc2109d05e559caca826"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_steel_mediumcannon_recoil_barrel.json"
+hash = "da5a379993a23a6309dad16968f6868dc4db0512fb8af3670822173a486de5a5"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_steel_rotarycannon_barrel.json"
+hash = "3d950fc88ba39ae7e654c63a7a7db530f6b1c98fce845ed9d7f730a2cb4d5b33"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_steel_rotarycannon_bearing.json"
+hash = "92a880253b391abce609ecaea3c2db1d139d47c8239aeb923c1e6ccb5a3ab7da"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/createbigcannons/block_recipes/unbored_steel_rotarycannon_breech.json"
+hash = "5b58bfb114afd3886f5034367c3f0d40950208c84aa4f93636ca05887b17b6f3"
+
+[[files]]
+file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/apds_shot.json"
+hash = "b05ba8a3eb3507e338f0b665e3a8241125963b6fc4b7f7e4026e9c15104d5c2b"
 
 [[files]]
 file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/bronze_mediumcannon_barrel.json"
@@ -1178,15 +1342,11 @@ hash = "f24ef9ba1ee4392b220288d94f7b7f3c5c8cd1722b1c7b734b36014afc51e7b6"
 
 [[files]]
 file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/heap_shell.json"
-hash = "68501d7b82ca526a1e2af48feefe290c7811f84f7e622a4940691c936ab86be9"
+hash = "6958ca3b8651d97e24724f3665c961f0107333e4d338b8ff1d1210d0ea60976e"
 
 [[files]]
 file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/hefrag_shell.json"
-hash = "521545600a7b6fffaffcc352bf0279458cb93695eb1e55fa680962f8845c6631"
-
-[[files]]
-file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/hehc_shell.json"
-hash = "0890a2bd2d8dc8d1eb2df9f407b99db9115b786e950de0fdf283df7f90894ee9"
+hash = "e3b5d28a3339b0f4ab228e01820056ee2813d50752e11aafe1b830fc6e3a6557"
 
 [[files]]
 file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/incomplete_bronze_mediumcannon_breech.json"
@@ -1318,7 +1478,7 @@ hash = "893209ef6784e62533f199851a776795675f5876bf97267a1c69bafd2f6b6483"
 
 [[files]]
 file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/rotarycannon_ammo_drum.json"
-hash = "4bf3fa2ab8e2c1c072bf6c573efe84b4165cffeca3f89af5082492f528bdbbfe"
+hash = "c2adef2f1fb1c4962247f1fbe063f3d2085fd529ff180c3c8c469171f062557c"
 
 [[files]]
 file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/rotarycannon_barrel_cast_mould.json"
@@ -1383,10 +1543,6 @@ hash = "b091ce81bb188f01715a709729daa3f136f01fab248c21ef1fa00ac82416dd5f"
 [[files]]
 file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/tan_era_stairs.json"
 hash = "d687c92cbb1e1e2e86da357b20e2ea07eb40d5256fb1b679fde64f45ce3948c3"
-
-[[files]]
-file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/torpedo_screw_breech.json"
-hash = "952237d879d2a34a5784c152036a9c654142e337e96b8d70bb7174adbbcb0ea2"
 
 [[files]]
 file = "kubejs/data/cbcmodernwarfare/loot_table/blocks/torpedo_tube.json"
@@ -1533,6 +1689,14 @@ file = "kubejs/data/refurbished_furniture/recipe/combining/raw_vegetable_pizza.j
 hash = "d695975aa5090f0e1586654db057a31aab1b8f859fd1e01eaaeb75dee7d6fd02"
 
 [[files]]
+file = "kubejs/server_scripts/balance/airwars.js"
+hash = "baf64905c07fa3f6e1b57e72484db81379b06e0bd414abddc90f3b8c89add04f"
+
+[[files]]
+file = "kubejs/server_scripts/balance/arcon.js"
+hash = "26907c628f116bf5aa1444c39ebf4f3960f289041b777b0a289b32478a87ca2b"
+
+[[files]]
 file = "kubejs/server_scripts/balance/blindage.js"
 hash = "afea5ecf284f1b1869b2807b82839bf1ba95c5971bbdcc136d86db942ac5cbda"
 
@@ -1549,8 +1713,20 @@ file = "kubejs/server_scripts/balance/cuisine.js"
 hash = "1f503b54c8eb7cd9d5e216ad4dd303ee125b088cf34e635b20f822a11a2d3c23"
 
 [[files]]
+file = "kubejs/server_scripts/balance/fixes.js"
+hash = "5f713be76c19b10737370405e4c050b32079294954c67316602d56dbf77a55d9"
+
+[[files]]
+file = "kubejs/server_scripts/balance/lrw.js"
+hash = "c7a1d43c3e8a503cb3627ef7a2c28e3ea7f273b89dd82e69b8ede19ccc42e09c"
+
+[[files]]
 file = "kubejs/server_scripts/balance/military.js"
 hash = "229583e4ff03bb10fb040abe75ddfbfb16e98be9ebbd08b47712b2b481186552"
+
+[[files]]
+file = "kubejs/server_scripts/balance/neowarfare.js"
+hash = "964017edda0d185d9279895b78da4e2954ab0ac3eb7aeeb43296f716570b9403"
 
 [[files]]
 file = "kubejs/server_scripts/balance/securitycraft.js"

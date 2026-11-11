@@ -18,27 +18,6 @@
         {
           "function": "minecraft:copy_name",
           "source": "block_entity"
-        },
-        {
-          "function": "minecraft:copy_nbt",
-          "ops": [
-            {
-              "op": "replace",
-              "source": "Ammo",
-              "target": "Ammo"
-            },
-            {
-              "op": "replace",
-              "source": "Tracers",
-              "target": "Tracers"
-            },
-            {
-              "op": "replace",
-              "source": "TracerSpacing",
-              "target": "TracerSpacing"
-            }
-          ],
-          "source": "block_entity"
         }
       ],
       "rolls": 1.0

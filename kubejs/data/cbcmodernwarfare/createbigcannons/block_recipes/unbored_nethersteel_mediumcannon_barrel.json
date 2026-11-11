@@ -1,0 +1,8 @@
+{
+  "type": "createbigcannons:cannon_casting",
+  "cast_shape": "createbigcannons:mediumcannon_barrel",
+  "fluid": {
+    "tag": "c:molten_nethersteel"
+  },
+  "result": "cbcmodernwarfare:unbored_nethersteel_mediumcannon_barrel"
+}
