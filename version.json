@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.8.4",
+  "version": "1.8.5",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,9 +11,9 @@
     "size": 72642114
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.4/CreateWarfare-1.8.4.zip",
-    "sha256": "f2fa2d85428fd314c45fee88e1e7acfd0d01a9d418a52af25e840ff453be385a",
-    "size": 25086912
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.5/CreateWarfare-1.8.5.zip",
+    "sha256": "397300aef6d60abdff5a86babda538080815be50f568da61447ac0b627a36586",
+    "size": 17149990
   },
   "mods": [
     {
@@ -22,6 +22,14 @@
       "size": 1681254,
       "urls": [
         "https://mediafilez.forgecdn.net/files/9061/581/AdvancedPeripherals-1.21.1-0.8.2a.jar"
+      ]
+    },
+    {
+      "file": "advancedweather-0.1.2-cw2.jar",
+      "sha1": "b3e9053e458a1edb653963c36432f5e98c0c20bb",
+      "size": 8088781,
+      "urls": [
+        "https://github.com/Robocnop/create-warfare/releases/download/v1.8.5/advancedweather-0.1.2-cw2.jar"
       ]
     },
     {
@@ -996,6 +1004,15 @@
       "urls": [
         "https://cdn.modrinth.com/data/H6bJ8Ju4/versions/csCe2v7f/create_tweaked_controllers-1.21.1-1.2.7.jar",
         "https://mediafilez.forgecdn.net/files/7958/165/create_tweaked_controllers-1.21.1-1.2.7.jar"
+      ]
+    },
+    {
+      "file": "create_ultimate_factory-2.2.4-neoforge-1.21.1.jar",
+      "sha1": "ed0ff71df9bfe3b66b97c51a2834031084300a65",
+      "size": 235239,
+      "urls": [
+        "https://cdn.modrinth.com/data/N9QToVpw/versions/AEMRNsNS/create_ultimate_factory-2.2.4-neoforge-1.21.1.jar",
+        "https://mediafilez.forgecdn.net/files/8038/954/create_ultimate_factory-2.2.4-neoforge-1.21.1.jar"
       ]
     },
     {
@@ -2405,6 +2422,10 @@
       "sha1": "e739d69b2de31ca8c0cb4691ab08e823f153bc44"
     },
     {
+      "file": "SBW-Drone-Warfare-1.21.1-NeoForge-1.0.6.jar",
+      "sha1": "a672a637bb6b8067b9e05394740a178094a2a4b9"
+    },
+    {
       "file": "advancedweather-0.1.2-cw.jar",
       "sha1": "866183ab49df1e972800aeea11e393d1244e6b66"
     },
@@ -2469,6 +2490,10 @@
       "sha1": "f122f84f329793675b2625d51b77f990d7de3579"
     },
     {
+      "file": "firstperson-neoforge-2.7.3-mc1.21.1.jar",
+      "sha1": "6e0be1de6a5aab6cda8496984376a0114cf5a840"
+    },
+    {
       "file": "friendsandfoes-neoforge-5.0.3+mc1.21.1.jar",
       "sha1": "74b448afe8e9915d73a2993d67f56ebb0a1aeaf5"
     },
@@ -2523,6 +2548,10 @@
     {
       "file": "sableexplosionfix-1.0.0.jar",
       "sha1": "850e0894cd641a96c8869b64aacdb4bb16efb8d3"
+    },
+    {
+      "file": "sbw_ew_addon-1.1.1+1.21.1.jar",
+      "sha1": "7acab369b2e7efd07301e61bdcb7069fd4bb240b"
     },
     {
       "file": "skyfront-1.21.1-1.5.0.jar",
