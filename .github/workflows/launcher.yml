@@ -1,0 +1,62 @@
+name: Launcher
+
+# Tests du launcher à chaque changement, et binaires Linux joints à la release sur un tag launcher-v*.
+# L'exe Windows reste publié à la main (tools/publish_launcher.py).
+on:
+  push:
+    branches: [master]
+    tags: ['launcher-v*']
+    paths: ['launcher/**', '.github/workflows/launcher.yml']
+  pull_request:
+    paths: ['launcher/**', '.github/workflows/launcher.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - run: dotnet test launcher/tests/CreateWarfare.Launcher.Tests/CreateWarfare.Launcher.Tests.csproj -c Release
+
+  linux:
+    needs: tests
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Publier x86_64 et aarch64
+        run: |
+          dotnet publish launcher/src/CreateWarfare.Linux -c Release -r linux-x64   -o out/x86_64
+          dotnet publish launcher/src/CreateWarfare.Linux -c Release -r linux-arm64 -o out/aarch64
+          mkdir dist
+          for arch in x86_64 aarch64; do
+            cp "out/$arch/create-warfare" "dist/create-warfare-linux-$arch"
+            chmod +x "dist/create-warfare-linux-$arch"
+            (cd dist && sha256sum "create-warfare-linux-$arch" > "create-warfare-linux-$arch.sha256")
+          done
+      - name: Essai du binaire x86_64
+        run: |
+          ./dist/create-warfare-linux-x86_64 --version
+          ./dist/create-warfare-linux-x86_64 status
+      - uses: actions/upload-artifact@v4
+        with:
+          name: create-warfare-linux
+          path: dist/
+      - name: Joindre à la release
+        if: startsWith(github.ref, 'refs/tags/launcher-v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release view "$TAG" >/dev/null 2>&1 || gh release create "$TAG" --title "Launcher ${TAG#launcher-v}" --notes "" --verify-tag
+          gh release upload "$TAG" dist/* --clobber

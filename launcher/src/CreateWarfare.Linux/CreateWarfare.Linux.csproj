@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Version Linux : un binaire autonome qui crée l'instance Prism Launcher et la met à jour (voir linux/README.md).
+       dotnet publish launcher/src/CreateWarfare.Linux -c Release -r linux-x64   -o dist/linux/x86_64
+       dotnet publish launcher/src/CreateWarfare.Linux -c Release -r linux-arm64 -o dist/linux/aarch64 -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>create-warfare</AssemblyName>
+    <RootNamespace>CreateWarfare.Linux</RootNamespace>
+    <!-- Même numéro que le launcher Windows : lu dans son .csproj, une seule ligne à changer pour les deux. -->
+    <Version>$([System.Text.RegularExpressions.Regex]::Match($([System.IO.File]::ReadAllText('$(MSBuildThisFileDirectory)..\CreateWarfare.Launcher\CreateWarfare.Launcher.csproj')), '&lt;Version&gt;([^&lt;]+)&lt;/Version&gt;').Groups[1].Value)</Version>
+    <Product>Create Warfare (Linux)</Product>
+    <Company>Robocnop</Company>
+    <!-- Pas de dépendance à libicu : rien à installer sur la distribution. -->
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <SatelliteResourceLanguages>fr</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishTrimmed>true</PublishTrimmed>
+    <DebugType>none</DebugType>
+    <EnableCompressionInSingleFile>false</EnableCompressionInSingleFile>
+    <SuppressTrimAnalysisWarnings>true</SuppressTrimAnalysisWarnings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CreateWarfare.Launcher.Core\CreateWarfare.Launcher.Core.csproj" />
+  </ItemGroup>
+
+</Project>

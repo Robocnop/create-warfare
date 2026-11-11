@@ -10,6 +10,8 @@ CLAUDE.md
 docs/
 CHANGELOG.md
 launcher/
+linux/
+.github/
 LICENSE
 version.json
 launcher-content.json

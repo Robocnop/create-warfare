@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/CreateWarfare.Launcher.Core/CreateWarfare.Launcher.Core.csproj" />
     <Project Path="src/CreateWarfare.Launcher/CreateWarfare.Launcher.csproj" />
+    <Project Path="src/CreateWarfare.Linux/CreateWarfare.Linux.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/CreateWarfare.Launcher.Tests/CreateWarfare.Launcher.Tests.csproj" />

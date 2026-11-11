@@ -34,6 +34,11 @@ PvP entre équipes sur serveur dédié, textes et quêtes en français.
 5. Le launcher se met aussi à jour tout seul : quand la case LAUNCHER affiche « vX disponible », un clic suffit,
    pas besoin de retélécharger l'exe. Une nouvelle version peut mettre jusqu'à 5 minutes à apparaître : rouvrir le launcher.
 
+### Sous Linux (Prism Launcher)
+
+Un seul fichier, `create-warfare-linux-x86_64` (ou `-aarch64`), dans les mêmes releases : il crée l'instance dans Prism Launcher
+et la met à jour avant chaque partie. Mode d'emploi : [linux/README.md](linux/README.md).
+
 ### Pack de textures PureBDcraft (optionnel)
 
 PureBDcraft 256x est pré-activé (au-dessus de Fresh Animations) mais **n'est pas fourni** : ses conditions interdisent
@@ -77,6 +82,7 @@ Déjà réglé : `pvp=true`, `allow-flight=true` (avions et jetpacks), `max-tick
 | `server-files/` | Scripts d'installation et de démarrage du serveur |
 | `tools/` | Construction (`build.sh`), test serveur (`test_server.sh`), quêtes (`gen_quests.py`), téléchargement des mods (`fetch_mods.py`), publication (`publish_launcher.py`) |
 | `launcher/` | Le launcher Windows (WPF .NET 8), voir [launcher/README.md](launcher/README.md) |
+| `linux/` | Mode d'emploi de la version Linux (code dans `launcher/src/CreateWarfare.Linux`) |
 
 ## Maintenir le pack
 
