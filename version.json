@@ -12,8 +12,8 @@
   },
   "zip": {
     "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.5/CreateWarfare-1.8.5.zip",
-    "sha256": "397300aef6d60abdff5a86babda538080815be50f568da61447ac0b627a36586",
-    "size": 17149990
+    "sha256": "2dba7c9a92b7f919620c570e862ef5ba603ae579a7be4e13c06c2d7af8cd0a58",
+    "size": 25087058
   },
   "mods": [
     {
@@ -22,14 +22,6 @@
       "size": 1681254,
       "urls": [
         "https://mediafilez.forgecdn.net/files/9061/581/AdvancedPeripherals-1.21.1-0.8.2a.jar"
-      ]
-    },
-    {
-      "file": "advancedweather-0.1.2-cw2.jar",
-      "sha1": "b3e9053e458a1edb653963c36432f5e98c0c20bb",
-      "size": 8088781,
-      "urls": [
-        "https://github.com/Robocnop/create-warfare/releases/download/v1.8.5/advancedweather-0.1.2-cw2.jar"
       ]
     },
     {
@@ -2428,6 +2420,10 @@
     {
       "file": "advancedweather-0.1.2-cw.jar",
       "sha1": "866183ab49df1e972800aeea11e393d1244e6b66"
+    },
+    {
+      "file": "advancedweather-0.1.2-cw2.jar",
+      "sha1": "b3e9053e458a1edb653963c36432f5e98c0c20bb"
     },
     {
       "file": "better_lib-neoforge-1.21.1-1.0.111.jar",
