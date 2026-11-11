@@ -80,7 +80,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | [EMF] Entity Model Features [Fabric & Forge] | `entity_model_features-3.3.12-1.21-neoforge.jar` | client seul | CurseForge |
 | [ETF] Entity Texture Features - [Fabric & Forge] | `entity_texture_features-7.2.6-1.21-neoforge.jar` | client seul | CurseForge |
 | [NTGL] NukaTeam's Gun Lib | `ntgl-1.21.1-3.2.0.jar` | client + serveur | CurseForge |
-| Advanced Weather | `advancedweather-0.1.2-cw.jar` | client + serveur | CurseForge, patché (mixins client), inclus dans le zip |
+| Advanced Weather | `advancedweather-0.1.2-cw2.jar` | client + serveur | CurseForge, patché (mixins client), inclus dans le zip |
 | AllTheLeaks (Memory Leak Fix) | `alltheleaks-1.1.14-1.21.1-neoforge.jar` | client + serveur | CurseForge |
 | Almanac Lib | `almanac-neoforge-1.21.1-1.26.10.3.jar` | client + serveur | CurseForge |
 | Almost Unified | `almostunified-neoforge-1.21.1-1.4.2.jar` | client + serveur | CurseForge |
@@ -199,6 +199,7 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
 | Create: Trading Floor | `trading_floor-3.0.16.jar` | client + serveur | CurseForge |
 | Create: Train Perspective | `create_train_perspective-1.1.1.jar` | client seul | CurseForge |
 | Create: Tweaked Controllers | `create_tweaked_controllers-1.21.1-1.2.7.jar` | client + serveur | CurseForge |
+| Create: Ultimate Factory | `create_ultimate_factory-2.2.4-neoforge-1.21.1.jar` | client + serveur | CurseForge |
 | Create: Vibrant Vaults | `create_vibrant_vaults-0.3.2.jar` | client + serveur | CurseForge |
 | Cristel Lib | `cristellib-neoforge-1.21.1-3.1.7.jar` | client + serveur | CurseForge |
 | Cuffed Ported | `Cuffed-1.21.1-1.0.1-neoforge.jar` | client + serveur | CurseForge |
