@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 using System.Windows.Threading;
 using CreateWarfare.Launcher.Themes;
 
@@ -16,7 +17,7 @@ namespace CreateWarfare.Launcher.Controls;
 public sealed class Carousel : Grid
 {
     readonly HeroArt _fallback = new() { ShowTitle = false };
-    readonly Image[] _layers = { NewLayer(), NewLayer() };
+    readonly Rectangle[] _layers = { NewLayer(), NewLayer() };
     readonly DispatcherTimer _timer = new() { Interval = TimeSpan.FromSeconds(8) };
     int _front;
 
@@ -31,9 +32,11 @@ public sealed class Carousel : Grid
         IsVisibleChanged += (_, _) => { if (IsVisible) _timer.Start(); else _timer.Stop(); };
     }
 
-    static Image NewLayer() => new()
+    // Un Rectangle peint par un ImageBrush, pas un Image : en UniformToFill, un Image plus large que son cadre
+    // est calé à gauche (le sujet d'une image carrée sur fond large se retrouvait décalé à droite) ; le pinceau, lui, centre.
+    static Rectangle NewLayer() => new()
     {
-        Stretch = Stretch.UniformToFill,
+        Fill = new ImageBrush { Stretch = Stretch.UniformToFill, AlignmentX = AlignmentX.Center, AlignmentY = AlignmentY.Center },
         Opacity = 0,
         RenderTransformOrigin = new Point(0.5, 0.5),
         RenderTransform = new ScaleTransform(1, 1),
@@ -57,7 +60,7 @@ public sealed class Carousel : Grid
 
     void Reset()
     {
-        foreach (var l in _layers) { l.BeginAnimation(OpacityProperty, null); l.Opacity = 0; l.Source = null; }
+        foreach (var l in _layers) { l.BeginAnimation(OpacityProperty, null); l.Opacity = 0; ((ImageBrush)l.Fill).ImageSource = null; }
         _fallback.Visibility = Count == 0 ? Visibility.Visible : Visibility.Collapsed;
         if (Index != 0) Index = 0; else Show();
         if (Images is System.Collections.Specialized.INotifyCollectionChanged ncc)
@@ -70,7 +73,7 @@ public sealed class Carousel : Grid
     void OnCollectionChanged(object? s, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
     {
         _fallback.Visibility = Count == 0 ? Visibility.Visible : Visibility.Collapsed;
-        if (_layers[_front].Source == null) Show();
+        if (((ImageBrush)_layers[_front].Fill).ImageSource == null) Show();
     }
 
     void Show()
@@ -82,7 +85,7 @@ public sealed class Carousel : Grid
 
         var back = _layers[1 - _front];
         var front = _layers[_front];
-        back.Source = src;
+        ((ImageBrush)back.Fill).ImageSource = src;
         Panel.SetZIndex(back, 2);
         Panel.SetZIndex(front, 1);
 

@@ -10,6 +10,10 @@ Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` 
   catégories qui suivaient ne s'affichaient plus depuis la 1.5.5. Correctif dans Advanced Weather.
 - Même monde, progression des quêtes gardée.
 
+## Launcher 1.5.1 — 2026-11-11
+
+- **Images de l'accueil centrées** : une image plus large que la fenêtre était calée à gauche, son sujet paraissait décalé.
+
 ## Launcher 1.5.0 — 2026-11-11
 
 - **Téléchargements plus solides** : une connexion qui se fige n'immobilise plus le launcher (abandon après 30 s sans
