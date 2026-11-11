@@ -5,10 +5,10 @@
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
   "launcher": {
-    "version": "1.5.0",
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/launcher-v1.5.0/CreateWarfareLauncher.exe",
-    "sha256": "3e75c1da447c3d1c3c31e24723bcf63ac7fe683a4e313d0842cd38c15518eea4",
-    "size": 72657520
+    "version": "1.5.1",
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/launcher-v1.5.1/CreateWarfareLauncher.exe",
+    "sha256": "0de6dff615fb5a153ad67b3a0e0d9d9011d5c2fa45881244c5a47a743192750f",
+    "size": 72657647
   },
   "zip": {
     "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.5/CreateWarfare-1.8.5.zip",
@@ -2857,5 +2857,5 @@
     }
   ],
   "notice": null,
-  "changelog": "1.8.5 — 2026-11-11\n\n- Create: Ultimate Factory : 39 recettes Create de plus (poudre à canon au mixeur, netherite au broyage des briques du Nether…). Aucun nouveau bloc.\n- Recettes de Create de retour dans JEI et EMI : l'assemblage séquencé (mécanisme de précision, etc.) et les catégories qui suivaient ne s'affichaient plus depuis la 1.5.5. Correctif dans Advanced Weather.\n- Même monde, progression des quêtes gardée.\n\nLauncher 1.5.0 — 2026-11-11\n\n- Téléchargements plus solides : une connexion qui se fige n'immobilise plus le launcher (abandon après 30 s sans données), chaque fichier est réessayé 3 fois, et 4 mods sont téléchargés à la fois avec le débit et le temps restant.\n- Espace disque vérifié avant de commencer : s'il manque de la place, le launcher le dit et ne touche à rien.\n- Tes réglages restent : une config du pack que tu as modifiée est gardée tant que le pack ne la change pas (« Réparer » la remet), et un mod que tu as désactivé le reste quand il change de version.\n- Messages plus clairs : erreur de connexion ou fichier de mise à jour illisible, retour arrière incomplet signalé, dossier du launcher non inscriptible. Le launcher revérifie les mises à jour toutes les 10 minutes.\n- Sélecteur de version : masqué quand il n'y a qu'une version à proposer (il sert à choisir entre stable et pré-release).\n- Désinstallation : le launcher s'efface aussi quand le chemin contient un accent.\n- Linux : nouvelle version pour Prism Launcher, voir linux/README.md.\n\n1.8.4 — 2026-11-02\n\n- Quête du routeur Wi-Fi : explique où trouver la puce de fournisseur. Elle ne se fabrique pas : au bloc Serveur, lier son réseau (onglet Networks), le choisir comme fournisseur principal (onglet Wi-Fi), puis Issue.\n- Même monde, progression des quêtes gardée."
+  "changelog": "1.8.5 — 2026-11-11\n\n- Create: Ultimate Factory : 39 recettes Create de plus (poudre à canon au mixeur, netherite au broyage des briques du Nether…). Aucun nouveau bloc.\n- Recettes de Create de retour dans JEI et EMI : l'assemblage séquencé (mécanisme de précision, etc.) et les catégories qui suivaient ne s'affichaient plus depuis la 1.5.5. Correctif dans Advanced Weather.\n- Même monde, progression des quêtes gardée.\n\nLauncher 1.5.1 — 2026-11-11\n\n- Images de l'accueil centrées : une image plus large que la fenêtre était calée à gauche, son sujet paraissait décalé.\n\nLauncher 1.5.0 — 2026-11-11\n\n- Téléchargements plus solides : une connexion qui se fige n'immobilise plus le launcher (abandon après 30 s sans données), chaque fichier est réessayé 3 fois, et 4 mods sont téléchargés à la fois avec le débit et le temps restant.\n- Espace disque vérifié avant de commencer : s'il manque de la place, le launcher le dit et ne touche à rien.\n- Tes réglages restent : une config du pack que tu as modifiée est gardée tant que le pack ne la change pas (« Réparer » la remet), et un mod que tu as désactivé le reste quand il change de version.\n- Messages plus clairs : erreur de connexion ou fichier de mise à jour illisible, retour arrière incomplet signalé, dossier du launcher non inscriptible. Le launcher revérifie les mises à jour toutes les 10 minutes.\n- Sélecteur de version : masqué quand il n'y a qu'une version à proposer (il sert à choisir entre stable et pré-release).\n- Désinstallation : le launcher s'efface aussi quand le chemin contient un accent.\n- Linux : nouvelle version pour Prism Launcher, voir linux/README.md."
 }
