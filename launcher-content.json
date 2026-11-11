@@ -44,6 +44,38 @@
     {
       "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/reserve.jpg",
       "caption": "La forge"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/helicoptere.jpg",
+      "caption": "L'hélicoptère sur sa piste, sous la pluie"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/silo-missile.jpg",
+      "caption": "Le missile dans son silo"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/crash-foret.jpg",
+      "caption": "Crash en forêt"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/explosion-lac.jpg",
+      "caption": "Explosion sur le lac, de nuit"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/gare-nuit.jpg",
+      "caption": "La gare, de nuit"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/bunker.jpg",
+      "caption": "Le bunker"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/boss-montagne.jpg",
+      "caption": "Le boss de la montagne"
+    },
+    {
+      "image": "https://raw.githubusercontent.com/Robocnop/create-warfare/master/launcher/screens/egouts.jpg",
+      "caption": "Les égouts du SDF"
     }
   ],
   "links": {
