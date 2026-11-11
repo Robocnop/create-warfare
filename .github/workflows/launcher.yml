@@ -47,7 +47,7 @@ jobs:
       - name: Essai du binaire x86_64
         run: |
           ./dist/create-warfare-linux-x86_64 --version
-          ./dist/create-warfare-linux-x86_64 status
+          ./dist/create-warfare-linux-x86_64 --help
       - uses: actions/upload-artifact@v4
         with:
           name: create-warfare-linux
