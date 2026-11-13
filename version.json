@@ -1,6 +1,6 @@
 {
   "pack": "Create Warfare",
-  "version": "1.8.6",
+  "version": "1.8.7",
   "minecraft": "1.21.1",
   "neoforge": "21.1.264",
   "minLauncherVersion": "1.0.0",
@@ -11,9 +11,9 @@
     "size": 78191138
   },
   "zip": {
-    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.6/CreateWarfare-1.8.6.zip",
-    "sha256": "62610f8df49931e19bb8eec988a83d8536ce21587d0cc31aed3799b22d96c421",
-    "size": 25112736
+    "url": "https://github.com/Robocnop/create-warfare/releases/download/v1.8.7/CreateWarfare-1.8.7.zip",
+    "sha256": "3604c28353c451cab9bf2c175ef451e333bfdea40b386b36817bfe90a0c424c0",
+    "size": 25115166
   },
   "mods": [
     {
@@ -2857,5 +2857,5 @@
     }
   ],
   "notice": null,
-  "changelog": "1.8.6 — 2026-11-11 (⚠️ non testée en jeu)\n\n- Trois quêtes débloquées : « Canon moyen », « Canon blindé » et « Périscope » demandaient des objets sans recette.\n- Neo Warfare : canons moyens et rotatifs à couler et forer comme ceux de Create Big Cannons (moules à la scie), obus de canon moyen et d'autocanon, douilles, lance-missiles, guidages, viseurs, propulseurs à poudre.\n- Armored Constructs : blindages (une recette par matériau, teinte au tailleur de pierre), Kontakt-1, canon Arcon et modules de tourelle. Tout était en créatif seulement.\n- Missiles de Sable LRW plus chers : acier et tubes électroniques pour la courte portée ; obus HE et circuits TFMG pour l'AIM-120, le R-77 et le Patriot. Avant : 1 TNT, 1 fusée et un objet banal.\n- Recettes ajoutées : roquettes Hydra et panier, torpille, ASROC, Iron Dome (Sable LRW) ; ordinateur, drone FPV et manette, lanceur antiaérien, C-75, FAB-1500/3000, Kh-101 (Air Wars) ; fusée de proximité avancée (radars).\n- Corrections : clé des fers de Cuffed fabricable, les obus de Neo Warfare se récupèrent quand on les casse, un seul tungstène (Northstar), fin de la duplication des pierres de Garnished au tailleur de pierre.\n- Même monde, progression des quêtes gardée.\n\n1.8.5 — 2026-11-11\n\n- Create: Ultimate Factory : 39 recettes Create de plus (poudre à canon au mixeur, netherite au broyage des briques du Nether…). Aucun nouveau bloc.\n- Recettes de Create de retour dans JEI et EMI : l'assemblage séquencé (mécanisme de précision, etc.) et les catégories qui suivaient ne s'affichaient plus depuis la 1.5.5. Correctif dans Advanced Weather.\n- Même monde, progression des quêtes gardée.\n\nLauncher 1.5.1 — 2026-11-11\n\n- Images de l'accueil centrées : une image plus large que la fenêtre était calée à gauche, son sujet paraissait décalé."
+  "changelog": "1.8.7 — 2026-11-13\n\n- Missiles et obus chargent de nouveau les chunks : on les voit arriver dans le ciel et ils explosent même quand personne n'est à côté (Superb Warfare et Create Big Cannons).\n- Quêtes des armes nucléaires : l'établi de munitions ne demande plus que l'acier (chapitre « Industrie lourde »), plus le cœur de réacteur ni la conduite de tir. Les codes de lancement demandent le yellowcake enrichi.\n- Chaque quête indique les quêtes à faire avant : sans elles, une quête ne se valide pas, même avec l'objet en main.\n- Poubelle de Kaleidoscope Cookery : on ne peut plus entrer dedans en sautant dessus, ça faisait planter le jeu.\n- Même monde, progression des quêtes gardée.\n\n1.8.6 — 2026-11-11 (⚠️ non testée en jeu)\n\n- Trois quêtes débloquées : « Canon moyen », « Canon blindé » et « Périscope » demandaient des objets sans recette.\n- Neo Warfare : canons moyens et rotatifs à couler et forer comme ceux de Create Big Cannons (moules à la scie), obus de canon moyen et d'autocanon, douilles, lance-missiles, guidages, viseurs, propulseurs à poudre.\n- Armored Constructs : blindages (une recette par matériau, teinte au tailleur de pierre), Kontakt-1, canon Arcon et modules de tourelle. Tout était en créatif seulement.\n- Missiles de Sable LRW plus chers : acier et tubes électroniques pour la courte portée ; obus HE et circuits TFMG pour l'AIM-120, le R-77 et le Patriot. Avant : 1 TNT, 1 fusée et un objet banal.\n- Recettes ajoutées : roquettes Hydra et panier, torpille, ASROC, Iron Dome (Sable LRW) ; ordinateur, drone FPV et manette, lanceur antiaérien, C-75, FAB-1500/3000, Kh-101 (Air Wars) ; fusée de proximité avancée (radars).\n- Corrections : clé des fers de Cuffed fabricable, les obus de Neo Warfare se récupèrent quand on les casse, un seul tungstène (Northstar), fin de la duplication des pierres de Garnished au tailleur de pierre.\n- Même monde, progression des quêtes gardée.\n\n1.8.5 — 2026-11-11\n\n- Create: Ultimate Factory : 39 recettes Create de plus (poudre à canon au mixeur, netherite au broyage des briques du Nether…). Aucun nouveau bloc.\n- Recettes de Create de retour dans JEI et EMI : l'assemblage séquencé (mécanisme de précision, etc.) et les catégories qui suivaient ne s'affichaient plus depuis la 1.5.5. Correctif dans Advanced Weather.\n- Même monde, progression des quêtes gardée."
 }
