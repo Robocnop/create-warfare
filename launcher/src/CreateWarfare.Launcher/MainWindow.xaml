@@ -278,7 +278,7 @@
                             <TextBlock FontSize="13">
                                 <Run Text="{DynamicResource t.028}" Foreground="{DynamicResource Muted}" /><Run Text="{Binding PackVersion, Mode=OneWay}" FontWeight="SemiBold" /><Run Text="  ·  " Foreground="{DynamicResource Dim}" /><Run Text="{Binding PackSub, Mode=OneWay}" Foreground="{DynamicResource Muted}" />
                             </TextBlock>
-                            <TextBlock FontSize="12" Margin="0,4,0,0" Foreground="{DynamicResource Muted}" Text="{DynamicResource s.launch.viaCf}" />
+                            <TextBlock FontSize="12" Margin="0,4,0,0" Foreground="{DynamicResource Muted}" TextTrimming="CharacterEllipsis" Text="{DynamicResource s.launch.viaCf}" />
                                 <!-- Sélecteur de canal (stable / pré-release) : affiché seulement s'il y a un choix à faire (mode développeur) -->
                                 <Grid Margin="0,8,0,0" Width="250" HorizontalAlignment="Left" Visibility="{Binding HasVersionChoice, Converter={StaticResource Vis}}">
                                     <ToggleButton x:Name="VersionToggle" IsChecked="{Binding IsVersionMenuOpen, Mode=TwoWay}" Cursor="Hand" ToolTip="{DynamicResource t.029}"

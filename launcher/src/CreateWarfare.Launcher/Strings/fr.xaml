@@ -234,7 +234,7 @@ Tu peux lancer le jeu quand même : si un mod manque, utilise « Réparer » une
     <sys:String x:Key="s.bd.openFolder">Ouvrir resourcepacks</sys:String>
     <sys:String x:Key="s.play.version">VERSION</sys:String>
     <!-- Lancement (2.0) : Jouer vérifie les fichiers, puis CurseForge lance l'instance tout seul (lien curseforge://launch-game) -->
-    <sys:String x:Key="s.launch.viaCf">Lancé par CurseForge, avec le compte Microsoft connecté dans CurseForge</sys:String>
+    <sys:String x:Key="s.launch.viaCf">Lancé par CurseForge, sans clic de ta part</sys:String>
     <sys:String x:Key="s.launch.started">CurseForge lance Create Warfare. Minecraft s'ouvre dans quelques secondes ; le chargement des mods prend une à deux minutes.</sys:String>
     <sys:String x:Key="s.launch.pendingTitle">Lancement déjà en cours</sys:String>
     <sys:String x:Key="s.launch.pendingText">CurseForge est en train de lancer Minecraft. Ne relance que si CurseForge a affiché une erreur (compte Microsoft, instance introuvable) et que tu l'as corrigée.</sys:String>

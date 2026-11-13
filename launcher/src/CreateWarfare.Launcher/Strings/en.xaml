@@ -234,7 +234,7 @@ You can still launch the game: if a mod is missing, use "Repair" once your conne
     <sys:String x:Key="s.bd.openFolder">Open resourcepacks</sys:String>
     <sys:String x:Key="s.play.version">VERSION</sys:String>
     <!-- Launch (2.0): Play checks the files, then CurseForge starts the instance on its own (curseforge://launch-game link) -->
-    <sys:String x:Key="s.launch.viaCf">Launched by CurseForge, with the Microsoft account signed in to CurseForge</sys:String>
+    <sys:String x:Key="s.launch.viaCf">Launched by CurseForge, no click needed</sys:String>
     <sys:String x:Key="s.launch.started">CurseForge is starting Create Warfare. Minecraft opens in a few seconds; loading the mods takes one or two minutes.</sys:String>
     <sys:String x:Key="s.launch.pendingTitle">Already launching</sys:String>
     <sys:String x:Key="s.launch.pendingText">CurseForge is starting Minecraft. Only launch again if CurseForge showed an error (Microsoft account, instance not found) and you fixed it.</sys:String>

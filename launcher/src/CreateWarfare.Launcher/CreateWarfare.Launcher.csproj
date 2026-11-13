@@ -13,7 +13,7 @@
     <AssemblyName>CreateWarfareLauncher</AssemblyName>
     <RootNamespace>CreateWarfare.Launcher</RootNamespace>
     <!-- Version du launcher : à incrémenter avant chaque publication (lue par l'auto-update). -->
-    <Version>2.0.0</Version>
+    <Version>2.0.1</Version>
     <Product>Create Warfare Launcher</Product>
     <Company>Robocnop</Company>
     <StartupObject>CreateWarfare.Launcher.Program</StartupObject>
