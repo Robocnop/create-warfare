@@ -52,7 +52,6 @@ public sealed partial class MainViewModel : Observable
         _manifestTimer.Start();
         InitShell();
         InitPlay();
-        InitNative();
     }
 
     // ---- Commandes
@@ -624,19 +623,25 @@ public sealed partial class MainViewModel : Observable
     static bool IsDowngrade(string? from, string to) =>
         !string.IsNullOrEmpty(from) && SelfUpdater.ParseVersion(to) < SelfUpdater.ParseVersion(from);
 
+    /// <summary>
+    /// Ouvre CurseForge sans rien lancer (bouton de l'écran d'installation, Paramètres → Jeu, et repli de Jouer quand
+    /// l'instance n'a pas de guid). Depuis Jouer, le joueur lance ensuite le pack lui-même.
+    /// </summary>
     void OpenCurseForge()
     {
         var exe = CurseForgeLocator.FindExe();
         if (exe == null)
         {
-            Toast("CurseForge introuvable. Installe-le depuis curseforge.com/download/app.", error: true);
+            Toast(T("s.launch.noCf", "CurseForge introuvable. Installe-le depuis curseforge.com/download/app, importe le pack, puis réessaie."), error: true);
             return;
         }
         if (_action == PrimaryAction.Play) ApplyPerformanceMode();
         Process.Start(new ProcessStartInfo(exe) { UseShellExecute = true });
-        if (_action == PrimaryAction.Play) OnPlayStarted();
         if (_action == PrimaryAction.Play)
-            Toast("CurseForge s'ouvre : lance « Create Warfare » depuis Mes modpacks.");
+        {
+            OnPlayStarted(expectGame: false);
+            Toast(T("s.launch.manual", "CurseForge s'ouvre : lance « Create Warfare » depuis Mes modpacks."));
+        }
     }
 
     void Browse()

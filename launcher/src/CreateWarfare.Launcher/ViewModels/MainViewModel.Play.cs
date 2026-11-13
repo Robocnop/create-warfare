@@ -1,9 +1,10 @@
+using System.Diagnostics;
 using System.IO;
 using CreateWarfare.Launcher.Core.Services;
 
 namespace CreateWarfare.Launcher.ViewModels;
 
-/// <summary>Launcher 2.0, étape 1 : vérification complète avant de jouer, carte du pack de textures recommandé.</summary>
+/// <summary>Launcher 2.0 : vérification complète avant de jouer, lancement automatique par CurseForge, carte du pack de textures recommandé.</summary>
 public sealed partial class MainViewModel
 {
     // ---- Pack de textures recommandé (PureBDcraft 256x) : jamais téléchargé par le launcher, seulement détecté
@@ -34,18 +35,14 @@ public sealed partial class MainViewModel
     /// <summary>
     /// Compare l'instance à l'index du pack et répare ce qui manque ou diffère (mêmes règles qu'une mise à jour :
     /// options, saves et jars du joueur intacts). Renvoie false si l'utilisateur annule ou refuse de lancer malgré un échec.
+    /// L'appelant a déjà vérifié que le jeu ne tourne pas. CurseForge ouvert n'empêche pas la vérification : depuis que Jouer
+    /// passe par lui, il reste presque toujours dans la zone de notification, et au repos il n'écrit que minecraftinstance.json,
+    /// que la vérification ne touche jamais (contrairement à la RAM ou à une mise à jour, refusées tant qu'il tourne).
     /// </summary>
-    async Task<bool> VerifyBeforePlayAsync()
+    async Task<bool> VerifyBeforePlayAsync(InstanceInfo instance)
     {
-        if (_instance == null || _remote == null) return true;
-        var instance = _instance;
+        if (_remote == null) return true;
         var remote = _remote;
-        // CurseForge ouvert ou jeu lancé : il réécrit l'instance, on ne la touche pas (comme pour une mise à jour)
-        if (ProcessGuard.CurseForgeRunning() || await Task.Run(() => ProcessGuard.GameRunning(instance.Path)))
-        {
-            Log.Info("Vérification avant le jeu ignorée : CurseForge ou le jeu est déjà ouvert");
-            return true;
-        }
 
         StartWork(T("s.verify.kicker", "VÉRIFICATION"), string.Format(T("s.verify.title", "Vérification de v{0}"), remote.Version), cancellable: true);
         try
@@ -78,15 +75,73 @@ public sealed partial class MainViewModel
         }
     }
 
-    /// <summary>Jouer : vérification complète, puis lancement natif (ou CurseForge si le repli est choisi).</summary>
+    /// <summary>
+    /// Jouer : jeu déjà lancé ? vérification complète, puis CurseForge lance l'instance tout seul (lien curseforge://launch-game).
+    /// Le contrôle du jeu en cours passe avant tout : CurseForge ouvre une seconde copie du jeu si on lui renvoie le lien (essayé le 13/11).
+    /// </summary>
     async Task PlayAsync()
     {
-        if (!await VerifyBeforePlayAsync()) return;
-        if (!NativeLaunch)
+        var instance = _instance;
+        if (instance == null) return;
+        // Lancement envoyé, jeu pas encore détecté : un double clic ne renvoie rien ; relancer reste possible après une erreur de CurseForge
+        if (IsLaunching)
         {
+            if (!await AskAsync(T("s.launch.pendingTitle", "Lancement déjà en cours"),
+                    T("s.launch.pendingText", "CurseForge est en train de lancer Minecraft. Ne relance que si CurseForge a affiché une erreur (compte Microsoft, instance introuvable) et que tu l'as corrigée."),
+                    T("s.launch.retry", "Relancer"), T("s.cancel", "Annuler")))
+                return;
+            IsLaunching = false;
+        }
+        if (await Task.Run(() => ProcessGuard.GameRunning(instance.Path)))
+        {
+            Toast(T("s.launch.already", "Minecraft est déjà lancé."));
+            return;
+        }
+        if (!await VerifyBeforePlayAsync(instance)) return;
+        await LaunchViaCurseForgeAsync(instance);
+    }
+
+    /// <summary>
+    /// Demande à CurseForge de lancer l'instance (même lien que ses raccourcis Bureau) : il démarre s'il est fermé, puis lance le jeu
+    /// avec son compte Microsoft, sans clic sur Play. Sans guid d'instance, repli : CurseForge s'ouvre et le joueur clique sur Play.
+    /// </summary>
+    async Task LaunchViaCurseForgeAsync(InstanceInfo instance)
+    {
+        var exe = CurseForgeLocator.FindExe();
+        if (exe == null)
+        {
+            Toast(T("s.launch.noCf", "CurseForge introuvable. Installe-le depuis curseforge.com/download/app, importe le pack, puis réessaie."), error: true);
+            return;
+        }
+        if (!Guid.TryParse(instance.Guid, out _))
+        {
+            Log.Info($"Instance sans guid ({instance.Path}) : CurseForge est seulement ouvert");
             OpenCurseForge();
             return;
         }
-        await LaunchNativeAsync();
+        if (CurseForgeLocator.ReadLaunchMethod() == CurseForgeLaunchMethod.MojangLauncher)
+        {
+            // CurseForge refuserait (« Cannot launch modpack with Mojang launcher ») : on explique avant
+            if (await AskAsync(T("s.launch.mojangTitle", "CurseForge passe par le launcher Mojang"),
+                    T("s.launch.mojangText", "CurseForge ne lance un pack tout seul qu'avec son propre lanceur. Dans CurseForge : Paramètres → Minecraft, choisis le lancement par CurseForge au lieu du launcher Mojang, puis reclique sur Jouer."),
+                    T("s.launch.openCf", "Ouvrir CurseForge"), T("s.cancel", "Annuler")))
+                OpenCurseForge();
+            return;
+        }
+
+        ApplyPerformanceMode();
+        try
+        {
+            using var cf = Process.Start(CurseForgeLocator.LaunchStartInfo(exe, instance.Guid));
+        }
+        catch (Exception e) when (e is System.ComponentModel.Win32Exception or InvalidOperationException)
+        {
+            Log.Error("CurseForge n'a pas pu être lancé", e);
+            Toast(T("s.launch.cfFailed", "CurseForge ne démarre pas : ") + FirstLine(e.Message), error: true);
+            return;
+        }
+        Log.Info($"Lancement demandé à CurseForge : instance {instance.Guid}");
+        OnPlayStarted(expectGame: true);
+        Toast(T("s.launch.started", "CurseForge lance Create Warfare. Minecraft s'ouvre dans quelques secondes ; le chargement des mods prend une à deux minutes."));
     }
 }

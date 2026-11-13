@@ -164,7 +164,6 @@ public sealed partial class MainViewModel
     public void GoBack()
     {
         if (IsDialogOpen) { CloseDialog(false); return; }
-        if (IsLoginOpen) { _loginCts?.Cancel(); return; }
         if (IsLightboxOpen) { IsLightboxOpen = false; return; }
         if (IsVersionMenuOpen) { IsVersionMenuOpen = false; return; }
         if (Screen == Screen.Working) return;
@@ -183,21 +182,26 @@ public sealed partial class MainViewModel
 
     void SetPrimaryIcon(string resourceKey) => PrimaryIcon = Application.Current?.TryFindResource(resourceKey) as string ?? "";
 
-    /// <summary>Appelé quand Jouer ouvre CurseForge : état « ouverture », puis détection du jeu.</summary>
-    void OnPlayStarted()
+    /// <summary>
+    /// Appelé quand Jouer passe la main à CurseForge : état « lancement », puis détection du jeu (minuteur de 4 s).
+    /// expectGame : CurseForge a reçu le lien de lancement, le jeu doit apparaître seul. Mesuré le 13/11 : java 29 s après le lien
+    /// si CurseForge était fermé, 4 s s'il tournait. Au-delà de 2 min sans jeu, le joueur est prévenu (CurseForge affiche la cause).
+    /// </summary>
+    void OnPlayStarted(bool expectGame)
     {
         IsLaunching = true;
-        var until = DateTime.Now.AddSeconds(45);
-        _launchDeadline = until;
+        _launchExpectsGame = expectGame;
+        _launchDeadline = DateTime.Now + (expectGame ? TimeSpan.FromMinutes(2) : TimeSpan.FromSeconds(45));
     }
     DateTime _launchDeadline;
+    bool _launchExpectsGame;
 
     async Task CheckGameAsync()
     {
         if (_instance == null) return;
         var dir = _instance.Path;
         RefreshBdcraft();
-        var running = await Task.Run(() => IsGameRunning(dir));
+        var running = await Task.Run(() => ProcessGuard.GameRunning(dir));
         if (running && !GameRunning)
         {
             GameRunning = true;
@@ -215,7 +219,13 @@ public sealed partial class MainViewModel
             GameRunning = false;
             UpdateHome();
         }
-        if (IsLaunching && DateTime.Now > _launchDeadline) IsLaunching = false;
+        if (IsLaunching && DateTime.Now > _launchDeadline)
+        {
+            IsLaunching = false;
+            if (_launchExpectsGame && !GameRunning)
+                ToastWithAction(T("s.launch.notStarted", "Minecraft n'a pas démarré. Regarde la fenêtre de CurseForge : il faut un compte Microsoft connecté dans CurseForge, et l'instance Create Warfare doit y figurer."),
+                    T("s.launch.openCf", "Ouvrir CurseForge"), OpenCurseForge, error: true);
+        }
     }
 
     // ================================================================ Contenu : carrousel, galerie, actualités, liens
@@ -760,17 +770,14 @@ public sealed partial class MainViewModel
         StartWithWindows = false;
         // Le mode performance suit l'état des jars de l'instance : on le garde, sinon les mods désactivés ne reviendraient plus.
         var fresh = new LauncherSettings { InstancePath = keep, OnboardingDone = true,
-            PerformanceMode = _settings.PerformanceMode, PerformanceDisabled = _settings.PerformanceDisabled,
-            // le compte Microsoft n'est pas un réglage d'affichage : on le garde (Se déconnecter sert à l'effacer)
-            Account = _settings.Account, GameClientId = _settings.GameClientId };
+            PerformanceMode = _settings.PerformanceMode, PerformanceDisabled = _settings.PerformanceDisabled };
         foreach (var p in typeof(LauncherSettings).GetProperties()) p.SetValue(_settings, p.GetValue(fresh));
         SettingsStore.Save(_settings);
         ThemeManager.Apply(_settings.Theme);
         Motion.DecorAnimations = _settings.DecorAnimations;
         Strings.Apply(_settings.Language);
         RaiseThemeProps();
-        foreach (var n in new[] { nameof(DecorAnimations), nameof(HomePhotos), nameof(HomeSlides), nameof(ShowSlideNav), nameof(SlideCaption), nameof(SelectedLanguage), nameof(SelectedGameLaunch), nameof(AutoUpdateLauncher), nameof(DebugLog), nameof(DevMode), nameof(UseCurseForgeLaunch), nameof(AutoConnectServer) }) Raise(n);
-        RaiseAccount();
+        foreach (var n in new[] { nameof(DecorAnimations), nameof(HomePhotos), nameof(HomeSlides), nameof(ShowSlideNav), nameof(SlideCaption), nameof(SelectedLanguage), nameof(SelectedGameLaunch), nameof(AutoUpdateLauncher), nameof(DebugLog), nameof(DevMode) }) Raise(n);
         ApplyChoice();
         Toast(T("s.toast.reset", "Paramètres réinitialisés."));
     }

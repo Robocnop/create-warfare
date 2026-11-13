@@ -17,9 +17,9 @@ Application Windows (WPF, .NET 8, autonome) qui installe et met à jour l'instan
    (Minecraft → Créer un profil personnalisé → Importer). CurseForge installe Minecraft, NeoForge et Java.
 4. **Ensuite** : ouvrir le launcher. S'il affiche « Mise à jour disponible », fermer CurseForge, cliquer sur
    *Mettre à jour*, vérifier la liste, puis confirmer.
-5. **Jouer** (launcher 2.0, non publié) : le launcher compare d'abord tous les fichiers de l'instance au pack et répare
-   ce qui manque (voir « Vérification au clic sur Jouer »), puis lance Minecraft lui-même (voir « Lancement natif »).
-   Tant que le Client ID Azure est vide, *Jouer* ouvre CurseForge comme dans les versions 1.x.
+5. **Jouer** (launcher 2.0) : le launcher compare d'abord tous les fichiers de l'instance au pack et répare
+   ce qui manque (voir « Vérification au clic sur Jouer »), puis **CurseForge lance le jeu tout seul** : pas besoin d'ouvrir
+   CurseForge ni de cliquer sur Play (voir « Lancement par CurseForge »). Il faut un compte Microsoft connecté dans CurseForge.
 
 Ce qui n'est **jamais** modifié : `options.txt` (touches), `servers.dat`, `saves/`, `screenshots/`, `resourcepacks/`,
 `shaderpacks/`, `schematics/`, les cartes Xaero, `config/inventoryprofilesnext/` (raccourcis d'IPN), et tout mod
@@ -56,7 +56,7 @@ ses URL (Modrinth, CDN CurseForge), et le launcher les télécharge lui-même, c
 ```bash
 cd launcher
 dotnet build
-dotnet test                       # 199 tests (12/11/2026), fausse instance dans %TEMP%, aucun accès réseau
+dotnet test                       # 218 tests (13/11/2026), fausse instance dans %TEMP%, aucun accès réseau
 ```
 
 ### Structure des projets
@@ -68,19 +68,20 @@ dotnet test                       # 199 tests (12/11/2026), fausse instance dans
 | `src/CreateWarfare.Linux` | Binaire Linux (Prism), voir `../linux/README.md` |
 | `tests/CreateWarfare.Launcher.Tests` | xUnit. `FakeInstance.cs` fabrique une fausse instance, `FakeHttp.cs` simule le réseau |
 
-Fichiers du launcher 2.0 : `Core/Native/` (`Accounts.cs`, `GameInstaller.cs`, `GameVersion.cs`, `JavaLocator.cs`, `LaunchCommand.cs`,
-`MicrosoftAuth.cs`, `NativeConfig.cs`, `NativeLauncher.cs`, `TokenVault.cs`), `Core/Services/PackVerifier.cs`, `Core/Services/RecommendedPack.cs`,
-`Core/Services/ProcessGuard.cs` (corrigé), `ViewModels/MainViewModel.Play.cs` (vérification, carte BDcraft, `PlayAsync`) et
-`ViewModels/MainViewModel.Native.cs` (compte, connexion, lancement). Tests : `PackVerifierTests`, `NativeLaunchTests`,
+Fichiers du launcher 2.0 : `Core/Services/PackVerifier.cs`, `Core/Services/RecommendedPack.cs`, `Core/Services/CurseForgeLocator.cs`
+(lien de lancement, méthode de lancement de CurseForge), `Core/Services/ProcessGuard.cs` (corrigé), `ViewModels/MainViewModel.Play.cs`
+(vérification, carte BDcraft, `PlayAsync`, `LaunchViaCurseForgeAsync`). En sommeil, jamais appelé par l'interface : `Core/Native/`
+(`Accounts.cs`, `GameInstaller.cs`, `GameVersion.cs`, `JavaLocator.cs`, `LaunchCommand.cs`, `MicrosoftAuth.cs`, `NativeConfig.cs`,
+`NativeLauncher.cs`, `TokenVault.cs`). Tests : `PackVerifierTests`, `CurseForgeLaunchTests`, et pour le code en sommeil `NativeLaunchTests`,
 `MicrosoftAuthTests`, `RealNativeLaunchTrial` (essai réel, ignoré sans variables d'environnement).
 
 Lancer un seul groupe : `dotnet test launcher/tests/CreateWarfare.Launcher.Tests --filter FullyQualifiedName~PackVerifierTests`
-(ou `NativeLaunchTests`, `MicrosoftAuthTests`).
+(ou `CurseForgeLaunchTests`, `NativeLaunchTests`, `MicrosoftAuthTests`).
 
 ### Vérification au clic sur Jouer (2.0, étape 1)
 
-`PlayAsync` (`MainViewModel.Play.cs`) appelle d'abord `VerifyBeforePlayAsync`, puis lance (natif, ou CurseForge si le repli est choisi).
-La vérification utilise `PackVerifier` (`Core/Services/PackVerifier.cs`) :
+`PlayAsync` (`MainViewModel.Play.cs`) refuse d'abord un second lancement (jeu déjà détecté, ou lancement en cours), appelle
+`VerifyBeforePlayAsync`, puis `LaunchViaCurseForgeAsync`. La vérification utilise `PackVerifier` (`Core/Services/PackVerifier.cs`) :
 1. récupère les `overrides/` du zip du pack (`Downloader.GetOverridesAsync`) ;
 2. `PackVerifier.Check` = `UpdatePlanner.Plan(…, repair: false)` : compare le sha256 des fichiers d'overrides et le sha1 des jars de `mods/`
    à l'index du pack (`version.json`), sans rien écrire ;
@@ -97,9 +98,13 @@ La vérification utilise `PackVerifier` (`Core/Services/PackVerifier.cs`) :
 - suppressions : seulement ce que le pack avait posé (état `.cw-launcher.json`, ou `modpackOverrides` de CurseForge) et les jars
   retirés dont le sha1 correspond ; `options.txt`, `servers.dat`, `saves/`, jars ajoutés par le joueur restent intacts.
 
-**Cas où la vérification est sautée** (le jeu se lance quand même) :
-- aucune instance trouvée ou `version.json` injoignable (pas de manifeste distant : bouton « Hors ligne – Jouer ») ;
-- CurseForge est ouvert ou le jeu tourne déjà : ils réécrivent l'instance, le launcher n'y touche pas (journal « Vérification avant le jeu ignorée »).
+**Cas où la vérification est sautée** :
+- `version.json` injoignable (pas de manifeste distant : bouton « Hors ligne – Jouer ») : le jeu se lance quand même ;
+- le jeu tourne déjà : ni vérification ni lancement, message « Minecraft est déjà lancé ».
+
+CurseForge ouvert **n'empêche plus** la vérification (13/11) : depuis que Jouer passe par lui, il reste presque toujours dans la zone
+de notification. Au repos, il n'écrit que `minecraftinstance.json`, que la vérification ne touche jamais. La mise à jour et le réglage de
+la RAM, eux, demandent toujours de fermer CurseForge.
 
 **Échecs** : annulation par le joueur = le jeu n'est pas lancé. Autre erreur (réseau coupé, accès refusé à un fichier) : une boîte
 « Vérification impossible » propose *Lancer quand même* ou *Annuler*, et rien n'est modifié si le réseau tombe avant l'application.
@@ -127,17 +132,62 @@ CW_LAUNCHER_MANIFEST="C:\...\dist\launcher\version.json" \
 dotnet test launcher/tests/CreateWarfare.Launcher.Tests --filter RealInstanceDryRun --logger "console;verbosity=detailed"
 ```
 
-### Lancement natif (2.0, étape 2)
+### Lancement par CurseForge (2.0, choix de Robo du 13/11)
 
-Le bouton Jouer vérifie l'instance, puis lance Minecraft 1.21.1 + NeoForge 21.1.264 lui-même (`Core/Native/`, Windows
-seulement : la version Linux passe par Prism). Même ligne de commande que CurseForge (profil vanilla + profil NeoForge :
-module path, `--add-opens`, `BootstrapLauncher`), `--gameDir` = l'instance, RAM = `allocatedMemory` de l'instance
-(`MemoryAdvisor.ReadAllocated`, sinon la RAM recommandée). Versions et empreintes figées dans `NativeConfig.cs`
-(relevées le 12/11/2026).
+Après la vérification, le launcher demande à CurseForge de lancer l'instance : CurseForge démarre s'il est fermé, puis lance le jeu
+avec **son** compte Microsoft, sans que le joueur clique sur Play. Le launcher ne lit jamais les comptes ni les jetons de CurseForge.
 
-**Quand il est actif** (`MainViewModel.NativeLaunch`) : Windows, repli CurseForge non choisi (Paramètres → Jeu,
-« Ouvrir CurseForge au lieu du lancement direct »), et un Client ID Azure présent (ou `CW_OFFLINE_TEST`). Sinon Jouer ouvre
-CurseForge. Si le jeu tourne déjà, le launcher affiche « Minecraft est déjà lancé » au lieu d'en lancer un second.
+**Mécanisme** : le lien `curseforge://launch-game?instanceId=<guid>&gameId=432`, celui que CurseForge écrit lui-même dans ses
+raccourcis Bureau (« Créer un raccourci » d'un modpack). `<guid>` = champ `guid` de `minecraftinstance.json`, 432 = Minecraft.
+Le launcher lance `CurseForge.exe "<lien>"` (exactement ce que fait le protocole `curseforge://` enregistré par CurseForge) :
+s'il tourne déjà, Electron transmet le lien à l'instance ouverte (`second-instance`). Côté CurseForge (relu dans `app.asar` 1.326.0,
+13/11) : `processUriCommand` → `launch-game` → `GameShortcutService.launch` → `modpackLaunchService.launch(launchedFromShortcut)`.
+Code : `CurseForgeLocator.LaunchUri`, `LaunchStartInfo`, `ReadLaunchMethod` (`Core/Services/CurseForgeLocator.cs`),
+`MainViewModel.LaunchViaCurseForgeAsync` (`MainViewModel.Play.cs`).
+
+**Déroulé de Jouer** : jeu déjà détecté → « Minecraft est déjà lancé », rien n'est envoyé (CurseForge **ouvre une seconde copie
+du jeu** si on lui renvoie le lien pendant une partie, essayé le 13/11) ; lien déjà envoyé mais jeu pas encore détecté → question
+« Lancement déjà en cours » (*Relancer* seulement après une erreur corrigée dans CurseForge, sinon *Annuler*) ; vérification ;
+mode performance ; lien envoyé ; état
+« lancement » jusqu'à la détection du jeu (`ProcessGuard`, toutes les 4 s). Sans jeu au bout de 2 minutes : alerte « Minecraft n'a pas
+démarré » avec un bouton *Ouvrir CurseForge* (CurseForge affiche lui-même la cause dans sa fenêtre).
+
+**Conditions côté CurseForge** (refus affichés par CurseForge, pas par le launcher) :
+- un compte Microsoft connecté dans CurseForge (sinon « No microsoft user found, please log in ») ;
+- méthode de lancement « CurseForge » (`gameLaunchMethod = 1` dans `minecraft-settings` de `storage.json`). Si elle vaut 0 (launcher
+  Mojang), le launcher prévient avant d'envoyer le lien et propose d'ouvrir CurseForge (seule cette clé est lue) ;
+- l'instance doit être connue de CurseForge (sinon « No instance found ») : un dossier choisi à la main hors de CurseForge ne marche pas.
+
+Sans `guid` dans `minecraftinstance.json`, Jouer ouvre seulement CurseForge, comme les versions 1.x.
+
+**Limites** : la fenêtre de CurseForge passe au premier plan pendant le lancement (et son tableau de bord de jeu s'ouvre si
+l'option est active) ; CurseForge reste ensuite dans la zone de notification ; la connexion directe au serveur n'est plus possible
+(CurseForge ne passe que son propre `--quickPlayPath`) ; le lien n'est pas une API documentée : une mise à jour de CurseForge peut le
+changer (symptôme : l'alerte « Minecraft n'a pas démarré »). RAM : celle de l'instance dans CurseForge (`MemoryAdvisor`, Paramètres → Jeu).
+
+**Essais réels (13/11, machine de Robo, CurseForge 1.326.0, instance `Create Warfare (1)`)** :
+
+| Essai | Résultat |
+|---|---|
+| Lien seul, CurseForge fermé | java 29 s après le lien, « Sound engine started » à environ 2 min, `--userType msa`, aucun clic |
+| Lien seul, CurseForge ouvert | java 4 s après, jeu chargé en 59 s |
+| Lien renvoyé pendant une partie | **seconde copie du jeu** lancée par CurseForge (d'où le contrôle avant envoi) |
+| Launcher compilé, bouton Jouer pressé par UI Automation, CurseForge ouvert | vérification « tous les fichiers sont conformes », java 9 s après le clic, jeu chargé en 76 s, « Jeu détecté » |
+| Idem, CurseForge fermé (`CurseForge.exe "<lien>"`) | java 13 s après le clic, jeu chargé en 80 s |
+| Jouer pressé pendant la partie | « Minecraft est déjà lancé. », aucun java lancé |
+
+Non essayé en réel : compte Microsoft absent dans CurseForge, méthode « launcher Mojang », alerte des 2 minutes.
+
+### Lancement natif (en sommeil depuis le 13/11)
+
+Abandonné par Robo le 13/11 au profit du lancement par CurseForge (pas d'application Azure ni d'accord Mojang à obtenir).
+Le code `Core/Native/` reste compilé et testé, mais **rien ne l'appelle** : `MainViewModel.Native.cs` (compte, fenêtre du code
+d'appareil, lancement) et les réglages `UseCurseForgeLaunch` / `AutoConnectServer` ont été retirés ; `LauncherSettings.Account` et
+`GameClientId` restent pour ce code et ses tests, jamais écrits par l'interface. Ce qui suit décrit ce code tel qu'il était branché.
+
+Il lançait Minecraft 1.21.1 + NeoForge 21.1.264 lui-même (`Core/Native/`, Windows seulement). Même ligne de commande que
+CurseForge (profil vanilla + profil NeoForge : module path, `--add-opens`, `BootstrapLauncher`), `--gameDir` = l'instance,
+RAM = `allocatedMemory` de l'instance. Versions et empreintes figées dans `NativeConfig.cs` (relevées le 12/11/2026).
 
 | Étape | Code |
 |---|---|
@@ -190,9 +240,8 @@ l'instance) → options G1 du launcher officiel (`DefaultJvmArgs`) → `javaArgs
 les variables `CW_*` ne lui sont pas transmises. Si le jeu s'arrête en moins de 5 minutes avec un code non nul, une alerte
 propose d'ouvrir les logs de l'instance.
 
-#### Client ID Azure : démarches
-`AuthConfig.DefaultClientId` est vide. Tant qu'il l'est (et sans `CW_MS_CLIENT_ID`), le bouton Jouer
-ouvre CurseForge comme avant. Pour l'activer :
+#### Client ID Azure : démarches (seulement si le lancement natif était rebranché)
+`AuthConfig.DefaultClientId` est vide. Il faudrait :
 1. portail Azure → *App registrations* → *New registration* : comptes « Personal Microsoft accounts only »,
    *Authentication → Allow public client flows* = **Yes** (flux par code d'appareil, aucune redirection nécessaire) ;
    pas de secret client (le launcher est une application publique) ;
@@ -204,18 +253,10 @@ ouvre CurseForge comme avant. Pour l'activer :
 
 | Variable | Effet |
 |---|---|
-| `CW_MS_CLIENT_ID` | Client ID Azure à utiliser à la place de `DefaultClientId` |
-| `CW_OFFLINE_TEST=pseudo` | lance sans compte Microsoft (jeton `0`, UUID « OfflinePlayer », pseudo de 3 à 16 lettres, chiffres ou `_`, pas de connexion directe au serveur) : le serveur du pack, en mode online, refuse ce joueur. Active aussi le lancement natif sans Client ID |
-| `CW_GAME_ROOT` | autre dossier pour bibliothèques/assets/versions |
-| `CW_JAVA_HOME` | Java imposé (essayé en premier) |
+| `CW_MS_CLIENT_ID`, `CW_OFFLINE_TEST=pseudo`, `CW_GAME_ROOT`, `CW_JAVA_HOME` | code natif en sommeil : lues seulement par `Core/Native/` et `RealNativeLaunchTrial` (Client ID, essai hors ligne, dossier du jeu, Java imposé) ; sans effet sur le launcher |
 | `CW_THEME`, `CW_DATE`, `CW_LANG`, `CW_START_PAGE`, `CW_LAUNCHER_MANIFEST`, `CW_LAUNCHER_CONTENT` | thème, date simulée, langue, page de départ, manifeste et contenu locaux : voir les sections plus bas |
 
-#### Repli CurseForge
-Paramètres → Jeu → « Ouvrir CurseForge au lieu du lancement direct » (`UseCurseForgeLaunch`) : Jouer vérifie l'instance puis ouvre
-`CurseForge.exe` (le joueur lance le pack depuis Mes modpacks). Sans Client ID Azure, la connexion affiche « pas encore disponible »
-et propose d'ouvrir CurseForge. Un échec du lancement natif (Java, réseau, installateur) propose aussi d'ouvrir CurseForge.
-
-#### Tests
+#### Tests du code en sommeil
 Essais réels (sur une **copie** de l'instance, jamais l'instance du joueur) :
 
 ```bash

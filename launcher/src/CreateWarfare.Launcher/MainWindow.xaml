@@ -278,7 +278,7 @@
                             <TextBlock FontSize="13">
                                 <Run Text="{DynamicResource t.028}" Foreground="{DynamicResource Muted}" /><Run Text="{Binding PackVersion, Mode=OneWay}" FontWeight="SemiBold" /><Run Text="  ·  " Foreground="{DynamicResource Dim}" /><Run Text="{Binding PackSub, Mode=OneWay}" Foreground="{DynamicResource Muted}" />
                             </TextBlock>
-                            <TextBlock FontSize="12" Margin="0,4,0,0" Foreground="{DynamicResource Muted}" Text="{Binding AccountLine}" />
+                            <TextBlock FontSize="12" Margin="0,4,0,0" Foreground="{DynamicResource Muted}" Text="{DynamicResource s.launch.viaCf}" />
                                 <!-- Sélecteur de canal (stable / pré-release) : affiché seulement s'il y a un choix à faire (mode développeur) -->
                                 <Grid Margin="0,8,0,0" Width="250" HorizontalAlignment="Left" Visibility="{Binding HasVersionChoice, Converter={StaticResource Vis}}">
                                     <ToggleButton x:Name="VersionToggle" IsChecked="{Binding IsVersionMenuOpen, Mode=TwoWay}" Cursor="Hand" ToolTip="{DynamicResource t.029}"
@@ -664,31 +664,14 @@
                                 </CheckBox>
                             </StackPanel>
                         </Border>
-                        <!-- Lancement direct (2.0) : compte Microsoft, connexion au serveur, repli CurseForge -->
+                        <!-- Lancement (2.0) : Jouer vérifie les fichiers puis CurseForge lance l'instance tout seul -->
                         <Border Style="{StaticResource Card}">
                             <StackPanel>
                                 <TextBlock Style="{StaticResource H3}" Text="{DynamicResource s.set.launchTitle}" />
-                                <TextBlock Style="{StaticResource Body}" Text="{DynamicResource s.set.launchHint}" Margin="0,4,0,16" />
-                                <DockPanel Style="{StaticResource SettingRow}" Visibility="{Binding IsNativeLaunch, Converter={StaticResource Vis}}">
-                                    <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" VerticalAlignment="Center">
-                                        <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource s.auth.signIn}" ui:Ui.Icon="{StaticResource IcAccept}" Command="{Binding SignInCommand}"
-                                                Visibility="{Binding IsSignedOut, Converter={StaticResource Vis}}" />
-                                        <Button Style="{StaticResource GhostButton}" Content="{DynamicResource s.auth.signOut}" Command="{Binding SignOutCommand}"
-                                                Visibility="{Binding IsSignedIn, Converter={StaticResource Vis}}" />
-                                    </StackPanel>
-                                    <StackPanel Margin="0,0,24,0">
-                                        <TextBlock Style="{StaticResource H3}" FontSize="15" Text="{Binding AccountLine}" />
-                                        <TextBlock Style="{StaticResource Body}" Text="{DynamicResource s.set.accountHint}" />
-                                    </StackPanel>
-                                </DockPanel>
-                                <TextBlock Style="{StaticResource Caption}" Text="{DynamicResource s.auth.notConfigured.short}" TextWrapping="Wrap" Margin="0,0,0,16"
-                                           Foreground="{DynamicResource Warning}" Visibility="{Binding AuthUnavailable, Converter={StaticResource Vis}}" />
-                                <CheckBox Style="{StaticResource Toggle}" IsChecked="{Binding AutoConnectServer}" IsEnabled="{Binding IsNativeLaunch}" Margin="0,0,0,18">
-                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource s.set.direct}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource s.set.directHint}" /></StackPanel>
-                                </CheckBox>
-                                <CheckBox Style="{StaticResource Toggle}" IsChecked="{Binding UseCurseForgeLaunch}">
-                                    <StackPanel><TextBlock Style="{StaticResource H3}" FontSize="15" Text="{DynamicResource s.set.cf}" /><TextBlock Style="{StaticResource Body}" Text="{DynamicResource s.set.cfHint}" /></StackPanel>
-                                </CheckBox>
+                                <TextBlock Style="{StaticResource Body}" Text="{DynamicResource s.set.launchHint}" Margin="0,4,0,12" />
+                                <TextBlock Style="{StaticResource Caption}" Text="{DynamicResource s.set.launchNeeds}" TextWrapping="Wrap" Margin="0,0,0,16" />
+                                <Button Style="{StaticResource SecondaryButton}" Content="{DynamicResource s.launch.openCf}" ui:Ui.Icon="{StaticResource IcOpen}"
+                                        Command="{Binding OpenCurseForgeCommand}" HorizontalAlignment="Left" />
                             </StackPanel>
                         </Border>
                         </StackPanel>
@@ -936,28 +919,6 @@
                         <TextBlock Text="{Binding ToastText}" FontSize="13.5" TextWrapping="Wrap" MaxWidth="380" VerticalAlignment="Center" />
                     </StackPanel>
                 </DockPanel>
-            </Border>
-        </Grid>
-
-        <!-- ============ CONNEXION MICROSOFT (code d'appareil) ============ -->
-        <Grid Grid.RowSpan="3" Background="{DynamicResource Scrim}" Visibility="{Binding IsLoginOpen, Converter={StaticResource Vis}}" Style="{StaticResource Page}">
-            <Border Style="{StaticResource Card}" Background="{DynamicResource Panel}" BorderBrush="{DynamicResource LineStrong}" Width="540" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="28,24">
-                <StackPanel>
-                    <TextBlock Style="{StaticResource Kicker}" Text="MICROSOFT" Foreground="{DynamicResource Accent}" />
-                    <TextBlock Style="{StaticResource H2}" Text="{DynamicResource s.auth.title}" Margin="0,0,0,10" />
-                    <TextBlock Style="{StaticResource Body}" Text="{DynamicResource s.auth.step}" Margin="0,0,0,18" />
-                    <Border Background="{DynamicResource Bg}" BorderBrush="{DynamicResource Line}" BorderThickness="1" CornerRadius="{StaticResource RadiusM}" Padding="14,12" Margin="0,0,0,8"
-                            Visibility="{Binding HasLoginCode, Converter={StaticResource Vis}}">
-                        <TextBlock Text="{Binding LoginCode}" FontFamily="{StaticResource Mono}" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center" />
-                    </Border>
-                    <TextBlock Style="{StaticResource Caption}" Text="{Binding LoginUrl}" HorizontalAlignment="Center" Margin="0,0,0,14" />
-                    <TextBlock Style="{StaticResource Body}" Text="{Binding LoginStatus}" Margin="0,0,0,22" />
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                        <Button Style="{StaticResource GhostButton}" Content="{DynamicResource s.cancel}" Command="{Binding LoginCancelCommand}" Margin="0,0,10,0" />
-                        <Button Style="{StaticResource PrimaryButton}" Content="{DynamicResource s.auth.copyOpen}" ui:Ui.Icon="{StaticResource IcOpen}" Command="{Binding LoginCopyOpenCommand}"
-                                Height="42" FontSize="16" Padding="18,0" />
-                    </StackPanel>
-                </StackPanel>
             </Border>
         </Grid>
 

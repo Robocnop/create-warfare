@@ -58,13 +58,12 @@ public sealed class LauncherSettings
     public bool PerformanceMode { get; set; }
     /// <summary>Préfixes des jars que le launcher a désactivés lui-même (seuls ceux-là sont réactivés).</summary>
     public List<string> PerformanceDisabled { get; set; } = new();
-    /// <summary>Repli : le bouton Jouer ouvre CurseForge au lieu de lancer Minecraft lui-même.</summary>
-    public bool UseCurseForgeLaunch { get; set; }
-    /// <summary>Lancement natif : connexion directe au serveur du pack (--quickPlayMultiplayer).</summary>
-    public bool AutoConnectServer { get; set; }
-    /// <summary>Compte Microsoft connecté (jetons chiffrés par DPAPI), ou null.</summary>
+    /// <summary>
+    /// Lancement natif (Core/Native, en sommeil depuis le 13/11 : Jouer passe par CurseForge) : compte Microsoft, jetons chiffrés
+    /// par DPAPI. Jamais écrit par l'interface ; gardé pour le code en sommeil et ses tests.
+    /// </summary>
     public MsAccount? Account { get; set; }
-    /// <summary>Identifiant d'installation passé au jeu (--clientId), tiré au hasard une fois. Ne sert qu'à la télémétrie de Mojang.</summary>
+    /// <summary>Lancement natif en sommeil : identifiant d'installation passé au jeu (--clientId). Jamais écrit par l'interface.</summary>
     public string? GameClientId { get; set; }
 }
 
