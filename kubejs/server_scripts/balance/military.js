@@ -6,7 +6,10 @@
 // ICBM de Project: Explosive. Ils sont fabriqués dans l'établi de munitions, dont les recettes sont
 // codées dans le mod (pas de JSON) : on ne peut pas y ajouter d'ingrédient. Les codes sont donc
 // consommés à la POSE de l'ICBM, ce qui bloque aussi la pose automatique (déployeur).
-const ICBMS = ['projectexplosive:icbm_small', 'projectexplosive:icbm_big', 'projectexplosive:icbm_nuclear']
+// La Fat Man (bombe nucléaire larguée) est armée de la même façon depuis la 2.0.0 : ses ingrédients, codés
+// dans le mod, ne sont que de l'uranium, du fer et de la TNT.
+const ICBMS = ['projectexplosive:icbm_small', 'projectexplosive:icbm_big', 'projectexplosive:icbm_nuclear', 'projectexplosive:nuclear_bomb']
+const NUCLEAR = ['projectexplosive:icbm_nuclear', 'projectexplosive:nuclear_bomb']
 const LAUNCH_CODES = 'kubejs:launch_codes'
 
 // Pièces de Create Missiles : le fer devient de l'acier (moitié de la quantité), chaque propulseur
@@ -51,12 +54,18 @@ ServerEvents.recipes(event => {
     'PCP',
     'MBM'
   ], {
-    S: '#c:ingots/steel',
-    P: 'create:precision_mechanism',
-    C: 'minecraft:crafting_table',
+    S: '#c:plates/steel',
+    P: 'tfmg:circuit_board',
+    C: 'create:mechanical_crafter',
     M: 'tfmg:steel_mechanism',
     B: '#c:storage_blocks/steel'
   }).id('createwarfare:munitions_workbench')
+
+  // Désignateur d'ICBM : un ordinateur de visée de Northstar (titane) et un circuit, au lieu de la seule redstone.
+  event.remove({ id: 'projectexplosive:icbm' })
+  event.shapeless('projectexplosive:icbm', [
+    'minecraft:spyglass', 'minecraft:compass', 'northstar:targeting_computer', 'tfmg:circuit_board'
+  ]).id('createwarfare:icbm_designator')
 
   // Uranium de Project: Explosive : plus de cuisson de minerai, il vient du yellowcake enrichi
   // de Create Nuclear (chapitre 8), compacté sous brûleur surchauffé avec du plomb.
@@ -110,7 +119,7 @@ ServerEvents.recipes(event => {
 
 // Pose d'un ICBM : il faut des codes de lancement dans la main secondaire, un exemplaire est consommé.
 // Les joueurs en créatif ne sont pas concernés.
-const NO_CODES_MSG = 'Il faut des Codes de lancement dans la main secondaire pour armer un ICBM (quête « Codes de lancement », chapitre 10).'
+const NO_CODES_MSG = 'Il faut des Codes de lancement dans la main secondaire pour armer un ICBM ou une bombe nucléaire (quête « Codes de lancement », chapitre 10).'
 
 // Refus au clic droit, avant que l'objet ne soit utilisé : annuler seulement à la pose faisait perdre l'ICBM.
 BlockEvents.rightClicked(event => {
@@ -132,8 +141,8 @@ ICBMS.forEach(icbm => {
       return event.cancel()
     }
     codes.shrink(1)
-    if (icbm == 'projectexplosive:icbm_nuclear') {
-      player.server.tell(Text.gold(`☢ ${player.username} vient d'armer un ICBM nucléaire.`))
+    if (NUCLEAR.includes(icbm)) {
+      player.server.tell(Text.gold(`☢ ${player.username} vient d'armer une arme nucléaire.`))
     }
   })
 })
