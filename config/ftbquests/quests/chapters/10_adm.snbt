@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4F22817667213C8D", "69A8DDF795F0DA59"]
+			dependencies: ["756CBDC330F693ED"]
 			id: "74D2A1F364AADF7C"
 			rewards: [{ id: "2421B7C6F8CF6383", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "67CA3AC7E98AA1E2", item: { count: 1, id: "projectexplosive:munitions_workbench" }, type: "item" }]
@@ -77,7 +77,7 @@
 			repeat_cooldown: 14400
 			progression_mode: "linear"
 			icon: { id: "kubejs:launch_codes" }
-			dependencies: ["74D2A1F364AADF7C", "4F22817667213C8D"]
+			dependencies: ["74D2A1F364AADF7C", "531F7DD09656D0AD"]
 			id: "624917B0AC01463C"
 			rewards: [{ id: "3C62EA94174D2888", type: "xp", xp: 100 }, { id: "68B1A85A060F7CDE", item: { count: 1, id: "kubejs:launch_codes" }, team_reward: true, type: "item" }]
 			tasks: [{ consume_items: true, count: 4L, id: "575E75B1ECA9286B", item: { count: 1, id: "tfmg:circuit_board" }, type: "item" }, { consume_items: true, count: 8L, id: "0E14078361CA1F8D", item: { count: 1, id: "createnuclear:enriched_yellowcake" }, type: "item" }, { consume_items: true, count: 4L, id: "0B75FC377E64D882", item: { count: 1, id: "create:precision_mechanism" }, type: "item" }]

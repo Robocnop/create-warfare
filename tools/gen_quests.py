@@ -209,7 +209,7 @@ CHAPTERS = [
         ("ciws_wrench", "sbw_advanced_ciws:drone_control_wrench", 1, "Clé du CIWS", "Accroupi sur un CIWS H/PJ-11 de Superb Warfare : choisis les joueurs qu'il ne doit pas viser.", ["fire_controller"], 150),
     ]),
     ("10_adm", "Armes de destruction massive", "La fin de partie : bombes lourdes et ICBM nucléaires. Avec modération...", "projectexplosive:icbm_nuclear", [
-        ("munitions_workbench", "projectexplosive:munitions_workbench", 1, "Établi de munitions", "Assemble bombes, ogives et missiles. Se fabrique avec de l'acier et des mécanismes.", ["08_nucleaire:reactor_core", "09_missiles:fire_controller"], 200),
+        ("munitions_workbench", "projectexplosive:munitions_workbench", 1, "Établi de munitions", "Assemble bombes, ogives et missiles. Se fabrique avec de l'acier et des mécanismes.", ["04_industrie:steel"], 200),
         ("small_bomb", "projectexplosive:small_bomb", 4, "Bombe Mk 82", "Bombe d'aviation légère.", ["munitions_workbench"], 150),
         ("big_bomb", "projectexplosive:big_bomb", 2, "Bombe Mk 84", "Bombe d'aviation lourde.", ["small_bomb"], 250),
         ("airstrike", "projectexplosive:airstrike_caller", 1, "Appel de frappe aérienne", "Cinq Mk 82 sur la cible.", ["big_bomb"], 300),
@@ -217,7 +217,7 @@ CHAPTERS = [
         ("geiger", "projectexplosive:radiation_detector", 1, "Compteur Geiger", "Mesure les retombées.", ["munitions_workbench"], 100),
         ("uranium_ingot", "projectexplosive:uranium_ingot", 8, "Lingots d'uranium", "Matière fissile : 4 yellowcakes enrichis et du plomb, compactés sous brûleur surchauffé.", ["munitions_workbench", "08_nucleaire:yellowcake"], 200),
         ("icbm_target", "projectexplosive:icbm", 1, "Système de visée", "Longue-vue, boussole et redstone : désigne la cible de l'ICBM.", ["munitions_workbench"], 100),
-        ("launch_codes", "kubejs:launch_codes", 1, "Codes de lancement", "Indispensables pour armer un ICBM (tenus en main secondaire à la pose) et pour les missiles longue portée. Quête répétable : les objets sont consommés, une fois par équipe, puis délai de 4 h.", ["munitions_workbench", "08_nucleaire:reactor_core"], 100, LAUNCH_CODES),
+        ("launch_codes", "kubejs:launch_codes", 1, "Codes de lancement", "Indispensables pour armer un ICBM (tenus en main secondaire à la pose) et pour les missiles longue portée. Quête répétable : les objets sont consommés, une fois par équipe, puis délai de 4 h.", ["munitions_workbench", "08_nucleaire:yellowcake"], 100, LAUNCH_CODES),
         ("icbm_small", "projectexplosive:icbm_small", 1, "ICBM léger", "Premier missile balistique. Sa pose consomme des Codes de lancement.", ["icbm_target", "launch_codes"], 300),
         ("icbm_big", "projectexplosive:icbm_big", 1, "ICBM lourd", "Plus gros, plus loin.", ["icbm_small"], 400),
         ("nuclear_bomb", "projectexplosive:nuclear_bomb", 1, "Fat Man", "La bombe nucléaire larguée.", ["uranium_ingot", "big_bomb"], 500),
@@ -352,6 +352,20 @@ def dep_ref(cname, dep):
     return dep if ":" in dep else f"{cname}:{dep}"
 
 
+def prereq_lines(cname, deps):
+    """FTB Quests only validates a quest once all its dependencies are done, and the dependency
+    line is not drawn for a quest of another chapter: name them in the description."""
+    if not deps:
+        return []
+    names = []
+    for d in deps:
+        dc, dk = dep_ref(cname, d).split(":")
+        chap = next(c for c in CHAPTERS if c[0] == dc)
+        title = next(q[3] for q in chap[4] if q[0] == dk)
+        names.append(f"« {title} »" + ("" if dc == cname else f" (chapitre « {chap[1]} »)"))
+    return ["", ftb_text("À faire avant (sinon la quête ne se valide pas) : " + ", ".join(names) + ".")]
+
+
 def snbt_str(s):
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
@@ -406,7 +420,7 @@ def main():
             extra = extra[0] if extra else {}
             q = qid(cname, key)
             lang[f"quest.{q}.title"] = ftb_text(title)
-            lang[f"quest.{q}.quest_desc"] = [ftb_text(desc)]
+            lang[f"quest.{q}.quest_desc"] = [ftb_text(desc)] + prereq_lines(cname, deps)
             dep_ids = ", ".join(snbt_str(qid(*dep_ref(cname, x).split(":"))) for x in deps)
             x, y = pos[key]
             rewards = [f"{{ id: \"{qid(cname, key, 'xp')}\", type: \"xp\", xp: {xp} }}"]

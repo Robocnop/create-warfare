@@ -73,6 +73,10 @@ Tableau généré depuis `mods/*.pw.toml` (versions figées : 2026-10-19, ajouts
   (menottes, prison, loupe de fouille ; menotter demande moins de 30 % de vie, `config/cuffed-server.toml`).
   Performance : Structure Layout Optimizer, Let Me Despawn, Get It Together Drops, Ksyxis (serveur et client), Cull Leaves (client).
   Écartés : More Culling (sa 1.0.11 déclare Minecraft `[1.21,1.21.1)`), ScalableLux (Sable le déclare incompatible).
+- **1.8.7** (aucun mod ajouté) : missiles et obus chargent de nouveau les chunks qu'ils traversent (Superb Warfare
+  `projectile_chunk_loading`, CBC `projectilesCanChunkload`) ; quêtes : l'établi de munitions ne demande plus que l'acier,
+  les codes de lancement le yellowcake enrichi, et chaque quête liste ses prérequis ; poubelle de Kaleidoscope Cookery :
+  on ne peut plus entrer dedans (`kubejs/server_scripts/trash_can.js`, ça faisait planter le client).
 - `allow-flight=true` est obligatoire sur le serveur (avions, jetpacks), sinon les joueurs sont expulsés.
 
 | Mod | Fichier | Côté | Source |

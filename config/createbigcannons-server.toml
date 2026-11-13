@@ -81,7 +81,7 @@
 	#Chunkloading
 	[munitions.chunkloading]
 		#.
-		projectilesCanChunkload = false
+		projectilesCanChunkload = true
 		#.
 		smokeCloudsCanChunkload = true
 
