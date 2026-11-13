@@ -51,6 +51,8 @@ public sealed partial class MainViewModel : Observable
         _manifestTimer.Tick += async (_, _) => await RecheckManifestAsync();
         _manifestTimer.Start();
         InitShell();
+        InitPlay();
+        InitNative();
     }
 
     // ---- Commandes
@@ -283,6 +285,7 @@ public sealed partial class MainViewModel : Observable
         foreach (var n in new[] { nameof(ChoiceLabel), nameof(ChoiceVersion), nameof(ChoiceIsPrerelease), nameof(ChoiceIsRelease), nameof(HasVersionChoice) })
             Raise(n);
         UpdateHome();
+        RefreshBdcraft(force: true);
         BuildNews();
         Raise(nameof(MinecraftVersion));
         Raise(nameof(NeoForgeVersion));
@@ -354,7 +357,7 @@ public sealed partial class MainViewModel : Observable
             case PrimaryAction.Install: Screen = Screen.Install; return Task.CompletedTask;
             case PrimaryAction.Update: return AnalyseAsync(repair: false);
             case PrimaryAction.UpdateLauncher: return UpdateLauncherAsync();
-            case PrimaryAction.Play: OpenCurseForge(); return Task.CompletedTask;
+            case PrimaryAction.Play: return PlayAsync();
             default: return Task.CompletedTask;
         }
     }
@@ -436,34 +439,7 @@ public sealed partial class MainViewModel : Observable
 
         var plan = _plan;
         StartWork("TÉLÉCHARGEMENT", "Téléchargement des mods", cancellable: true);
-        var clock = Stopwatch.StartNew();
-        long firstBytes = -1;
-        var progress = new Progress<ApplyProgress>(p =>
-        {
-            if (p.Phase == "apply" && CanCancel)
-            {
-                WorkKicker = "APPLICATION";
-                WorkTitle = $"Écriture de v{plan.ToVersion}";
-                CanCancel = false;
-            }
-            WorkCount = p.Done.ToString();
-            WorkTotal = $"/ {p.Total}";
-            WorkProgress = p.Total == 0 ? 1 : (double)p.Done / p.Total;
-            WorkCurrent = p.Current.Length == 0 ? "" : (p.Phase == "apply" ? "⇄  " : "↓  ") + p.Current.Replace('/', '\\');
-            if (p.Phase == "download" && p.BytesTotal > 0)
-            {
-                // la barre suit les octets : un gros jar ne donne plus l'impression que tout est figé
-                WorkProgress = Math.Min(1, (double)p.Bytes / p.BytesTotal);
-                if (firstBytes < 0) { firstBytes = p.Bytes; clock.Restart(); }
-                var secs = clock.Elapsed.TotalSeconds;
-                var speed = secs > 0.5 ? (p.Bytes - firstBytes) / secs : 0;
-                var left = speed > 0 && p.BytesTotal > p.Bytes ? TimeSpan.FromSeconds((p.BytesTotal - p.Bytes) / speed) : TimeSpan.Zero;
-                WorkDetail = $"{Format.Size(p.Bytes)} / {Format.Size(p.BytesTotal)}"
-                    + (speed > 0 ? $"  ·  {speed / (1024 * 1024):0.0} Mo/s" : "")
-                    + (left > TimeSpan.Zero ? "  ·  " + (left.TotalMinutes >= 1 ? $"{(int)left.TotalMinutes} min {left.Seconds:00} s" : $"{left.Seconds} s") : "");
-            }
-            else if (p.Phase == "apply") WorkDetail = "";
-        });
+        var progress = MakeApplyProgress(plan.ToVersion);
         try
         {
             var ct = _cts!.Token;
@@ -502,6 +478,39 @@ public sealed partial class MainViewModel : Observable
             var why = e is UnauthorizedAccessException ? "accès refusé à un fichier de l'instance (ferme le jeu et CurseForge, vérifie l'antivirus)" : FirstLine(e.Message);
             Toast($"Échec : {why}. L'instance a été remise comme avant.", error: true);
         }
+    }
+
+    /// <summary>Progression d'une application (téléchargement des jars, puis écriture) sur l'écran de travail.</summary>
+    Progress<ApplyProgress> MakeApplyProgress(string toVersion)
+    {
+        var clock = Stopwatch.StartNew();
+        long firstBytes = -1;
+        return new Progress<ApplyProgress>(p =>
+        {
+            if (p.Phase == "apply" && CanCancel)
+            {
+                WorkKicker = "APPLICATION";
+                WorkTitle = $"Écriture de v{toVersion}";
+                CanCancel = false;
+            }
+            WorkCount = p.Done.ToString();
+            WorkTotal = $"/ {p.Total}";
+            WorkProgress = p.Total == 0 ? 1 : (double)p.Done / p.Total;
+            WorkCurrent = p.Current.Length == 0 ? "" : (p.Phase == "apply" ? "⇄  " : "↓  ") + p.Current.Replace('/', '\\');
+            if (p.Phase == "download" && p.BytesTotal > 0)
+            {
+                // la barre suit les octets : un gros jar ne donne plus l'impression que tout est figé
+                WorkProgress = Math.Min(1, (double)p.Bytes / p.BytesTotal);
+                if (firstBytes < 0) { firstBytes = p.Bytes; clock.Restart(); }
+                var secs = clock.Elapsed.TotalSeconds;
+                var speed = secs > 0.5 ? (p.Bytes - firstBytes) / secs : 0;
+                var left = speed > 0 && p.BytesTotal > p.Bytes ? TimeSpan.FromSeconds((p.BytesTotal - p.Bytes) / speed) : TimeSpan.Zero;
+                WorkDetail = $"{Format.Size(p.Bytes)} / {Format.Size(p.BytesTotal)}"
+                    + (speed > 0 ? $"  ·  {speed / (1024 * 1024):0.0} Mo/s" : "")
+                    + (left > TimeSpan.Zero ? "  ·  " + (left.TotalMinutes >= 1 ? $"{(int)left.TotalMinutes} min {left.Seconds:00} s" : $"{left.Seconds} s") : "");
+            }
+            else if (p.Phase == "apply") WorkDetail = "";
+        });
     }
 
     async Task UpdateLauncherAsync(bool auto = false)

@@ -58,6 +58,29 @@ public sealed class LauncherSettings
     public bool PerformanceMode { get; set; }
     /// <summary>Préfixes des jars que le launcher a désactivés lui-même (seuls ceux-là sont réactivés).</summary>
     public List<string> PerformanceDisabled { get; set; } = new();
+    /// <summary>Repli : le bouton Jouer ouvre CurseForge au lieu de lancer Minecraft lui-même.</summary>
+    public bool UseCurseForgeLaunch { get; set; }
+    /// <summary>Lancement natif : connexion directe au serveur du pack (--quickPlayMultiplayer).</summary>
+    public bool AutoConnectServer { get; set; }
+    /// <summary>Compte Microsoft connecté (jetons chiffrés par DPAPI), ou null.</summary>
+    public MsAccount? Account { get; set; }
+    /// <summary>Identifiant d'installation passé au jeu (--clientId), tiré au hasard une fois. Ne sert qu'à la télémétrie de Mojang.</summary>
+    public string? GameClientId { get; set; }
+}
+
+/// <summary>
+/// Compte Microsoft mémorisé. <see cref="RefreshToken"/> et <see cref="McToken"/> sont chiffrés par DPAPI (base64) :
+/// illisibles hors de ce compte Windows. Le nom et l'UUID sont publics (profil Minecraft).
+/// </summary>
+public sealed class MsAccount
+{
+    public string Name { get; set; } = "";
+    public string Uuid { get; set; } = "";
+    public string? Xuid { get; set; }
+    public string? RefreshToken { get; set; }
+    public string? McToken { get; set; }
+    public DateTime McTokenExpiresUtc { get; set; }
+    public DateTime LastLoginUtc { get; set; }
 }
 
 public static class Channels

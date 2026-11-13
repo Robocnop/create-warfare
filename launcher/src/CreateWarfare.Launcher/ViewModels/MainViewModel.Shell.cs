@@ -164,6 +164,7 @@ public sealed partial class MainViewModel
     public void GoBack()
     {
         if (IsDialogOpen) { CloseDialog(false); return; }
+        if (IsLoginOpen) { _loginCts?.Cancel(); return; }
         if (IsLightboxOpen) { IsLightboxOpen = false; return; }
         if (IsVersionMenuOpen) { IsVersionMenuOpen = false; return; }
         if (Screen == Screen.Working) return;
@@ -195,7 +196,8 @@ public sealed partial class MainViewModel
     {
         if (_instance == null) return;
         var dir = _instance.Path;
-        var running = await Task.Run(() => ProcessGuard.GameRunning(dir));
+        RefreshBdcraft();
+        var running = await Task.Run(() => IsGameRunning(dir));
         if (running && !GameRunning)
         {
             GameRunning = true;
@@ -758,14 +760,17 @@ public sealed partial class MainViewModel
         StartWithWindows = false;
         // Le mode performance suit l'état des jars de l'instance : on le garde, sinon les mods désactivés ne reviendraient plus.
         var fresh = new LauncherSettings { InstancePath = keep, OnboardingDone = true,
-            PerformanceMode = _settings.PerformanceMode, PerformanceDisabled = _settings.PerformanceDisabled };
+            PerformanceMode = _settings.PerformanceMode, PerformanceDisabled = _settings.PerformanceDisabled,
+            // le compte Microsoft n'est pas un réglage d'affichage : on le garde (Se déconnecter sert à l'effacer)
+            Account = _settings.Account, GameClientId = _settings.GameClientId };
         foreach (var p in typeof(LauncherSettings).GetProperties()) p.SetValue(_settings, p.GetValue(fresh));
         SettingsStore.Save(_settings);
         ThemeManager.Apply(_settings.Theme);
         Motion.DecorAnimations = _settings.DecorAnimations;
         Strings.Apply(_settings.Language);
         RaiseThemeProps();
-        foreach (var n in new[] { nameof(DecorAnimations), nameof(HomePhotos), nameof(HomeSlides), nameof(ShowSlideNav), nameof(SlideCaption), nameof(SelectedLanguage), nameof(SelectedGameLaunch), nameof(AutoUpdateLauncher), nameof(DebugLog), nameof(DevMode) }) Raise(n);
+        foreach (var n in new[] { nameof(DecorAnimations), nameof(HomePhotos), nameof(HomeSlides), nameof(ShowSlideNav), nameof(SlideCaption), nameof(SelectedLanguage), nameof(SelectedGameLaunch), nameof(AutoUpdateLauncher), nameof(DebugLog), nameof(DevMode), nameof(UseCurseForgeLaunch), nameof(AutoConnectServer) }) Raise(n);
+        RaiseAccount();
         ApplyChoice();
         Toast(T("s.toast.reset", "Paramètres réinitialisés."));
     }
