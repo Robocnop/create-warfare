@@ -2,6 +2,16 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 1.8.7 — 2026-11-13
+
+- **Missiles et obus chargent de nouveau les chunks** : on les voit arriver dans le ciel et ils explosent même quand
+  personne n'est à côté (Superb Warfare et Create Big Cannons).
+- **Quêtes des armes nucléaires** : l'établi de munitions ne demande plus que l'acier (chapitre « Industrie lourde »),
+  plus le cœur de réacteur ni la conduite de tir. Les codes de lancement demandent le yellowcake enrichi.
+- **Chaque quête indique les quêtes à faire avant** : sans elles, une quête ne se valide pas, même avec l'objet en main.
+- **Poubelle de Kaleidoscope Cookery** : on ne peut plus entrer dedans en sautant dessus, ça faisait planter le jeu.
+- Même monde, progression des quêtes gardée.
+
 ## 1.8.6 — 2026-11-11 (⚠️ non testée en jeu)
 
 - **Trois quêtes débloquées** : « Canon moyen », « Canon blindé » et « Périscope » demandaient des objets sans recette.
