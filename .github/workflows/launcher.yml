@@ -1,7 +1,8 @@
 name: Launcher
 
 # Tests du launcher à chaque changement, et binaires Linux joints à la release sur un tag launcher-v*.
-# L'exe Windows reste publié à la main (tools/publish_launcher.py).
+# Le Setup.exe Windows (Velopack) reste publié à la main (tools/publish_launcher.py), parce que version.json en
+# contient le SHA-256 : ici on vérifie seulement que `vpk pack` fonctionne, et on garde le résultat en artefact.
 on:
   push:
     branches: [master]
@@ -23,6 +24,29 @@ jobs:
         with:
           dotnet-version: 8.0.x
       - run: dotnet test launcher/tests/CreateWarfare.Launcher.Tests/CreateWarfare.Launcher.Tests.csproj -c Release
+
+  installeur:
+    needs: tests
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Publier le launcher et construire Setup.exe
+        shell: bash
+        working-directory: launcher
+        run: |
+          dotnet tool restore
+          dotnet publish src/CreateWarfare.Launcher -c Release -o out/app
+          VERSION=$(grep -oP '(?<=<Version>)[^<]+' src/CreateWarfare.Launcher/CreateWarfare.Launcher.csproj)
+          dotnet vpk pack --packId CreateWarfare --packVersion "$VERSION" --packDir out/app \
+            --mainExe CreateWarfareLauncher.exe --packTitle "Create Warfare" --packAuthors Robocnop \
+            --icon src/CreateWarfare.Launcher/Assets/icon.ico --outputDir out/velopack
+      - uses: actions/upload-artifact@v4
+        with:
+          name: create-warfare-setup
+          path: launcher/out/velopack/
 
   linux:
     needs: tests

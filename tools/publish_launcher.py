@@ -8,8 +8,11 @@ Usage:
       # pack.toml's version becomes the "prerelease" of the current version.json (stable kept at the root,
       # only launcher 1.1.0+ in developer mode sees it); --asset uploads extra files to the release (patched jars)
 
-Run tools/build.sh first (dist/CreateWarfare-<v>.zip). The launcher exe is picked up from
-dist/launcher/CreateWarfareLauncher.exe if present (dotnet publish, see launcher/README.md).
+Run tools/build.sh first (dist/CreateWarfare-<v>.zip). The launcher is picked up from dist/launcher/velopack/
+(output of `vpk pack`, see launcher/README.md: Setup.exe + nupkg + releases.win.json) or, for a 1.x portable build,
+from dist/launcher/CreateWarfareLauncher.exe. The "launcher" field of version.json points to the Setup.exe: launchers
+1.x (portable exe) replace themselves with it once (migration), installed launchers update through Velopack
+(releases.win.json of the launcher-v* releases) and only use the field to know that a new version exists.
 
 Jars are not redistributed: each mod gets its Modrinth URL (matched by sha1) and its CurseForge CDN URL,
 the launcher downloads them itself and checks the sha1, exactly like tools/fetch_mods.py.
@@ -25,6 +28,8 @@ UA = {"User-Agent": "robocnop/create-warfare-pack (robocnop@gmail.com)"}
 DIST_REPO = "Robocnop/create-warfare"
 DIST_BRANCH = "master"
 OUT = os.path.join(ROOT, "dist", "launcher")
+VPK = os.path.join(OUT, "velopack")  # `vpk pack --outputDir dist/launcher/velopack`
+SETUP = "CreateWarfare-win-Setup.exe"  # InstalledUpdater.SetupFileName in the launcher
 
 # Never overwritten nor deleted by the launcher, only created when missing.
 PROTECTED = [
@@ -224,11 +229,9 @@ def main():
         "notice": args.notice,
         "changelog": changelog(),
     }
-    exe = os.path.join(OUT, "CreateWarfareLauncher.exe")
-    if os.path.exists(exe):
-        lv = launcher_version()
-        info["launcher"] = {"version": lv, "url": exe if args.local else f"{base}/launcher-v{lv}/CreateWarfareLauncher.exe",
-                            "sha256": sha(exe, "sha256"), "size": os.path.getsize(exe)}
+    exe = launcher_file()
+    if exe:
+        info["launcher"] = launcher_entry(exe, args.local, base)
 
     published = json.load(open(os.path.join(ROOT, "version.json"), encoding="utf-8"))
     if args.prerelease:
@@ -254,12 +257,35 @@ def ver(s):
     return tuple(int(x) for x in re.findall(r"\d+", s))
 
 
-def pre_exe_launcher(exe, local, base):
-    if not os.path.exists(exe):
-        return None
+def launcher_file():
+    """Setup.exe of the Velopack build if present, else the portable exe (launcher 1.x), else None."""
+    for path in (os.path.join(VPK, SETUP), os.path.join(OUT, "CreateWarfareLauncher.exe")):
+        if os.path.exists(path):
+            return path
+    return None
+
+
+def launcher_entry(exe, local, base):
     lv = launcher_version()
-    return {"version": lv, "url": exe if local else f"{base}/launcher-v{lv}/CreateWarfareLauncher.exe",
+    return {"version": lv, "url": exe if local else f"{base}/launcher-v{lv}/{os.path.basename(exe)}",
             "sha256": sha(exe, "sha256"), "size": os.path.getsize(exe)}
+
+
+def velopack_assets(lv):
+    """Files of dist/launcher/velopack to attach to the launcher-v<lv> release: Setup, portable zip, feed files,
+    and the packages of this version only (full + delta); older nupkgs are already on their own release."""
+    if not os.path.isdir(VPK):
+        return []
+    keep = []
+    for name in sorted(os.listdir(VPK)):
+        if name in (SETUP, "CreateWarfare-win-Portable.zip", "RELEASES", "releases.win.json", "assets.win.json") \
+                or re.fullmatch(rf"CreateWarfare-{re.escape(lv)}-(full|delta)\.nupkg", name):
+            keep.append(os.path.join(VPK, name))
+    return keep
+
+
+def pre_exe_launcher(exe, local, base):
+    return launcher_entry(exe, local, base) if exe and os.path.exists(exe) else None
 
 
 def upload(info, zip_path, exe, version_json, v, prerelease, extra):
@@ -277,8 +303,10 @@ def upload(info, zip_path, exe, version_json, v, prerelease, extra):
     if info["launcher"]:
         lv = info["launcher"]["version"]
         if gh("release", "view", f"launcher-v{lv}", "--repo", DIST_REPO, check=False).returncode != 0:
-            gh("release", "create", f"launcher-v{lv}", exe, "--repo", DIST_REPO, "--title", f"Launcher {lv}",
-               "--notes", "Télécharge CreateWarfareLauncher.exe et lance-le.")
+            files = velopack_assets(lv) or [exe]
+            note = ("Télécharge CreateWarfare-win-Setup.exe et lance-le : le launcher s'installe, puis se met à jour seul."
+                    if files != [exe] else "Télécharge CreateWarfareLauncher.exe et lance-le.")
+            gh("release", "create", f"launcher-v{lv}", *files, "--repo", DIST_REPO, "--title", f"Launcher {lv}", "--notes", note)
     # version.json is committed at the repo root (excluded from the pack by .packwizignore):
     # the launchers read https://raw.githubusercontent.com/<repo>/<branch>/version.json
     shutil.copyfile(version_json, os.path.join(ROOT, "version.json"))

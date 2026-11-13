@@ -16,6 +16,7 @@
     <Version>1.5.1</Version>
     <Product>Create Warfare Launcher</Product>
     <Company>Robocnop</Company>
+    <StartupObject>CreateWarfare.Launcher.Program</StartupObject>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon Condition="Exists('Assets\icon.ico')">Assets\icon.ico</ApplicationIcon>
   </PropertyGroup>

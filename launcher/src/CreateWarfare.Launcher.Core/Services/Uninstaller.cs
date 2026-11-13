@@ -40,22 +40,28 @@ public static class Uninstaller
         Log.Info($"Instance supprimée : {instanceDir}");
     }
 
-    /// <summary>Script cmd : attend la fin du launcher, efface l'exe, les données du launcher, puis lui-même.</summary>
-    public static string SelfRemovalScript(int pid, string exePath, string appDataDir) =>
+    /// <summary>
+    /// Script cmd : attend la fin du launcher, le retire, efface les données du launcher, puis lui-même.
+    /// Installé par Setup.exe (installRoot = dossier de Update.exe) : « Update.exe uninstall » retire fichiers, raccourcis et
+    /// entrée « Applications installées ». Exe portable (installRoot null) : l'exe et son .old sont effacés directement.
+    /// </summary>
+    public static string SelfRemovalScript(int pid, string exePath, string appDataDir, string? installRoot = null) =>
         "@echo off\r\n" +
         "chcp 65001 >nul\r\n" + // le script est en UTF-8 : sans ça, un chemin avec accent (C:\Users\Jérôme) est mal lu
         ":wait\r\n" +
         $"tasklist /FI \"PID eq {pid}\" 2>nul | find \"{pid}\" >nul && (timeout /t 1 /nobreak >nul & goto wait)\r\n" +
-        $"del /f /q \"{exePath}\" \"{exePath}.old\" 2>nul\r\n" +
+        (installRoot != null
+            ? $"\"{Path.Combine(installRoot, "Update.exe")}\" uninstall --silent\r\n"
+            : $"del /f /q \"{exePath}\" \"{exePath}.old\" 2>nul\r\n") +
         $"rmdir /s /q \"{appDataDir}\" 2>nul\r\n" +
         "del /f /q \"%~f0\"\r\n";
 
     /// <summary>Lance le script en arrière-plan ; l'appelant doit fermer l'application juste après.</summary>
-    public static void ScheduleSelfRemoval()
+    public static void ScheduleSelfRemoval(string? installRoot = null)
     {
         var exe = Environment.ProcessPath ?? throw new InvalidOperationException("Chemin du launcher inconnu");
         var script = Path.Combine(Path.GetTempPath(), $"cw-uninstall-{Environment.ProcessId}.cmd");
-        File.WriteAllText(script, SelfRemovalScript(Environment.ProcessId, exe, Log.AppDataDir));
+        File.WriteAllText(script, SelfRemovalScript(Environment.ProcessId, exe, Log.AppDataDir, installRoot));
         Process.Start(new ProcessStartInfo("cmd.exe", $"/c \"{script}\"") { CreateNoWindow = true, UseShellExecute = false });
         Log.Info("Suppression du launcher programmée");
     }

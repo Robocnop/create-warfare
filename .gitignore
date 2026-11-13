@@ -1,5 +1,6 @@
 server-test/
 dist/
+launcher/out/
 launcher/**/bin/
 launcher/**/obj/
 __pycache__/

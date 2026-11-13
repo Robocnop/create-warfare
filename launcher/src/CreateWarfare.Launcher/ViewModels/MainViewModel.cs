@@ -520,7 +520,18 @@ public sealed partial class MainViewModel : Observable
         StartWork("LAUNCHER", $"Launcher v{remote.Launcher!.Version}", cancellable: true);
         try
         {
-            await SelfUpdater.UpdateAndRestartAsync(remote, _dl, BytesProgress(remote.Launcher.Size, "CreateWarfareLauncher.exe"), _cts!.Token);
+            if (InstalledUpdater.Route == UpdateRoute.Installed)
+            {
+                // Installé par Setup.exe : Velopack télécharge les deltas, remplace les fichiers et relance.
+                WorkCurrent = "Téléchargement de la mise à jour…";
+                var percent = new Progress<int>(pct => WorkProgress = Math.Clamp(pct, 0, 100) / 100.0);
+                await InstalledUpdater.UpdateAndRestartAsync(percent, _cts!.Token);
+            }
+            else
+            {
+                // Exe portable : remplacé par celui de version.json (pour la 2.0.0, le Setup.exe : migration vers l'installeur).
+                await SelfUpdater.UpdateAndRestartAsync(remote, _dl, BytesProgress(remote.Launcher.Size, Path.GetFileName(remote.Launcher.Url)), _cts!.Token);
+            }
             Application.Current.Shutdown();
         }
         catch (OperationCanceledException) { Screen = Screen.Home; }
@@ -594,7 +605,7 @@ public sealed partial class MainViewModel : Observable
                 WorkCurrent = "Suppression du profil CurseForge…";
                 await Task.Run(() => Uninstaller.DeleteInstance(instance.Path));
             }
-            Uninstaller.ScheduleSelfRemoval();
+            Uninstaller.ScheduleSelfRemoval(InstalledUpdater.InstallRoot);
         }
         catch (Exception e)
         {

@@ -10,12 +10,15 @@
   <!-- Windows seulement : WMI (jeu en cours) et registre (CurseForge). -->
   <ItemGroup Condition="'$(TargetFramework)' == 'net8.0-windows'">
     <PackageReference Include="System.Management" Version="8.0.0" />
+    <!-- Installeur et mises à jour du launcher (Setup.exe + deltas). Windows seulement : la version Linux n'en dépend pas. -->
+    <PackageReference Include="Velopack" Version="1.2.161" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' != 'net8.0-windows'">
     <Compile Remove="Services\ProcessGuard.cs" />
     <Compile Remove="Services\CurseForgeLocator.cs" />
     <!-- Lancement natif (Microsoft, Java, NeoForge) : Windows seulement, la version Linux passe par Prism Launcher. -->
     <Compile Remove="Native\**" />
+    <Compile Remove="Services\InstalledUpdater.cs" />
   </ItemGroup>
 
 </Project>
