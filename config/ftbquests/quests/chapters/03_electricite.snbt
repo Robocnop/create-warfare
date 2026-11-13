@@ -5,11 +5,11 @@
 	group: ""
 	icon: { id: "createaddition:alternator" }
 	id: "681D600432C87CB6"
-	order_index: 3
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: []
+			dependencies: ["756CBDC330F693ED"]
 			id: "04772DFD2EA8E417"
 			rewards: [{ id: "71478EFE9F0F0EF9", type: "xp", xp: 50 }]
 			tasks: [{ count: 16L, id: "2D450F7C2C70C2AB", item: { count: 1, id: "create_new_age:copper_wire" }, type: "item" }]
@@ -57,7 +57,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: []
+			dependencies: ["756CBDC330F693ED"]
 			id: "34BB47D89EA04A76"
 			rewards: [{ id: "7C04683AF8309A0A", type: "xp", xp: 150 }]
 			tasks: [{ count: 4L, id: "3DBA79AF690F39AF", item: { count: 1, id: "create_new_age:generator_coil" }, type: "item" }]
@@ -89,7 +89,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: []
+			dependencies: ["756CBDC330F693ED"]
 			id: "7DA093DB118A42DD"
 			rewards: [{ id: "0438A1F9F4DAD932", type: "xp", xp: 50 }]
 			tasks: [{ count: 16L, id: "32D0E157D5B014DB", item: { count: 1, id: "powergrid:wire" }, type: "item" }]
@@ -127,6 +127,14 @@
 			tasks: [{ count: 1L, id: "7B249CD8971B765F", item: { count: 1, id: "powergrid:fe_inverter" }, type: "item" }]
 			x: 4.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["697CD161FF05B721", "7ACFFB1E5D5A3DF1"]
+			id: "35249220763E79C4"
+			rewards: [{ id: "57BB013C8D7FDC42", type: "xp", xp: 300 }]
+			tasks: [{ count: 4L, id: "3EF91F71D29B0C50", item: { count: 1, id: "tfmg:circuit_board" }, type: "item" }]
+			x: 4.0d
+			y: 9.0d
 		}
 	]
 }

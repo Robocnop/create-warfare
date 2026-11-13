@@ -5,11 +5,11 @@
 	group: ""
 	icon: { id: "projectexplosive:icbm_nuclear" }
 	id: "41960E5E13891BC1"
-	order_index: 10
+	order_index: 15
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["756CBDC330F693ED"]
+			dependencies: ["756CBDC330F693ED", "35249220763E79C4"]
 			id: "74D2A1F364AADF7C"
 			rewards: [{ id: "2421B7C6F8CF6383", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "67CA3AC7E98AA1E2", item: { count: 1, id: "projectexplosive:munitions_workbench" }, type: "item" }]
@@ -33,7 +33,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["282FEA33AE7FE437"]
+			dependencies: ["282FEA33AE7FE437", "69A8DDF795F0DA59"]
 			id: "0E1A85CD7654EC56"
 			rewards: [{ id: "22EAE79B633385FC", type: "xp", xp: 300 }]
 			tasks: [{ count: 1L, id: "185CCF4E5B406F37", item: { count: 1, id: "projectexplosive:airstrike_caller" }, type: "item" }]
@@ -65,7 +65,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["74D2A1F364AADF7C"]
+			dependencies: ["74D2A1F364AADF7C", "71C8BC723873506B"]
 			id: "6A4B67DC521A8EBE"
 			rewards: [{ id: "3DBD9D60E125B8A0", type: "xp", xp: 100 }]
 			tasks: [{ count: 1L, id: "5C8783B79D55D3AC", item: { count: 1, id: "projectexplosive:icbm" }, type: "item" }]
@@ -77,10 +77,10 @@
 			repeat_cooldown: 14400
 			progression_mode: "linear"
 			icon: { id: "kubejs:launch_codes" }
-			dependencies: ["74D2A1F364AADF7C", "531F7DD09656D0AD"]
+			dependencies: ["74D2A1F364AADF7C", "531F7DD09656D0AD", "6A5EC12FB6CCB26A"]
 			id: "624917B0AC01463C"
 			rewards: [{ id: "3C62EA94174D2888", type: "xp", xp: 100 }, { id: "68B1A85A060F7CDE", item: { count: 1, id: "kubejs:launch_codes" }, team_reward: true, type: "item" }]
-			tasks: [{ consume_items: true, count: 4L, id: "575E75B1ECA9286B", item: { count: 1, id: "tfmg:circuit_board" }, type: "item" }, { consume_items: true, count: 8L, id: "0E14078361CA1F8D", item: { count: 1, id: "createnuclear:enriched_yellowcake" }, type: "item" }, { consume_items: true, count: 4L, id: "0B75FC377E64D882", item: { count: 1, id: "create:precision_mechanism" }, type: "item" }]
+			tasks: [{ consume_items: true, count: 8L, id: "575E75B1ECA9286B", item: { count: 1, id: "tfmg:circuit_board" }, type: "item" }, { consume_items: true, count: 16L, id: "0E14078361CA1F8D", item: { count: 1, id: "createnuclear:enriched_yellowcake" }, type: "item" }, { consume_items: true, count: 4L, id: "0B75FC377E64D882", item: { count: 1, id: "northstar:hardened_precision_mechanism" }, type: "item" }]
 			x: 2.0d
 			y: 7.5d
 		}
@@ -101,7 +101,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["4F02DCB64718598B", "282FEA33AE7FE437"]
+			dependencies: ["4F02DCB64718598B", "282FEA33AE7FE437", "624917B0AC01463C"]
 			id: "5FC9A9FB2250304D"
 			rewards: [{ id: "626150D11C4EC835", type: "xp", xp: 500 }]
 			tasks: [{ count: 1L, id: "1244C386AAE17D45", item: { count: 1, id: "projectexplosive:nuclear_bomb" }, type: "item" }]

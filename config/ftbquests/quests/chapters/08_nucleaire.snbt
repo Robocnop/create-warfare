@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "createnuclear:reactor_core" }
 	id: "04EF504505BA1E93"
-	order_index: 8
+	order_index: 13
 	quest_links: [ ]
 	quests: [
 		{
@@ -99,7 +99,7 @@
 		{
 			dependencies: ["20C2A9274845556B", "6072A0EE60401705", "3864BD2C040A8119"]
 			id: "4F22817667213C8D"
-			rewards: [{ id: "22BCD90BB9F4D5CA", type: "xp", xp: 400 }]
+			rewards: [{ id: "22BCD90BB9F4D5CA", type: "xp", xp: 400 }, { id: "255A9C864B723FFC", item: { count: 4, id: "createnuclear:graphite_rod" }, type: "item" }]
 			tasks: [{ count: 1L, id: "1C1F4FF6C022970E", item: { count: 1, id: "createnuclear:reactor_core" }, type: "item" }]
 			x: 6.0d
 			y: 1.5d

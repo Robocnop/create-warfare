@@ -54,27 +54,27 @@ hash = "f035a262f6dbe9afd2cb8efd34e7df258bda45e1ea033f9fc8ff4141020a4a1b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/00_forge.snbt"
-hash = "d28d63214ea01da607d19a99899515fa401cd0941a56cb36cca2a2dd29daefbd"
+hash = "b12bb378635df30a96f1dce2b8237ccef2cb44eed73f4103123c9b59dcf0c03c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/01_engrenages.snbt"
-hash = "4d6665eaab7168e1730d97c20555e9e6a31504634d7221807698545a91c66bde"
+hash = "c2c216614d4e9a2ba4326b4485cbaf17ad46b4af7961183f378d71ad6f441055"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/02_laiton.snbt"
-hash = "ff81f280346d26a3334a46ff5d646350b131fbf1c071f82910cecdc995679817"
+hash = "85a39f213b234c56f336480f33222dfec99f82288d5baff81e760a1d01c839dd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/03_electricite.snbt"
-hash = "614c1d61202ccea70e51720a455ed0b798b58f64b8ace1a2cf520bc015c5bd8d"
+hash = "62cb12b659e6dee557a22f0aff488be09aeafb3cd62a46ec56039533442c231c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/04_industrie.snbt"
-hash = "cbb110d3a3252c3908fbd8c59d8275b926e5963dec676ba9f72d22aba158f3f3"
+hash = "f914dd9f197b1b54063f1640380b708264512e4cd3bef6ce64caeb63025badd8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/05_artillerie.snbt"
-hash = "5972a3fa0b1d181ed5dd67acf719c51e817f6513ce2647e0baa8e5fbfda08677"
+hash = "80f4ad02ca7f8fa5fe6edb9d27485414f6ed7e97017a2628d8fc7f2321ca824d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/06_aviation.snbt"
@@ -82,39 +82,51 @@ hash = "78eaf788e7c24fb653ac709c8d7b6d288e1eacdc86d9aa8c73d3fb90580e96cb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/07_blindes.snbt"
-hash = "10a640ef3dc4079d917e29e8d562890fe7f9c5150697d2b5843d8aa9efd4e1dd"
+hash = "785e235ec8fcc06e351b1756bddbc0ca76809f231e416b7cf66f845eae295508"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/08_nucleaire.snbt"
-hash = "6c2dc7f7271d9685cf2abee842a98e94d3fff563d7f8dcd967287eeeb492890b"
+hash = "1cfb2f7fcff482d534e72fe66e87e58801db16f3b00fad8d82cde2f3db45be38"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/09_missiles.snbt"
-hash = "d34bc8c55340a7cdab1020d000b0a9613d510935e135b5b7647272f3c56b2703"
+hash = "604a1f33824d0cca322778a24e1233ba64a07cf7e8fe9775d720750f2593857b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/10_adm.snbt"
-hash = "e244a207916cef29c3f5e7fd1458b3ea803e0a8e80d52c0afdb572e0f9b00106"
+hash = "6386cca777d0ab67bca497b2df6736a5ecfe733a82f674b6b804fcae10be12a9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/11_defense.snbt"
-hash = "777aa3e0de52efa1660601b46b2ec1002038adf1ee8a9b4787cce6a7845479ab"
+hash = "adac54a240891d2e12efbbb75a29150997c2a7d0250cc57c3a9a3df52f08d70a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/12_cuisine.snbt"
-hash = "8dd4fcf77bfd7a959b6c3dad2af3e4d0fcf898f3148d921f513d0864a050fc73"
+hash = "b990a608b2846c28c7c481da64a58f77c4f39a13e5bb28f21d04c7cbd724e216"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/13_espace.snbt"
-hash = "f4bff666023eb97055ab0d3973b84eb45eaac5b257b99dbb16e7add23a0209c7"
+hash = "bc0ea0a811ff29d5ad56bbf7c10424eccf548b1e324e6ad6e933d72530dc033b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/14_telecom.snbt"
-hash = "fcb182496507f9355602de837496a560b83f939e433913630cab64b314980426"
+hash = "db5c0d73fcb157d2fdd9446864db375d2ab7bca885ec96cfe2dbdc0c11693986"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/15_prison.snbt"
-hash = "da7028ecde8934f758b4b77ede9096c269acfc2548d4f9580be290115d2cd24c"
+hash = "52bcf9b468da83620f0f0fb174ccd5f911f237dab2c50ec621f48802db6ce325"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/16_infanterie.snbt"
+hash = "c21795546cc53082710f0b206f09b6690cff7d85d2b60cfa22cec3d11559e936"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/17_vehicules.snbt"
+hash = "7e79fb0ed545ea232ff2cc50e5a8b72c22e2607e92a1fdd8544e4dbb354c5f7c"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/a0_accueil.snbt"
+hash = "2adbec5ea691da3025ea75fa86949eb4c5fe76ac416c1cec969bad747f9203ee"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -122,7 +134,7 @@ hash = "e8576bec9b094619713c4fd83d158174ccaad87cbed579e5c7560053ea07307d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "a203351fe5c74c34d981c72fb5fd61d6c0868a01762f899b5126a9cff385a7c3"
+hash = "7976398a7d5c2efe6730f429e29e5ec871731adde45d056fa2e4726fd5fe8690"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
@@ -1722,7 +1734,7 @@ hash = "c7a1d43c3e8a503cb3627ef7a2c28e3ea7f273b89dd82e69b8ede19ccc42e09c"
 
 [[files]]
 file = "kubejs/server_scripts/balance/military.js"
-hash = "229583e4ff03bb10fb040abe75ddfbfb16e98be9ebbd08b47712b2b481186552"
+hash = "1616f326679367f99880266b1530f1dbc4f6364312328d5420aa036b8e0345c0"
 
 [[files]]
 file = "kubejs/server_scripts/balance/neowarfare.js"
@@ -1735,6 +1747,18 @@ hash = "0d40c3aa5910b5971a8d7ce613151d58bb5d15116104d8bcfefb290b80444c0a"
 [[files]]
 file = "kubejs/server_scripts/balance/telecom.js"
 hash = "77d0b0d56072f4d62f1d8da5a79f48d7703ee3a063560a748b3ff8dea56f2850"
+
+[[files]]
+file = "kubejs/server_scripts/progression/p4_acier.js"
+hash = "ad2002abf3513178da2d3cacb215b9b25115dd7ca4d4ebba17656b9e0ef2fb83"
+
+[[files]]
+file = "kubejs/server_scripts/progression/p5_electricite.js"
+hash = "d6da1b447f4c1e8870077752c7d45248896e0ae8277810ae175ba8c9db9e4589"
+
+[[files]]
+file = "kubejs/server_scripts/progression/p6_guerre.js"
+hash = "d1aa73544f94a7f8972bbe34d635f08a55d5a83abfd33487e8a96fbb58a1d1b3"
 
 [[files]]
 file = "kubejs/server_scripts/trash_can.js"

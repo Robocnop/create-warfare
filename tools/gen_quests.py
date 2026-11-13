@@ -19,7 +19,7 @@ OUT = os.path.join(ROOT, "config", "ftbquests", "quests")
 # The tasks consume their items, the reward is claimed once per team, then the quest can be
 # done again after repeat_cooldown seconds. Linear: every dependency must be completed first.
 LAUNCH_CODES = {
-    "tasks": [("tfmg:circuit_board", 4), ("createnuclear:enriched_yellowcake", 8), ("create:precision_mechanism", 4)],
+    "tasks": [("tfmg:circuit_board", 8), ("createnuclear:enriched_yellowcake", 16), ("northstar:hardened_precision_mechanism", 4)],
     "reward_item": ("kubejs:launch_codes", 1),
     "repeat_cooldown": 14400,
     "linear": True,
@@ -334,6 +334,174 @@ CHAPTERS = [
 ]
 
 
+# ---------------------------------------------------------------------------------------------
+# Refonte 2.0.0 : les chapitres suivent les sept paliers de docs/PROGRESSION.md.
+# Les identifiants de chapitre et de quête (premiers champs) ne changent JAMAIS : les ids FTB en sont
+# le hash, donc la progression des joueurs en dépend. L'ordre, les titres, les dépendances, les textes
+# et les récompenses sont donc fixés ici, par-dessus le tableau CHAPTERS.
+# ---------------------------------------------------------------------------------------------
+GEAR = {"checkmark": True, "shape": "gear", "size": 2.0}
+
+NEW_CHAPTERS = [
+    ("a0_accueil", "Bienvenue, recrue", "Sept paliers, de la première étincelle à la dissuasion nucléaire. Le fil rouge du pack est ici.", "ftbquests:book", [
+        ("bienvenue", "ftbquests:book", 1, "Create Warfare", "Le vieux monde s'est éteint avec ses usines. Il reste des ruines, du minerai et des Compagnies : des équipes qui rebâtissent l'industrie pour ne plus jamais dépendre de personne. Tu en fondes une. D'abord l'industrie avec Create, palier après palier. Ensuite, la guerre : celui qui tient l'acier, le pétrole et l'atome tient la carte. Coche cette quête pour commencer.", [], 10, CHECK),
+        ("equipe", "minecraft:white_banner", 1, "Fonder une Compagnie", "Les quêtes se font en équipe : la progression et les récompenses de palier sont partagées. Ouvre ton inventaire, clique sur « Mon équipe » (FTB Teams) et crée une équipe ou rejoins celle de tes alliés. Coche la quête quand c'est fait.", ["bienvenue"], 10, CHECK),
+        ("base", "minecraft:campfire", 1, "Planter le drapeau", "Choisis un terrain et revendique ses chunks sur la carte de FTB Chunks (bouton en haut à gauche de l'inventaire). Une base se défend : murs, coffres verrouillés, puis tourelles et radars aux paliers V et VI. Coche la quête quand ta base est revendiquée.", ["equipe"], 10, CHECK),
+        ("regles", "minecraft:writable_book", 1, "Les lois de la guerre", "Chaque palier ouvre le suivant par ses machines, pas par les quêtes : l'acier ne sort que du haut fourneau, l'électricité demande de l'acier, les véhicules de l'électronique. Les armes nucléaires exigent des Codes de lancement, coûteux et limités à une série toutes les 4 heures par équipe, et tout le serveur est prévenu quand l'une d'elles est armée. Coche pour continuer.", ["bienvenue"], 10, CHECK),
+        ("palier1", "overgeared:smithing_hammer", 1, "Palier I — L'âge de la forge", "Pierre taillée, cuivre, puis fer battu à l'enclume : ta Compagnie a ses premiers outils. Coche pour toucher la prime de palier.", ["base", "00_forge:iron_pickaxe"], 100, GEAR),
+        ("palier2", "create:cogwheel", 1, "Palier II — L'âge de l'engrenage", "L'eau fait tourner tes premières machines : presse, meule, mixeur. Tout le reste du pack repose sur cette rotation.", ["palier1", "01_engrenages:press", "02_laiton:mixer"], 200, GEAR),
+        ("palier3", "create:brass_ingot", 1, "Palier III — L'âge du laiton", "Le laiton apporte la précision : mécanismes, tubes électroniques, bras et fabricants mécaniques. L'automatisation commence, et les premières armes à feu avec elle.", ["palier2", "02_laiton:brass", "02_laiton:precision_mechanism"], 300, GEAR),
+        ("palier4", "tfmg:steel_ingot", 1, "Palier IV — L'âge de l'acier", "Four à coke, haut fourneau, pétrole : l'industrie lourde. L'acier ne vient que d'ici. Il ouvre l'artillerie, les blindages et les avions.", ["palier3", "04_industrie:steel", "04_industrie:distillation"], 500, GEAR),
+        ("palier5", "tfmg:circuit_board", 1, "Palier V — L'âge électrique", "Alternateurs, moteurs, puis circuits imprimés : l'électronique rend possibles les radars, les ordinateurs de tir et la production de masse.", ["palier4", "03_electricite:alternator", "03_electricite:circuit_board"], 700, GEAR),
+        ("palier6", "superbwarfare:vehicle_assembling_table", 1, "Palier VI — La guerre mécanisée", "Chars, hélicoptères, radars et missiles tactiques. À ce stade, une Compagnie peut frapper loin et doit savoir se défendre : défense antiaérienne, blindage, détection.", ["palier5", "17_vehicules:vehicle_table", "09_missiles:radar_bearing", "05_artillerie:mount"], 1000, GEAR),
+        ("palier7", "projectexplosive:icbm_nuclear", 1, "Palier VII — La dissuasion", "Un réacteur, de l'uranium enrichi, du titane et des Codes de lancement : la fin de partie. Une arme nucléaire coûte des jours d'industrie et prévient tout le serveur. À toi de voir si elle doit servir.", ["palier6", "08_nucleaire:reactor_core", "10_adm:uranium_ingot", "13_espace:targeting_computer"], 2000, GEAR),
+    ]),
+    ("16_infanterie", "Armurerie", "Du pistolet à silex au fusil d'assaut : l'armement individuel monte avec les paliers.", "cgs:revolver", [
+        ("flintlock", "cgs:flintlock", 1, "Pistolet à silex", "Alliage d'andésite, tôle de fer et briquet : la première arme à feu, lente à recharger (palier II).", ["01_engrenages:press"], 50),
+        ("paper_cartridge", "cgs:paper_cartridge", 16, "Cartouches en papier", "Les munitions du silex : papier, poudre et balle.", ["flintlock"], 30),
+        ("frag_grenade", "cgs:frag_grenade", 4, "Grenades à fragmentation", "Laiton, fer et poudre : à lancer, pas à garder en main (palier III).", ["02_laiton:brass"], 75),
+        ("blazegun", "cgs:blazegun", 1, "Lance-flammes à blaze", "Un brûleur à blaze dans un tube en laiton (palier III).", ["02_laiton:blaze_burner", "02_laiton:brass"], 100),
+        ("revolver", "cgs:revolver", 1, "Revolver", "Acier et laiton au fabricant mécanique : la première arme à répétition (palier IV).", ["04_industrie:steel", "02_laiton:crafter"], 150),
+        ("shotgun", "cgs:shotgun", 1, "Fusil à pompe", "Redoutable dans les couloirs d'une base.", ["revolver"], 150),
+        ("gatling", "cgs:gatling", 1, "Mitrailleuse Gatling", "Acier, laiton et mécanisme de précision : un mur de plomb.", ["shotgun", "02_laiton:precision_mechanism"], 250),
+        ("research_table", "superbwarfare:blueprint_research_table", 1, "Table de recherche", "Les armes modernes de Superb Warfare se fabriquent à partir d'un plan. Les plans se trouvent dans les coffres des structures et se copient ici.", ["04_industrie:steel"], 150),
+        ("common_pack", "superbwarfare:common_material_pack", 1, "Paquet de pièces en fer", "Canon, culasse, ressort et détente en fer : la base des pistolets.", ["research_table"], 75),
+        ("rare_pack", "superbwarfare:rare_material_pack", 1, "Paquet de pièces en acier", "Les mêmes pièces en acier : fusils d'assaut, mitrailleuses, lance-roquettes. Plan + paquet + un dernier ingrédient à la table de forgeron.", ["common_pack"], 150),
+        ("handgun_ammo", "superbwarfare:handgun_ammo", 32, "Munitions", "Cuivre, poudre et amorce. Les boîtes de munitions rechargent les chargeurs.", ["common_pack"], 75),
+        ("armor_plate", "superbwarfare:armor_plate", 4, "Plaques de blindage", "À glisser dans un plastron : elles encaissent les balles à ta place.", ["rare_pack"], 100),
+        ("mortar", "superbwarfare:mortar_deployer", 1, "Mortier", "Tube, bipied et plaque de base en acier. Tire en cloche par-dessus les murs.", ["rare_pack"], 200),
+        ("mortar_shell", "superbwarfare:mortar_shell", 8, "Obus de mortier", "Acier, explosif et propulseur.", ["mortar"], 100),
+        ("epic_pack", "superbwarfare:epic_material_pack", 1, "Paquet de pièces en carbure", "Le carbure cémenté vient de la scheelite (tungstène) : armes lourdes et modules d'armement des véhicules.", ["rare_pack"], 250),
+        ("reforging_table", "superbwarfare:reforging_table", 1, "Table de reforge", "Avec un processeur ancien : elle ajoute des améliorations (perks) à une arme.", ["epic_pack"], 250),
+    ]),
+    ("17_vehicules", "Guerre mécanisée", "Les véhicules de Superb Warfare : acier, caoutchouc, moteurs électriques et électronique.", "superbwarfare:vehicle_assembling_table", [
+        ("vehicle_table", "superbwarfare:vehicle_assembling_table", 1, "Table d'assemblage de véhicules", "Tôles d'acier, mécanisme en acier et circuit imprimé : la porte du palier VI. Tous les véhicules s'assemblent ici.", ["04_industrie:steel", "03_electricite:circuit_board"], 300),
+        ("motor", "superbwarfare:motor", 2, "Moteurs", "Bobines de cuivre, arbre et tube électronique.", ["vehicle_table"], 100),
+        ("large_motor", "superbwarfare:large_motor", 1, "Gros moteur", "Deux moteurs électriques de Crafts & Additions et un mécanisme en acier : le cœur de chaque véhicule.", ["motor", "03_electricite:electric_motor"], 250),
+        ("wheel", "superbwarfare:wheel", 4, "Roues", "Caoutchouc de TFMG (pétrole lourd et soufre) sur jante en acier.", ["vehicle_table", "04_industrie:distillation"], 150),
+        ("track", "superbwarfare:track", 2, "Chenilles", "Des roues et de l'acier : pour les blindés.", ["wheel"], 150),
+        ("battery", "superbwarfare:medium_battery_pack", 1, "Batterie moyenne", "Assemblée à la table à partir de petites batteries. Elle se recharge à la station de charge.", ["vehicle_table"], 200),
+        ("light_module", "superbwarfare:light_armament_module", 1, "Module d'armement léger", "Pièces en acier et mécanisme de précision : mitrailleuses de bord.", ["vehicle_table", "16_infanterie:rare_pack"], 200),
+        ("cannon_core", "superbwarfare:cannon_core", 1, "Noyau de canon", "Il demande une vraie culasse coulissante de Create Big Cannons.", ["vehicle_table", "05_artillerie:breech"], 250),
+        ("medium_module", "superbwarfare:medium_armament_module", 1, "Module d'armement moyen", "Carbure cémenté : canons automatiques des blindés légers.", ["light_module", "16_infanterie:epic_pack"], 300),
+        ("heavy_module", "superbwarfare:heavy_armament_module", 1, "Module d'armement lourd", "Noyau de canon, netherite et module moyen : chars de combat et avions d'attaque.", ["medium_module", "cannon_core"], 500),
+        ("first_vehicle", "superbwarfare:vehicle_key", 1, "Premier véhicule", "Assemble ton premier véhicule à la table (un pick-up suffit) et prends sa clé. Coche la quête quand il roule.", ["large_motor", "wheel", "battery"], 300, CHECK),
+        ("repair_tool", "superbwarfare:repair_tool", 1, "Outil de réparation", "Un véhicule abîmé se répare, il ne se remplace pas.", ["first_vehicle"], 100),
+    ]),
+]
+
+# Quêtes ajoutées à un chapitre existant.
+EXTRA_QUESTS = {
+    "03_electricite": [
+        ("circuit_board", "tfmg:circuit_board", 4, "Circuits imprimés", "Plaque gravée à l'acide, condensateur, résistances et transistor en assemblage séquencé. C'est la porte de la guerre mécanisée : radars, véhicules, établi de munitions.", ["alternator", "04_industrie:plastic"], 300),
+    ],
+}
+
+# Ordre d'affichage et titres : (titre, sous-titre). Le chiffre romain est le palier.
+TITLES = {
+    "00_forge": ("I · L'âge de la forge", "Avant les machines, le marteau : outils et armures se forgent à l'enclume (Overgeared)."),
+    "01_engrenages": ("II · L'âge de l'engrenage", "Les bases de Create : rotation, alliage d'andésite et premières machines."),
+    "02_laiton": ("III · L'âge du laiton", "Le laiton débloque la précision, l'automatisation et la logistique."),
+    "04_industrie": ("IV · L'âge de l'acier", "Coke, haut fourneau, pétrole et trains : l'industrie lourde de TFMG."),
+    "05_artillerie": ("IV · Artillerie", "Fondre, forer et assembler de vrais canons (Create Big Cannons)."),
+    "06_aviation": ("IV · Aviation", "Hélices, ballons et avions physiques (Create Aeronautics, Sable)."),
+    "16_infanterie": ("II à VI · Armurerie", "Du pistolet à silex au fusil d'assaut : l'armement individuel monte avec les paliers."),
+    "03_electricite": ("V · L'âge électrique", "Produire du courant demande de l'acier. Au bout : les circuits imprimés."),
+    "11_defense": ("V · Défense & informatique", "Ordinateurs pour piloter canons et avions, et une base qui se défend toute seule."),
+    "07_blindes": ("VI · Blindés", "Roues, chenilles, blindage et tourelles pour les engins Sable."),
+    "17_vehicules": ("VI · Guerre mécanisée", "Les véhicules de Superb Warfare : acier, caoutchouc, moteurs électriques et électronique."),
+    "09_missiles": ("VI · Radars & missiles", "Détecter, suivre et frapper à longue distance. Et abattre ce qui arrive."),
+    "08_nucleaire": ("VII · L'atome", "Uranium, thorium et réacteurs : une énergie massive, et la matière des bombes."),
+    "13_espace": ("VII · Espace", "Titane, circuits et fusées : la Lune, puis Mars, Mercure et Vénus (Northstar)."),
+    "10_adm": ("VII · Dissuasion", "La fin de partie : bombes lourdes et ICBM nucléaires. Avec modération..."),
+    "12_cuisine": ("Vie de camp · Cuisine", "Kaleidoscope Cookery : cuisiner pour tenir entre deux batailles."),
+    "14_telecom": ("Vie de camp · Téléphones", "Mobile Networks : un numéro, des antennes, et ton équipe au bout du fil."),
+    "15_prison": ("Vie de camp · Prisonniers", "Cuffed : menotter un ennemi, le fouiller, l'enfermer. Et verrouiller ses coffres."),
+}
+ORDER = ["a0_accueil", "00_forge", "01_engrenages", "02_laiton", "04_industrie", "05_artillerie", "06_aviation",
+         "16_infanterie", "03_electricite", "11_defense", "07_blindes", "17_vehicules", "09_missiles",
+         "08_nucleaire", "13_espace", "10_adm", "12_cuisine", "14_telecom", "15_prison"]
+
+# Dépendances corrigées pour suivre les portes réelles (recettes de kubejs/server_scripts/progression).
+DEPS = {
+    "03_electricite:copper_wire": ["04_industrie:steel"],
+    "03_electricite:generator_coil": ["04_industrie:steel"],
+    "03_electricite:pg_wire": ["04_industrie:steel"],
+    "09_missiles:radar_bearing": ["03_electricite:circuit_board"],
+    "09_missiles:launch_pad": ["04_industrie:steel", "03_electricite:circuit_board"],
+    "10_adm:munitions_workbench": ["04_industrie:steel", "03_electricite:circuit_board"],
+    "10_adm:airstrike": ["big_bomb", "09_missiles:fire_controller"],
+    "10_adm:icbm_target": ["munitions_workbench", "13_espace:targeting_computer"],
+    "10_adm:launch_codes": ["munitions_workbench", "08_nucleaire:yellowcake", "13_espace:hardened_mechanism"],
+    "10_adm:nuclear_bomb": ["uranium_ingot", "big_bomb", "launch_codes"],
+}
+
+# Textes réécrits (recettes changées en 2.0.0).
+DESCS = {
+    "00_forge:crude_steel": "3 lingots de fer + 1 charbon = 4 aciers bruts. Chauffe-les, puis forge-les : tu obtiens de l'acier forgé, bon pour les outils d'Overgeared seulement. L'acier de l'industrie (palier IV) ne sort que du haut fourneau de TFMG. Attention : un lingot d'acier TFMG chauffé puis refroidi sans être forgé devient de l'acier forgé.",
+    "03_electricite:alternator": "Convertit la rotation en énergie. Depuis la 2.0.0, il demande des tôles d'acier : l'électricité vient après le haut fourneau.",
+    "03_electricite:generator_coil": "Bobine de génératrice de New Age : cuivre autour d'un bloc d'acier.",
+    "09_missiles:radar_bearing": "Le pivot du radar : roulement mécanique, tôles d'acier et circuit imprimé.",
+    "09_missiles:launch_pad": "Pas de tir de Create Missiles : tôle d'acier, boîtier en laiton et circuit imprimé.",
+    "10_adm:munitions_workbench": "Assemble bombes, ogives et missiles. Tôles et bloc d'acier, mécanismes en acier, circuits imprimés et un fabricant mécanique.",
+    "10_adm:airstrike": "Cinq Mk 82 sur la cible. Il demande une conduite de tir (chaîne radar) et un circuit imprimé.",
+    "10_adm:icbm_target": "Désigne la cible de l'ICBM. Longue-vue, boussole, circuit imprimé et un ordinateur de visée de Northstar (titane).",
+    "10_adm:launch_codes": "Indispensables pour armer un ICBM ou une Fat Man (tenus en main secondaire à la pose) et pour les missiles longue portée. Quête répétable : 8 circuits imprimés, 16 yellowcakes enrichis et 4 mécanismes de précision renforcés sont consommés, une fois par équipe, puis délai de 4 h.",
+    "10_adm:nuclear_bomb": "La bombe nucléaire larguée. Comme un ICBM, elle ne s'arme qu'avec des Codes de lancement, et tout le serveur est prévenu.",
+}
+
+# Récompenses en objets (en plus de l'XP). Pièces de Create: Numismatics : la monnaie des échanges entre Compagnies.
+REWARDS = {
+    "a0_accueil:bienvenue": [("minecraft:bread", 16), ("comforts:sleeping_bag_red", 1)],
+    "a0_accueil:palier1": [("numismatics:bevel", 2), ("minecraft:cooked_beef", 16)],
+    "a0_accueil:palier2": [("numismatics:bevel", 4), ("create:andesite_alloy", 32)],
+    "a0_accueil:palier3": [("numismatics:sprocket", 4), ("create:precision_mechanism", 2)],
+    "a0_accueil:palier4": [("numismatics:cog", 2), ("tfmg:steel_ingot", 8)],
+    "a0_accueil:palier5": [("numismatics:cog", 4), ("tfmg:circuit_board", 2)],
+    "a0_accueil:palier6": [("numismatics:crown", 1), ("createbigcannons:he_shell", 8)],
+    "a0_accueil:palier7": [("numismatics:crown", 2), ("minecraft:golden_apple", 8)],
+    "01_engrenages:press": [("create:iron_sheet", 8)],
+    "02_laiton:brass": [("create:brass_casing", 4)],
+    "04_industrie:steel": [("tfmg:coal_coke", 16)],
+    "05_artillerie:mount": [("createbigcannons:powder_charge", 8)],
+    "08_nucleaire:reactor_core": [("createnuclear:graphite_rod", 4)],
+}
+
+
+def _rebuild():
+    """Applique ORDER, TITLES, EXTRA_QUESTS, DEPS, DESCS et REWARDS au tableau CHAPTERS."""
+    by = {c[0]: list(c) for c in CHAPTERS + NEW_CHAPTERS}
+    for cname, quests in EXTRA_QUESTS.items():
+        by[cname][4] = list(by[cname][4]) + quests
+    known = {f"{cname}:{q[0]}" for cname, c in by.items() for q in c[4]}
+    for table in (DEPS, DESCS, REWARDS):
+        missing = set(table) - known
+        assert not missing, f"quêtes inconnues : {missing}"
+    out = []
+    for cname in ORDER:
+        c = by.pop(cname)
+        if cname in TITLES:
+            c[1], c[2] = TITLES[cname]
+        quests = []
+        for q in c[4]:
+            q = list(q)
+            ref = f"{cname}:{q[0]}"
+            q[5] = DEPS.get(ref, q[5])
+            q[4] = DESCS.get(ref, q[4])
+            if ref in REWARDS:
+                extra = dict(q[7]) if len(q) > 7 else {}
+                extra["rewards"] = REWARDS[ref]
+                q = q[:7] + [extra]
+            quests.append(tuple(q))
+        c[4] = quests
+        out.append(tuple(c))
+    assert not by, f"chapitres absents de ORDER : {list(by)}"
+    return out
+
+
+CHAPTERS = _rebuild()
+
+
 def qid(*parts):
     """Stable 16-hex-digit FTB id from a name.
     The top bit is cleared: FTB Quests reads ids as signed longs, and an id starting with 8-F
@@ -427,6 +595,8 @@ def main():
             if "reward_item" in extra:
                 rid, rcount = extra["reward_item"]
                 rewards.append(f"{{ id: \"{qid(cname, key, 'item')}\", item: {{ count: {rcount}, id: \"{rid}\" }}, team_reward: true, type: \"item\" }}")
+            for i, (rid, rcount) in enumerate(extra.get("rewards", [])):
+                rewards.append(f"{{ id: \"{qid(cname, key, 'reward', str(i))}\", item: {{ count: {rcount}, id: \"{rid}\" }}, type: \"item\" }}")
             if "tasks" in extra:
                 tasks = [f"{{ consume_items: true, count: {c}L, id: \"{qid(cname, key, 'task', str(i))}\", item: {{ count: 1, id: \"{t}\" }}, type: \"item\" }}"
                          for i, (t, c) in enumerate(extra["tasks"])]
@@ -439,6 +609,8 @@ def main():
                 flags += f"\t\t\tcan_repeat: true\n\t\t\trepeat_cooldown: {extra['repeat_cooldown']}\n"
             if extra.get("linear"):
                 flags += "\t\t\tprogression_mode: \"linear\"\n"
+            if extra.get("shape"):
+                flags += f"\t\t\tshape: \"{extra['shape']}\"\n\t\t\tsize: {extra.get('size', 1.0)}d\n"
             if "tasks" in extra or extra.get("checkmark"):
                 flags += f"\t\t\ticon: {{ id: \"{item}\" }}\n"
             body.append(

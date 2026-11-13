@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "securitycraft:sentry" }
 	id: "16A7BFA622EEA61D"
-	order_index: 11
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
