@@ -2401,7 +2401,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-vintage-unofficial-port.pw.toml"
-hash = "b0a0bbae1af216c13a9169e15976cead741e5fbf0d57885dfa8ec003ee889efb"
+hash = "1cb60f3e6ebbf5ba47c97a1cd283f5e0114c68995c522e7c5e968d0149fdd151"
 metafile = true
 
 [[files]]
@@ -2416,7 +2416,7 @@ metafile = true
 
 [[files]]
 file = "mods/createnuclear.pw.toml"
-hash = "21ac1923bd543d6e50a982fa1e5ee6b427ca2e0ebc3fe8de2a0dba97641e78a9"
+hash = "8f84b6788d9876ea1d7fa527b667482b6e26bb14af6735c4c79138d164442e68"
 metafile = true
 
 [[files]]
@@ -3096,7 +3096,7 @@ metafile = true
 
 [[files]]
 file = "mods/tfmg-community-edition.pw.toml"
-hash = "bf5f39820df498c7631fa699aeb2b6f7b1ba1ae5055a33f92878f187fde25dc4"
+hash = "bbbc01c1738448c25664f5f6306ae0a4e90ab484d09c1666053e5378f480fddd"
 metafile = true
 
 [[files]]
