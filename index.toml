@@ -57,6 +57,10 @@ file = "config/ftbchunks-world.snbt"
 hash = "fa3a3ca80b617fce9abd8678422f58de76a40d82d8d1f501cac11a2891ae5a70"
 
 [[files]]
+file = "config/ftbessentials.snbt"
+hash = "b8c4758774cebe7af9d587b0a71c5ff299ef6b93e2507967c58f1038b68fa4a8"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/00_forge.snbt"
 hash = "b12bb378635df30a96f1dce2b8237ccef2cb44eed73f4103123c9b59dcf0c03c"
 
@@ -167,6 +171,14 @@ hash = "50d5ef73d367f23c11df485cfe502bd87351d267e928d071886c91d9913f9a51"
 [[files]]
 file = "config/superbwarfare-server.toml"
 hash = "847bb43dc2dde8301b196ead7e82cd8bac531b44c0a9f2a02f000ebdc5099c69"
+
+[[files]]
+file = "config/xaero/minimap/server_profiles/default.cfg"
+hash = "796e044d55578d6cbfe4481b4ab1a86938c59e809375d2bc998cbbfaa41e2b29"
+
+[[files]]
+file = "config/xaero/world-map/server_profiles/default.cfg"
+hash = "672f18bd6260c4645b448afbb942dec792303b111c12c8b311f4ebb443a253c0"
 
 [[files]]
 file = "kubejs/assets/advancedweather/lang/fr_fr.json"
@@ -3129,12 +3141,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "5604013bfdf61b3554756f274e2b055d9d1783594d4a342c0daa710b4b777afd"
+hash = "70e12b988f0efd4df56597d3f37fe37608584b876ff3e713e4f5d966a37a4a25"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "ea108934fe2cc5e7d58763ca5949459052ce368a153822eec42d53273f93a58e"
+hash = "62eaf7c193d20dbec89944f6e1401ce64a80d8d704830a988d24c1498d8316e2"
 metafile = true
 
 [[files]]
