@@ -16,6 +16,9 @@ Refonte de la progression : sept paliers, chacun ouvert par les ressources du pr
   une conduite de tir.
 - **Armes lourdes** : établi de munitions en acier et circuits, désignateur d'ICBM avec un ordinateur de visée de
   Northstar (titane). La Fat Man s'arme maintenant avec des codes de lancement, comme les ICBM.
+- **Bases revendiquées (FTB Chunks)** : les explosions y sont maintenant autorisées par défaut, sinon l'artillerie ne
+  pouvait rien contre une base. Casser ou poser des blocs à la main chez une autre équipe reste interdit. Les équipes
+  déjà créées gardent leur ancien réglage : à changer dans les paramètres de l'équipe (« Autoriser les explosions »).
 - **Quêtes** : 300 quêtes en 19 chapitres rangés par palier (I à VII), un chapitre d'accueil qui explique le pack et
   récompense chaque palier, deux nouveaux chapitres « Armurerie » et « Guerre mécanisée ».
 - **Mondes existants** : même monde, rien n'est supprimé, les machines et armes déjà fabriquées marchent toujours.

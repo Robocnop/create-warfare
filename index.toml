@@ -53,6 +53,10 @@ file = "config/explosionoverhaul/explosionoverhaul-common.toml"
 hash = "f035a262f6dbe9afd2cb8efd34e7df258bda45e1ea033f9fc8ff4141020a4a1b"
 
 [[files]]
+file = "config/ftbchunks-world.snbt"
+hash = "fa3a3ca80b617fce9abd8678422f58de76a40d82d8d1f501cac11a2891ae5a70"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/00_forge.snbt"
 hash = "b12bb378635df30a96f1dce2b8237ccef2cb44eed73f4103123c9b59dcf0c03c"
 
