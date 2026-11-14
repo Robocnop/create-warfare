@@ -241,6 +241,23 @@ cool = R.get('overgeared:steel_ingot_from_cooling')
 if cool and outs(cool) != ['overgeared:steel_ingot']:
     errors.append(f'overgeared:steel_ingot_from_cooling donne {outs(cool)} (attendu : overgeared:steel_ingot)')
 
+# Aucun butin ne doit donner de lingot ni de bloc d'acier, quel que soit le mod (ils sont tous dans les tags c:).
+STEEL_LOOT_OK = {
+    # Petit conteneur de Superb Warfare : ni recette ni butin, créatif seulement (contrôlé ci-dessous).
+    'superbwarfare:containers/common': lambda: not any(
+        BY_OUT.get(c) or BY_LOOT.get(c, set()) - {f'superbwarfare:blocks/{c.split(":")[1]}'}
+        for c in ('superbwarfare:small_container', 'superbwarfare:lucky_container')),
+    # Bobine d'acier : monstre de Superb Warfare, apparition naturelle coupée dans la config livrée.
+    'superbwarfare:entities/steel_coil': lambda: 'spawn_steel_coil = false' in open(
+        os.path.join(ROOT, 'config', 'superbwarfare-server.toml'), encoding='utf-8').read(),
+}
+for it in sorted(set(TAGS.get('c:ingots/steel', [])) | set(TAGS.get('c:storage_blocks/steel', []))):
+    for table in sorted(BY_LOOT.get(it, [])):
+        if table in STEEL_LOOT_OK and STEEL_LOOT_OK[table]():
+            notes.append(f'{it} : butin toléré {table}')
+        else:
+            errors.append(f"{it} : acier donné par le butin {table}")
+
 print('\n== 4. Quêtes')
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
 import gen_quests  # noqa: E402
