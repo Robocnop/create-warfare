@@ -2,9 +2,14 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
-## 2.0.0 — non publiée (⚠️ non testée en jeu)
+## 2.0.0 — 2026-11-15 (⚠️ non testée en jeu)
 
 Refonte de la progression : sept paliers, chacun ouvert par les ressources du précédent. Aucun mod ajouté ni retiré.
+
+- **PvP équitable** : `/home`, `/back` et `/spawn` demandent 30 s d'attente sans bouger. Le serveur coupe le radar
+  à joueurs et le mode grotte de la minimap de Xaero.
+- **Mises à jour** : TFMG 1.3.3a, Create Nuclear 2.0.1, Create: Vintage 1.6.5, Fresh Animations 1.11.2 et 23 mods
+  sans risque (JEI, KubeJS, FTB Quests/Chunks/Teams, Sophisticated Backpacks…). Create: Radars reste en 5.0.2.
 
 - **L'acier ne sort plus que du haut fourneau de TFMG.** Les recettes d'acier au mixeur (Create Nuclear, Gunsmithing)
   et au haut fourneau vanilla (Superb Warfare) sont retirées. L'acier de la forge d'Overgeared devient l'« acier forgé » :
