@@ -59,7 +59,7 @@
 		{
 			dependencies: ["0DD1AF3C4B4F3694"]
 			id: "7AE07A7DA301D186"
-			rewards: [{ id: "64C094716C4BD6A3", type: "xp", xp: 200 }]
+			rewards: [{ id: "64C094716C4BD6A3", type: "xp", xp: 200 }, { id: "53BAC51DAD098D54", item: { count: 8, id: "createbigcannons:powder_charge" }, type: "item" }]
 			tasks: [{ count: 1L, id: "47475F9185FC479E", item: { count: 1, id: "createbigcannons:cannon_mount" }, type: "item" }]
 			x: 10.0d
 			y: 0.0d

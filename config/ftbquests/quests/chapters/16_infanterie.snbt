@@ -1,0 +1,140 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "16_infanterie"
+	group: ""
+	icon: { id: "cgs:revolver" }
+	id: "59A1DB546FA2EA96"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1BB7C679337D1D12"]
+			id: "6AA24A7C780BCA20"
+			rewards: [{ id: "7912E24C9C9D1001", type: "xp", xp: 50 }]
+			tasks: [{ count: 1L, id: "5A24B5617FB7931D", item: { count: 1, id: "cgs:flintlock" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AA24A7C780BCA20"]
+			id: "73474A0CE4F5A2B9"
+			rewards: [{ id: "24A5B02D2770F187", type: "xp", xp: 30 }]
+			tasks: [{ count: 16L, id: "208F8C6672639A94", item: { count: 1, id: "cgs:paper_cartridge" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F369E5180DA069A"]
+			id: "5AC4C98A9552EA8B"
+			rewards: [{ id: "0CDC4AF12508D9D2", type: "xp", xp: 75 }]
+			tasks: [{ count: 4L, id: "7920330F5411102A", item: { count: 1, id: "cgs:frag_grenade" }, type: "item" }]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7071E71810E20BB1", "5F369E5180DA069A"]
+			id: "3CB69294FDC889FD"
+			rewards: [{ id: "32D1B3789447A78B", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "4F5A5CE17D97095F", item: { count: 1, id: "cgs:blazegun" }, type: "item" }]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["756CBDC330F693ED", "2AAAA92E88E4DD13"]
+			id: "156719B657188F11"
+			rewards: [{ id: "015AD4AA9DEDBBF5", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "32E1A1FC0EA3ED97", item: { count: 1, id: "cgs:revolver" }, type: "item" }]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["156719B657188F11"]
+			id: "2CED04B94C1F9460"
+			rewards: [{ id: "75F5EC28C2563D07", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "2CD5C67450B0E6D2", item: { count: 1, id: "cgs:shotgun" }, type: "item" }]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2CED04B94C1F9460", "0AED6BE8700C86DB"]
+			id: "33A59CEF3A24F60B"
+			rewards: [{ id: "6BD96977CBC1EE4C", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "03AFE667527D7E80", item: { count: 1, id: "cgs:gatling" }, type: "item" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["756CBDC330F693ED"]
+			id: "366786F36BAAA31C"
+			rewards: [{ id: "4FF04E5F92B45A50", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "62D2063DA8C69E1B", item: { count: 1, id: "superbwarfare:blueprint_research_table" }, type: "item" }]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["366786F36BAAA31C"]
+			id: "14B6D13AFF72434C"
+			rewards: [{ id: "055281FCC09214E1", type: "xp", xp: 75 }]
+			tasks: [{ count: 1L, id: "7D6ABA1278742E72", item: { count: 1, id: "superbwarfare:common_material_pack" }, type: "item" }]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["14B6D13AFF72434C"]
+			id: "60EC125C4FDCB557"
+			rewards: [{ id: "00990E4062633C85", type: "xp", xp: 150 }]
+			tasks: [{ count: 1L, id: "6B7AA17B59023AF7", item: { count: 1, id: "superbwarfare:rare_material_pack" }, type: "item" }]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["14B6D13AFF72434C"]
+			id: "14FDCCE9A9E143DD"
+			rewards: [{ id: "5BEA39D06EB62943", type: "xp", xp: 75 }]
+			tasks: [{ count: 32L, id: "46D1ABFC6839E085", item: { count: 1, id: "superbwarfare:handgun_ammo" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["60EC125C4FDCB557"]
+			id: "61552C1FCF733D30"
+			rewards: [{ id: "26AD255DBF541D22", type: "xp", xp: 100 }]
+			tasks: [{ count: 4L, id: "1DFA05D02877D48C", item: { count: 1, id: "superbwarfare:armor_plate" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60EC125C4FDCB557"]
+			id: "590E1DF66C2E33E2"
+			rewards: [{ id: "07EA75B4C109E7B1", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "116319D71112A6EC", item: { count: 1, id: "superbwarfare:mortar_deployer" }, type: "item" }]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["590E1DF66C2E33E2"]
+			id: "38330F4192811DCC"
+			rewards: [{ id: "3256CF653A6EA971", type: "xp", xp: 100 }]
+			tasks: [{ count: 8L, id: "1E87C6EECC7D1942", item: { count: 1, id: "superbwarfare:mortar_shell" }, type: "item" }]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60EC125C4FDCB557"]
+			id: "79EB8C89B297E7BF"
+			rewards: [{ id: "1B1910B747AD17A2", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "26AF0EE55C24C437", item: { count: 1, id: "superbwarfare:epic_material_pack" }, type: "item" }]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["79EB8C89B297E7BF"]
+			id: "3EF61E230D0F669A"
+			rewards: [{ id: "5F0E8658E12FC5B8", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "2D6515C2A5E7B18C", item: { count: 1, id: "superbwarfare:reforging_table" }, type: "item" }]
+			x: 8.0d
+			y: 1.5d
+		}
+	]
+}

@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "overgeared:smithing_hammer" }
 	id: "7D74B4BED70DB886"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

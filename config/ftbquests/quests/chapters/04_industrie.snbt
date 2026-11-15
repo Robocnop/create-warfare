@@ -27,7 +27,7 @@
 		{
 			dependencies: ["4AE6F35EE70BD1F5", "28E559ACA1545773"]
 			id: "756CBDC330F693ED"
-			rewards: [{ id: "72E1A5AE990B7E09", type: "xp", xp: 250 }]
+			rewards: [{ id: "72E1A5AE990B7E09", type: "xp", xp: 250 }, { id: "0C806BEDCBE571C7", item: { count: 16, id: "tfmg:coal_coke" }, type: "item" }]
 			tasks: [{ count: 32L, id: "57372DA2A11866F2", item: { count: 1, id: "tfmg:steel_ingot" }, type: "item" }]
 			x: 2.0d
 			y: 0.0d

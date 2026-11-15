@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "create:cogwheel" }
 	id: "17655EBC7D082AA1"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -83,7 +83,7 @@
 		{
 			dependencies: ["0C7871E410D968EC"]
 			id: "1BB7C679337D1D12"
-			rewards: [{ id: "67343E407C409C64", type: "xp", xp: 75 }]
+			rewards: [{ id: "67343E407C409C64", type: "xp", xp: 75 }, { id: "6373476F14B313A5", item: { count: 8, id: "create:iron_sheet" }, type: "item" }]
 			tasks: [{ count: 1L, id: "50768CB6DA55AFBF", item: { count: 1, id: "create:mechanical_press" }, type: "item" }]
 			x: 4.0d
 			y: 3.0d

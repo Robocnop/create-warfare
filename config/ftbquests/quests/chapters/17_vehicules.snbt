@@ -1,0 +1,109 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "17_vehicules"
+	group: ""
+	icon: { id: "superbwarfare:vehicle_assembling_table" }
+	id: "7D0AF9B5A534D721"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["756CBDC330F693ED", "35249220763E79C4"]
+			id: "228EFA51E63652C6"
+			rewards: [{ id: "06B529040B5F9E82", type: "xp", xp: 300 }]
+			tasks: [{ count: 1L, id: "2F2A160EB1045402", item: { count: 1, id: "superbwarfare:vehicle_assembling_table" }, type: "item" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["228EFA51E63652C6"]
+			id: "3D829C3472E8A455"
+			rewards: [{ id: "6D7E8507B879F776", type: "xp", xp: 100 }]
+			tasks: [{ count: 2L, id: "1EE62D9D2359E180", item: { count: 1, id: "superbwarfare:motor" }, type: "item" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D829C3472E8A455", "6F4FA44804A52F63"]
+			id: "7E5861253655B447"
+			rewards: [{ id: "7D5250900153A3A3", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "6CB2AE79899BD28E", item: { count: 1, id: "superbwarfare:large_motor" }, type: "item" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["228EFA51E63652C6", "4E484CE080B4A71D"]
+			id: "049AE4060D0BC557"
+			rewards: [{ id: "5D9B9DF81143917E", type: "xp", xp: 150 }]
+			tasks: [{ count: 4L, id: "6069B2934B1BE847", item: { count: 1, id: "superbwarfare:wheel" }, type: "item" }]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["049AE4060D0BC557"]
+			id: "17490F3EB166A2D1"
+			rewards: [{ id: "4ED2DB4257CEE0F0", type: "xp", xp: 150 }]
+			tasks: [{ count: 2L, id: "183C3BED3BE76AD7", item: { count: 1, id: "superbwarfare:track" }, type: "item" }]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["228EFA51E63652C6"]
+			id: "42071AD892B5AC30"
+			rewards: [{ id: "6E992B9B67C0729E", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "0F4922D3B492D946", item: { count: 1, id: "superbwarfare:medium_battery_pack" }, type: "item" }]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["228EFA51E63652C6", "60EC125C4FDCB557"]
+			id: "4FEF7E6CB8C95C2A"
+			rewards: [{ id: "723ECCDE6D2DFA2C", type: "xp", xp: 200 }]
+			tasks: [{ count: 1L, id: "771DFB236EDD3DAF", item: { count: 1, id: "superbwarfare:light_armament_module" }, type: "item" }]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["228EFA51E63652C6", "0DD1AF3C4B4F3694"]
+			id: "51E7F0EF597A926C"
+			rewards: [{ id: "3F0ED3B12AED29A6", type: "xp", xp: 250 }]
+			tasks: [{ count: 1L, id: "37DF9D93BC1A6F83", item: { count: 1, id: "superbwarfare:cannon_core" }, type: "item" }]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4FEF7E6CB8C95C2A", "79EB8C89B297E7BF"]
+			id: "615D3CCFF694A28A"
+			rewards: [{ id: "4BD5F30134181191", type: "xp", xp: 300 }]
+			tasks: [{ count: 1L, id: "1DFC9EC33CDE804E", item: { count: 1, id: "superbwarfare:medium_armament_module" }, type: "item" }]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["615D3CCFF694A28A", "51E7F0EF597A926C"]
+			id: "028DECCE43A91A35"
+			rewards: [{ id: "648F2CFE867A3176", type: "xp", xp: 500 }]
+			tasks: [{ count: 1L, id: "5D37F55285EB2A79", item: { count: 1, id: "superbwarfare:heavy_armament_module" }, type: "item" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "superbwarfare:vehicle_key" }
+			dependencies: ["7E5861253655B447", "049AE4060D0BC557", "42071AD892B5AC30"]
+			id: "7C66996644ECAF71"
+			rewards: [{ id: "0370DB9D6296EC70", type: "xp", xp: 300 }]
+			tasks: [{ id: "48AD1BAFE6F32A2B", type: "checkmark" }]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7C66996644ECAF71"]
+			id: "2CF3B0CD219BAE24"
+			rewards: [{ id: "34C481B865FF82A4", type: "xp", xp: 100 }]
+			tasks: [{ count: 1L, id: "710D66390518C620", item: { count: 1, id: "superbwarfare:repair_tool" }, type: "item" }]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+}

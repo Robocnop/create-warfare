@@ -1,6 +1,30 @@
 {
-	chapter.7D74B4BED70DB886.title: "La forge"
-	chapter.7D74B4BED70DB886.chapter_subtitle: ["Overgeared ralentit le fer : outils et armures se forgent à l'enclume. Ce chapitre explique comment."]
+	chapter.3D417C02922779C1.title: "Bienvenue, recrue"
+	chapter.3D417C02922779C1.chapter_subtitle: ["Sept paliers, de la première étincelle à la dissuasion nucléaire. Le fil rouge du pack est ici."]
+	quest.0856D48C6F395EE8.title: "Create Warfare"
+	quest.0856D48C6F395EE8.quest_desc: ["Le vieux monde s'est éteint avec ses usines. Il reste des ruines, du minerai et des Compagnies : des équipes qui rebâtissent l'industrie pour ne plus jamais dépendre de personne. Tu en fondes une. D'abord l'industrie avec Create, palier après palier. Ensuite, la guerre : celui qui tient l'acier, le pétrole et l'atome tient la carte. Coche cette quête pour commencer."]
+	quest.50C51E01ED5F4203.title: "Fonder une Compagnie"
+	quest.50C51E01ED5F4203.quest_desc: ["Les quêtes se font en équipe : la progression et les récompenses de palier sont partagées. Ouvre ton inventaire, clique sur « Mon équipe » (FTB Teams) et crée une équipe ou rejoins celle de tes alliés. Coche la quête quand c'est fait.", "", "À faire avant (sinon la quête ne se valide pas) : « Create Warfare »."]
+	quest.1A7E7B0D854A5672.title: "Planter le drapeau"
+	quest.1A7E7B0D854A5672.quest_desc: ["Choisis un terrain et revendique ses chunks sur la carte de FTB Chunks (bouton en haut à gauche de l'inventaire). Une base se défend : murs, coffres verrouillés, puis tourelles et radars aux paliers V et VI. Coche la quête quand ta base est revendiquée.", "", "À faire avant (sinon la quête ne se valide pas) : « Fonder une Compagnie »."]
+	quest.03DF8BA190C92688.title: "Les lois de la guerre"
+	quest.03DF8BA190C92688.quest_desc: ["Chaque palier ouvre le suivant par ses machines, pas par les quêtes : l'acier ne sort que du haut fourneau, l'électricité demande de l'acier, les véhicules de l'électronique. Les armes nucléaires exigent des Codes de lancement, coûteux et limités à une série toutes les 4 heures par équipe, et tout le serveur est prévenu quand l'une d'elles est armée. Coche pour continuer.", "", "À faire avant (sinon la quête ne se valide pas) : « Create Warfare »."]
+	quest.634DFEED05624127.title: "Palier I — L'âge de la forge"
+	quest.634DFEED05624127.quest_desc: ["Pierre taillée, cuivre, puis fer battu à l'enclume : ta Compagnie a ses premiers outils. Coche pour toucher la prime de palier.", "", "À faire avant (sinon la quête ne se valide pas) : « Planter le drapeau », « Pioche en fer » (chapitre « I · L'âge de la forge »)."]
+	quest.11509BAD796F7388.title: "Palier II — L'âge de l'engrenage"
+	quest.11509BAD796F7388.quest_desc: ["L'eau fait tourner tes premières machines : presse, meule, mixeur. Tout le reste du pack repose sur cette rotation.", "", "À faire avant (sinon la quête ne se valide pas) : « Palier I — L'âge de la forge », « Presse mécanique » (chapitre « II · L'âge de l'engrenage »), « Mélangeur mécanique » (chapitre « III · L'âge du laiton »)."]
+	quest.01D63C66EB223589.title: "Palier III — L'âge du laiton"
+	quest.01D63C66EB223589.quest_desc: ["Le laiton apporte la précision : mécanismes, tubes électroniques, bras et fabricants mécaniques. L'automatisation commence, et les premières armes à feu avec elle.", "", "À faire avant (sinon la quête ne se valide pas) : « Palier II — L'âge de l'engrenage », « Laiton » (chapitre « III · L'âge du laiton »), « Mécanisme de précision » (chapitre « III · L'âge du laiton »)."]
+	quest.6E3A128AE1CD6C27.title: "Palier IV — L'âge de l'acier"
+	quest.6E3A128AE1CD6C27.quest_desc: ["Four à coke, haut fourneau, pétrole : l'industrie lourde. L'acier ne vient que d'ici. Il ouvre l'artillerie, les blindages et les avions.", "", "À faire avant (sinon la quête ne se valide pas) : « Palier III — L'âge du laiton », « Acier » (chapitre « IV · L'âge de l'acier »), « Distillerie » (chapitre « IV · L'âge de l'acier »)."]
+	quest.5E292B5E4E077CBA.title: "Palier V — L'âge électrique"
+	quest.5E292B5E4E077CBA.quest_desc: ["Alternateurs, moteurs, puis circuits imprimés : l'électronique rend possibles les radars, les ordinateurs de tir et la production de masse.", "", "À faire avant (sinon la quête ne se valide pas) : « Palier IV — L'âge de l'acier », « Alternateur » (chapitre « V · L'âge électrique »), « Circuits imprimés » (chapitre « V · L'âge électrique »)."]
+	quest.404CB714F396C44A.title: "Palier VI — La guerre mécanisée"
+	quest.404CB714F396C44A.quest_desc: ["Chars, hélicoptères, radars et missiles tactiques. À ce stade, une Compagnie peut frapper loin et doit savoir se défendre : défense antiaérienne, blindage, détection.", "", "À faire avant (sinon la quête ne se valide pas) : « Palier V — L'âge électrique », « Table d'assemblage de véhicules » (chapitre « VI · Guerre mécanisée »), « Roulement de radar » (chapitre « VI · Radars \\& missiles »), « Affût » (chapitre « IV · Artillerie »)."]
+	quest.507BF27EAE6A08D8.title: "Palier VII — La dissuasion"
+	quest.507BF27EAE6A08D8.quest_desc: ["Un réacteur, de l'uranium enrichi, du titane et des Codes de lancement : la fin de partie. Une arme nucléaire coûte des jours d'industrie et prévient tout le serveur. À toi de voir si elle doit servir.", "", "À faire avant (sinon la quête ne se valide pas) : « Palier VI — La guerre mécanisée », « Cœur de réacteur » (chapitre « VII · L'atome »), « Lingots d'uranium » (chapitre « VII · Dissuasion »), « Ordinateur de visée » (chapitre « VII · Espace »)."]
+	chapter.7D74B4BED70DB886.title: "I · L'âge de la forge"
+	chapter.7D74B4BED70DB886.chapter_subtitle: ["Avant les machines, le marteau : outils et armures se forgent à l'enclume (Overgeared)."]
 	quest.70B6725B90DE1B2A.title: "Tailler la roche"
 	quest.70B6725B90DE1B2A.quest_desc: ["Clic droit répété sur un bloc de pierre avec un silex : tu obtiens de la roche (le silex peut casser). Les outils en pierre ne se fabriquent plus directement."]
 	quest.4842721A82AB4811.title: "Tête de pioche en pierre"
@@ -26,7 +50,7 @@
 	quest.75EE9AE61CF68A55.title: "Fourneau à alliages"
 	quest.75EE9AE61CF68A55.quest_desc: ["8 blocs de briques autour d'un haut fourneau.", "", "À faire avant (sinon la quête ne se valide pas) : « Lingot de fer chauffé »."]
 	quest.38AD2A227D2E3817.title: "Acier brut"
-	quest.38AD2A227D2E3817.quest_desc: ["3 lingots de fer + 1 charbon = 4 aciers bruts. Chauffe-les au haut fourneau, puis forge-les en lingots d'acier. Raccourci : l'acier TFMG (chapitre 4) passé au haut fourneau donne directement un lingot d'acier chauffé.", "", "À faire avant (sinon la quête ne se valide pas) : « Fourneau à alliages »."]
+	quest.38AD2A227D2E3817.quest_desc: ["3 lingots de fer + 1 charbon = 4 aciers bruts. Chauffe-les, puis forge-les : tu obtiens de l'acier forgé, bon pour les outils d'Overgeared seulement. L'acier de l'industrie (palier IV) ne sort que du haut fourneau de TFMG. Attention : un lingot d'acier TFMG chauffé puis refroidi sans être forgé devient de l'acier forgé.", "", "À faire avant (sinon la quête ne se valide pas) : « Fourneau à alliages »."]
 	quest.5407D3BBE329A44B.title: "Marteau de forge en acier"
 	quest.5407D3BBE329A44B.quest_desc: ["Tête forgée avec 2 lingots d'acier chauffés, plus un bâton.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier brut »."]
 	quest.2B875A4F7F9DA880.title: "Enclume de forge"
@@ -35,8 +59,8 @@
 	quest.0537049DEB868400.quest_desc: ["Plus solide que le fer, et la base de l'équipement en diamant.", "", "À faire avant (sinon la quête ne se valide pas) : « Marteau de forge en acier »."]
 	quest.6871C5EBD612EC4E.title: "Pioche en diamant"
 	quest.6871C5EBD612EC4E.quest_desc: ["Les recettes en diamant classiques sont désactivées. Table de forgeron : outil en acier + gabarit + diamant. Le gabarit se trouve dans les coffres (forteresses, temples, mines...) et se copie avec 7 diamants et 1 lingot d'acier.", "", "À faire avant (sinon la quête ne se valide pas) : « Pioche en acier »."]
-	chapter.17655EBC7D082AA1.title: "L'âge de l'engrenage"
-	chapter.17655EBC7D082AA1.chapter_subtitle: ["Les bases de Create : rotation, alliage et premières machines."]
+	chapter.17655EBC7D082AA1.title: "II · L'âge de l'engrenage"
+	chapter.17655EBC7D082AA1.chapter_subtitle: ["Les bases de Create : rotation, alliage d'andésite et premières machines."]
 	quest.24C6C7A7D7EB2B12.title: "Alliage d'andésite"
 	quest.24C6C7A7D7EB2B12.quest_desc: ["Mélange andésite et fer (ou zinc) : c'est la base de presque toutes les machines."]
 	quest.1B3F1A522889614F.title: "La clé"
@@ -65,8 +89,8 @@
 	quest.631FD6DC3F7248F6.quest_desc: ["Base de toute contraption minière.", "", "À faire avant (sinon la quête ne se valide pas) : « Boîtier d'andésite »."]
 	quest.2C95A0956D994B4A.title: "Roues de broyage"
 	quest.2C95A0956D994B4A.quest_desc: ["Le vrai doublage de minerai.", "", "À faire avant (sinon la quête ne se valide pas) : « Meule », « Grandes roues dentées »."]
-	chapter.08D470CD3E865BB7.title: "Laiton \\& logistique"
-	chapter.08D470CD3E865BB7.chapter_subtitle: ["Le laiton débloque l'automatisation avancée et la logistique."]
+	chapter.08D470CD3E865BB7.title: "III · L'âge du laiton"
+	chapter.08D470CD3E865BB7.chapter_subtitle: ["Le laiton débloque la précision, l'automatisation et la logistique."]
 	quest.22162ABC6CB16C34.title: "Mélangeur mécanique"
 	quest.22162ABC6CB16C34.quest_desc: ["Avec un bassin, il fait les alliages."]
 	quest.3796759F39F4AC03.title: "Bassin"
@@ -95,50 +119,18 @@
 	quest.21EBE7187581E148.quest_desc: ["Commandes à distance de ton stock.", "", "À faire avant (sinon la quête ne se valide pas) : « Emballeur »."]
 	quest.473CCCE99F11FECC.title: "Schématicanon"
 	quest.473CCCE99F11FECC.quest_desc: ["Construit automatiquement tes schémas.", "", "À faire avant (sinon la quête ne se valide pas) : « Boîtier en laiton »."]
-	chapter.681D600432C87CB6.title: "Électricité"
-	chapter.681D600432C87CB6.chapter_subtitle: ["Produire et transporter de l'énergie : Crafts \\& Additions, New Age, TFMG, Power Grid."]
-	quest.04772DFD2EA8E417.title: "Fil de cuivre"
-	quest.04772DFD2EA8E417.quest_desc: ["La base des circuits électriques."]
-	quest.697CD161FF05B721.title: "Alternateur"
-	quest.697CD161FF05B721.quest_desc: ["Transforme la rotation en énergie (FE).", "", "À faire avant (sinon la quête ne se valide pas) : « Fil de cuivre »."]
-	quest.6F4FA44804A52F63.title: "Moteur électrique"
-	quest.6F4FA44804A52F63.quest_desc: ["Et l'inverse : l'énergie en rotation.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur »."]
-	quest.384245FADAA21E36.title: "Connecteurs"
-	quest.384245FADAA21E36.quest_desc: ["Relie tes machines avec des câbles.", "", "À faire avant (sinon la quête ne se valide pas) : « Fil de cuivre »."]
-	quest.3EBE6915AF745BF1.title: "Accumulateur modulaire"
-	quest.3EBE6915AF745BF1.quest_desc: ["Stocke l'énergie.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur »."]
-	quest.0EF0F7DACDFDA4F7.title: "Bobine Tesla"
-	quest.0EF0F7DACDFDA4F7.quest_desc: ["Charge les objets... ou les ennemis.", "", "À faire avant (sinon la quête ne se valide pas) : « Accumulateur modulaire »."]
-	quest.34BB47D89EA04A76.title: "Bobine de générateur (New Age)"
-	quest.34BB47D89EA04A76.quest_desc: ["Générateurs multiblocs à aimants."]
-	quest.6BB3B83B504294F2.title: "Aimants"
-	quest.6BB3B83B504294F2.quest_desc: ["Le cœur des générateurs New Age.", "", "À faire avant (sinon la quête ne se valide pas) : « Bobine de générateur (New Age) »."]
-	quest.1779809A713F2A43.title: "Énergiseur"
-	quest.1779809A713F2A43.quest_desc: ["Surcharge les matériaux avec l'électricité.", "", "À faire avant (sinon la quête ne se valide pas) : « Aimants »."]
-	quest.637344CE2EF36490.title: "Générateur TFMG"
-	quest.637344CE2EF36490.quest_desc: ["Réseau électrique industriel de TFMG.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur »."]
-	quest.7DA093DB118A42DD.title: "Fil de cuivre (Power Grid)"
-	quest.7DA093DB118A42DD.quest_desc: ["Power Grid simule vraiment l'électricité : le courant ne passe que si le circuit forme une boucle, et un long fil perd de la tension."]
-	quest.3BC12EF7F7D14504.title: "Générateur Power Grid"
-	quest.3BC12EF7F7D14504.quest_desc: ["Embrayage, rotors, commutateur et bobinages : le générateur se construit pièce par pièce (voir le ponder).", "", "À faire avant (sinon la quête ne se valide pas) : « Fil de cuivre (Power Grid) »."]
-	quest.6EE17B94C458BBF3.title: "Moteur électrique (Power Grid)"
-	quest.6EE17B94C458BBF3.quest_desc: ["Sa vitesse dépend de la tension fournie.", "", "À faire avant (sinon la quête ne se valide pas) : « Générateur Power Grid »."]
-	quest.3F0FD706BDA92D56.title: "Panneaux solaires"
-	quest.3F0FD706BDA92D56.quest_desc: ["De l'énergie sans carburant, si le soleil est dégagé.", "", "À faire avant (sinon la quête ne se valide pas) : « Fil de cuivre (Power Grid) »."]
-	quest.78C49D56D67D20E5.title: "Onduleur FE"
-	quest.78C49D56D67D20E5.quest_desc: ["Fait passer l'énergie FE des autres mods dans un réseau Power Grid.", "", "À faire avant (sinon la quête ne se valide pas) : « Générateur Power Grid », « Alternateur »."]
-	chapter.7F2E71C38EE73946.title: "Industrie lourde \\& trains"
-	chapter.7F2E71C38EE73946.chapter_subtitle: ["Acier, pétrole, moteurs et chemins de fer."]
+	chapter.7F2E71C38EE73946.title: "IV · L'âge de l'acier"
+	chapter.7F2E71C38EE73946.chapter_subtitle: ["Coke, haut fourneau, pétrole et trains : l'industrie lourde de TFMG."]
 	quest.4AE6F35EE70BD1F5.title: "Coke"
-	quest.4AE6F35EE70BD1F5.quest_desc: ["Four à coke : carburant du haut fourneau.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.4AE6F35EE70BD1F5.quest_desc: ["Four à coke : carburant du haut fourneau.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.28E559ACA1545773.title: "Four à coke"
-	quest.28E559ACA1545773.quest_desc: ["Multibloc qui cuit le charbon.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.28E559ACA1545773.quest_desc: ["Multibloc qui cuit le charbon.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.756CBDC330F693ED.title: "Acier"
 	quest.756CBDC330F693ED.quest_desc: ["Haut fourneau TFMG : l'acier de l'armement.", "", "À faire avant (sinon la quête ne se valide pas) : « Coke », « Four à coke »."]
 	quest.2FE85312B9FF4126.title: "Machine à vapeur"
-	quest.2FE85312B9FF4126.quest_desc: ["Énorme puissance mécanique.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.2FE85312B9FF4126.quest_desc: ["Énorme puissance mécanique.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.6188D8A625007862.title: "Scanner de pétrole"
-	quest.6188D8A625007862.quest_desc: ["Trouve les gisements de pétrole.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.6188D8A625007862.quest_desc: ["Trouve les gisements de pétrole.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.265D3017671D854B.title: "Chevalet de pompage"
 	quest.265D3017671D854B.quest_desc: ["Extrait le pétrole brut.", "", "À faire avant (sinon la quête ne se valide pas) : « Scanner de pétrole »."]
 	quest.4E484CE080B4A71D.title: "Distillerie"
@@ -148,7 +140,7 @@
 	quest.2CD93DB9A5EB192F.title: "Gros moteur diesel"
 	quest.2CD93DB9A5EB192F.quest_desc: ["Pour les usines et les navires.", "", "À faire avant (sinon la quête ne se valide pas) : « Moteur diesel »."]
 	quest.0459D0495DBF7ED8.title: "Rails"
-	quest.0459D0495DBF7ED8.quest_desc: ["Les trains transportent tes ressources.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.0459D0495DBF7ED8.quest_desc: ["Les trains transportent tes ressources.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.7B7A191B47636E7F.title: "Commandes de train"
 	quest.7B7A191B47636E7F.quest_desc: ["Le poste de pilotage.", "", "À faire avant (sinon la quête ne se valide pas) : « Rails »."]
 	quest.60878F140ACC7F54.title: "Gares"
@@ -156,7 +148,7 @@
 	quest.7ACFFB1E5D5A3DF1.title: "Plastique"
 	quest.7ACFFB1E5D5A3DF1.quest_desc: ["Issu du raffinage : électronique avancée.", "", "À faire avant (sinon la quête ne se valide pas) : « Distillerie »."]
 	quest.68A702422ECF3DC1.title: "Ponceuse à bande (Vintage)"
-	quest.68A702422ECF3DC1.quest_desc: ["Create: Vintage ajoute la métallurgie fine. La ponceuse affûte et polit les pièces posées dessus.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.68A702422ECF3DC1.quest_desc: ["Create: Vintage ajoute la métallurgie fine. La ponceuse affûte et polit les pièces posées dessus.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.4C559BFA9C9349D9.title: "Presse à cintrer"
 	quest.4C559BFA9C9349D9.quest_desc: ["Courbe les plaques avec une tête convexe ou concave.", "", "À faire avant (sinon la quête ne se valide pas) : « Ponceuse à bande (Vintage) »."]
 	quest.50930E7406BB6CCB.title: "Table vibrante"
@@ -167,12 +159,12 @@
 	quest.36094825BDF8A1FA.quest_desc: ["Se fabrique à l'établi mécanique. Tourne les lingots en tiges.", "", "À faire avant (sinon la quête ne se valide pas) : « Presse à cintrer », « Acier »."]
 	quest.092F754D555F2826.title: "Marteau-pilon"
 	quest.092F754D555F2826.quest_desc: ["Se fabrique à l'établi mécanique. Martèle les métaux à la place de la presse.", "", "À faire avant (sinon la quête ne se valide pas) : « Tour »."]
-	chapter.73A1A222F64DE127.title: "Artillerie (Create Big Cannons)"
-	chapter.73A1A222F64DE127.chapter_subtitle: ["Fondre, forer et assembler de vrais canons."]
+	chapter.73A1A222F64DE127.title: "IV · Artillerie"
+	chapter.73A1A222F64DE127.chapter_subtitle: ["Fondre, forer et assembler de vrais canons (Create Big Cannons)."]
 	quest.37CC7D0277D0D517.title: "Fonte"
-	quest.37CC7D0277D0D517.quest_desc: ["Le métal des premiers canons.", "", "À faire avant (sinon la quête ne se valide pas) : « Four à coke » (chapitre « Industrie lourde \\& trains »)."]
+	quest.37CC7D0277D0D517.quest_desc: ["Le métal des premiers canons.", "", "À faire avant (sinon la quête ne se valide pas) : « Four à coke » (chapitre « IV · L'âge de l'acier »)."]
 	quest.3D968CAFC7291040.title: "Sable de moulage"
-	quest.3D968CAFC7291040.quest_desc: ["Pour couler les pièces de canon.", "", "À faire avant (sinon la quête ne se valide pas) : « Four à coke » (chapitre « Industrie lourde \\& trains »)."]
+	quest.3D968CAFC7291040.quest_desc: ["Pour couler les pièces de canon.", "", "À faire avant (sinon la quête ne se valide pas) : « Four à coke » (chapitre « IV · L'âge de l'acier »)."]
 	quest.07D37E88138949F7.title: "Moule de canon"
 	quest.07D37E88138949F7.quest_desc: ["Des bûches à la scie mécanique. Entouré de sable de moulage, le métal en fusion y prend la forme du canon.", "", "À faire avant (sinon la quête ne se valide pas) : « Sable de moulage »."]
 	quest.78695F6A89881061.title: "Tube de canon"
@@ -186,9 +178,9 @@
 	quest.2FFA65C3E7BB3247.title: "Viseur de canon"
 	quest.2FFA65C3E7BB3247.quest_desc: ["CBC Optics : un viseur posé sur le canon, pour viser à travers lui.", "", "À faire avant (sinon la quête ne se valide pas) : « Affût »."]
 	quest.091EF9309D9F4800.title: "Calculateur balistique"
-	quest.091EF9309D9F4800.quest_desc: ["CBC Ballistics : donne-lui la position du canon et celle de la cible, il calcule l'angle de tir.", "", "À faire avant (sinon la quête ne se valide pas) : « Affût », « Mécanisme de précision » (chapitre « Laiton \\& logistique »)."]
+	quest.091EF9309D9F4800.quest_desc: ["CBC Ballistics : donne-lui la position du canon et celle de la cible, il calcule l'angle de tir.", "", "À faire avant (sinon la quête ne se valide pas) : « Affût », « Mécanisme de précision » (chapitre « III · L'âge du laiton »)."]
 	quest.4FBBF5C4723F0E09.title: "Charges de poudre"
-	quest.4FBBF5C4723F0E09.quest_desc: ["Propulsent l'obus.", "", "À faire avant (sinon la quête ne se valide pas) : « Four à coke » (chapitre « Industrie lourde \\& trains »)."]
+	quest.4FBBF5C4723F0E09.quest_desc: ["Propulsent l'obus.", "", "À faire avant (sinon la quête ne se valide pas) : « Four à coke » (chapitre « IV · L'âge de l'acier »)."]
 	quest.3F12664295876503.title: "Obus explosifs"
 	quest.3F12664295876503.quest_desc: ["Ne pas utiliser à côté de ta base.", "", "À faire avant (sinon la quête ne se valide pas) : « Charges de poudre »."]
 	quest.6392648C2449FD82.title: "Obus perforants"
@@ -201,10 +193,10 @@
 	quest.7D6CDDC817019BF8.quest_desc: ["Pour descendre les avions.", "", "À faire avant (sinon la quête ne se valide pas) : « Autocanon »."]
 	quest.3B05C8FE5B87B74D.title: "Canon moyen (Modern Warfare)"
 	quest.3B05C8FE5B87B74D.quest_desc: ["Le canon des chars modernes.", "", "À faire avant (sinon la quête ne se valide pas) : « Affût »."]
-	chapter.7EFA501BC18270BC.title: "Aviation (Create Aeronautics)"
-	chapter.7EFA501BC18270BC.chapter_subtitle: ["Hélices, ballons et vrais avions physiques avec Sable."]
+	chapter.7EFA501BC18270BC.title: "IV · Aviation"
+	chapter.7EFA501BC18270BC.chapter_subtitle: ["Hélices, ballons et avions physiques (Create Aeronautics, Sable)."]
 	quest.3B35E94000929A6C.title: "Assembleur physique"
-	quest.3B35E94000929A6C.quest_desc: ["Transforme ta construction en objet physique.", "", "À faire avant (sinon la quête ne se valide pas) : « Mécanisme de précision » (chapitre « Laiton \\& logistique »)."]
+	quest.3B35E94000929A6C.quest_desc: ["Transforme ta construction en objet physique.", "", "À faire avant (sinon la quête ne se valide pas) : « Mécanisme de précision » (chapitre « III · L'âge du laiton »)."]
 	quest.1EE57FF7AC1CE23E.title: "Roulement d'hélice"
 	quest.1EE57FF7AC1CE23E.quest_desc: ["Monte une hélice.", "", "À faire avant (sinon la quête ne se valide pas) : « Assembleur physique »."]
 	quest.665B4A7215CA63D6.title: "Hélice en bois"
@@ -224,11 +216,11 @@
 	quest.272A653ABDC4AEA8.title: "Lunettes d'aviateur"
 	quest.272A653ABDC4AEA8.quest_desc: ["Le style avant tout.", "", "À faire avant (sinon la quête ne se valide pas) : « Hélice en bois »."]
 	quest.7C20E95A942D4C67.title: "Propulseur"
-	quest.7C20E95A942D4C67.quest_desc: ["Propulsion à carburant liquide. Boîtier et pompes en acier.", "", "À faire avant (sinon la quête ne se valide pas) : « Hélice intelligente », « Acier » (chapitre « Industrie lourde \\& trains »)."]
+	quest.7C20E95A942D4C67.quest_desc: ["Propulsion à carburant liquide. Boîtier et pompes en acier.", "", "À faire avant (sinon la quête ne se valide pas) : « Hélice intelligente », « Acier » (chapitre « IV · L'âge de l'acier »)."]
 	quest.2CAF69BC04CF5457.title: "Ailes"
 	quest.2CAF69BC04CF5457.quest_desc: ["Portance pour les vrais avions.", "", "À faire avant (sinon la quête ne se valide pas) : « Propulseur »."]
 	quest.64BB7E9FFD6811F8.title: "Jetpack"
-	quest.64BB7E9FFD6811F8.quest_desc: ["Fonctionne à l'air comprimé.", "", "À faire avant (sinon la quête ne se valide pas) : « Mécanisme de précision » (chapitre « Laiton \\& logistique »)."]
+	quest.64BB7E9FFD6811F8.quest_desc: ["Fonctionne à l'air comprimé.", "", "À faire avant (sinon la quête ne se valide pas) : « Mécanisme de précision » (chapitre « III · L'âge du laiton »)."]
 	quest.63E37FB26871FA09.title: "Canon de compression"
 	quest.63E37FB26871FA09.quest_desc: ["Rétrécit ou agrandit un engin (de 1/4 à 4 fois sur ce serveur). Fonctionne au mélange de lévitite.", "", "À faire avant (sinon la quête ne se valide pas) : « Lévitite »."]
 	quest.49338B93783AEC0F.title: "Toolgun de survie"
@@ -241,30 +233,204 @@
 	quest.09B94D1F8CAE0A56.quest_desc: ["Vérins réglables entre deux engins : trains d'atterrissage, suspensions, bras articulés.", "", "À faire avant (sinon la quête ne se valide pas) : « Assembleur physique »."]
 	quest.0715BB9BD99AE98D.title: "Tiges de cardan"
 	quest.0715BB9BD99AE98D.quest_desc: ["Transmettent la rotation d'un engin à un autre, même s'ils bougent.", "", "À faire avant (sinon la quête ne se valide pas) : « Tiges pneumatiques »."]
-	chapter.1AF3C82F48B4688F.title: "Blindés \\& véhicules"
-	chapter.1AF3C82F48B4688F.chapter_subtitle: ["Roues, chenilles, blindage et tourelles."]
+	chapter.59A1DB546FA2EA96.title: "II à VI · Armurerie"
+	chapter.59A1DB546FA2EA96.chapter_subtitle: ["Du pistolet à silex au fusil d'assaut : l'armement individuel monte avec les paliers."]
+	quest.6AA24A7C780BCA20.title: "Pistolet à silex"
+	quest.6AA24A7C780BCA20.quest_desc: ["Alliage d'andésite, tôle de fer et briquet : la première arme à feu, lente à recharger (palier II).", "", "À faire avant (sinon la quête ne se valide pas) : « Presse mécanique » (chapitre « II · L'âge de l'engrenage »)."]
+	quest.73474A0CE4F5A2B9.title: "Cartouches en papier"
+	quest.73474A0CE4F5A2B9.quest_desc: ["Les munitions du silex : papier, poudre et balle.", "", "À faire avant (sinon la quête ne se valide pas) : « Pistolet à silex »."]
+	quest.5AC4C98A9552EA8B.title: "Grenades à fragmentation"
+	quest.5AC4C98A9552EA8B.quest_desc: ["Laiton, fer et poudre : à lancer, pas à garder en main (palier III).", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
+	quest.3CB69294FDC889FD.title: "Lance-flammes à blaze"
+	quest.3CB69294FDC889FD.quest_desc: ["Un brûleur à blaze dans un tube en laiton (palier III).", "", "À faire avant (sinon la quête ne se valide pas) : « Brûleur à blaze » (chapitre « III · L'âge du laiton »), « Laiton » (chapitre « III · L'âge du laiton »)."]
+	quest.156719B657188F11.title: "Revolver"
+	quest.156719B657188F11.quest_desc: ["Acier et laiton au fabricant mécanique : la première arme à répétition (palier IV).", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »), « Fabricants mécaniques » (chapitre « III · L'âge du laiton »)."]
+	quest.2CED04B94C1F9460.title: "Fusil à pompe"
+	quest.2CED04B94C1F9460.quest_desc: ["Redoutable dans les couloirs d'une base.", "", "À faire avant (sinon la quête ne se valide pas) : « Revolver »."]
+	quest.33A59CEF3A24F60B.title: "Mitrailleuse Gatling"
+	quest.33A59CEF3A24F60B.quest_desc: ["Acier, laiton et mécanisme de précision : un mur de plomb.", "", "À faire avant (sinon la quête ne se valide pas) : « Fusil à pompe », « Mécanisme de précision » (chapitre « III · L'âge du laiton »)."]
+	quest.366786F36BAAA31C.title: "Table de recherche"
+	quest.366786F36BAAA31C.quest_desc: ["Les armes modernes de Superb Warfare se fabriquent à partir d'un plan. Les plans se trouvent dans les coffres des structures et se copient ici.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »)."]
+	quest.14B6D13AFF72434C.title: "Paquet de pièces en fer"
+	quest.14B6D13AFF72434C.quest_desc: ["Canon, culasse, ressort et détente en fer : la base des pistolets.", "", "À faire avant (sinon la quête ne se valide pas) : « Table de recherche »."]
+	quest.60EC125C4FDCB557.title: "Paquet de pièces en acier"
+	quest.60EC125C4FDCB557.quest_desc: ["Les mêmes pièces en acier : fusils d'assaut, mitrailleuses, lance-roquettes. Plan + paquet + un dernier ingrédient à la table de forgeron.", "", "À faire avant (sinon la quête ne se valide pas) : « Paquet de pièces en fer »."]
+	quest.14FDCCE9A9E143DD.title: "Munitions"
+	quest.14FDCCE9A9E143DD.quest_desc: ["Cuivre, poudre et amorce. Les boîtes de munitions rechargent les chargeurs.", "", "À faire avant (sinon la quête ne se valide pas) : « Paquet de pièces en fer »."]
+	quest.61552C1FCF733D30.title: "Plaques de blindage"
+	quest.61552C1FCF733D30.quest_desc: ["À glisser dans un plastron : elles encaissent les balles à ta place.", "", "À faire avant (sinon la quête ne se valide pas) : « Paquet de pièces en acier »."]
+	quest.590E1DF66C2E33E2.title: "Mortier"
+	quest.590E1DF66C2E33E2.quest_desc: ["Tube, bipied et plaque de base en acier. Tire en cloche par-dessus les murs.", "", "À faire avant (sinon la quête ne se valide pas) : « Paquet de pièces en acier »."]
+	quest.38330F4192811DCC.title: "Obus de mortier"
+	quest.38330F4192811DCC.quest_desc: ["Acier, explosif et propulseur.", "", "À faire avant (sinon la quête ne se valide pas) : « Mortier »."]
+	quest.79EB8C89B297E7BF.title: "Paquet de pièces en carbure"
+	quest.79EB8C89B297E7BF.quest_desc: ["Le carbure cémenté vient de la scheelite (tungstène) : armes lourdes et modules d'armement des véhicules.", "", "À faire avant (sinon la quête ne se valide pas) : « Paquet de pièces en acier »."]
+	quest.3EF61E230D0F669A.title: "Table de reforge"
+	quest.3EF61E230D0F669A.quest_desc: ["Avec un processeur ancien : elle ajoute des améliorations (perks) à une arme.", "", "À faire avant (sinon la quête ne se valide pas) : « Paquet de pièces en carbure »."]
+	chapter.681D600432C87CB6.title: "V · L'âge électrique"
+	chapter.681D600432C87CB6.chapter_subtitle: ["Produire du courant demande de l'acier. Au bout : les circuits imprimés."]
+	quest.04772DFD2EA8E417.title: "Fil de cuivre"
+	quest.04772DFD2EA8E417.quest_desc: ["La base des circuits électriques.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »)."]
+	quest.697CD161FF05B721.title: "Alternateur"
+	quest.697CD161FF05B721.quest_desc: ["Convertit la rotation en énergie. Depuis la 2.0.0, il demande des tôles d'acier : l'électricité vient après le haut fourneau.", "", "À faire avant (sinon la quête ne se valide pas) : « Fil de cuivre »."]
+	quest.6F4FA44804A52F63.title: "Moteur électrique"
+	quest.6F4FA44804A52F63.quest_desc: ["Et l'inverse : l'énergie en rotation.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur »."]
+	quest.384245FADAA21E36.title: "Connecteurs"
+	quest.384245FADAA21E36.quest_desc: ["Relie tes machines avec des câbles.", "", "À faire avant (sinon la quête ne se valide pas) : « Fil de cuivre »."]
+	quest.3EBE6915AF745BF1.title: "Accumulateur modulaire"
+	quest.3EBE6915AF745BF1.quest_desc: ["Stocke l'énergie.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur »."]
+	quest.0EF0F7DACDFDA4F7.title: "Bobine Tesla"
+	quest.0EF0F7DACDFDA4F7.quest_desc: ["Charge les objets... ou les ennemis.", "", "À faire avant (sinon la quête ne se valide pas) : « Accumulateur modulaire »."]
+	quest.34BB47D89EA04A76.title: "Bobine de générateur (New Age)"
+	quest.34BB47D89EA04A76.quest_desc: ["Bobine de génératrice de New Age : cuivre autour d'un bloc d'acier.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »)."]
+	quest.6BB3B83B504294F2.title: "Aimants"
+	quest.6BB3B83B504294F2.quest_desc: ["Le cœur des générateurs New Age.", "", "À faire avant (sinon la quête ne se valide pas) : « Bobine de générateur (New Age) »."]
+	quest.1779809A713F2A43.title: "Énergiseur"
+	quest.1779809A713F2A43.quest_desc: ["Surcharge les matériaux avec l'électricité.", "", "À faire avant (sinon la quête ne se valide pas) : « Aimants »."]
+	quest.637344CE2EF36490.title: "Générateur TFMG"
+	quest.637344CE2EF36490.quest_desc: ["Réseau électrique industriel de TFMG.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur »."]
+	quest.7DA093DB118A42DD.title: "Fil de cuivre (Power Grid)"
+	quest.7DA093DB118A42DD.quest_desc: ["Power Grid simule vraiment l'électricité : le courant ne passe que si le circuit forme une boucle, et un long fil perd de la tension.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »)."]
+	quest.3BC12EF7F7D14504.title: "Générateur Power Grid"
+	quest.3BC12EF7F7D14504.quest_desc: ["Embrayage, rotors, commutateur et bobinages : le générateur se construit pièce par pièce (voir le ponder).", "", "À faire avant (sinon la quête ne se valide pas) : « Fil de cuivre (Power Grid) »."]
+	quest.6EE17B94C458BBF3.title: "Moteur électrique (Power Grid)"
+	quest.6EE17B94C458BBF3.quest_desc: ["Sa vitesse dépend de la tension fournie.", "", "À faire avant (sinon la quête ne se valide pas) : « Générateur Power Grid »."]
+	quest.3F0FD706BDA92D56.title: "Panneaux solaires"
+	quest.3F0FD706BDA92D56.quest_desc: ["De l'énergie sans carburant, si le soleil est dégagé.", "", "À faire avant (sinon la quête ne se valide pas) : « Fil de cuivre (Power Grid) »."]
+	quest.78C49D56D67D20E5.title: "Onduleur FE"
+	quest.78C49D56D67D20E5.quest_desc: ["Fait passer l'énergie FE des autres mods dans un réseau Power Grid.", "", "À faire avant (sinon la quête ne se valide pas) : « Générateur Power Grid », « Alternateur »."]
+	quest.35249220763E79C4.title: "Circuits imprimés"
+	quest.35249220763E79C4.quest_desc: ["Plaque gravée à l'acide, condensateur, résistances et transistor en assemblage séquencé. C'est la porte de la guerre mécanisée : radars, véhicules, établi de munitions.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur », « Plastique » (chapitre « IV · L'âge de l'acier »)."]
+	chapter.16A7BFA622EEA61D.title: "V · Défense \\& informatique"
+	chapter.16A7BFA622EEA61D.chapter_subtitle: ["Ordinateurs pour piloter canons et avions, et une base qui se défend toute seule."]
+	quest.51DA5E89D7D3F671.title: "Ordinateur"
+	quest.51DA5E89D7D3F671.quest_desc: ["CC: Tweaked, avec des recettes passées par Create. Il pilote trains, gares et boîtes de vitesses séquencées.", "", "À faire avant (sinon la quête ne se valide pas) : « Tubes électroniques » (chapitre « III · L'âge du laiton »)."]
+	quest.3635CA2A9238EDD0.title: "Modems filaires"
+	quest.3635CA2A9238EDD0.quest_desc: ["Relie l'ordinateur aux machines voisines (périphériques).", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur »."]
+	quest.2F62A39BF6AD3800.title: "Moniteurs avancés"
+	quest.2F62A39BF6AD3800.quest_desc: ["Un grand écran couleur pour tes tableaux de bord.", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur »."]
+	quest.3341112053D99015.title: "Canon piloté par ordinateur"
+	quest.3341112053D99015.quest_desc: ["Avec CC:CBC, un ordinateur relié par modem à un affût de canon le vise et le fait tirer. Branche-le sur ton radar : la DCA devient automatique.", "", "À faire avant (sinon la quête ne se valide pas) : « Modems filaires », « Affût » (chapitre « IV · Artillerie »), « Antenne radar » (chapitre « VI · Radars \\& missiles »)."]
+	quest.12AE20BF3CF08536.title: "Avionique"
+	quest.12AE20BF3CF08536.quest_desc: ["Avec Create: Avionics, un ordinateur embarqué lit et commande les blocs Aeronautics (cap, altitude, hélices). Pilote automatique compris.", "", "À faire avant (sinon la quête ne se valide pas) : « Modems filaires », « Assembleur physique » (chapitre « IV · Aviation »)."]
+	quest.6F8358FC1FA5F25A.title: "Tortue"
+	quest.6F8358FC1FA5F25A.quest_desc: ["Un petit robot programmable : il mine, construit et transporte.", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur », « Acier » (chapitre « IV · L'âge de l'acier »)."]
+	quest.2C4721D77E50AA98.title: "Blocs laser"
+	quest.2C4721D77E50AA98.quest_desc: ["Premier pas de SecurityCraft : une barrière invisible qui déclenche tes défenses.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « V · L'âge électrique »)."]
+	quest.44F24B414E0DD228.title: "Renforceur universel"
+	quest.44F24B414E0DD228.quest_desc: ["Transforme tes blocs en blocs renforcés que seuls toi et ton équipe pouvez casser. Les obus CBC, Superb Warfare et la TNT les abîment, mais les bombes et ICBM de Project: Explosive n'y font rien : parfait pour un bunker anti-nucléaire.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs laser », « Mécanisme de précision » (chapitre « III · L'âge du laiton »)."]
+	quest.6EFD5A18CB66C8A0.title: "Murs renforcés"
+	quest.6EFD5A18CB66C8A0.quest_desc: ["Les murs de ta base, ou de ton bunker : ils encaissent Fat Man et les ICBM, pas l'artillerie.", "", "À faire avant (sinon la quête ne se valide pas) : « Renforceur universel »."]
+	quest.14BDCFD95D3B0B6A.title: "Clavier à code"
+	quest.14BDCFD95D3B0B6A.quest_desc: ["Ferme une porte ou un coffre avec un code.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs laser »."]
+	quest.6DD8CD9DA47BBC02.title: "Caméras de sécurité"
+	quest.6DD8CD9DA47BBC02.quest_desc: ["Surveille ta base à distance avec un écran de caméras.", "", "À faire avant (sinon la quête ne se valide pas) : « Renforceur universel »."]
+	quest.12BE8EA035108910.title: "Mines"
+	quest.12BE8EA035108910.quest_desc: ["Pour les invités qui n'ont pas sonné.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs laser »."]
+	quest.1813381F944EDFE5.title: "Radar portatif"
+	quest.1813381F944EDFE5.quest_desc: ["Signale les joueurs qui approchent.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs laser »."]
+	quest.053E2AB78B4CDD5A.title: "Tourelle"
+	quest.053E2AB78B4CDD5A.quest_desc: ["Tire sur les intrus. Demande de l'acier et des tubes électroniques.", "", "À faire avant (sinon la quête ne se valide pas) : « Radar portatif », « Renforceur universel », « Acier » (chapitre « IV · L'âge de l'acier »)."]
+	quest.3500B9C3283A3465.title: "Système Trophy"
+	quest.3500B9C3283A3465.quest_desc: ["Abat les projectiles qui approchent. Demande des circuits imprimés TFMG.", "", "À faire avant (sinon la quête ne se valide pas) : « Tourelle »."]
+	quest.0122626D68798D25.title: "Boîte de discussion"
+	quest.0122626D68798D25.quest_desc: ["Advanced Peripherals : ton ordinateur peut écrire dans le chat et lire les messages.", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur »."]
+	quest.0C93B7A28BDAE8C0.title: "Détecteur de joueurs"
+	quest.0C93B7A28BDAE8C0.quest_desc: ["Sait si un joueur est proche (64 blocs max. sur ce serveur, sans position exacte) : portes et alarmes automatiques.", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur »."]
+	quest.6892C51E74F31FFE.title: "Scanner géologique"
+	quest.6892C51E74F31FFE.quest_desc: ["Liste les minerais autour de lui, pour programmer une tortue mineuse.", "", "À faire avant (sinon la quête ne se valide pas) : « Tortue »."]
+	chapter.1AF3C82F48B4688F.title: "VI · Blindés"
+	chapter.1AF3C82F48B4688F.chapter_subtitle: ["Roues, chenilles, blindage et tourelles pour les engins Sable."]
 	quest.13E7484E1F2FE580.title: "Support de roue"
-	quest.13E7484E1F2FE580.quest_desc: ["La base de tout véhicule terrestre.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « Industrie lourde \\& trains »)."]
+	quest.13E7484E1F2FE580.quest_desc: ["La base de tout véhicule terrestre.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »)."]
 	quest.5B83D33E942C54BE.title: "Pneus"
 	quest.5B83D33E942C54BE.quest_desc: ["Montés sur les supports de roue.", "", "À faire avant (sinon la quête ne se valide pas) : « Support de roue »."]
 	quest.29DD744F849AC3AB.title: "Gros pneus"
 	quest.29DD744F849AC3AB.quest_desc: ["Pour les engins lourds.", "", "À faire avant (sinon la quête ne se valide pas) : « Pneus »."]
 	quest.17BFE8A7DDC09824.title: "Blocs d'acier au carbone"
-	quest.17BFE8A7DDC09824.quest_desc: ["Acier et coke au mélangeur chauffé donnent l'acier au carbone ; 4 lingots font un bloc. Protège tes véhicules et bunkers.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « Industrie lourde \\& trains »)."]
+	quest.17BFE8A7DDC09824.quest_desc: ["Acier et coke au mélangeur chauffé donnent l'acier au carbone ; 4 lingots font un bloc. Protège tes véhicules et bunkers.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »)."]
 	quest.146D0F04611E9EB9.title: "Blindage réactif (ERA)"
-	quest.146D0F04611E9EB9.quest_desc: ["Une charge de poudre déployée sur un bloc d'acier au carbone. Explose vers l'extérieur pour arrêter les obus.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs d'acier au carbone », « Charges de poudre » (chapitre « Artillerie (Create Big Cannons) »)."]
+	quest.146D0F04611E9EB9.quest_desc: ["Une charge de poudre déployée sur un bloc d'acier au carbone. Explose vers l'extérieur pour arrêter les obus.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs d'acier au carbone », « Charges de poudre » (chapitre « IV · Artillerie »)."]
 	quest.1BD8EFC028544134.title: "Canon blindé (Armored Constructs)"
 	quest.1BD8EFC028544134.quest_desc: ["Tourelles pour tes chars.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs d'acier au carbone »."]
 	quest.3A8BB4E49C8BB3E6.title: "Tourelle chimique"
-	quest.3A8BB4E49C8BB3E6.quest_desc: ["Lance-flammes automatique.", "", "À faire avant (sinon la quête ne se valide pas) : « Distillerie » (chapitre « Industrie lourde \\& trains »)."]
+	quest.3A8BB4E49C8BB3E6.quest_desc: ["Lance-flammes automatique.", "", "À faire avant (sinon la quête ne se valide pas) : « Distillerie » (chapitre « IV · L'âge de l'acier »)."]
 	quest.5175D0DB6E2EB7F9.title: "Périscope"
 	quest.5175D0DB6E2EB7F9.quest_desc: ["Vision depuis l'intérieur du char.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs d'acier au carbone »."]
-	chapter.04EF504505BA1E93.title: "Nucléaire civil"
-	chapter.04EF504505BA1E93.chapter_subtitle: ["Uranium, thorium et réacteurs : énergie massive, gros risques."]
+	chapter.7D0AF9B5A534D721.title: "VI · Guerre mécanisée"
+	chapter.7D0AF9B5A534D721.chapter_subtitle: ["Les véhicules de Superb Warfare : acier, caoutchouc, moteurs électriques et électronique."]
+	quest.228EFA51E63652C6.title: "Table d'assemblage de véhicules"
+	quest.228EFA51E63652C6.quest_desc: ["Tôles d'acier, mécanisme en acier et circuit imprimé : la porte du palier VI. Tous les véhicules s'assemblent ici.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »), « Circuits imprimés » (chapitre « V · L'âge électrique »)."]
+	quest.3D829C3472E8A455.title: "Moteurs"
+	quest.3D829C3472E8A455.quest_desc: ["Bobines de cuivre, arbre et tube électronique.", "", "À faire avant (sinon la quête ne se valide pas) : « Table d'assemblage de véhicules »."]
+	quest.7E5861253655B447.title: "Gros moteur"
+	quest.7E5861253655B447.quest_desc: ["Deux moteurs électriques de Crafts \\& Additions et un mécanisme en acier : le cœur de chaque véhicule.", "", "À faire avant (sinon la quête ne se valide pas) : « Moteurs », « Moteur électrique » (chapitre « V · L'âge électrique »)."]
+	quest.049AE4060D0BC557.title: "Roues"
+	quest.049AE4060D0BC557.quest_desc: ["Caoutchouc de TFMG (pétrole lourd et soufre) sur jante en acier.", "", "À faire avant (sinon la quête ne se valide pas) : « Table d'assemblage de véhicules », « Distillerie » (chapitre « IV · L'âge de l'acier »)."]
+	quest.17490F3EB166A2D1.title: "Chenilles"
+	quest.17490F3EB166A2D1.quest_desc: ["Des roues et de l'acier : pour les blindés.", "", "À faire avant (sinon la quête ne se valide pas) : « Roues »."]
+	quest.42071AD892B5AC30.title: "Batterie moyenne"
+	quest.42071AD892B5AC30.quest_desc: ["Assemblée à la table à partir de petites batteries. Elle se recharge à la station de charge.", "", "À faire avant (sinon la quête ne se valide pas) : « Table d'assemblage de véhicules »."]
+	quest.4FEF7E6CB8C95C2A.title: "Module d'armement léger"
+	quest.4FEF7E6CB8C95C2A.quest_desc: ["Pièces en acier et mécanisme de précision : mitrailleuses de bord.", "", "À faire avant (sinon la quête ne se valide pas) : « Table d'assemblage de véhicules », « Paquet de pièces en acier » (chapitre « II à VI · Armurerie »)."]
+	quest.51E7F0EF597A926C.title: "Noyau de canon"
+	quest.51E7F0EF597A926C.quest_desc: ["Il demande une vraie culasse coulissante de Create Big Cannons.", "", "À faire avant (sinon la quête ne se valide pas) : « Table d'assemblage de véhicules », « Culasse coulissante » (chapitre « IV · Artillerie »)."]
+	quest.615D3CCFF694A28A.title: "Module d'armement moyen"
+	quest.615D3CCFF694A28A.quest_desc: ["Carbure cémenté : canons automatiques des blindés légers.", "", "À faire avant (sinon la quête ne se valide pas) : « Module d'armement léger », « Paquet de pièces en carbure » (chapitre « II à VI · Armurerie »)."]
+	quest.028DECCE43A91A35.title: "Module d'armement lourd"
+	quest.028DECCE43A91A35.quest_desc: ["Noyau de canon, netherite et module moyen : chars de combat et avions d'attaque.", "", "À faire avant (sinon la quête ne se valide pas) : « Module d'armement moyen », « Noyau de canon »."]
+	quest.7C66996644ECAF71.title: "Premier véhicule"
+	quest.7C66996644ECAF71.quest_desc: ["Assemble ton premier véhicule à la table (un pick-up suffit) et prends sa clé. Coche la quête quand il roule.", "", "À faire avant (sinon la quête ne se valide pas) : « Gros moteur », « Roues », « Batterie moyenne »."]
+	quest.2CF3B0CD219BAE24.title: "Outil de réparation"
+	quest.2CF3B0CD219BAE24.quest_desc: ["Un véhicule abîmé se répare, il ne se remplace pas.", "", "À faire avant (sinon la quête ne se valide pas) : « Premier véhicule »."]
+	chapter.47DA1C59EB2CE985.title: "VI · Radars \\& missiles"
+	chapter.47DA1C59EB2CE985.chapter_subtitle: ["Détecter, suivre et frapper à longue distance. Et abattre ce qui arrive."]
+	quest.77E3E4D638A041C4.title: "Jumelles"
+	quest.77E3E4D638A041C4.quest_desc: ["Repérage et désignation de cibles.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « V · L'âge électrique »)."]
+	quest.764793E12A209AEB.title: "Roulement de radar"
+	quest.764793E12A209AEB.quest_desc: ["Le pivot du radar : roulement mécanique, tôles d'acier et circuit imprimé.", "", "À faire avant (sinon la quête ne se valide pas) : « Circuits imprimés » (chapitre « V · L'âge électrique »)."]
+	quest.2B6DCB051C43594F.title: "Antenne radar"
+	quest.2B6DCB051C43594F.quest_desc: ["Détecte avions et navires.", "", "À faire avant (sinon la quête ne se valide pas) : « Roulement de radar »."]
+	quest.39F9BD3B7CF5FEEF.title: "Écran radar"
+	quest.39F9BD3B7CF5FEEF.quest_desc: ["Affiche les contacts.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
+	quest.69A8DDF795F0DA59.title: "Conduite de tir"
+	quest.69A8DDF795F0DA59.quest_desc: ["Relie radar et canons.", "", "À faire avant (sinon la quête ne se valide pas) : « Écran radar »."]
+	quest.3E0317F5F0964CCF.title: "Transpondeur IFF"
+	quest.3E0317F5F0964CCF.quest_desc: ["Ami ou ennemi ?", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
+	quest.27B565817BA421AC.title: "Radar d'avion"
+	quest.27B565817BA421AC.quest_desc: ["Radar compact à embarquer sur tes appareils.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
+	quest.58B19C6FE111E7F3.title: "AIM-9 Sidewinder"
+	quest.58B19C6FE111E7F3.quest_desc: ["Missile air-air guidé.", "", "À faire avant (sinon la quête ne se valide pas) : « Conduite de tir »."]
+	quest.33AAAE60BA29B4DD.title: "Patriot"
+	quest.33AAAE60BA29B4DD.quest_desc: ["Défense antimissile.", "", "À faire avant (sinon la quête ne se valide pas) : « AIM-9 Sidewinder »."]
+	quest.68B6E8B7239C1A49.title: "Tomahawk"
+	quest.68B6E8B7239C1A49.quest_desc: ["Missile de croisière longue portée : demande des Codes de lancement.", "", "À faire avant (sinon la quête ne se valide pas) : « Conduite de tir », « Codes de lancement » (chapitre « VII · Dissuasion »)."]
+	quest.31F9D5BE8608A54A.title: "Pas de tir (Create Missiles)"
+	quest.31F9D5BE8608A54A.quest_desc: ["Pas de tir de Create Missiles : tôle d'acier, boîtier en laiton et circuit imprimé.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »), « Circuits imprimés » (chapitre « V · L'âge électrique »)."]
+	quest.183A1FBA2348EB6B.title: "Ogive (Create Missiles)"
+	quest.183A1FBA2348EB6B.quest_desc: ["La charge utile. Les ogives destructrices demandent des obus HE.", "", "À faire avant (sinon la quête ne se valide pas) : « Pas de tir (Create Missiles) », « Obus explosifs » (chapitre « IV · Artillerie »)."]
+	quest.7A09796CAB0A8D01.title: "Détecteur de drones"
+	quest.7A09796CAB0A8D01.quest_desc: ["Capte la vidéo des drones FPV et entend les Mavic. Clic droit : signal suivant.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
+	quest.5EDC4ACD5A6310BC.title: "Brouilleur de guerre électronique"
+	quest.5EDC4ACD5A6310BC.quest_desc: ["Coupe la liaison des drones ennemis autour de lui. Il lui faut une batterie de Superb Warfare.", "", "À faire avant (sinon la quête ne se valide pas) : « Détecteur de drones »."]
+	quest.51159891E8BD3D4D.title: "Drone FPV"
+	quest.51159891E8BD3D4D.quest_desc: ["Un drone kamikaze piloté en vue immersive. Compatible manette et radiocommande.", "", "À faire avant (sinon la quête ne se valide pas) : « Détecteur de drones »."]
+	quest.59B56E96E4915DC7.title: "Sirène d'alerte aérienne"
+	quest.59B56E96E4915DC7.quest_desc: ["Préviens ta base qu'un raid arrive.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
+	quest.0AFBA63465BCBB12.title: "Terminal de drones"
+	quest.0AFBA63465BCBB12.quest_desc: ["Associe tes Shahed (clic avec le drone en main), trace leur itinéraire sur la carte et lance-les.", "", "À faire avant (sinon la quête ne se valide pas) : « Conduite de tir »."]
+	quest.56FCFD033584A67D.title: "Shahed-136"
+	quest.56FCFD033584A67D.quest_desc: ["Drone d'attaque à longue portée, posé sur une rampe de lancement.", "", "À faire avant (sinon la quête ne se valide pas) : « Terminal de drones »."]
+	quest.794F4CB9C8DE1C89.title: "Rampe de lancement"
+	quest.794F4CB9C8DE1C89.quest_desc: ["Le Shahed ne se pose que dessus.", "", "À faire avant (sinon la quête ne se valide pas) : « Terminal de drones »."]
+	quest.4E1AB0FC7277B1BE.title: "Clé du CIWS"
+	quest.4E1AB0FC7277B1BE.quest_desc: ["Accroupi sur un CIWS H/PJ-11 de Superb Warfare : choisis les joueurs qu'il ne doit pas viser.", "", "À faire avant (sinon la quête ne se valide pas) : « Conduite de tir »."]
+	chapter.04EF504505BA1E93.title: "VII · L'atome"
+	chapter.04EF504505BA1E93.chapter_subtitle: ["Uranium, thorium et réacteurs : une énergie massive, et la matière des bombes."]
 	quest.39EBE17E2F842A13.title: "Uranium brut"
-	quest.39EBE17E2F842A13.quest_desc: ["Minerai radioactif : protège-toi.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « Électricité »), « Acier » (chapitre « Industrie lourde \\& trains »)."]
+	quest.39EBE17E2F842A13.quest_desc: ["Minerai radioactif : protège-toi.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « V · L'âge électrique »), « Acier » (chapitre « IV · L'âge de l'acier »)."]
 	quest.6415F51C0ECAA426.title: "Plomb"
-	quest.6415F51C0ECAA426.quest_desc: ["Écran contre les radiations.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « Électricité »), « Acier » (chapitre « Industrie lourde \\& trains »)."]
+	quest.6415F51C0ECAA426.quest_desc: ["Écran contre les radiations.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « V · L'âge électrique »), « Acier » (chapitre « IV · L'âge de l'acier »)."]
 	quest.7E3061CC3BBDF79B.title: "Casque antiradiation"
 	quest.7E3061CC3BBDF79B.quest_desc: ["Équipement de protection, pièce 1.", "", "À faire avant (sinon la quête ne se valide pas) : « Plomb »."]
 	quest.301C30713E05F5F2.title: "Plastron antiradiation"
@@ -288,171 +454,39 @@
 	quest.46FC1420DE526E77.title: "Alarme de réacteur"
 	quest.46FC1420DE526E77.quest_desc: ["Prévient avant la fusion.", "", "À faire avant (sinon la quête ne se valide pas) : « Cœur de réacteur »."]
 	quest.03501335E22DFE6C.title: "Thorium (New Age)"
-	quest.03501335E22DFE6C.quest_desc: ["Combustible des réacteurs New Age.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « Électricité »), « Acier » (chapitre « Industrie lourde \\& trains »)."]
+	quest.03501335E22DFE6C.quest_desc: ["Combustible des réacteurs New Age.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « V · L'âge électrique »), « Acier » (chapitre « IV · L'âge de l'acier »)."]
 	quest.32582178B42BF6F2.title: "Barres de réacteur New Age"
 	quest.32582178B42BF6F2.quest_desc: ["Second type de réacteur.", "", "À faire avant (sinon la quête ne se valide pas) : « Thorium (New Age) »."]
-	chapter.47DA1C59EB2CE985.title: "Missiles \\& radar"
-	chapter.47DA1C59EB2CE985.chapter_subtitle: ["Détecter, suivre et frapper à longue distance."]
-	quest.77E3E4D638A041C4.title: "Jumelles"
-	quest.77E3E4D638A041C4.quest_desc: ["Repérage et désignation de cibles.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « Électricité »)."]
-	quest.764793E12A209AEB.title: "Roulement de radar"
-	quest.764793E12A209AEB.quest_desc: ["Base du radar rotatif.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « Électricité »), « Plastique » (chapitre « Industrie lourde \\& trains »)."]
-	quest.2B6DCB051C43594F.title: "Antenne radar"
-	quest.2B6DCB051C43594F.quest_desc: ["Détecte avions et navires.", "", "À faire avant (sinon la quête ne se valide pas) : « Roulement de radar »."]
-	quest.39F9BD3B7CF5FEEF.title: "Écran radar"
-	quest.39F9BD3B7CF5FEEF.quest_desc: ["Affiche les contacts.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
-	quest.69A8DDF795F0DA59.title: "Conduite de tir"
-	quest.69A8DDF795F0DA59.quest_desc: ["Relie radar et canons.", "", "À faire avant (sinon la quête ne se valide pas) : « Écran radar »."]
-	quest.3E0317F5F0964CCF.title: "Transpondeur IFF"
-	quest.3E0317F5F0964CCF.quest_desc: ["Ami ou ennemi ?", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
-	quest.27B565817BA421AC.title: "Radar d'avion"
-	quest.27B565817BA421AC.quest_desc: ["Radar compact à embarquer sur tes appareils.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
-	quest.58B19C6FE111E7F3.title: "AIM-9 Sidewinder"
-	quest.58B19C6FE111E7F3.quest_desc: ["Missile air-air guidé.", "", "À faire avant (sinon la quête ne se valide pas) : « Conduite de tir »."]
-	quest.33AAAE60BA29B4DD.title: "Patriot"
-	quest.33AAAE60BA29B4DD.quest_desc: ["Défense antimissile.", "", "À faire avant (sinon la quête ne se valide pas) : « AIM-9 Sidewinder »."]
-	quest.68B6E8B7239C1A49.title: "Tomahawk"
-	quest.68B6E8B7239C1A49.quest_desc: ["Missile de croisière longue portée : demande des Codes de lancement.", "", "À faire avant (sinon la quête ne se valide pas) : « Conduite de tir », « Codes de lancement » (chapitre « Armes de destruction massive »)."]
-	quest.31F9D5BE8608A54A.title: "Pas de tir (Create Missiles)"
-	quest.31F9D5BE8608A54A.quest_desc: ["Missiles physiques modulaires. Les pièces demandent de l'acier.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « Industrie lourde \\& trains »)."]
-	quest.183A1FBA2348EB6B.title: "Ogive (Create Missiles)"
-	quest.183A1FBA2348EB6B.quest_desc: ["La charge utile. Les ogives destructrices demandent des obus HE.", "", "À faire avant (sinon la quête ne se valide pas) : « Pas de tir (Create Missiles) », « Obus explosifs » (chapitre « Artillerie (Create Big Cannons) »)."]
-	quest.7A09796CAB0A8D01.title: "Détecteur de drones"
-	quest.7A09796CAB0A8D01.quest_desc: ["Capte la vidéo des drones FPV et entend les Mavic. Clic droit : signal suivant.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
-	quest.5EDC4ACD5A6310BC.title: "Brouilleur de guerre électronique"
-	quest.5EDC4ACD5A6310BC.quest_desc: ["Coupe la liaison des drones ennemis autour de lui. Il lui faut une batterie de Superb Warfare.", "", "À faire avant (sinon la quête ne se valide pas) : « Détecteur de drones »."]
-	quest.51159891E8BD3D4D.title: "Drone FPV"
-	quest.51159891E8BD3D4D.quest_desc: ["Un drone kamikaze piloté en vue immersive. Compatible manette et radiocommande.", "", "À faire avant (sinon la quête ne se valide pas) : « Détecteur de drones »."]
-	quest.59B56E96E4915DC7.title: "Sirène d'alerte aérienne"
-	quest.59B56E96E4915DC7.quest_desc: ["Préviens ta base qu'un raid arrive.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne radar »."]
-	quest.0AFBA63465BCBB12.title: "Terminal de drones"
-	quest.0AFBA63465BCBB12.quest_desc: ["Associe tes Shahed (clic avec le drone en main), trace leur itinéraire sur la carte et lance-les.", "", "À faire avant (sinon la quête ne se valide pas) : « Conduite de tir »."]
-	quest.56FCFD033584A67D.title: "Shahed-136"
-	quest.56FCFD033584A67D.quest_desc: ["Drone d'attaque à longue portée, posé sur une rampe de lancement.", "", "À faire avant (sinon la quête ne se valide pas) : « Terminal de drones »."]
-	quest.794F4CB9C8DE1C89.title: "Rampe de lancement"
-	quest.794F4CB9C8DE1C89.quest_desc: ["Le Shahed ne se pose que dessus.", "", "À faire avant (sinon la quête ne se valide pas) : « Terminal de drones »."]
-	quest.4E1AB0FC7277B1BE.title: "Clé du CIWS"
-	quest.4E1AB0FC7277B1BE.quest_desc: ["Accroupi sur un CIWS H/PJ-11 de Superb Warfare : choisis les joueurs qu'il ne doit pas viser.", "", "À faire avant (sinon la quête ne se valide pas) : « Conduite de tir »."]
-	chapter.41960E5E13891BC1.title: "Armes de destruction massive"
-	chapter.41960E5E13891BC1.chapter_subtitle: ["La fin de partie : bombes lourdes et ICBM nucléaires. Avec modération..."]
-	quest.74D2A1F364AADF7C.title: "Établi de munitions"
-	quest.74D2A1F364AADF7C.quest_desc: ["Assemble bombes, ogives et missiles. Se fabrique avec de l'acier et des mécanismes.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « Industrie lourde \\& trains »)."]
-	quest.4B2F05AFDAF2B237.title: "Bombe Mk 82"
-	quest.4B2F05AFDAF2B237.quest_desc: ["Bombe d'aviation légère.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions »."]
-	quest.282FEA33AE7FE437.title: "Bombe Mk 84"
-	quest.282FEA33AE7FE437.quest_desc: ["Bombe d'aviation lourde.", "", "À faire avant (sinon la quête ne se valide pas) : « Bombe Mk 82 »."]
-	quest.0E1A85CD7654EC56.title: "Appel de frappe aérienne"
-	quest.0E1A85CD7654EC56.quest_desc: ["Cinq Mk 82 sur la cible.", "", "À faire avant (sinon la quête ne se valide pas) : « Bombe Mk 84 »."]
-	quest.66775A330665F94C.title: "Lunettes anti-flash"
-	quest.66775A330665F94C.quest_desc: ["Pour regarder le champignon sans devenir aveugle.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions »."]
-	quest.2AD09B2F01C16648.title: "Compteur Geiger"
-	quest.2AD09B2F01C16648.quest_desc: ["Mesure les retombées.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions »."]
-	quest.4F02DCB64718598B.title: "Lingots d'uranium"
-	quest.4F02DCB64718598B.quest_desc: ["Matière fissile : 4 yellowcakes enrichis et du plomb, compactés sous brûleur surchauffé.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions », « Yellowcake enrichi » (chapitre « Nucléaire civil »)."]
-	quest.6A4B67DC521A8EBE.title: "Système de visée"
-	quest.6A4B67DC521A8EBE.quest_desc: ["Longue-vue, boussole et redstone : désigne la cible de l'ICBM.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions »."]
-	quest.624917B0AC01463C.title: "Codes de lancement"
-	quest.624917B0AC01463C.quest_desc: ["Indispensables pour armer un ICBM (tenus en main secondaire à la pose) et pour les missiles longue portée. Quête répétable : les objets sont consommés, une fois par équipe, puis délai de 4 h.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions », « Yellowcake enrichi » (chapitre « Nucléaire civil »)."]
-	quest.5CF5DE993A303811.title: "ICBM léger"
-	quest.5CF5DE993A303811.quest_desc: ["Premier missile balistique. Sa pose consomme des Codes de lancement.", "", "À faire avant (sinon la quête ne se valide pas) : « Système de visée », « Codes de lancement »."]
-	quest.14F3D1B8E9E9E22F.title: "ICBM lourd"
-	quest.14F3D1B8E9E9E22F.quest_desc: ["Plus gros, plus loin.", "", "À faire avant (sinon la quête ne se valide pas) : « ICBM léger »."]
-	quest.5FC9A9FB2250304D.title: "Fat Man"
-	quest.5FC9A9FB2250304D.quest_desc: ["La bombe nucléaire larguée.", "", "À faire avant (sinon la quête ne se valide pas) : « Lingots d'uranium », « Bombe Mk 84 »."]
-	quest.5CD90A2B6E78FBBB.title: "ICBM nucléaire"
-	quest.5CD90A2B6E78FBBB.quest_desc: ["L'arme ultime. Le serveur s'en souviendra.", "", "À faire avant (sinon la quête ne se valide pas) : « ICBM lourd », « Fat Man », « Lunettes anti-flash »."]
-	chapter.16A7BFA622EEA61D.title: "Défense \\& informatique"
-	chapter.16A7BFA622EEA61D.chapter_subtitle: ["Ordinateurs pour piloter canons et avions, et une base qui se défend toute seule."]
-	quest.51DA5E89D7D3F671.title: "Ordinateur"
-	quest.51DA5E89D7D3F671.quest_desc: ["CC: Tweaked, avec des recettes passées par Create. Il pilote trains, gares et boîtes de vitesses séquencées.", "", "À faire avant (sinon la quête ne se valide pas) : « Tubes électroniques » (chapitre « Laiton \\& logistique »)."]
-	quest.3635CA2A9238EDD0.title: "Modems filaires"
-	quest.3635CA2A9238EDD0.quest_desc: ["Relie l'ordinateur aux machines voisines (périphériques).", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur »."]
-	quest.2F62A39BF6AD3800.title: "Moniteurs avancés"
-	quest.2F62A39BF6AD3800.quest_desc: ["Un grand écran couleur pour tes tableaux de bord.", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur »."]
-	quest.3341112053D99015.title: "Canon piloté par ordinateur"
-	quest.3341112053D99015.quest_desc: ["Avec CC:CBC, un ordinateur relié par modem à un affût de canon le vise et le fait tirer. Branche-le sur ton radar : la DCA devient automatique.", "", "À faire avant (sinon la quête ne se valide pas) : « Modems filaires », « Affût » (chapitre « Artillerie (Create Big Cannons) »), « Antenne radar » (chapitre « Missiles \\& radar »)."]
-	quest.12AE20BF3CF08536.title: "Avionique"
-	quest.12AE20BF3CF08536.quest_desc: ["Avec Create: Avionics, un ordinateur embarqué lit et commande les blocs Aeronautics (cap, altitude, hélices). Pilote automatique compris.", "", "À faire avant (sinon la quête ne se valide pas) : « Modems filaires », « Assembleur physique » (chapitre « Aviation (Create Aeronautics) »)."]
-	quest.6F8358FC1FA5F25A.title: "Tortue"
-	quest.6F8358FC1FA5F25A.quest_desc: ["Un petit robot programmable : il mine, construit et transporte.", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur », « Acier » (chapitre « Industrie lourde \\& trains »)."]
-	quest.2C4721D77E50AA98.title: "Blocs laser"
-	quest.2C4721D77E50AA98.quest_desc: ["Premier pas de SecurityCraft : une barrière invisible qui déclenche tes défenses.", "", "À faire avant (sinon la quête ne se valide pas) : « Alternateur » (chapitre « Électricité »)."]
-	quest.44F24B414E0DD228.title: "Renforceur universel"
-	quest.44F24B414E0DD228.quest_desc: ["Transforme tes blocs en blocs renforcés que seuls toi et ton équipe pouvez casser. Les obus CBC, Superb Warfare et la TNT les abîment, mais les bombes et ICBM de Project: Explosive n'y font rien : parfait pour un bunker anti-nucléaire.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs laser », « Mécanisme de précision » (chapitre « Laiton \\& logistique »)."]
-	quest.6EFD5A18CB66C8A0.title: "Murs renforcés"
-	quest.6EFD5A18CB66C8A0.quest_desc: ["Les murs de ta base, ou de ton bunker : ils encaissent Fat Man et les ICBM, pas l'artillerie.", "", "À faire avant (sinon la quête ne se valide pas) : « Renforceur universel »."]
-	quest.14BDCFD95D3B0B6A.title: "Clavier à code"
-	quest.14BDCFD95D3B0B6A.quest_desc: ["Ferme une porte ou un coffre avec un code.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs laser »."]
-	quest.6DD8CD9DA47BBC02.title: "Caméras de sécurité"
-	quest.6DD8CD9DA47BBC02.quest_desc: ["Surveille ta base à distance avec un écran de caméras.", "", "À faire avant (sinon la quête ne se valide pas) : « Renforceur universel »."]
-	quest.12BE8EA035108910.title: "Mines"
-	quest.12BE8EA035108910.quest_desc: ["Pour les invités qui n'ont pas sonné.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs laser »."]
-	quest.1813381F944EDFE5.title: "Radar portatif"
-	quest.1813381F944EDFE5.quest_desc: ["Signale les joueurs qui approchent.", "", "À faire avant (sinon la quête ne se valide pas) : « Blocs laser »."]
-	quest.053E2AB78B4CDD5A.title: "Tourelle"
-	quest.053E2AB78B4CDD5A.quest_desc: ["Tire sur les intrus. Demande de l'acier et des tubes électroniques.", "", "À faire avant (sinon la quête ne se valide pas) : « Radar portatif », « Renforceur universel », « Acier » (chapitre « Industrie lourde \\& trains »)."]
-	quest.3500B9C3283A3465.title: "Système Trophy"
-	quest.3500B9C3283A3465.quest_desc: ["Abat les projectiles qui approchent. Demande des circuits imprimés TFMG.", "", "À faire avant (sinon la quête ne se valide pas) : « Tourelle »."]
-	quest.0122626D68798D25.title: "Boîte de discussion"
-	quest.0122626D68798D25.quest_desc: ["Advanced Peripherals : ton ordinateur peut écrire dans le chat et lire les messages.", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur »."]
-	quest.0C93B7A28BDAE8C0.title: "Détecteur de joueurs"
-	quest.0C93B7A28BDAE8C0.quest_desc: ["Sait si un joueur est proche (64 blocs max. sur ce serveur, sans position exacte) : portes et alarmes automatiques.", "", "À faire avant (sinon la quête ne se valide pas) : « Ordinateur »."]
-	quest.6892C51E74F31FFE.title: "Scanner géologique"
-	quest.6892C51E74F31FFE.quest_desc: ["Liste les minerais autour de lui, pour programmer une tortue mineuse.", "", "À faire avant (sinon la quête ne se valide pas) : « Tortue »."]
-	chapter.5C329C6DE6204446.title: "Cuisine"
-	chapter.5C329C6DE6204446.chapter_subtitle: ["Kaleidoscope Cookery : cuisiner pour tenir entre deux batailles. Son moulin accepte aussi le moulin de Create."]
-	quest.286285B15331B404.title: "Fourneau"
-	quest.286285B15331B404.quest_desc: ["La base de la cuisine : pose un wok ou une marmite dessus."]
-	quest.1FA1339164ED206D.title: "Couteau de cuisine"
-	quest.1FA1339164ED206D.quest_desc: ["Pour découper sur la planche."]
-	quest.6718BE632F527AA2.title: "Planche à découper"
-	quest.6718BE632F527AA2.quest_desc: ["Découpe viandes et légumes.", "", "À faire avant (sinon la quête ne se valide pas) : « Couteau de cuisine »."]
-	quest.21A65A2702955B75.title: "Wok"
-	quest.21A65A2702955B75.quest_desc: ["Sauté rapide sur le fourneau, avec la spatule.", "", "À faire avant (sinon la quête ne se valide pas) : « Fourneau »."]
-	quest.60135E9F91129E15.title: "Marmite"
-	quest.60135E9F91129E15.quest_desc: ["Soupes et ragoûts mijotés.", "", "À faire avant (sinon la quête ne se valide pas) : « Fourneau »."]
-	quest.6D5225B21A033C13.title: "Nouvelles graines"
-	quest.6D5225B21A033C13.quest_desc: ["Tomates, piments, laitue et riz. Le chapeau de paille fait tomber des graines des herbes."]
-	quest.3A4B453B4ACF67F8.title: "Riz cuit"
-	quest.3A4B453B4ACF67F8.quest_desc: ["La base des bols de riz.", "", "À faire avant (sinon la quête ne se valide pas) : « Nouvelles graines », « Marmite »."]
-	quest.4370E6FB8E8803A0.title: "Moulin"
-	quest.4370E6FB8E8803A0.quest_desc: ["Farine, huile et riz décortiqué. Le moulin de Create fait aussi ses recettes.", "", "À faire avant (sinon la quête ne se valide pas) : « Alliage d'andésite » (chapitre « L'âge de l'engrenage »)."]
-	quest.473344BEB37CC400.title: "Œufs au plat"
-	quest.473344BEB37CC400.quest_desc: ["Premier plat au wok.", "", "À faire avant (sinon la quête ne se valide pas) : « Wok »."]
-	quest.40815A7E1BB832A8.title: "Bol de bœuf braisé"
-	quest.40815A7E1BB832A8.quest_desc: ["Un vrai repas de soldat.", "", "À faire avant (sinon la quête ne se valide pas) : « Riz cuit », « Planche à découper »."]
-	quest.36D2FAFFBDEE0624.title: "Cuiseur vapeur"
-	quest.36D2FAFFBDEE0624.quest_desc: ["Brioches et raviolis à la vapeur.", "", "À faire avant (sinon la quête ne se valide pas) : « Marmite »."]
-	chapter.57C2176FB3D9A403.title: "Espace (Northstar)"
-	chapter.57C2176FB3D9A403.chapter_subtitle: ["Titane, circuits et fusées : la Lune, puis Mars, Mercure et Vénus."]
+	chapter.57C2176FB3D9A403.title: "VII · Espace"
+	chapter.57C2176FB3D9A403.chapter_subtitle: ["Titane, circuits et fusées : la Lune, puis Mars, Mercure et Vénus (Northstar)."]
 	quest.6D5B291D9D5DCA92.title: "Télescope"
-	quest.6D5B291D9D5DCA92.quest_desc: ["Laiton, éclat d'améthyste et bâtons. La nuit, clic droit avec du papier : tu obtiens un relevé astronomique de la planète visée.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.6D5B291D9D5DCA92.quest_desc: ["Laiton, éclat d'améthyste et bâtons. La nuit, clic droit avec du papier : tu obtiens un relevé astronomique de la planète visée.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.504DE8797372588C.title: "Concentré de rutile"
-	quest.504DE8797372588C.quest_desc: ["Le minerai de titane de la Terre. Le broyeur en tire du sable (25 %) ou du calcaire (50 %, par deux).", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.504DE8797372588C.quest_desc: ["Le minerai de titane de la Terre. Le broyeur en tire du sable (25 %) ou du calcaire (50 %, par deux).", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.413BD90157D70A23.title: "Sel"
-	quest.413BD90157D70A23.quest_desc: ["Basalte broyé : 2 à 4 sels.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.413BD90157D70A23.quest_desc: ["Basalte broyé : 2 à 4 sels.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.6E57D9D4BB97984D.title: "Catalyseur au sodium"
 	quest.6E57D9D4BB97984D.quest_desc: ["Un sel arrosé de lave par un bec verseur.", "", "À faire avant (sinon la quête ne se valide pas) : « Sel »."]
 	quest.0A89AE921FF3784A.title: "Tétrachlorure de titane"
-	quest.0A89AE921FF3784A.quest_desc: ["Mélangeur sur brûleur surchauffé : 3 rutiles, 1 catalyseur, 1 zinc et du carbone liquide (3 charbons compactés sur brûleur allumé).", "", "À faire avant (sinon la quête ne se valide pas) : « Concentré de rutile », « Catalyseur au sodium », « Brûleur à blaze » (chapitre « Laiton \\& logistique »)."]
+	quest.0A89AE921FF3784A.quest_desc: ["Mélangeur sur brûleur surchauffé : 3 rutiles, 1 catalyseur, 1 zinc et du carbone liquide (3 charbons compactés sur brûleur allumé).", "", "À faire avant (sinon la quête ne se valide pas) : « Concentré de rutile », « Catalyseur au sodium », « Brûleur à blaze » (chapitre « III · L'âge du laiton »)."]
 	quest.15142AF3BCA06E7A.title: "Titane"
-	quest.15142AF3BCA06E7A.quest_desc: ["Séquence sur une plaque robuste de Create : lave, presse, tétrachlorure, presse, eau. La fonte liquide de CBC peut remplacer la lave. Hors de la Terre, le minerai de titane se fond directement.", "", "À faire avant (sinon la quête ne se valide pas) : « Tétrachlorure de titane », « Mécanisme de précision » (chapitre « Laiton \\& logistique »)."]
+	quest.15142AF3BCA06E7A.quest_desc: ["Séquence sur une plaque robuste de Create : lave, presse, tétrachlorure, presse, eau. La fonte liquide de CBC peut remplacer la lave. Hors de la Terre, le minerai de titane se fond directement.", "", "À faire avant (sinon la quête ne se valide pas) : « Tétrachlorure de titane », « Mécanisme de précision » (chapitre « III · L'âge du laiton »)."]
 	quest.1CAB18184BA3CF04.title: "Atlas spatial"
 	quest.1CAB18184BA3CF04.quest_desc: ["Un livre et un lingot de titane. Il garde les planètes découvertes et les balises, et se pose dans la station de fusée pour choisir la destination.", "", "À faire avant (sinon la quête ne se valide pas) : « Titane », « Télescope »."]
 	quest.73B4EFF5859488E3.title: "Table d'astronomie"
 	quest.73B4EFF5859488E3.quest_desc: ["Atlas + relevés astronomiques = science. Assez de science débloque une planète. Les relevés de planètes différentes rapportent plus ; un seul relevé par planète et par jour.", "", "À faire avant (sinon la quête ne se valide pas) : « Atlas spatial »."]
 	quest.4B915DCCDD665D2A.title: "Cristal d'améthyste"
-	quest.4B915DCCDD665D2A.quest_desc: ["Améthystes polies au papier de verre, redstone et fer. Le cœur du graveur de circuits.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « Laiton \\& logistique »)."]
+	quest.4B915DCCDD665D2A.quest_desc: ["Améthystes polies au papier de verre, redstone et fer. Le cœur du graveur de circuits.", "", "À faire avant (sinon la quête ne se valide pas) : « Laiton » (chapitre « III · L'âge du laiton »)."]
 	quest.14A3C6ECD05A512F.title: "Graveur de circuits"
-	quest.14A3C6ECD05A512F.quest_desc: ["Fabricants mécaniques : titane, quartz rose poli, mécanisme de précision et cristal d'améthyste. Il fait l'étape de gravure des circuits.", "", "À faire avant (sinon la quête ne se valide pas) : « Titane », « Cristal d'améthyste », « Fabricants mécaniques » (chapitre « Laiton \\& logistique »)."]
+	quest.14A3C6ECD05A512F.quest_desc: ["Fabricants mécaniques : titane, quartz rose poli, mécanisme de précision et cristal d'améthyste. Il fait l'étape de gravure des circuits.", "", "À faire avant (sinon la quête ne se valide pas) : « Titane », « Cristal d'améthyste », « Fabricants mécaniques » (chapitre « III · L'âge du laiton »)."]
 	quest.3E8548C11299A4CC.title: "Circuits"
 	quest.3E8548C11299A4CC.quest_desc: ["Séquence sur une plaque de fer : améthyste polie, plaque de cuivre, plaque d'or, puis gravure. Il en faut partout.", "", "À faire avant (sinon la quête ne se valide pas) : « Graveur de circuits »."]
 	quest.6A5EC12FB6CCB26A.title: "Mécanisme de précision durci"
-	quest.6A5EC12FB6CCB26A.quest_desc: ["Séquence sur un mécanisme de précision : pépite de titane, roue dentée en fer, grande roue dentée en fer (arbre + bloc de fer industriel).", "", "À faire avant (sinon la quête ne se valide pas) : « Titane », « Mécanisme de précision » (chapitre « Laiton \\& logistique »)."]
+	quest.6A5EC12FB6CCB26A.quest_desc: ["Séquence sur un mécanisme de précision : pépite de titane, roue dentée en fer, grande roue dentée en fer (arbre + bloc de fer industriel).", "", "À faire avant (sinon la quête ne se valide pas) : « Titane », « Mécanisme de précision » (chapitre « III · L'âge du laiton »)."]
 	quest.71C8BC723873506B.title: "Ordinateur de visée"
 	quest.71C8BC723873506B.quest_desc: ["Séquence sur une plaque de fer : diamant poli (au papier de verre), mécanisme durci, gravure, circuit, gravure.", "", "À faire avant (sinon la quête ne se valide pas) : « Circuits », « Mécanisme de précision durci »."]
 	quest.08317F95AFF3791C.title: "Séparateur d'oxygène"
-	quest.08317F95AFF3791C.quest_desc: ["Plaques de fer, tube électronique et tuyaux.", "", "À faire avant (sinon la quête ne se valide pas) : « Tubes électroniques » (chapitre « Laiton \\& logistique »)."]
+	quest.08317F95AFF3791C.quest_desc: ["Plaques de fer, tube électronique et tuyaux.", "", "À faire avant (sinon la quête ne se valide pas) : « Tubes électroniques » (chapitre « III · L'âge du laiton »)."]
 	quest.2F64312ED1A8F692.title: "Concentrateur atmosphérique"
 	quest.2F64312ED1A8F692.quest_desc: ["Récupère l'oxygène (ou le carbone) de l'air. La première source d'oxygène, avant l'électrolyse.", "", "À faire avant (sinon la quête ne se valide pas) : « Séparateur d'oxygène », « Circuits »."]
 	quest.64D3BB42E011CA4E.title: "Combinaison spatiale"
@@ -495,10 +529,62 @@
 	quest.6CECD95D21D3333B.quest_desc: ["Fait atterrir la fusée sans danger, sans pilote.", "", "À faire avant (sinon la quête ne se valide pas) : « Saphir lunaire », « Station de fusée »."]
 	quest.5FF44D51B7519262.title: "Panneau solaire"
 	quest.5FF44D51B7519262.quest_desc: ["Verre teinté, titane et circuit sur un arbre : de la rotation tirée du soleil.", "", "À faire avant (sinon la quête ne se valide pas) : « Circuits »."]
-	chapter.7431026B20119ED0.title: "Téléphones \\& antennes"
-	chapter.7431026B20119ED0.chapter_subtitle: ["Mobile Networks : un téléphone, un numéro, et des antennes à construire pour appeler ton équipe à l'autre bout de la carte."]
+	chapter.41960E5E13891BC1.title: "VII · Dissuasion"
+	chapter.41960E5E13891BC1.chapter_subtitle: ["La fin de partie : bombes lourdes et ICBM nucléaires. Avec modération..."]
+	quest.74D2A1F364AADF7C.title: "Établi de munitions"
+	quest.74D2A1F364AADF7C.quest_desc: ["Assemble bombes, ogives et missiles. Tôles et bloc d'acier, mécanismes en acier, circuits imprimés et un fabricant mécanique.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »), « Circuits imprimés » (chapitre « V · L'âge électrique »)."]
+	quest.4B2F05AFDAF2B237.title: "Bombe Mk 82"
+	quest.4B2F05AFDAF2B237.quest_desc: ["Bombe d'aviation légère.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions »."]
+	quest.282FEA33AE7FE437.title: "Bombe Mk 84"
+	quest.282FEA33AE7FE437.quest_desc: ["Bombe d'aviation lourde.", "", "À faire avant (sinon la quête ne se valide pas) : « Bombe Mk 82 »."]
+	quest.0E1A85CD7654EC56.title: "Appel de frappe aérienne"
+	quest.0E1A85CD7654EC56.quest_desc: ["Cinq Mk 82 sur la cible. Il demande une conduite de tir (chaîne radar) et un circuit imprimé.", "", "À faire avant (sinon la quête ne se valide pas) : « Bombe Mk 84 », « Conduite de tir » (chapitre « VI · Radars \\& missiles »)."]
+	quest.66775A330665F94C.title: "Lunettes anti-flash"
+	quest.66775A330665F94C.quest_desc: ["Pour regarder le champignon sans devenir aveugle.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions »."]
+	quest.2AD09B2F01C16648.title: "Compteur Geiger"
+	quest.2AD09B2F01C16648.quest_desc: ["Mesure les retombées.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions »."]
+	quest.4F02DCB64718598B.title: "Lingots d'uranium"
+	quest.4F02DCB64718598B.quest_desc: ["Matière fissile : 4 yellowcakes enrichis et du plomb, compactés sous brûleur surchauffé.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions », « Yellowcake enrichi » (chapitre « VII · L'atome »)."]
+	quest.6A4B67DC521A8EBE.title: "Système de visée"
+	quest.6A4B67DC521A8EBE.quest_desc: ["Désigne la cible de l'ICBM. Longue-vue, boussole, circuit imprimé et un ordinateur de visée de Northstar (titane).", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions », « Ordinateur de visée » (chapitre « VII · Espace »)."]
+	quest.624917B0AC01463C.title: "Codes de lancement"
+	quest.624917B0AC01463C.quest_desc: ["Indispensables pour armer un ICBM ou une Fat Man (tenus en main secondaire à la pose) et pour les missiles longue portée. Quête répétable : 8 circuits imprimés, 16 yellowcakes enrichis et 4 mécanismes de précision renforcés sont consommés, une fois par équipe, puis délai de 4 h.", "", "À faire avant (sinon la quête ne se valide pas) : « Établi de munitions », « Yellowcake enrichi » (chapitre « VII · L'atome »), « Mécanisme de précision durci » (chapitre « VII · Espace »)."]
+	quest.5CF5DE993A303811.title: "ICBM léger"
+	quest.5CF5DE993A303811.quest_desc: ["Premier missile balistique. Sa pose consomme des Codes de lancement.", "", "À faire avant (sinon la quête ne se valide pas) : « Système de visée », « Codes de lancement »."]
+	quest.14F3D1B8E9E9E22F.title: "ICBM lourd"
+	quest.14F3D1B8E9E9E22F.quest_desc: ["Plus gros, plus loin.", "", "À faire avant (sinon la quête ne se valide pas) : « ICBM léger »."]
+	quest.5FC9A9FB2250304D.title: "Fat Man"
+	quest.5FC9A9FB2250304D.quest_desc: ["La bombe nucléaire larguée. Comme un ICBM, elle ne s'arme qu'avec des Codes de lancement, et tout le serveur est prévenu.", "", "À faire avant (sinon la quête ne se valide pas) : « Lingots d'uranium », « Bombe Mk 84 », « Codes de lancement »."]
+	quest.5CD90A2B6E78FBBB.title: "ICBM nucléaire"
+	quest.5CD90A2B6E78FBBB.quest_desc: ["L'arme ultime. Le serveur s'en souviendra.", "", "À faire avant (sinon la quête ne se valide pas) : « ICBM lourd », « Fat Man », « Lunettes anti-flash »."]
+	chapter.5C329C6DE6204446.title: "Vie de camp · Cuisine"
+	chapter.5C329C6DE6204446.chapter_subtitle: ["Kaleidoscope Cookery : cuisiner pour tenir entre deux batailles."]
+	quest.286285B15331B404.title: "Fourneau"
+	quest.286285B15331B404.quest_desc: ["La base de la cuisine : pose un wok ou une marmite dessus."]
+	quest.1FA1339164ED206D.title: "Couteau de cuisine"
+	quest.1FA1339164ED206D.quest_desc: ["Pour découper sur la planche."]
+	quest.6718BE632F527AA2.title: "Planche à découper"
+	quest.6718BE632F527AA2.quest_desc: ["Découpe viandes et légumes.", "", "À faire avant (sinon la quête ne se valide pas) : « Couteau de cuisine »."]
+	quest.21A65A2702955B75.title: "Wok"
+	quest.21A65A2702955B75.quest_desc: ["Sauté rapide sur le fourneau, avec la spatule.", "", "À faire avant (sinon la quête ne se valide pas) : « Fourneau »."]
+	quest.60135E9F91129E15.title: "Marmite"
+	quest.60135E9F91129E15.quest_desc: ["Soupes et ragoûts mijotés.", "", "À faire avant (sinon la quête ne se valide pas) : « Fourneau »."]
+	quest.6D5225B21A033C13.title: "Nouvelles graines"
+	quest.6D5225B21A033C13.quest_desc: ["Tomates, piments, laitue et riz. Le chapeau de paille fait tomber des graines des herbes."]
+	quest.3A4B453B4ACF67F8.title: "Riz cuit"
+	quest.3A4B453B4ACF67F8.quest_desc: ["La base des bols de riz.", "", "À faire avant (sinon la quête ne se valide pas) : « Nouvelles graines », « Marmite »."]
+	quest.4370E6FB8E8803A0.title: "Moulin"
+	quest.4370E6FB8E8803A0.quest_desc: ["Farine, huile et riz décortiqué. Le moulin de Create fait aussi ses recettes.", "", "À faire avant (sinon la quête ne se valide pas) : « Alliage d'andésite » (chapitre « II · L'âge de l'engrenage »)."]
+	quest.473344BEB37CC400.title: "Œufs au plat"
+	quest.473344BEB37CC400.quest_desc: ["Premier plat au wok.", "", "À faire avant (sinon la quête ne se valide pas) : « Wok »."]
+	quest.40815A7E1BB832A8.title: "Bol de bœuf braisé"
+	quest.40815A7E1BB832A8.quest_desc: ["Un vrai repas de soldat.", "", "À faire avant (sinon la quête ne se valide pas) : « Riz cuit », « Planche à découper »."]
+	quest.36D2FAFFBDEE0624.title: "Cuiseur vapeur"
+	quest.36D2FAFFBDEE0624.quest_desc: ["Brioches et raviolis à la vapeur.", "", "À faire avant (sinon la quête ne se valide pas) : « Marmite »."]
+	chapter.7431026B20119ED0.title: "Vie de camp · Téléphones"
+	chapter.7431026B20119ED0.chapter_subtitle: ["Mobile Networks : un numéro, des antennes, et ton équipe au bout du fil."]
 	quest.2C60F068C888C626.title: "Ton téléphone"
-	quest.2C60F068C888C626.quest_desc: ["Plaques de fer, tube électronique, fil de cuivre et vitre. Clic droit pour l'ouvrir. Tu as déjà un numéro à 9 chiffres, attribué automatiquement et gardé d'une session à l'autre. Sans antenne à portée, le téléphone affiche « Pas de service ».", "", "À faire avant (sinon la quête ne se valide pas) : « Tubes électroniques » (chapitre « Laiton \\& logistique »)."]
+	quest.2C60F068C888C626.quest_desc: ["Plaques de fer, tube électronique, fil de cuivre et vitre. Clic droit pour l'ouvrir. Tu as déjà un numéro à 9 chiffres, attribué automatiquement et gardé d'une session à l'autre. Sans antenne à portée, le téléphone affiche « Pas de service ».", "", "À faire avant (sinon la quête ne se valide pas) : « Tubes électroniques » (chapitre « III · L'âge du laiton »)."]
 	quest.1D38A83442725EB6.title: "Tournevis"
 	quest.1D38A83442725EB6.quest_desc: ["Un bâton et une pépite de fer. Clic droit sur une antenne avec le tournevis : sa configuration s'ouvre."]
 	quest.2899F01C5C1DE412.title: "Antenne en cuivre"
@@ -512,11 +598,11 @@
 	quest.7E8256A237BB782C.title: "Antenne en diamant"
 	quest.7E8256A237BB782C.quest_desc: ["Quatre fois la portée de l'antenne en cuivre : un seul relais couvre toute une base. Pense à la protéger : une antenne cassée, c'est toute une zone sans réseau. Et casser celles de l'ennemi le prive de téléphone.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne en fer »."]
 	quest.65DD0296B92B90EE.title: "Serveur du réseau"
-	quest.65DD0296B92B90EE.quest_desc: ["Mécanisme de précision au centre. Protégé par un mot de passe : déverrouille-le et reste à côté pour gérer tes réseaux depuis un seul endroit. Joueurs autorisés et leurs rôles, forfaits d'appels et de messages (illimités par défaut, renouvelés chaque jour du jeu), numéros personnalisés (1 à 9 chiffres). Une antenne gérée par un serveur ne se règle plus au tournevis.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne en fer », « Mécanisme de précision » (chapitre « Laiton \\& logistique »)."]
+	quest.65DD0296B92B90EE.quest_desc: ["Mécanisme de précision au centre. Protégé par un mot de passe : déverrouille-le et reste à côté pour gérer tes réseaux depuis un seul endroit. Joueurs autorisés et leurs rôles, forfaits d'appels et de messages (illimités par défaut, renouvelés chaque jour du jeu), numéros personnalisés (1 à 9 chiffres). Une antenne gérée par un serveur ne se règle plus au tournevis.", "", "À faire avant (sinon la quête ne se valide pas) : « Antenne en fer », « Mécanisme de précision » (chapitre « III · L'âge du laiton »)."]
 	quest.4CD21757914C44B3.title: "Routeur Wi-Fi"
 	quest.4CD21757914C44B3.quest_desc: ["Un point d'accès Internet local, pour les applications du téléphone qui ont besoin de données (Gram pour les photos, Plans pour la carte et les lieux). Il lui faut une puce de fournisseur Wi-Fi, qui ne se fabrique pas : au bloc Serveur (déverrouillé), onglet Networks, lie ton réseau au serveur (Link) ; puis onglet Wi-Fi, choisis ce réseau comme fournisseur principal (Primary provider) du joueur et clique sur Issue. La puce arrive dans ton inventaire (garde une case libre). Mets-la dans le routeur, donne un nom et un mot de passe au Wi-Fi, puis Save. Seuls son propriétaire et les joueurs autorisés peuvent l'ouvrir.", "", "À faire avant (sinon la quête ne se valide pas) : « Serveur du réseau »."]
-	chapter.2A2265D026036A84.title: "Prisonniers \\& verrous"
-	chapter.2A2265D026036A84.chapter_subtitle: ["Cuffed : menotter un ennemi, le fouiller, l'enfermer. Et protéger ses coffres avec cadenas et coffres-forts."]
+	chapter.2A2265D026036A84.title: "Vie de camp · Prisonniers"
+	chapter.2A2265D026036A84.chapter_subtitle: ["Cuffed : menotter un ennemi, le fouiller, l'enfermer. Et verrouiller ses coffres."]
 	quest.4419B332E26A6282.title: "Menottes"
 	quest.4419B332E26A6282.quest_desc: ["Clic droit sur un joueur en visant ses bras. Sur ce serveur, il doit avoir moins de 30 % de sa vie. Menotté, il ne peut plus miner, utiliser d'objets ni ouvrir son inventaire. Il peut tenter de s'en libérer : les menottes s'usent à chaque essai."]
 	quest.3845E110B565AE9C.title: "Clé de menottes"
@@ -540,7 +626,7 @@
 	quest.76BABC9DD46C9421.title: "Coffre-fort"
 	quest.76BABC9DD46C9421.quest_desc: ["Bloc de fer et cadenas. Un rangement à clé, qui se crochète difficilement.", "", "À faire avant (sinon la quête ne se valide pas) : « Cadenas »."]
 	quest.3528F05AAB15E52A.title: "Pierre renforcée"
-	quest.3528F05AAB15E52A.quest_desc: ["4 lingots d'acier et 5 pierres pour 4 blocs. Très longue à miner, et résiste aux bombes Mk 82 et Mk 84 comme l'obsidienne : de quoi bâtir une prison ou un abri. Existe en pierre lisse, dalles, escaliers, barreaux et lampe.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « Industrie lourde \\& trains »)."]
+	quest.3528F05AAB15E52A.quest_desc: ["4 lingots d'acier et 5 pierres pour 4 blocs. Très longue à miner, et résiste aux bombes Mk 82 et Mk 84 comme l'obsidienne : de quoi bâtir une prison ou un abri. Existe en pierre lisse, dalles, escaliers, barreaux et lampe.", "", "À faire avant (sinon la quête ne se valide pas) : « Acier » (chapitre « IV · L'âge de l'acier »)."]
 	quest.20D9AA511845F544.title: "Porte de cellule"
 	quest.20D9AA511845F544.quest_desc: ["Barreaux renforcés et acier. Se verrouille avec une clé, ne se casse qu'à la pioche.", "", "À faire avant (sinon la quête ne se valide pas) : « Pierre renforcée », « Clé »."]
 	quest.2BA0363BDAE79C5B.title: "Couchette"

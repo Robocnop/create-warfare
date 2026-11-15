@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "create_radar:radar_bearing" }
 	id: "47DA1C59EB2CE985"
-	order_index: 9
+	order_index: 12
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,7 +17,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["697CD161FF05B721", "7ACFFB1E5D5A3DF1"]
+			dependencies: ["35249220763E79C4"]
 			id: "764793E12A209AEB"
 			rewards: [{ id: "5984197B44613F56", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "0F0269B910A7101C", item: { count: 1, id: "create_radar:radar_bearing" }, type: "item" }]
@@ -89,7 +89,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["756CBDC330F693ED"]
+			dependencies: ["756CBDC330F693ED", "35249220763E79C4"]
 			id: "31F9D5BE8608A54A"
 			rewards: [{ id: "3C3F4E28D49B90F6", type: "xp", xp: 200 }]
 			tasks: [{ count: 1L, id: "6C9E99AEF77301E5", item: { count: 1, id: "createmissiles:launch_pad" }, type: "item" }]

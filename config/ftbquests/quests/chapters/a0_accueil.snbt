@@ -1,0 +1,125 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "a0_accueil"
+	group: ""
+	icon: { id: "ftbquests:book" }
+	id: "3D417C02922779C1"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "ftbquests:book" }
+			dependencies: []
+			id: "0856D48C6F395EE8"
+			rewards: [{ id: "720D36A7BE8DE8F9", type: "xp", xp: 10 }, { id: "429F5D3097C5CE74", item: { count: 16, id: "minecraft:bread" }, type: "item" }, { id: "070177B63503DDC0", item: { count: 1, id: "comforts:sleeping_bag_red" }, type: "item" }]
+			tasks: [{ id: "7FFB8450B040012B", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "minecraft:white_banner" }
+			dependencies: ["0856D48C6F395EE8"]
+			id: "50C51E01ED5F4203"
+			rewards: [{ id: "34DA1F4A36B2310A", type: "xp", xp: 10 }]
+			tasks: [{ id: "4E10824E375FF988", type: "checkmark" }]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "minecraft:campfire" }
+			dependencies: ["50C51E01ED5F4203"]
+			id: "1A7E7B0D854A5672"
+			rewards: [{ id: "3C4220C094974129", type: "xp", xp: 10 }]
+			tasks: [{ id: "11A9D3A74782BBAF", type: "checkmark" }]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "minecraft:writable_book" }
+			dependencies: ["0856D48C6F395EE8"]
+			id: "03DF8BA190C92688"
+			rewards: [{ id: "0EEC246608A5BD2C", type: "xp", xp: 10 }]
+			tasks: [{ id: "11D313DD26BEF821", type: "checkmark" }]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			shape: "gear"
+			size: 2.0d
+			icon: { id: "overgeared:smithing_hammer" }
+			dependencies: ["1A7E7B0D854A5672", "4833E95E88A65F61"]
+			id: "634DFEED05624127"
+			rewards: [{ id: "624DFA603983DA30", type: "xp", xp: 100 }, { id: "29F3C9988CD886C4", item: { count: 2, id: "numismatics:bevel" }, type: "item" }, { id: "206547E5767EA34A", item: { count: 16, id: "minecraft:cooked_beef" }, type: "item" }]
+			tasks: [{ id: "309DC4E7948BE95F", type: "checkmark" }]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			shape: "gear"
+			size: 2.0d
+			icon: { id: "create:cogwheel" }
+			dependencies: ["634DFEED05624127", "1BB7C679337D1D12", "22162ABC6CB16C34"]
+			id: "11509BAD796F7388"
+			rewards: [{ id: "76A36BEAC33E8B57", type: "xp", xp: 200 }, { id: "376FA8B0DFBB1538", item: { count: 4, id: "numismatics:bevel" }, type: "item" }, { id: "5EA1FA877CF5B442", item: { count: 32, id: "create:andesite_alloy" }, type: "item" }]
+			tasks: [{ id: "0CF92EF2F5981F7A", type: "checkmark" }]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			shape: "gear"
+			size: 2.0d
+			icon: { id: "create:brass_ingot" }
+			dependencies: ["11509BAD796F7388", "5F369E5180DA069A", "0AED6BE8700C86DB"]
+			id: "01D63C66EB223589"
+			rewards: [{ id: "7791FF8E929701B5", type: "xp", xp: 300 }, { id: "7FAD99384F841D43", item: { count: 4, id: "numismatics:sprocket" }, type: "item" }, { id: "02B884967284905F", item: { count: 2, id: "create:precision_mechanism" }, type: "item" }]
+			tasks: [{ id: "103F6FC8E537596E", type: "checkmark" }]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			shape: "gear"
+			size: 2.0d
+			icon: { id: "tfmg:steel_ingot" }
+			dependencies: ["01D63C66EB223589", "756CBDC330F693ED", "4E484CE080B4A71D"]
+			id: "6E3A128AE1CD6C27"
+			rewards: [{ id: "4B33E3FAA0AC40F2", type: "xp", xp: 500 }, { id: "45912323A9BBAF6F", item: { count: 2, id: "numismatics:cog" }, type: "item" }, { id: "1F5AABC9E3D6D538", item: { count: 8, id: "tfmg:steel_ingot" }, type: "item" }]
+			tasks: [{ id: "73FBB1647C02E701", type: "checkmark" }]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			shape: "gear"
+			size: 2.0d
+			icon: { id: "tfmg:circuit_board" }
+			dependencies: ["6E3A128AE1CD6C27", "697CD161FF05B721", "35249220763E79C4"]
+			id: "5E292B5E4E077CBA"
+			rewards: [{ id: "02BB21557048A6F7", type: "xp", xp: 700 }, { id: "19E5585E741D5994", item: { count: 4, id: "numismatics:cog" }, type: "item" }, { id: "4C9744BA0B55C479", item: { count: 2, id: "tfmg:circuit_board" }, type: "item" }]
+			tasks: [{ id: "4F36AC76081A2972", type: "checkmark" }]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			shape: "gear"
+			size: 2.0d
+			icon: { id: "superbwarfare:vehicle_assembling_table" }
+			dependencies: ["5E292B5E4E077CBA", "228EFA51E63652C6", "764793E12A209AEB", "7AE07A7DA301D186"]
+			id: "404CB714F396C44A"
+			rewards: [{ id: "2EBF0217ACF3BB73", type: "xp", xp: 1000 }, { id: "4ACB0E4C6BE41707", item: { count: 1, id: "numismatics:crown" }, type: "item" }, { id: "00BA2D7C9A7D8AD8", item: { count: 8, id: "createbigcannons:he_shell" }, type: "item" }]
+			tasks: [{ id: "56111C583E68E221", type: "checkmark" }]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			shape: "gear"
+			size: 2.0d
+			icon: { id: "projectexplosive:icbm_nuclear" }
+			dependencies: ["404CB714F396C44A", "4F22817667213C8D", "4F02DCB64718598B", "71C8BC723873506B"]
+			id: "507BF27EAE6A08D8"
+			rewards: [{ id: "1BA4B7148C56FF4B", type: "xp", xp: 2000 }, { id: "681B549B3508982F", item: { count: 2, id: "numismatics:crown" }, type: "item" }, { id: "6297C8186CB23041", item: { count: 8, id: "minecraft:golden_apple" }, type: "item" }]
+			tasks: [{ id: "2A3D03F9BDBEC6AB", type: "checkmark" }]
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+}

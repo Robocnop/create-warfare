@@ -14,6 +14,6 @@ for i in $(seq 1 900); do
   kill -0 $pid 2>/dev/null || break
   sleep 1
 done
-sleep 3
+sleep ${CW_TEST_LINGER:-3}
 grep -nE 'Done \(|Crash report saved|Missing or unsupported mandatory|Mod ID:|Encountered an unexpected exception' console.log | head -30
 powershell -NoProfile -Command "Get-CimInstance Win32_Process -Filter \"Name='java.exe'\" | ? { \$_.CommandLine -like '*win_args*' } | % { Stop-Process -Id \$_.ProcessId -Force }"

@@ -5,7 +5,7 @@
 	group: ""
 	icon: { id: "kaleidoscope_cookery:pot" }
 	id: "5C329C6DE6204446"
-	order_index: 12
+	order_index: 16
 	quest_links: [ ]
 	quests: [
 		{

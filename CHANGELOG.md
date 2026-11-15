@@ -2,6 +2,35 @@
 
 Les versions 1.1.0 à 1.2.0 sont détaillées dans `docs/journal/2026-10-22.md` et sur la page des releases GitHub.
 
+## 2.0.0 — 2026-11-15 (⚠️ non testée en jeu)
+
+Refonte de la progression : sept paliers, chacun ouvert par les ressources du précédent. Aucun mod ajouté ni retiré.
+
+- **PvP équitable** : `/home`, `/back` et `/spawn` demandent 30 s d'attente sans bouger. Le serveur coupe le radar
+  à joueurs et le mode grotte de la minimap de Xaero.
+- **Mises à jour** : TFMG 1.3.3a, Create Nuclear 2.0.1, Create: Vintage 1.6.5, Fresh Animations 1.11.2 et 23 mods
+  sans risque (JEI, KubeJS, FTB Quests/Chunks/Teams, Sophisticated Backpacks…). Create: Radars reste en 5.0.2.
+
+- **L'acier ne sort plus que du haut fourneau de TFMG.** Les recettes d'acier au mixeur (Create Nuclear, Gunsmithing)
+  et au haut fourneau vanilla (Superb Warfare) sont retirées. L'acier de la forge d'Overgeared devient l'« acier forgé » :
+  il sert aux outils, plus à l'industrie.
+- **L'électricité demande de l'acier** : alternateur, bobine de génératrice (New Age) et boîtier conducteur (Power Grid).
+- **Les véhicules de Superb Warfare passent par Create** : table d'assemblage en acier avec circuit imprimé, gros moteur
+  avec moteur électrique, roues en caoutchouc, noyau de canon avec une culasse de Create Big Cannons.
+- **Radars, pas de tir et frappe aérienne** demandent des circuits imprimés et de l'acier ; la frappe aérienne demande
+  une conduite de tir.
+- **Armes lourdes** : établi de munitions en acier et circuits, désignateur d'ICBM avec un ordinateur de visée de
+  Northstar (titane). La Fat Man s'arme maintenant avec des codes de lancement, comme les ICBM.
+- **Bases revendiquées (FTB Chunks)** : les explosions y sont maintenant autorisées par défaut, sinon l'artillerie ne
+  pouvait rien contre une base. Casser ou poser des blocs à la main chez une autre équipe reste interdit. Les équipes
+  déjà créées gardent leur ancien réglage : à changer dans les paramètres de l'équipe (« Autoriser les explosions »).
+- **Quêtes** : 300 quêtes en 19 chapitres rangés par palier (I à VII), un chapitre d'accueil qui explique le pack et
+  récompense chaque palier, deux nouveaux chapitres « Armurerie » et « Guerre mécanisée ».
+- **Mondes existants** : même monde, rien n'est supprimé, les machines et armes déjà fabriquées marchent toujours.
+  L'acier forgé déjà en coffre ne compte plus comme acier industriel. La progression des quêtes est gardée, mais une
+  quête dont les prérequis ont changé se reverrouille : l'établi de munitions demande maintenant aussi les circuits imprimés.
+- Détail des paliers : `docs/PROGRESSION.md`. Contrôle des portes : `bash tools/check_progression.sh`.
+
 ## 1.8.7 — 2026-11-13
 
 - **Missiles et obus chargent de nouveau les chunks** : on les voit arriver dans le ciel et ils explosent même quand
