@@ -7,7 +7,7 @@ from Modrinth when the same file (matched by hash) exists there, else from the C
 import hashlib, json, os, sys, tomllib, urllib.request, urllib.error
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-UA = {"User-Agent": "robocnop/create-warfare-pack (robocnop@gmail.com)"}
+UA = {"User-Agent": "create-warfare-pack" + (f" ({os.environ['CW_UA_CONTACT']})" if os.environ.get("CW_UA_CONTACT") else "")}
 
 def get(url):
     with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:

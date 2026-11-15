@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gen_servers_dat import SERVERS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-UA = {"User-Agent": "robocnop/create-warfare-pack (robocnop@gmail.com)"}
+UA = {"User-Agent": "create-warfare-pack" + (f" ({os.environ['CW_UA_CONTACT']})" if os.environ.get("CW_UA_CONTACT") else "")}
 DIST_REPO = "Robocnop/create-warfare"
 DIST_BRANCH = "master"
 OUT = os.path.join(ROOT, "dist", "launcher")
